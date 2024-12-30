@@ -1,26 +1,30 @@
 import React, { useState, useEffect, useRef } from 'react'
 import './App.css'
 import { wordList } from './wordList'
+import TwoBarMode from './components/modes/TwoBarMode'
+import FourBarMode from './components/modes/FourBarMode'
+import ModeSelector from './components/ModeSelector'
+import BeatSelector from './components/BeatSelector'
+import CompactBeatSelector from './components/CompactBeatSelector'
+import { trainingModes } from './data/trainingModes'
+import { beats } from './data/beats'
 
 function App() {
   const [isTraining, setIsTraining] = useState(false)
-  const [targetWord, setTargetWord] = useState('')
+  const [selectedMode, setSelectedMode] = useState(null)
   const [currentBar, setCurrentBar] = useState(0)
-  const [bpm, setBpm] = useState(80)
-  const [clicks, setClicks] = useState([])
-  const [isCalculatingBpm, setIsCalculatingBpm] = useState(false)
+  const [bpm, setBpm] = useState(75)
   const [isWordChanging, setIsWordChanging] = useState(false)
   const [currentBeat, setCurrentBeat] = useState(0)
   const [wordCounter, setWordCounter] = useState(0)
   const [shuffledWords, setShuffledWords] = useState([])
-  const [nextWord, setNextWord] = useState('')
+  const [selectedBeatId, setSelectedBeatId] = useState('night-ride')
+  const [isPlaying, setIsPlaying] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
 
-  const BARS_PER_LINE = 4
-  const TOTAL_BARS = BARS_PER_LINE * 2
-  
   const timerRef = useRef(null)
   const nextNoteTimeRef = useRef(0)
-  const shouldUpdateWordsRef = useRef(true)
+  const audioRef = useRef(null)
 
   const shuffleArray = (array) => {
     const newArray = [...array]
@@ -31,18 +35,29 @@ function App() {
     return newArray
   }
 
+  const getTotalBars = () => {
+    switch (selectedMode) {
+      case 'four-bar':
+        return 16; // 4 lines * 4 bars
+      case 'two-bar':
+      default:
+        return 8; // 2 lines * 4 bars
+    }
+  };
+
   const createTick = () => {
     const beatInterval = 60.0 / bpm / 4
+    const totalBars = getTotalBars()
 
     const tickFunction = () => {
       const currentTime = Date.now() / 1000
       
       if (nextNoteTimeRef.current <= currentTime + 0.1) {
         setCurrentBeat(prev => {
-          const nextBeat = (prev + 1) % 4
+          const nextBeat = ((prev + 1) % 4)
           if (nextBeat === 0) {
             setCurrentBar(prevBar => {
-              const nextBar = (prevBar + 1) % TOTAL_BARS
+              const nextBar = (prevBar + 1) % totalBars
               if (nextBar === 0) {
                 setIsWordChanging(true)
                 if (wordCounter >= shuffledWords.length - 2) {
@@ -71,187 +86,218 @@ function App() {
   }
 
   useEffect(() => {
-    if (isTraining) {
-      nextNoteTimeRef.current = Date.now() / 1000
-      const tick = createTick()
-      tick()
-    }
-
     return () => {
-      if (timerRef.current) {
-        clearTimeout(timerRef.current)
-      }
-    }
-  }, [isTraining, bpm])
+      stopPlayback();
+      audioRef.current = null;
+    };
+  }, []);
 
-  const resetBeat = () => {
+  useEffect(() => {
+    if (!isPlaying && timerRef.current) {
+      clearTimeout(timerRef.current);
+    }
+  }, [isPlaying]);
+
+  const stopPlayback = () => {
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+    }
     if (timerRef.current) {
-      clearTimeout(timerRef.current)
+      clearTimeout(timerRef.current);
     }
-    setCurrentBeat(0)
-    setCurrentBar(0)
-    shouldUpdateWordsRef.current = true
-    
-    const beatInterval = 60.0 / bpm / 4
-    nextNoteTimeRef.current = (Date.now() / 1000) + beatInterval
-    
-    const tick = createTick()
-    tick()
-  }
+    setCurrentBeat(0);
+    setCurrentBar(0);
+    setIsWordChanging(false);
+    setIsPlaying(false);
+  };
 
-  const handleBpmTap = () => {
-    const now = Date.now()
-    setClicks(prev => {
-      const newClicks = [...prev, now].filter(click => now - click < 5000)
+  const handleModeSelect = (modeId) => {
+    stopPlayback();
+    setSelectedMode(modeId);
+    setShuffledWords(shuffleArray(wordList));
+    setWordCounter(0);
+    setIsTraining(true);
+  };
+
+  const handleReturnToMenu = () => {
+    stopPlayback();
+    setIsTraining(false);
+    setSelectedMode(null);
+  };
+
+  const handleBeatSelect = (beatId) => {
+    stopPlayback();
+    const selectedBeat = beats.find(beat => beat.id === beatId);
+    setSelectedBeatId(beatId);
+    
+    if (selectedBeat) {
+      setBpm(selectedBeat.bpm);
+      const audioPath = `/freestyle-rap-app/beats/${selectedBeat.file}`;
+      console.log('Loading audio from:', audioPath);
       
-      if (newClicks.length > 1) {
-        const intervals = []
-        for (let i = 1; i < newClicks.length; i++) {
-          intervals.push(newClicks[i] - newClicks[i - 1])
-        }
-        
-        const averageInterval = intervals.reduce((a, b) => a + b) / intervals.length
-        const calculatedBpm = Math.round(60000 / averageInterval)
-        
-        if (calculatedBpm >= 40 && calculatedBpm <= 200) {
-          setBpm(calculatedBpm)
-        }
+      if (audioRef.current) {
+        audioRef.current.src = audioPath;
       }
+    }
+  };
+
+  const handlePlayPause = () => {
+    if (isPlaying) {
+      stopPlayback();
+      return;
+    }
+
+    setIsLoading(true);
+
+    // Start everything from the beginning
+    if (!audioRef.current && selectedBeatId) {
+      const selectedBeat = beats.find(beat => beat.id === selectedBeatId);
+      const audioPath = `/freestyle-rap-app/beats/${selectedBeat.file}`;
+      console.log('Creating new audio element with path:', audioPath);
       
-      return newClicks
-    })
-  }
-
-  const startBpmCalculation = () => {
-    setIsCalculatingBpm(true)
-    setClicks([])
-  }
-
-  const stopBpmCalculation = () => {
-    setIsCalculatingBpm(false)
-    setClicks([])
-  }
-
-  const startTraining = () => {
-    setShuffledWords(shuffleArray(wordList))
-    setWordCounter(0)
-    setIsTraining(true)
-    setCurrentBar(0)
-  }
-
-  const increaseBpm = () => {
-    setBpm(prev => Math.min(prev + 1, 200))
-  }
-
-  const decreaseBpm = () => {
-    setBpm(prev => Math.max(prev - 1, 40))
-  }
-
-  const renderBar = (barIndex, line) => {
-    const isActive = barIndex + (line - 1) * BARS_PER_LINE === currentBar
-    const isTarget = line === 2 && barIndex === 3
-    const isQuestionBlock = line === 1 && barIndex === 3
-
-    if (isTarget) {
-      return (
-        <div 
-          key={`bar-${barIndex}-${line}`}
-          className="target-container"
-        >
-          <span 
-            className={`bar target ${isActive ? 'active' : ''} ${isWordChanging ? 'changing' : ''}`}
-          >
-            {shuffledWords[wordCounter]}
-          </span>
-          <span className="next-word">
-            Next: {shuffledWords[wordCounter + 1]}
-          </span>
-        </div>
-      )
+      audioRef.current = new Audio(audioPath);
+      audioRef.current.loop = true;
     }
 
-    if (isQuestionBlock) {
-      return (
-        <span 
-          key={`bar-${barIndex}-${line}`} 
-          className={`bar question ${isActive ? 'active' : ''} ${isWordChanging ? 'changing' : ''}`}
-        >
-          <span className="floating-mark">?</span>
-          <span className="floating-mark">?</span>
-          <span className="floating-mark">?</span>
-          <span className="floating-mark">?</span>
-        </span>
-      )
-    }
+    if (audioRef.current) {
+      // First, stop any existing playback
+      if (timerRef.current) {
+        clearTimeout(timerRef.current);
+      }
 
-    return (
-      <span 
-        key={`bar-${barIndex}-${line}`} 
-        className={`bar ${isActive ? 'active' : ''}`}
-      >
-        - - - -
-      </span>
-    )
-  }
+      // Reset states
+      setCurrentBeat(0);
+      setCurrentBar(0);
+      setIsWordChanging(false);
+      audioRef.current.currentTime = 0;
+
+      // Wait for audio to be ready and then start everything together
+      audioRef.current.oncanplaythrough = () => {
+        // Remove the event listener to prevent multiple calls
+        audioRef.current.oncanplaythrough = null;
+
+        // Start audio first
+        const playPromise = audioRef.current.play();
+        
+        playPromise.then(() => {
+          setIsLoading(false);
+          // Only start visual timing if in training mode
+          if (isTraining) {
+            // Add 200ms delay before starting visuals to compensate for audio latency
+            setTimeout(() => {
+              const beatInterval = 60.0 / bpm / 4;
+              nextNoteTimeRef.current = (Date.now() / 1000) + beatInterval;
+              
+              const tick = createTick();
+              tick();
+            }, 200);
+          }
+          
+          setIsPlaying(true);
+        }).catch(error => {
+          setIsLoading(false);
+          console.error('Error playing audio:', error);
+        });
+      };
+
+      // Handle loading errors
+      audioRef.current.onerror = () => {
+        setIsLoading(false);
+        console.error('Error loading audio');
+      };
+
+      // Trigger the loading/playing process
+      audioRef.current.load();
+    }
+  };
+
+  const renderTrainingMode = () => {
+    const currentMode = trainingModes.find(mode => mode.id === selectedMode);
+    
+    switch (selectedMode) {
+      case 'four-bar':
+        return (
+          <FourBarMode
+            currentBar={currentBar}
+            currentBeat={currentBeat}
+            bpm={bpm}
+            isWordChanging={isWordChanging}
+            shuffledWords={shuffledWords}
+            wordCounter={wordCounter}
+            onReturnToMenu={handleReturnToMenu}
+            modeName={currentMode.name}
+            helperText={currentMode.helperText}
+            isPlaying={isPlaying}
+            onPlayPause={handlePlayPause}
+            isLoading={isLoading}
+          />
+        );
+      case 'two-bar':
+        return (
+          <TwoBarMode
+            currentBar={currentBar}
+            currentBeat={currentBeat}
+            bpm={bpm}
+            isWordChanging={isWordChanging}
+            shuffledWords={shuffledWords}
+            wordCounter={wordCounter}
+            onReturnToMenu={handleReturnToMenu}
+            modeName={currentMode.name}
+            helperText={currentMode.helperText}
+            isPlaying={isPlaying}
+            onPlayPause={handlePlayPause}
+            isLoading={isLoading}
+          />
+        );
+      default:
+        return null;
+    }
+  };
+
+  // Initialize the audio with default beat
+  useEffect(() => {
+    const defaultBeat = beats.find(beat => beat.id === 'night-ride');
+    if (defaultBeat) {
+      const audioPath = `/freestyle-rap-app/beats/${defaultBeat.file}`;
+      audioRef.current = new Audio(audioPath);
+      audioRef.current.loop = true;
+    }
+  }, []);
 
   return (
     <div className="app">
+      <div className="version-number">v{process.env.APP_VERSION}</div>
       <h1>Freestyle Rap Trainer</h1>
       <div className="content">
         {!isTraining ? (
-          <div className="setup-container">
-            <div className="bpm-calculator">
-              <p>Current BPM: {bpm}</p>
-              {!isCalculatingBpm ? (
-                <button className="bpm-button" onClick={startBpmCalculation}>
-                  Calculate BPM
-                </button>
-              ) : (
-                <div className="bpm-tap-container">
-                  <button className="bpm-tap-button" onClick={handleBpmTap}>
-                    Tap Rhythm ({clicks.length} taps)
-                  </button>
-                  <button className="bpm-stop-button" onClick={stopBpmCalculation}>
-                    Done
-                  </button>
-                </div>
-              )}
+          <>
+            <div className="setup-container">
+              <BeatSelector
+                selectedBeatId={selectedBeatId}
+                onBeatSelect={handleBeatSelect}
+                isPlaying={isPlaying}
+                onPlayPause={handlePlayPause}
+                isLoading={isLoading}
+              />
             </div>
-            <button className="start-button" onClick={startTraining}>
-              Start Training
-            </button>
-          </div>
+            <ModeSelector onSelectMode={handleModeSelect} />
+          </>
         ) : (
           <>
-            <div className="rhyme-pattern">
-              <div className="line">
-                {[0, 1, 2, 3].map((barIndex) => renderBar(barIndex, 1))}
-              </div>
-              <div className="line">
-                {[0, 1, 2, 3].map((barIndex) => renderBar(barIndex, 2))}
-              </div>
-            </div>
-            <div className="controls">
-              <div className="bpm-controls">
-                <button className="bpm-adjust-button" onClick={decreaseBpm}>-</button>
-                <span className="bpm-display">{bpm} BPM</span>
-                <button className="bpm-adjust-button" onClick={increaseBpm}>+</button>
-              </div>
-              <div className="playback-controls">
-                <button 
-                  className="reset-button"
-                  onClick={resetBeat}
-                  aria-label="Reset Beat"
-                >
-                  ↻
-                </button>
-              </div>
-            </div>
+            <CompactBeatSelector
+              selectedBeatId={selectedBeatId}
+              onBeatSelect={handleBeatSelect}
+              isPlaying={isPlaying}
+              onPlayPause={handlePlayPause}
+              isLoading={isLoading}
+            />
+            {renderTrainingMode()}
           </>
         )}
       </div>
     </div>
-  )
+  );
 }
 
 export default App 

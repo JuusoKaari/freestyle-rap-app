@@ -1,0 +1,144 @@
+.beat-selector-container {
+  width: 100%;
+  position: relative;
+}
+
+.beat-player {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.play-button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.play-button:hover:not(:disabled) {
+  border-color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.play-button svg {
+  width: 24px;
+  height: 24px;
+}
+
+.play-button.loading {
+  cursor: wait;
+}
+
+.loading-spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  border-top-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.beat-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.beat-main-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.beat-label {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+}
+
+.beat-name {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.beat-bpm {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  margin-left: 0.25rem;
+}
+
+.beat-details {
+  display: flex;
+  gap: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+}
+
+.beat-description {
+  font-style: italic;
+}
+
+.change-beat-button {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.change-beat-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.beat-select {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 0.5rem;
+  background: rgba(30, 30, 30, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.beat-select:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.beat-select option {
+  background: #1a1a1a;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem;
+} 

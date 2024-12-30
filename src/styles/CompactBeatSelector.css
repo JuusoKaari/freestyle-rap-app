@@ -1,0 +1,37 @@
+.compact-beat-selector {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.compact-beat-selector .change-beat-button {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.compact-beat-selector .change-beat-button:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.compact-beat-selector .change-beat-button svg {
+  width: 14px;
+  height: 14px;
+  opacity: 0.6;
+  transition: all 0.2s ease;
+}
+
+.compact-beat-selector .change-beat-button:hover svg {
+  opacity: 0.9;
+} 
