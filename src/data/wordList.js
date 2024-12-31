@@ -1,3 +1,7 @@
+// Import vocabularies
+import genericVocab from './vocabulary/FI_generic_rap.js';
+import animalVocab from './vocabulary/FI_elaimet.js';
+
 // Helper function to get a random item from an array
 const getRandomItem = (array) => array[Math.floor(Math.random() * array.length)];
 
@@ -6,16 +10,16 @@ const getGroupWordCount = (group, words) => {
   return (words[group] || []).length;
 };
 
-// Function to get vocabulary module based on selection
-const getVocabularyModule = async (vocabulary) => {
+// Function to get vocabulary based on selection
+const getVocabulary = (vocabulary) => {
   switch (vocabulary) {
     case 'generic_rap':
-      return import('./vocabulary/FI_generic_rap.js');
+      return genericVocab;
     case 'elaimet':
-      return import('./vocabulary/FI_elaimet.js');
+      return animalVocab;
     default:
       console.warn('Unknown vocabulary:', vocabulary);
-      return import('./vocabulary/FI_generic_rap.js');
+      return genericVocab;
   }
 };
 
@@ -30,9 +34,8 @@ export const generateWordList = async (options = {}) => {
   } = options;
 
   try {
-    // Import the vocabulary file
-    const module = await getVocabularyModule(vocabulary);
-    const words = module.default;
+    // Get the vocabulary
+    const words = getVocabulary(vocabulary);
 
     // Get all vowel groups
     const allVowelGroups = Object.keys(words);
