@@ -6,6 +6,7 @@ import FourBarMode from './components/modes/FourBarMode'
 import ModeSelector from './components/ModeSelector'
 import BeatSelector from './components/BeatSelector'
 import CompactBeatSelector from './components/CompactBeatSelector'
+import VocabularySelector from './components/VocabularySelector'
 import { trainingModes } from './data/trainingModes'
 import { beats } from './data/beats'
 
@@ -19,6 +20,7 @@ function App() {
   const [wordCounter, setWordCounter] = useState(0)
   const [shuffledWords, setShuffledWords] = useState([])
   const [selectedBeatId, setSelectedBeatId] = useState('night-ride')
+  const [selectedVocabulary, setSelectedVocabulary] = useState('generic_rap')
   const [isPlaying, setIsPlaying] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
 
@@ -61,8 +63,17 @@ function App() {
               if (nextBar === 0) {
                 setIsWordChanging(true)
                 if (wordCounter >= shuffledWords.length - 2) {
-                  setShuffledWords(shuffleArray(generateWordList({ count: 100, minWordsInGroup: 10 })))
-                  setWordCounter(0)
+                  // Load new words
+                  generateWordList({ 
+                    count: 100, 
+                    minWordsInGroup: 3,
+                    vocabulary: selectedVocabulary 
+                  }).then(words => {
+                    if (words.length > 0) {
+                      setShuffledWords(shuffleArray(words));
+                      setWordCounter(0);
+                    }
+                  });
                 } else {
                   setWordCounter(prev => prev + 1)
                 }
@@ -112,12 +123,19 @@ function App() {
     setIsPlaying(false);
   };
 
-  const handleModeSelect = (modeId) => {
+  const handleModeSelect = async (modeId) => {
     stopPlayback();
     setSelectedMode(modeId);
-    setShuffledWords(shuffleArray(generateWordList({ count: 100, minWordsInGroup: 10 })));
-    setWordCounter(0);
-    setIsTraining(true);
+    const words = await generateWordList({ 
+      count: 100, 
+      minWordsInGroup: 3,
+      vocabulary: selectedVocabulary 
+    });
+    if (words.length > 0) {
+      setShuffledWords(shuffleArray(words));
+      setWordCounter(0);
+      setIsTraining(true);
+    }
   };
 
   const handleReturnToMenu = () => {
@@ -265,9 +283,22 @@ function App() {
     }
   }, []);
 
+  // Load initial words when vocabulary changes
+  useEffect(() => {
+    generateWordList({ 
+      count: 100, 
+      minWordsInGroup: 3,
+      vocabulary: selectedVocabulary 
+    }).then(words => {
+      if (words.length > 0) {
+        setShuffledWords(shuffleArray(words));
+      }
+    });
+  }, [selectedVocabulary]);
+
   return (
     <div className="app">
-      <div className="version-number">v{process.env.APP_VERSION}</div>
+      <div className="version-number">v{process.env.APP_VERSION || ''}</div>
       <h1>Freestyle Rap Trainer</h1>
       <div className="content">
         {!isTraining ? (
@@ -279,6 +310,10 @@ function App() {
                 isPlaying={isPlaying}
                 onPlayPause={handlePlayPause}
                 isLoading={isLoading}
+              />
+              <VocabularySelector
+                selectedVocabulary={selectedVocabulary}
+                onVocabularySelect={setSelectedVocabulary}
               />
             </div>
             <ModeSelector onSelectMode={handleModeSelect} />

@@ -1,0 +1,96 @@
+.vocabulary-selector {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.vocabulary-selector h2 {
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.vocabulary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.vocabulary-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.vocabulary-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.vocabulary-item.selected {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.vocabulary-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.vocabulary-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0.5rem;
+}
+
+.vocabulary-description {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.vocabulary-difficulty {
+  font-size: 0.8rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  text-transform: capitalize;
+}
+
+.vocabulary-difficulty.easy {
+  background: rgba(72, 199, 142, 0.2);
+  color: rgb(72, 199, 142);
+}
+
+.vocabulary-difficulty.medium {
+  background: rgba(255, 159, 67, 0.2);
+  color: rgb(255, 159, 67);
+}
+
+.vocabulary-difficulty.hard {
+  background: rgba(255, 71, 87, 0.2);
+  color: rgb(255, 71, 87);
+}
+
+.vocabulary-meta {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.vocabulary-word-count {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+} 

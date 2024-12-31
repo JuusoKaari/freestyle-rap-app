@@ -159,12 +159,14 @@ def get_syllable_vowel_pattern(word):
     
     return vowel_patterns, syllable_count
 
-def load_existing_data(output_dir, syllable_count):
-    """Load existing words from JSON file if it exists."""
-    file_path = os.path.join(output_dir, f"{syllable_count}_syllable_words_by_vowels.json")
-    if os.path.exists(file_path):
-        with open(file_path, "r", encoding="utf-8") as json_file:
-            return json.load(json_file)
+def load_existing_data(output_file):
+    """Load existing words from JS file if it exists."""
+    if os.path.exists(output_file):
+        with open(output_file, "r", encoding="utf-8") as js_file:
+            content = js_file.read()
+            # Remove the export default and parse the JSON part
+            json_str = content.replace('export default ', '').strip().rstrip(';')
+            return json.loads(json_str)
     return {}
 
 def prosessoi_tiedosto(input_file, output_dir):
@@ -178,19 +180,14 @@ def prosessoi_tiedosto(input_file, output_dir):
              and len(word.strip()) >= 4 
              and len(word.strip()) <= 15]
 
-    # Load existing data for both syllable counts
-    existing_data = {
-        2: load_existing_data(output_dir, 2),
-        3: load_existing_data(output_dir, 3)
-    }
+    # Generate output filename based on input filename
+    input_basename = os.path.splitext(os.path.basename(input_file))[0]
+    output_file = os.path.join(output_dir, f"FI_{input_basename}.js")
 
-    # Group words by syllable count and vowel patterns
-    vowel_patterns = {
-        2: existing_data[2].copy(),  # Start with existing data
-        3: existing_data[3].copy()
-    }
-    previews = {2: {}, 3: {}}
-    new_words_count = {2: 0, 3: 0}  # Track new words added
+    # Load existing data if any
+    vowel_patterns = load_existing_data(output_file)
+    previews = {}
+    new_words_count = 0
 
     for sana in sanat:
         sana = sana.strip().lower()
@@ -200,59 +197,58 @@ def prosessoi_tiedosto(input_file, output_dir):
         hyphenated_word = tavuta_uusi(sana)
         vowel_pattern, syllable_count = get_syllable_vowel_pattern(hyphenated_word)
         
-        # Skip if not a valid syllable count or no valid vowel pattern
-        if not vowel_pattern:
+        # Skip if no valid vowel pattern or not 2-3 syllables
+        if not vowel_pattern or syllable_count not in [2, 3]:
             continue
 
-        # Create pattern key (e.g., "A-E" or "A-E-I")
+        # Create pattern key (e.g., "a-e" or "a-e-i")
         pattern_key = "-".join(vowel_pattern)
         
         # Initialize pattern list if it doesn't exist
-        if pattern_key not in vowel_patterns[syllable_count]:
-            vowel_patterns[syllable_count][pattern_key] = []
+        if pattern_key not in vowel_patterns:
+            vowel_patterns[pattern_key] = []
         
         # Add word if it's not already in the list
-        if hyphenated_word not in vowel_patterns[syllable_count][pattern_key]:
-            vowel_patterns[syllable_count][pattern_key].append(hyphenated_word)
-            new_words_count[syllable_count] += 1
+        if hyphenated_word not in vowel_patterns[pattern_key]:
+            vowel_patterns[pattern_key].append(hyphenated_word)
+            new_words_count += 1
 
-    # Process and save each syllable count separately
-    for syllable_count in [2, 3]:
-        # Sort patterns and prepare output data
-        output_data = {}
-        for pattern, words in sorted(vowel_patterns[syllable_count].items()):
-            if words:  # Only include patterns that have words
-                unique_words = sorted(list(set(words)))
-                output_data[pattern] = unique_words
-                # Store first 5 words of each pattern for preview
-                previews[syllable_count][pattern] = unique_words[:5]
-        
-        # Save to JSON file
-        output_file = os.path.join(output_dir, f"{syllable_count}_syllable_words_by_vowels.json")
-        with open(output_file, "w", encoding="utf-8") as json_file:
-            json.dump(output_data, json_file, ensure_ascii=False, indent=4)
+    # Sort patterns and prepare output data
+    output_data = {}
+    for pattern, words in sorted(vowel_patterns.items()):
+        if words:  # Only include patterns that have words
+            unique_words = sorted(list(set(words)))
+            output_data[pattern] = unique_words
+            # Store first 5 words of each pattern for preview
+            previews[pattern] = unique_words[:5]
     
-    return previews, new_words_count
+    # Save to JS file with export syntax
+    with open(output_file, "w", encoding="utf-8") as js_file:
+        js_content = json.dumps(output_data, ensure_ascii=False, indent=4)
+        js_file.write(f"export default {js_content};")
+    
+    return previews, new_words_count, output_file
 
 def process_and_show_preview(input_file, output_dir, status_text=None):
-    previews, new_words_count = prosessoi_tiedosto(input_file, output_dir)
+    previews, new_words_count, output_file = prosessoi_tiedosto(input_file, output_dir)
     
     if status_text:  # GUI mode - show full preview
         preview_msg = f"Processed file: {os.path.basename(input_file)}\n"
-        preview_msg += f"Added {new_words_count[2]} new 2-syllable words and {new_words_count[3]} new 3-syllable words.\n"
+        preview_msg += f"Output file: {os.path.basename(output_file)}\n"
+        preview_msg += f"Added {new_words_count} new words.\n"
         preview_msg += "\nPreviews of each vowel pattern:\n"
+        preview_msg += "-" * 40 + "\n"
         
-        for syllable_count in [2, 3]:
-            preview_msg += f"\n{syllable_count}-syllable words:\n"
-            preview_msg += "-" * 40 + "\n"
-            for pattern, words in sorted(previews[syllable_count].items()):
-                preview_msg += f"Pattern {pattern}: {', '.join(words)}\n"
+        for pattern, words in sorted(previews.items()):
+            syllable_count = len(pattern.split("-"))
+            preview_msg += f"{syllable_count}-syllable pattern {pattern}: {', '.join(words)}\n"
         
         status_text.delete(1.0, tk.END)
         status_text.insert(tk.END, preview_msg)
     else:  # Command-line mode - show only summary
         print(f"Processed: {os.path.basename(input_file)}")
-        print(f"Added {new_words_count[2]} new 2-syllable words and {new_words_count[3]} new 3-syllable words.")
+        print(f"Output: {os.path.basename(output_file)}")
+        print(f"Added {new_words_count} new words.")
         print()  # Empty line between files
     
     return previews
