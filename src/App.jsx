@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import './App.css'
-import { wordList } from './wordList'
+import { generateWordList } from './data/wordList'
 import TwoBarMode from './components/modes/TwoBarMode'
 import FourBarMode from './components/modes/FourBarMode'
 import ModeSelector from './components/ModeSelector'
@@ -61,7 +61,7 @@ function App() {
               if (nextBar === 0) {
                 setIsWordChanging(true)
                 if (wordCounter >= shuffledWords.length - 2) {
-                  setShuffledWords(shuffleArray(wordList))
+                  setShuffledWords(shuffleArray(generateWordList({ count: 100, minWordsInGroup: 10 })))
                   setWordCounter(0)
                 } else {
                   setWordCounter(prev => prev + 1)
@@ -115,7 +115,7 @@ function App() {
   const handleModeSelect = (modeId) => {
     stopPlayback();
     setSelectedMode(modeId);
-    setShuffledWords(shuffleArray(wordList));
+    setShuffledWords(shuffleArray(generateWordList({ count: 100, minWordsInGroup: 10 })));
     setWordCounter(0);
     setIsTraining(true);
   };
