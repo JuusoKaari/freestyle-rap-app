@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { beats } from '../data/beats';
 import BeatSelectModal from './BeatSelectModal';
+import { useTranslation } from '../services/TranslationContext';
 import '../styles/BeatSelector.css';
 
 const BeatSelector = ({ selectedBeatId, onBeatSelect, isPlaying, onPlayPause, isLoading }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [previewingBeatId, setPreviewingBeatId] = useState(null);
   const selectedBeat = beats.find(beat => beat.id === selectedBeatId);
+  const { translate } = useTranslation();
 
   const handlePreviewPlay = (beatId) => {
     if (previewingBeatId === beatId) {
@@ -52,9 +54,9 @@ const BeatSelector = ({ selectedBeatId, onBeatSelect, isPlaying, onPlayPause, is
 
         <div className="beat-info">
           <div className="beat-main-info">
-            <span className="beat-label">Beat:</span>
+            <span className="beat-label">{translate('training.beats.beatLabel')}:</span>
             <span className="beat-name">{selectedBeat?.name}</span>
-            <span className="beat-bpm">- {selectedBeat?.bpm} BPM</span>
+            <span className="beat-bpm">- {selectedBeat?.bpm} {translate('training.beats.bpmSuffix')}</span>
           </div>
           <div className="beat-details">
             <span className="beat-description">{selectedBeat?.description}</span>
@@ -65,19 +67,13 @@ const BeatSelector = ({ selectedBeatId, onBeatSelect, isPlaying, onPlayPause, is
           className="change-beat-button"
           onClick={() => setIsModalOpen(true)}
         >
-          Change Beat
+          {translate('training.beats.changeBeat')}
         </button>
       </div>
 
       <BeatSelectModal
         isOpen={isModalOpen}
-        onClose={() => {
-          setIsModalOpen(false);
-          if (previewingBeatId) {
-            onPlayPause(); // Stop any preview playback
-            setPreviewingBeatId(null);
-          }
-        }}
+        onClose={() => setIsModalOpen(false)}
         onSelect={handleBeatSelect}
         currentBeatId={selectedBeatId}
         onPreviewPlay={handlePreviewPlay}

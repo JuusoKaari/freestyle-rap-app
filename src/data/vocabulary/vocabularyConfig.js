@@ -9,21 +9,39 @@ const countWords = (vocab) => {
 export const vocabularies = [
   {
     id: 'generic_rap',
-    name: 'Generic Rap',
-    description: 'Yleissanasto räppäämiseen',
-    difficulty: 'medium',
     icon: '🎤',
     file: 'FI_generic_rap.js',
-    wordCount: countWords(genericVocab)
+    wordCount: countWords(genericVocab),
+    translations: {
+      en: {
+        name: 'Generic Rap',
+        description: 'General Finnish vocabulary for rapping',
+        difficulty: 'medium'
+      },
+      fi: {
+        name: 'Yleissanasto',
+        description: 'Yleissanasto räppäämiseen',
+        difficulty: 'medium'
+      }
+    }
   },
   {
     id: 'elaimet',
-    name: 'Eläimet',
-    description: 'Eläinaiheinen sanasto',
-    difficulty: 'hard AF',
     icon: '🦁',
     file: 'FI_elaimet.js',
-    wordCount: countWords(animalVocab)
+    wordCount: countWords(animalVocab),
+    translations: {
+      en: {
+        name: 'Animals',
+        description: 'Animal-themed Finnish vocabulary',
+        difficulty: 'hard AF'
+      },
+      fi: {
+        name: 'Eläimet',
+        description: 'Eläinaiheinen sanasto',
+        difficulty: 'hard AF'
+      }
+    }
   }
 ];
 

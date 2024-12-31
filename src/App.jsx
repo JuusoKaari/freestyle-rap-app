@@ -7,10 +7,19 @@ import ModeSelector from './components/ModeSelector'
 import BeatSelector from './components/BeatSelector'
 import CompactBeatSelector from './components/CompactBeatSelector'
 import VocabularySelector from './components/VocabularySelector'
+import LanguageToggle from './components/LanguageToggle'
 import { trainingModes } from './data/trainingModes'
 import { beats } from './data/beats'
+import { useTranslation } from './services/TranslationContext'
 
 function App() {
+  const { translate } = useTranslation();
+  
+  // Add effect to update document title
+  useEffect(() => {
+    document.title = translate('app.title');
+  }, [translate]);
+
   const [isTraining, setIsTraining] = useState(false)
   const [selectedMode, setSelectedMode] = useState(null)
   const [currentBar, setCurrentBar] = useState(0)
@@ -232,6 +241,7 @@ function App() {
 
   const renderTrainingMode = () => {
     const currentMode = trainingModes.find(mode => mode.id === selectedMode);
+    const { language } = useTranslation();
     
     switch (selectedMode) {
       case 'four-bar':
@@ -244,8 +254,8 @@ function App() {
             shuffledWords={shuffledWords}
             wordCounter={wordCounter}
             onReturnToMenu={handleReturnToMenu}
-            modeName={currentMode.name}
-            helperText={currentMode.helperText}
+            modeName={currentMode.translations[language].name}
+            helperText={currentMode.translations[language].helperText}
             isPlaying={isPlaying}
             onPlayPause={handlePlayPause}
             isLoading={isLoading}
@@ -261,8 +271,8 @@ function App() {
             shuffledWords={shuffledWords}
             wordCounter={wordCounter}
             onReturnToMenu={handleReturnToMenu}
-            modeName={currentMode.name}
-            helperText={currentMode.helperText}
+            modeName={currentMode.translations[language].name}
+            helperText={currentMode.translations[language].helperText}
             isPlaying={isPlaying}
             onPlayPause={handlePlayPause}
             isLoading={isLoading}
@@ -299,10 +309,11 @@ function App() {
   return (
     <div className="app">
       <div className="version-number">v{process.env.APP_VERSION || ''}</div>
-      <h1>Freestyle Rap Trainer</h1>
+      <h1>{translate('app.title')}</h1>
       <div className="content">
         {!isTraining ? (
           <>
+            <LanguageToggle />
             <div className="setup-container">
               <BeatSelector
                 selectedBeatId={selectedBeatId}
