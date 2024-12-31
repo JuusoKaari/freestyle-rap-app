@@ -128,7 +128,7 @@ function App() {
     setSelectedMode(modeId);
     const words = await generateWordList({ 
       count: 100, 
-      minWordsInGroup: 3,
+      minWordsInGroup: 1,
       vocabulary: selectedVocabulary 
     });
     if (words.length > 0) {
