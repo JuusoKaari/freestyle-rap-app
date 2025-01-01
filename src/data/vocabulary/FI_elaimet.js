@@ -154,7 +154,6 @@ export default {
         "sii-li"
     ],
     "ii-ie-äi": [
-        "hir-vie-läin",
         "vil-lie-läin"
     ],
     "ii-ii-i": [
@@ -164,8 +163,7 @@ export default {
         "lis-ko"
     ],
     "ii-u": [
-        "lin-tu",
-        "rii-mu"
+        "lin-tu"
     ],
     "ii-uu-a": [
         "sim-puk-ka"
@@ -228,11 +226,7 @@ export default {
         "vuo-hen"
     ],
     "uo-ee-a": [
-        "vuo-hel-la",
         "vuo-hes-ta"
-    ],
-    "uo-ee-e": [
-        "vuo-hel-le"
     ],
     "uo-ee-i": [
         "vuo-hek-si"

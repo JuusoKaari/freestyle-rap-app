@@ -3,6 +3,8 @@ import './App.css'
 import { generateWordList } from './data/wordList'
 import TwoBarMode from './components/modes/TwoBarMode'
 import FourBarMode from './components/modes/FourBarMode'
+import RhymeExplorerMode from './components/modes/RhymeExplorerMode'
+import FindRhymesMode from './components/modes/FindRhymesMode'
 import ModeSelector from './components/ModeSelector'
 import BeatSelector from './components/BeatSelector'
 import CompactBeatSelector from './components/CompactBeatSelector'
@@ -11,6 +13,7 @@ import LanguageToggle from './components/LanguageToggle'
 import { trainingModes } from './data/trainingModes'
 import { beats } from './data/beats'
 import { useTranslation } from './services/TranslationContext'
+import { DebugProvider } from './services/DebugContext'
 
 function App() {
   const { translate, language } = useTranslation();
@@ -36,15 +39,6 @@ function App() {
   const timerRef = useRef(null)
   const nextNoteTimeRef = useRef(0)
   const audioRef = useRef(null)
-
-  const shuffleArray = (array) => {
-    const newArray = [...array]
-    for (let i = newArray.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [newArray[i], newArray[j]] = [newArray[j], newArray[i]]
-    }
-    return newArray
-  }
 
   const getTotalBars = () => {
     switch (selectedMode) {
@@ -79,7 +73,7 @@ function App() {
                     vocabulary: selectedVocabulary 
                   }).then(words => {
                     if (words.length > 0) {
-                      setShuffledWords(shuffleArray(words));
+                      setShuffledWords(words);
                       setWordCounter(0);
                     }
                   });
@@ -132,16 +126,67 @@ function App() {
     setIsPlaying(false);
   };
 
+  // Spread out words from same groups with randomization
+  const spreadOutWords = (words) => {
+    // Group words by their rhyming group
+    const groupedWords = words.reduce((acc, word) => {
+      if (!acc[word.group]) {
+        acc[word.group] = [];
+      }
+      acc[word.group].push(word);
+      return acc;
+    }, {});
+
+    // Get all groups and randomize their order
+    const groups = Object.keys(groupedWords).sort(() => Math.random() - 0.5);
+    
+    // Randomize words within each group
+    groups.forEach(group => {
+      groupedWords[group].sort(() => Math.random() - 0.5);
+    });
+
+    const result = [];
+    let currentIndex = 0;
+
+    // Keep going until all words are used
+    while (result.length < words.length) {
+      const currentGroup = groups[currentIndex % groups.length];
+      const wordsInGroup = groupedWords[currentGroup];
+      
+      // If group still has words, take one
+      if (wordsInGroup && wordsInGroup.length > 0) {
+        result.push(wordsInGroup.shift());
+      }
+      
+      currentIndex++;
+    }
+
+    return result;
+  };
+
+  // Load initial words when vocabulary changes
+  useEffect(() => {
+    generateWordList({ 
+      minWordsInGroup: 3,
+      vocabulary: selectedVocabulary 
+    }).then(words => {
+      if (words.length > 0) {
+        setShuffledWords(spreadOutWords(words));
+      }
+    });
+  }, [selectedVocabulary]);
+
+  // Update handleModeSelect to use spreadOutWords
   const handleModeSelect = async (modeId) => {
     stopPlayback();
     setSelectedMode(modeId);
     const words = await generateWordList({ 
-      count: 100, 
       minWordsInGroup: 1,
-      vocabulary: selectedVocabulary 
+      vocabulary: selectedVocabulary,
+      includeRhymes: modeId === 'rhyme-explorer' || modeId === 'find-rhymes'
     });
     if (words.length > 0) {
-      setShuffledWords(shuffleArray(words));
+      setShuffledWords(spreadOutWords(words));
       setWordCounter(0);
       setIsTraining(true);
     }
@@ -239,10 +284,48 @@ function App() {
     }
   };
 
+  const handleNextWord = () => {
+    setWordCounter((prev) => (prev + 1) % shuffledWords.length);
+  };
+
+  const handlePreviousWord = () => {
+    setWordCounter((prev) => (prev - 1 + shuffledWords.length) % shuffledWords.length);
+  };
+
   const renderTrainingMode = () => {
     const currentMode = trainingModes.find(mode => mode.id === selectedMode);
     
     switch (selectedMode) {
+      case 'rhyme-explorer':
+        return (
+          <RhymeExplorerMode
+            shuffledWords={shuffledWords}
+            wordCounter={wordCounter}
+            onReturnToMenu={handleReturnToMenu}
+            modeName={currentMode.translations[language].name}
+            helperText={currentMode.translations[language].helperText}
+            onNextWord={handleNextWord}
+            onPreviousWord={handlePreviousWord}
+            isPlaying={isPlaying}
+            onPlayPause={handlePlayPause}
+            isLoading={isLoading}
+          />
+        );
+      case 'find-rhymes':
+        return (
+          <FindRhymesMode
+            shuffledWords={shuffledWords}
+            wordCounter={wordCounter}
+            onReturnToMenu={handleReturnToMenu}
+            modeName={currentMode.translations[language].name}
+            helperText={currentMode.translations[language].helperText}
+            onNextWord={handleNextWord}
+            isPlaying={isPlaying}
+            onPlayPause={handlePlayPause}
+            isLoading={isLoading}
+            bpm={bpm}
+          />
+        );
       case 'four-bar':
         return (
           <FourBarMode
@@ -292,56 +375,45 @@ function App() {
     }
   }, []);
 
-  // Load initial words when vocabulary changes
-  useEffect(() => {
-    generateWordList({ 
-      count: 100, 
-      minWordsInGroup: 3,
-      vocabulary: selectedVocabulary 
-    }).then(words => {
-      if (words.length > 0) {
-        setShuffledWords(shuffleArray(words));
-      }
-    });
-  }, [selectedVocabulary]);
-
   return (
-    <div className="app">
-      <div className="version-number">v{process.env.APP_VERSION || ''}</div>
-      <h1>{translate('app.title')}</h1>
-      <div className="content">
-        {!isTraining ? (
-          <>
-            <LanguageToggle />
-            <div className="setup-container">
-              <BeatSelector
+    <DebugProvider>
+      <div className="app">
+        <div className="version-number">v{process.env.APP_VERSION || ''}</div>
+        <h1>{translate('app.title')}</h1>
+        <div className="content">
+          {!isTraining ? (
+            <>
+              <LanguageToggle />
+              <div className="setup-container">
+                <BeatSelector
+                  selectedBeatId={selectedBeatId}
+                  onBeatSelect={handleBeatSelect}
+                  isPlaying={isPlaying}
+                  onPlayPause={handlePlayPause}
+                  isLoading={isLoading}
+                />
+                <VocabularySelector
+                  selectedVocabulary={selectedVocabulary}
+                  onVocabularySelect={setSelectedVocabulary}
+                />
+              </div>
+              <ModeSelector onSelectMode={handleModeSelect} />
+            </>
+          ) : (
+            <>
+              <CompactBeatSelector
                 selectedBeatId={selectedBeatId}
                 onBeatSelect={handleBeatSelect}
                 isPlaying={isPlaying}
                 onPlayPause={handlePlayPause}
                 isLoading={isLoading}
               />
-              <VocabularySelector
-                selectedVocabulary={selectedVocabulary}
-                onVocabularySelect={setSelectedVocabulary}
-              />
-            </div>
-            <ModeSelector onSelectMode={handleModeSelect} />
-          </>
-        ) : (
-          <>
-            <CompactBeatSelector
-              selectedBeatId={selectedBeatId}
-              onBeatSelect={handleBeatSelect}
-              isPlaying={isPlaying}
-              onPlayPause={handlePlayPause}
-              isLoading={isLoading}
-            />
-            {renderTrainingMode()}
-          </>
-        )}
+              {renderTrainingMode()}
+            </>
+          )}
+        </div>
       </div>
-    </div>
+    </DebugProvider>
   );
 }
 

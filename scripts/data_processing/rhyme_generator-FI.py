@@ -175,10 +175,19 @@ def prosessoi_tiedosto(input_file, output_dir):
     
     # Remove punctuation and split into words
     text = re.sub(r'[.,!?:;"\'\(\)\[\]{}]', '', text)
-    sanat = [word.strip() for word in text.split() 
-             if word.strip() 
-             and len(word.strip()) >= 4 
-             and len(word.strip()) <= 15]
+    # Split by whitespace and handle underscore-separated words
+    sanat = []
+    for word in text.split():
+        word = word.strip()
+        # Skip empty words and enforce length limits
+        if not word or len(word) < 4 or len(word) > 15:
+            continue
+        # If word contains underscore, keep it as is
+        if '_' in word:
+            sanat.append(word.lower())
+        # Otherwise add normally
+        else:
+            sanat.append(word.lower())
 
     # Generate output filename based on input filename
     input_basename = os.path.splitext(os.path.basename(input_file))[0]

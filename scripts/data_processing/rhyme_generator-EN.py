@@ -123,8 +123,16 @@ def process_file(input_file, output_dir):
         text = file.read()
 
     text = re.sub(r'[.,!?:;"\'\(\)\[\]{}]', '', text)
-    words = [word.strip().lower() for word in text.split() if word.strip()]
-
+    # Split by whitespace and handle underscore-separated words
+    words = []
+    for word in text.split():
+        # If word contains underscore, keep it as is
+        if '_' in word:
+            words.append(word.strip().lower())
+        # Otherwise split normally
+        else:
+            words.append(word.strip().lower())
+    
     input_basename = os.path.splitext(os.path.basename(input_file))[0]
     output_file = os.path.join(output_dir, f"EN_{input_basename}.js")
 

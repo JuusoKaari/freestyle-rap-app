@@ -1,0 +1,163 @@
+.rhyme-explorer {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.word-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.main-word {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.main-word h3 {
+  font-size: 2rem;
+  margin: 0 0 0.5rem 0;
+  color: #fff;
+}
+
+.group-label {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: monospace;
+}
+
+.rhyme-section {
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.rhyme-section h4 {
+  margin: 0 0 1rem 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+}
+
+.themed-rhymes {
+  background: rgba(76, 175, 80, 0.1);
+}
+
+.other-rhymes {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.rhyme-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.rhyme {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  border-color: #fff;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.slant-rhyme {
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(180, 180, 180, 0.7);
+}
+
+.navigation-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex: 1;
+}
+
+.nav-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.nav-button svg {
+  width: 20px;
+  height: 20px;
+  opacity: 0.8;
+}
+
+.prev-button {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.next-button {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.debug-word-list {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+  font-family: monospace;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.debug-word-list h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.word-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.debug-word {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.debug-word:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.debug-word.current {
+  background: rgba(76, 175, 80, 0.3);
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: bold;
+}
+
+.debug-word.current:hover {
+  background: rgba(76, 175, 80, 0.4);
+} 

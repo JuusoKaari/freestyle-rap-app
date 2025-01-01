@@ -15,9 +15,6 @@ export default {
         "barking",
         "nostril"
     ],
-    "AA-OW": [
-        "hollow"
-    ],
     "AE-AA-ER": [
         "grasshopper"
     ],
@@ -112,9 +109,6 @@ export default {
     ],
     "EH-IY-IH": [
         "jellyfish"
-    ],
-    "EH-OW-ER": [
-        "enclosure"
     ],
     "ER-AH": [
         "squirrel",

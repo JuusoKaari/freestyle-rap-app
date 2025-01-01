@@ -38,9 +38,9 @@ const VocabularySelector = ({ selectedVocabulary, onVocabularySelect }) => {
               <span className={`vocabulary-difficulty ${vocab.difficulty}`}>
                 {vocab.difficulty}
               </span>
-              <span className="vocabulary-word-count">
+              {/* <span className="vocabulary-word-count">
                 {vocab.wordCount.toLocaleString()} words
-              </span>
+              </span> */}
             </div>
           </button>
         ))}

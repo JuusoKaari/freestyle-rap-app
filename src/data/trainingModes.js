@@ -1,5 +1,43 @@
 export const trainingModes = [
   {
+    id: 'rhyme-explorer',
+    translations: {
+      en: {
+        name: 'Rhyme Explorer',
+        description: 'Browse through words and their rhyming pairs to expand your vocabulary',
+        helperText: 'Click NEXT to see the next word and its rhyming pairs.\n If you press START, beat will play and words will change automatically.',
+        themedRhymes: 'Themed Rhymes',
+        otherRhymes: 'Other Rhymes',
+        prevButton: 'PREV',
+        nextButton: 'NEXT'
+      },
+      fi: {
+        name: 'Riimien Selaus',
+        description: 'Selaa sanoja ja niiden riimejä laajentaaksesi sanavarastoasi',
+        helperText: 'Klikkaa SEURAAVA nähdäksesi seuraavan sanan ja sen riimit. Kun painat START, biitti alkaa soida ja sanat vaihtuu automaattisesti.',
+        themedRhymes: 'Teeman Riimit',
+        otherRhymes: 'Muut Riimit',
+        prevButton: 'EDELLINEN',
+        nextButton: 'SEURAAVA'
+      }
+    }
+  },
+  {
+    id: 'find-rhymes',
+    translations: {
+      en: {
+        name: 'Find Rhymes',
+        description: 'Click on words that rhyme with the target word before time runs out',
+        helperText: 'Find and click all words that rhyme with the center word. Green means correct, red means wrong!'
+      },
+      fi: {
+        name: 'Etsi Riimit',
+        description: 'Klikkaa sanoja jotka riimittyvät kohdesanan kanssa ennen ajan loppumista',
+        helperText: 'Etsi ja klikkaa kaikki sanat jotka riimittyvät keskellä olevan sanan kanssa. Vihreä tarkoittaa oikein, punainen väärin!'
+      }
+    }
+  },
+  {
     id: 'two-bar',
     translations: {
       en: {
