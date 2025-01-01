@@ -13,7 +13,7 @@ import { beats } from './data/beats'
 import { useTranslation } from './services/TranslationContext'
 
 function App() {
-  const { translate } = useTranslation();
+  const { translate, language } = useTranslation();
   
   // Add effect to update document title
   useEffect(() => {
@@ -29,7 +29,7 @@ function App() {
   const [wordCounter, setWordCounter] = useState(0)
   const [shuffledWords, setShuffledWords] = useState([])
   const [selectedBeatId, setSelectedBeatId] = useState('night-ride')
-  const [selectedVocabulary, setSelectedVocabulary] = useState('generic_rap')
+  const [selectedVocabulary, setSelectedVocabulary] = useState('fi_generic_rap')
   const [isPlaying, setIsPlaying] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
 
@@ -241,7 +241,6 @@ function App() {
 
   const renderTrainingMode = () => {
     const currentMode = trainingModes.find(mode => mode.id === selectedMode);
-    const { language } = useTranslation();
     
     switch (selectedMode) {
       case 'four-bar':

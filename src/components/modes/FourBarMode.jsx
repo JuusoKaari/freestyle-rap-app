@@ -32,10 +32,10 @@ const FourBarMode = ({
           <span 
             className={`bar target ${isActive ? 'active' : ''} ${isWordChanging ? 'changing' : ''}`}
           >
-            {shuffledWords[wordCounter]}
+            {shuffledWords[wordCounter]?.word}
           </span>
           <span className="next-word">
-            Next: {shuffledWords[wordCounter + 1]}
+            Next: {shuffledWords[wordCounter + 1]?.word}
           </span>
         </div>
       );
