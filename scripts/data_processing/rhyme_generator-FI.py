@@ -8,7 +8,7 @@ import sys
 
 # Configuration constants
 MIN_SYLLABLES = 2
-MAX_SYLLABLES = 3
+MAX_SYLLABLES = 5
 
 class RhymeGeneratorGUI:
     def __init__(self, root):
@@ -169,12 +169,64 @@ def load_existing_data(output_file):
             return json.loads(json_str)
     return {}
 
+def is_appropriate_word(word):
+    """Check if the word is appropriate (not a curse word or offensive term)."""
+    # Add Finnish inappropriate words here
+    inappropriate_words = {
+        # Basic curse words and their variations
+        "vittu", "vitun", "vitussa", "vittuun", "vituiks", "vituilleen", "vitunmoinen",
+        "paska", "paskan", "paskaa", "paskat", "paskaks", "paskiainen", "paskova",
+        "perse", "perseen", "perseessä", "perseeseen", "perseet", "perseily", "perseellään",
+        "kyrpä", "kyrpää", "kyrpänä", "kyrpiä", "kyrpiintynyt",
+        "mulkku", "mulkun", "mulkkua", "mulkut", "mulkvisti",
+        
+        # Sexual and NSFW terms
+        "huora", "huoran", "huoraa", "huorat", "huorissa",
+        "lutka", "lutkan", "lutkaa", "lutkat",
+        "runkkari", "runkata", "runkkaa", "runkku", "runkkaaja",
+        "pillu", "pillua", "pilluun", "pillut", "pillunnuolija",
+        "kulli", "kullin", "kullia", "kullit",
+        "nussia", "nussii", "nussittu", "nussiminen",
+        "panna", "panee", "panoja", "paneminen", "paneskella",
+        "dildo", "dildot", "dildoja",
+        
+        # Slurs and offensive terms
+        "neekeri", "neekerin", "neekereitä",
+        "homppeli", "hintti", "hintin", "hintit", "hinttari",
+        "huorari", "huorapukki",
+        
+        # Religious curse words
+        "saatana", "saatanan", "saatanat", "saatanallinen", "saatanasti",
+        "helvetti", "helvetin", "helvettiin", "helvetisti",
+        "perkele", "perkeleen", "perkeleesti", "perkeleet",
+        "jumalauta", "jumaliste",
+        
+        # Compound insults
+        "kusipää", "kusipään", "kusipäät", "kusiainen",
+        "vittupää", "mulkkupää", "paskapää", "paskiainen",
+        "persreikä", "persnussija"
+    }
+    
+    # Convert to lowercase for comparison
+    word = word.lower()
+    
+    # Check if the word itself is inappropriate
+    if word in inappropriate_words:
+        return False
+    
+    # Check if the word contains any inappropriate words as substrings
+    for bad_word in inappropriate_words:
+        if bad_word in word:
+            return False
+    
+    return True
+
 def prosessoi_tiedosto(input_file, output_dir):
     with open(input_file, "r", encoding="utf-8") as file:
         text = file.read()
     
     # Remove punctuation and split into words
-    text = re.sub(r'[.,!?:;"\'\(\)\[\]{}]', '', text)
+    text = re.sub(r'[-.,!?:;*”"/\'\(\)\[\]{}]', '', text)
     # Split by whitespace and handle underscore-separated words
     sanat = []
     for word in text.split():
@@ -208,6 +260,10 @@ def prosessoi_tiedosto(input_file, output_dir):
         
         # Skip if no valid vowel pattern or not 2-3 syllables
         if not vowel_pattern or syllable_count not in [2, 3]:
+            continue
+
+        # Skip inappropriate words
+        if not is_appropriate_word(sana):
             continue
 
         # Create pattern key (e.g., "a-e" or "a-e-i")

@@ -1,9 +1,19 @@
 export default {
     "a-a": [
         "a-gar",
+        "a-jan",
+        "a-jat",
+        "a-laks",
+        "a-lal",
+        "a-lan",
         "a-las",
+        "a-lat",
+        "a-rab",
         "ba-ba",
+        "ca-ra",
         "da-ta",
+        "ha-ha",
+        "ha-jal",
         "ha-ka",
         "ha-na",
         "ha-pan",
@@ -12,50 +22,91 @@ export default {
         "ja-ha",
         "ja-lan",
         "ja-las",
+        "ja-lat",
         "ja-na",
         "ja-ta",
         "ka-jal",
         "ka-la",
+        "ka-lan",
         "ka-ma",
+        "ka-man",
+        "ka-mat",
         "ka-na",
         "ka-ra",
         "ka-sa",
+        "kra-ka",
+        "la-dan",
+        "la-dast",
         "la-ma",
         "la-na",
         "la-pa",
         "la-ta",
         "la-va",
+        "la-val",
+        "la-valt",
+        "la-vast",
         "ma-ha",
+        "ma-hat",
         "ma-ja",
         "ma-na",
+        "ma-sa",
+        "ma-san",
         "na-has",
         "na-pa",
         "na-palm",
         "na-ta",
+        "pa-da",
+        "pa-das",
         "pa-ha",
+        "pa-han",
+        "pa-hat",
         "pa-ja",
         "pa-la",
+        "pa-lan",
+        "pa-las",
+        "pa-lat",
         "pa-ra",
         "pa-ras",
+        "pa-rast",
         "pa-ta",
         "ra-ha",
+        "ra-han",
+        "ra-hat",
         "ra-ja",
+        "ra-jat",
         "ra-kas",
         "ra-pa",
         "ra-ta",
         "ra-tas",
+        "sa-dal",
         "sa-das",
         "sa-ha",
+        "sa-han",
         "sa-la",
         "sa-ma",
+        "sa-mal",
+        "sa-malt",
+        "sa-man",
+        "sa-mas",
+        "sa-mat",
         "sa-na",
+        "sa-nan",
+        "sa-nat",
         "sa-ra",
         "sa-ta",
+        "sta-ran",
         "ta-ka",
+        "ta-kan",
+        "ta-kas",
         "ta-las",
         "ta-pa",
+        "ta-pan",
+        "ta-pas",
+        "ta-pat",
         "ta-san",
         "ta-tar",
+        "ta-vaks",
+        "ta-val",
         "va-ha",
         "va-ja",
         "va-ka",
@@ -70,10 +121,12 @@ export default {
     "a-a-a": [
         "a-ha-va",
         "a-ja-ja",
+        "a-ja-vat",
         "a-ka-na",
         "a-la-va",
         "a-na-nas",
         "a-pa-ja",
+        "a-ra-rat",
         "a-ra-va",
         "a-va-ra",
         "a-va-ta",
@@ -86,12 +139,17 @@ export default {
         "ha-ra-ta",
         "ha-ra-va",
         "ha-ta-ra",
+        "ha-va-na",
         "ja-ka-ja",
+        "ja-ka-mal",
+        "ja-ka-vat",
         "ja-la-va",
         "ka-ja-va",
         "ka-ka-ra",
+        "ka-ka-rat",
         "ka-ka-ta",
         "ka-ma-la",
+        "ka-ma-lan",
         "ka-ma-na",
         "ka-ma-ra",
         "ka-na-la",
@@ -104,24 +162,33 @@ export default {
         "kra-ka-ta",
         "la-da-ta",
         "la-ka-na",
+        "la-ka-nat",
         "la-ka-ta",
         "la-ma-ta",
         "la-na-ta",
+        "la-pa-ta",
         "ma-ha-kas",
         "ma-ja-va",
         "ma-la-ga",
+        "ma-la-gas",
+        "ma-ma-sa",
         "ma-na-la",
         "ma-na-ta",
         "ma-ra-kas",
         "ma-ta-la",
         "ma-ta-ra",
         "na-ka-ta",
+        "na-na-na",
+        "na-pa-kat",
         "na-pa-ta",
         "pa-ka-na",
+        "pa-ka-nat",
         "pa-ka-ra",
+        "pa-ka-rat",
         "pa-ka-ta",
         "pa-la-ta",
         "pa-la-va",
+        "pa-la-van",
         "pa-na-ma",
         "pa-pa-na",
         "pa-ra-ta",
@@ -136,12 +203,16 @@ export default {
         "sa-ka-ra",
         "sa-ka-ta",
         "sa-la-ma",
+        "sa-la-man",
         "sa-la-ta",
         "sa-la-va",
         "sa-ra-na",
+        "sa-ra-nat",
         "sa-ta-ma",
+        "sa-ta-vat",
         "sha-ka-ta",
         "ta-ka-na",
+        "ta-pa-na",
         "ta-sa-ta",
         "ta-va-ra",
         "ta-va-ta",
@@ -157,52 +228,104 @@ export default {
     ],
     "a-a-aa": [
         "a-la-maa",
+        "a-va-taan",
         "ha-ka-maa",
+        "ha-ra-vaa",
+        "ja-ka-kaa",
+        "ja-ka-maan",
+        "ka-ma-laa",
+        "ka-na-vaa",
+        "ka-na-vaan",
+        "ka-ra-taan",
+        "ma-na-laan",
+        "ma-na-taan",
+        "pa-la-maan",
+        "pa-la-taan",
         "ra-ja-maa",
+        "ra-pa-laa",
+        "sa-ta-maan",
         "ta-ka-maa",
-        "ta-sa-maa"
+        "ta-sa-maa",
+        "ta-va-raa",
+        "ta-va-taan",
+        "va-ka-vaa",
+        "va-ka-vaan"
     ],
     "a-a-e": [
+        "a-ja-es",
         "ha-ka-nen",
         "ha-pa-te",
         "ja-la-ke",
         "ka-ra-te",
         "la-pa-nen",
         "ma-da-me",
+        "ma-ma-se",
         "pa-ha-nen",
         "pa-la-nen",
+        "pa-la-set",
+        "pa-ra-ne",
+        "pa-ra-nen",
         "ra-ha-ke",
+        "sa-la-nen",
         "sa-ma-ten",
         "sa-na-nen",
         "sa-ra-ke",
-        "sa-ta-nen"
+        "sa-ta-en",
+        "sa-ta-nen",
+        "sa-ta-sen",
+        "va-ta-nen"
     ],
     "a-a-ee": [
         "ka-ba-ree",
         "ka-na-pee",
-        "pa-ra-nee"
+        "pa-ra-nee",
+        "va-la-see"
+    ],
+    "a-a-eu": [
+        "a-ma-deus"
     ],
     "a-a-i": [
         "a-la-sin",
         "a-la-ti",
         "a-ra-bi",
         "a-ta-ri",
+        "a-va-sin",
+        "a-va-sit",
         "fa-ra-di",
         "fa-sa-di",
         "ha-pa-tin",
+        "ja-ka-sin",
         "ja-pa-ni",
+        "ja-pa-nin",
         "ka-ma-ri",
         "ka-sa-ri",
+        "ka-sa-ril",
+        "ka-sa-rin",
+        "kra-va-tin",
         "ma-ka-ki",
+        "ma-ka-sit",
         "ma-ta-mi",
         "pa-ka-ri",
+        "pa-la-sin",
+        "pa-la-vin",
         "pa-ra-hin",
+        "ra-ja-ni",
         "sa-fa-ri",
         "sa-la-mi",
+        "sa-la-sin",
+        "sa-na-ni",
+        "sa-na-si",
+        "ta-ka-si",
+        "ta-ka-sin",
         "ta-la-ri",
         "ta-pa-ni",
+        "ta-pa-si",
+        "ta-pa-sin",
         "ta-ta-mi",
-        "va-pa-ri"
+        "va-ha-sin",
+        "va-pa-ri",
+        "va-ra-ni",
+        "va-ra-si"
     ],
     "a-a-ie": [
         "ha-ka-mies",
@@ -217,8 +340,16 @@ export default {
         "va-ra-mies",
         "va-ra-tie"
     ],
+    "a-a-ii": [
+        "ba-sa-rii",
+        "ja-pa-niin",
+        "pa-la-sii",
+        "sa-la-sii",
+        "va-ka-vii"
+    ],
     "a-a-o": [
         "a-ja-ton",
+        "a-ma-zon",
         "fa-ra-o",
         "ja-ka-mo",
         "ka-pa-lo",
@@ -236,11 +367,18 @@ export default {
         "va-na-mo",
         "va-ra-ton"
     ],
+    "a-a-oi": [
+        "la-ka-nois",
+        "pa-ka-rois",
+        "pa-ka-roit",
+        "pa-ra-noid"
+    ],
     "a-a-u": [
         "a-ja-tus",
         "ha-pa-tus",
         "ka-ka-du",
         "pa-ja-tus",
+        "pa-la-nut",
         "pa-pa-tus",
         "sa-da-tus",
         "ta-ka-mus",
@@ -282,23 +420,79 @@ export default {
     "a-aa": [
         "a-haa",
         "a-jaa",
+        "a-laa",
+        "a-saa",
+        "a-vaa",
+        "a-vaan",
+        "a-vaat",
+        "a-zaa",
+        "fla-vaa",
+        "ha-laa",
+        "ha-laat",
         "ha-maan",
+        "ja-jaa",
         "ja-kaa",
         "ja-maan",
+        "ka-maa",
+        "ka-saa",
+        "ka-saan",
+        "ka-taa",
+        "ka-taan",
+        "la-maa",
         "la-maan",
+        "la-taa",
+        "la-taan",
+        "la-taat",
+        "la-vaa",
+        "ma-jaa",
+        "ma-kaa",
+        "ma-kaan",
+        "ma-kaat",
+        "ma-laas",
+        "ma-naat",
+        "ma-saa",
         "ma-taa",
+        "na-paa",
+        "pa-haa",
+        "pa-haan",
         "pa-laa",
+        "pa-laan",
+        "pa-laat",
+        "pra-daa",
+        "pra-haan",
+        "ra-haa",
+        "ra-jaa",
+        "ra-taa",
+        "ra-vaa",
         "sa-laa",
         "sa-laan",
+        "sa-maa",
+        "sa-maan",
+        "sa-naa",
+        "sa-naan",
+        "sa-raa",
         "sa-taa",
+        "sa-taan",
+        "sta-gaa",
         "ta-kaa",
+        "ta-kaan",
         "ta-naan",
+        "ta-paa",
+        "ta-paan",
+        "ta-paat",
         "ta-saan",
         "va-jaa",
         "va-kaa",
         "va-laa",
+        "va-laalt",
+        "va-laan",
         "va-paa",
-        "va-raan"
+        "va-paal",
+        "va-paan",
+        "va-paas",
+        "va-raa",
+        "va-raan",
+        "va-raat"
     ],
     "a-aa-a": [
         "a-jas-sa",
@@ -310,20 +504,44 @@ export default {
         "ha-nak-ka",
         "ha-rak-ka",
         "ha-ral-la",
+        "ja-lal-la",
+        "ja-las-sa",
         "ja-mas-sa",
         "ka-hak-ka",
+        "ka-mal-la",
         "ka-nal-ja",
         "ka-pak-ka",
         "ka-rah-ka",
         "ka-sak-ka",
+        "ka-sas-sa",
+        "la-maa-jan",
         "la-mas-sa",
         "la-mas-ta",
+        "la-val-la",
+        "ma-dal-lat",
         "ma-hat-ma",
         "ma-jak-ka",
+        "ma-jas-ta",
         "ma-naa-ja",
         "na-pak-ka",
         "na-sak-ka",
         "na-vak-ka",
+        "pa-hal-la",
+        "pa-hal-ta",
+        "pa-has-ta",
+        "pa-kas-tan",
+        "pa-laa-mas",
+        "pa-ran-na",
+        "pa-ras-ta",
+        "ra-dal-la",
+        "ra-hal-la",
+        "ra-han-sa",
+        "ra-jan-sa",
+        "ra-jas-sa",
+        "ra-kas-ta",
+        "ra-kas-tan",
+        "ra-kas-tat",
+        "ra-tan-sa",
         "ra-vak-ka",
         "sa-dan-ta",
         "sa-haa-ja",
@@ -331,23 +549,32 @@ export default {
         "sa-las-sa",
         "sa-mal-la",
         "sa-mas-sa",
+        "sa-mas-ta",
+        "sa-nal-la",
+        "sa-nas-ta",
+        "sa-tas-ta",
         "ta-han-sa",
         "ta-kaa-ja",
         "ta-nak-ka",
         "ta-nas-sa",
         "ta-paa-ma",
+        "ta-paa-vat",
+        "ta-pan-sa",
         "ta-rak-ka",
         "ta-saa-ja",
         "ta-sal-la",
         "ta-sal-ta",
         "ta-sas-sa",
         "ta-sas-ta",
+        "ta-val-la",
         "va-kaa-ja",
         "va-lak-ka",
         "va-lan-ta",
+        "va-paa-na",
         "va-raa-ja",
         "va-ral-la",
         "va-ral-ta",
+        "va-ran-sa",
         "va-ras-sa",
         "va-ras-ta"
     ],
@@ -358,11 +585,14 @@ export default {
         "a-jat-taa",
         "a-lal-laan",
         "a-nas-taa",
+        "a-nas-taan",
         "a-ras-taa",
+        "a-vaa-maan",
         "a-var-taa",
         "ha-hat-taa",
         "ha-jah-taa",
         "ha-jal-laan",
+        "ha-laa-maan",
         "ha-pat-taa",
         "ha-ral-laan",
         "ka-hah-taa",
@@ -371,23 +601,34 @@ export default {
         "ka-kat-taa",
         "ka-lah-taa",
         "ka-las-taa",
+        "ka-pak-kaan",
         "ka-rah-taa",
         "ka-vah-taa",
         "ka-val-taa",
         "la-vas-taa",
         "ma-dal-taa",
+        "ma-kaa-maan",
         "na-rah-taa",
         "pa-jat-taa",
         "pa-kas-taa",
+        "pa-kat-kaa",
+        "pa-laa-maan",
         "pa-mah-taa",
         "pa-pat-taa",
         "pa-rah-taa",
         "pa-ran-taa",
+        "pa-ras-taan",
+        "ra-dal-laan",
+        "ra-dal-taan",
         "ra-has-taa",
         "ra-kas-taa",
+        "ra-kas-taaks",
         "ra-sah-taa",
         "sa-mas-taa",
+        "sa-naa-kaa",
+        "sa-naa-kaan",
         "sa-nas-taa",
+        "sa-nas-taan",
         "sa-ras-taa",
         "ta-hal-laan",
         "ta-pat-taa",
@@ -395,22 +636,28 @@ export default {
         "va-lah-taa",
         "va-pah-taa",
         "va-ras-taa",
+        "va-ras-taan",
         "va-vah-taa"
     ],
     "a-aa-ai": [
         "a-lak-kain",
         "ra-jak-kain",
+        "sa-man-lail",
+        "sa-man-laist",
         "ta-sak-kain"
     ],
     "a-aa-e": [
         "a-gaa-ve",
         "a-lan-ne",
+        "a-vaam-me",
         "a-van-ne",
         "ha-jal-le",
         "ha-ral-le",
         "la-sag-ne",
+        "la-val-le",
         "la-vas-te",
         "pa-kas-te",
+        "ra-dal-le",
         "sa-dan-nes",
         "sa-maan-ne",
         "sa-man-ne",
@@ -419,10 +666,15 @@ export default {
         "va-ral-le"
     ],
     "a-aa-ee": [
+        "a-laas-teen",
         "a-lal-leen",
         "ha-jal-leen",
+        "ha-kan-neet",
         "ha-ral-leen",
-        "sa-nal-leen"
+        "ka-ran-neet",
+        "pa-ran-teen",
+        "sa-nal-leen",
+        "ta-hal-teen"
     ],
     "a-aa-ei": [
         "a-part-heid"
@@ -436,6 +688,7 @@ export default {
         "a-las-ti",
         "a-pas-si",
         "a-ras-ti",
+        "a-sas-ki",
         "a-var-rin",
         "ba-lans-si",
         "ba-naa-li",
@@ -451,6 +704,7 @@ export default {
         "fa-saa-ni",
         "fa-taa-li",
         "ga-lak-si",
+        "ga-lak-sin",
         "gra-naat-ti",
         "ha-lat-ti",
         "ha-sar-di",
@@ -464,7 +718,9 @@ export default {
         "ka-sar-mi",
         "ka-tar-ri",
         "ka-tar-sis",
+        "ka-vah-dit",
         "kra-naat-ti",
+        "kra-vaat-ti",
         "kra-vat-ti",
         "kva-saa-ri",
         "pa-has-ti",
@@ -474,11 +730,15 @@ export default {
         "pa-pat-ti",
         "pa-raa-ti",
         "pa-rak-ki",
+        "pa-ran-si",
+        "pa-ran-sit",
         "pa-saa-si",
         "pa-saa-ti",
         "pa-taa-ni",
         "pla-kaat-ti",
         "pla-taa-ni",
+        "ra-kas-tin",
+        "ra-kas-tit",
         "sa-bat-ti",
         "sa-das-ti",
         "sa-kaa-li",
@@ -499,7 +759,16 @@ export default {
         "va-sal-li"
     ],
     "a-aa-ie": [
-        "ja-lan-tie"
+        "ja-lan-tie",
+        "sa-man-tien"
+    ],
+    "a-aa-ii": [
+        "ba-lans-sii",
+        "fa-taa-lii",
+        "ha-kat-tii",
+        "ha-lat-tiin",
+        "pa-lat-siin",
+        "ta-vat-tiin"
     ],
     "a-aa-iu": [
         "ba-naa-lius",
@@ -515,11 +784,14 @@ export default {
         "la-taa-mo",
         "la-vas-how",
         "pa-jat-so",
+        "pa-jat-son",
         "ra-has-to",
         "ra-pak-ko",
         "sa-nas-to",
+        "sa-taa-ko",
         "sa-vak-ko",
         "ta-bas-ko",
+        "ta-saar-vo",
         "ta-san-ko",
         "va-lan-nos",
         "va-raa-mo",
@@ -527,20 +799,27 @@ export default {
         "va-ras-to"
     ],
     "a-aa-oo": [
-        "pa-rat-koon"
+        "pa-rat-koon",
+        "sa-nas-toon"
     ],
     "a-aa-u": [
         "a-jas-tus",
         "a-nas-tus",
         "a-var-rus",
+        "a-vat-tu",
         "ha-jaan-nus",
+        "ha-kan-nut",
+        "ha-vah-dut",
         "ka-hah-dus",
         "ka-jah-dus",
         "ka-jas-tus",
         "ka-lah-dus",
         "ka-las-tus",
         "ka-rah-dus",
+        "ka-ran-nut",
+        "ka-san-nut",
         "ka-val-lus",
+        "la-kas-tun",
         "la-maan-nus",
         "la-vas-tus",
         "ma-dal-lus",
@@ -550,46 +829,70 @@ export default {
         "pa-rah-dus",
         "pa-ran-nus",
         "ra-has-tus",
+        "ra-kas-tu",
+        "ra-kas-tun",
         "ra-sah-dus",
         "sa-mas-tus",
         "sa-nas-tus",
         "sa-ras-tus",
+        "ta-pah-du",
+        "ta-pah-tu",
+        "ta-pah-tus",
         "va-lah-dus",
         "va-pah-dus",
+        "va-rat-tu",
         "va-vah-dus"
     ],
     "a-aa-ui": [
-        "a-las-suin"
+        "a-las-suin",
+        "la-kas-tui",
+        "ra-kas-tui",
+        "ra-kas-tuin",
+        "ra-kas-tuit",
+        "ta-pah-tui"
     ],
     "a-aa-uu": [
         "ha-nak-kuus",
+        "ha-vah-tuu",
         "ka-lan-luu",
         "ma-han-suu",
         "na-vak-kuus",
+        "pa-kah-tuu",
+        "ra-kas-tuu",
         "ta-nak-kuus",
+        "ta-pah-tuu",
         "va-rak-kuus"
     ],
     "a-aa-äi": [
         "a-las-päin",
-        "ta-kaa-päin"
+        "ta-kaa-päin",
+        "ta-kas-päin"
     ],
     "a-aa-ää": [
         "ka-lan-pää",
         "ka-nan-pää"
     ],
+    "a-aaai-aa": [
+        "va-paaai-kaa"
+    ],
     "a-aai-a": [
         "va-paail-ta"
+    ],
+    "a-aai-oi": [
+        "ra-jaai-toi"
     ],
     "a-aaui-i": [
         "va-paauin-ti"
     ],
     "a-ai": [
         "a-vain",
+        "pa-lais",
         "ra-jain",
         "ta-sain",
         "va-kain"
     ],
     "a-ai-a": [
+        "a-vain-ta",
         "ha-lail-la",
         "ha-lais-ta",
         "ha-vai-ta",
@@ -610,8 +913,11 @@ export default {
         "sa-lail-la",
         "sa-nail-la",
         "ta-pail-la",
+        "ta-sais-ta",
         "ta-vail-la",
-        "va-lais-ta"
+        "va-lais-ta",
+        "va-pai-na",
+        "va-pai-ta"
     ],
     "a-ai-aa": [
         "pa-rai-kaa",
@@ -620,18 +926,28 @@ export default {
     ],
     "a-ai-e": [
         "a-lai-nen",
+        "a-lai-set",
+        "a-vai-met",
         "ka-lai-nen",
         "pa-hai-nen",
         "pa-rai-ten",
         "ra-pai-nen",
         "sa-lai-nen",
+        "sa-lai-set",
         "sa-mai-nen",
         "sa-nai-nen",
         "ta-kai-nen",
         "ta-pai-nen",
         "ta-sai-nen",
+        "ta-sai-set",
         "va-kai-nen",
         "va-rai-nen"
+    ],
+    "a-ai-ee": [
+        "sa-lai-seen",
+        "sa-lail-leet",
+        "ta-pai-lee",
+        "va-lai-see"
     ],
     "a-ai-i": [
         "da-dais-mi",
@@ -641,6 +957,9 @@ export default {
         "pa-raik-si",
         "ta-kai-sin",
         "va-lai-sin"
+    ],
+    "a-ai-ii": [
+        "a-vai-mii"
     ],
     "a-ai-o": [
         "ha-vain-to",
@@ -661,15 +980,19 @@ export default {
         "va-lais-tus"
     ],
     "a-ai-ui": [
+        "sa-mais-tuin",
         "ta-kais-tuin"
     ],
     "a-ai-uu": [
         "a-lai-suus",
+        "ha-lai-luu",
         "ka-lai-suus",
         "na-pai-suus",
         "sa-lai-suus",
+        "sa-mais-tuu",
         "ta-pai-suus",
-        "ta-sai-suus"
+        "ta-sai-suus",
+        "va-lais-tuu"
     ],
     "a-au": [
         "a-vaus",
@@ -687,6 +1010,8 @@ export default {
         "ra-jaus",
         "sa-haus",
         "sa-laus",
+        "ska-gaus",
+        "spra-gaus",
         "ta-kaus",
         "ta-paus",
         "ta-saus",
@@ -703,7 +1028,10 @@ export default {
         "ka-sau-ma",
         "la-tau-ma",
         "pa-lau-ma",
+        "pa-lau-ta",
         "ta-kau-ma",
+        "va-pau-tan",
+        "va-paut-ta",
         "va-rau-ma"
     ],
     "a-au-aa": [
@@ -726,9 +1054,13 @@ export default {
         "va-paut-taa"
     ],
     "a-au-e": [
-        "pa-lau-te"
+        "pa-lau-te",
+        "ta-pauk-set",
+        "va-pau-den",
+        "va-rauk-sel"
     ],
     "a-au-u": [
+        "a-vau-du",
         "ha-jau-tus",
         "na-pau-tus",
         "pa-lau-tus",
@@ -737,43 +1069,79 @@ export default {
         "va-kau-tus",
         "va-pau-tus"
     ],
+    "a-au-ui": [
+        "a-jau-duin",
+        "a-vau-tui"
+    ],
+    "a-au-uu": [
+        "a-jau-tuu",
+        "a-vau-tuu"
+    ],
     "a-e": [
         "a-vec",
+        "a-xel",
         "bla-zer",
+        "ca-se",
+        "fa-ce",
+        "ga-me",
+        "gra-de",
         "gra-pe",
+        "ha-et",
         "ha-je",
         "ha-ke",
         "ha-me",
+        "ha-nes",
         "ja-de",
+        "ja-re",
         "ka-de",
+        "ka-het",
         "ka-je",
+        "ka-ke",
         "ka-le",
         "ka-re",
         "ka-te",
+        "la-me",
         "la-pe",
         "la-ser",
         "ma-de",
+        "ma-ke",
+        "ma-kes",
+        "ma-te",
+        "na-me",
         "pa-he",
+        "pa-len",
+        "pa-ne",
+        "pa-nen",
+        "pa-net",
+        "pa-te",
         "ra-vet",
         "sa-de",
         "sa-ke",
         "sa-ne",
         "sa-ves",
+        "ta-ge",
         "ta-se",
         "va-je",
         "va-le",
-        "va-sen"
+        "va-sen",
+        "va-sent"
     ],
     "a-e-a": [
         "a-le-ta",
         "a-me-ba",
         "a-pe-a",
         "a-se-ma",
+        "a-se-man",
+        "a-se-tan",
         "ba-se-ball",
         "ha-ke-a",
         "ha-pe-kas",
         "ha-pe-ra",
+        "ja-e-ta",
+        "ka-le-va",
+        "ka-le-van",
         "ka-me-ra",
+        "ka-ne-da",
         "ka-pe-a",
         "ka-ve-ta",
         "la-ke-a",
@@ -782,6 +1150,8 @@ export default {
         "na-se-va",
         "pa-e-ta",
         "pa-he-ta",
+        "pa-me-la",
+        "pa-se-ja",
         "pra-me-a",
         "ra-pe-a",
         "sa-e-ta",
@@ -789,18 +1159,47 @@ export default {
         "sa-me-a",
         "sa-me-ta",
         "sa-pe-kas",
+        "sa-ve-la",
         "sa-ve-ta",
         "ta-e-ta",
         "va-je-ta"
     ],
+    "a-e-aa": [
+        "a-je-taan",
+        "a-le-taa",
+        "a-se-maan",
+        "cha-se-aan",
+        "ha-e-taa",
+        "ha-e-taan",
+        "ha-ke-maan",
+        "ja-e-taan",
+        "ka-le-vaan",
+        "ma-ke-aa",
+        "sa-ke-aa",
+        "sa-me-aan",
+        "va-le-taan"
+    ],
     "a-e-e": [
+        "a-je-len",
         "a-se-te",
-        "ha-pe-te"
+        "ha-pe-te",
+        "pa-ke-net",
+        "pa-le-le",
+        "sa-ne-le"
+    ],
+    "a-e-ee": [
+        "ma-te-lee",
+        "pa-he-nee",
+        "pa-ke-nee",
+        "pa-le-lee",
+        "sa-ne-lee",
+        "sa-te-lee"
     ],
     "a-e-i": [
         "a-se-tin",
         "a-ze-ri",
         "ca-te-ring",
+        "fa-ze-rin",
         "ga-e-li",
         "ha-ke-tin",
         "ha-pe-tin",
@@ -808,18 +1207,38 @@ export default {
         "ka-he-li",
         "ka-me-li",
         "ka-ne-li",
+        "ka-se-til",
+        "ka-se-tin",
         "ka-ve-ri",
+        "ka-ve-ril",
+        "ka-ve-rit",
         "la-se-ri",
         "la-ve-ri",
+        "pa-he-ni",
+        "pa-ke-ni",
+        "pa-ke-nin",
+        "pa-ke-tis",
+        "pa-ke-tit",
         "pa-pe-ri",
+        "pa-pe-ril",
+        "pa-pe-rin",
+        "ra-ke-tin",
         "sa-de-tin",
         "sa-ne-lin",
         "sa-pe-li",
         "stra-te-gi",
+        "ta-pe-til",
+        "ta-pe-tin",
         "va-ne-ri"
     ],
     "a-e-ie": [
         "a-se-tie"
+    ],
+    "a-e-ii": [
+        "ka-me-liin",
+        "ka-ve-rii",
+        "la-ge-rii",
+        "pa-pe-riin"
     ],
     "a-e-o": [
         "a-se-mo",
@@ -827,6 +1246,9 @@ export default {
         "ma-me-ro",
         "na-pe-ro",
         "pla-se-bo"
+    ],
+    "a-e-oi": [
+        "pa-ke-toi"
     ],
     "a-e-u": [
         "a-je-lu",
@@ -850,40 +1272,70 @@ export default {
         "sa-de-sää"
     ],
     "a-ee": [
+        "a-seen",
+        "ha-kee",
+        "ha-meen",
+        "ha-nee",
         "ka-mee",
         "la-mee",
-        "pa-tee"
+        "ma-kee",
+        "ma-tee",
+        "pa-tee",
+        "sa-lee",
+        "sa-meest",
+        "sa-teen",
+        "sa-teet",
+        "sna-ree",
+        "wa-vee"
     ],
     "a-ee-a": [
         "a-gen-da",
         "a-jel-la",
         "a-lem-ma",
         "a-lem-mas",
+        "a-lem-mat",
         "a-nel-la",
         "a-ree-na",
+        "a-see-na",
+        "a-seel-la",
+        "a-seen-sa",
         "ha-en-ta",
         "ja-el-la",
         "ka-ner-va",
+        "ka-tel-la",
+        "ka-tet-ta",
         "la-del-la",
         "la-del-ma",
         "ma-del-la",
         "na-kel-la",
+        "na-ker-ran",
         "na-vet-ta",
         "pa-el-la",
         "pa-lel-la",
+        "pa-rem-mat",
+        "pla-nee-tan",
         "pla-neet-ta",
+        "ra-ken-na",
+        "ra-ken-nan",
         "sa-del-la",
+        "sa-det-ta",
         "sa-nel-la",
+        "sa-teel-la",
+        "sa-tees-sa",
         "ta-em-ma",
         "ta-em-mas",
         "ta-pel-la",
         "ta-ver-na",
         "va-del-ma",
+        "va-el-lan",
         "va-lel-la",
-        "va-lel-ma"
+        "va-lel-ma",
+        "va-sen-ta",
+        "wa-ter-man"
     ],
     "a-ee-aa": [
         "a-her-taa",
+        "a-jel-laan",
         "a-lem-paa",
         "a-len-taa",
         "a-sen-taa",
@@ -891,15 +1343,20 @@ export default {
         "ha-et-taa",
         "ha-ket-taa",
         "ha-pet-taa",
+        "ka-hes-taan",
         "ka-jen-taa",
         "ka-ven-taa",
         "la-ven-taa",
         "ma-sen-taa",
         "na-ker-taa",
+        "pa-hem-paa",
         "pa-hen-taa",
         "pa-ker-taa",
         "pa-lel-taa",
         "pa-net-taa",
+        "pa-rem-paa",
+        "pa-rem-paan",
+        "pla-neet-taa",
         "ra-ken-taa",
         "sa-det-taa",
         "sa-men-taa",
@@ -907,6 +1364,8 @@ export default {
         "sa-vet-taa",
         "ta-em-paa",
         "ta-ker-taa",
+        "ta-pel-laa",
+        "ta-pel-laan",
         "va-el-taa",
         "va-jen-taa",
         "va-sem-paan"
@@ -930,16 +1389,26 @@ export default {
     "a-ee-e": [
         "a-sen-ne",
         "ca-mem-bert",
+        "la-el-le",
+        "pa-lel-len",
         "ra-ken-ne"
     ],
     "a-ee-ee": [
-        "a-tel-jee"
+        "a-see-see",
+        "a-tel-jee",
+        "sa-tee-seen"
+    ],
+    "a-ee-ei": [
+        "a-sen-teit"
     ],
     "a-ee-i": [
         "a-gent-ti",
+        "a-lek-si",
         "a-lem-pi",
+        "a-rem-pi",
         "a-ren-ti",
         "a-res-ti",
+        "a-see-ni",
         "a-set-ti",
         "ba-let-ti",
         "ba-ret-ti",
@@ -948,6 +1417,9 @@ export default {
         "fla-nel-li",
         "ga-meet-ti",
         "ga-sel-li",
+        "ga-sel-lit",
+        "ka-deh-di",
+        "ka-deh-din",
         "ka-dens-si",
         "ka-det-ti",
         "ka-lee-ri",
@@ -959,6 +1431,7 @@ export default {
         "la-kee-ri",
         "la-mel-li",
         "la-tek-si",
+        "la-tek-sit",
         "la-tens-si",
         "la-tent-ti",
         "la-vet-ti",
@@ -967,6 +1440,7 @@ export default {
         "ma-neet-ti",
         "ma-ren-ki",
         "pa-hem-min",
+        "pa-hem-pi",
         "pa-ket-ti",
         "pa-let-ti",
         "pa-nee-li",
@@ -974,51 +1448,101 @@ export default {
         "pa-rem-pi",
         "pa-tent-ti",
         "pla-ket-ti",
+        "ra-ken-sin",
         "ra-ket-ti",
+        "ra-peem-pi",
         "sa-ket-ti",
         "sa-let-ti",
         "sa-met-ti",
+        "sa-teek-si",
         "spa-get-ti",
         "ta-em-pi",
+        "ta-lent-ti",
         "ta-pet-ti",
         "tra-pet-si",
         "va-lens-si"
     ],
+    "a-ee-ie": [
+        "pa-rem-pien"
+    ],
+    "a-ee-ii": [
+        "a-jet-tii",
+        "a-jet-tiin",
+        "a-let-tiin",
+        "ha-et-tiin",
+        "ja-et-tiin",
+        "na-get-tii",
+        "pa-ket-tii",
+        "pa-ket-tiin",
+        "pa-rem-pii",
+        "sa-let-tii",
+        "sa-let-tiin",
+        "spa-get-tii",
+        "ta-pel-tiin",
+        "ta-pet-tiin",
+        "tra-pet-sii",
+        "va-let-tii"
+    ],
     "a-ee-o": [
+        "a-hee-o",
         "a-see-ton",
         "a-sen-to",
         "fla-men-co",
         "ka-jet-to",
         "ma-est-ro"
     ],
+    "a-ee-oo": [
+        "a-hee-oo"
+    ],
     "a-ee-u": [
         "a-her-rus",
+        "a-len-nu",
         "a-len-nus",
         "a-sen-nus",
+        "ka-tel-lu",
         "ka-ven-nus",
         "ma-sen-nus",
         "na-ker-rus",
         "pa-hen-nus",
         "pa-ker-rus",
         "ra-ken-nus",
+        "ta-ker-run",
         "ta-ker-rus",
         "va-el-lus",
         "va-jen-nus"
     ],
     "a-ee-uu": [
         "a-lem-muus",
+        "ma-sen-tuu",
         "pa-rem-muus",
-        "sa-pek-kuus"
+        "sa-pek-kuus",
+        "ta-ker-tuu"
+    ],
+    "a-ei": [
+        "a-seil"
     ],
     "a-ei-a": [
+        "a-sei-na",
+        "a-sei-ta",
+        "a-seis-ta",
+        "ha-meis-sa",
+        "ka-peil-la",
         "ka-reil-la",
         "ka-teis-sa",
         "la-kei-ja",
+        "la-seis-sa",
         "ma-dei-ra",
+        "ma-kei-ta",
         "ma-keil-la",
+        "ma-keim-man",
+        "ma-keis-ta",
+        "pa-hei-ta",
         "pa-keil-la",
         "pa-keil-ta",
+        "pa-peil-la",
         "pra-meil-la",
+        "ra-keis-ta",
+        "ra-peil-la",
         "sa-deil-ma"
     ],
     "a-ei-aa": [
@@ -1088,53 +1612,111 @@ export default {
         "sa-keu-te"
     ],
     "a-eu-u": [
+        "ha-keu-dut",
         "ma-keu-tus",
         "sa-keu-tus"
     ],
+    "a-eu-uu": [
+        "ha-keu-tuu"
+    ],
     "a-i": [
+        "a-cid",
         "a-lin",
         "a-nis",
+        "ba-rit",
+        "ba-xi",
+        "da-mis",
+        "da-ni",
+        "da-vid",
         "fa-ni",
+        "fa-nilt",
+        "ga-lis",
+        "gra-mis",
         "gra-vis",
+        "ha-ki",
+        "ha-ni",
         "ha-sis",
         "ja-mit",
+        "ja-ri",
+        "ja-rin",
         "ka-ki",
         "ka-li",
         "ka-ni",
         "ka-pi",
         "ka-ri",
         "ka-si",
+        "ka-sist",
         "kha-ki",
         "kla-ni",
         "kla-pi",
         "la-ji",
         "la-ki",
+        "la-kit",
+        "la-pin",
         "la-ri",
         "la-si",
+        "la-sin",
+        "la-sis",
+        "la-sit",
         "la-ti",
+        "ma-cit",
+        "ma-di",
         "ma-his",
+        "ma-hist",
         "ma-li",
+        "ma-mi",
         "ma-ni",
         "ma-ri",
         "ma-si",
+        "na-kit",
         "na-mi",
+        "pa-hin",
+        "pa-hint",
+        "pa-kit",
+        "pa-ni",
+        "pa-nin",
+        "pa-nit",
+        "pa-pi",
+        "pa-pin",
         "pa-ri",
+        "pa-riks",
+        "pa-ril",
+        "pa-rin",
+        "pa-ris",
+        "pa-rit",
+        "pa-sin",
         "pla-ri",
         "ra-hi",
         "ra-ki",
+        "ra-mi",
+        "ra-min",
         "ra-si",
+        "ra-tin",
         "ra-ting",
+        "ra-tis",
         "ra-vi",
         "ra-vit",
         "sa-din",
         "sa-li",
+        "sa-lin",
+        "sa-mi",
+        "sa-min",
         "sa-ri",
         "sa-vi",
         "sna-di",
+        "sna-dis",
         "sta-di",
+        "sta-din",
+        "sta-dis",
+        "sta-diss",
+        "sta-dist",
+        "sta-lin",
         "ta-gi",
         "ta-hi",
+        "ta-kin",
         "ta-li",
+        "ta-pi",
+        "ta-sis",
         "ta-vi",
         "ta-vis",
         "va-di",
@@ -1149,47 +1731,79 @@ export default {
         "a-pi-na",
         "a-ri-na",
         "a-si-a",
+        "a-si-an",
+        "a-si-at",
+        "gra-ci-as",
         "ha-ki-ja",
         "ha-li-a",
         "ha-vi-na",
+        "ka-hi-lan",
         "ka-hi-na",
         "ka-li-na",
+        "ka-ni-a",
         "ka-pi-na",
+        "ka-si-a",
+        "la-ji-a",
         "la-ji-kas",
         "la-pi-kas",
+        "la-si-a",
         "la-ti-na",
         "ma-fi-a",
         "ma-gi-a",
         "ma-ni-a",
         "ma-ni-la",
+        "ma-ri-a",
         "ma-ri-na",
         "na-hi-kas",
         "na-hi-na",
         "na-pi-na",
+        "na-ri-kal",
         "na-ri-na",
         "na-ti-na",
         "pa-ki-na",
         "pa-pi-tar",
         "pa-ri-la",
+        "pa-si-a",
+        "pa-si-last",
         "pa-ti-na",
         "pla-ti-na",
+        "pla-ti-nat",
         "ra-hi-na",
         "ra-mi-na",
         "ra-pi-at",
         "ra-pi-na",
         "ra-si-a",
+        "ra-si-ta",
         "ra-ti-na",
         "ra-vi-ta",
+        "sna-di-na",
+        "sta-di-a",
         "ta-ki-a",
+        "ta-ki-as",
         "ta-ki-la",
         "ta-ri-na",
+        "ta-ri-nan",
         "ta-ri-ta",
         "va-gi-na",
         "va-li-ta",
         "va-pi-na"
     ],
     "a-i-aa": [
-        "sa-vi-maa"
+        "a-mi-gaa",
+        "a-pi-naa",
+        "a-si-aa",
+        "ma-fi-aa",
+        "ma-ri-naa",
+        "na-ri-naa",
+        "pa-si-laa",
+        "pla-ti-naa",
+        "ra-si-aa",
+        "ra-si-aan",
+        "sa-vi-maa",
+        "ta-ri-naa",
+        "ta-ri-naan",
+        "va-gi-naan",
+        "va-li-taan"
     ],
     "a-i-e": [
         "a-li-nen",
@@ -1200,6 +1814,7 @@ export default {
         "la-ji-ke",
         "la-ji-te",
         "la-si-nen",
+        "la-si-set",
         "la-si-te",
         "pa-hi-ten",
         "pa-ri-sen",
@@ -1208,7 +1823,13 @@ export default {
         "va-si-ten"
     ],
     "a-i-ee": [
-        "ta-mi-neet"
+        "ha-vi-see",
+        "ka-ri-see",
+        "na-bi-see",
+        "sa-ti-meen",
+        "ta-mi-neet",
+        "va-pi-see",
+        "va-ri-see"
     ],
     "a-i-eu": [
         "fa-ri-seus"
@@ -1218,9 +1839,15 @@ export default {
         "gra-vi-di",
         "ka-li-fi",
         "la-ji-tin",
+        "la-si-ni",
+        "pa-ki-tin",
         "pa-ni-ni",
+        "pa-ni-sin",
+        "ra-pi-si",
         "va-li-di",
-        "va-pi-ti"
+        "va-pi-sin",
+        "va-pi-ti",
+        "va-ri-si"
     ],
     "a-i-ie": [
         "la-ki-mies"
@@ -1229,6 +1856,8 @@ export default {
         "va-li-dius"
     ],
     "a-i-o": [
+        "a-di-os",
+        "a-mi-go",
         "a-vi-o",
         "ka-pi-ot",
         "ka-si-no",
@@ -1239,10 +1868,22 @@ export default {
         "pa-ri-ton",
         "pa-ti-o",
         "ra-di-o",
+        "ra-di-os",
+        "ra-di-ot",
         "sta-di-on",
         "va-ki-o",
         "va-li-mo",
         "va-li-o"
+    ],
+    "a-i-oi": [
+        "a-si-oit",
+        "ka-pi-noi",
+        "ta-ri-noit",
+        "va-gi-noit",
+        "va-si-koit"
+    ],
+    "a-i-oo": [
+        "ra-di-oon"
     ],
     "a-i-u": [
         "a-li-tus",
@@ -1259,12 +1900,17 @@ export default {
         "va-li-tus"
     ],
     "a-i-uu": [
-        "ka-ri-suus"
+        "ka-ri-suus",
+        "ka-si-kuus"
+    ],
+    "a-i-y": [
+        "pa-ri-kyt"
     ],
     "a-i-ää": [
         "kla-ni-pää"
     ],
     "a-ie": [
+        "ha-kien",
         "ka-ries",
         "ra-bies"
     ],
@@ -1275,30 +1921,53 @@ export default {
         "spa-nie-li"
     ],
     "a-ii": [
-        "pa-riin"
+        "da-miin",
+        "da-nii",
+        "fa-nii",
+        "fla-vii",
+        "la-jii",
+        "la-jiin",
+        "la-kii",
+        "la-sii",
+        "ma-mii",
+        "ma-rii",
+        "na-mii",
+        "pa-rii",
+        "pa-riin",
+        "sa-rii",
+        "sta-dii",
+        "sta-diin",
+        "ta-kii"
     ],
     "a-ii-a": [
         "a-lim-ma",
         "a-lim-mas",
+        "ca-mil-la",
         "fra-mil-la",
         "gra-fiik-ka",
         "ha-nik-ka",
         "ha-ril-la",
+        "ha-sis-ta",
         "ha-tik-ka",
         "ha-vis-ta",
         "ka-his-ta",
         "ka-lik-ka",
         "ka-lis-ta",
         "ka-mii-na",
+        "ka-ril-la",
         "ka-ris-ma",
         "ka-ris-ta",
         "ka-rit-sa",
         "ka-tis-ka",
+        "la-sis-sa",
         "la-vit-sa",
         "ma-giik-ka",
+        "ma-his-ta",
         "ma-lik-ka",
+        "ma-mil-la",
         "ma-nil-la",
         "ma-rim-ba",
+        "ma-ris-ka",
         "ma-ris-ta",
         "ma-sii-na",
         "ma-tik-ka",
@@ -1308,22 +1977,30 @@ export default {
         "na-rik-ka",
         "na-ris-ta",
         "na-tis-ta",
+        "pa-him-mat",
         "pa-kis-ta",
         "pa-lik-ka",
         "pa-mis-ta",
         "pa-pil-la",
+        "pa-ril-la",
         "pa-ris-sa",
         "pa-ris-ta",
         "ra-his-ta",
+        "ra-mil-la",
         "ra-pis-ta",
         "ra-tik-ka",
+        "ra-tis-sa",
         "ra-tis-ta",
+        "sa-lil-la",
         "sa-pis-ka",
         "sa-vik-ka",
+        "sta-dis-sa",
         "sta-tiik-ka",
         "ta-hik-ka",
         "tra-giik-ka",
+        "va-lin-nan",
         "va-lin-ta",
+        "va-lin-tas",
         "va-nik-ka",
         "va-nil-ja",
         "va-pis-ta",
@@ -1332,6 +2009,7 @@ export default {
         "va-vis-ta"
     ],
     "a-ii-aa": [
+        "a-his-taa",
         "a-lis-taa",
         "a-lit-taa",
         "a-ris-taa",
@@ -1341,6 +2019,7 @@ export default {
         "ka-kis-taa",
         "ka-lis-taa",
         "ka-nit-taa",
+        "ka-ris-maa",
         "ka-ris-taa",
         "la-jit-taa",
         "la-kit-taa",
@@ -1348,14 +2027,20 @@ export default {
         "la-tis-taa",
         "ma-pit-taa",
         "na-pit-taa",
+        "na-rik-kaan",
+        "na-ris-taa",
         "pa-rit-taa",
         "pa-tis-taa",
         "ra-sit-taa",
+        "ra-tik-kaa",
         "ra-vis-taa",
+        "sa-pis-kaa",
         "ta-pit-taa",
         "va-lis-taa",
         "va-lit-taa",
-        "va-ris-taa"
+        "va-ris-taa",
+        "va-sik-kaa",
+        "va-vis-kaa"
     ],
     "a-ii-ai": [
         "ha-lik-kain",
@@ -1363,18 +2048,28 @@ export default {
     ],
     "a-ii-e": [
         "a-lit-se",
+        "a-mik-ses",
+        "a-mik-set",
         "fra-mil-le",
         "ha-ril-le",
+        "ja-ril-le",
         "ka-ris-te",
         "ra-vin-ne",
+        "va-lit-se",
+        "va-lit-set",
+        "va-rik-sen",
         "va-ris-te"
     ],
     "a-ii-ee": [
-        "ha-ril-leen"
+        "ha-ril-leen",
+        "ra-vit-see",
+        "va-lit-see"
     ],
     "a-ii-i": [
+        "a-lis-ti",
         "a-niit-ti",
         "a-vii-si",
+        "ba-bit-zin",
         "ba-sil-li",
         "ba-sis-ti",
         "ba-tik-ki",
@@ -1388,20 +2083,27 @@ export default {
         "gra-niit-ti",
         "gra-tii-ni",
         "gra-tis-ti",
+        "ha-sis-kin",
         "ka-lis-tin",
         "ka-nii-ni",
         "la-bii-li",
         "la-tin-ki",
         "la-vii-ni",
         "ma-lig-ni",
+        "na-ris-tin",
         "pa-him-min",
+        "pa-nii-kis",
         "pa-niik-ki",
         "pa-pil-li",
+        "pa-rii-si",
+        "pa-rii-sin",
         "pa-rik-ki",
+        "pa-ris-ti",
         "pa-tii-ni",
         "pra-lii-ni",
         "ra-dis-ti",
         "ra-sis-mi",
+        "ra-sis-mist",
         "ra-sis-ti",
         "ra-vis-tin",
         "sa-dis-mi",
@@ -1411,20 +2113,30 @@ export default {
         "sa-tii-ri",
         "sla-vis-ti",
         "sta-bii-li",
+        "sta-dii-ki",
         "sta-tii-vi",
         "sta-tis-ti",
         "ta-pii-ri",
         "ta-rif-fi",
         "tra-fiik-ki",
         "tsa-ris-mi",
+        "va-lit-si",
         "va-lit-sin",
+        "va-lit-sit",
         "va-tii-ni"
+    ],
+    "a-ii-ii": [
+        "pa-niik-kii",
+        "pa-rii-siin",
+        "ra-sis-mii",
+        "va-lit-tiin"
     ],
     "a-ii-iu": [
         "la-bii-lius",
         "sta-bii-lius"
     ],
     "a-ii-o": [
+        "a-nis-ton",
         "fla-min-go",
         "ka-rik-ko",
         "la-jis-to",
@@ -1437,6 +2149,7 @@ export default {
         "ta-dik-ko",
         "ta-lik-ko",
         "ta-sin-ko",
+        "va-hin-gon",
         "va-hin-ko",
         "va-lik-ko",
         "va-rik-ko"
@@ -1447,9 +2160,14 @@ export default {
         "ka-pis-tus",
         "ka-ris-tus",
         "pa-tis-tus",
+        "va-lin-nu",
         "va-lis-tus",
+        "va-lit-tu",
         "va-ris-tus",
         "va-vis-tus"
+    ],
+    "a-ii-uu": [
+        "a-lis-tuu"
     ],
     "a-iu": [
         "ba-rium",
@@ -1465,8 +2183,13 @@ export default {
     "a-o": [
         "a-jos",
         "a-mok",
+        "a-mor",
+        "a-vot",
         "bra-vo",
         "dra-lon",
+        "fla-co",
+        "fla-vor",
+        "ga-mo",
         "ha-ko",
         "ja-ko",
         "ja-lo",
@@ -1474,94 +2197,176 @@ export default {
         "ja-os",
         "ka-jo",
         "ka-to",
+        "ka-tolt",
+        "ka-ton",
         "ka-tos",
+        "ka-tot",
         "la-dos",
         "la-ho",
         "la-ko",
         "la-to",
+        "ma-dot",
         "ma-ho",
         "ma-to",
+        "ma-ton",
         "na-to",
+        "pa-don",
         "pa-ko",
+        "pa-kon",
         "pa-lo",
         "pa-no",
         "pa-nos",
         "pa-to",
         "ra-don",
         "ra-ko",
+        "sa-kon",
         "sa-lo",
         "sa-lon",
+        "sa-mos",
+        "sa-no",
+        "sa-non",
+        "sa-not",
         "sa-os",
         "sa-to",
         "sa-vo",
         "sla-lom",
         "ta-co",
         "ta-ho",
+        "ta-hot",
         "ta-lo",
+        "ta-lon",
+        "ta-los",
+        "ta-lot",
         "ta-os",
         "ta-rot",
         "ta-so",
         "tsha-dor",
         "va-ko",
         "va-lo",
-        "va-los"
+        "va-lon",
+        "va-los",
+        "va-lot",
+        "va-ro",
+        "sa-no"
     ],
     "a-o-a": [
         "a-jo-kas",
         "a-lo-kas",
+        "a-lo-ta",
+        "a-lo-tan",
         "a-no-a",
         "a-no-ja",
         "a-vo-kas",
+        "ha-jo-a",
         "ha-jo-ta",
         "ha-po-kas",
         "ha-ro-a",
         "ja-no-ta",
         "ka-do-ta",
+        "ka-do-tat",
+        "ka-jo-a",
         "ka-jo-ta",
+        "ka-to-a",
+        "ka-to-an",
+        "la-ho-ja",
         "la-ho-kas",
         "la-ho-ta",
         "la-o-ta",
         "la-to-a",
         "la-to-ja",
         "pa-do-ta",
+        "pa-ho-ja",
+        "pa-ko-tan",
         "pa-lo-a",
+        "pa-lo-ja",
+        "pa-to-ja",
+        "ra-ho-ja",
+        "ra-jo-ja",
+        "ra-o-ta",
+        "sa-lo-ja",
+        "sa-mo-ja",
         "sa-mo-ta",
         "sa-no-a",
         "sa-no-ja",
         "sa-no-ma",
+        "sa-no-mas",
+        "sa-no-ta",
+        "sa-no-vat",
         "sa-o-ta",
+        "sa-to-a",
+        "sa-to-ja",
         "ta-ho-kas",
         "ta-ko-a",
         "ta-ko-ja",
+        "ta-lo-a",
         "ta-so-kas",
+        "va-jo-an",
         "va-jo-ta",
+        "va-lo-a",
+        "va-lo-ja",
+        "va-lo-na",
+        "va-lo-sa",
         "va-ro-a",
         "va-ro-va",
+        "va-ro-vat",
         "va-so-a"
     ],
     "a-o-aa": [
         "a-vo-maa",
-        "sa-lo-maa"
+        "ha-jo-aa",
+        "ka-do-taan",
+        "ka-to-aa",
+        "pa-to-aa",
+        "sa-lo-maa",
+        "sa-lo-raan",
+        "sa-no-kaa",
+        "sa-no-maa",
+        "sa-no-maan",
+        "sa-no-taan",
+        "va-jo-taan",
+        "va-lo-aan",
+        "va-ro-kaa"
     ],
     "a-o-e": [
         "a-lo-ke",
+        "a-no-en",
         "ha-po-ke",
+        "ja-no-ten",
         "ja-o-ke",
+        "la-to-jen",
         "ma-to-nen",
         "pa-ko-te",
+        "ra-jo-jen",
         "ra-ko-nen",
+        "sa-no-en",
+        "sa-no-jen",
+        "ta-lo-jen",
+        "ta-vo-te",
+        "va-ro-en",
         "va-ro-ke"
+    ],
+    "a-o-ee": [
+        "sa-no-neen",
+        "sa-no-neet"
     ],
     "a-o-i": [
         "a-do-nis",
         "a-no-di",
         "a-ro-mi",
         "a-to-mi",
+        "ja-no-sin",
+        "ka-do-tin",
         "ka-lo-ri",
         "ka-to-di",
+        "ka-to-si",
+        "ka-to-sin",
         "pa-go-di",
+        "pa-ko-ni",
+        "pa-ko-tit",
         "pa-ro-ni",
-        "ra-jo-ni"
+        "ra-jo-ni",
+        "va-jo-sin",
+        "va-lo-si"
     ],
     "a-o-ie": [
         "a-jo-mies",
@@ -1570,13 +2375,21 @@ export default {
         "pa-ko-tie",
         "pa-lo-mies"
     ],
+    "a-o-ii": [
+        "sla-lo-mii"
+    ],
     "a-o-o": [
         "ja-o-ton",
         "la-to-mo",
+        "ma-ho-ton",
+        "ma-no-lo",
         "pa-ko-ton",
         "pa-lo-ton",
         "ta-ko-mo",
         "ta-lo-ton"
+    ],
+    "a-o-oo": [
+        "sa-no-koot"
     ],
     "a-o-u": [
         "a-no-mus",
@@ -1588,6 +2401,8 @@ export default {
         "pa-ko-tus",
         "sa-ko-tus",
         "sa-no-mus",
+        "sa-no-nu",
+        "sa-no-nut",
         "va-lo-tus"
     ],
     "a-o-ui": [
@@ -1610,27 +2425,82 @@ export default {
         "ja-ko-pää"
     ],
     "a-oi": [
+        "a-joi",
+        "a-join",
+        "a-jois",
+        "a-loil",
+        "a-loin",
+        "a-loit",
         "a-voin",
+        "ha-noi",
+        "ja-loin",
+        "ja-lois",
+        "ja-oin",
+        "ka-moi",
+        "ka-noi",
+        "ka-toin",
+        "ka-toit",
+        "la-voi",
+        "la-voil",
+        "na-hoin",
+        "na-noi",
+        "pa-hoi",
         "pa-hoin",
+        "pa-loiks",
+        "ra-hoi",
+        "ra-joi",
+        "sa-moi",
+        "sa-moil",
         "sa-moin",
-        "ta-voin"
+        "sa-noi",
+        "sa-noiks",
+        "sa-noin",
+        "sa-nois",
+        "sa-noist",
+        "sa-noit",
+        "sa-toi",
+        "ta-hoin",
+        "ta-loi",
+        "ta-poi",
+        "ta-soi",
+        "ta-voin",
+        "ta-vois",
+        "va-loi"
     ],
     "a-oi-a": [
         "a-jois-sa",
+        "a-loi-tan",
+        "a-loil-las",
+        "a-voin-na",
+        "ja-koi-vat",
+        "ja-loil-las",
+        "ja-loil-ta",
+        "ka-toil-la",
         "ma-koi-sa",
         "ma-koil-la",
+        "pa-hoil-la",
         "pa-koil-la",
+        "pa-loi-na",
+        "ra-jois-sa",
         "ra-koil-la",
         "sa-moil-la",
+        "sa-mois-sa",
+        "sa-noil-la",
         "sa-toi-sa",
+        "ta-soi-tan",
         "ta-sois-sa",
         "va-koil-la",
-        "va-loi-sa"
+        "va-loi-sa",
+        "va-lois-sa",
+        "va-lois-ta",
+        "va-roil-la"
     ],
     "a-oi-aa": [
         "a-joit-taa",
         "a-loil-laan",
         "a-loit-taa",
+        "ja-loil-laan",
+        "ja-lois-taan",
         "ma-joit-taa",
         "na-hoit-taa",
         "pa-hoil-laan",
@@ -1640,6 +2510,8 @@ export default {
         "sa-noit-taa",
         "ta-soit-taa",
         "ta-voit-taa",
+        "va-loi-saa",
+        "va-loi-saan",
         "va-roit-taa",
         "va-soit-taa"
     ],
@@ -1653,30 +2525,50 @@ export default {
     ],
     "a-oi-e": [
         "a-loi-te",
+        "ha-poil-le",
         "ja-noi-nen",
+        "ja-nois-ten",
         "ka-poi-nen",
         "la-koi-nen",
         "ma-koi-nen",
         "ma-toi-nen",
         "ra-joi-te",
         "ra-koi-nen",
+        "ra-koil-le",
         "sa-toi-nen",
         "ta-soi-nen",
         "ta-soi-te",
-        "ta-voi-te"
+        "ta-voi-te",
+        "va-koi-len"
     ],
     "a-oi-ee": [
         "a-loil-leen",
+        "a-voi-meen",
         "pa-hoil-leen"
     ],
     "a-oi-i": [
         "ma-ois-mi",
+        "pa-loik-si",
         "ra-joi-tin",
+        "sa-noi-hin",
+        "sa-noi-sin",
+        "sa-noi-sit",
+        "sa-noik-si",
+        "sa-noin-kin",
         "ta-ois-mi",
         "ta-soi-hin",
         "ta-soi-tin",
+        "ta-voi-tin",
+        "va-loi-hin",
+        "va-roi-hin",
         "va-roi-tin",
         "va-roik-si"
+    ],
+    "a-oi-ii": [
+        "a-voi-mii"
+    ],
+    "a-oi-o": [
+        "sa-noin-ko"
     ],
     "a-oi-u": [
         "a-joi-tus",
@@ -1703,27 +2595,56 @@ export default {
         "va-loi-suus"
     ],
     "a-oo": [
+        "a-noo",
+        "ha-joo",
+        "ha-joon",
         "ha-loo",
-        "pa-koon"
+        "ja-koon",
+        "ja-noon",
+        "ka-too",
+        "ka-toon",
+        "la-too",
+        "pa-koon",
+        "sa-noo",
+        "ta-loon",
+        "va-joo",
+        "va-loo",
+        "va-loon",
+        "va-roo"
     ],
     "a-oo-a": [
         "a-ort-ta",
         "ha-jon-ta",
+        "ka-jos-sa",
         "ka-ronk-ka",
+        "ka-tol-la",
+        "ka-tos-sa",
+        "ka-tos-ta",
         "la-don-ta",
         "la-hok-ka",
         "la-os-sa",
         "ma-don-na",
         "ma-hork-ka",
+        "pa-dos-ta",
+        "pa-kol-la",
         "pa-os-sa",
+        "sa-los-sa",
         "sa-moo-ja",
         "sa-non-ta",
         "sa-vot-ta",
+        "ta-los-sa",
+        "ta-los-ta",
         "ta-on-ta",
+        "ta-pol-la",
+        "ta-sol-la",
         "va-koo-ja",
+        "va-los-sa",
+        "va-los-ta",
         "va-son-ta"
     ],
     "a-oo-aa": [
+        "a-lok-kaat",
+        "a-lot-taa",
         "ha-jot-taa",
         "ha-pot-taa",
         "ha-rot-taa",
@@ -1733,6 +2654,7 @@ export default {
         "ja-ot-taa",
         "ka-dot-taa",
         "ka-jot-taa",
+        "ka-tok-kaa",
         "la-hot-taa",
         "la-ot-taa",
         "ma-dot-taa",
@@ -1741,17 +2663,36 @@ export default {
         "ra-ol-laan",
         "ra-ot-taa",
         "sa-kot-taa",
+        "sa-not-taa",
         "sa-os-taa",
+        "ta-hot-kaa",
+        "ta-loo-kaan",
         "ta-ot-taa",
+        "va-joo-maan",
         "va-jot-taa",
         "va-lot-taa"
     ],
     "a-oo-e": [
         "ja-los-te",
+        "ka-tok-sen",
+        "ka-tol-le",
+        "la-cos-tet",
+        "pa-loo-vet",
+        "pa-nok-set",
         "sa-os-te"
     ],
     "a-oo-ee": [
-        "ra-ol-leen"
+        "ha-jon-neen",
+        "ka-don-neen",
+        "ka-don-neet",
+        "ka-tol-leen",
+        "ra-ol-leen",
+        "ta-vot-teen",
+        "ta-vot-teet"
+    ],
+    "a-oo-ei": [
+        "ra-por-teist",
+        "ta-vot-teit"
     ],
     "a-oo-i": [
         "a-bort-ti",
@@ -1769,6 +2710,8 @@ export default {
         "ka-noop-pi",
         "ka-noot-ti",
         "ka-pok-ki",
+        "ka-tot-kin",
+        "ma-hol-list",
         "ma-hon-ki",
         "pa-ton-ki",
         "ra-port-ti",
@@ -1776,21 +2719,31 @@ export default {
         "sa-mot-ti",
         "sa-os-tin",
         "ta-lon-ki",
+        "ta-lon-kin",
         "ta-rok-ki"
     ],
     "a-oo-ie": [
         "ta-lon-mies"
     ],
     "a-oo-ii": [
-        "ka-dok-siin"
+        "a-bort-tiin",
+        "ba-rok-kiin",
+        "ha-jot-tiin",
+        "ka-dok-siin",
+        "pa-nok-sii",
+        "sa-not-tiin"
     ],
     "a-oo-o": [
         "ja-os-to",
+        "sa-non-to",
         "va-los-how"
     ],
     "a-oo-u": [
+        "ha-jon-nu",
         "ja-lon-nus",
         "ja-los-tus",
+        "ka-don-nu",
+        "ka-don-nut",
         "pa-nos-tus",
         "sa-not-tu",
         "sa-os-tus"
@@ -1798,21 +2751,29 @@ export default {
     "a-oo-uu": [
         "ha-pok-kuus"
     ],
+    "a-oo-ä": [
+        "sa-nok-sä"
+    ],
     "a-ou": [
         "gla-mour",
         "la-hous",
         "ma-hous",
         "pa-tous",
-        "ta-lous"
+        "ta-lous",
+        "ta-lout"
     ],
     "a-ou-a": [
         "a-jou-ra",
+        "ja-lout-ta",
         "la-hou-ma",
         "pa-tou-ma",
         "tsa-sou-na"
     ],
     "a-ou-aa": [
         "ta-sout-taa"
+    ],
+    "a-ou-e": [
+        "ta-lou-des"
     ],
     "a-ou-ie": [
         "ta-lous-mies"
@@ -1828,25 +2789,39 @@ export default {
         "ta-lous-työ"
     ],
     "a-u": [
+        "a-luks",
         "a-lun",
         "a-lus",
+        "a-lust",
+        "a-sun",
+        "a-sut",
         "gra-du",
         "ha-ju",
         "ha-ku",
         "ha-lu",
+        "ha-lus",
         "ha-rus",
         "ha-vu",
         "ja-lus",
+        "ka-du",
+        "ka-dul",
+        "ka-dun",
+        "ka-dut",
+        "ka-kun",
         "ka-lu",
         "ka-mu",
+        "ka-mut",
         "ka-put",
         "ka-ru",
         "ka-tu",
         "kra-pu",
         "la-ku",
+        "la-put",
         "la-tu",
+        "ma-hu",
         "ma-ku",
         "ma-nu",
+        "ma-nun",
         "ma-su",
         "na-ku",
         "na-mu",
@@ -1856,51 +2831,89 @@ export default {
         "pa-ju",
         "pa-pu",
         "pa-tu",
+        "pa-vun",
         "ra-ju",
         "ra-pu",
+        "ra-pus",
+        "sa-dun",
+        "sa-dus",
         "sa-ju",
         "sa-ku",
         "sa-mum",
         "sa-tu",
+        "sa-tut",
         "sa-vu",
+        "sa-vut",
         "sta-tus",
         "ta-bu",
         "ta-ju",
+        "ta-mu",
         "ta-nu",
         "ta-ru",
+        "ta-rus",
         "ta-vu",
         "va-lu",
         "va-nu",
+        "va-pun",
         "va-rus",
         "va-su"
     ],
     "a-u-a": [
         "a-lu-na",
+        "a-pu-a",
         "a-su-a",
         "a-su-ja",
         "a-su-kas",
         "a-su-ma",
         "a-tu-lat",
+        "ha-ju-ja",
+        "ha-lu-a",
+        "ha-lu-an",
+        "ha-lu-at",
+        "ha-lu-a",
         "ha-lu-kas",
         "ha-lu-ta",
         "ha-mu-ta",
+        "ka-du-ta",
         "ka-lu-ta",
+        "ka-mu-ja",
         "ka-pu-la",
         "ka-tu-a",
+        "ka-tu-va",
         "ka-vu-ta",
         "kra-pu-la",
+        "la-pu-an",
+        "ma-ku-a",
         "ma-ru-na",
+        "na-ku-tan",
+        "sa-tu-a",
         "sa-tu-la",
+        "sa-tu-ta",
+        "sa-vu-a",
         "sa-vu-ta",
+        "ta-ju-a",
+        "ta-ju-an",
         "ta-ju-ta",
         "ta-ku-ta",
+        "ta-pu-ta",
+        "ta-pu-tan",
         "va-lu-a",
         "va-lu-ma",
+        "va-lu-tat",
         "va-nu-a",
         "va-nu-kas"
     ],
     "a-u-aa": [
-        "sa-tu-maa"
+        "a-su-maan",
+        "ha-lu-aa",
+        "ha-lu-taan",
+        "ka-pu-laa",
+        "ka-tu-maan",
+        "kra-pu-laa",
+        "sa-tu-laan",
+        "sa-tu-maa",
+        "sa-tu-maan",
+        "ta-ju-aa"
     ],
     "a-u-ai": [
         "a-su-jain",
@@ -1910,20 +2923,28 @@ export default {
         "a-lu-e",
         "a-lu-ke",
         "a-lu-nen",
+        "ka-tu-jen",
         "na-mu-nen",
         "sa-nu-e",
-        "sa-vu-ke"
+        "sa-vu-ke",
+        "va-lu-en"
     ],
     "a-u-i": [
         "a-ju-ri",
         "a-pu-ri",
+        "ha-lu-sin",
+        "ha-lu-sit",
         "ha-nu-ri",
         "la-tu-ri",
+        "la-tu-si",
         "ma-ju-ri",
         "pa-su-ri",
         "ra-vu-ri",
         "sa-hu-ri",
         "sa-lu-ki",
+        "sa-mu-li",
+        "sa-mu-lin",
+        "ta-ju-sin",
         "ta-lu-tin",
         "ta-pu-li",
         "va-su-ri"
@@ -1943,6 +2964,7 @@ export default {
     ],
     "a-u-u": [
         "a-su-mus",
+        "a-su-nu",
         "a-su-tus",
         "ka-tu-mus",
         "na-ku-tus",
@@ -1962,11 +2984,21 @@ export default {
         "gra-du-työ",
         "ka-tu-työ"
     ],
+    "a-ui": [
+        "ha-kui",
+        "ha-luis",
+        "ka-tui",
+        "la-puis",
+        "na-rui"
+    ],
     "a-ui-a": [
         "ha-muil-la",
         "ha-puil-la",
+        "ka-duil-la",
         "ra-juil-ma",
-        "sa-tuil-la"
+        "ra-juil-man",
+        "sa-tuil-la",
+        "ta-kui-ta"
     ],
     "a-ui-aa": [
         "va-ruil-laan"
@@ -1974,12 +3006,19 @@ export default {
     "a-ui-e": [
         "ha-jui-nen",
         "ha-lui-nen",
+        "ka-duil-le",
         "ma-kui-nen",
         "sa-vui-nen",
         "ta-jui-nen"
     ],
     "a-ui-ee": [
         "va-ruil-leen"
+    ],
+    "a-ui-i": [
+        "ha-lui-sin",
+        "ha-lui-sit",
+        "ka-tui-sin",
+        "ta-jui-sin"
     ],
     "a-ui-u": [
         "sa-tui-lu"
@@ -2008,23 +3047,54 @@ export default {
     "a-uoi-i": [
         "ta-tuoin-ti"
     ],
+    "a-uoi-u": [
+        "ta-tuoi-tu"
+    ],
     "a-uu": [
+        "a-puu",
+        "a-puun",
+        "a-suu",
+        "ha-juu",
+        "ha-juun",
+        "ha-luu",
+        "ha-luun",
+        "ha-luut",
         "ka-ruus",
+        "ka-tuu",
+        "ka-tuun",
+        "la-kuu",
         "ma-kuu",
+        "ma-kuun",
         "ma-kuus",
+        "ma-nuu",
         "pa-huus",
+        "pa-kuu",
         "pa-luu",
+        "pa-luut",
         "ra-guu",
         "ra-juus",
         "sa-huu",
         "sa-muus",
+        "sa-tuu",
+        "sa-vuu",
+        "ta-juu",
+        "ta-juun",
+        "ta-juut",
         "ta-kuu",
-        "va-kuus"
+        "ta-kuun",
+        "va-kuus",
+        "va-luu"
     ],
     "a-uu-a": [
         "a-lul-la",
+        "a-lus-sa",
         "a-lus-ta",
+        "a-sul-la",
+        "a-vul-la",
+        "a-vus-ta",
+        "ha-lut-tas",
         "ja-lus-ta",
+        "ka-dul-la",
         "ka-juut-ta",
         "ka-luu-na",
         "ka-nuk-ka",
@@ -2037,14 +3107,22 @@ export default {
         "ma-kuul-ta",
         "ma-surk-ka",
         "na-puk-ka",
+        "na-rus-sa",
+        "pa-luu-ta",
         "pa-suu-na",
         "pa-tuk-ka",
         "ra-kuu-na",
+        "ra-pus-sa",
         "sa-kus-ka",
         "sa-luu-na",
         "sa-pus-ka",
+        "ta-jun-nan",
         "ta-jun-ta",
+        "ta-kuul-la",
+        "ta-vul-la",
+        "va-kuu-ta",
         "va-lun-ta",
+        "va-luu-tan",
         "va-luut-ta",
         "va-tuk-ka"
     ],
@@ -2054,10 +3132,12 @@ export default {
         "a-lus-taa",
         "a-sus-taa",
         "a-sut-taa",
+        "a-suu-kaan",
         "a-vus-taa",
         "ha-jus-taa",
         "ha-lut-taa",
         "ha-rus-taa",
+        "ha-tus-taan",
         "ha-tut-taa",
         "ha-vut-taa",
         "ja-lus-taa",
@@ -2065,6 +3145,7 @@ export default {
         "ka-kut-taa",
         "ka-lus-taa",
         "la-put-taa",
+        "ma-kuul-laan",
         "ma-kuut-taa",
         "na-kut-taa",
         "na-put-taa",
@@ -2074,25 +3155,36 @@ export default {
         "ra-tus-taa",
         "ra-vus-taa",
         "sa-huut-taa",
+        "sa-pus-kaa",
         "sa-tut-taa",
         "sa-vus-taa",
         "sa-vut-taa",
+        "ta-but-kaan",
+        "ta-jun-taa",
         "ta-lut-taa",
         "ta-put-taa",
         "ta-vut-taa",
         "va-juut-taa",
         "va-kuut-taa",
         "va-lut-taa",
+        "va-luut-taa",
         "va-nut-taa",
         "va-rus-taa"
     ],
     "a-uu-e": [
         "a-sus-te",
+        "a-sut-te",
         "a-vus-te",
         "ha-jus-te",
+        "ha-luut-te",
+        "ka-dul-le",
         "ka-lus-te",
         "ma-kuul-le",
         "va-rus-te"
+    ],
+    "a-uu-ee": [
+        "a-vuk-seen",
+        "sa-vuk-keen"
     ],
     "a-uu-i": [
         "a-kuut-ti",
@@ -2106,6 +3198,7 @@ export default {
         "ka-suu-ni",
         "la-guu-ni",
         "ma-suu-ni",
+        "pa-luu-ni",
         "ra-jus-ti",
         "sa-vus-tin",
         "sta-tuut-ti",
@@ -2116,9 +3209,16 @@ export default {
         "ta-kuu-mies",
         "va-rus-mies"
     ],
+    "a-uu-ii": [
+        "ha-lut-tiin",
+        "ta-jut-tii",
+        "ta-jut-tiin"
+    ],
     "a-uu-o": [
         "a-kus-to",
+        "a-sun-non",
         "a-sun-to",
+        "ha-luut-ko",
         "ka-lus-to",
         "ka-ruk-ko",
         "pa-juk-ko",
@@ -2126,13 +3226,21 @@ export default {
         "ta-rus-to",
         "va-tuk-ko"
     ],
+    "a-uu-oo": [
+        "a-sun-toon"
+    ],
     "a-uu-u": [
         "a-lus-tus",
         "a-vus-tus",
+        "ha-lun-nu",
+        "ha-lun-nut",
         "ha-lut-tu",
         "ka-lus-tus",
         "ra-vus-tus",
         "sa-vus-tus",
+        "ta-jun-nu",
+        "ta-jun-nut",
+        "va-kuu-tu",
         "va-kuu-tus",
         "va-rus-tus"
     ],
@@ -2142,18 +3250,37 @@ export default {
     "a-uu-yö": [
         "ta-kuu-työ"
     ],
+    "a-uu-ä": [
+        "a-suk-sä",
+        "a-sut-sä",
+        "ta-juut-sä"
+    ],
+    "a-uu-ää": [
+        "a-suk-sää",
+        "a-sut-sää"
+    ],
     "a-y": [
         "ba-by",
         "gra-y",
         "la-dy",
+        "pa-ytvn",
         "pla-ty",
+        "pla-y",
+        "sa-ys",
         "spra-y"
     ],
     "a-y-a": [
         "ma-y-a",
-        "pla-y-back"
+        "pla-y-a",
+        "pla-y-back",
+        "spra-y-ta"
+    ],
+    "a-y-e": [
+        "ma-y-be",
+        "ma-y-ne"
     ],
     "a-y-o": [
+        "ba-by-lon",
         "pla-y-off"
     ],
     "a-y-ou": [
@@ -2169,15 +3296,26 @@ export default {
     "a-yy-o": [
         "ca-lyp-so"
     ],
+    "a-yy-ä": [
+        "a-ryh-mä"
+    ],
+    "a-yy-ää": [
+        "a-ryh-mään"
+    ],
     "a-ää-i": [
         "a-fää-ri"
     ],
     "a-öö-i": [
         "va-löö-ri"
     ],
+    "aa-": [
+        "arn-dt"
+    ],
     "aa-a": [
+        "aa-las",
         "aa-pa",
         "aa-va",
+        "aa-van",
         "aat-ra",
         "af-ta",
         "ah-das",
@@ -2189,30 +3327,45 @@ export default {
         "al-la",
         "al-las",
         "al-ta",
+        "al-tas",
         "amb-ra",
+        "an-na",
+        "an-nan",
+        "an-nat",
         "an-sa",
         "an-sas",
         "ank-ka",
         "ar-ka",
         "ar-mas",
         "ar-pa",
+        "ar-vas",
         "as-kar",
+        "as-lak",
+        "as-ta",
         "ast-ma",
         "at-las",
         "baa-na",
         "bal-sa",
         "brah-ma",
         "can-can",
+        "dar-rat",
         "dats-ha",
         "draa-ma",
         "drak-ma",
         "fak-ta",
+        "fak-tan",
+        "fak-tat",
+        "far-rah",
         "gaa-la",
         "gam-ma",
+        "gang-sta",
         "gram-ma",
+        "gtas-sa",
         "haa-pa",
         "haa-ra",
+        "haa-rat",
         "haa-va",
+        "haa-vat",
         "haah-ka",
         "haas-ka",
         "hal-jas",
@@ -2224,23 +3377,42 @@ export default {
         "han-ka",
         "han-sa",
         "hans-ka",
+        "hans-kas",
+        "hans-kast",
+        "hans-kat",
         "har-ha",
         "har-ja",
         "har-jas",
         "har-ras",
         "har-va",
+        "har-vat",
         "hat-kat",
         "jaa-ha",
         "jaa-la",
         "jah-ka",
+        "jah-tas",
+        "jak-sa",
+        "jak-san",
+        "jak-sas",
+        "jak-sat",
         "jal-ka",
+        "jal-kas",
+        "jat-ka",
+        "jat-kan",
+        "kaa-da",
+        "kaa-dan",
+        "kaa-jan",
         "kaa-ra",
+        "kaa-ta",
         "kaa-va",
+        "kaa-vas",
         "kaar-na",
+        "kaar-ta",
         "kah-ta",
         "kah-va",
         "kak-ka",
         "kal-ja",
+        "kal-jat",
         "kal-la",
         "kal-las",
         "kal-ma",
@@ -2250,22 +3422,34 @@ export default {
         "kam-pa",
         "kan-gas",
         "kan-na",
+        "kan-nan",
         "kan-nas",
+        "kan-nat",
         "kan-sa",
+        "kan-san",
         "kan-ta",
         "kans-sa",
+        "kans-sas",
         "kap-las",
         "kap-pa",
         "kap-pas",
         "kar-ja",
         "kar-ma",
         "kar-sas",
+        "kar-tan",
         "kar-va",
+        "kar-van",
         "kar-vas",
         "kars-ta",
         "kart-ta",
         "kas-kas",
+        "kas-par",
         "kas-sa",
+        "kas-sal",
+        "kas-san",
+        "kas-ta",
+        "kas-tat",
+        "kas-va",
         "kat-ka",
         "kat-ras",
         "klaa-va",
@@ -2278,28 +3462,46 @@ export default {
         "laas-ta",
         "laat-ta",
         "laf-ka",
+        "laf-kast",
         "lah-ja",
+        "lah-jaks",
+        "lah-jat",
         "lah-na",
         "lak-ka",
+        "lal-la",
         "lam-mas",
+        "lan-gat",
         "lan-ka",
         "lan-ta",
         "las-ta",
         "lat-ta",
         "lat-va",
+        "lat-vast",
+        "maa-ha",
+        "maa-han",
+        "maa-na",
         "maa-ta",
+        "maal-la",
+        "maan-sa",
+        "maas-sa",
+        "maas-ta",
         "mad-ras",
         "mag-ma",
         "mag-na",
+        "mah-da",
         "mah-la",
         "mak-sa",
+        "mak-san",
         "mal-ja",
         "mal-ka",
+        "mal-lan",
         "mal-las",
+        "mal-ta",
         "mal-va",
         "malt-sa",
         "mam-ba",
         "mam-ma",
+        "man-kas",
         "man-na",
         "mank-ka",
         "mant-ra",
@@ -2309,8 +3511,16 @@ export default {
         "mart-ta",
         "mas-sa",
         "mat-ka",
+        "mat-kal",
+        "mat-kan",
+        "mat-kat",
         "mat-ta",
         "naa-ma",
+        "naa-mal",
+        "naa-man",
+        "naa-mas",
+        "naa-mast",
+        "naa-mat",
         "naa-ra",
         "naa-ras",
         "naa-va",
@@ -2321,13 +3531,19 @@ export default {
         "nap-pa",
         "nas-ta",
         "nat-sa",
+        "nat-sat",
         "paap-pa",
         "paar-ma",
+        "paar-mat",
         "pah-ka",
         "pah-na",
         "pak-ka",
         "pal-jas",
+        "pal-kal",
+        "pal-kan",
+        "pal-kat",
         "pal-las",
+        "pal-mas",
         "pal-sa",
         "palk-ka",
         "pals-ta",
@@ -2337,6 +3553,7 @@ export default {
         "pan-ta",
         "pap-pa",
         "par-ka",
+        "par-ran",
         "par-ras",
         "par-sa",
         "par-ta",
@@ -2346,10 +3563,15 @@ export default {
         "pas-ma",
         "pas-ta",
         "pat-ja",
+        "pat-jan",
         "pat-sas",
         "plas-ma",
+        "plat-ta",
+        "plat-tas",
         "raa-ja",
+        "raa-jat",
         "raa-ka",
+        "raa-kan",
         "raa-na",
         "raa-vas",
         "raap-pa",
@@ -2361,25 +3583,42 @@ export default {
         "rak-sa",
         "ram-pa",
         "ran-ka",
+        "ran-kat",
+        "ran-nal",
+        "ran-nan",
+        "ran-nat",
         "ran-ta",
         "rank-ka",
         "rans-ka",
         "ras-kas",
+        "ras-kast",
         "ras-ta",
         "ras-tas",
+        "ras-tat",
         "ras-va",
+        "ras-vas",
+        "ras-vat",
         "saa-da",
         "saa-ga",
+        "saa-ha",
         "saa-ja",
+        "saa-na",
         "saa-pas",
+        "saa-ta",
+        "saa-tan",
+        "saa-tat",
+        "saa-vat",
         "saak-ka",
+        "saan-han",
         "saar-na",
+        "saar-nan",
         "saas-ta",
         "sab-ra",
         "saf-ka",
         "sah-ra",
         "sak-ka",
         "sak-sa",
+        "sak-san",
         "sal-pa",
         "sal-sa",
         "sal-va",
@@ -2393,6 +3632,7 @@ export default {
         "sar-ka",
         "skaa-la",
         "taa-ja",
+        "taa-kat",
         "taa-la",
         "taa-ra",
         "taa-ta",
@@ -2403,17 +3643,23 @@ export default {
         "tah-ma",
         "tah-na",
         "tah-ra",
+        "tah-rat",
         "tak-ka",
         "tak-sa",
         "tal-ja",
+        "tal-jat",
         "tal-la",
         "talt-ta",
         "tam-ma",
         "tan-gat",
         "tan-ka",
+        "tank-kas",
         "tans-ka",
         "tant-ta",
+        "tap-sa",
         "tar-ha",
+        "tar-han",
+        "tar-kat",
         "tar-ra",
         "tark-ka",
         "tats-ka",
@@ -2424,36 +3670,53 @@ export default {
         "vaak-sa",
         "vaar-na",
         "vah-va",
+        "vah-vat",
         "vak-ka",
         "val-lan",
         "val-pas",
         "val-ta",
+        "val-tas",
         "vam-ma",
         "van-ha",
+        "van-han",
+        "van-hat",
         "van-ja",
         "van-na",
         "van-nas",
         "vank-ka",
         "var-ma",
+        "var-man",
         "var-ras",
         "var-sa",
         "var-vas",
         "vars-ta",
+        "vart-ta",
         "vas-ta",
         "vas-tas",
         "vat-ja",
+        "vat-kat",
+        "vat-sa",
+        "vat-san",
+        "vat-sast",
+        "wan-na",
         "vat-sa"
     ],
     "aa-a-a": [
         "ah-da-ta",
         "al-ka-ja",
+        "al-ka-va",
         "an-ka-ra",
+        "an-na-pa",
         "an-ta-ja",
+        "an-ta-va",
+        "an-ta-vat",
         "ar-ka-la",
         "ar-ma-da",
+        "ar-ma-dan",
         "ar-va-ta",
         "blan-da-ta",
         "fak-sa-ta",
+        "fak-ta-na",
         "fals-ka-ta",
         "graa-va-ta",
         "haa-la-ta",
@@ -2468,6 +3731,7 @@ export default {
         "hams-tra-ta",
         "han-ga-ta",
         "han-ka-la",
+        "hap-pa-man",
         "har-ha-ma",
         "har-ja-ta",
         "har-ja-va",
@@ -2480,6 +3744,7 @@ export default {
         "jah-ka-ta",
         "jah-na-ta",
         "jak-ka-ra",
+        "jak-ka-ral",
         "jal-ka-va",
         "jam-ma-ta",
         "jan-ka-ta",
@@ -2494,13 +3759,16 @@ export default {
         "kal-ta-ta",
         "kam-ma-ta",
         "kam-pa-ta",
+        "kan-na-ta",
         "kan-ta-ja",
         "kan-ta-ma",
         "kan-ta-ta",
+        "kan-ta-vat",
         "kar-ja-la",
         "kar-va-ta",
         "kars-ta-ta",
         "kas-sa-ra",
+        "kas-va-tan",
         "kat-ta-ra",
         "klaa-ra-ta",
         "kraa-va-ta",
@@ -2524,6 +3792,7 @@ export default {
         "maan-ra-ja",
         "mah-ta-ja",
         "mah-ta-va",
+        "mah-ta-van",
         "mak-ka-ra",
         "mak-sa-ja",
         "mal-ja-kas",
@@ -2553,6 +3822,7 @@ export default {
         "plaa-na-ta",
         "plan-ka-ta",
         "raa-ha-ta",
+        "raa-ka-na",
         "raa-ka-ta",
         "raa-pa-ta",
         "raa-ta-ja",
@@ -2585,6 +3855,7 @@ export default {
         "stans-sa-ta",
         "star-ta-ta",
         "taa-ja-ma",
+        "taak-ka-na",
         "taam-pa-na",
         "taap-la-ta",
         "tah-ma-ta",
@@ -2598,6 +3869,7 @@ export default {
         "tans-sa-ta",
         "tap-pa-ja",
         "tap-pa-ra",
+        "tap-pa-van",
         "tar-ha-ta",
         "tar-ka-ta",
         "tar-ra-ta",
@@ -2605,12 +3877,16 @@ export default {
         "tras-sa-ta",
         "vaar-na-ta",
         "vah-da-ta",
+        "vah-va-na",
         "val-ka-ma",
         "val-ka-ta",
         "val-la-ta",
         "val-ta-va",
+        "val-ta-van",
         "vals-sa-ta",
         "vam-pa-ta",
+        "van-ha-na",
+        "var-ma-na",
         "var-pa-ta",
         "vas-ka-ta",
         "vas-ta-ta",
@@ -2618,33 +3894,61 @@ export default {
         "vat-sa-kas"
     ],
     "aa-a-aa": [
+        "al-ka-kaa",
+        "an-ta-kaa",
+        "an-ta-maan",
+        "haas-ta-maan",
+        "han-ka-laa",
+        "hat-ta-raa",
         "jal-ka-maa",
+        "kaht-sa-taa",
+        "kan-ta-maa",
+        "kan-ta-maan",
+        "maa-la-taan",
+        "mah-ta-vaa",
+        "mak-ka-raa",
+        "mak-sa-maa",
         "raa-ka-maa",
         "rak-ka-maa",
+        "spar-ka-taa",
         "vas-ta-maa"
     ],
     "aa-a-e": [
         "al-ka-en",
         "as-ka-re",
+        "dal-la-ten",
         "haa-ra-ke",
         "har-ja-ke",
+        "har-ja-tes",
         "hard-wa-re",
         "kaa-va-ke",
         "kal-pa-ten",
+        "kal-ta-set",
         "kan-ka-re",
         "kan-na-te",
         "kap-pa-le",
         "lam-pa-re",
         "pak-ka-nen",
+        "pak-ka-ses",
         "vas-ta-ke"
     ],
     "aa-a-ee": [
+        "kan-ta-neet",
+        "kas-va-neet",
         "mak-ra-mee"
+    ],
+    "aa-a-ei": [
+        "kal-sa-reis",
+        "nark-ka-reiks"
     ],
     "aa-a-i": [
         "aa-ta-mi",
         "al-ka-li",
+        "al-ta-ni",
         "alt-ta-ri",
+        "alt-ta-rilt",
+        "alt-ta-rin",
+        "am-ma-tiks",
         "an-sa-ri",
         "bal-la-di",
         "bal-sa-mi",
@@ -2652,8 +3956,14 @@ export default {
         "far-ma-rit",
         "gram-ma-ri",
         "haa-la-ri",
+        "haa-va-ni",
+        "hak-ka-sin",
         "hals-ta-ri",
         "hamp-pa-ri",
+        "has-ta-gi",
+        "jah-ta-sin",
+        "jal-ka-ni",
+        "jal-ka-si",
         "jat-sa-ri",
         "kaa-ha-ri",
         "kaap-pa-ri",
@@ -2663,20 +3973,32 @@ export default {
         "kal-sa-rit",
         "kan-na-bis",
         "kan-na-tin",
+        "kan-sa-ni",
+        "kans-sa-ni",
+        "kans-sa-si",
+        "kap-pa-ri",
+        "kar-ka-sit",
         "kar-va-ri",
+        "kart-ta-ni",
         "laas-ta-ri",
         "lah-ta-ri",
+        "lak-ka-sin",
         "lant-sa-rit",
         "lat-ta-ri",
         "maa-ka-ri",
         "maa-la-ji",
         "maa-la-ri",
+        "maa-la-sin",
         "maan-la-ki",
         "mak-ka-ri",
+        "mat-ka-ni",
         "naa-ma-ri",
+        "nap-pa-sin",
         "nark-ka-ri",
         "nas-ka-li",
         "paa-ka-ri",
+        "pak-ka-si",
+        "pak-ka-sit",
         "pal-sa-mi",
         "pan-na-ri",
         "pans-sa-ri",
@@ -2684,21 +4006,30 @@ export default {
         "pas-sa-ri",
         "plak-ka-ri",
         "psalt-ta-ri",
+        "raa-ja-ni",
         "rag-ga-ri",
         "rah-ta-ri",
+        "rak-ka-hin",
         "rank-ka-ri",
         "rap-pa-ri",
         "saa-ma-ri",
         "saf-ra-mi",
         "sah-ra-mi",
+        "salk-ka-rilt",
         "sam-ma-rit",
         "san-ka-ri",
+        "san-ka-riks",
+        "san-ka-rin",
+        "san-ka-rit",
         "sant-sa-ri",
         "taa-la-ri",
         "tak-sa-ri",
         "talk-ka-ri",
         "tat-ta-ri",
-        "var-ja-gi"
+        "valk-ka-sin",
+        "var-ja-gi",
+        "vas-ta-sin",
+        "vat-sa-ni"
     ],
     "aa-a-ie": [
         "jal-ka-mies",
@@ -2709,12 +4040,19 @@ export default {
         "saar-na-mies",
         "val-ta-tie"
     ],
+    "aa-a-ii": [
+        "al-ba-nii",
+        "mah-ta-vii",
+        "naa-ma-rii",
+        "vam-ma-sii"
+    ],
     "aa-a-iu": [
         "pal-la-dium",
         "san-ka-rius"
     ],
     "aa-a-o": [
         "as-ta-lo",
+        "blacf-la-co",
         "cal-va-dos",
         "faa-ra-o",
         "kaa-ka-o",
@@ -2739,23 +4077,38 @@ export default {
         "tah-ra-ton",
         "vaa-ra-ton",
         "val-la-ton",
-        "var-ta-lo"
+        "var-ta-lo",
+        "var-ta-los"
+    ],
+    "aa-a-oo": [
+        "var-ta-loos"
     ],
     "aa-a-ou": [
         "maa-ta-lous"
     ],
     "aa-a-u": [
+        "al-ka-nu",
+        "al-ka-nut",
+        "an-ta-nut",
+        "jak-sa-nu",
+        "jak-sa-nut",
         "kaa-ka-tus",
         "kal-ka-tus",
         "kan-na-tus",
         "kan-ta-mus",
+        "kan-ta-nu",
+        "kan-ta-nut",
+        "kart-ta-nu",
         "kas-va-tus",
         "kat-ta-mus",
         "maak-ra-pu",
+        "mak-sa-nu",
         "mak-sa-tus",
         "mar-ma-tus",
         "paa-pa-tus",
-        "ral-la-tus"
+        "raa-ma-tun",
+        "ral-la-tus",
+        "rat-ka-sut"
     ],
     "aa-a-uo": [
         "aa-pa-suo",
@@ -2797,62 +4150,209 @@ export default {
     ],
     "aa-a-ää": [
         "kan-ta-pää",
+        "kan-ta-päät",
         "kas-sa-pää",
         "lak-ka-pää",
         "nah-ka-pää",
         "pas-ka-pää"
     ],
     "aa-aa": [
+        "ah-naat",
         "ah-taa",
+        "al-haalt",
         "al-kaa",
+        "an-naa",
+        "an-saa",
+        "an-saan",
         "an-taa",
+        "an-taan",
         "ap-paa",
+        "ar-kaa",
+        "ar-paa",
+        "ar-vaa",
+        "ar-vaan",
+        "as-saa",
+        "bal-laa",
+        "blaa-daa",
+        "dal-laa",
+        "dal-laan",
+        "draa-maa",
+        "fak-saa",
+        "fak-taa",
+        "gamb-laa",
+        "gan-jaa",
+        "gram-maa",
+        "haa-vaa",
+        "haas-kaa",
         "haas-taa",
+        "hak-kaa",
+        "hal-paa",
+        "hal-paan",
+        "ham-paat",
+        "hams-traa",
+        "han-naa",
+        "hand-laa",
+        "hans-kaas",
+        "har-haa",
         "har-haan",
         "har-maa",
+        "har-maan",
+        "har-maas",
+        "har-maat",
+        "har-taan",
         "har-vaan",
+        "has-laa",
+        "jaf-faa",
         "jak-saa",
+        "jal-kaa",
+        "jal-kaas",
+        "jan-naa",
         "jat-kaa",
+        "kaa-haa",
+        "kaa-raa",
         "kaa-taa",
         "kaar-taa",
+        "kah-vaa",
+        "kal-jaa",
         "kal-vaa",
         "kalk-kaa",
+        "kan-saa",
         "kan-taa",
         "kan-taan",
         "kap-saa",
+        "kar-kaa",
+        "kar-kaat",
+        "kar-maa",
+        "kar-vaan",
         "kart-taa",
+        "kart-taan",
         "kas-taa",
         "kas-vaa",
         "kat-taa",
+        "laa-jaan",
+        "laa-vaa",
+        "lab-raa",
+        "lak-kaa",
+        "lak-kaan",
+        "lam-paan",
+        "lam-paat",
         "lap-paa",
+        "larp-paa",
+        "las-taan",
+        "maa-laa",
+        "maa-laan",
+        "maa-laat",
         "maan-taa",
         "maat-taa",
         "mah-taa",
         "mak-saa",
+        "mak-saaks",
+        "mal-jaa",
+        "mal-laa",
         "mal-taat",
         "malt-taa",
+        "mant-raa",
+        "mark-kaa",
+        "mart-taa",
+        "mat-kaa",
+        "mat-kaan",
+        "naa-maa",
+        "naa-maan",
+        "nah-kaa",
+        "nak-kaa",
         "nak-saa",
+        "nap-paa",
+        "nap-paan",
         "nap-saa",
+        "nas-taa",
+        "nat-saa",
         "paah-taa",
         "pah-kaa",
+        "pak-kaa",
+        "pak-kaan",
+        "pal-jaan",
+        "pal-jaat",
+        "palk-kaa",
         "palt-taa",
+        "par-haaks",
+        "par-haan",
+        "par-haas",
+        "par-haat",
+        "par-kaa",
+        "parе-mpaa",
+        "pas-saa",
+        "pas-taa",
+        "plat-taa",
+        "pras-saa",
+        "raa-kaa",
+        "raa-raa",
         "raa-taa",
         "raas-taa",
+        "raf-laa",
+        "raf-laan",
+        "rah-vaat",
         "rak-saa",
+        "ran-taa",
+        "ran-taan",
+        "rank-kaa",
+        "rans-kaa",
         "rap-saa",
+        "ras-kaan",
+        "ras-kaat",
+        "ras-saa",
+        "ras-vaa",
+        "rat-saan",
         "rat-taat",
+        "saa-daan",
+        "saa-gaa",
+        "saa-maan",
+        "saak-kaan",
+        "saap-paat",
         "saar-taa",
         "saat-taa",
+        "saf-kaa",
         "sal-vaa",
+        "san-naa",
+        "sant-saa",
+        "skarp-paa",
+        "start-taa",
         "taa-jaan",
+        "taak-kaa",
         "taam-paa",
+        "taas-kaa",
+        "tak-laan",
+        "tal-jaa",
         "tap-paa",
+        "tap-paan",
+        "tar-haa",
+        "tar-kaan",
+        "tark-kaa",
         "tark-kaan",
+        "vah-taa",
+        "vah-vaa",
+        "vak-laa",
         "val-jaat",
+        "val-taa",
         "val-taan",
+        "van-haa",
+        "van-haan",
+        "van-taal",
+        "van-taalt",
+        "van-taan",
+        "var-kaat",
+        "var-maa",
         "var-maan",
+        "var-paat",
+        "var-taas",
         "vart-taa",
-        "vas-taan"
+        "vas-saa",
+        "vas-taa",
+        "vas-taan",
+        "vas-taat",
+        "vat-kaa",
+        "vat-kaat",
+        "vat-saan",
+        "was-saa"
     ],
     "aa-aa-a": [
         "ah-taa-ja",
@@ -2862,12 +4362,24 @@ export default {
         "al-haal-ta",
         "al-lak-ka",
         "al-pak-ka",
+        "al-taas-sa",
         "ar-mag-nac",
+        "ar-mah-dan",
+        "ast-ral-la",
         "hak-kaa-ja",
+        "hak-kaa-vat",
         "hal-jak-ka",
+        "hal-val-la",
+        "hal-vas-ta",
+        "ham-mas-ta",
         "hams-traa-ja",
+        "hans-kaan-sa",
         "har-has-sa",
+        "har-maa-na",
+        "har-ras-tan",
         "har-vas-sa",
+        "jah-taa-ja",
+        "jah-taa-va",
         "kaa-dan-ta",
         "kaa-haa-ja",
         "kaa-vaa-ja",
@@ -2875,6 +4387,7 @@ export default {
         "kah-laa-ja",
         "kah-taal-la",
         "kah-taal-ta",
+        "kal-jal-la",
         "kal-vak-ka",
         "kam-paa-ja",
         "kam-pan-ja",
@@ -2882,14 +4395,27 @@ export default {
         "kan-nal-ta",
         "kan-nas-sa",
         "kan-nas-ta",
+        "kar-tal-la",
+        "kar-tal-ta",
         "kars-taa-ja",
         "kas-tan-ja",
         "kas-van-ta",
+        "kat-kas-ta",
+        "lam-mas-ta",
         "las-taa-ja",
+        "lat-vas-sa",
         "maa-laa-ja",
         "maa-pals-ta",
+        "man-kas-ta",
+        "mar-kal-la",
         "mar-salk-ka",
         "mat-kaa-ja",
+        "mat-kal-la",
+        "mat-kas-ta",
+        "naa-mal-la",
+        "naa-mas-sa",
+        "naa-mas-ta",
+        "nah-kan-sa",
         "nas-sak-ka",
         "pak-kaa-ja",
         "pal-jak-ka",
@@ -2897,13 +4423,26 @@ export default {
         "par-taal-la",
         "pas-saa-ja",
         "raa-dan-ta",
+        "raa-vas-ta",
         "raf-laa-va",
         "rah-taa-ja",
+        "ran-nal-la",
+        "ran-nal-ta",
+        "ran-nas-ta",
+        "rans-kas-ta",
         "rap-paa-ja",
         "rap-sak-ka",
+        "ras-kaal-ta",
+        "ras-kas-ta",
+        "rat-kas-ta",
+        "rat-sas-ta",
+        "rat-sas-tan",
+        "saa-mas-sa",
         "saar-naa-ja",
         "sal-paa-ja",
         "samp-pan-ja",
+        "sham-pan-jan",
+        "shamp-pan-ja",
         "spar-raa-ja",
         "taa-jas-sa",
         "tak-laa-ja",
@@ -2912,14 +4451,20 @@ export default {
         "tar-kal-la",
         "tark-kaa-ja",
         "tark-kaa-va",
+        "tvsar-jas-ta",
+        "vah-val-la",
         "val-lal-la",
         "val-las-sa",
         "val-las-ta",
         "val-taa-ja",
         "vals-saa-ja",
+        "vam-mas-ta",
+        "van-hal-la",
+        "van-has-ta",
         "vas-taa-ja",
         "vas-taa-va",
-        "vas-tas-sa"
+        "vas-tas-sa",
+        "vat-sas-sa"
     ],
     "aa-aa-aa": [
         "al-las-taa",
@@ -2931,6 +4476,7 @@ export default {
         "ham-mas-taa",
         "har-mah-taa",
         "har-ras-taa",
+        "jah-taa-maa",
         "kaa-dat-taa",
         "kaa-kat-taa",
         "kal-kat-taa",
@@ -2951,10 +4497,13 @@ export default {
         "mal-las-taa",
         "mar-jas-taa",
         "mar-mat-taa",
+        "mat-kal-laan",
         "nak-sah-taa",
+        "nap-paa-maan",
         "nap-sah-taa",
         "nars-kah-taa",
         "paa-pat-taa",
+        "pak-kaa-maan",
         "pal-jaal-taan",
         "pal-jas-taa",
         "pam-pat-taa",
@@ -2962,8 +4511,10 @@ export default {
         "pas-kan-taa",
         "rak-sah-taa",
         "ral-lat-taa",
+        "ran-kas-taan",
         "rans-kan-taa",
         "rap-sah-taa",
+        "ras-kaam-paa",
         "rat-sas-taa",
         "saa-pas-maa",
         "sak-san-taa",
@@ -2974,29 +4525,49 @@ export default {
         "vaa-ran-taa",
         "val-jas-taa",
         "val-lan-kaan",
-        "van-has-taan"
+        "van-has-taan",
+        "vas-taa-vaa"
     ],
     "aa-aa-ai": [
+        "kan-nat-tais",
         "maa-nan-tai",
+        "maa-nan-tain",
         "vas-tak-kain"
     ],
     "aa-aa-e": [
         "ah-taal-le",
         "al-haal-le",
+        "al-lam-me",
         "an-dan-te",
+        "baa-nal-le",
         "ham-mas-te",
         "har-jan-ne",
         "har-ras-te",
+        "har-val-le",
         "kah-taal-le",
         "kah-taan-ne",
         "kan-nal-le",
+        "kan-sal-le",
+        "kar-tal-le",
+        "laa-jal-le",
+        "mat-kal-le",
+        "naa-mal-les",
         "par-taal-le",
+        "ran-nal-le",
         "tar-kal-le",
-        "val-lal-le"
+        "val-lal-le",
+        "val-tamе-ret",
+        "van-taal-le"
     ],
     "aa-aa-ee": [
+        "har-maa-seen",
         "har-vak-seen",
-        "tar-kal-leen"
+        "mat-kal-leen",
+        "par-haa-seen",
+        "saa-dak-seen",
+        "tar-kal-leen",
+        "var-paa-seen",
+        "vas-tan-neet"
     ],
     "aa-aa-i": [
         "abs-trak-ti",
@@ -3017,10 +4588,12 @@ export default {
         "char-mant-ti",
         "fan-faa-ri",
         "frak-taa-li",
+        "har-ras-tin",
         "har-taas-ti",
         "jazz-tans-si",
         "kaf-taa-ni",
         "kal-jaa-si",
+        "kan-nat-ti",
         "kan-taat-ti",
         "kar-daa-ni",
         "kar-paa-si",
@@ -3031,6 +4604,7 @@ export default {
         "laa-jal-ti",
         "laa-jas-ti",
         "laa-man-ni",
+        "lah-jak-si",
         "lak-taa-si",
         "lan-taa-ni",
         "maa-kaa-ri",
@@ -3039,20 +4613,29 @@ export default {
         "man-daat-ti",
         "man-gaa-ni",
         "mant-taa-li",
+        "mat-kaa-ni",
         "pal-jas-tin",
+        "par-haa-ni",
+        "par-haak-si",
         "plan-taa-si",
+        "rak-kaa-ni",
         "ran-kas-ti",
+        "ran-taa-si",
+        "ras-kaam-pi",
         "ras-kaas-ti",
         "saks-man-ni",
         "sam-paa-ni",
         "san-daa-li",
+        "san-daa-lin",
         "san-kas-ti",
         "san-tar-mi",
         "sar-kas-mi",
         "sat-raap-pi",
         "skan-daa-li",
+        "skan-daa-liks",
         "stan-daa-ri",
         "stan-dar-di",
+        "stan-dar-dit",
         "stan-dart-ti",
         "taa-jal-ti",
         "taa-jas-ti",
@@ -3073,7 +4656,21 @@ export default {
         "var-rant-ti"
     ],
     "aa-aa-ie": [
+        "as-falt-tien",
+        "fan-faa-rien",
         "kan-san-mies"
+    ],
+    "aa-aa-ii": [
+        "ar-maa-niin",
+        "as-falt-tiin",
+        "draf-tat-tiin",
+        "haas-kat-tiin",
+        "han-gat-tiin",
+        "naa-rat-tiin",
+        "skan-daa-liin",
+        "stan-dar-diin",
+        "val-kat-tiin",
+        "val-lat-tiin"
     ],
     "aa-aa-iu": [
         "abs-trak-tius"
@@ -3103,15 +4700,21 @@ export default {
         "tans-kan-nos",
         "tark-kaa-mo",
         "val-jak-ko",
-        "vals-saa-mo"
+        "vals-saa-mo",
+        "vas-taan-ko"
+    ],
+    "aa-aa-oo": [
+        "mal-jak-koon"
     ],
     "aa-aa-u": [
         "ar-mah-dus",
+        "haas-kan-nu",
         "hak-sah-dus",
         "hal-vat-tu",
         "ham-mas-tus",
         "har-jaan-nus",
         "har-ras-tus",
+        "kaa-pat-tu",
         "kan-gas-tus",
         "kap-sah-dus",
         "kar-jah-dus",
@@ -3126,12 +4729,18 @@ export default {
         "nap-sah-dus",
         "nars-kah-dus",
         "pal-jas-tus",
+        "raa-mat-tu",
         "rak-sah-dus",
         "rap-sah-dus",
         "rat-sas-tus",
         "sam-mal-lus",
         "tar-kas-tus",
-        "val-jas-tus"
+        "val-jas-tus",
+        "vas-tan-nu",
+        "vas-tan-nut"
+    ],
+    "aa-aa-ui": [
+        "pal-jas-tui"
     ],
     "aa-aa-uu": [
         "ham-mas-luu",
@@ -3139,6 +4748,7 @@ export default {
         "kan-gas-puut",
         "lah-jak-kuus",
         "mar-ras-kuu",
+        "pal-jas-tuu",
         "raf-laa-vuus",
         "tark-kaa-vuus",
         "var-vas-luu",
@@ -3155,18 +4765,30 @@ export default {
     ],
     "aa-ai": [
         "ah-rain",
+        "al-lain",
+        "an-tais",
         "at-rain",
+        "ham-pain",
+        "ham-pait",
         "han-kain",
+        "jak-sais",
+        "kaa-tais",
         "kaa-vain",
+        "kas-tais",
         "kas-vain",
+        "kas-vais",
+        "lam-pait",
         "las-tain",
         "maa-sai",
         "paa-lain",
+        "pal-jain",
         "par-fait",
         "par-hain",
         "rat-sain",
+        "rat-tais",
         "sal-vain",
         "sar-kain",
+        "smac-kais",
         "tar-rain",
         "vaa-rain",
         "vals-sain",
@@ -3176,6 +4798,7 @@ export default {
     ],
     "aa-ai-a": [
         "ah-mais-ta",
+        "ah-nai-ta",
         "am-pais-ta",
         "an-sai-ta",
         "an-sain-ta",
@@ -3184,7 +4807,12 @@ export default {
         "gaa-lail-ta",
         "hak-kail-la",
         "hal-kais-ta",
+        "ham-pai-ta",
+        "ham-pail-la",
+        "ham-pais-sa",
         "har-hail-la",
+        "har-main-ta",
+        "har-taim-mat",
         "harp-pail-la",
         "jah-kail-la",
         "jam-mail-la",
@@ -3198,19 +4826,27 @@ export default {
         "kar-kais-ta",
         "kar-mais-ta",
         "kat-kais-ta",
+        "lam-pai-ta",
         "maa-kai-ra",
         "maa-lail-la",
         "maa-paik-ka",
         "maan-vai-va",
         "mah-tail-la",
+        "mal-tai-ta",
         "mar-jai-sa",
         "mat-kail-la",
         "nal-jail-la",
         "nap-pail-la",
         "nar-rail-la",
+        "pal-jail-la",
         "pamp-pail-la",
+        "par-hai-ta",
+        "par-haim-mat",
         "par-kais-ta",
         "raa-pais-ta",
+        "raf-lail-lat",
+        "rak-kaim-man",
+        "rak-kain-ta",
         "ran-gais-ta",
         "ras-sail-la",
         "rat-kais-ta",
@@ -3221,15 +4857,22 @@ export default {
         "tark-kail-la",
         "val-kais-ta",
         "val-tai-sa",
+        "var-kai-ta",
         "var-kais-sa",
         "var-kais-ta",
         "var-pail-la",
+        "var-tai-ta",
         "vas-tail-la"
     ],
     "aa-ai-aa": [
+        "jak-sais-kaan",
         "kal-tais-taa",
         "par-hail-laan",
-        "var-pail-laan"
+        "rak-kaim-paan",
+        "rak-kain-taan",
+        "tark-kail-laan",
+        "var-pail-laan",
+        "var-pais-saan"
     ],
     "aa-ai-au": [
         "maa-kai-raus",
@@ -3237,19 +4880,30 @@ export default {
     ],
     "aa-ai-e": [
         "al-hai-nen",
+        "an-sait-sen",
+        "an-sait-set",
         "ar-mai-nen",
         "ast-mai-nen",
         "haa-pai-nen",
         "haa-rai-nen",
         "haa-vai-nen",
+        "hal-kai-se",
         "hal-lai-nen",
+        "han-kai-met",
+        "har-hai-len",
         "har-hai-nen",
+        "har-hail-len",
+        "kaa-hai-len",
         "kak-kai-nen",
         "kal-tai-nen",
+        "kamp-pai-len",
+        "kamp-pail-len",
         "kan-kai-nen",
         "kar-vai-nen",
         "kars-tai-nen",
+        "kat-kai-sen",
         "lan-tai-nen",
+        "maa-lai-len",
         "maa-lai-nen",
         "maa-tai-de",
         "maan-nai-nen",
@@ -3260,6 +4914,7 @@ export default {
         "naa-vai-nen",
         "nah-kai-nen",
         "pah-kai-nen",
+        "pamp-pail-len",
         "par-hai-ten",
         "par-tai-nen",
         "pas-kai-nen",
@@ -3273,28 +4928,45 @@ export default {
         "val-tai-nen",
         "vam-mai-nen",
         "var-hai-nen",
+        "var-kai-den",
         "var-pai-set",
         "var-pail-le",
         "vas-tai-nen"
     ],
     "aa-ai-ee": [
+        "ah-mai-see",
+        "an-sait-see",
+        "har-hai-lee",
         "var-pail-leen"
     ],
     "aa-ai-i": [
+        "al-kai-sin",
+        "an-sait-sis",
+        "an-tai-si",
+        "an-tai-sin",
+        "an-tai-sit",
         "ar-kais-mi",
+        "hak-kai-sit",
         "jal-kai-sin",
+        "kam-pai-sit",
         "kat-kai-sin",
         "par-haik-si",
-        "par-haim-min"
+        "par-haim-min",
+        "tap-pai-sin"
     ],
     "aa-ai-ii": [
-        "var-kai-siin"
+        "ham-pai-siin",
+        "kat-kais-tiin",
+        "rat-tai-siin",
+        "var-kai-siin",
+        "var-pai-siin"
     ],
     "aa-ai-o": [
         "al-hai-so",
         "ham-pais-to",
         "par-hais-to",
-        "rat-tais-to"
+        "rat-tais-to",
+        "saa-tais-ko"
     ],
     "aa-ai-oi": [
         "maa-lais-voi"
@@ -3302,6 +4974,7 @@ export default {
     "aa-ai-u": [
         "ah-mai-su",
         "ar-vai-lu",
+        "ar-vai-lun",
         "hak-kai-lu",
         "hal-kai-su",
         "har-hai-lu",
@@ -3335,6 +5008,7 @@ export default {
     "aa-ai-uu": [
         "al-hai-suus",
         "haa-rai-suus",
+        "har-hai-luu",
         "kal-tai-suus",
         "kar-vai-suus",
         "lan-tai-suus",
@@ -3359,6 +5033,7 @@ export default {
         "ar-vaus",
         "blan-daus",
         "haas-kaus",
+        "haas-kaust",
         "hak-kaus",
         "hal-vaus",
         "han-kaus",
@@ -3404,6 +5079,7 @@ export default {
         "raa-haus",
         "rah-taus",
         "rak-kaus",
+        "rak-kaut",
         "rank-kaus",
         "rap-paus",
         "rap-saus",
@@ -3437,6 +5113,7 @@ export default {
         "varp-paus",
         "vas-kaus",
         "vas-taus",
+        "vas-taust",
         "vat-kaus"
     ],
     "aa-au-a": [
@@ -3445,7 +5122,9 @@ export default {
         "haa-vau-ma",
         "han-kau-ma",
         "har-hau-ma",
+        "har-hau-ta",
         "maa-kaup-pa",
+        "rak-kaut-ta",
         "sak-kau-ma",
         "sal-pau-ma"
     ],
@@ -3473,14 +5152,32 @@ export default {
         "vam-maut-taa"
     ],
     "aa-au-e": [
-        "maa-jau-he"
+        "maa-jau-he",
+        "rak-kau-del",
+        "rak-kau-den",
+        "rak-kau-dest",
+        "rak-kau-det",
+        "vas-tauk-set"
+    ],
+    "aa-au-ee": [
+        "rak-kau-teen",
+        "vas-tauk-seen"
     ],
     "aa-au-u": [
+        "an-tau-dun",
         "an-tau-mus",
         "har-hau-tus",
         "lak-kau-tus",
         "nak-sau-tus",
         "sak-kau-tus"
+    ],
+    "aa-au-ui": [
+        "har-hau-tui"
+    ],
+    "aa-au-uu": [
+        "ah-tau-tuu",
+        "an-tau-tuu",
+        "kan-tau-tuu"
     ],
     "aa-au-yö": [
         "ah-taus-työ",
@@ -3498,21 +5195,29 @@ export default {
         "ah-ne",
         "ah-ven",
         "ak-ne",
+        "ak-sel",
         "al-le",
         "am-me",
+        "ar-ven",
+        "ar-vet",
         "as-kel",
+        "as-kelt",
         "as-te",
+        "as-tet",
         "haa-ve",
         "haas-te",
+        "hal-bes",
         "hal-me",
         "han-ke",
         "har-me",
         "jat-ke",
         "kaa-de",
+        "kaa-ren",
         "kaar-ne",
         "kaar-re",
         "kah-den",
         "kah-des",
+        "kah-det",
         "kah-le",
         "kal-ke",
         "kal-le",
@@ -3520,6 +5225,7 @@ export default {
         "kam-pe",
         "kan-ne",
         "kan-nel",
+        "kan-nen",
         "kap-se",
         "kar-he",
         "kar-ve",
@@ -3527,13 +5233,25 @@ export default {
         "kass-ler",
         "kat-se",
         "kat-ve",
+        "lah-den",
         "lah-je",
         "lan-de",
         "lan-ne",
+        "lap-sen",
+        "lap-ses",
+        "lap-set",
+        "las-ke",
+        "las-ken",
+        "las-ket",
+        "las-ten",
         "maa-te",
+        "maal-le",
+        "maam-me",
         "man-ne",
         "man-ner",
+        "man-sen",
         "mar-ket",
+        "mat-ter",
         "nal-le",
         "nars-ke",
         "nas-se",
@@ -3549,18 +5267,30 @@ export default {
         "rah-je",
         "ran-ne",
         "rap-se",
+        "razz-le",
         "saa-me",
         "saa-te",
+        "saam-me",
         "saan-ne",
         "saas-te",
+        "saat-te",
         "sak-set",
+        "samp-le",
         "san-gen",
         "taa-sen",
         "taak-se",
+        "taak-ses",
+        "tal-vel",
+        "tal-ven",
+        "tal-vet",
         "tan-dem",
         "tan-ner",
         "tar-ke",
         "tar-ve",
+        "tar-vet",
+        "tart-te",
+        "tart-ten",
+        "tart-tet",
         "tran-ce",
         "vaa-de",
         "vaa-te",
@@ -3575,18 +5305,25 @@ export default {
     "aa-e-a": [
         "ah-ke-ra",
         "an-ke-a",
+        "an-ke-at",
+        "an-ne-ta",
         "ap-ne-a",
         "ap-pe-la",
+        "ar-ke-a",
+        "baa-re-ja",
         "haa-le-a",
         "haa-le-ta",
         "hal-je-ta",
+        "hal-le-ja",
         "hal-ve-ta",
+        "hap-pe-a",
         "har-me-ta",
         "har-te-va",
         "har-ve-ta",
         "kaa-me-a",
         "kaa-re-va",
         "kal-pe-a",
+        "kal-pe-at",
         "kal-se-a",
         "kal-te-va",
         "kal-ve-ta",
@@ -3595,6 +5332,7 @@ export default {
         "kan-de-la",
         "kan-ge-ta",
         "kan-ke-a",
+        "kan-ke-at",
         "kar-he-a",
         "kar-he-ta",
         "kar-je-ta",
@@ -3608,19 +5346,24 @@ export default {
         "laa-ke-a",
         "lan-ge-ta",
         "lap-se-kas",
+        "lap-se-na",
         "las-ke-a",
         "lat-te-a",
+        "mar-ke-tan",
         "nah-ke-a",
         "pal-le-a",
+        "pal-le-ja",
         "ran-ke-ta",
         "rat-ke-ta",
         "saa-re-kas",
         "sals-ke-a",
         "san-ke-ta",
+        "sap-pe-na",
         "sar-ve-kas",
         "taa-je-ta",
         "tah-me-a",
         "tah-me-ta",
+        "tam-me-lan",
         "tan-ke-a",
         "tar-je-ta",
         "vaa-le-a",
@@ -3629,6 +5372,7 @@ export default {
         "vah-ve-ta",
         "val-je-ta",
         "val-ke-a",
+        "val-ke-an",
         "van-he-ta",
         "van-ke-ta",
         "vant-te-ra",
@@ -3637,12 +5381,34 @@ export default {
         "var-te-va"
     ],
     "aa-e-aa": [
-        "ah-ke-raan"
+        "ah-ke-raan",
+        "an-ne-taan",
+        "hal-ke-aa",
+        "jat-ke-taan",
+        "kan-ne-taan",
+        "kas-ve-taan",
+        "kat-ke-aa",
+        "kat-ke-raa",
+        "lan-ke-aa",
+        "las-ke-taan",
+        "raa-de-taan",
+        "rat-ke-aa",
+        "saa-te-taan",
+        "vaah-te-raan",
+        "val-ke-aa"
     ],
     "aa-e-e": [
+        "aa-me-nen",
+        "aa-ve-het",
+        "ar-ve-len",
         "as-ke-le",
+        "as-te-len",
+        "haas-te-len",
         "kaa-re-ke",
         "kan-te-le",
+        "kas-te-len",
+        "kat-se-len",
+        "kat-se-let",
         "lah-de-ke",
         "man-te-re",
         "par-ve-ke",
@@ -3651,17 +5417,38 @@ export default {
         "sal-me-ke",
         "sar-ve-ke",
         "tal-le-te",
+        "tam-pe-re",
         "tan-te-re",
+        "var-je-le",
         "vas-te-des"
     ],
     "aa-e-ee": [
-        "kar-ke-nee"
+        "as-ke-leet",
+        "as-te-lee",
+        "haa-le-nee",
+        "kar-ke-nee",
+        "kas-te-lee",
+        "kat-se-lee",
+        "man-te-reen",
+        "saat-te-lee",
+        "tam-pe-reel",
+        "tam-pe-reen",
+        "val-ke-nee",
+        "van-he-nee"
+    ],
+    "aa-e-ei": [
+        "man-te-reit"
     ],
     "aa-e-i": [
         "aa-te-li",
+        "aat-te-lin",
         "ah-te-ri",
         "ak-se-li",
         "amp-pe-li",
+        "an-ne-li",
+        "an-ne-lin",
+        "ar-te-kin",
+        "as-ke-lin",
         "as-te-ri",
         "bar-re-li",
         "bas-ke-ri",
@@ -3673,35 +5460,45 @@ export default {
         "hak-ke-ri",
         "hals-te-ri",
         "hams-te-ri",
+        "hams-te-rit",
         "hap-pe-ning",
         "kaa-de-ri",
         "kaa-ke-li",
         "kaa-pe-li",
         "kah-ve-li",
+        "kal-le-hin",
         "kal-te-rit",
         "kam-fe-ri",
         "kans-le-ri",
         "kap-pe-li",
         "kap-se-li",
         "kas-le-ri",
+        "kat-se-lin",
         "kraat-te-ri",
         "krak-ke-ri",
         "laa-ke-ri",
+        "lan-ge-tin",
+        "lap-se-ni",
         "maa-ve-si",
         "man-ke-li",
         "man-te-li",
         "mant-te-li",
         "mark-ke-ri",
         "pak-ke-li",
+        "pal-ve-li",
         "pant-te-ri",
         "part-ne-ri",
+        "part-ne-rit",
         "pas-se-li",
         "pat-te-ri",
+        "ran-de-lin",
         "ras-te-ri",
         "saa-ke-li",
+        "saat-te-li",
         "sak-ke-li",
         "sam-pe-ri",
         "samp-le-ri",
+        "san-te-rin",
         "sank-ke-ri",
         "skan-ne-ri",
         "slaa-ge-ri",
@@ -3709,12 +5506,22 @@ export default {
         "spak-ke-li",
         "taa-le-ri",
         "taa-te-li",
+        "taak-se-ni",
+        "taak-se-si",
+        "tan-de-mist",
         "tank-ke-ri",
-        "tras-se-li"
+        "tras-se-li",
+        "var-je-lin",
+        "var-je-lis"
     ],
     "aa-e-ie": [
         "bras-se-rie",
         "haas-te-mies"
+    ],
+    "aa-e-ii": [
+        "han-de-liin",
+        "kaa-ke-liin",
+        "man-te-lii"
     ],
     "aa-e-iu": [
         "mag-ne-sium"
@@ -3732,7 +5539,11 @@ export default {
         "vah-ve-ro"
     ],
     "aa-e-oi": [
+        "kar-ke-loi",
         "vaa-te-koi"
+    ],
+    "aa-e-oo": [
+        "kat-ke-roo"
     ],
     "aa-e-u": [
         "ar-ve-lu",
@@ -3743,6 +5554,7 @@ export default {
         "kart-te-lu",
         "kas-te-lu",
         "kat-se-lu",
+        "las-ke-nut",
         "nak-ke-lu",
         "pal-ve-lu",
         "pal-ve-lus",
@@ -3751,6 +5563,7 @@ export default {
         "tal-le-tus",
         "tap-pe-lu",
         "tap-pe-lus",
+        "tap-pe-lut",
         "vaa-te-tus",
         "var-je-lu",
         "var-je-lus"
@@ -3779,37 +5592,92 @@ export default {
         "vaa-te-täi"
     ],
     "aa-e-ää": [
+        "maa-pe-rää",
         "paan-ne-jää"
     ],
     "aa-ee": [
+        "aa-jee",
+        "aat-teen",
+        "aat-teet",
         "al-keet",
+        "al-leen",
+        "an-kee",
+        "an-keen",
+        "an-keest",
+        "an-teeks",
+        "ar-kee",
+        "ar-keen",
+        "as-teen",
+        "haa-veet",
+        "han-keen",
+        "hap-pee",
         "har-teet",
+        "kah-leet",
+        "kah-teen",
+        "kal-peen",
         "kamp-peet",
+        "kan-keeks",
+        "kan-keen",
+        "kat-kee",
+        "kat-seen",
+        "kat-sees",
+        "kat-seet",
+        "lah-tee",
+        "lan-dee",
+        "lan-kee",
+        "las-kee",
+        "pal-keet",
         "par-fee",
         "rah-keet",
+        "ran-teen",
+        "rat-kee",
+        "saa-neet",
+        "saas-teen",
+        "tal-tee",
         "tal-teen",
+        "tal-vee",
+        "tar-peeks",
         "tar-peen",
-        "var-teen"
+        "tar-pees",
+        "tart-tee",
+        "vaat-teet",
+        "val-hees",
+        "val-heet",
+        "van-teet",
+        "var-teen",
+        "was-tee"
     ],
     "aa-ee-a": [
         "al-geb-ra",
+        "am-mees-sa",
+        "ams-ter-dam",
+        "an-kee-ta",
         "an-nel-la",
+        "ar-jes-ta",
         "ar-vel-la",
         "as-kel-ma",
         "as-tel-la",
+        "as-tet-ta",
         "haas-tel-la",
         "jak-sel-la",
         "kaa-del-la",
         "kaar-rel-la",
+        "kaar-tees-sa",
         "kah-dek-san",
         "kah-dek-sas",
+        "kah-des-sa",
+        "kal-pee-na",
         "kan-nel-la",
         "kar-rel-la",
         "kar-tel-la",
         "kas-tel-la",
         "kat-kel-ma",
+        "kat-sees-sas",
         "kat-sel-la",
+        "kat-set-ta",
+        "kat-vees-sa",
         "lah-del-ma",
+        "lap-sen-sa",
         "las-kel-ma",
         "las-ken-ta",
         "maa-her-ra",
@@ -3817,13 +5685,20 @@ export default {
         "pal-vel-la",
         "raa-del-la",
         "ran-nem-mas",
+        "ran-tees-sa",
+        "saa-nee-na",
         "saa-rel-ma",
         "saa-tel-la",
         "taa-em-ma",
         "taa-em-mas",
         "tal-lel-la",
+        "tal-len-nan",
         "tal-les-sa",
         "tal-les-ta",
+        "tar-vet-ta",
+        "val-hees-sa",
+        "van-hem-man",
+        "van-hem-mat",
         "var-jel-la",
         "var-rel-la",
         "var-rel-ta",
@@ -3839,17 +5714,24 @@ export default {
         "har-vem-paan",
         "har-ven-taa",
         "kaa-ker-taa",
+        "kaar-rel-laan",
         "kah-den-taa",
         "kah-des-taan",
+        "kah-leet-kaan",
         "kal-lel-laan",
         "kal-ven-taa",
         "kan-ger-taa",
         "kar-hen-taa",
+        "kas-tel-laan",
+        "kat-kee-maan",
+        "kat-sel-laan",
         "laa-jen-taa",
         "lan-get-taa",
         "lap-peel-laan",
+        "lap-ses-taan",
         "lap-set-taa",
         "las-ket-taa",
+        "las-ten-kaa",
         "man-ner-maa",
         "raa-en-taa",
         "ran-nem-paa",
@@ -3863,6 +5745,7 @@ export default {
         "vaa-len-taa",
         "vaa-per-taa",
         "vaa-tet-taa",
+        "vah-vem-paa",
         "vah-ven-taa",
         "val-men-taa",
         "van-hen-taa",
@@ -3885,18 +5768,33 @@ export default {
         "tan-gee-raus"
     ],
     "aa-ee-e": [
+        "aa-tel-len",
+        "kan-nel-le",
         "kar-hen-ne",
         "kar-rel-le",
+        "kat-sel-len",
+        "lan-del-le",
+        "lap-sel-le",
+        "las-kem-me",
         "rac-let-te",
         "tal-len-ne",
         "var-men-ne",
         "var-rel-le"
     ],
     "aa-ee-ee": [
+        "haa-len-neet",
         "kal-lel-leen",
-        "lap-peel-leen"
+        "kat-see-sees",
+        "kat-vee-seen",
+        "lap-peel-leen",
+        "par-vek-keen",
+        "vaa-len-neet"
+    ],
+    "aa-ee-ei": [
+        "man-ner-heim"
     ],
     "aa-ee-i": [
+        "aar-tee-ni",
         "ab-ses-si",
         "ad-res-si",
         "ad-vent-ti",
@@ -3907,9 +5805,12 @@ export default {
         "ak-sep-ti",
         "al-lee-li",
         "am-pee-ri",
+        "an-kees-ti",
         "an-teek-si",
         "an-ten-ni",
+        "an-ten-nin",
         "ap-teek-ki",
+        "ar-kee-ni",
         "ar-see-ni",
         "as-bes-ti",
         "as-kee-si",
@@ -3925,24 +5826,35 @@ export default {
         "fal-set-ti",
         "frag-ment-ti",
         "fran-see-si",
+        "haa-vee-ni",
+        "haa-veek-si",
+        "hal-vem-pi",
         "har-vem-min",
         "har-ven-nin",
         "kah-des-ti",
+        "kah-lee-ni",
         "kam-ree-ri",
         "kan-vee-si",
         "kap-sek-ki",
         "kap-tee-ni",
+        "kap-tee-nit",
+        "kar-kees-ti",
         "kar-tel-li",
         "kas-tel-li",
+        "kat-see-ni",
+        "kat-see-si",
         "kvar-tet-ti",
         "lam-pet-ti",
         "lan-set-ti",
         "maa-hen-ki",
+        "maa-mer-kit",
         "maa-merk-ki",
+        "mag-nee-tin",
         "mag-neet-ti",
         "mam-sel-li",
         "man-set-ti",
         "mar-ket-ti",
+        "mar-nee-ri",
         "pal-jet-ti",
         "pamf-let-ti",
         "par-ket-ti",
@@ -3958,14 +5870,34 @@ export default {
         "tar-kem-min",
         "tar-peek-si",
         "tras-sent-ti",
+        "vaa-leem-pi",
+        "vaat-tee-si",
+        "vah-vem-pi",
+        "val-heel-list",
         "van-hem-pi",
         "var-hem-min",
-        "var-hem-pi"
+        "var-hem-pi",
+        "var-mem-min",
+        "var-mem-pi"
+    ],
+    "aa-ee-ie": [
+        "raat-teen-tie",
+        "van-hem-pien"
+    ],
+    "aa-ee-ii": [
+        "an-net-tiin",
+        "kaa-det-tiin",
+        "kan-vee-sii",
+        "kas-tet-tiin",
+        "kat-sel-tiin",
+        "par-ket-tiin",
+        "van-hem-pii"
     ],
     "aa-ee-o": [
         "al-leg-ro",
         "an-ger-vo",
         "char-les-ton",
+        "has-sel-hoff",
         "kar-hen-nos",
         "kat-tee-ton",
         "kvar-tet-to",
@@ -3982,15 +5914,24 @@ export default {
     "aa-ee-u": [
         "am-men-nus",
         "as-kel-lus",
+        "as-tel-lut",
+        "as-tel-tu",
         "hal-ven-nus",
         "har-ven-nus",
+        "jak-set-tu",
         "jazz-mes-su",
+        "kaar-rel-lu",
         "kah-den-nus",
         "kan-ger-rus",
         "kar-hen-nus",
+        "kas-vet-tu",
+        "kat-ken-nu",
         "kat-sel-mus",
+        "kat-tel-lut",
         "laa-jen-nus",
         "lan-kee-mus",
+        "las-ket-tu",
+        "mak-set-tu",
         "tal-len-nus",
         "tar-ken-nus",
         "vaa-len-nus",
@@ -4003,6 +5944,8 @@ export default {
         "var-ren-nus"
     ],
     "aa-ee-uu": [
+        "an-net-tuu",
+        "hal-vek-suu",
         "lap-sek-kuus",
         "sal-men-suu",
         "van-hem-muus"
@@ -4010,20 +5953,63 @@ export default {
     "aa-ee-ää": [
         "man-ner-jää"
     ],
+    "aa-ei": [
+        "ah-neilt",
+        "har-teilt",
+        "kah-leis",
+        "kal-lein",
+        "kat-seilt",
+        "lan-dei",
+        "lat-teit",
+        "maa-leit",
+        "mas-seil",
+        "paa-reil",
+        "pal-lei",
+        "ran-tein",
+        "vaa-leil",
+        "vaat-teit"
+    ],
     "aa-ei-a": [
         "ar-mei-ja",
+        "ar-mei-jat",
+        "haa-lei-ta",
+        "haa-vei-ta",
         "haa-veil-la",
+        "haa-veis-ta",
         "hal-keil-la",
         "har-tei-kas",
+        "har-teil-las",
+        "har-teil-ta",
         "jal-keil-la",
+        "kah-leis-sa",
+        "kah-leis-ta",
+        "kal-lein-ta",
+        "kar-heil-la",
         "kat-keil-la",
+        "kat-sei-ta",
+        "kat-seis-ta",
+        "kat-veis-sa",
+        "mal-feis-ta",
         "par-veil-la",
         "pas-tei-ja",
+        "raa-meis-sa",
+        "rab-beil-la",
         "rat-keil-la",
-        "val-veil-la"
+        "sar-veis-ta",
+        "vaat-tei-ta",
+        "vaat-teis-sa",
+        "vaat-teis-ta",
+        "val-hei-ta",
+        "val-kei-ta",
+        "val-veil-la",
+        "van-teis-ta"
     ],
     "aa-ei-aa": [
-        "kar-keis-taa"
+        "aar-teis-taan",
+        "haa-veil-laan",
+        "har-teil-laan",
+        "kar-keis-taa",
+        "van-teil-kaa"
     ],
     "aa-ei-ai": [
         "ar-keit-tain",
@@ -4033,6 +6019,10 @@ export default {
         "maa-leik-kaus"
     ],
     "aa-ei-e": [
+        "aa-vei-den",
+        "aat-tei-den",
+        "haa-vei-let",
+        "har-teil-le",
         "jal-keil-le",
         "kaar-tei-nen",
         "kas-tei-nen",
@@ -4043,11 +6033,25 @@ export default {
         "maan-teit-se",
         "paah-tei-nen",
         "saas-tei-nen",
+        "vaat-tei-den",
         "val-veil-le"
     ],
+    "aa-ei-ee": [
+        "haa-vei-lee",
+        "har-teil-leen"
+    ],
     "aa-ei-i": [
+        "haa-vei-lin",
         "pan-teis-mi",
-        "pan-teis-ti"
+        "pan-teis-ti",
+        "valt-hei-kin",
+        "van-geik-si"
+    ],
+    "aa-ei-ii": [
+        "har-tei-siin",
+        "kah-lei-siin",
+        "vaat-tei-siin",
+        "val-kei-siin"
     ],
     "aa-ei-o": [
         "aar-teis-to",
@@ -4104,6 +6108,11 @@ export default {
         "tal-veut-taa",
         "val-veut-taa"
     ],
+    "aa-eu-e": [
+        "an-keu-dest",
+        "val-keu-den",
+        "val-veu-nest"
+    ],
     "aa-eu-i": [
         "val-veu-ni"
     ],
@@ -4111,15 +6120,29 @@ export default {
         "maa-neu-vos"
     ],
     "aa-eu-u": [
+        "las-keu-dun",
         "maa-seu-tu"
+    ],
+    "aa-eu-ui": [
+        "las-keu-tui"
+    ],
+    "aa-eu-uu": [
+        "las-keu-tuu"
+    ],
+    "aa-ey": [
+        "mar-ley"
     ],
     "aa-ey-ey": [
         "kat-seyh-teys"
+    ],
+    "aa-ey-ä": [
+        "stan-leyl-lä"
     ],
     "aa-i": [
         "aa-ri",
         "aa-si",
         "ah-din",
+        "ah-min",
         "ah-ti",
         "ak-ti",
         "al-li",
@@ -4128,6 +6151,8 @@ export default {
         "alp-pi",
         "am-mis",
         "an-ti",
+        "ans-si",
+        "ant-ti",
         "ap-pi",
         "ar-ki",
         "ar-pi",
@@ -4137,16 +6162,27 @@ export default {
         "as-ti",
         "as-tin",
         "baa-ri",
+        "baa-rin",
+        "baa-ris",
+        "baa-rist",
+        "baa-rit",
+        "bak-sit",
+        "ball-ssit",
         "balt-ti",
         "bar-bi",
         "bar-di",
         "bas-ki",
         "blan-dis",
+        "blan-dist",
         "bras-si",
         "cam-ping",
         "char-mi",
         "chat-ti",
+        "clas-si",
         "daa-mi",
+        "daa-mit",
+        "dam-nit",
+        "faa-nin",
         "faa-si",
         "fak-ki",
         "fak-si",
@@ -4160,8 +6196,10 @@ export default {
         "frak-ki",
         "fran-gi",
         "frank-ki",
+        "gand-hi",
         "gas-ti",
         "graa-vi",
+        "gran-di",
         "haa-vi",
         "haah-ti",
         "haak-si",
@@ -4174,31 +6212,41 @@ export default {
         "hant-ti",
         "hap-pi",
         "hap-si",
+        "har-lin",
         "har-mi",
         "har-ri",
         "harp-pi",
         "hart-si",
         "has-si",
+        "haw-kin",
         "jaar-di",
         "jaar-li",
+        "jah-dil",
         "jah-ti",
         "jak-ki",
         "jam-bi",
         "jams-si",
         "jap-si",
+        "jas-min",
         "jas-pis",
         "jat-si",
         "kaa-din",
         "kaa-li",
+        "kaa-lis",
+        "kaa-pin",
+        "kaa-pist",
         "kaa-ri",
         "kaa-vin",
         "kaak-ki",
         "kaap-pi",
         "kaar-ti",
         "kah-vi",
+        "kah-vin",
+        "kah-vit",
         "kak-si",
         "kak-sin",
         "kal-lis",
+        "kal-list",
         "kal-vin",
         "kalk-ki",
         "kalk-kis",
@@ -4210,6 +6258,7 @@ export default {
         "kan-nin",
         "kan-si",
         "kant-ri",
+        "kant-sis",
         "kant-ti",
         "kap-pi",
         "kap-ris",
@@ -4224,6 +6273,7 @@ export default {
         "kars-ti",
         "kas-ki",
         "kas-si",
+        "kas-sin",
         "kas-ti",
         "kas-vi",
         "kas-vis",
@@ -4259,23 +6309,33 @@ export default {
         "lap-pi",
         "lap-si",
         "las-kin",
+        "las-kis",
         "las-si",
         "las-ti",
         "maa-gi",
         "maa-li",
+        "maa-lin",
+        "maa-lis",
         "maa-rin",
         "mah-ti",
         "mak-ki",
         "mak-si",
         "mal-li",
         "mal-mi",
+        "mal-mil",
+        "mal-min",
         "malt-ti",
         "man-si",
         "map-pi",
         "mars-ki",
+        "mars-kin",
         "mars-si",
+        "mars-sin",
+        "mart-ti",
         "mas-ki",
         "mas-si",
+        "mas-sil",
+        "mas-sit",
         "mat-si",
         "mat-ti",
         "naa-li",
@@ -4287,6 +6347,7 @@ export default {
         "nar-ri",
         "nark-kis",
         "nat-si",
+        "nat-sit",
         "paa-li",
         "paa-rit",
         "paa-si",
@@ -4300,14 +6361,20 @@ export default {
         "pak-ti",
         "pal-jin",
         "pal-li",
+        "pal-lit",
         "pal-vi",
         "palk-ki",
+        "pan-kin",
+        "pan-kist",
+        "pan-kit",
         "pank-ki",
         "pant-ti",
         "pap-pi",
         "par-si",
         "par-vi",
         "park-ki",
+        "part-sil",
+        "pas-kin",
         "pas-si",
         "pat-ti",
         "plaa-ni",
@@ -4316,6 +6383,7 @@ export default {
         "plans-si",
         "prak-sis",
         "psal-mi",
+        "raa-din",
         "raa-mi",
         "raa-ni",
         "raa-ti",
@@ -4333,14 +6401,20 @@ export default {
         "rank-ki",
         "rans-kis",
         "rap-si",
+        "raps-hit",
         "ras-pi",
         "ras-si",
         "ras-ti",
+        "ras-til",
         "ras-vis",
         "rat-ki",
         "rat-ti",
+        "saa-ki",
+        "saa-kin",
         "saa-li",
         "saa-lis",
+        "saa-list",
+        "saa-pi",
         "saa-ri",
         "saa-ti",
         "saa-vi",
@@ -4351,6 +6425,7 @@ export default {
         "sak-ki",
         "sal-mi",
         "sam-pi",
+        "san-ni",
         "sand-wich",
         "sans-krit",
         "sap-pi",
@@ -4370,37 +6445,56 @@ export default {
         "stans-si",
         "start-ti",
         "stras-si",
+        "swat-ti",
+        "taas-ki",
         "taf-ti",
+        "tah-dis",
         "tah-ti",
         "tak-ki",
         "tak-si",
+        "tak-sin",
+        "tak-sis",
         "tal-li",
         "tal-vi",
         "talk-ki",
         "tam-mi",
         "tamp-pi",
+        "tan-kit",
         "tank-ki",
         "tans-si",
+        "tans-sin",
+        "tans-sit",
         "tant-ti",
         "tap-pi",
         "tap-si",
+        "tar-vi",
+        "tar-vin",
         "tar-vis",
+        "tart-tis",
         "tas-si",
         "tat-ti",
         "tat-tis",
         "traa-ni",
         "tral-li",
         "trans-si",
+        "trans-sis",
         "trat-ti",
         "tsaa-ri",
+        "vaa-di",
         "vaa-din",
         "vaa-li",
         "vaa-ri",
+        "vaa-rin",
         "vaa-si",
+        "vaa-ti",
+        "vaa-tis",
+        "vah-di",
         "vah-ti",
+        "vah-vin",
         "vak-si",
         "val-li",
         "val-mis",
+        "val-mist",
         "valk-ki",
         "vals-si",
         "valt-ti",
@@ -4416,14 +6510,22 @@ export default {
         "vas-ki",
         "vas-tin",
         "vat-ti",
+        "wac-ki",
         "wat-ti"
     ],
     "aa-i-a": [
         "aa-ri-a",
+        "af-ri-kan",
         "ah-mi-a",
+        "ak-ti-a",
+        "ang-li-a",
+        "ang-li-an",
         "ar-mi-as",
+        "ar-pi-a",
         "as-ti-a",
+        "cas-hi-a",
         "char-mi-kas",
+        "crac-ki-a",
         "daa-li-a",
         "haa-li-a",
         "haa-si-a",
@@ -4440,10 +6542,13 @@ export default {
         "har-ti-a",
         "harp-pi-a",
         "kaa-pi-a",
+        "kaap-pi-a",
         "kah-li-ta",
         "kah-mi-a",
         "kah-ti-a",
+        "kah-vi-a",
         "kah-vi-la",
+        "kah-vi-lan",
         "kak-ki-a",
         "kal-ki-ta",
         "kal-vi-a",
@@ -4452,6 +6557,7 @@ export default {
         "kar-hi-ta",
         "kar-mi-a",
         "kar-mi-va",
+        "kar-mi-van",
         "kar-si-a",
         "kar-si-ja",
         "kar-si-na",
@@ -4463,6 +6569,8 @@ export default {
         "laa-ti-ja",
         "laas-ti-ta",
         "lamp-si-a",
+        "lant-ti-a",
+        "lap-si-a",
         "las-ki-ja",
         "lat-ki-a",
         "lat-ti-a",
@@ -4470,6 +6578,7 @@ export default {
         "maa-hi-kas",
         "maa-ti-la",
         "mah-di-kas",
+        "mal-li-a",
         "mal-li-kas",
         "mal-mi-kas",
         "mark-ki-na",
@@ -4478,6 +6587,7 @@ export default {
         "mars-si-ja",
         "mat-ki-a",
         "mat-ki-ja",
+        "mat-ti-la",
         "nap-si-a",
         "paa-ri-a",
         "pal-ki-ta",
@@ -4493,47 +6603,69 @@ export default {
         "raas-ki-a",
         "raat-si-a",
         "rak-si-a",
+        "ral-li-a",
         "rap-si-a",
         "ras-ki-a",
         "ras-ti-a",
         "rat-si-a",
         "saa-pi-kas",
+        "sab-ri-na",
         "sak-si-a",
         "sal-li-a",
         "sal-li-va",
         "sal-vi-a",
         "san-ni-kas",
         "sang-ri-a",
+        "skarp-pi-na",
         "tah-di-kas",
         "tah-ri-a",
+        "tak-ki-a",
         "tak-si-a",
         "tal-ki-ta",
         "tal-si-a",
         "tans-si-a",
         "tans-si-ja",
+        "tans-si-vat",
         "tar-vi-ta",
         "tsaa-ri-tar",
+        "vaa-di-ta",
         "vaa-li-a",
         "vaa-ni-a",
         "vaa-ni-ja",
         "vaa-ti-a",
         "vaa-ti-ja",
+        "vaa-ti-mas",
         "vaa-ti-va",
         "vah-ti-a",
+        "val-li-lan",
         "val-li-ta",
         "val-ti-as",
         "van-gi-ta",
         "van-ki-la",
+        "van-ki-na",
         "var-ti-ja"
     ],
     "aa-i-aa": [
         "af-ri-kaans",
+        "haa-li-taan",
+        "hal-li-taan",
+        "hank-ki-maan",
         "kaa-li-maa",
         "kalk-ki-maa",
         "kars-ti-maa",
         "kas-ki-maa",
         "kas-vi-maa",
-        "mars-ki-maa"
+        "kat-ti-laa",
+        "lap-si-kaan",
+        "lat-ti-aa",
+        "lat-ti-aan",
+        "mars-ki-maa",
+        "paa-pi-maan",
+        "tans-si-maan",
+        "tans-si-taan",
+        "tar-vi-taan",
+        "val-ti-aat",
+        "van-ki-laan"
     ],
     "aa-i-e": [
         "aa-pi-nen",
@@ -4559,6 +6691,8 @@ export default {
         "maa-li-nen",
         "maa-ni-nen",
         "maal-li-nen",
+        "maal-li-sen",
+        "maal-li-set",
         "mal-li-ne",
         "mal-li-nen",
         "mal-mi-nen",
@@ -4583,18 +6717,31 @@ export default {
         "vas-ti-ke",
         "vas-ti-ne"
     ],
+    "aa-i-ee": [
+        "raa-pi-neet",
+        "tans-si-neet"
+    ],
     "aa-i-i": [
+        "ak-si-mi",
         "ar-ki-sin",
+        "ar-pi-kin",
         "franc-hi-sing",
         "graf-fi-ti",
         "kar-bi-di",
         "kash-mi-ri",
         "mak-si-mi",
         "mar-ti-ni",
+        "mar-ti-nil",
+        "mat-si-ni",
         "plas-mi-di",
         "plas-ti-di",
+        "sat-si-ni",
         "tal-vi-sin",
-        "tsat-si-ki"
+        "tar-vi-sin",
+        "tat-si-ni",
+        "tsat-si-ki",
+        "vaa-ti-si",
+        "vals-si-ni"
     ],
     "aa-i-ie": [
         "hant-ti-mies",
@@ -4604,12 +6751,18 @@ export default {
         "tak-si-mies",
         "tal-vi-tie"
     ],
+    "aa-i-ii": [
+        "traa-gi-siin"
+    ],
     "aa-i-o": [
+        "aa-vi-kon",
         "aar-ni-o",
+        "ac-ti-on",
         "ah-ki-o",
         "ak-ti-o",
         "al-ki-o",
         "an-si-o",
+        "an-si-ot",
         "ar-vi-o",
         "frak-ti-o",
         "gang-li-o",
@@ -4617,25 +6770,32 @@ export default {
         "hal-ki-o",
         "har-mi-o",
         "har-mi-ton",
+        "har-ri-son",
         "jal-ki-o",
         "kaa-vi-o",
         "kah-vi-o",
         "kak-si-o",
+        "kak-si-on",
         "kal-li-o",
+        "kal-li-on",
         "kal-ti-o",
         "kam-mi-o",
         "kan-si-o",
+        "kan-si-ot",
         "kan-ti-o",
         "kar-ti-o",
         "kas-vi-o",
+        "klas-si-kon",
         "laa-ki-o",
         "lan-ti-o",
+        "lan-ti-on",
         "las-ki-mo",
         "maa-li-ton",
         "mal-mi-o",
         "mal-ti-ton",
         "mar-ti-o",
         "naa-mi-o",
+        "naa-mi-ot",
         "paah-ti-mo",
         "palk-ki-o",
         "par-ti-o",
@@ -4644,6 +6804,7 @@ export default {
         "sam-mi-o",
         "sank-ti-o",
         "sar-pi-o",
+        "stal-li-on",
         "tah-di-ton",
         "tal-ti-o",
         "tal-vi-o",
@@ -4652,16 +6813,28 @@ export default {
         "val-ti-mo",
         "val-ti-o",
         "var-pi-o",
-        "var-ti-o"
+        "var-ti-o",
+        "war-ri-or"
+    ],
+    "aa-i-oi": [
+        "ar-vi-oi",
+        "kal-li-oil"
+    ],
+    "aa-i-oo": [
+        "aar-ni-oon",
+        "kal-li-oon",
+        "tap-pi-oon"
     ],
     "aa-i-u": [
         "hal-li-tus",
+        "hank-ki-nu",
         "jaa-ri-tus",
         "jal-li-tus",
         "kah-vi-tus",
         "kal-ki-tus",
         "kam-pi-tus",
         "kan-si-tus",
+        "kant-si-nu",
         "laas-ti-tus",
         "paa-li-tus",
         "par-ki-tus",
@@ -4691,6 +6864,7 @@ export default {
         "staat-ti-suus",
         "tak-ti-suus",
         "tam-mi-kuu",
+        "tam-mi-kuun",
         "tam-mi-puu",
         "traa-gi-suus",
         "traak-ki-puu",
@@ -4703,6 +6877,7 @@ export default {
         "van-ki-työ"
     ],
     "aa-i-ä": [
+        "blac-ki-ä",
         "maa-ni-sä"
     ],
     "aa-i-ää": [
@@ -4712,17 +6887,24 @@ export default {
         "vas-ti-kään"
     ],
     "aa-ie": [
+        "aa-sien",
         "cad-die",
+        "lap-sien",
         "las-sie",
         "maa-mies",
         "maan-mies",
-        "maan-tie"
+        "maan-tie",
+        "vaa-lien",
+        "vaa-tien"
     ],
     "aa-ie-a": [
         "praas-niek-ka"
     ],
     "aa-ie-e": [
         "maan-tie-de"
+    ],
+    "aa-ie-i": [
+        "ball-ssie-ni"
     ],
     "aa-ie-o": [
         "maa-lie-ro",
@@ -4733,9 +6915,73 @@ export default {
         "tan-tiee-mi"
     ],
     "aa-ii": [
+        "baa-riin",
+        "bak-sii",
+        "cas-hii",
+        "chat-tiin",
+        "haa-lii",
+        "haa-viin",
+        "hal-tiin",
+        "hank-kii",
+        "hant-tii",
         "hant-tiin",
+        "har-rii",
+        "has-hii",
+        "hat-sii",
+        "kaap-pii",
+        "kaf-fii",
+        "kan-sii",
+        "kant-tii",
+        "kas-sii",
+        "lant-tii",
+        "lap-piin",
+        "lap-sii",
+        "maa-lii",
+        "maa-liin",
+        "maat-tiin",
+        "maat-tiinks",
+        "mal-lii",
+        "map-pii",
+        "mas-kii",
+        "mas-sii",
+        "mat-kii",
+        "mat-sii",
         "nalk-kiin",
-        "sas-siin"
+        "pank-kii",
+        "pank-kiin",
+        "park-kiin",
+        "rat-tii",
+        "rat-tiin",
+        "saa-rii",
+        "saa-tiin",
+        "saan-tii",
+        "sas-siin",
+        "slad-dii",
+        "slas-hii",
+        "stas-hii",
+        "tah-tii",
+        "tah-tiin",
+        "tak-kiin",
+        "tak-sii",
+        "tal-liin",
+        "tans-sii",
+        "tans-siin",
+        "tap-piin",
+        "tar-vii",
+        "tar-viiks",
+        "tar-viin",
+        "tar-viit",
+        "tat-sii",
+        "tras-hii",
+        "vaa-lii",
+        "vaa-nii",
+        "vaa-rii",
+        "vaa-tii",
+        "vah-tii",
+        "val-miiks",
+        "val-miin",
+        "val-miit",
+        "vart-tii"
     ],
     "aa-ii-a": [
         "abs-kis-sa",
@@ -4743,33 +6989,52 @@ export default {
         "ak-tii-vat",
         "an-gii-na",
         "an-tiik-va",
+        "ar-kis-ta",
         "ar-tik-la",
+        "ark-tis-ta",
+        "baa-ris-sa",
+        "baa-ris-ta",
+        "cwal-kil-la",
+        "far-mis-sa",
         "haa-rik-ka",
         "haar-nis-ka",
         "hal-lin-ta",
+        "hal-vim-man",
         "han-kin-ta",
         "hap-sik-ka",
         "har-kin-ta",
+        "har-rik-ka",
         "har-sin-ta",
+        "kaa-lis-sa",
+        "kaa-pis-ta",
         "kaa-vin-ta",
         "kaar-nik-ka",
+        "kal-lis-ta",
         "kal-vin-ta",
         "kan-nik-ka",
         "kar-hin-ta",
         "kar-sin-ta",
+        "kas-sis-sa",
         "kas-tik-ka",
         "laa-din-ta",
+        "laa-kis-ta",
         "lak-rit-sa",
+        "lap-sil-ta",
+        "maa-lis-sa",
         "maa-sii-ra",
         "maa-sil-ta",
+        "maal-lis-ta",
         "maan-pin-ta",
         "man-sik-ka",
         "man-til-ja",
         "man-tis-sa",
+        "mar-sis-ta",
         "mars-sin-ta",
+        "mas-sil-la",
         "nal-kis-sa",
         "nal-lik-ka",
         "nas-sik-ka",
+        "pan-kil-la",
         "par-kin-ta",
         "par-sin-ta",
         "pas-sii-vat",
@@ -4777,19 +7042,33 @@ export default {
         "prak-tiik-ka",
         "raa-vin-ta",
         "ran-nim-mas",
+        "saa-lis-ta",
+        "saa-ris-ta",
         "saa-tik-ka",
+        "saa-vis-ta",
+        "saan-nis-sa",
+        "sar-vis-ta",
+        "tak-sis-sa",
         "tak-tiik-ka",
+        "tar-kis-ta",
         "tat-tis-ta",
+        "traa-gis-ta",
         "vaa-lin-ta",
         "vaa-nin-ta",
         "vah-din-ta",
+        "vah-vin-ta",
+        "val-mii-na",
+        "val-mis-ta",
         "val-tik-ka",
+        "var-mis-tan",
+        "var-tis-ta",
         "vas-kit-sa"
     ],
     "aa-ii-aa": [
         "aa-vis-taa",
         "ah-dis-taa",
         "al-tis-taa",
+        "ar-vis-taan",
         "haa-lis-taa",
         "har-mis-saan",
         "har-mit-taa",
@@ -4804,22 +7083,27 @@ export default {
         "kan-sit-taa",
         "kas-vit-taa",
         "lan-nis-taa",
+        "lap-sis-taan",
         "mal-lin-taa",
         "mal-lit-taa",
         "mars-sit-taa",
         "paa-lit-taa",
+        "pan-kis-taan",
         "pas-sit-taa",
         "raa-mit-taa",
         "rah-dit-taa",
         "ran-nim-paa",
         "ras-tit-taa",
         "saa-lis-taa",
+        "sar-vis-taan",
         "tah-dis-taa",
         "tah-dit-taa",
+        "tal-lin-naan",
         "tans-sit-taa",
         "tar-kis-taa",
         "vah-vis-taa",
         "val-mis-taa",
+        "val-tik-kaa",
         "van-kis-taa",
         "var-mis-taa",
         "var-sin-kaan"
@@ -4827,6 +7111,7 @@ export default {
     "aa-ii-ai": [
         "ar-kit-tain",
         "kak-sit-tain",
+        "lan-nis-tais",
         "par-vit-tain"
     ],
     "aa-ii-au": [
@@ -4835,17 +7120,32 @@ export default {
     ],
     "aa-ii-e": [
         "al-tis-te",
+        "hal-lit-sen",
+        "har-kit-se",
+        "lap-sil-le",
         "saa-til-le",
+        "tar-vit-se",
+        "tar-vit-sen",
         "vah-vis-te",
         "val-mis-te",
         "var-mis-te"
     ],
+    "aa-ii-ee": [
+        "hal-lit-see",
+        "har-kit-see",
+        "kah-lit-see",
+        "tar-vit-see",
+        "val-lit-see"
+    ],
     "aa-ii-i": [
+        "aa-vis-ti",
+        "aa-vis-tin",
         "ab-sint-ti",
         "ad-dik-ti",
         "ak-tii-vi",
         "al-tis-ti",
         "alt-tiis-ti",
+        "an-tii-kin",
         "an-tiik-ki",
         "ang-lis-mi",
         "ang-lis-ti",
@@ -4857,10 +7157,13 @@ export default {
         "bap-tis-ti",
         "blan-din-ki",
         "fals-kis-ti",
+        "fars-sim-pi",
         "gam-biit-ti",
         "han-hik-ki",
         "har-pis-ti",
         "jas-mii-ni",
+        "kah-lit-sit",
+        "kal-liis-ti",
         "kans-lis-ti",
         "kant-tii-ni",
         "kap-rii-si",
@@ -4875,6 +7178,7 @@ export default {
         "maan-pii-ri",
         "mak-ril-li",
         "mak-sii-mi",
+        "mal-lik-si",
         "mal-vik-ki",
         "mand-ril-li",
         "mar-kii-si",
@@ -4893,6 +7197,7 @@ export default {
         "pas-sii-vi",
         "pas-til-li",
         "pas-tis-si",
+        "pas-tis-sin",
         "pat-rii-si",
         "rab-bii-ni",
         "ran-nik-ki",
@@ -4900,15 +7205,25 @@ export default {
         "sar-dii-ni",
         "sas-lik-ki",
         "tah-dis-tin",
+        "tah-dit-ti",
         "tal-vik-ki",
         "tan-nii-ni",
         "tar-kim-min",
+        "tar-kis-tin",
         "vah-vis-tin",
+        "val-miik-si",
+        "val-mis-ti",
         "var-mis-tin",
         "var-sin-kin"
     ],
     "aa-ii-ie": [
         "pap-pis-mies"
+    ],
+    "aa-ii-ii": [
+        "an-tiik-kii",
+        "bad-din-gii",
+        "sar-jik-sii",
+        "tans-sit-tiin"
     ],
     "aa-ii-o": [
         "aa-vik-ko",
@@ -4935,6 +7250,7 @@ export default {
         "maal-lik-ko",
         "maan-siir-to",
         "mal-lis-to",
+        "pal-kin-not",
         "pal-kin-to",
         "pal-kis-to",
         "pal-mik-ko",
@@ -4943,6 +7259,7 @@ export default {
         "ran-nik-ko",
         "saa-ris-to",
         "spas-tik-ko",
+        "tah-dis-tost",
         "tak-tik-ko",
         "tam-mis-to",
         "traa-gik-ko",
@@ -4950,12 +7267,18 @@ export default {
         "var-vik-ko",
         "var-vis-to"
     ],
+    "aa-ii-oo": [
+        "aa-vik-koo",
+        "ah-din-koon"
+    ],
     "aa-ii-u": [
         "aa-vis-tus",
         "ah-dis-tus",
         "al-tis-tus",
+        "hal-lin-nu",
         "hal-lit-tu",
         "har-kit-tu",
+        "har-ris-burg",
         "kak-sin-nus",
         "kal-lis-tus",
         "kat-kis-mus",
@@ -4965,17 +7288,21 @@ export default {
         "sal-lit-tu",
         "tah-dis-tus",
         "tar-kis-tus",
+        "tar-vin-nu",
         "vah-vis-tus",
         "val-mis-tus",
         "van-kis-tus",
         "var-mis-tus"
     ],
     "aa-ii-uu": [
+        "haa-lis-tuu",
         "kaa-kin-puu",
         "maa-lis-kuu",
         "mah-dik-kuus",
         "mal-lik-kuus",
-        "tah-dik-kuus"
+        "sal-lit-tuu",
+        "tah-dik-kuus",
+        "vah-vis-tuu"
     ],
     "aa-iu": [
         "alt-tius",
@@ -5000,6 +7327,9 @@ export default {
     "aa-iu-o": [
         "ap-piuk-ko"
     ],
+    "aa-iu-uu": [
+        "kar-siu-tuu"
+    ],
     "aa-iuu-a": [
         "vaa-liuur-na"
     ],
@@ -5015,13 +7345,19 @@ export default {
     "aa-iyö": [
         "tal-viyö"
     ],
+    "aa-iyö-ä": [
+        "tal-viyö-nä"
+    ],
     "aa-o": [
         "aa-tos",
+        "aal-lot",
         "aal-to",
         "aat-to",
         "af-ro",
         "ah-jo",
         "al-ho",
+        "al-ko",
+        "al-kon",
         "alt-to",
         "an-nos",
         "an-to",
@@ -5030,24 +7366,36 @@ export default {
         "ar-ho",
         "ar-mo",
         "ar-vo",
+        "ar-von",
+        "ar-vos",
+        "ar-vost",
         "ban-jo",
         "bas-so",
+        "bas-son",
+        "bas-sot",
         "chan-son",
         "fal-los",
         "gab-ro",
         "glas-nost",
         "hah-lo",
         "hah-mo",
+        "hah-mot",
         "hal-ko",
+        "han-gon",
         "han-ko",
+        "han-non",
         "hap-po",
         "hap-ro",
         "har-so",
         "hark-ko",
         "jak-so",
+        "jak-son",
         "jank-ko",
         "jat-ko",
         "jat-kos",
+        "jat-koss",
+        "jat-kot",
+        "kaa-kon",
         "kaa-mos",
         "kaa-non",
         "kaa-os",
@@ -5058,17 +7406,25 @@ export default {
         "kaar-to",
         "kah-jo",
         "kal-lo",
+        "kal-lost",
         "kal-mo",
         "kal-vo",
         "kam-mo",
+        "kan-non",
+        "kan-not",
         "kan-to",
         "kar-ho",
         "kas-ko",
         "kas-vo",
+        "kas-vos",
         "kas-vot",
         "kat-ko",
         "kat-kos",
+        "kat-so",
+        "kat-son",
+        "kat-sot",
         "kat-to",
+        "kat-ton",
         "laak-so",
         "lah-ko",
         "lak-ko",
@@ -5089,6 +7445,7 @@ export default {
         "mac-ho",
         "mah-jong",
         "mak-ro",
+        "mak-so",
         "mal-to",
         "mam-bo",
         "man-go",
@@ -5104,17 +7461,26 @@ export default {
         "pal-ho",
         "pal-jo",
         "pal-jon",
+        "pal-jos",
         "pal-ko",
         "pal-lo",
+        "pal-lon",
+        "pal-los",
+        "pal-lot",
+        "pal-von",
         "pank-ko",
+        "par-don",
         "plank-ton",
         "raa-to",
         "rak-ko",
         "ram-bo",
         "ran-ko",
         "ras-ko",
+        "rat-kon",
         "rat-to",
         "saa-go",
+        "saa-ko",
+        "saan-ko",
         "saan-to",
         "saar-ros",
         "saar-to",
@@ -5128,13 +7494,26 @@ export default {
         "san-ko",
         "staa-lo",
         "taat-to",
+        "tah-do",
+        "tah-don",
+        "tah-dot",
         "tah-ko",
         "tah-to",
+        "tal-lon",
         "tan-go",
+        "tan-gon",
+        "tan-gos",
         "tan-ko",
         "tap-po",
+        "tar-jol",
         "tar-mo",
         "vaah-to",
+        "val-kost",
+        "val-von",
+        "val-vot",
+        "van-no",
+        "van-non",
+        "van-not",
         "var-ho",
         "var-jo",
         "zam-bo"
@@ -5146,24 +7525,36 @@ export default {
         "aar-po-ra",
         "am-fo-ra",
         "an-go-ra",
+        "an-so-ja",
+        "ar-mo-a",
         "ar-po-a",
         "ar-vo-kas",
         "gal-lo-na",
         "haa-ro-a",
+        "haa-ro-jas",
+        "haa-vo-ja",
         "hal-ko-a",
         "han-go-ta",
+        "har-ho-ja",
+        "har-vo-ja",
         "harp-po-a",
+        "jal-ko-ja",
+        "jat-ko-a",
         "kam-mo-a",
         "kam-mo-ta",
         "kar-ko-ta",
         "kar-vo-a",
+        "kar-vo-ja",
+        "kas-vo-ja",
         "kat-ko-a",
         "kat-ko-ja",
         "kat-ko-la",
         "kat-so-a",
         "kat-so-ja",
         "kat-so-ma",
+        "kat-so-vat",
         "lah-jo-a",
+        "lah-jo-ja",
         "lah-jo-ma",
         "lam-po-la",
         "las-so-ta",
@@ -5171,30 +7562,47 @@ export default {
         "maa-no-sa",
         "maa-so-ta",
         "mam-mo-na",
+        "mam-mo-nan",
         "mar-jo-a",
+        "mas-so-ja",
+        "mat-ko-ja",
         "nah-ko-a",
         "paa-po-a",
         "paas-to-ta",
+        "pal-jo-a",
+        "pal-lo-ja",
         "pal-lo-kas",
         "pal-vo-a",
         "pal-vo-ja",
+        "pan-do-ra",
+        "pan-do-ran",
+        "ran-to-ja",
+        "rank-ko-ja",
         "rat-ko-a",
         "rat-ko-ja",
+        "saan-jo-ka",
         "sal-vo-a",
         "sam-mo-ta",
         "sar-jo-a",
         "tah-ko-ta",
+        "tah-ro-ja",
         "tah-to-a",
         "tal-lo-a",
+        "tar-jo-a",
+        "tar-jo-an",
         "tar-jo-kas",
         "tar-jo-na",
         "tar-jo-ta",
+        "tar-ko-ta",
         "tar-mo-kas",
         "tar-po-a",
         "vaah-do-ta",
+        "vah-vo-ja",
         "val-vo-a",
         "val-vo-ja",
         "van-no-a",
+        "var-jo-as",
+        "var-jo-ja",
         "var-jo-ta",
         "var-ro-ta",
         "var-so-a",
@@ -5203,21 +7611,48 @@ export default {
         "vat-vo-a"
     ],
     "aa-o-aa": [
-        "val-ko-maa"
+        "an-to-kaa",
+        "ar-vo-taan",
+        "jal-ko-jaan",
+        "kas-vo-jaan",
+        "kat-so-kaa",
+        "kat-so-maan",
+        "kat-so-taan",
+        "mam-mo-naa",
+        "tah-ko-taan",
+        "tar-po-maan",
+        "val-ko-maa",
+        "val-vo-maa",
+        "val-vo-maan"
     ],
     "aa-o-e": [
         "aa-lo-e",
         "aak-ko-nen",
+        "aak-ko-set",
+        "aal-to-jen",
         "ap-po-sen",
         "ap-po-set",
+        "jal-ko-jen",
+        "jat-ko-jen",
         "kaar-ro-ke",
         "kak-ko-nen",
         "kak-so-nen",
+        "kal-jo-jen",
         "kar-ko-te",
+        "kas-vo-jen",
         "lap-so-nen",
+        "lap-so-sen",
+        "lap-so-set",
+        "mam-mo-jen",
         "mang-ro-ve",
         "pal-lo-nen",
-        "vaah-do-te"
+        "vaa-ro-jen",
+        "vaah-do-te",
+        "val-ko-ne",
+        "val-ko-sel",
+        "val-ko-set",
+        "van-ho-jen",
+        "var-jo-jen"
     ],
     "aa-o-ee": [
         "jam-bo-ree"
@@ -5229,36 +7664,59 @@ export default {
         "al-ko-vi",
         "an-jo-vis",
         "ap-lo-di",
+        "carl-so-nin",
         "fac-to-ring",
         "fak-to-ri",
         "had-ro-ni",
+        "hah-mo-si",
         "har-mo-ni",
+        "jac-so-nin",
+        "jack-so-nin",
+        "kaa-no-nist",
         "kal-vo-sin",
+        "kam-mo-sin",
         "kan-jo-ni",
+        "kan-jo-nin",
         "kan-to-ni",
         "kant-to-ri",
         "kar-do-ni",
+        "kas-vo-ni",
+        "kas-vo-si",
         "mar-mo-ri",
+        "mas-to-nit",
+        "paas-to-sin",
         "pas-to-ri",
         "sab-lo-ni",
         "saf-lo-ri",
         "staat-to-ri",
+        "tah-to-si",
         "tam-po-ni",
+        "tar-jo-sin",
+        "tar-jo-sit",
         "tar-jo-tin",
         "trak-to-ri",
+        "trak-to-rin",
         "vaah-do-tin",
-        "val-lo-ni"
+        "val-lo-ni",
+        "var-jo-si"
     ],
     "aa-o-ie": [
         "lan-ko-mies",
         "mac-ho-mies"
     ],
+    "aa-o-ii": [
+        "val-ko-sii"
+    ],
     "aa-o-o": [
         "ar-mo-ton",
         "ar-vo-ton",
+        "hah-mo-ton",
         "kas-vo-ton",
         "kat-so-mo",
+        "kat-so-mon",
+        "kat-so-mos",
         "mah-do-ton",
+        "mah-do-tont",
         "tah-do-ton",
         "tar-mo-ton",
         "val-vo-mo"
@@ -5269,10 +7727,15 @@ export default {
     "aa-o-u": [
         "aal-lo-tus",
         "hah-mo-tus",
+        "har-jo-tus",
+        "har-jo-tust",
         "jak-so-tus",
         "kar-ko-tus",
         "kat-so-mus",
+        "kat-to-nu",
         "pal-lo-tus",
+        "tah-to-nut",
+        "tar-ko-tus",
         "vaah-do-tus",
         "val-vo-tus",
         "van-no-tus",
@@ -5285,39 +7748,97 @@ export default {
     "aa-o-yö": [
         "pak-ko-työ"
     ],
+    "aa-o-ä": [
+        "saat-to-väk"
+    ],
     "aa-o-ää": [
         "ah-to-jää",
         "jal-ko-pää",
         "vaah-to-pää"
     ],
     "aa-oi": [
+        "al-koi",
         "am-moin",
+        "an-noin",
+        "an-noit",
+        "an-toi",
+        "haa-voi",
+        "haa-voil",
         "har-voin",
+        "jak-soin",
+        "jak-soit",
+        "jat-koil",
         "kal-toin",
+        "kan-noin",
+        "kan-noit",
+        "kar-toin",
+        "kas-toi",
+        "kas-voi",
+        "kas-voin",
+        "kat-soi",
+        "kat-soin",
+        "kat-sois",
+        "kat-soit",
+        "lan-goin",
+        "mak-soi",
+        "mak-soin",
+        "mar-koin",
+        "nah-koi",
+        "pas-koi",
+        "saa-toit",
+        "saat-toi",
         "sal-voin",
         "taan-noin",
+        "tah-doin",
+        "tah-toi",
+        "tah-tois",
         "tar-koin",
         "val-toin",
-        "vas-toin"
+        "val-voit",
+        "van-noin",
+        "van-noit",
+        "var-jois",
+        "vas-toin",
+        "vat-soi",
+        "vat-soin"
     ],
     "aa-oi-a": [
+        "aal-loil-la",
         "aal-toil-la",
         "aat-toil-ta",
         "ah-toil-ma",
         "an-toi-sa",
         "ar-voi-sa",
+        "ast-roil-la",
+        "haa-voi-tat",
+        "jat-koil-la",
+        "kaks-tois-ta",
         "kan-noil-la",
         "kan-noil-ta",
+        "kar-koi-tan",
+        "kar-toi-tan",
+        "kas-voil-la",
+        "kas-vois-sa",
         "kast-roi-da",
+        "laa-tois-ta",
         "lak-koil-la",
         "maa-voi-mat",
         "mac-hoil-la",
+        "mat-koil-la",
+        "naa-moil-ta",
         "pal-loil-la",
         "pal-poi-da",
+        "ran-noil-la",
         "rat-toi-sa",
         "tal-koil-la",
         "tar-joil-la",
-        "var-joi-sa"
+        "tar-koi-tan",
+        "vaa-rois-ta",
+        "val-kois-ta",
+        "var-joi-sa",
+        "var-joil-la",
+        "var-jois-sa",
+        "var-moi-na"
     ],
     "aa-oi-aa": [
         "an-soit-taa",
@@ -5326,7 +7847,9 @@ export default {
         "har-joit-taa",
         "kaa-voit-taa",
         "kan-soit-taa",
+        "kar-koit-taa",
         "kar-toit-taa",
+        "kas-voi-naan",
         "laa-toit-taa",
         "lah-joit-taa",
         "lan-goit-taa",
@@ -5336,9 +7859,11 @@ export default {
         "nas-toit-taa",
         "pals-toit-taa",
         "ras-voit-taa",
+        "sal-vois-taan",
         "san-noit-taa",
         "sar-joit-taa",
         "tak-soit-taa",
+        "tar-joil-laan",
         "tar-koit-taa",
         "val-loil-laan",
         "val-loit-taa",
@@ -5348,20 +7873,25 @@ export default {
         "aal-loit-tain",
         "jak-soit-tain",
         "mas-soit-tain",
+        "mat-koil-tain",
         "pals-toit-tain",
         "sar-joit-tain"
     ],
     "aa-oi-e": [
         "am-moi-nen",
         "ar-moi-nen",
+        "ar-moil-le",
         "ar-voi-nen",
         "hah-moi-nen",
         "hal-koi-nen",
         "hap-poi-nen",
         "har-joi-te",
+        "har-voil-le",
+        "jat-koil-le",
         "kaak-koi-nen",
         "kan-noil-le",
         "kan-toi-nen",
+        "kas-voil-le",
         "lan-noi-te",
         "maas-toit-se",
         "mal-toi-nen",
@@ -5370,21 +7900,37 @@ export default {
         "tar-koi-te",
         "vaah-toi-nen",
         "val-koi-nen",
+        "val-koi-sen",
+        "val-koi-set",
         "var-joi-nen"
     ],
     "aa-oi-ee": [
-        "val-loil-leen"
+        "val-koi-seen",
+        "val-loil-leen",
+        "var-joi-neen"
     ],
     "aa-oi-eu": [
         "maa-oi-keus"
     ],
     "aa-oi-i": [
+        "aal-toi-hin",
         "hap-loi-di",
+        "jal-koi-hin",
         "kar-toi-tin",
+        "kas-voi-hin",
         "kast-roin-ti",
+        "kat-toi-si",
+        "lah-joi-hin",
         "lan-noi-tin",
+        "maa-doit-ti",
         "pal-poin-ti",
-        "tab-loi-di"
+        "tab-loi-di",
+        "tah-toi-si",
+        "tah-toi-sin",
+        "tar-joi-lis"
+    ],
+    "aa-oi-ii": [
+        "val-koi-siin"
     ],
     "aa-oi-u": [
         "aal-toi-lu",
@@ -5411,6 +7957,7 @@ export default {
         "tak-soi-tus",
         "tar-joi-lu",
         "tar-koi-tus",
+        "tar-koi-tust",
         "val-loi-tus"
     ],
     "aa-oi-uu": [
@@ -5426,16 +7973,54 @@ export default {
         "kak-sois-häät"
     ],
     "aa-oo": [
+        "ar-moo",
+        "ar-voo",
+        "bas-soo",
+        "hal-koo",
         "jas-soo",
+        "kaak-koon",
+        "kal-loo",
+        "kal-loon",
+        "kal-loos",
+        "kat-koo",
+        "kat-soo",
+        "kat-too",
+        "kat-toon",
+        "lah-joo",
+        "mat-toon",
+        "pal-joo",
+        "pal-loo",
         "palt-too",
+        "sak-koo",
         "sam-poo",
+        "tah-too",
         "tal-koo",
-        "tal-koot"
+        "tal-koot",
+        "tal-loo",
+        "tar-joo",
+        "tar-joon",
+        "tar-joot",
+        "tar-moo",
+        "tar-poo",
+        "vaah-too",
+        "val-voo",
+        "van-noo",
+        "var-joo",
+        "var-joon",
+        "var-too"
     ],
     "aa-oo-a": [
+        "al-kos-ta",
         "am-mol-la",
         "an-noo-na",
         "ar-von-ta",
+        "ar-vos-ta",
+        "ar-vos-tan",
+        "ar-vos-tat",
+        "han-gos-ta",
+        "kaa-os-ta",
+        "kas-von-sa",
+        "kat-kol-la",
         "kat-kon-ta",
         "kat-son-ta",
         "lah-jon-ta",
@@ -5447,11 +8032,16 @@ export default {
         "mar-jon-ta",
         "mat-roo-na",
         "pal-jol-ta",
+        "pal-lol-la",
         "pal-von-ta",
+        "palt-too-ta",
         "sar-koo-ma",
         "tar-jol-la",
+        "tar-jon-nan",
         "tar-jon-ta",
         "tar-joo-ja",
+        "tar-mol-la",
+        "val-kos-ta",
         "val-von-ta",
         "van-non-ta",
         "var-jol-la"
@@ -5461,6 +8051,7 @@ export default {
         "aal-lot-taa",
         "am-mol-laan",
         "am-mot-taa",
+        "an-dor-raan",
         "an-nos-taa",
         "ar-vos-taa",
         "ar-vot-taa",
@@ -5471,8 +8062,10 @@ export default {
         "kam-mot-taa",
         "kar-kot-taa",
         "las-kos-taa",
+        "mar-mot-taa",
         "pal-lot-taa",
         "saar-ros-taa",
+        "tar-kot-taa",
         "vaah-dot-taa",
         "val-vot-taa",
         "van-not-taa",
@@ -5483,12 +8076,17 @@ export default {
         "kas-vok-kain"
     ],
     "aa-oo-e": [
+        "aa-tos-ten",
         "am-mol-le",
+        "kak-sos-ten",
         "lan-gok-set",
-        "tar-jol-le"
+        "tar-jol-le",
+        "var-rom-me"
     ],
     "aa-oo-ee": [
-        "am-mol-leen"
+        "am-mol-leen",
+        "kaa-mok-seen",
+        "kaa-ok-seen"
     ],
     "aa-oo-ey": [
         "maa-hoc-key"
@@ -5497,6 +8095,7 @@ export default {
         "aap-rot-ti",
         "ab-nor-mi",
         "art-roo-si",
+        "hah-moo-ni",
         "kal-son-git",
         "kar-ton-ki",
         "lak-too-si",
@@ -5506,12 +8105,19 @@ export default {
         "mas-kot-ti",
         "nar-koo-si",
         "pal-jol-ti",
+        "van-not-ti",
         "var-jos-tin",
         "vas-koo-li"
     ],
     "aa-oo-ie": [
         "kak-kos-mies",
         "tal-koo-mies"
+    ],
+    "aa-oo-ii": [
+        "bank-rot-tii",
+        "kat-sot-tiin",
+        "saar-rok-siin",
+        "val-vot-tiin"
     ],
     "aa-oo-iu": [
         "ab-nor-mius"
@@ -5520,13 +8126,17 @@ export default {
         "aak-kos-to",
         "aal-lok-ko",
         "kan-nok-ko",
+        "kat-sot-ko",
         "maa-joh-to",
-        "maan-kor-ko"
+        "maan-kor-ko",
+        "tah-dot-ko",
+        "tan-goos-mo"
     ],
     "aa-oo-u": [
         "aak-kos-tus",
         "an-nos-tus",
         "ar-vos-tus",
+        "ar-vos-tust",
         "las-kos-tus",
         "saar-ros-tus",
         "var-jos-tus"
@@ -5548,31 +8158,52 @@ export default {
         "pal-jous",
         "tar-jous"
     ],
+    "aa-ou-a": [
+        "pal-jout-ta"
+    ],
     "aa-ou-aa": [
         "maas-tout-taa"
     ],
     "aa-ou-o": [
         "maa-jou-kot"
     ],
+    "aa-ou-ui": [
+        "maas-tou-duin"
+    ],
     "aa-u": [
         "aa-mu",
+        "aa-muks",
+        "aa-mul",
+        "aa-mun",
+        "aa-must",
+        "aa-mut",
         "ak-ku",
         "al-ku",
         "al-mu",
         "am-mu",
+        "am-mun",
         "am-mus",
         "am-pu",
+        "an-du",
+        "an-du",
+        "ar-kun",
         "ark-ku",
+        "art-tu",
+        "as-tun",
+        "as-tut",
         "bam-bu",
         "ban-tu",
         "cam-pus",
         "far-kut",
         "gal-lup",
+        "galt-su",
         "haa-mu",
         "hak-ku",
         "hal-ju",
+        "hal-lus",
         "hamp-pu",
         "han-du",
+        "han-dust",
         "hap-su",
         "har-ju",
         "har-jus",
@@ -5582,9 +8213,14 @@ export default {
         "hat-tu",
         "jak-ku",
         "jan-nu",
+        "jan-nul",
+        "jan-nut",
         "jar-ru",
+        "jat-ku",
+        "kaa-dun",
         "kaa-pu",
         "kaa-su",
+        "kaa-sun",
         "kaa-sus",
         "kaak-ku",
         "kah-ju",
@@ -5611,18 +8247,26 @@ export default {
         "laa-vu",
         "lah-jus",
         "lak-mus",
+        "lam-pun",
         "lamp-pu",
+        "lan-kult",
         "lank-ku",
         "lant-tu",
         "lap-pu",
         "lap-sus",
         "las-ku",
+        "las-kun",
+        "las-kut",
         "las-tu",
         "lat-vus",
         "maa-ru",
+        "mah-du",
         "mak-su",
+        "mal-lu",
+        "malt-su",
         "man-tu",
         "mank-ku",
+        "mar-kus",
         "mar-su",
         "mas-su",
         "mats-ku",
@@ -5639,9 +8283,12 @@ export default {
         "pak-su",
         "pal-ju",
         "pal-mu",
+        "pal-mut",
         "palt-tu",
         "pamp-pu",
         "pan-nu",
+        "pan-tu",
+        "pant-sun",
         "par-ku",
         "par-ru",
         "pas-sus",
@@ -5657,17 +8304,36 @@ export default {
         "rap-su",
         "ras-su",
         "rat-su",
+        "saa-nu",
+        "saa-nut",
+        "saa-pu",
+        "saa-tu",
+        "saa-vu",
+        "saa-vun",
+        "saa-vut",
         "salk-ku",
+        "sam-mu",
+        "sam-mun",
+        "sam-mut",
         "shan-tung",
         "taat-tu",
         "tak-ku",
         "tal-mud",
         "tan-hu",
+        "tar-tu",
+        "tar-tun",
+        "tar-tut",
+        "tart-tun",
         "tas-ku",
+        "tas-kun",
+        "tas-kus",
+        "tas-kust",
+        "tas-kut",
         "tas-su",
         "tran-su",
         "vaap-pu",
         "val-ju",
+        "val-lun",
         "val-mu",
         "van-hus",
         "van-tus",
@@ -5675,46 +8341,65 @@ export default {
         "vap-pu",
         "var-pu",
         "vas-tus",
+        "vas-tust",
         "vat-tu"
     ],
     "aa-u-a": [
+        "aa-mu-a",
+        "aa-mu-na",
         "ak-ku-na",
         "am-mu-a",
         "am-pu-a",
         "am-pu-ja",
         "an-tu-ra",
+        "ark-ku-a",
         "as-tu-a",
         "as-tu-ja",
         "blas-tu-la",
         "gast-ru-la",
+        "haa-mu-na",
         "haal-tu-a",
         "hah-tu-va",
         "jac-qu-ard",
+        "jan-nu-a",
+        "jar-ru-a",
+        "jar-ru-ta",
         "jat-ku-a",
         "jat-ku-va",
+        "kaa-su-a",
         "kaa-tu-a",
         "kaar-tu-a",
         "kaar-tu-ma",
+        "kaar-tu-va",
+        "kaar-tu-van",
         "kak-ku-lat",
         "kalk-ku-na",
         "kam-pu-ra",
         "kant-tu-ra",
+        "kar-hu-ja",
         "kar-hu-ta",
         "kar-ju-a",
         "kart-tu-a",
         "kas-tu-a",
+        "kas-vu-a",
         "laa-du-kas",
         "laan-tu-a",
+        "lamp-pu-a",
+        "las-tu-ja",
         "las-tu-ta",
         "maa-mu-na",
         "maa-tu-a",
         "maa-tu-ma",
+        "maa-tu-va",
         "mah-tu-a",
         "man-ku-a",
         "man-ku-ja",
+        "naar-mu-ja",
         "nak-su-a",
         "nap-pu-la",
         "nap-su-a",
+        "nap-su-ta",
+        "nard-wu-ar",
         "nars-ku-a",
         "paa-tu-a",
         "paah-tu-a",
@@ -5729,12 +8414,21 @@ export default {
         "rak-ku-la",
         "rak-su-a",
         "saa-pu-a",
+        "saa-pu-va",
+        "saa-pu-van",
+        "saa-tu-a",
         "saas-tu-a",
         "saas-tu-ma",
         "sam-mu-a",
+        "sam-mu-mas",
+        "sam-mu-tan",
+        "sam-mu-tat",
+        "sam-mu-vat",
         "sat-su-ma",
         "sat-tu-a",
         "sat-tu-ma",
+        "sat-tu-man",
+        "sat-tu-pa",
         "sat-tu-va",
         "taan-tu-a",
         "taan-tu-ma",
@@ -5746,16 +8440,28 @@ export default {
         "tap-pu-ra",
         "tart-tu-a",
         "tart-tu-ma",
+        "tart-tu-vat",
         "vaa-ku-na",
         "vaa-ru-a",
         "vaak-ku-a",
         "vaap-pu-a",
-        "vart-tu-a"
+        "vap-pu-na",
+        "vart-tu-a",
+        "vart-tu-vat"
     ],
     "aa-u-aa": [
         "al-ku-aan",
         "al-ku-jaan",
-        "lant-tu-maa"
+        "am-mu-taan",
+        "ap-pu-raa",
+        "as-tu-taan",
+        "lant-tu-maa",
+        "mah-tu-maa",
+        "sam-mu-maan",
+        "sat-tu-maa",
+        "tap-pu-raa",
+        "tar-tu-taan",
+        "var-tu-taan"
     ],
     "aa-u-e": [
         "kaa-su-te",
@@ -5773,6 +8479,14 @@ export default {
         "tab-bu-le",
         "var-pu-nen"
     ],
+    "aa-u-ee": [
+        "maa-tu-neet",
+        "paa-tu-neet",
+        "sam-mu-neet",
+        "taan-tu-neet",
+        "tart-tu-neen",
+        "vart-tu-neen"
+    ],
     "aa-u-ei": [
         "kant-tu-vei"
     ],
@@ -5783,9 +8497,12 @@ export default {
         "al-bu-mi",
         "an-tu-ri",
         "ank-ku-ri",
+        "ank-ku-rin",
+        "ank-ku-rit",
         "fank-lu-bi",
         "haa-vu-ri",
         "hak-ku-ri",
+        "hat-tu-ni",
         "jank-ku-ri",
         "jazz-klu-bi",
         "kaa-su-tin",
@@ -5797,7 +8514,10 @@ export default {
         "las-ku-ri",
         "maas-tu-ri",
         "naa-pu-ri",
+        "naa-pu-rin",
+        "naa-pu-rit",
         "nah-ku-ri",
+        "nah-ku-rin",
         "pal-tu-ri",
         "par-tu-ri",
         "raa-pu-tin",
@@ -5815,11 +8535,17 @@ export default {
         "mak-su-mies",
         "rat-su-mies"
     ],
+    "aa-u-ii": [
+        "sat-tu-mii"
+    ],
     "aa-u-o": [
         "jat-ku-mo",
         "laa-du-ton",
         "mak-su-ton",
         "sal-ku-ton"
+    ],
+    "aa-u-oo": [
+        "jat-ku-koon"
     ],
     "aa-u-u": [
         "as-tu-tus",
@@ -5828,11 +8554,13 @@ export default {
         "jar-ru-tus",
         "kaa-pu-tus",
         "kaa-su-tus",
+        "kaa-tu-nu",
         "kal-ku-tus",
         "kar-tu-tus",
         "lan-ku-tus",
         "las-ku-tus",
         "maan-su-ru",
+        "mah-tu-nu",
         "naar-mu-tus",
         "nal-ku-tus",
         "nars-ku-tus",
@@ -5866,6 +8594,8 @@ export default {
     ],
     "aa-u-yö": [
         "aa-mu-yö",
+        "aa-mu-yön",
+        "aa-mu-yöst",
         "al-ku-yö",
         "laa-tu-työ",
         "vap-pu-yö"
@@ -5875,13 +8605,38 @@ export default {
         "kal-ju-pää",
         "las-ku-pää"
     ],
+    "aa-ui": [
+        "as-tui",
+        "as-tuit",
+        "jan-nui",
+        "kaa-duin",
+        "kaa-tui",
+        "kaa-tuis",
+        "kart-tui",
+        "kas-tui",
+        "lap-pui",
+        "las-kui",
+        "mah-tui",
+        "saa-pui",
+        "saa-vuit",
+        "sam-mui",
+        "sat-tui",
+        "tar-tuit",
+        "tart-tui",
+        "vart-tui"
+    ],
     "aa-ui-a": [
+        "aa-muis-sa",
         "al-kuil-ta",
         "am-puil-la",
         "haa-huil-la",
         "kart-tui-sa",
         "laa-tui-sa",
+        "lam-puil-la",
         "tak-kuil-la"
+    ],
+    "aa-ui-aa": [
+        "las-kuis-taan"
     ],
     "aa-ui-ai": [
         "kan-nuit-tain"
@@ -5899,11 +8654,17 @@ export default {
         "tak-kui-nen",
         "vah-vui-nen"
     ],
+    "aa-ui-ee": [
+        "sam-mui-lee"
+    ],
     "aa-ui-i": [
         "aa-mui-sin",
         "al-kui-sin",
         "alt-ruis-mi",
-        "alt-ruis-ti"
+        "alt-ruis-ti",
+        "mar-sui-hin",
+        "saa-pui-si",
+        "tas-kui-hin"
     ],
     "aa-ui-u": [
         "pan-hui-lu",
@@ -5933,34 +8694,72 @@ export default {
         "maa-vuo-to"
     ],
     "aa-uu": [
+        "aa-muun",
+        "al-kuu",
         "al-kuun",
         "am-muu",
+        "am-puu",
         "ar-kuus",
+        "as-tuu",
+        "bam-buu",
         "haas-kuu",
         "hak-kuu",
         "hal-puus",
+        "hal-tuu",
         "hal-tuun",
         "har-vuus",
+        "has-suu",
+        "hat-tuun",
+        "jal-luu",
+        "jat-kuu",
+        "kaa-puun",
+        "kaa-tuu",
+        "kaa-tuun",
         "kah-luu",
         "kal-juus",
         "kar-kuun",
+        "kas-suu",
+        "kas-tuu",
+        "kas-vuu",
         "laa-juus",
+        "laa-tuu",
+        "lamp-puun",
         "lap-suus",
+        "las-kuun",
+        "maa-tuu",
+        "mah-tuu",
+        "mats-kuu",
+        "paa-luu",
         "pak-suus",
+        "pak-suut",
+        "par-kuu",
         "raa-kuus",
         "ram-puus",
+        "saa-puu",
+        "sam-muu",
+        "sam-muuks",
         "sank-kuus",
+        "sat-tuu",
         "taa-juus",
         "tark-kuus",
+        "tart-tuu",
+        "tas-kuun",
+        "tas-suu",
         "vah-vuus",
         "val-juus",
         "val-tuus",
         "van-huus",
         "vank-kuus",
         "var-muus",
-        "vas-tuu"
+        "vart-tuu",
+        "vas-tuu",
+        "vas-tuun",
+        "vas-tuus",
+        "vas-tuut"
     ],
     "aa-uu-a": [
+        "aa-mul-la",
+        "aa-mus-ta",
         "am-mun-ta",
         "as-tun-ta",
         "ban-tus-tan",
@@ -5970,28 +8769,40 @@ export default {
         "hal-lus-sa",
         "hal-lus-ta",
         "harp-puu-na",
+        "jar-rul-la",
         "kar-jun-ta",
         "kar-tun-ta",
+        "laa-dul-la",
         "lal-luk-ka",
         "maa-kun-ta",
         "maa-tus-ka",
+        "maa-tus-kat",
         "man-gun-ta",
+        "mat-kus-tan",
         "naa-puk-ka",
         "nars-kun-ta",
+        "paa-lul-la",
         "pal-luk-ka",
         "pat-ruu-na",
+        "rant-sus-sa",
         "ras-suk-ka",
+        "rat-sul-la",
         "saas-tun-ta",
         "sab-luu-na",
         "sap-luu-na",
         "tal-luk-ka",
         "tam-muk-ka",
         "tar-tun-ta",
+        "tas-kus-sa",
         "vaa-puk-ka",
         "vaa-pun-ta",
         "vaa-run-ta",
         "val-mus-ka",
-        "van-hurs-kas"
+        "van-hurs-kas",
+        "van-hus-ta",
+        "vas-tuu-ta",
+        "vas-tuul-la",
+        "vas-tuus-sa"
     ],
     "aa-uu-aa": [
         "al-kuun-kaan",
@@ -6031,9 +8842,11 @@ export default {
         "rah-jus-taa",
         "rak-sut-taa",
         "rap-sut-taa",
+        "saa-nut-kaan",
         "saa-vut-taa",
         "saas-tut-taa",
         "sam-mut-taa",
+        "sat-tuu-kaan",
         "taan-nut-taa",
         "tal-lus-taa",
         "tal-tut-taa",
@@ -6045,11 +8858,22 @@ export default {
         "vas-tus-taa",
         "vat-kut-taa"
     ],
+    "aa-uu-ai": [
+        "as-tut-tais"
+    ],
     "aa-uu-au": [
         "van-hurs-kaus"
     ],
     "aa-uu-e": [
-        "kan-nus-te"
+        "har-jul-le",
+        "kan-nus-te",
+        "lap-suu-den",
+        "mar-kuk-sen",
+        "van-huk-set",
+        "vas-tuk-set"
+    ],
+    "aa-uu-ee": [
+        "van-huu-teen"
     ],
     "aa-uu-i": [
         "ab-sur-di",
@@ -6059,6 +8883,7 @@ export default {
         "ham-puu-si",
         "has-sus-ti",
         "kak-luu-ni",
+        "kal-juk-si",
         "kal-muk-ki",
         "kan-nus-tin",
         "kat-gut-ti",
@@ -6071,12 +8896,21 @@ export default {
         "paa-puu-ri",
         "pak-sul-ti",
         "pak-sus-ti",
+        "raa-hus-tin",
         "taa-tus-ti",
         "tam-puu-ri",
-        "val-jus-ti"
+        "val-jus-ti",
+        "vas-tuu-ni"
+    ],
+    "aa-uu-ie": [
+        "ham-puu-sien"
     ],
     "aa-uu-ii": [
-        "sam-muk-siin"
+        "as-tut-tiin",
+        "kaa-dut-tiin",
+        "naa-puu-riin",
+        "sam-muk-siin",
+        "vah-vuuk-sii"
     ],
     "aa-uu-iu": [
         "ab-sur-dius"
@@ -6096,11 +8930,13 @@ export default {
         "maa-sul-ku",
         "maan-kuu-lu",
         "mat-kus-tus",
+        "saa-vut-tu",
         "val-tuu-tus",
         "vas-tus-tus"
     ],
     "aa-uu-uu": [
         "laa-duk-kuus",
+        "tar-tut-tuu",
         "tas-kun-suu"
     ],
     "aa-uu-yö": [
@@ -6111,22 +8947,34 @@ export default {
         "hak-kuui-kä"
     ],
     "aa-y": [
+        "an-dy",
         "bran-dy",
+        "dad-dy",
         "dan-dy",
+        "hap-py",
+        "kaks-kyt",
+        "nan-cy",
         "par-ty"
     ],
     "aa-y-i": [
         "al-ky-di"
+    ],
+    "aa-y-ä": [
+        "kaks-ky-tä"
     ],
     "aa-yy-ey": [
         "maa-yh-teys"
     ],
     "aa-yy-i": [
         "dak-tyy-li",
+        "fan-cym-pi",
         "kal-kyy-li",
         "kap-syy-li",
         "maan-jyr-sin",
         "mart-tyy-ri",
+        "mart-tyy-rin",
+        "mart-tyy-rit",
+        "nas-tym-pi",
         "par-fyy-mi",
         "vam-pyy-ri"
     ],
@@ -6182,16 +9030,33 @@ export default {
     ],
     "aai-a": [
         "maail-ma",
+        "maail-man",
+        "maail-mas",
         "vaai-ta"
     ],
     "aai-a-a": [
         "taaim-pa-na"
     ],
     "aai-aa": [
+        "maail-maa",
+        "maail-maan",
         "raais-taa",
         "taaim-paa"
     ],
+    "aai-aa-a": [
+        "maail-maan-sa",
+        "maail-mal-ta",
+        "maail-mas-sa",
+        "maail-mas-ta"
+    ],
+    "aai-aa-ai": [
+        "maail-mas-tain"
+    ],
+    "aai-aa-e": [
+        "maail-mal-le"
+    ],
     "aai-aa-i": [
+        "maail-maa-ni",
         "taaim-mak-si"
     ],
     "aai-aa-ie": [
@@ -6200,8 +9065,17 @@ export default {
     "aai-aa-u": [
         "maail-man-cup"
     ],
+    "aai-ai": [
+        "maail-main"
+    ],
     "aai-ai-e": [
         "taaim-mai-nen"
+    ],
+    "aai-o-e": [
+        "maail-mo-jen"
+    ],
+    "aai-oi-aa": [
+        "maail-mois-saan"
     ],
     "aai-u": [
         "vaai-tus"
@@ -6216,38 +9090,76 @@ export default {
         "maaui-ma-la"
     ],
     "ai-a": [
+        "ai-dan",
         "ai-das",
         "ai-ka",
+        "ai-kan",
+        "ai-kas",
+        "ai-kast",
+        "ai-ka…",
         "ai-na",
+        "ai-ra",
         "ai-sa",
         "ai-ta",
         "ai-van",
         "ait-ta",
         "fai-ja",
+        "fai-jan",
+        "fai-jas",
+        "gai-an",
         "hai-ma",
         "hais-ta",
+        "hais-tan",
         "hait-ta",
+        "kai-ja",
         "kai-ma",
+        "kai-pa",
         "kai-ra",
         "kai-ta",
+        "kai-va",
+        "kai-van",
         "kais-la",
         "kais-ta",
+        "lai-dan",
+        "lai-das",
+        "lai-dast",
         "lai-ha",
         "lai-na",
+        "lai-nan",
         "lai-ta",
+        "lai-tan",
+        "lai-tat",
         "lai-va",
         "laik-ka",
         "lail-la",
         "laip-pa",
         "lais-ka",
+        "lais-ta",
+        "lait-ta",
         "mai-ja",
+        "mai-kat",
         "mai-la",
+        "mai-lal",
+        "mai-ta",
         "maik-ka",
+        "mail-la",
         "mais-sa",
         "mais-ta",
         "nai-da",
+        "nai-ta",
+        "nai-tat",
+        "nais-ta",
+        "pai-dan",
+        "pai-dat",
+        "pai-kal",
+        "pai-kan",
+        "pai-kat",
+        "pai-na",
+        "pai-nan",
+        "pai-nat",
         "pai-ta",
         "paik-ka",
+        "pais-ta",
         "rai-kas",
         "rai-na",
         "rai-ta",
@@ -6258,20 +9170,32 @@ export default {
         "sai-ta",
         "sai-var",
         "saik-ka",
+        "sain-han",
+        "tai-at",
+        "tai-da",
+        "tai-dan",
         "tai-ga",
         "tai-ka",
         "tai-ta",
+        "tai-tan",
         "tai-val",
         "tai-vas",
+        "tai-vast",
         "taik-ka",
         "taim-mas",
+        "vai-han",
+        "vai-pat",
         "vai-va",
+        "vai-vaks",
+        "vaih-da",
+        "vaih-dan",
         "vaik-ka",
         "vail-la",
         "vaip-pa"
     ],
     "ai-a-a": [
         "ai-da-ta",
+        "ai-ka-na",
         "ai-sa-ta",
         "bai-la-ta",
         "hai-ka-la",
@@ -6290,6 +9214,7 @@ export default {
         "pai-na-ja",
         "pai-na-ma",
         "pai-na-va",
+        "pai-na-vat",
         "pais-ka-ta",
         "rai-da-kas",
         "rai-ja-ta",
@@ -6298,19 +9223,30 @@ export default {
         "rai-na-ta",
         "rai-va-ta",
         "rais-ka-ta",
+        "snai-ja-ta",
         "tai-ta-ja",
         "tai-ta-va",
+        "tai-va-han",
         "taim-pa-na",
         "tait-ta-ja",
         "vai-na-ja",
         "vai-va-ta",
-        "vaih-ta-ja"
+        "vaih-ta-ja",
+        "vaih-ta-vas"
     ],
     "ai-a-aa": [
         "ai-ka-naan",
-        "ai-na-kaan"
+        "ai-na-kaa",
+        "ai-na-kaan",
+        "bai-la-maan",
+        "bai-la-taan",
+        "hais-ta-kaa",
+        "kai-va-taan",
+        "lait-ta-kaa",
+        "pai-na-maan"
     ],
     "ai-a-e": [
+        "ai-ka-nen",
         "kai-ta-le",
         "kais-ta-le",
         "mai-la-nen",
@@ -6318,28 +9254,55 @@ export default {
         "sai-va-re",
         "tai-pa-le"
     ],
+    "ai-a-ee": [
+        "lait-ta-neet"
+    ],
     "ai-a-i": [
+        "ai-ka-kin",
+        "ai-ka-ni",
+        "ai-ka-sin",
+        "ai-na-ki",
         "ai-na-kin",
+        "fai-ja-ni",
         "hai-ta-ri",
+        "hai-ta-rin",
+        "kai-pa-sin",
+        "lai-na-sin",
         "mai-ha-ri",
+        "mai-ha-ris",
         "mai-na-ri",
+        "nai-ta-vin",
         "nais-pa-ri",
-        "rai-va-ri"
+        "pais-ka-sit",
+        "rai-da-sin",
+        "rai-va-ri",
+        "sai-ta-kin",
+        "tai-ta-vi",
+        "tai-ta-vin",
+        "vaik-ka-ki"
     ],
     "ai-a-ie": [
         "ai-ka-mies",
         "lai-ta-mies",
         "lai-va-mies"
     ],
+    "ai-a-ii": [
+        "kai-va-riin"
+    ],
     "ai-a-o": [
         "kai-na-lo",
+        "kai-na-los",
         "nai-ma-ton",
         "pai-da-ton",
         "vai-va-ton"
     ],
+    "ai-a-oo": [
+        "kai-na-loon"
+    ],
     "ai-a-u": [
         "lain-ha-ku",
-        "pai-na-tus"
+        "pai-na-tus",
+        "vaih-ta-nu"
     ],
     "ai-a-uu": [
         "pai-na-vuus",
@@ -6349,49 +9312,128 @@ export default {
         "kais-ta-pää"
     ],
     "ai-aa": [
+        "ai-jaa",
+        "ai-kaa",
+        "ai-kaan",
+        "ai-kaas",
+        "ai-taa",
+        "aij-jaa",
+        "bai-laa",
+        "bait-taa",
+        "dai-vaan",
+        "fai-jaa",
         "hais-taa",
+        "hait-taa",
         "kai-kaa",
+        "kai-paa",
+        "kai-paan",
+        "kai-paanks",
+        "kai-paat",
+        "kai-raa",
         "kai-vaa",
         "kaih-taa",
+        "kais-taa",
+        "lai-naa",
+        "lai-taa",
+        "lai-taan",
+        "lai-vaa",
         "lain-kaan",
         "lais-taa",
         "lait-taa",
+        "mai-laa",
+        "main-daa",
         "mais-taa",
         "mait-taa",
+        "nai-kaa",
+        "nai-maan",
         "nait-taa",
+        "pai-jaa",
         "pai-naa",
+        "pai-taa",
+        "paik-kaa",
+        "paik-kaan",
+        "paint-taa",
         "pais-taa",
+        "rai-daa",
+        "rai-daan",
         "rai-kaa",
+        "rai-vaan",
+        "rais-kaa",
+        "sai-maa",
+        "sai-naa",
+        "sai-raat",
+        "slai-daa",
+        "snai-jaa",
+        "tai-kaa",
         "tai-taa",
+        "tai-vaal",
+        "tai-vaan",
+        "tai-vaast",
+        "tai-vaat",
         "taim-paa",
+        "taist-еllaan",
         "tait-taa",
+        "trai-naa",
         "vai-naa",
-        "vaih-taa"
+        "vai-naan",
+        "vai-vaa",
+        "vai-vaan",
+        "vai-vaat",
+        "vaih-taa",
+        "vaip-paa",
+        "wrait-taan"
     ],
     "ai-aa-a": [
         "ai-kan-sa",
+        "ai-kas-ta",
+        "fai-jaan-sa",
+        "fai-jal-la",
         "hai-lak-ka",
         "hai-pak-ka",
+        "kai-paa-van",
+        "kais-tal-la",
+        "lai-dal-la",
         "lai-naa-ja",
+        "lai-nas-ta",
         "lai-vaa-ja",
+        "laij-jas-ta",
+        "lain-vas-tast",
         "nais-val-ta",
+        "pai-dal-la",
         "pai-kal-la",
         "pai-kal-ta",
+        "pai-kas-sa",
+        "pai-kas-ta",
         "pai-nan-ta",
+        "rai-kas-ta",
         "rai-lak-ka",
         "rai-vaa-ja",
         "rais-kaa-ja",
+        "rais-kaa-jat",
         "sai-raa-la",
+        "sai-ras-ta",
+        "tai-vaal-la",
+        "tai-vaal-ta",
+        "tai-vaas-sa",
+        "tai-vaas-ta",
+        "tai-val-ta",
+        "tai-vas-ta",
         "vai-vaa-ja",
         "vaih-dan-ta"
     ],
     "ai-aa-aa": [
         "ai-lah-taa",
         "ai-vas-taa",
+        "brain-was-haa",
         "hai-rah-taa",
         "hais-kah-taa",
         "hais-tat-taa",
+        "kai-paa-maa",
+        "kai-paa-maan",
+        "kai-paan-kaan",
         "kai-vat-taa",
+        "lai-naa-maa",
+        "lai-nat-kaa",
         "lai-tat-taa",
         "mais-kah-taa",
         "pai-kal-laan",
@@ -6401,34 +9443,54 @@ export default {
         "pai-nat-taa",
         "pais-tat-taa",
         "rai-kas-taa",
+        "sai-raa-laa",
+        "sai-raa-laan",
         "sai-ras-taa",
         "tai-val-taa"
     ],
     "ai-aa-e": [
         "ai-dan-ne",
+        "ai-kam-me",
         "kai-mak-set",
         "pai-kal-le",
+        "pai-kal-les",
         "pai-nan-ne",
-        "rai-kas-te"
+        "rai-kas-te",
+        "tai-vaal-le"
     ],
     "ai-aa-ee": [
-        "pai-kal-leen"
+        "fai-jal-leen",
+        "pai-kal-leen",
+        "tai-vaa-seen",
+        "thai-maa-seen"
     ],
     "ai-aa-eu": [
         "nais-pap-peus"
     ],
     "ai-aa-i": [
+        "ai-kaa-ni",
         "ai-lak-ki",
+        "hai-tal-list",
         "kai-maa-ni",
+        "lai-nak-si",
         "lais-kas-ti",
         "maist-raat-ti",
         "nais-pap-pi",
+        "pai-kal-list",
         "rai-kas-tin",
         "sai-das-ti",
         "sai-raas-ti",
+        "tai-taa-ki",
+        "tai-taa-kin",
         "taim-mak-si"
     ],
+    "ai-aa-ii": [
+        "pais-kat-tiin",
+        "rai-vat-tiin"
+    ],
     "ai-aa-o": [
+        "hait-taa-ko",
+        "kai-paat-ko",
         "kai-van-to",
         "lai-naa-mo",
         "lai-nas-to",
@@ -6439,10 +9501,15 @@ export default {
         "ai-lah-dus",
         "ai-vas-tus",
         "hai-rah-dus",
+        "kai-van-nu",
+        "kai-van-nut",
+        "lai-nat-tu",
         "mais-kah-dus",
         "pai-kan-nus",
         "pai-nal-lus",
-        "tai-val-lus"
+        "sai-ras-tut",
+        "tai-val-lus",
+        "vai-vaan-nun"
     ],
     "ai-aa-uu": [
         "hai-lak-kuus",
@@ -6455,9 +9522,15 @@ export default {
         "nais-maail-ma"
     ],
     "ai-ai": [
+        "ai-ai",
         "ai-jai",
+        "ai-kain",
+        "mait-haist",
         "mait-tain",
-        "rai-vain"
+        "rai-vain",
+        "sai-rait",
+        "tai-tais",
+        "vaih-tais"
     ],
     "ai-ai-a": [
         "ai-kail-la",
@@ -6465,7 +9538,10 @@ export default {
         "kai-pail-la",
         "lai-nail-la",
         "nais-paik-ka",
-        "paik-kail-la"
+        "paik-kail-la",
+        "sai-rai-ta",
+        "tai-vai-ta",
+        "vai-vais-ta"
     ],
     "ai-ai-aa": [
         "ai-kais-taa"
@@ -6476,20 +9552,30 @@ export default {
         "kai-tai-nen",
         "lai-tai-nen",
         "nais-mai-nen",
+        "paik-kai-len",
         "rai-tai-nen",
         "raih-nai-nen",
         "taim-mai-nen",
         "vai-vai-nen"
     ],
+    "ai-ai-ee": [
+        "hai-kai-leen"
+    ],
     "ai-ai-i": [
-        "ai-kai-sin"
+        "ai-kai-sin",
+        "lait-tai-sin"
+    ],
+    "ai-ai-ii": [
+        "tai-vai-siin"
     ],
     "ai-ai-u": [
         "ai-kai-lu",
         "ai-kais-tus",
         "hai-kai-lu",
+        "hai-kail-lu",
         "paik-kai-lu",
-        "tai-kais-ku"
+        "tai-kais-ku",
+        "vaim-mai-lust"
     ],
     "ai-ai-uu": [
         "ai-kai-suus",
@@ -6530,6 +9616,10 @@ export default {
         "paik-kaut-taa",
         "rai-vaut-taa"
     ],
+    "ai-au-e": [
+        "kai-pauk-sen",
+        "kai-vauk-set"
+    ],
     "ai-au-eu": [
         "nais-kau-neus"
     ],
@@ -6540,60 +9630,122 @@ export default {
         "ai-kau-tus",
         "lain-tau-lu"
     ],
+    "ai-au-uu": [
+        "kai-vau-tuu"
+    ],
     "ai-e": [
         "ai-he",
         "ai-ne",
         "ai-nes",
+        "ai-nest",
+        "ait-ken",
+        "hai-sen",
+        "hai-set",
         "hai-te",
         "hai-tek",
         "hai-ven",
         "kai-de",
+        "kai-kel",
+        "kai-ken",
+        "kai-kes",
+        "kai-kest",
+        "kaik-kes",
         "lai-ne",
         "lai-nen",
         "lai-te",
+        "mai-den",
         "mai-ne",
         "mai-nen",
+        "mai-net",
         "mait-se",
         "nai-nen",
+        "nai-sen",
+        "nai-ses",
+        "nai-set",
+        "nais-ten",
         "pai-men",
         "pai-ne",
+        "pai-net",
         "pai-se",
         "pais-te",
         "rai-de",
+        "saim-me",
         "tai-de",
+        "tai-det",
         "tai-men",
         "tai-te",
         "tai-ten",
         "tai-ve",
         "tait-se",
         "vai-he",
+        "vai-het",
         "vai-nen",
         "vaih-de",
+        "vaik-ken",
+        "vaik-ket",
         "vail-le"
     ],
     "ai-e-a": [
         "hai-ke-a",
         "hai-le-a",
+        "hai-se-va",
+        "kaik-ke-a",
         "kait-se-a",
         "lai-me-a",
         "lai-me-ta",
+        "lai-ne-ja",
+        "mai-le-ja",
         "mai-re-a",
         "mai-se-ma",
+        "mai-se-mat",
         "mains-tre-am",
+        "pai-ne-ta",
         "vai-ke-a",
         "vai-me-a",
         "vai-me-ta"
     ],
+    "ai-e-aa": [
+        "hai-ke-aa",
+        "hai-se-maa",
+        "hais-te-taan",
+        "lai-te-taan",
+        "mai-se-maa",
+        "pai-ne-taan",
+        "pais-te-taan",
+        "tai-te-taan",
+        "vai-ke-aa",
+        "vaih-de-taan"
+    ],
     "ai-e-e": [
-        "hai-ve-ne"
+        "hai-ve-ne",
+        "kaik-ke-hen",
+        "tais-te-le",
+        "tais-te-len"
+    ],
+    "ai-e-ee": [
+        "tais-te-lee",
+        "vai-ke-nee",
+        "vai-me-nee",
+        "vaih-te-lee"
     ],
     "ai-e-i": [
         "kai-ke-ti",
+        "kaik-ke-ni",
+        "kaik-ke-si",
         "krai-ve-li",
         "mai-le-ri",
+        "mais-te-lin",
         "mais-te-ri",
+        "nai-se-ni",
+        "tais-te-lin",
         "trai-le-ri",
         "vai-je-ri"
+    ],
+    "ai-e-ii": [
+        "hai-se-vii",
+        "mai-de-nii",
+        "mai-se-mii",
+        "mai-se-miin"
     ],
     "ai-e-o": [
         "vai-ve-ro"
@@ -6603,7 +9755,9 @@ export default {
         "pai-ne-lu",
         "tai-me-tus",
         "tais-te-lu",
-        "vaih-te-lu"
+        "tais-te-lun",
+        "vaih-te-lu",
+        "vaih-te-lut"
     ],
     "ai-e-uu": [
         "kai-de-puu"
@@ -6611,18 +9765,53 @@ export default {
     "ai-e-yö": [
         "vai-he-työ"
     ],
+    "ai-ee": [
+        "ai-heen",
+        "ai-heest",
+        "ai-keet",
+        "ai-neet",
+        "hai-kee",
+        "hai-keelt",
+        "hai-see",
+        "kaik-kee",
+        "kaik-keen",
+        "lai-mee",
+        "mai-neen",
+        "mai-neest",
+        "mail-leen",
+        "pai-neen",
+        "pai-neet",
+        "rai-teet",
+        "tai-teen",
+        "vai-heen",
+        "vai-hees",
+        "vai-kee",
+        "vai-keelt",
+        "vai-keet",
+        "vaih-teeks"
+    ],
     "ai-ee-a": [
         "ai-hel-ma",
         "hais-tel-la",
+        "kai-kes-ta",
+        "kai-teel-la",
         "kai-vel-la",
         "kaih-del-la",
         "lai-dem-mas",
         "lai-tel-la",
+        "mai-net-ta",
         "mais-tel-la",
+        "nai-ses-ta",
+        "pai-nees-ta",
         "pai-nel-la",
+        "pai-net-ta",
         "pais-kel-la",
+        "tai-det-ta",
         "tai-tel-la",
         "tais-tel-la",
+        "tait-tees-sa",
+        "vai-hees-sa",
+        "vai-kee-ta",
         "vaih-del-la"
     ],
     "ai-ee-aa": [
@@ -6631,25 +9820,45 @@ export default {
         "lai-dem-paa",
         "lai-hen-taa",
         "lai-men-taa",
+        "mais-tel-laan",
         "pai-men-taa",
+        "pai-nel-laan",
         "tai-met-taa",
+        "tais-tel-laan",
         "vai-ker-taa",
         "vai-men-taa",
         "vai-nes-kaan"
     ],
+    "ai-ee-ai": [
+        "kai-ken-laist",
+        "vai-het-taist"
+    ],
     "ai-ee-e": [
+        "kai-kel-le",
         "kai-ver-re",
         "lai-men-ne"
+    ],
+    "ai-ee-ee": [
+        "tais-tel-leen",
+        "vai-jen-neet",
+        "vai-kee-see"
     ],
     "ai-ee-i": [
         "hai-tek-ki",
         "kai-ver-rin",
         "lai-dem-pi",
         "nais-les-ki",
+        "vai-kees-ti",
         "vai-men-nin"
     ],
     "ai-ee-ie": [
         "nais-ten-mies"
+    ],
+    "ai-ee-ii": [
+        "kai-vet-tii",
+        "lai-neh-tii",
+        "lai-tet-tiin",
+        "tais-tel-tiinks"
     ],
     "ai-ee-o": [
         "ai-hee-ton",
@@ -6663,6 +9872,8 @@ export default {
         "kait-sel-mus",
         "lai-men-nus",
         "pai-men-nus",
+        "tai-tet-tu",
+        "tais-tel-tu",
         "vai-ker-rus",
         "vai-men-nus"
     ],
@@ -6670,10 +9881,19 @@ export default {
         "ai-nes-puu"
     ],
     "ai-ei": [
-        "kaik-kein"
+        "kaik-kein",
+        "lait-teil",
+        "mais-teis",
+        "vaik-kei"
     ],
     "ai-ei-a": [
+        "ai-kei-ta",
+        "ai-nei-ta",
+        "ai-neil-la",
+        "kai-teil-la",
+        "kai-teis-sa",
         "lai-nei-kas",
+        "lai-neil-la",
         "mai-nei-kas",
         "pai-neil-ma",
         "paik-keil-la",
@@ -6681,11 +9901,13 @@ export default {
         "rai-teil-la",
         "tai-tei-kas",
         "tai-teil-la",
-        "vai-hei-kas"
+        "vai-hei-kas",
+        "vai-heil-la"
     ],
     "ai-ei-aa": [
         "ai-neis-taa",
         "lai-neit-taa",
+        "mai-neik-kaan",
         "pai-neis-taa",
         "vai-heis-taa",
         "vai-heit-taa"
@@ -6694,10 +9916,17 @@ export default {
         "vai-heit-tain"
     ],
     "ai-ei-e": [
+        "lai-neil-len",
+        "lai-neit-ten",
         "pai-nei-nen",
+        "pai-neit-ten",
         "paik-keil-le",
         "pais-tei-nen",
         "tait-tei-nen"
+    ],
+    "ai-ei-ii": [
+        "lait-tei-siin",
+        "mai-rei-siin"
     ],
     "ai-ei-o": [
         "ai-neis-to",
@@ -6708,6 +9937,8 @@ export default {
     "ai-ei-u": [
         "pai-neis-tus",
         "tai-tei-lu",
+        "vai-hei-lu",
+        "vai-hei-lun",
         "vai-heis-tus"
     ],
     "ai-ei-uu": [
@@ -6733,6 +9964,9 @@ export default {
         "ai-heut-taa",
         "vai-keut-taa"
     ],
+    "ai-eu-ii": [
+        "vai-keuk-siin"
+    ],
     "ai-eu-u": [
         "ai-heu-tus",
         "vai-keu-tus"
@@ -6740,33 +9974,52 @@ export default {
     "ai-i": [
         "ais-ti",
         "ais-tin",
+        "flai-ri",
         "hai-li",
+        "hai-pist",
+        "hai-si",
         "hais-ti",
         "kai-hi",
+        "kai-kil",
         "kai-kin",
+        "kai-kis",
         "kai-vin",
         "kaih-din",
         "kaik-ki",
+        "kaik-ki",
         "lai-mi",
         "lai-min",
+        "lai-nis",
+        "lai-nit",
         "lai-sin",
+        "laif-fi",
         "mai-hin",
         "mai-li",
         "mai-ti",
         "maik-ki",
         "mais-si",
         "mais-ti",
+        "nai-sis",
         "nain-ti",
         "pai-ni",
         "pai-nin",
         "pai-tis",
         "pais-ti",
+        "pais-til",
         "pait-si",
+        "rai-di",
         "rai-tis",
         "rait-ti",
+        "sai-kin",
+        "sai-si",
+        "sai-sin",
+        "sai-sit",
         "stai-li",
+        "stai-lit",
         "tai-ji",
         "tai-mi",
+        "tai-sin",
+        "tai-sit",
         "vai-ti",
         "vaih-din"
     ],
@@ -6775,38 +10028,53 @@ export default {
         "ai-vi-na",
         "ais-ti-a",
         "ais-ti-kas",
+        "kaik-ki-a",
+        "kaik-ki-han",
         "kait-si-ja",
         "mai-ni-ta",
+        "nai-si-a",
         "nais-vi-ha",
         "pai-ni-a",
         "pai-ni-ja",
         "pais-ki-a",
         "pais-ti-kas",
         "tai-ki-na",
+        "tai-ki-nan",
         "tai-mi-a"
     ],
     "ai-i-aa": [
         "ai-ni-aan",
-        "kaik-ki-aan"
+        "kaik-ki-aan",
+        "tai-ki-naa"
     ],
     "ai-i-e": [
         "lail-li-nen",
         "pai-ni-ke",
         "pais-ti-ke"
     ],
+    "ai-i-i": [
+        "lai-ni-ni"
+    ],
     "ai-i-ii": [
         "nai-mi-siin"
+    ],
+    "ai-i-iii": [
+        "nai-mi-siiin"
     ],
     "ai-i-o": [
         "ai-hi-o",
         "ai-ki-do",
         "ai-ti-o",
+        "kais-li-kon",
         "lai-pi-o",
         "mai-ni-o",
         "pait-si-o",
         "rai-vi-o",
         "rais-ki-o",
         "vai-ni-o"
+    ],
+    "ai-i-oo": [
+        "pait-si-oon"
     ],
     "ai-i-u": [
         "ais-ti-mus",
@@ -6815,15 +10083,41 @@ export default {
     "ai-i-uu": [
         "lail-li-suus"
     ],
+    "ai-ie": [
+        "ais-tien",
+        "kaik-kien"
+    ],
     "ai-ie-a": [
         "nais-vie-ras"
     ],
+    "ai-ii": [
+        "ai-nii",
+        "ai-niin",
+        "drai-vii",
+        "fait-tii",
+        "haip-pii",
+        "kaik-kii",
+        "kaik-kiin",
+        "lai-dii",
+        "lai-nii",
+        "mai-lii",
+        "mai-liis",
+        "nai-sii",
+        "nai-vii",
+        "prais-sii",
+        "smai-lii",
+        "sprait-tii",
+        "stai-lii"
+    ],
     "ai-ii-a": [
+        "kai-kil-la",
         "kai-kis-ta",
+        "lail-lis-ta",
         "mai-nin-ta",
         "mai-tik-ka",
         "nais-piis-pa",
-        "rait-sik-ka"
+        "rait-sik-ka",
+        "rait-tii-na"
     ],
     "ai-ii-aa": [
         "lai-mis-taa",
@@ -6834,15 +10128,25 @@ export default {
         "vai-vih-kaa"
     ],
     "ai-ii-e": [
+        "kai-kil-le",
         "nais-lii-ke"
+    ],
+    "ai-ii-ee": [
+        "mai-nin-neen",
+        "pai-nik-keeks"
     ],
     "ai-ii-i": [
         "mai-nin-ki",
         "nai-vis-mi",
         "nai-vis-ti",
+        "pais-tik-si",
         "rait-tiis-ti",
         "thai-silk-ki",
         "vail-lin-ki"
+    ],
+    "ai-ii-ii": [
+        "mai-nit-tiin",
+        "pais-kit-tiin"
     ],
     "ai-ii-o": [
         "kais-lik-ko",
@@ -6857,6 +10161,9 @@ export default {
     "ai-ii-uu": [
         "ais-tik-kuus"
     ],
+    "ai-ii-öi": [
+        "lai-min-löit"
+    ],
     "ai-iu": [
         "rait-tius"
     ],
@@ -6864,11 +10171,17 @@ export default {
         "rait-tius-työ"
     ],
     "ai-o": [
+        "ai-jo",
+        "ai-jon",
         "ai-mo",
         "ai-no",
+        "ai-on",
         "ai-ro",
+        "ai-ron",
+        "ai-rot",
         "ai-to",
         "ai-vo",
+        "ai-vos",
         "ai-vot",
         "kai-ho",
         "kai-no",
@@ -6876,6 +10189,7 @@ export default {
         "kai-vos",
         "lai-ho",
         "lai-ton",
+        "lai-tont",
         "lai-tos",
         "lais-to",
         "lait-to",
@@ -6883,20 +10197,27 @@ export default {
         "mai-to",
         "nai-lon",
         "pai-no",
+        "pai-non",
         "pai-nos",
+        "pai-nost",
         "paik-ko",
         "pais-to",
         "pais-tos",
         "rai-lo",
+        "rai-mo",
         "rai-to",
         "rai-vo",
         "saip-po",
+        "sait-ko",
+        "tai-don",
         "tai-to",
         "tai-tos",
         "tai-vo",
         "tais-to",
         "tait-to",
         "vai-mo",
+        "vai-mon",
+        "vai-mot",
         "vai-no",
         "vaih-dos",
         "vaih-to",
@@ -6904,10 +10225,16 @@ export default {
     ],
     "ai-o-a": [
         "ai-ko-a",
+        "ai-ko-ja",
         "ai-no-a",
+        "ai-no-an",
+        "ai-no-at",
         "ai-to-a",
+        "ai-to-na",
         "kai-ho-ta",
         "kai-ko-ta",
+        "lai-ho-ja",
+        "pai-no-a",
         "pai-no-kas",
         "pais-ko-a",
         "rai-vo-kas",
@@ -6915,23 +10242,31 @@ export default {
         "rai-vo-tar",
         "tai-do-kas",
         "tai-ko-a",
+        "vai-mo-a",
+        "vai-no-ja",
         "vai-no-ta",
         "vaih-do-kas",
         "vais-to-ta"
     ],
     "ai-o-aa": [
-        "ai-ko-jaan"
+        "ai-ko-jaan",
+        "ai-no-aa",
+        "ai-o-taan"
     ],
     "ai-o-e": [
+        "lai-vo-jen",
         "naik-ko-nen"
     ],
     "ai-o-i": [
-        "ai-o-li"
+        "ai-o-li",
+        "rai-vo-si",
+        "vai-mo-ni"
     ],
     "ai-o-ie": [
         "vaih-to-mies"
     ],
     "ai-o-o": [
+        "ai-vo-ton",
         "pai-no-ton",
         "tai-do-ton"
     ],
@@ -6951,12 +10286,27 @@ export default {
         "rai-vo-pää"
     ],
     "ai-oi": [
+        "ai-koi",
+        "ai-toi",
+        "ai-voil",
+        "fai-joi",
+        "lai-toin",
+        "lai-toit",
         "pai-koin",
-        "vai-voin"
+        "pais-koi",
+        "tai-koi",
+        "tai-toit",
+        "tait-toi",
+        "vai-hoin",
+        "vai-voin",
+        "vaih-doin",
+        "vaih-toi"
     ],
     "ai-oi-a": [
+        "ai-vois-ta",
         "kai-hoi-sa",
         "lain-voi-ma",
+        "pai-kois-sa",
         "rai-loil-la",
         "rai-voi-sa"
     ],
@@ -6970,7 +10320,9 @@ export default {
         "pai-koil-taan",
         "pai-koit-taa",
         "rai-doit-taa",
-        "rai-vois-saan"
+        "rai-vois-saan",
+        "tai-doil-taan",
+        "vai-koil-laa"
     ],
     "ai-oi-ai": [
         "pai-koit-tain"
@@ -6984,6 +10336,13 @@ export default {
     "ai-oi-ee": [
         "pai-koil-leen"
     ],
+    "ai-oi-i": [
+        "ai-soi-hin",
+        "ai-voi-hin",
+        "paik-koi-hin",
+        "tai-koi-hin",
+        "vai-voi-hin"
+    ],
     "ai-oi-u": [
         "ai-voi-tus",
         "lai-doi-tus",
@@ -6991,24 +10350,52 @@ export default {
         "pai-koi-tus",
         "rai-doi-tus"
     ],
+    "ai-oo": [
+        "ai-koo",
+        "ai-noo",
+        "ai-noot",
+        "ai-too",
+        "kai-voon",
+        "pai-noo",
+        "rai-voo",
+        "tai-too",
+        "vai-moo",
+        "vai-noo",
+        "vaih-toon"
+    ],
     "ai-oo-a": [
+        "ai-dom-man",
+        "kai-vos-ta",
         "lain-koh-ta",
         "mai-non-ta",
+        "pai-nos-ta",
+        "rai-voo-van",
         "tai-on-ta",
+        "vai-mol-la",
         "vai-noo-ja"
     ],
     "ai-oo-aa": [
+        "ai-noos-taan",
         "kai-lot-taa",
         "lai-tos-taa",
         "lais-kot-taa",
         "mai-nos-taa",
         "pai-nos-taa",
-        "pai-not-taa"
+        "pai-not-taa",
+        "vai-mol-taan"
+    ],
+    "ai-oo-e": [
+        "vai-mok-sen",
+        "vai-mol-le"
+    ],
+    "ai-oo-ee": [
+        "vai-mok-seen"
     ],
     "ai-oo-i": [
         "ai-dos-ti",
         "kai-nos-ti",
         "lai-nop-pi",
+        "mai-nok-siks",
         "vaih-dok-ki"
     ],
     "ai-oo-ie": [
@@ -7045,14 +10432,21 @@ export default {
         "bai-lut",
         "hai-ku",
         "hai-su",
+        "hais-su",
         "kai-ku",
         "kai-vu",
         "lai-dun",
         "laik-ku",
+        "nai-dust",
         "nai-nut",
+        "pai-nu",
         "rai-su",
+        "tai-vun",
+        "tain-nu",
         "vai-nu",
         "vai-su",
+        "vai-vun",
+        "vaih-du",
         "vaik-ku"
     ],
     "ai-u-a": [
@@ -7087,6 +10481,11 @@ export default {
         "lai-vu-e",
         "vai-ku-te"
     ],
+    "ai-u-ee": [
+        "haih-tu-neet",
+        "vai-pu-neen",
+        "vaih-tu-neet"
+    ],
     "ai-u-i": [
         "ai-tu-ri",
         "haih-du-tin",
@@ -7100,6 +10499,7 @@ export default {
         "rai-vu-ri",
         "sai-tu-ri",
         "tai-ku-ri",
+        "tai-ku-riks",
         "tai-tu-ri",
         "tai-vu-tin",
         "vai-ku-tin"
@@ -7112,10 +10512,13 @@ export default {
         "nais-su-ku",
         "pai-su-tus",
         "tai-pu-mus",
+        "tai-pu-nut",
         "tai-vu-tus",
         "tain-nu-tus",
         "vai-ku-tus",
-        "vai-vu-tus"
+        "vai-pu-nut",
+        "vai-vu-tus",
+        "vaih-tu-nu"
     ],
     "ai-u-uu": [
         "kai-ku-vuus",
@@ -7125,6 +10528,15 @@ export default {
     ],
     "ai-u-yö": [
         "kai-vu-työ"
+    ],
+    "ai-ui": [
+        "kai-kui",
+        "mais-tui",
+        "pai-nuin",
+        "pai-nuit",
+        "tai-vuin",
+        "tait-tui",
+        "vai-vuin"
     ],
     "ai-ui-a": [
         "kai-kui-sa",
@@ -7136,7 +10548,15 @@ export default {
     ],
     "ai-ui-e": [
         "ai-kui-nen",
+        "ai-kui-set",
+        "ai-kuis-ten",
         "laik-kui-nen"
+    ],
+    "ai-ui-ii": [
+        "ai-kui-sii"
+    ],
+    "ai-ui-u": [
+        "ai-kuis-tu"
     ],
     "ai-ui-uu": [
         "ai-kui-suus",
@@ -7158,20 +10578,32 @@ export default {
         "saip-puoit-taa"
     ],
     "ai-uu": [
+        "haih-tuu",
+        "hait-suu",
+        "kai-kuu",
+        "kai-nuu",
         "kai-puu",
+        "kai-puun",
         "lai-huus",
         "lais-kuus",
+        "mais-tuu",
         "nai-suus",
+        "pai-nuu",
         "paik-kuu",
         "rai-suus",
         "sai-tuus",
         "tai-kuus",
-        "vai-suus"
+        "tai-puu",
+        "tait-tuu",
+        "vai-puu",
+        "vai-suus",
+        "vaih-tuu"
     ],
     "ai-uu-a": [
         "vaih-dun-ta"
     ],
     "ai-uu-aa": [
+        "ai-nut-kaa",
         "haih-dut-taa",
         "lai-dun-maa",
         "lai-dun-taa",
@@ -7185,10 +10617,18 @@ export default {
         "vai-kut-taa",
         "vai-vut-taa"
     ],
+    "ai-uu-ai": [
+        "kai-puu-tain"
+    ],
     "ai-uu-e": [
+        "kai-puul-le",
         "nais-suh-de"
     ],
+    "ai-uu-ee": [
+        "kai-puu-seen"
+    ],
     "ai-uu-i": [
+        "kai-puu-ni",
         "rai-sus-ti",
         "tai-fuu-ni",
         "vai-sus-ti"
@@ -7201,10 +10641,17 @@ export default {
     ],
     "ai-uu-o": [
         "lain-huu-to",
-        "lain-muu-tos"
+        "lain-muu-tos",
+        "tai-puu-ko"
     ],
     "ai-uu-u": [
         "nais-jut-tu"
+    ],
+    "ai-y": [
+        "dai-ly"
+    ],
+    "ai-ä": [
+        "sait-sä"
     ],
     "ai-ä-i": [
         "nais-vä-ki"
@@ -7223,7 +10670,12 @@ export default {
     ],
     "aie-aa": [
         "aien-taa",
+        "vaie-taan",
         "vaien-taa"
+    ],
+    "aie-ee": [
+        "vaien-neen",
+        "vaien-neet"
     ],
     "aie-i": [
         "aiem-min",
@@ -7231,7 +10683,8 @@ export default {
     ],
     "aie-u": [
         "aien-nus",
-        "vaien-nus"
+        "vaien-nus",
+        "vaien-nut"
     ],
     "aie-u-a": [
         "vaien-tu-a"
@@ -7264,41 +10717,65 @@ export default {
         "au-la",
         "au-ma",
         "au-ra",
+        "au-ta",
+        "au-tan",
+        "au-tat",
         "fau-na",
+        "hau-das",
         "hau-ra",
         "hau-ras",
         "hau-ta",
         "hau-va",
         "hauk-ka",
         "haus-ka",
+        "jau-han",
+        "kau-a",
         "kau-an",
         "kau-as",
         "kau-ha",
         "kau-la",
+        "kau-las",
         "kau-na",
+        "kau-nan",
+        "kau-pan",
         "kau-ra",
         "kaup-pa",
         "kaut-ta",
+        "lau-das",
         "lau-ha",
+        "lau-la",
+        "lau-lan",
+        "lau-las",
+        "lau-lat",
         "lau-ma",
+        "lau-ra",
+        "lau-ran",
         "lau-ta",
         "lauk-ka",
         "laut-ta",
         "mau-kas",
         "nau-ha",
         "nau-la",
+        "nau-ra",
+        "nau-ran",
+        "nau-rat",
         "nau-ta",
         "pau-la",
+        "pau-lan",
         "pau-na",
         "rau-ha",
+        "rau-han",
+        "rau-has",
         "rau-ta",
         "rauk-ka",
         "sau-ma",
         "sau-na",
+        "sau-nan",
         "sau-va",
         "tau-la",
         "tauh-ka",
         "taus-ta",
+        "taus-tat",
         "taut-ta",
         "trau-ma",
         "vau-ras",
@@ -7322,16 +10799,30 @@ export default {
         "nau-ka-ta",
         "nau-la-ta",
         "nau-ra-ja",
+        "nau-ra-van",
         "pau-ha-ta",
         "pau-ka-ma",
         "sau-ma-ta",
         "vau-va-la"
     ],
+    "au-a-aa": [
+        "aut-ta-maan",
+        "hau-da-taan",
+        "lau-la-maan",
+        "nau-la-taan",
+        "nau-ra-maan"
+    ],
     "au-a-e": [
+        "kau-ha-nen",
+        "lau-la-en",
         "lau-ta-nen",
+        "nau-ra-en",
         "rau-ha-nen"
     ],
     "au-a-i": [
+        "kau-la-si",
+        "nau-la-ni",
+        "nau-la-sit",
         "sau-ma-ri"
     ],
     "au-a-ie": [
@@ -7346,9 +10837,15 @@ export default {
         "sau-ma-ton",
         "sau-ra-mo"
     ],
+    "au-a-oo": [
+        "kau-ka-loon"
+    ],
     "au-a-u": [
+        "aut-ta-nu",
         "jau-ha-tus",
-        "lau-da-tur"
+        "lau-da-tur",
+        "lau-la-nut",
+        "nau-ra-nu"
     ],
     "au-a-uu": [
         "rau-ta-puu",
@@ -7364,25 +10861,60 @@ export default {
         "tau-la-pää"
     ],
     "au-aa": [
+        "au-raa",
         "aut-taa",
+        "bauns-saa",
+        "hau-taa",
+        "hau-taan",
+        "haus-kaa",
         "jau-haa",
+        "jau-haan",
+        "kau-aa",
         "kau-kaa",
+        "kau-laan",
+        "kau-naa",
+        "kau-naan",
         "lau-laa",
+        "lau-maa",
+        "lau-taan",
+        "lauk-kaa",
+        "launc-haa",
         "maus-taa",
+        "nau-laan",
         "nau-raa",
+        "nau-taa",
+        "pau-haa",
         "pauk-kaa",
+        "rau-haa",
+        "rau-haan",
+        "rau-taa",
+        "sau-naan",
         "taus-taa"
     ],
     "au-aa-a": [
+        "hau-ras-ta",
+        "kau-kas-ta",
+        "kau-lal-tas",
+        "kau-las-sa",
         "kaup-paa-ja",
-        "sau-maa-ja"
+        "lau-kas-ta",
+        "mau-kas-ta",
+        "nau-rah-dat",
+        "rau-das-ta",
+        "rau-has-sa",
+        "sau-maa-ja",
+        "taus-tal-la",
+        "vau-vas-ta"
     ],
     "au-aa-aa": [
+        "hau-dal-laan",
         "hau-kah-taa",
+        "hau-taa-maan",
         "jau-hat-taa",
         "kaut-taal-taan",
         "lau-lat-taa",
         "lau-sah-taa",
+        "nau-rah-maan",
         "nau-rah-taa",
         "nau-rat-taa",
         "pau-kah-taa",
@@ -7392,23 +10924,35 @@ export default {
         "kau-lak-kain",
         "lau-an-tai"
     ],
+    "au-aa-e": [
+        "kau-lal-le",
+        "nau-ram-me"
+    ],
     "au-aa-i": [
         "haus-kas-ti",
         "kau-ak-si",
+        "kau-pal-list",
+        "lau-tak-si",
         "mauk-kaas-ti",
+        "rau-hal-list",
         "vau-raas-ti"
     ],
     "au-aa-ie": [
         "rau-han-mies"
     ],
+    "au-aa-ii": [
+        "hau-dat-tiin"
+    ],
     "au-aa-o": [
         "nau-lak-ko"
     ],
     "au-aa-u": [
+        "hau-dat-tu",
         "hau-kah-dus",
         "lau-sah-dus",
         "nau-rah-dus",
-        "pau-kah-dus"
+        "pau-kah-dus",
+        "rau-taar-kun"
     ],
     "au-aa-yö": [
         "rau-han-työ"
@@ -7423,6 +10967,7 @@ export default {
     ],
     "au-ai-a": [
         "au-kais-ta",
+        "hau-rai-ta",
         "kau-lail-la",
         "lau-kais-ta",
         "lau-tail-la",
@@ -7434,6 +10979,7 @@ export default {
     ],
     "au-ai-e": [
         "kau-kai-nen",
+        "kau-kai-sen",
         "kau-nai-nen",
         "lau-tai-nen",
         "rau-hai-nen",
@@ -7442,6 +10988,9 @@ export default {
     "au-ai-i": [
         "au-kai-sin",
         "lau-kai-sin"
+    ],
+    "au-ai-ii": [
+        "kau-lail-tiin"
     ],
     "au-ai-u": [
         "au-kai-su",
@@ -7470,11 +11019,21 @@ export default {
         "nau-laus",
         "pau-kaus",
         "sau-maus",
-        "vau-raus"
+        "vau-raus",
+        "zau-zau"
+    ],
+    "au-au-a": [
+        "lau-kaus-ta"
     ],
     "au-au-aa": [
         "hau-taus-maa",
         "pau-kaut-taa"
+    ],
+    "au-au-au": [
+        "zau-zau-zau"
+    ],
+    "au-au-uu": [
+        "hau-tau-tuu"
     ],
     "au-aui-i": [
         "vau-vauin-ti"
@@ -7484,13 +11043,16 @@ export default {
     ],
     "au-e": [
         "au-er",
+        "au-kes",
         "hau-de",
+        "hau-sen",
         "jau-he",
         "lau-de",
         "lau-se",
         "lauh-de",
         "maus-te",
-        "pau-ke"
+        "pau-ke",
+        "rau-kes"
     ],
     "au-e-a": [
         "au-e-ta",
@@ -7502,11 +11064,18 @@ export default {
         "rau-e-ta",
         "rau-ke-a"
     ],
+    "au-e-aa": [
+        "au-ke-aa",
+        "lau-le-taan",
+        "nau-re-taan"
+    ],
     "au-e-e": [
+        "au-ke-ne",
         "au-te-re",
         "lau-se-ke"
     ],
     "au-e-i": [
+        "haut-se-ni",
         "snaut-se-ri",
         "vau-ve-li"
     ],
@@ -7517,7 +11086,14 @@ export default {
         "maus-te-voi"
     ],
     "au-ee": [
-        "lau-teet"
+        "au-kee",
+        "kau-hee",
+        "kau-hees",
+        "lau-seen",
+        "lau-seet",
+        "lau-teet",
+        "maus-teel",
+        "rau-kee"
     ],
     "au-ee-a": [
         "au-tel-la",
@@ -7525,19 +11101,57 @@ export default {
         "kau-em-mas",
         "lau-lel-la",
         "lau-lel-ma",
-        "lau-sel-ma"
+        "lau-sel-ma",
+        "lau-set-ta"
     ],
     "au-ee-aa": [
         "jau-hen-taa",
         "kau-em-paa",
         "lau-hen-taa"
     ],
+    "au-ee-ai": [
+        "nau-ret-tais"
+    ],
+    "au-ee-ee": [
+        "au-en-neet"
+    ],
     "au-ee-i": [
         "jau-hen-nin",
         "kau-em-min"
     ],
+    "au-ee-ii": [
+        "nau-ret-tiin"
+    ],
+    "au-ee-u": [
+        "au-en-nut",
+        "lau-let-tu"
+    ],
+    "au-ei": [
+        "kau-nein",
+        "lau-seil",
+        "lau-teil",
+        "saun-dei"
+    ],
+    "au-ei-a": [
+        "kau-heim-mat",
+        "kau-neim-man",
+        "kau-neim-mat",
+        "kau-nein-ta",
+        "lau-sei-ta",
+        "rau-kei-ta"
+    ],
+    "au-ei-aa": [
+        "lau-sei-taan"
+    ],
     "au-ei-e": [
         "maus-tei-nen"
+    ],
+    "au-ei-i": [
+        "lau-seik-si"
+    ],
+    "au-ei-ii": [
+        "kau-neim-piin",
+        "lau-sei-siin"
     ],
     "au-ei-o": [
         "maus-teik-ko"
@@ -7550,6 +11164,13 @@ export default {
         "lauh-keus",
         "rau-keus"
     ],
+    "au-eu-e": [
+        "kau-neu-den",
+        "kau-neu-dest"
+    ],
+    "au-eu-ee": [
+        "kau-neu-teen"
+    ],
     "au-ey-ey": [
         "lau-seyh-teys"
     ],
@@ -7557,6 +11178,8 @@ export default {
         "maus-teyrt-ti"
     ],
     "au-i": [
+        "au-di",
+        "au-dist",
         "au-ki",
         "au-lis",
         "aus-si",
@@ -7564,17 +11187,25 @@ export default {
         "fau-ni",
         "hau-ki",
         "hau-li",
+        "hau-lit",
         "jau-hin",
         "kau-lin",
         "kau-nis",
         "kau-ris",
         "kau-si",
+        "kaup-pi",
+        "lau-ri",
         "lauk-ki",
         "mau-ri",
         "nau-ris",
+        "nau-ti",
+        "nau-tin",
+        "pau-li",
+        "pau-lin",
         "paus-si",
         "rauk-kis",
         "sau-di",
+        "sau-li",
         "saun-di",
         "tau-ti",
         "vauh-ti"
@@ -7593,22 +11224,40 @@ export default {
         "pau-hi-na",
         "pauk-ki-na",
         "rau-ti-as",
-        "vauh-di-kas"
+        "vauh-di-kas",
+        "vauh-ti-a"
+    ],
+    "au-i-aa": [
+        "naut-ti-kaa"
     ],
     "au-i-e": [
         "au-ki-le",
         "kaus-ti-nen",
         "tau-ti-nen"
     ],
+    "au-i-ee": [
+        "kau-li-meen"
+    ],
+    "au-i-i": [
+        "naut-ti-sit"
+    ],
     "au-i-o": [
         "au-ki-o",
+        "au-ki-on",
         "au-li-o",
         "au-ti-o",
+        "au-ti-on",
         "rau-ni-o",
         "sau-ni-o",
         "tau-di-ton",
         "vau-ri-o",
         "vauh-di-ton"
+    ],
+    "au-i-oi": [
+        "rau-ni-oil"
+    ],
+    "au-i-oo": [
+        "au-di-oo"
     ],
     "au-i-u": [
         "vauh-di-tus"
@@ -7622,13 +11271,31 @@ export default {
     "au-ie-i": [
         "au-diens-si"
     ],
+    "au-ii": [
+        "haus-siin",
+        "kau-niilt",
+        "kau-niin",
+        "kau-niit",
+        "kau-riit",
+        "naut-tii",
+        "tau-tii",
+        "vauh-tiin"
+    ],
     "au-ii-a": [
+        "kau-nii-na",
+        "kau-nii-ta",
+        "kau-niil-ta",
+        "kau-niim-man",
+        "kau-nis-ta",
         "kau-pin-ta",
+        "kaun-gis-ta",
         "nau-tiik-ka",
         "nau-tin-ta"
     ],
     "au-ii-aa": [
         "kau-his-taa",
+        "kau-niim-paa",
+        "kau-niin-paa",
         "kau-nis-taa",
         "vauh-dit-taa"
     ],
@@ -7645,19 +11312,32 @@ export default {
         "gaul-lis-mi",
         "gaul-lis-ti",
         "hau-pit-si",
+        "kau-niik-si",
+        "kau-niim-pi",
         "kau-niis-ti",
         "rau-nik-ki"
     ],
     "au-ii-o": [
+        "au-rin-gon",
+        "au-rin-gos",
         "au-rin-ko",
         "hau-lik-ko",
         "nau-tin-to",
         "pau-nik-ko",
         "rau-dik-ko"
     ],
+    "au-ii-oo": [
+        "au-rin-koo",
+        "au-rin-koon",
+        "hau-lik-koon",
+        "nau-tin-toon"
+    ],
     "au-ii-u": [
         "kau-his-tus",
         "kau-nis-tus"
+    ],
+    "au-ii-ui": [
+        "kau-his-tui"
     ],
     "au-ii-uu": [
         "vauh-dik-kuus"
@@ -7668,10 +11348,15 @@ export default {
     ],
     "au-o": [
         "au-to",
+        "au-ton",
+        "au-tost",
+        "au-tot",
         "au-vo",
         "auk-ko",
         "gauc-ho",
         "jau-ho",
+        "jau-hot",
+        "mau-no",
         "mau-ton",
         "sau-ro",
         "sauk-ko",
@@ -7680,18 +11365,32 @@ export default {
     ],
     "au-o-a": [
         "au-ko-a",
+        "au-to-a",
+        "au-to-ja",
         "hau-to-a",
+        "hau-to-ja",
         "hauk-ko-a",
         "kau-ho-a",
         "kau-no-tar",
         "lau-ko-a",
+        "lau-ko-ja",
         "lauk-ko-a",
+        "rau-mo-ja",
         "sau-no-a",
         "sau-no-ja",
-        "sau-vo-a"
+        "sau-no-ta",
+        "sau-vo-a",
+        "trau-mo-ja"
     ],
     "au-o-aa": [
-        "kau-ko-maa"
+        "kau-ko-maa",
+        "sau-no-taan"
+    ],
+    "au-o-e": [
+        "hauk-ko-en"
+    ],
+    "au-o-i": [
+        "au-ko-vi"
     ],
     "au-o-o": [
         "au-ko-ton",
@@ -7700,20 +11399,36 @@ export default {
     "au-o-u": [
         "au-ko-tus",
         "hau-ko-tus",
+        "rau-ho-tu",
         "sau-no-tus"
     ],
     "au-o-uu": [
         "maut-to-muus"
     ],
     "au-oi": [
-        "sau-voin"
+        "au-toi",
+        "au-toist",
+        "auk-koi",
+        "kaup-poi",
+        "lau-loi",
+        "nau-hoi",
+        "nau-roi",
+        "nau-roin",
+        "sau-voin",
+        "tau-koi"
     ],
     "au-oi-a": [
         "au-toil-la",
         "au-voi-sa",
+        "kau-lois-ta",
+        "kau-pois-sa",
+        "pau-lois-ta",
+        "taus-toil-la",
         "vauh-koil-la"
     ],
     "au-oi-aa": [
+        "au-toil-laan",
+        "hau-dois-saan",
         "lau-doit-taa",
         "nau-hoit-taa",
         "pau-loit-taa",
@@ -7734,25 +11449,43 @@ export default {
         "rau-doi-te",
         "rau-hoi-te"
     ],
+    "au-oi-i": [
+        "au-toi-hin"
+    ],
     "au-oi-u": [
         "au-toi-lu",
         "lau-doi-tus",
         "nau-hoi-tus",
         "pau-loi-tus",
         "rau-doi-tus",
+        "rau-hoi-tun",
         "rau-hoi-tus",
         "taus-toi-tus",
         "vauh-koi-lu"
     ],
+    "au-oo": [
+        "au-koo",
+        "au-too",
+        "au-toon",
+        "hau-too",
+        "lau-koo",
+        "vauh-koo"
+    ],
     "au-oo-a": [
+        "au-tol-la",
+        "au-tol-ta",
+        "au-tos-sa",
+        "au-tos-ta",
         "glau-koo-ma",
         "hau-don-ta",
+        "mau-ton-ta",
         "sau-von-ta"
     ],
     "au-oo-aa": [
         "au-kot-taa",
         "hau-kot-taa",
         "jau-hot-taa",
+        "rau-hot-taa",
         "sau-not-taa"
     ],
     "au-oo-i": [
@@ -7762,26 +11495,38 @@ export default {
         "au-nus",
         "hauk-ku",
         "kau-hu",
+        "kau-hut",
         "kau-lus",
         "kaut-su",
+        "lau-kut",
         "lau-lu",
+        "lau-lun",
+        "lau-lut",
         "lauk-ku",
         "nau-ru",
+        "nau-run",
         "nauk-ku",
         "pau-hu",
+        "pau-kut",
         "pauk-ku",
         "rau-tu",
         "raus-ku",
         "sau-hu",
+        "sau-hut",
         "tau-lu",
-        "vau-nu"
+        "vau-nu",
+        "vau-nun",
+        "vau-nust"
     ],
     "au-u-a": [
         "au-tu-as",
         "hau-tu-a",
         "hau-tu-ma",
         "hauk-ku-a",
+        "kau-hu-a",
         "kauh-tu-a",
+        "lau-lu-a",
+        "lau-lu-ja",
         "lau-su-a",
         "lau-su-ja",
         "lau-su-ma",
@@ -7791,11 +11536,24 @@ export default {
         "mau-ku-na",
         "maus-tu-a",
         "nau-ku-a",
+        "nau-ru-a",
         "pauk-ku-a",
-        "sau-hu-ta"
+        "sau-hu-ja",
+        "sau-hu-ta",
+        "tau-lu-ja"
+    ],
+    "au-u-aa": [
+        "au-tu-aat",
+        "hauk-ku-maan",
+        "lau-lu-jaan",
+        "lau-su-maan"
+    ],
+    "au-u-e": [
+        "lau-lu-jen"
     ],
     "au-u-i": [
         "kau-lu-ri",
+        "lau-lu-ni",
         "lauh-du-tin",
         "laut-tu-ri",
         "nau-hu-ri",
@@ -7803,6 +11561,9 @@ export default {
     ],
     "au-u-ie": [
         "lau-lu-mies"
+    ],
+    "au-u-o": [
+        "lau-lu-ton"
     ],
     "au-u-u": [
         "hau-du-tus",
@@ -7813,11 +11574,21 @@ export default {
     "au-u-ui": [
         "nau-ru-suin"
     ],
+    "au-ui": [
+        "hau-kuin",
+        "lau-suin",
+        "tau-lui"
+    ],
     "au-ui-a": [
-        "lau-luil-ta"
+        "lau-luil-ta",
+        "lau-luis-sa",
+        "vau-nuis-sa"
     ],
     "au-ui-aa": [
         "kau-huis-saan"
+    ],
+    "au-ui-i": [
+        "lau-lui-hin"
     ],
     "au-uo-a": [
         "lau-luo-sa"
@@ -7825,11 +11596,24 @@ export default {
     "au-uu": [
         "au-tuus",
         "haus-kuus",
-        "mauk-kuus"
+        "kau-huun",
+        "lau-luun",
+        "mauk-kuus",
+        "nau-ruun",
+        "nauk-kuu",
+        "pau-huun",
+        "pauk-kuu",
+        "sau-huu",
+        "tau-luun",
+        "vau-nuun"
     ],
     "au-uu-a": [
         "hau-kun-ta",
-        "lau-sun-ta"
+        "haus-kuut-ta",
+        "kau-hus-sa",
+        "lau-lus-sa",
+        "lau-sun-ta",
+        "lauk-kun-sa"
     ],
     "au-uu-aa": [
         "au-tuut-taa",
@@ -7839,19 +11623,35 @@ export default {
         "haus-kuut-taa",
         "kauh-dut-taa",
         "lauh-dut-taa",
+        "nau-rul-laan",
         "pau-kut-taa",
         "sau-hut-taa"
     ],
+    "au-uu-e": [
+        "kau-luk-set",
+        "lau-lum-me"
+    ],
+    "au-uu-ee": [
+        "kau-huk-seen",
+        "kau-luk-seen"
+    ],
     "au-uu-i": [
+        "kau-pun-gin",
+        "kau-pun-gis",
         "kau-pun-ki",
         "klau-suu-li"
+    ],
+    "au-uu-ii": [
+        "hau-kut-tiin",
+        "kau-pun-kiin"
     ],
     "au-uu-o": [
         "lau-sun-to",
         "tau-luk-ko"
     ],
     "au-uu-u": [
-        "haus-kuu-tus"
+        "haus-kuu-tus",
+        "lau-sut-tu"
     ],
     "aui-a": [
         "kauim-ma",
@@ -7880,7 +11680,11 @@ export default {
         "tauo-ta"
     ],
     "auo-aa": [
+        "lauo-taan",
         "tauot-taa"
+    ],
+    "auo-e": [
+        "auot-te"
     ],
     "auo-o": [
         "tauo-ton"
@@ -7893,24 +11697,41 @@ export default {
     ],
     "e-a": [
         "be-at",
+        "de-naks",
         "e-dam",
+        "e-kan",
+        "e-kast",
+        "e-kat",
         "fe-ta",
         "he-la",
         "he-ra",
+        "je-ah",
+        "je-pa",
         "ke-bab",
         "ke-la",
+        "ke-lan",
         "ke-ra",
         "le-ka",
+        "me-an",
+        "me-ga",
         "me-la",
+        "me-lan",
         "ne-ga",
         "ne-va",
+        "pe-na",
+        "re-al",
         "re-la",
         "te-ak",
+        "te-am",
         "te-la",
-        "ve-sa"
+        "tje-na",
+        "ve-gas",
+        "ve-sa",
+        "ve-ta"
     ],
     "e-a-a": [
         "de-la-ta",
+        "e-ka-na",
         "e-ta-na",
         "ke-ka-ta",
         "ke-la-ta",
@@ -7936,35 +11757,60 @@ export default {
         "ve-na-ta",
         "ve-sa-ta"
     ],
+    "e-a-aa": [
+        "pe-la-taan"
+    ],
     "e-a-e": [
         "de-a-ler",
+        "he-a-ven",
         "he-ta-le",
         "ke-ra-ke",
         "ke-ta-le",
+        "pe-a-ce",
+        "ple-a-se",
         "re-pa-le",
         "re-ta-le"
     ],
+    "e-a-ee": [
+        "re-pa-leen"
+    ],
     "e-a-i": [
+        "be-ma-rin",
         "cle-a-ring",
         "de-ma-ri",
         "e-ma-li",
+        "ge-a-ri",
         "je-pa-ri",
+        "ke-la-sin",
         "kle-ma-tis",
         "le-a-sing",
+        "le-va-rit",
         "pe-ka-ri",
+        "pe-ta-rin",
+        "re-ka-mil",
         "re-va-ri",
+        "se-ka-sin",
+        "ste-va-rit",
         "sve-ta-ri",
-        "te-ka-rit"
+        "te-ka-rit",
+        "ve-ga-sis"
     ],
     "e-a-ie": [
         "te-la-tie"
     ],
+    "e-a-ii": [
+        "le-va-riin",
+        "se-ka-viin"
+    ],
     "e-a-o": [
+        "e-ra-kon",
         "le-ga-to",
+        "le-pa-kot",
         "pe-ga-sos",
         "ve-la-ton"
     ],
     "e-a-u": [
+        "be-ta-cuck",
         "e-la-tus",
         "le-pa-tus",
         "se-pa-lus",
@@ -7977,24 +11823,51 @@ export default {
         "te-la-puu"
     ],
     "e-a-y": [
-        "he-a-vy"
+        "he-a-vy",
+        "le-ga-cy"
+    ],
+    "e-a-yy": [
+        "e-a-syy"
     ],
     "e-a-ää": [
         "he-la-pää"
     ],
     "e-aa": [
-        "se-kaan"
+        "de-laa",
+        "e-kaa",
+        "e-kaan",
+        "fle-xaa",
+        "he-saan",
+        "je-aa",
+        "ke-laa",
+        "ke-laan",
+        "ke-laat",
+        "me-taa",
+        "pe-laa",
+        "pe-laan",
+        "pe-laat",
+        "pe-taa",
+        "re-laa",
+        "se-kaan",
+        "se-laa",
+        "tse-maa",
+        "ve-naa",
+        "ve-naan",
+        "ze-taa"
     ],
     "e-aa-a": [
         "he-lak-ka",
         "ke-ral-la",
         "me-tak-ka",
         "pe-laa-ja",
+        "pe-laa-jan",
+        "pe-las-ta",
         "re-gat-ta",
         "re-mak-ka",
         "se-as-sa",
         "se-as-ta",
         "te-lak-ka",
+        "ve-ran-nal",
         "ve-ran-ta"
     ],
     "e-aa-aa": [
@@ -8004,12 +11877,17 @@ export default {
         "le-mah-taa",
         "le-pat-taa",
         "me-kas-taa",
+        "pe-laa-maan",
         "pe-las-taa",
-        "re-mah-taa"
+        "re-mah-taa",
+        "tse-kak-kaa"
     ],
     "e-aa-e": [
         "be-ag-le",
-        "ke-ral-le"
+        "ke-laat-te",
+        "ke-ral-le",
+        "pe-laat-te",
+        "re-gal-le"
     ],
     "e-aa-i": [
         "de-bat-ti",
@@ -8021,6 +11899,7 @@ export default {
         "e-tap-pi",
         "fre-gat-ti",
         "ge-par-di",
+        "he-at-ti",
         "ke-raa-mi",
         "le-gaat-ti",
         "me-las-si",
@@ -8028,6 +11907,7 @@ export default {
         "me-tal-li",
         "pe-daa-li",
         "pe-dant-ti",
+        "pe-las-ti",
         "pe-naa-li",
         "pe-tank-ki",
         "pre-laat-ti",
@@ -8037,6 +11917,11 @@ export default {
         "te-ras-si",
         "ve-gaa-ni"
     ],
+    "e-aa-ii": [
+        "e-tap-pii",
+        "ke-lat-tiin",
+        "pe-dat-tiin"
+    ],
     "e-aa-o": [
         "e-lan-to",
         "e-mak-ko",
@@ -8044,6 +11929,7 @@ export default {
         "e-ran-to",
         "e-vak-ko",
         "fe-mak-ko",
+        "ke-laat-ko",
         "ke-pak-ko",
         "ke-sak-ko",
         "ke-san-to",
@@ -8055,13 +11941,18 @@ export default {
         "e-vak-kous"
     ],
     "e-aa-u": [
+        "ke-lan-nu",
         "ke-las-tus",
         "le-hah-dus",
         "le-mah-dus",
         "me-kas-tus",
+        "pe-dat-tu",
         "pe-las-tus",
+        "pe-lat-tu",
         "re-mah-dus",
-        "se-kaan-nus"
+        "se-kaan-nus",
+        "tse-kan-nu",
+        "ve-nat-tu"
     ],
     "e-aa-uu": [
         "he-lak-kuus"
@@ -8078,7 +11969,11 @@ export default {
         "se-kai-nen"
     ],
     "e-ai-i": [
-        "se-kai-sin"
+        "de-lai-sin",
+        "ke-lai-lis",
+        "pe-lai-sin",
+        "se-kai-sin",
+        "te-kai-sin"
     ],
     "e-ai-o": [
         "se-kai-ho",
@@ -8112,17 +12007,56 @@ export default {
         "se-kauin-ti"
     ],
     "e-e": [
+        "4e-ver",
         "de-bet",
+        "e-del",
+        "e-den",
         "e-des",
+        "e-dess",
+        "e-dest",
+        "e-res",
+        "e-ver",
         "he-de",
+        "he-fet",
+        "he-he",
         "he-le",
         "he-te",
+        "ke-hen",
+        "ke-ke",
+        "ke-ken",
+        "ke-nel",
+        "ke-nen",
+        "ke-nest",
+        "ke-net",
         "le-se",
+        "me-ne",
+        "me-nen",
+        "me-net",
+        "me-ren",
+        "me-ret",
+        "me-sen",
+        "pe-ren",
+        "pe-se",
+        "pe-sen",
+        "pe-set",
+        "pe-te",
+        "pre-lerté",
+        "re-bel",
         "re-le",
+        "sce-ne",
+        "sce-nen",
+        "se-pe",
+        "ske-ne",
+        "ske-nes",
+        "ske-nest",
         "te-le",
         "te-re",
+        "tje-jer",
+        "ve-den",
+        "ve-det",
         "ve-ke",
         "ve-ne",
+        "ve-ren",
         "ve-res",
         "we-ber"
     ],
@@ -8133,27 +12067,48 @@ export default {
         "te-le-mark"
     ],
     "e-e-e": [
+        "e-te-ne",
         "ge-ne-ver",
         "he-pe-ne",
-        "te-ke-le"
+        "me-me-me",
+        "te-ke-le",
+        "ve-te-let"
     ],
     "e-e-ee": [
+        "e-te-nee",
+        "ke-ve-nee",
+        "le-ve-nee",
         "re-fe-ree"
+    ],
+    "e-e-ei": [
+        "se-te-leit"
     ],
     "e-e-i": [
         "e-pe-li",
+        "le-ve-lit",
         "me-te-li",
         "se-ke-li",
         "se-pe-li",
-        "se-te-li"
+        "se-te-li",
+        "ve-re-si",
+        "ve-te-li",
+        "ve-te-ni"
+    ],
+    "e-e-ii": [
+        "me-te-lii",
+        "se-te-lii"
     ],
     "e-e-o": [
         "he-re-ford",
         "he-te-ro",
-        "ste-re-o"
+        "ste-re-o",
+        "ste-re-on",
+        "ste-re-ot"
     ],
     "e-e-y": [
+        "je-re-myn",
         "me-ne-tys",
+        "ve-de-tyn",
         "ve-te-ly",
         "ve-te-lys"
     ],
@@ -8166,27 +12121,49 @@ export default {
     "e-e-ä": [
         "e-de-tä",
         "e-he-ä",
+        "e-le-tä",
         "e-ne-tä",
         "e-te-lä",
+        "e-te-län",
+        "e-te-läst",
         "e-te-vä",
         "he-le-ä",
         "he-re-ä",
         "ke-pe-ä",
+        "ke-pe-ät",
         "ke-re-tä",
         "ke-ve-tä",
         "ke-ve-ä",
         "le-ve-tä",
         "le-ve-ä",
         "me-he-vä",
+        "me-ne-tät",
         "me-ne-vä",
+        "pe-le-jä",
+        "pe-te-ä",
         "re-he-vä",
+        "re-pe-än",
         "re-te-ä",
         "re-ve-tä",
+        "te-ke-mä",
+        "te-ke-mäs",
         "te-ke-vä",
+        "te-ke-vät",
         "ve-de-käs",
         "ve-re-käs",
         "ve-re-vä",
         "ve-te-lä"
+    ],
+    "e-e-ää": [
+        "e-de-tään",
+        "e-le-tään",
+        "e-te-lään",
+        "me-ne-mään",
+        "te-ke-mää",
+        "te-ke-mään",
+        "ve-de-tää",
+        "ve-de-tään",
+        "ve-te-lään"
     ],
     "e-e-ö": [
         "ve-de-tön",
@@ -8194,58 +12171,112 @@ export default {
     ],
     "e-ee": [
         "be-bee",
-        "e-teen"
+        "e-leet",
+        "e-tee",
+        "e-teen",
+        "e-tees",
+        "je-jee",
+        "le-veen",
+        "me-nee",
+        "me-neeks",
+        "me-see",
+        "pe-see",
+        "re-kee",
+        "re-leet",
+        "re-pee",
+        "re-tee",
+        "sce-neen",
+        "ske-gee",
+        "spe-dee",
+        "te-kee",
+        "ve-kee",
+        "ve-reen",
+        "ve-teen"
     ],
     "e-ee-a": [
+        "e-del-mann",
         "le-gen-da",
+        "le-gen-dan",
         "pe-ren-na"
+    ],
+    "e-ee-aa": [
+        "le-gen-daa"
     ],
     "e-ee-au": [
         "me-lee-raus"
     ],
     "e-ee-e": [
-        "e-del-le"
+        "ce-les-te",
+        "e-del-le",
+        "ke-kel-le",
+        "ke-nel-le",
+        "me-rel-le",
+        "sce-nel-le",
+        "ske-nel-le"
     ],
     "e-ee-ee": [
+        "e-del-lee",
         "e-del-leen",
         "e-verg-reen"
     ],
     "e-ee-ei": [
-        "e-del-weiss"
+        "e-del-weiss",
+        "e-fek-teil"
     ],
     "e-ee-i": [
         "de-fek-ti",
         "de-ment-ti",
         "e-fek-ti",
+        "e-nem-min",
         "e-nem-pi",
         "e-tee-ni",
+        "e-tee-si",
         "e-ten-kin",
         "e-vers-ti",
+        "le-vees-ti",
         "me-nek-ki",
+        "me-net-kin",
         "ne-net-si",
         "pe-rem-pi",
         "pre-fek-ti",
+        "pre-sens-si",
         "re-jek-ti",
         "re-sep-ti",
         "re-ser-vi",
         "se-lee-ni",
+        "se-men-tiks",
         "se-ment-ti",
-        "te-lek-si"
+        "te-lek-si",
+        "ve-nee-ni"
+    ],
+    "e-ee-ii": [
+        "pe-leh-tii",
+        "se-ment-tii",
+        "se-ment-tiin",
+        "ve-det-tiin"
     ],
     "e-ee-y": [
+        "e-den-nyt",
+        "e-let-ty",
         "e-nen-nys",
         "e-reh-dys",
         "he-del-mys",
+        "ke-ret-ty",
         "ke-ven-nys",
         "le-per-rys",
         "le-ven-nys",
         "me-nes-tys",
         "pe-her-rys",
         "se-pel-lys",
+        "ve-del-ly",
+        "ve-det-ty",
         "ve-res-tys"
     ],
     "e-ee-yy": [
         "e-nem-myys",
+        "e-reh-tyy",
+        "me-nes-tyy",
+        "pe-reh-tyy",
         "ve-dek-kyys",
         "ve-rek-kyys"
     ],
@@ -8257,16 +12288,28 @@ export default {
         "e-des-sä",
         "e-des-tä",
         "e-lel-lä",
+        "e-nem-mä",
         "e-nem-män",
         "e-tem-mä",
         "e-tem-mäs",
         "he-del-mä",
+        "he-del-mät",
+        "ke-nes-tä",
+        "le-vee-tä",
+        "me-ges-sä",
+        "me-rel-lä",
         "pe-rem-mä",
         "pe-rem-mäs",
-        "ve-del-lä"
+        "se-rel-tä",
+        "spe-des-tä",
+        "ve-del-lä",
+        "ve-des-sä",
+        "ve-rel-lä",
+        "ve-res-tä"
     ],
     "e-ee-äi": [
         "e-des-päin",
+        "e-des-säin",
         "e-teen-päin"
     ],
     "e-ee-ää": [
@@ -8276,6 +12319,11 @@ export default {
         "e-nen-tää",
         "e-tem-pää",
         "e-ten-kään",
+        "he-del-mää",
+        "ke-neen-kää",
+        "ke-nen-kää",
+        "ke-nen-kään",
+        "ke-nest-kään",
         "ke-ven-tää",
         "le-per-tää",
         "le-ven-tää",
@@ -8286,28 +12334,42 @@ export default {
         "ve-res-tää"
     ],
     "e-ee-ö": [
-        "e-lee-tön"
+        "e-lee-tön",
+        "te-kee-kö"
     ],
     "e-ei": [
-        "e-hei"
+        "e-hei",
+        "he-reil",
+        "ke-vein",
+        "spe-dei",
+        "ve-neit"
     ],
     "e-ei-e": [
         "e-tei-nen",
+        "e-tei-sen",
         "he-reil-le",
+        "spe-deil-le",
         "te-keil-le"
+    ],
+    "e-ei-ee": [
+        "e-tei-seen"
     ],
     "e-ei-i": [
         "ple-bei-ji"
     ],
     "e-ei-y": [
         "le-vei-ly",
+        "le-veil-ty",
         "ve-nei-ly"
     ],
     "e-ei-ä": [
+        "e-leis-tä",
         "he-reil-lä",
+        "le-vei-tä",
         "le-veil-lä",
         "me-neil-lä",
         "re-peil-lä",
+        "spe-deis-sä",
         "te-keil-lä",
         "ve-neil-lä"
     ],
@@ -8332,42 +12394,93 @@ export default {
         "e-heyt-tää"
     ],
     "e-i": [
+        "he-ti",
         "de-pis",
         "de-si",
         "de-sign",
         "e-lin",
+        "e-lit",
         "e-nin",
+        "e-pic",
+        "e-pist",
+        "e-sil",
+        "e-sim",
+        "e-tin",
+        "he-li",
         "he-ti",
         "he-vi",
         "he-vin",
+        "je-di",
         "je-ni",
         "ke-li",
+        "ke-lit",
+        "ke-ri",
         "kre-dit",
         "le-di",
+        "lje-ni",
+        "me-kin",
+        "me-ni",
+        "me-niks",
+        "me-nin",
+        "me-nis",
+        "me-nit",
         "me-ri",
         "me-si",
+        "ne-ki",
+        "ne-kin",
         "ne-li",
+        "ne-tis",
         "pe-li",
+        "pe-lin",
+        "pe-lis",
+        "pe-lit",
         "pe-ni",
         "pe-nis",
+        "pe-riks",
+        "pe-ril",
         "pe-rin",
         "pe-sin",
         "pe-sis",
         "pe-ti",
+        "pe-tin",
         "re-di",
         "re-ki",
         "re-ti",
+        "re-vi",
+        "re-vin",
+        "re-vit",
+        "se-ki",
+        "se-kin",
         "se-lin",
         "se-mi",
+        "se-tit",
+        "spe-sin",
+        "te-ki",
+        "te-kis",
         "te-li",
+        "te-pi",
+        "te-pin",
         "ve-din",
+        "ve-dit",
         "ve-li",
         "ve-ri",
-        "ve-si"
+        "ve-ris",
+        "ve-si",
+        "ve-ti"
     ],
     "e-i-a": [
+        "e-li-as",
         "ke-mi-a",
-        "me-di-a"
+        "me-di-a",
+        "me-di-cal",
+        "re-gi-na"
+    ],
+    "e-i-aa": [
+        "ke-mi-aa",
+        "me-di-aa"
+    ],
+    "e-i-ai": [
+        "e-ri-laist"
     ],
     "e-i-e": [
         "e-ni-ten",
@@ -8375,6 +12488,7 @@ export default {
         "e-si-ne",
         "e-si-te",
         "e-ti-nen",
+        "he-li-se",
         "ke-hi-te",
         "le-vi-ke",
         "le-vi-te",
@@ -8390,11 +12504,22 @@ export default {
         "ve-ti-met",
         "ve-ti-nen"
     ],
+    "e-i-ee": [
+        "he-li-see"
+    ],
     "e-i-i": [
         "de-ni-mi",
+        "e-si-tin",
         "ke-hi-tin",
         "le-vi-tin",
-        "ne-li-sin"
+        "me-ni-si",
+        "me-ni-sit",
+        "ne-li-sin",
+        "pe-ti-si",
+        "re-pi-sin",
+        "te-ki-sin",
+        "te-ki-sit",
+        "ve-si-kin"
     ],
     "e-i-ie": [
         "e-si-mies",
@@ -8403,6 +12528,12 @@ export default {
         "ve-li-mies",
         "ve-si-mies",
         "ve-si-tie"
+    ],
+    "e-i-ii": [
+        "de-ni-mii"
+    ],
+    "e-i-iu": [
+        "de-li-rium"
     ],
     "e-i-iuo": [
         "ve-si-liuos"
@@ -8414,6 +12545,9 @@ export default {
         "pe-pi-no",
         "se-ni-or"
     ],
+    "e-i-oi": [
+        "me-di-toin"
+    ],
     "e-i-y": [
         "e-ri-tys",
         "e-si-tys",
@@ -8421,7 +12555,9 @@ export default {
         "ke-pi-tys",
         "le-vi-tys",
         "pe-ri-mys",
+        "pe-ri-ny",
         "re-vi-tys",
+        "se-li-ty",
         "se-li-tys",
         "se-pi-tys",
         "te-ri-tys",
@@ -8435,21 +12571,32 @@ export default {
         "ve-ri-työ"
     ],
     "e-i-ä": [
+        "be-ni-ä",
         "e-ri-tä",
+        "e-ti-ä",
         "he-li-nä",
+        "he-vi-ä",
         "ke-hi-ä",
+        "ke-pi-tän",
         "ke-ri-tä",
         "ke-ri-ä",
         "ke-si-ä",
         "le-vi-tä",
         "me-ni-jä",
+        "pe-li-ä",
         "pe-ri-jä",
         "pe-ri-mä",
+        "pe-ri-mäs",
         "pe-ri-ä",
         "pe-si-jä",
         "pe-si-ä",
+        "re-pi-mä",
+        "re-pi-vän",
         "re-pi-ä",
         "se-li-tä",
+        "se-li-tän",
+        "se-li-tät",
+        "se-pi-tän",
         "se-pi-vä",
         "te-ki-jä"
     ],
@@ -8457,7 +12604,9 @@ export default {
         "le-vi-äin"
     ],
     "e-i-ää": [
+        "le-vi-ää",
         "me-ri-sää",
+        "re-vi-tää",
         "ve-si-pää"
     ],
     "e-i-ö": [
@@ -8469,6 +12618,9 @@ export default {
         "ne-li-lö",
         "ne-li-ö",
         "te-ri-ö"
+    ],
+    "e-i-öö": [
+        "ne-li-öö"
     ],
     "e-ie": [
         "de-nier",
@@ -8485,10 +12637,21 @@ export default {
         "ve-sie-läin"
     ],
     "e-ii": [
+        "de-xiin",
         "e-siin",
-        "pre-siis"
+        "ke-sii",
+        "le-vii",
+        "pe-lii",
+        "pe-liin",
+        "pe-rii",
+        "pre-siis",
+        "re-pii",
+        "spe-sii",
+        "ve-lii",
+        "ve-siin"
     ],
     "e-ii-a": [
+        "e-nig-ma",
         "e-piik-ka",
         "e-tiik-ka",
         "e-tik-ka",
@@ -8497,20 +12660,33 @@ export default {
         "re-sii-na",
         "re-tik-ka"
     ],
+    "e-ii-aa": [
+        "he-lis-maa"
+    ],
     "e-ii-e": [
         "che-nil-le",
         "de-sig-ner",
         "e-dit-se",
         "e-ris-te",
         "e-sil-le",
+        "le-vik-set",
+        "me-nit-te",
         "me-rit-se",
+        "pe-lil-le",
         "pe-ril-le",
         "pe-rin-ne",
+        "ve-ril-le",
         "ve-sit-se"
     ],
     "e-ii-ee": [
         "e-rik-seen",
-        "e-ril-leen"
+        "e-ril-leen",
+        "e-rit-teet"
+    ],
+    "e-ii-ei": [
+        "e-rit-teit",
+        "pe-rin-teist",
+        "pe-rin-teit"
     ],
     "e-ii-i": [
         "be-nig-ni",
@@ -8523,10 +12699,13 @@ export default {
         "fe-tis-si",
         "he-lis-tin",
         "ke-fii-ri",
+        "ke-hit-ti",
         "ke-mis-ti",
         "kre-diit-ti",
+        "le-gis-ti",
         "le-nin-ki",
         "le-vik-ki",
+        "le-vit-ti",
         "me-riit-ti",
         "pe-rik-si",
         "pe-tiit-ti",
@@ -8539,10 +12718,19 @@ export default {
         "re-mis-si",
         "re-tii-si",
         "re-vii-ri",
+        "re-vii-rin",
         "se-nii-li",
         "se-rif-fi",
         "ste-rii-li",
         "ze-niit-ti"
+    ],
+    "e-ii-ii": [
+        "e-liit-tii",
+        "le-vik-siin",
+        "me-riit-tii",
+        "pe-nik-siin",
+        "se-nii-lii",
+        "ze-niit-tiin"
     ],
     "e-ii-iy": [
         "se-nii-liys",
@@ -8550,6 +12738,7 @@ export default {
     ],
     "e-ii-o": [
         "e-lik-ko",
+        "e-riks-son",
         "e-sik-ko",
         "ke-hik-ko",
         "le-pik-ko",
@@ -8562,21 +12751,32 @@ export default {
     "e-ii-y": [
         "e-dis-tys",
         "e-ris-tys",
-        "he-ris-tys"
+        "e-tit-ty",
+        "he-ris-tys",
+        "le-vin-ny"
+    ],
+    "e-ii-yy": [
+        "se-lit-tyy"
     ],
     "e-ii-ä": [
         "e-lik-kä",
         "e-nim-män",
+        "e-sii-sät",
         "e-sil-lä",
         "he-lis-tä",
         "he-vil-lä",
+        "ke-his-sä",
         "ke-rin-tä",
         "le-vin-tä",
         "me-sik-kä",
+        "pe-lis-sä",
+        "pe-nis-tä",
         "pe-ril-lä",
         "pe-rin-tä",
         "pe-sin-tä",
-        "re-vin-tä"
+        "re-vin-tä",
+        "ve-ril-lä",
+        "ve-sis-tä"
     ],
     "e-ii-äi": [
         "e-rit-täin",
@@ -8599,6 +12799,7 @@ export default {
         "le-vit-tää",
         "ne-lis-tää",
         "ne-lis-tään",
+        "ne-nil-lään",
         "ne-pit-tää",
         "re-vit-tää",
         "se-lit-tää",
@@ -8651,59 +12852,100 @@ export default {
     "e-o": [
         "be-bop",
         "de-mo",
+        "e-gon",
+        "e-gos",
+        "e-lon",
+        "e-los",
+        "e-mot",
+        "e-ron",
+        "e-ros",
+        "ghe-tot",
         "he-lo",
         "he-po",
+        "he-vost",
+        "ke-dot",
         "ke-ho",
+        "ke-hon",
         "ke-ko",
         "ke-lo",
+        "ke-on",
         "ke-ro",
         "ke-to",
         "kse-non",
+        "le-on",
         "le-po",
         "me-no",
+        "me-non",
+        "me-nos",
         "ne-on",
         "ne-ro",
+        "pe-don",
+        "pe-dot",
         "pe-so",
+        "pe-sot",
         "pe-to",
         "pe-tos",
+        "re-cords",
         "re-po",
+        "se-ko",
         "se-os",
         "te-ho",
         "te-ko",
         "te-os",
+        "te-ot",
+        "te-ron",
         "ve-dos",
         "ve-ro",
         "ve-to"
     ],
     "e-o-a": [
+        "de-mo-ja",
         "e-ro-ta",
         "e-to-a",
+        "le-po-a",
         "me-lo-a",
         "me-lo-ja",
         "me-no-ta",
         "me-so-a",
+        "me-so-at",
         "me-so-ta",
         "ne-ro-kas",
         "ne-to-ta",
         "pe-lo-kas",
+        "pe-to-a",
+        "se-ko-a",
         "se-o-ta",
         "te-ho-kas",
+        "te-ho-kast",
         "te-ho-ta",
+        "te-ko-ja",
         "te-lo-a",
         "ve-do-ta",
         "ve-so-a"
     ],
+    "e-o-aa": [
+        "e-go-aa",
+        "re-xo-naa",
+        "se-ko-aa",
+        "te-ho-aa",
+        "te-ko-jaan"
+    ],
     "e-o-e": [
+        "he-vo-ne",
         "he-vo-nen",
         "ne-lo-nen",
+        "ne-lo-sel",
         "pe-lo-te",
         "te-ho-te",
+        "te-ko-jen",
         "te-ko-nen",
         "ve-no-nen"
     ],
     "e-o-i": [
         "be-to-ni",
         "de-mo-ni",
+        "de-mo-nit",
+        "e-ro-si",
         "e-ro-tin",
         "fe-no-li",
         "fre-o-ni",
@@ -8711,6 +12953,7 @@ export default {
         "ke-to-ni",
         "kre-o-li",
         "me-lo-ni",
+        "me-no-si",
         "me-so-ni",
         "me-to-di",
         "pe-ko-ni",
@@ -8719,6 +12962,11 @@ export default {
         "re-so-ri",
         "te-no-ri",
         "ve-ko-tin"
+    ],
+    "e-o-ii": [
+        "be-to-nii",
+        "he-vo-sii",
+        "te-ko-sii"
     ],
     "e-o-iu": [
         "te-ko-hius"
@@ -8753,8 +13001,16 @@ export default {
         "se-ko-pää",
         "te-ko-jää"
     ],
+    "e-oi": [
+        "e-koil",
+        "ve-roist"
+    ],
     "e-oi-a": [
         "e-loi-sa",
+        "e-rois-ta",
+        "me-nois-ta",
+        "re-kois-ta",
+        "se-koi-tan",
         "se-koil-la",
         "te-hoi-sa",
         "te-loil-la",
@@ -8762,13 +13018,17 @@ export default {
         "ve-toi-sa"
     ],
     "e-oi-aa": [
+        "e-gois-taan",
         "he-loit-taa",
+        "se-koil-laan",
         "se-koit-taa",
         "te-loil-laan",
         "te-loil-taan",
         "te-loit-taa",
+        "te-ois-taan",
         "te-roit-taa",
-        "ve-loit-taa"
+        "ve-loit-taa",
+        "ve-rois-taan"
     ],
     "e-oi-e": [
         "se-koi-te",
@@ -8786,12 +13046,16 @@ export default {
         "he-rois-mi",
         "se-koi-tin",
         "ste-roi-di",
+        "te-oik-si",
         "te-roi-tin"
     ],
     "e-oi-u": [
         "he-loi-tus",
         "se-koi-lu",
+        "se-koi-lult",
+        "se-koi-lut",
         "se-koi-tus",
+        "se-koil-lu",
         "te-hois-ku",
         "te-koit-ku",
         "te-loi-tus",
@@ -8807,17 +13071,39 @@ export default {
     "e-oii-i": [
         "he-roii-ni"
     ],
+    "e-oii-ii": [
+        "he-roii-nii"
+    ],
     "e-oo": [
         "e-loon",
+        "e-roo",
         "e-roon",
-        "ke-noon"
+        "e-too",
+        "ke-koo",
+        "ke-koon",
+        "ke-noon",
+        "le-poon",
+        "me-noo",
+        "se-koo",
+        "se-koon",
+        "se-koot",
+        "te-hoon",
+        "te-koo",
+        "ve-too"
     ],
     "e-oo-a": [
         "e-los-sa",
+        "e-ron-sa",
         "e-ros-sa",
+        "ke-hos-sa",
         "ke-nos-sa",
+        "me-kos-sa",
         "me-lon-ta",
+        "me-nos-sa",
+        "pe-los-ta",
         "re-voh-ka",
+        "te-os-sa",
+        "ve-ron-sa",
         "ve-too-ja"
     ],
     "e-oo-aa": [
@@ -8832,10 +13118,12 @@ export default {
         "pe-lot-taa",
         "re-hot-taa",
         "re-tos-taa",
+        "se-kot-taa",
         "se-los-taa",
         "se-os-taa",
         "te-hos-taa",
         "te-hot-taa",
+        "te-rot-taa",
         "ve-dos-taa",
         "ve-rot-taa"
     ],
@@ -8844,6 +13132,8 @@ export default {
     ],
     "e-oo-e": [
         "e-hos-te",
+        "ge-or-ge",
+        "le-vol-le",
         "se-los-te",
         "se-os-te",
         "te-hos-te"
@@ -8858,29 +13148,44 @@ export default {
         "he-lok-ki",
         "ke-too-si",
         "kre-ton-ki",
+        "pe-lot-ti",
+        "re-cord-sin",
         "re-for-mi",
         "re-mont-ti",
         "re-tort-ti",
+        "se-son-gin",
         "se-son-ki",
         "skle-roo-si",
-        "te-hos-tin"
+        "te-hos-tin",
+        "te-lot-ti"
     ],
     "e-oo-ie": [
         "he-vos-mies",
         "ne-los-tie"
     ],
+    "e-oo-ii": [
+        "e-rot-tiin",
+        "re-mont-tii"
+    ],
     "e-oo-o": [
         "ke-lok-ko"
+    ],
+    "e-oo-oi": [
+        "de-mons-troi",
+        "de-mons-troin",
+        "re-mon-toi"
     ],
     "e-oo-u": [
         "e-hos-tus",
         "se-los-tus",
+        "se-on-nu",
         "se-os-tus",
         "te-hos-tus",
         "ve-dos-tus",
         "ve-too-mus"
     ],
     "e-oo-uu": [
+        "e-rot-tuu",
         "ne-rok-kuus",
         "pe-lok-kuus",
         "te-hok-kuus"
@@ -8889,19 +13194,30 @@ export default {
         "he-rooi-nen"
     ],
     "e-ou": [
+        "he-lou",
         "ne-rous"
+    ],
+    "e-ou-a": [
+        "ne-rout-ta"
     ],
     "e-oui-i": [
         "ve-touis-tin"
     ],
     "e-u": [
         "e-dus",
+        "he-ru",
         "je-hu",
+        "je-hut",
         "ke-hu",
+        "ke-hun",
+        "ke-hut",
         "ke-mut",
         "le-lu",
+        "le-lut",
         "le-mu",
+        "le-tut",
         "me-hu",
+        "me-hut",
         "me-lu",
         "me-nu",
         "me-su",
@@ -8915,6 +13231,7 @@ export default {
         "re-su",
         "rhe-sus",
         "se-lus",
+        "ste-mu",
         "te-ku",
         "te-nu"
     ],
@@ -8922,9 +13239,12 @@ export default {
         "e-du-kas",
         "he-ku-ma",
         "he-ru-a",
+        "he-ru-ta",
         "he-tu-la",
+        "je-ku-ta",
         "ke-hu-a",
         "ke-hu-ja",
+        "le-lu-ja",
         "le-mu-ta",
         "me-hu-kas",
         "me-lu-ta",
@@ -8933,6 +13253,11 @@ export default {
         "pe-su-la",
         "re-mu-ta",
         "re-su-ta"
+    ],
+    "e-u-aa": [
+        "he-ku-maa",
+        "he-ku-maan",
+        "pe-ru-taan"
     ],
     "e-u-e": [
         "pe-ru-ke",
@@ -8943,6 +13268,7 @@ export default {
         "he-pu-li",
         "ke-pu-li",
         "ke-ru-bi",
+        "le-ku-rit",
         "pe-lu-ri",
         "pe-su-ri",
         "pre-lu-di",
@@ -8956,6 +13282,9 @@ export default {
     "e-u-iuo": [
         "pe-su-liuos"
     ],
+    "e-u-oi": [
+        "re-gu-loin"
+    ],
     "e-u-u": [
         "e-tu-mus",
         "he-ru-tus"
@@ -8964,12 +13293,16 @@ export default {
         "e-tu-pää",
         "me-hu-jää"
     ],
+    "e-ui": [
+        "he-ruis"
+    ],
     "e-ui-a": [
         "e-tuil-la",
         "me-hui-sa",
         "me-lui-sa",
         "re-mui-sa",
-        "te-qui-la"
+        "te-qui-la",
+        "te-qui-lan"
     ],
     "e-ui-e": [
         "be-gui-ne",
@@ -9013,7 +13346,11 @@ export default {
     "e-uu": [
         "e-puu",
         "e-tuus",
+        "he-ruu",
+        "he-ruuks",
+        "ke-huu",
         "ke-ruu",
+        "me-huu",
         "pe-luu"
     ],
     "e-uu-a": [
@@ -9025,6 +13362,7 @@ export default {
         "me-duu-sa",
         "pe-ruk-ka",
         "pe-rus-ta",
+        "re-pus-sa",
         "se-kun-da",
         "se-lus-ta",
         "se-suu-ra"
@@ -9033,8 +13371,10 @@ export default {
         "e-dus-taa",
         "e-puut-taa",
         "he-rut-taa",
+        "ke-puk-kaa",
         "ke-tut-taa",
         "le-puut-taa",
+        "le-tuk-kaa",
         "me-hus-taa",
         "pe-luut-taa",
         "pe-rus-taa",
@@ -9043,22 +13383,31 @@ export default {
         "re-put-taa",
         "re-tus-taa",
         "re-tuut-taa",
+        "se-kun-daa",
         "se-pus-taa"
     ],
     "e-uu-e": [
         "me-hus-te",
         "pe-rus-te"
     ],
+    "e-uu-ei": [
+        "pe-rus-tein"
+    ],
     "e-uu-i": [
+        "e-dus-tin",
         "me-hus-tin",
         "pe-ruuk-ki",
         "re-surs-sit",
+        "se-kun-nil",
         "se-kun-ti",
         "se-lus-tin",
         "ve-luu-ri"
     ],
     "e-uu-ie": [
         "e-dus-mies"
+    ],
+    "e-uu-ii": [
+        "ke-hut-tiin"
     ],
     "e-uu-u": [
         "e-dus-tus",
@@ -9070,7 +13419,8 @@ export default {
         "se-pus-tus"
     ],
     "e-uu-uu": [
-        "me-huk-kuus"
+        "me-huk-kuus",
+        "pe-rus-tuu"
     ],
     "e-y": [
         "e-hyt",
@@ -9079,6 +13429,10 @@ export default {
         "ke-sy",
         "ke-vyt",
         "le-vy",
+        "le-vyn",
+        "le-vyt",
+        "pe-ty",
+        "re-my",
         "se-lys",
         "ve-ty"
     ],
@@ -9102,19 +13456,29 @@ export default {
         "ve-ny-vyys"
     ],
     "e-y-ä": [
+        "le-vy-jä",
         "ve-ny-mä",
+        "ve-ny-vän",
         "ve-ny-ä"
     ],
     "e-y-ö": [
         "ke-sy-tön"
+    ],
+    "e-yi": [
+        "he-lyist",
+        "le-vyi",
+        "le-vyist",
+        "pe-tyit"
     ],
     "e-yi-e": [
         "le-vyi-nen"
     ],
     "e-yy": [
         "ke-syys",
+        "le-vyy",
         "me-nyy",
-        "re-vyy"
+        "re-vyy",
+        "ve-nyyn"
     ],
     "e-yy-e": [
         "ke-hys-te"
@@ -9123,6 +13487,7 @@ export default {
         "be-ryl-li",
         "de-byyt-ti",
         "ke-sys-ti",
+        "le-vyy-ni",
         "re-kyy-li"
     ],
     "e-yy-iu": [
@@ -9142,22 +13507,48 @@ export default {
         "le-vys-tö"
     ],
     "e-ä": [
+        "e-län",
+        "e-lät",
         "e-mäs",
         "e-räs",
         "e-väs",
+        "he-räs",
         "ke-hä",
         "ke-rä",
+        "ke-räs",
         "ke-sä",
+        "ke-säl",
+        "ke-sän",
+        "ke-sät",
+        "ke-tä",
         "ke-vät",
         "le-vä",
+        "me-hän",
+        "me-pä",
         "ne-nä",
+        "ne-nän",
         "pe-rä",
+        "pe-räs",
         "pe-sä",
+        "pe-tä",
+        "pe-tän",
+        "se-dät",
+        "se-hä",
+        "se-hän",
         "se-kä",
+        "se-län",
+        "se-läs",
+        "se-lät",
+        "se-pän",
         "se-tä",
+        "te-hä",
+        "te-hän",
         "te-nä",
         "te-rä",
         "te-räs",
+        "te-rät",
+        "ve-dä",
+        "ve-dän",
         "ve-nät"
     ],
     "e-ä-aa": [
@@ -9168,16 +13559,24 @@ export default {
         "e-lä-ke",
         "he-rä-te",
         "ke-kä-le",
+        "pe-lä-ten",
         "pe-sä-ke",
-        "se-lä-ke"
+        "se-lä-ke",
+        "ve-tä-en"
     ],
     "e-ä-i": [
         "e-mä-tin",
+        "he-rä-sin",
+        "he-rä-tin",
+        "ke-sä-sin",
         "pe-lä-tin",
         "pe-rä-sin",
-        "pe-rä-ti"
+        "pe-rä-ti",
+        "ve-dä-tin",
+        "ve-tä-sin"
     ],
     "e-ä-ie": [
+        "e-lä-vien",
         "e-rä-mies",
         "ke-hä-tie",
         "pe-rä-mies"
@@ -9191,6 +13590,8 @@ export default {
     ],
     "e-ä-y": [
         "e-lä-mys",
+        "e-lä-ny",
+        "e-lä-nyt",
         "he-rä-tys",
         "se-lä-tys",
         "ve-dä-tys"
@@ -9207,11 +13608,18 @@ export default {
     "e-ä-ä": [
         "e-lä-jä",
         "e-lä-mä",
+        "e-lä-män",
+        "e-lä-mäs",
+        "e-lä-mäst",
+        "e-lä-tä",
+        "e-lä-tän",
         "e-lä-vä",
+        "e-lä-vän",
         "e-pä-käs",
         "e-vä-tä",
         "he-rä-tä",
         "ke-rä-tä",
+        "ke-sä-nä",
         "le-vä-tä",
         "ne-nä-käs",
         "pe-lä-tä",
@@ -9221,19 +13629,38 @@ export default {
         "te-nä-tä",
         "te-rä-käs",
         "te-rä-vä",
+        "ve-dä-tät",
         "ve-nä-jä",
+        "ve-nä-jän",
         "ve-rä-jä",
+        "ve-rä-jäst",
         "ve-tä-jä",
+        "ve-tä-jän",
         "ve-tä-vä"
     ],
     "e-ä-ää": [
+        "e-lä-mää",
+        "e-lä-mään",
+        "e-lä-määs",
+        "e-rä-kää",
         "he-lä-jää",
+        "he-rä-tään",
+        "ke-rä-tää",
+        "ke-rä-tään",
         "ke-sä-sää",
-        "pe-rä-pää"
+        "le-vä-tään",
+        "pe-lä-tään",
+        "pe-rä-pää",
+        "te-rä-vää",
+        "ve-nä-jää",
+        "ve-tä-mään"
     ],
     "e-ä-ö": [
         "pe-rä-tön",
         "se-lä-tön"
+    ],
+    "e-ä-öi": [
+        "e-pä-röin"
     ],
     "e-ä-öö": [
         "e-lä-köön"
@@ -9246,11 +13673,17 @@ export default {
         "ke-säil-ta"
     ],
     "e-äi-e": [
+        "e-läi-men",
+        "e-läi-met",
+        "e-päi-len",
         "e-täi-nen",
         "ke-säi-nen",
         "ke-väi-nen"
     ],
     "e-äi-i": [
+        "e-läi-miks",
+        "e-päi-li",
+        "ke-räi-sit",
         "ke-säi-sin",
         "ke-väi-sin",
         "pe-räi-sin"
@@ -9258,6 +13691,7 @@ export default {
     "e-äi-y": [
         "e-päi-ly",
         "e-päi-lys",
+        "e-päil-lyt",
         "ke-räi-ly",
         "ke-väis-tys",
         "re-päi-sy",
@@ -9268,6 +13702,8 @@ export default {
     ],
     "e-äi-ä": [
         "e-päil-lä",
+        "e-väi-tä",
+        "e-xäi-jä",
         "he-räil-lä",
         "ke-räil-lä",
         "le-päil-lä",
@@ -9286,6 +13722,10 @@ export default {
         "e-läy-mys",
         "ve-näy-tys"
     ],
+    "e-äy-yy": [
+        "e-läy-tyy",
+        "ve-täy-tyy"
+    ],
     "e-äy-ä": [
         "ke-räy-mä"
     ],
@@ -9298,21 +13738,62 @@ export default {
         "ve-näyt-tää"
     ],
     "e-äyö": [
-        "ke-säyö"
+        "ke-säyö",
+        "ke-säyön"
+    ],
+    "e-äyö-ä": [
+        "ke-säyö-nä",
+        "ke-säyös-sä"
     ],
     "e-ää": [
         "e-lää",
+        "e-lään",
         "e-nää",
+        "e-nään",
+        "e-rää",
+        "e-rään",
+        "e-vää",
+        "e-väät",
+        "he-rää",
+        "he-rään",
+        "he-räät",
+        "ke-hään",
+        "ke-rää",
+        "ke-rään",
+        "ke-räät",
+        "ke-sää",
+        "ke-sään",
+        "ke-tää",
+        "ke-tään",
+        "ke-vään",
+        "ke-vääst",
+        "kеlle-kään",
+        "le-pää",
+        "le-pään",
+        "le-vää",
+        "ne-nää",
+        "ne-nään",
+        "pe-rää",
         "pe-rään",
-        "ve-tää"
+        "pe-rääs",
+        "pe-sään",
+        "se-tää",
+        "te-hää",
+        "te-hään",
+        "ve-tää",
+        "ve-tään"
     ],
     "e-ää-e": [
         "e-tääl-le",
+        "ke-rääm-me",
         "pe-räl-le",
         "se-län-ne",
         "te-räs-te"
     ],
     "e-ää-ee": [
+        "e-lääk-seen",
+        "ke-vää-see",
+        "ke-vää-seen",
         "le-väl-leen",
         "se-läl-leen"
     ],
@@ -9320,10 +13801,16 @@ export default {
         "e-lät-ti",
         "e-mäk-ki",
         "ne-nät-ti",
-        "pe-lät-ti"
+        "pe-lät-ti",
+        "se-läk-si"
     ],
     "e-ää-ie": [
+        "e-män-tien",
         "te-räs-mies"
+    ],
+    "e-ää-ii": [
+        "he-rät-tii",
+        "he-rät-tiin"
     ],
     "e-ää-ui": [
         "ke-vät-ruis"
@@ -9335,6 +13822,7 @@ export default {
         "e-väs-tys",
         "he-läh-dys",
         "he-rän-nyt",
+        "ke-rän-ny",
         "le-väh-dys",
         "pe-läs-tys",
         "re-väh-dys",
@@ -9350,12 +13838,27 @@ export default {
         "e-tääl-lä",
         "e-tääl-tä",
         "e-tääm-mäs",
+        "he-rää-vän",
+        "ke-räl-lä",
         "ke-rää-jä",
+        "ke-säl-lä",
+        "ke-säs-sä",
+        "ke-vät-tä",
+        "ke-vääl-lä",
         "ke-vääm-mäs",
+        "le-väl-läs",
         "pe-räl-lä",
+        "pe-räl-läs",
         "pe-räl-tä",
         "pe-räs-sä",
-        "pe-räs-tä"
+        "pe-räs-tä",
+        "pe-säs-sä",
+        "pe-säs-tä",
+        "se-läl-läs",
+        "se-läs-sä",
+        "se-läs-tä",
+        "se-päl-lä",
+        "te-räs-tä"
     ],
     "e-ää-äi": [
         "ne-näk-käin",
@@ -9368,18 +13871,24 @@ export default {
         "e-lät-tää",
         "e-tääm-pää",
         "e-väs-tää",
+        "e-vää-nään",
         "he-läh-tää",
         "he-rät-tää",
+        "he-rää-mään",
+        "ke-häs-sää",
         "ke-vät-jää",
         "ke-vät-sää",
+        "le-pää-mään",
         "le-väh-tää",
         "le-väl-lään",
         "ne-nän-pää",
         "re-väh-tää",
+        "se-läl-lää",
         "se-läl-lään",
         "se-län-pää",
         "se-lät-tää",
         "te-räs-jää",
+        "te-räs-jään",
         "te-räs-tää",
         "ve-dät-tää",
         "ve-näh-tää"
@@ -9389,53 +13898,86 @@ export default {
         "le-väk-kö",
         "te-räs-tö"
     ],
+    "e-ö-e": [
+        "be-hö-ver"
+    ],
+    "ee-": [
+        "elm-ss",
+        "pelk-stn"
+    ],
     "ee-a": [
         "bee-ta",
+        "bel-la",
+        "bel-last",
+        "bel-lat",
         "ben-sa",
+        "best-man",
         "ched-dar",
         "del-ta",
         "ee-va",
         "eh-ta",
         "eks-tra",
+        "en-da",
+        "ext-ra",
         "feed-back",
         "hef-ta",
         "hel-la",
+        "hel-lan",
         "hel-ma",
+        "hel-man",
         "helt-ta",
+        "hen-kan",
         "hen-na",
         "hep-pa",
+        "her-ban",
         "her-ja",
         "her-ra",
+        "her-ran",
+        "her-rat",
         "hert-ta",
         "jem-ma",
         "jen-ka",
+        "jen-na",
         "jenk-ka",
         "jes-tas",
         "kel-ta",
         "kelk-ka",
         "ker-ma",
         "ker-ran",
+        "ker-rast",
         "ker-sa",
+        "ker-sas",
         "ker-ta",
         "kers-ka",
         "kremp-pa",
         "lef-fa",
+        "lef-fan",
+        "len-gat",
         "lep-ra",
         "let-ka",
         "men-kat",
+        "men-tal",
         "mer-ta",
+        "merk-kas",
         "mes-ta",
+        "mes-tan",
+        "mes-tas",
+        "mes-tat",
         "met-ka",
         "pef-fa",
         "peh-va",
         "pek-ka",
         "pelk-ka",
+        "pelt-sa",
+        "pen-kas",
         "pen-sa",
         "pen-sas",
         "penk-ka",
         "pens-ka",
+        "per-kas",
         "per-na",
         "pers-kat",
+        "pert-san",
         "plekt-ra",
         "pres-sa",
         "rek-ka",
@@ -9445,6 +13987,7 @@ export default {
         "seep-ra",
         "sek-ka",
         "sel-ja",
+        "sel-last",
         "semb-ra",
         "senk-ka",
         "skee-ma",
@@ -9458,19 +14001,28 @@ export default {
         "ter-vas",
         "ters-ka",
         "tes-la",
+        "tes-lal",
         "tes-ma",
+        "tes-tas",
         "tet-ra",
         "thee-ta",
         "tree-ma",
+        "tree-nas",
         "veh-ka",
         "veh-mas",
         "vel-ka",
         "ver-ka",
+        "ver-ra",
         "ver-ran",
         "ver-ta",
         "vers-tas",
         "ves-ka",
-        "ves-sa"
+        "ves-sa",
+        "ves-san",
+        "ves-sas",
+        "ves-ta",
+        "wess-man",
+        "wrest-las"
     ],
     "ee-a-a": [
         "ent-ra-ta",
@@ -9522,25 +14074,37 @@ export default {
         "ven-ta-ta",
         "ver-ra-ta"
     ],
+    "ee-a-aa": [
+        "tes-ta-taan"
+    ],
     "ee-a-e": [
         "eks-tra-net",
         "her-ra-nen",
         "kek-ka-le",
+        "kel-ta-nen",
         "ket-ka-le",
+        "mes-sa-ge",
         "reg-ga-e",
+        "sel-la-ne",
+        "sel-la-nen",
+        "sel-la-ses",
+        "sel-la-set",
         "tweed-ha-me",
-        "ver-ra-ten"
+        "ver-ra-ten",
+        "ver-sa-cen"
     ],
     "ee-a-ee": [
         "er-ka-nee"
     ],
     "ee-a-i": [
+        "ben-ga-lin",
         "dek-ka-ri",
         "est-ra-di",
         "fes-ta-ri",
         "helk-ka-ri",
         "hen-ka-ri",
         "kel-la-ri",
+        "ker-ta-sin",
         "kes-ka-ri",
         "klem-ma-ri",
         "kvee-ka-ri",
@@ -9554,17 +14118,29 @@ export default {
         "rek-ka-ri",
         "see-sa-mi",
         "sent-ta-ri",
+        "sten-da-ril",
+        "sten-da-rin",
         "tee-la-si",
         "tee-va-ti",
         "teek-ka-ri",
+        "tef-la-ri",
         "telk-ka-ri",
+        "telk-ka-rin",
         "ten-na-ri",
+        "ten-na-rit",
         "ter-ma-ri",
         "vek-ka-ri",
+        "vel-ka-ni",
         "ver-ra-ri",
         "verk-ka-ri",
+        "verk-ka-rit",
         "ves-ka-ri",
         "vets-ka-ri"
+    ],
+    "ee-a-ii": [
+        "kes-ka-rii",
+        "kev-la-rii",
+        "ten-na-riin"
     ],
     "ee-a-iu": [
         "mes-ta-rius"
@@ -9573,10 +14149,14 @@ export default {
         "cem-ba-lo",
         "kel-ta-mo",
         "kel-ta-no",
+        "vel-la-mo",
         "ver-ra-ton"
     ],
     "ee-a-oo": [
         "tenk-ka-poo"
+    ],
+    "ee-a-u": [
+        "tree-na-tut"
     ],
     "ee-a-uu": [
         "hel-la-puu",
@@ -9586,17 +14166,70 @@ export default {
         "speed-wa-y"
     ],
     "ee-aa": [
+        "bel-laa",
+        "ben-saa",
+        "chec-kaa",
+        "chek-kaa",
+        "demp-paa",
+        "dep-paa",
+        "flek-kaa",
+        "hen-gaa",
+        "hen-gaan",
+        "her-raa",
+        "jee-saa",
+        "keh-taa",
+        "keh-taan",
+        "keh-taat",
+        "kel-paa",
+        "kel-paat",
+        "ker-taa",
+        "mek-kaa",
+        "merk-kaa",
+        "mes-taa",
+        "mes-taan",
+        "mets-kaan",
         "pee-aa",
-        "verk-kaan"
+        "pek-kaa",
+        "pen-saan",
+        "ree-naa",
+        "rek-kaa",
+        "ren-kaan",
+        "ren-kaat",
+        "rep-paan",
+        "rep-paat",
+        "res-paan",
+        "sek-kaa",
+        "sen-kaa",
+        "spen-daa",
+        "stres-saan",
+        "teh-taan",
+        "teks-taa",
+        "telt-taan",
+        "tes-taa",
+        "tes-taan",
+        "tsek-kaa",
+        "tsek-kaan",
+        "veh-taan",
+        "vel-kaa",
+        "vent-taan",
+        "ver-taa",
+        "ver-taan",
+        "verk-kaan",
+        "ves-saa",
+        "ves-saan"
     ],
     "ee-aa-a": [
         "en-nal-ta",
         "es-pan-ja",
         "et-saa-ja",
+        "hel-lal-la",
         "her-jaa-ja",
+        "her-ral-la",
+        "her-van-ta",
         "ker-ral-la",
         "ket-laa-ja",
         "ler-pal-la",
+        "let-kas-sa",
         "mel-lak-ka",
         "mes-taa-ja",
         "per-kaa-ja",
@@ -9607,12 +14240,14 @@ export default {
         "teks-taa-ja",
         "tent-taa-ja",
         "ter-hak-ka",
+        "ter-vas-ta",
         "tes-taa-ja",
         "tweed-kan-gas"
     ],
     "ee-aa-aa": [
         "en-nal-laan",
         "her-vah-taa",
+        "her-van-taan",
         "het-kah-taa",
         "kel-lah-taa",
         "kel-las-taa",
@@ -9633,11 +14268,13 @@ export default {
     ],
     "ee-aa-ai": [
         "per-jan-tai",
+        "per-jan-tain",
         "ver-rat-tain"
     ],
     "ee-aa-e": [
         "free-lan-ce",
         "free-lan-cer",
+        "keh-taat-te",
         "ler-pal-le"
     ],
     "ee-aa-ee": [
@@ -9659,6 +14296,7 @@ export default {
         "ger-maa-ni",
         "heh-taa-ri",
         "hel-kat-ti",
+        "keh-taat-kin",
         "ken-raa-li",
         "ker-naas-ti",
         "ker-sant-ti",
@@ -9674,6 +14312,10 @@ export default {
     ],
     "ee-aa-ie": [
         "her-ras-mies"
+    ],
+    "ee-aa-ii": [
+        "eng-lan-tiin",
+        "ex-taa-siin"
     ],
     "ee-aa-iu": [
         "ek-sak-tius"
@@ -9695,13 +14337,15 @@ export default {
     "ee-aa-u": [
         "her-paan-nus",
         "kel-lah-dus",
+        "kel-van-nut",
         "mel-las-tus",
         "ren-gas-tus",
         "rep-sah-dus",
         "ret-kah-dus",
         "tee-kan-nu",
         "tee-laa-tu",
-        "tee-pan-nu"
+        "tee-pan-nu",
+        "tes-tat-tu"
     ],
     "ee-aa-uu": [
         "reh-vak-kuus",
@@ -9711,37 +14355,54 @@ export default {
         "teh-das-työ"
     ],
     "ee-ai": [
+        "ref-rain",
         "vem-pain"
     ],
     "ee-ai-a": [
         "kek-sais-ta",
         "kelk-kail-la",
         "kers-kail-la",
+        "sel-lais-ta",
         "tee-mail-ta",
         "teh-tail-la",
         "telt-tail-la",
         "tem-pais-ta",
         "veh-tail-la",
+        "vel-kais-ta",
         "ver-tail-la",
         "verk-kai-sa"
     ],
     "ee-ai-e": [
         "hert-tai-nen",
         "kel-tai-nen",
+        "kel-tai-set",
         "ker-mai-nen",
+        "pen-sai-den",
         "pen-sai-nen",
         "sel-lai-nen",
+        "sel-lai-sen",
         "ter-vai-nen",
+        "ter-vai-set",
         "vel-kai-nen",
         "ver-kai-nen",
         "ver-tai-nen",
         "verk-kai-nen"
+    ],
+    "ee-ai-i": [
+        "tes-tai-sin",
+        "tsek-kai-sin"
+    ],
+    "ee-ai-ii": [
+        "ex-nai-siin",
+        "frees-tai-lii",
+        "remp-pail-tiin"
     ],
     "ee-ai-o": [
         "pen-saik-ko",
         "pen-sais-to"
     ],
     "ee-ai-u": [
+        "hen-gai-lu",
         "kelk-kai-lu",
         "kers-kai-lu",
         "teh-tai-lu",
@@ -9791,6 +14452,7 @@ export default {
         "ver-taus"
     ],
     "ee-au-a": [
+        "el-baus-ta",
         "ker-tau-ma"
     ],
     "ee-au-aa": [
@@ -9805,57 +14467,91 @@ export default {
         "per-sauk-set"
     ],
     "ee-au-i": [
-        "ken-tau-ri"
+        "ken-tau-ri",
+        "per-sau-kist"
     ],
     "ee-au-u": [
         "let-kau-tus"
     ],
     "ee-e": [
         "ee-den",
+        "ef-fekt",
         "eh-ken",
         "el-je",
+        "em-me",
         "en-ne",
         "en-nen",
         "er-he",
+        "es-se",
         "es-te",
+        "et-te",
+        "et-ten",
+        "et-tet",
         "gen-re",
         "glenc-heck",
+        "hed-berg",
+        "hef-ner",
         "hel-ke",
         "hel-le",
+        "hel-met",
         "hel-ve",
+        "hel-vet",
         "hels-ke",
+        "hen-gen",
+        "hen-get",
         "her-ne",
         "her-pes",
+        "het-keks",
+        "het-ken",
+        "het-kes",
+        "het-ket",
         "jep-pe",
+        "kee-pers",
+        "kel-le",
         "ken-nel",
+        "kes-kel",
         "kes-ken",
         "knes-set",
+        "leh-den",
+        "leh-det",
+        "lem-men",
         "mels-ke",
         "nes-te",
         "pel-le",
+        "pel-leks",
+        "pel-let",
         "pen-ger",
         "pen-ne",
         "per-he",
         "per-se",
         "pet-kel",
         "pree-sens",
+        "ret-ken",
         "sep-pel",
+        "teet-te",
         "tel-je",
         "ter-ve",
         "veh-je",
+        "vel-jen",
         "vel-jes",
+        "vel-jest",
+        "vel-jet",
         "vem-mel",
         "ven-he",
+        "ver-se",
         "ves-per",
+        "vet-ten",
         "wes-tern"
     ],
     "ee-e-a": [
+        "chel-se-a",
         "ger-be-ra",
         "heb-re-a",
         "hep-re-a",
         "tem-pe-ra"
     ],
     "ee-e-e": [
+        "mer-ce-des",
         "pen-ke-re",
         "pen-te-le",
         "per-ke-le",
@@ -9863,20 +14559,28 @@ export default {
         "sep-pe-le",
         "vem-pe-le"
     ],
+    "ee-e-ee": [
+        "sep-pe-leen"
+    ],
     "ee-e-i": [
         "ber-be-ri",
         "dree-ve-ri",
         "eek-ke-ri",
         "eet-te-ri",
         "en-ke-li",
+        "en-ke-lin",
+        "en-ke-lit",
+        "en-ne-kin",
         "erk-ke-ri",
         "es-te-ri",
         "henk-se-lit",
+        "het-ke-ni",
         "jee-ve-li",
         "keh-ve-li",
         "kek-ke-rit",
         "leh-te-ri",
         "lek-ke-ri",
+        "mel-le-ri",
         "mer-ke-li",
         "nee-ke-ri",
         "pee-ve-li",
@@ -9884,6 +14588,7 @@ export default {
         "pen-de-li",
         "pens-se-li",
         "pent-te-ri",
+        "pet-te-ri",
         "sel-le-ri",
         "sent-te-ri",
         "ser-ve-ri",
@@ -9895,11 +14600,18 @@ export default {
         "vek-se-li",
         "ves-se-li"
     ],
+    "ee-e-ii": [
+        "ber-be-rii",
+        "en-ke-liin"
+    ],
     "ee-e-iu": [
         "tek-ne-tium"
     ],
     "ee-e-o": [
         "ker-be-ros"
+    ],
+    "ee-e-u": [
+        "en-ne-ku"
     ],
     "ee-e-y": [
         "es-te-ly",
@@ -9915,12 +14627,15 @@ export default {
         "per-he-työ"
     ],
     "ee-e-ä": [
+        "em-me-kä",
         "heh-ke-ä",
         "hem-pe-ä",
         "hen-ge-tär",
         "hen-ke-vä",
         "her-je-tä",
         "her-ke-tä",
+        "het-ke-nä",
+        "het-ke-ä",
         "keh-je-tä",
         "kel-me-tä",
         "kel-me-ä",
@@ -9928,13 +14643,17 @@ export default {
         "ker-ke-ä",
         "ket-te-rä",
         "leh-te-vä",
+        "leh-te-ä",
         "lem-me-käs",
         "lem-pe-ä",
+        "lem-pe-ät",
         "len-se-ä",
         "lep-pe-ä",
         "let-ke-ä",
+        "merk-ke-jä",
         "peh-me-tä",
         "peh-me-ä",
+        "peh-me-ät",
         "pen-se-ä",
         "remp-se-ä",
         "sel-je-tä",
@@ -9946,17 +14665,43 @@ export default {
     ],
     "ee-e-ää": [
         "hel-le-sää",
-        "kes-ke-nään"
+        "jen-ge-jään",
+        "kel-le-kään",
+        "kes-ke-nään",
+        "lem-pe-ää",
+        "len-ne-tää",
+        "len-ne-tään",
+        "les-ke-nään",
+        "peh-me-ää",
+        "peh-me-ään",
+        "veh-re-ää"
     ],
     "ee-e-ö": [
         "hen-ge-tön",
         "ret-te-lö"
     ],
     "ee-ee": [
+        "el-keet",
+        "en-teen",
+        "en-teet",
         "es-see",
+        "hen-kee",
+        "hen-keen",
+        "het-kee",
+        "het-keen",
+        "ker-keet",
         "kes-keen",
+        "mel-kee",
+        "mel-keen",
+        "men-neen",
+        "men-neet",
+        "per-heen",
         "per-keet",
-        "tee-vee"
+        "sel-keen",
+        "sel-keet",
+        "tee-vee",
+        "ver-seel",
+        "wee-wee"
     ],
     "ee-ee-a": [
         "ek-see-ma",
@@ -9965,33 +14710,48 @@ export default {
     ],
     "ee-ee-e": [
         "best-sel-ler",
+        "en-kel-ten",
         "en-semb-le",
+        "et-tet-te",
+        "het-kem-me",
         "kes-kel-le",
         "leh-dek-set",
+        "ret-kel-le",
+        "ret-kem-me",
+        "tee-ret-ken",
         "vel-jek-set"
     ],
     "ee-ee-ee": [
-        "kel-lel-leen"
+        "kel-lel-leen",
+        "men-nee-seen"
     ],
     "ee-ee-i": [
         "eks-pert-ti",
         "emb-lee-mi",
         "en-nem-min",
+        "en-nen-ki",
+        "en-nen-kin",
+        "es-sens-si",
+        "ex-pert-ti",
         "frek-vens-si",
         "frek-vent-ti",
         "hel-lee-ni",
         "hel-vet-ti",
         "hem-met-ti",
+        "het-kek-si",
         "jet-set-ti",
         "pel-let-ti",
         "per-fek-ti",
         "per-vers-si",
+        "pree-sens-si",
         "ref-lek-si",
         "ref-ren-gi",
         "res-pek-ti",
         "seg-ment-ti",
         "sek-vens-si",
         "seks-tet-ti",
+        "sel-vem-min",
+        "sel-ven-sit",
         "sep-tet-ti",
         "ser-bet-ti",
         "tee-leh-ti",
@@ -10005,6 +14765,10 @@ export default {
         "hen-gen-mies",
         "pen-ger-tie"
     ],
+    "ee-ee-ii": [
+        "ben-zee-nii",
+        "res-pec-tii"
+    ],
     "ee-ee-iy": [
         "per-vers-siys"
     ],
@@ -10014,6 +14778,12 @@ export default {
         "pers-net-to",
         "seks-tet-to",
         "sep-tet-to"
+    ],
+    "ee-ee-u": [
+        "en-nen-ku"
+    ],
+    "ee-ee-ui": [
+        "en-nen-kuin"
     ],
     "ee-ee-uu": [
         "ee-ben-puu"
@@ -10034,7 +14804,15 @@ export default {
         "ken-nel-työ"
     ],
     "ee-ee-ä": [
+        "eh-jem-män",
+        "er-heen-sä",
+        "er-het-tä",
         "es-tel-lä",
+        "hen-gel-lä",
+        "hen-ges-säs",
+        "hen-ken-sä",
+        "het-kel-lä",
+        "het-kes-sä",
         "kel-ler-vä",
         "kes-kel-lä",
         "kes-kel-tä",
@@ -10042,20 +14820,41 @@ export default {
         "kes-kem-mäs",
         "kes-kes-sä",
         "kes-kes-tä",
+        "leh-ten-sä",
+        "lem-mel-lä",
         "len-nel-lä",
+        "men-nees-tä",
         "men-nes-sä",
+        "peh-mee-nä",
+        "pel-les-tä",
         "pen-ger-mä",
-        "tees-kel-lä"
+        "per-hee-nä",
+        "per-heen-sä",
+        "per-hees-sä",
+        "per-hees-tä",
+        "per-het-tä",
+        "per-het-täs",
+        "tees-kel-lä",
+        "vel-jes-tä",
+        "ven-het-tä"
+    ],
+    "ee-ee-äi": [
+        "et-teen-päin",
+        "len-net-täis"
     ],
     "ee-ee-ää": [
         "en-nes-tään",
         "hel-mes-tää",
         "her-ken-tää",
+        "het-kee-kään",
+        "het-ken-kään",
+        "kel-lek-kää",
         "kel-lel-lään",
         "kel-ler-tää",
         "kel-men-tää",
         "kes-kem-pää",
         "leh-des-tää",
+        "men-nes-sään",
         "peh-men-tää",
         "pen-ger-tää",
         "per-heen-pää",
@@ -10071,21 +14870,38 @@ export default {
         "vel-jes-tö"
     ],
     "ee-ei": [
+        "el-kein",
         "el-lei",
-        "mel-kein"
+        "et-tei",
+        "fren-deist",
+        "gee-neis",
+        "jen-geis",
+        "mel-kein",
+        "men-neit",
+        "nes-teil",
+        "peh-mein",
+        "peh-meit",
+        "sen-teis",
+        "sket-sei",
+        "stes-seis"
     ],
     "ee-ei-e": [
+        "fren-deil-le",
+        "fren-deil-les",
         "hel-tei-nen",
         "het-tei-nen",
         "kes-kei-nen",
         "mels-kei-nen",
         "nes-tei-nen",
         "sees-tei-nen",
-        "ter-vei-set"
+        "ter-vei-set",
+        "tref-feil-le"
     ],
     "ee-ei-i": [
         "es-seis-ti",
-        "teen-kei-tin"
+        "fren-dei-hin",
+        "teen-kei-tin",
+        "ter-vei-sin"
     ],
     "ee-ei-y": [
         "en-tei-ly",
@@ -10104,13 +14920,23 @@ export default {
     ],
     "ee-ei-ä": [
         "en-teil-lä",
+        "es-tei-tä",
         "hel-meil-lä",
         "hem-peil-lä",
         "leh-teil-lä",
         "lenk-keil-lä",
+        "mel-kein-pä",
+        "men-nei-tä",
+        "men-neis-tä",
+        "nes-tei-tä",
+        "peh-mei-tä",
         "pel-leil-lä",
+        "reh-tei-nä",
         "ret-keil-lä",
         "tee-lei-pä",
+        "ter-veim-mät",
+        "tree-neis-tä",
+        "tref-feil-lä",
         "veh-keil-lä",
         "vel-jeil-lä"
     ],
@@ -10135,6 +14961,7 @@ export default {
         "let-keys",
         "peh-meys",
         "pen-seys",
+        "pres-ley",
         "remp-seys",
         "sel-keys",
         "ter-veys",
@@ -10162,7 +14989,8 @@ export default {
         "ter-veys-syy"
     ],
     "ee-ey-ä": [
-        "keh-key-mä"
+        "keh-key-mä",
+        "kes-key-tän"
     ],
     "ee-ey-ää": [
         "kes-keyt-tää",
@@ -10173,64 +15001,127 @@ export default {
     ],
     "ee-i": [
         "bee-si",
+        "bee-sis",
+        "ben-zi",
+        "ben-zil",
+        "bes-tis",
+        "bet-si",
+        "bet-sil",
+        "cen-tin",
+        "chee-kil",
+        "chee-kin",
         "dek-ki",
+        "dep-pin",
         "ees-ti",
+        "eh-di",
+        "eh-dit",
+        "eh-jin",
+        "eh-ti",
+        "el-vis",
+        "em-mi",
         "en-si",
+        "en-siks",
         "en-sin",
+        "en-tist",
+        "end-lich",
+        "erk-ki",
         "es-tin",
+        "et-si",
         "et-sin",
+        "et-sit",
+        "et-ti",
+        "fee-lings",
         "fee-niks",
+        "fen-dit",
+        "fren-di",
+        "fren-din",
+        "fren-dis",
+        "fren-dit",
+        "fres-hin",
         "gee-li",
+        "gee-lis",
         "gee-ni",
+        "hel-li",
         "hel-mi",
         "hel-pi",
+        "hen-gis",
+        "hen-git",
         "hen-ki",
+        "hen-ri",
         "hert-si",
         "het-ki",
         "jeep-pi",
         "jen-gi",
+        "jen-gil",
+        "jen-gin",
+        "jen-gist",
+        "jen-ni",
         "jenk-ki",
         "jet-ti",
         "keep-pi",
         "kek-ri",
         "kek-si",
+        "kek-sil",
+        "kek-sin",
+        "kek-sis",
         "kel-mi",
         "kel-vin",
         "kelt-ti",
         "kemp-pi",
+        "ken-gis",
         "kep-pi",
         "ker-ni",
+        "kert-si",
+        "kert-sit",
         "kes-ti",
         "ket-si",
         "kree-mi",
         "krep-pi",
         "krep-si",
         "kvee-ni",
+        "leh-dis",
         "leh-ti",
         "lel-li",
+        "lem-mi",
         "lem-pi",
         "len-nin",
+        "len-si",
+        "len-sin",
         "len-tis",
         "lenk-ki",
         "les-ki",
         "les-ti",
         "let-kis",
         "let-ti",
+        "melt-sist",
+        "mer-vi",
         "merk-ki",
         "mes-si",
+        "mes-sis",
         "met-ri",
+        "met-rin",
         "nep-pi",
+        "net-ti",
         "pee-si",
         "peh-mis",
+        "pel-kil",
+        "pel-lin",
         "pel-ti",
+        "pen-kis",
+        "pen-kist",
+        "pen-kit",
         "pen-ni",
         "penk-ki",
         "per-mis",
         "pes-ki",
         "pes-ti",
+        "pet-ri",
         "pet-si",
+        "pet-ti",
         "pet-ting",
+        "plek-sit",
         "pres-si",
+        "ree-nit",
         "reh-ti",
         "rek-ki",
         "rek-si",
@@ -10239,10 +15130,16 @@ export default {
         "ret-ki",
         "sek-ki",
         "sek-si",
+        "sek-sist",
         "seks-ti",
         "sel-kis",
         "sel-li",
+        "sel-vi",
+        "sel-vin",
+        "sel-vis",
+        "sen-ki",
         "sen-kin",
+        "sen-tis",
         "senk-ki",
         "sens-sit",
         "sent-ti",
@@ -10252,33 +15149,42 @@ export default {
         "ser-ri",
         "set-ri",
         "set-ti",
+        "set-tis",
         "shek-ki",
         "shel-fi",
         "skep-sis",
         "sket-si",
         "spek-si",
+        "spek-ti",
         "spekt-ri",
         "spelt-ti",
         "step-pi",
         "stres-si",
+        "stres-sin",
         "stretc-hing",
         "sven-gi",
         "tee-ri",
         "tee-si",
+        "tee-sit",
         "teks-ti",
         "tel-ki",
+        "tem-mi",
         "ten-nis",
         "tent-ti",
+        "tep-si",
         "ter-mi",
+        "ter-mit",
         "ters-si",
         "tes-ti",
         "tree-ni",
+        "tree-niks",
         "tref-fit",
         "tren-di",
         "trens-si",
         "tsemp-pi",
         "tshek-ki",
         "vek-ki",
+        "vek-si",
         "vel-li",
         "vent-ti",
         "vep-pi",
@@ -10295,15 +15201,23 @@ export default {
         "ret-si-na",
         "see-pi-a"
     ],
+    "ee-i-aa": [
+        "kes-ki-maan",
+        "pree-ri-aa"
+    ],
     "ee-i-e": [
         "eep-pi-nen",
         "eet-ti-nen",
         "em-pi-re",
         "en-ti-nen",
+        "en-ti-sen",
+        "en-ti-sest",
         "et-ni-nen",
         "hek-ti-nen",
         "hen-ki-nen",
         "het-ki-nen",
+        "het-ki-sen",
+        "jen-ni-fer",
         "kes-ki-nen",
         "leh-ti-nen",
         "merk-ki-nen",
@@ -10312,14 +15226,25 @@ export default {
         "peh-mi-ke",
         "peh-mi-te",
         "pel-ti-nen",
+        "pres-si-sen",
         "sep-ti-nen",
         "skep-ti-nen",
         "tek-ni-nen",
         "ter-mi-nen"
     ],
+    "ee-i-ee": [
+        "eh-ti-neet",
+        "en-ti-seen"
+    ],
     "ee-i-i": [
+        "eh-ti-sit",
+        "fren-di-ni",
+        "kek-si-si",
+        "leh-ti-hin",
+        "lem-mi-kit",
         "peh-mi-tin",
         "pep-ti-di",
+        "sel-vi-sit",
         "sep-ti-mi",
         "ten-si-di"
     ],
@@ -10330,6 +15255,7 @@ export default {
         "merk-ki-mies"
     ],
     "ee-i-o": [
+        "el-ni-no",
         "es-ki-mo",
         "lee-gi-o",
         "mee-di-o",
@@ -10346,9 +15272,17 @@ export default {
         "set-ri-puu"
     ],
     "ee-i-y": [
+        "eh-ti-ny",
+        "eh-ti-nyt",
+        "et-si-nyt",
         "hen-gi-tys",
+        "kek-si-nyt",
+        "kek-si-tyt",
         "ken-gi-tys",
+        "kes-ki-ty",
+        "kes-ki-tyn",
         "kes-ki-tys",
+        "kes-ki-tyt",
         "kes-ti-tys",
         "mer-ki-tys",
         "met-si-tys",
@@ -10369,28 +15303,43 @@ export default {
         "lem-pi-työ"
     ],
     "ee-i-ä": [
+        "cent-ti-ä",
         "eh-ti-ä",
         "em-pi-ä",
         "et-si-jä",
+        "et-si-mäs",
         "et-si-vä",
+        "et-si-vän",
         "et-si-ä",
+        "et-ti-mäs",
         "hel-li-tä",
         "hel-li-ä",
+        "hen-gi-tä",
+        "hen-gi-tän",
         "hen-ki-ä",
+        "herk-ki-ä",
+        "het-ki-ä",
         "jelp-pi-ä",
+        "jen-gi-nä",
         "jenk-ki-lä",
         "kek-si-jä",
+        "kek-si-mät",
         "kek-si-ä",
         "kel-li-ä",
+        "kes-ti-pä",
         "kes-ti-tä",
+        "leh-mi-ä",
         "leh-ti-ä",
         "lel-li-ä",
         "lem-pi-ä",
         "mer-ki-tä",
+        "mer-vi-hän",
+        "met-si-ä",
         "peh-mi-tä",
         "reh-ki-ä",
         "sek-si-käs",
         "sel-vi-tä",
+        "sel-vi-ä",
         "set-vi-ä",
         "tel-mi-ä",
         "tent-ti-jä",
@@ -10399,10 +15348,21 @@ export default {
         "tren-di-käs"
     ],
     "ee-i-ää": [
-        "let-ti-pää"
+        "eh-di-tään",
+        "et-si-kään",
+        "et-si-mään",
+        "et-si-tään",
+        "kek-si-kää",
+        "kek-si-kään",
+        "kek-si-tään",
+        "ken-ki-ään",
+        "let-ti-pää",
+        "sel-vi-tään",
+        "sel-vi-ää"
     ],
     "ee-i-ö": [
         "hen-ki-lö",
+        "hen-ki-lön",
         "kes-ki-ö",
         "leh-ti-ö",
         "mer-ki-tön",
@@ -10416,7 +15376,12 @@ export default {
         "hen-ki-löys"
     ],
     "ee-ie": [
-        "ken-ties"
+        "fren-dien",
+        "hen-kien",
+        "het-kien",
+        "jenk-kien",
+        "ken-ties",
+        "met-sien"
     ],
     "ee-ie-i": [
         "rek-vie-mi",
@@ -10428,13 +15393,78 @@ export default {
         "ret-kie-väs"
     ],
     "ee-ii": [
-        "hen-kiin"
+        "bee-siin",
+        "ben-jii",
+        "ben-zii",
+        "bet-sii",
+        "eh-tii",
+        "em-siit",
+        "et-sii",
+        "et-tii",
+        "fen-dii",
+        "fles-hiin",
+        "fren-dii",
+        "fres-hii",
+        "gee-lii",
+        "hel-lii",
+        "hen-kii",
+        "hen-kiin",
+        "herk-kii",
+        "het-kii",
+        "jen-gii",
+        "jen-giin",
+        "kek-sii",
+        "ken-kii",
+        "ker-kii",
+        "leh-tiin",
+        "lenk-kii",
+        "lent-tii",
+        "les-tii",
+        "let-tii",
+        "mee-mii",
+        "men-tii",
+        "men-tiin",
+        "merk-kii",
+        "mes-sii",
+        "mes-siin",
+        "net-tii",
+        "nex-tii",
+        "pee-sii",
+        "pee-siin",
+        "pelk-kii",
+        "pelt-sii",
+        "penk-kiin",
+        "pres-sii",
+        "rem-miin",
+        "ren-kiin",
+        "res-hii",
+        "res-sii",
+        "ret-kii",
+        "sek-sii",
+        "sel-vii",
+        "sel-viin",
+        "sel-viit",
+        "sens-siin",
+        "sent-tii",
+        "set-tii",
+        "street-tii",
+        "stres-sii",
+        "teh-tii",
+        "teh-tiin",
+        "teks-tii",
+        "teks-tiin",
+        "tes-tii",
+        "tree-nii"
+    ],
+    "ee-ii-": [
+        "ket-ting-st"
     ],
     "ee-ii-a": [
         "met-riik-ka",
         "per-sik-ka",
         "per-sil-ja",
         "rep-sik-ka",
+        "tek-nii-kan",
         "tek-niik-ka",
         "ver-nis-sa"
     ],
@@ -10443,13 +15473,22 @@ export default {
     ],
     "ee-ii-e": [
         "her-kis-te",
+        "kek-sim-me",
         "kes-kit-se",
         "men-sik-set",
+        "mer-kit-sen",
+        "mer-kit-set",
         "pel-kis-te",
-        "sel-vil-le"
+        "sel-vil-le",
+        "shel-lil-le"
+    ],
+    "ee-ii-ee": [
+        "sel-vin-neet"
     ],
     "ee-ii-i": [
         "ben-sii-ni",
+        "ben-sii-nin",
+        "ber-lii-ni",
         "del-fii-ni",
         "el-lip-si",
         "em-pii-ri",
@@ -10457,18 +15496,25 @@ export default {
         "en-sik-si",
         "es-sii-vi",
         "ex-lib-ris",
+        "ex-mim-mi",
         "fen-nis-mi",
         "fen-nis-ti",
         "fer-riit-ti",
         "fer-tii-li",
         "ger-bii-li",
         "ger-bil-li",
+        "hel-sin-gin",
+        "hel-sin-gist",
+        "hel-sin-ki",
+        "kel-lis-tin",
         "ket-tin-ki",
         "kret-lii-ni",
         "leg-ging-sit",
         "lel-lik-ki",
         "lem-mik-ki",
         "les-bis-mi",
+        "men-tii-ki",
+        "mer-kit-sin",
         "mes-sin-ki",
         "mes-tit-si",
         "pel-kis-tin",
@@ -10476,6 +15522,7 @@ export default {
         "pres-tii-si",
         "ree-lin-ki",
         "reh-dis-ti",
+        "rep-lii-kit",
         "rep-liik-ki",
         "res-piit-ti",
         "ret-lii-ni",
@@ -10483,6 +15530,7 @@ export default {
         "sek-sis-mi",
         "sek-sis-ti",
         "sel-lis-ti",
+        "sel-lis-tin",
         "sem-min-kin",
         "ser-tin-ki",
         "ser-vii-si",
@@ -10493,6 +15541,12 @@ export default {
         "ter-miit-ti",
         "ter-rii-ni",
         "vent-tii-li"
+    ],
+    "ee-ii-ii": [
+        "ber-lii-niin",
+        "hel-lit-tiin",
+        "hel-sin-kii",
+        "hel-sin-kiin"
     ],
     "ee-ii-iy": [
         "fer-tii-liys"
@@ -10508,6 +15562,8 @@ export default {
         "en-tis-tys",
         "lem-mit-ty",
         "pel-kis-tys",
+        "sel-vin-nyt",
+        "sel-vit-ty",
         "vet-ris-tys"
     ],
     "ee-ii-yy": [
@@ -10516,25 +15572,45 @@ export default {
     ],
     "ee-ii-ä": [
         "en-sin-nä",
+        "en-tis-tä",
         "et-sin-tä",
         "hel-mik-kä",
+        "hen-gil-tä",
         "hen-gis-sä",
+        "het-kis-sä",
+        "het-kis-tä",
+        "jen-gis-sä",
+        "ken-gis-sä",
+        "kert-sis-tä",
+        "leh-dis-tä",
         "mer-kin-tä",
+        "mes-sis-sä",
+        "pel-lis-sä",
+        "pen-kil-lä",
+        "pen-kis-sä",
+        "rem-mis-sä",
+        "sek-sis-tä",
+        "sel-lis-sä",
         "sel-vil-lä",
+        "sen-tis-sä",
         "set-vin-tä"
     ],
     "ee-ii-äi": [
-        "het-kit-täin"
+        "het-kit-täin",
+        "kek-sit-täis",
+        "sel-vin-päin"
     ],
     "ee-ii-ää": [
         "en-sin-kään",
         "en-tis-tää",
+        "fren-dil-tään",
         "hel-lit-tää",
         "hen-git-tää",
         "hen-kis-tää",
         "her-kis-tää",
         "kel-lis-tää",
         "ken-git-tää",
+        "kes-kii-kään",
         "kes-kit-tää",
         "kes-tit-tää",
         "mer-kit-tää",
@@ -10543,6 +15619,8 @@ export default {
         "pel-kis-tää",
         "pel-lit-tää",
         "pen-kin-pää",
+        "pen-nii-kään",
+        "sel-vii-mään",
         "sel-vit-tää",
         "sem-min-kään",
         "tek-nis-tää",
@@ -10570,43 +15648,65 @@ export default {
         "teks-tiyh-teys"
     ],
     "ee-iy-y": [
-        "sel-kiy-tys"
+        "sel-kiy-tys",
+        "sel-viy-ty"
     ],
     "ee-iy-ää": [
         "sel-kiyt-tää"
     ],
     "ee-iyö": [
-        "kes-kiyö"
+        "kes-kiyö",
+        "kes-kiyöl"
+    ],
+    "ee-iyö-ä": [
+        "kes-kiyöl-lä"
     ],
     "ee-o": [
         "ee-pos",
         "eh-to",
+        "el-ton",
         "es-to",
+        "et-kot",
         "fres-ko",
         "get-to",
         "ghet-to",
         "hee-ros",
         "heh-to",
+        "hel-pot",
         "help-po",
         "hem-mo",
         "hemp-po",
+        "hen-not",
         "hen-to",
+        "henk-koht",
         "her-mo",
+        "her-mot",
+        "keh-don",
         "keh-no",
         "keh-to",
         "kel-lo",
+        "kel-lon",
+        "kel-los",
+        "kel-lot",
         "kel-po",
         "ken-do",
         "ken-no",
         "ker-ho",
+        "ker-ro",
+        "ker-ron",
         "ker-ros",
+        "ker-rot",
         "ker-to",
         "kes-to",
         "ket-to",
         "leg-horn",
+        "leh-don",
         "leh-to",
         "lem-po",
         "len-ko",
+        "len-nol",
+        "len-nost",
+        "len-not",
         "len-to",
         "les-bo",
         "let-to",
@@ -10614,7 +15714,9 @@ export default {
         "mel-ko",
         "mel-to",
         "met-ro",
+        "met-rost",
         "met-so",
+        "neg-ro",
         "nel-son",
         "nes-tor",
         "net-to",
@@ -10622,12 +15724,15 @@ export default {
         "peh-ko",
         "peh-mo",
         "pel-ko",
+        "pel-lon",
+        "pel-lot",
         "pel-to",
         "per-ho",
         "per-so",
         "per-vo",
         "pes-to",
         "pres-to",
+        "red-ford",
         "ren-to",
         "rep-ro",
         "scher-zo",
@@ -10636,58 +15741,106 @@ export default {
         "sep-po",
         "ser-vo",
         "teet-to",
+        "tef-lon",
         "tek-no",
         "tel-jo",
         "tem-po",
         "ten-ho",
+        "tep-po",
         "ter-ho",
         "ter-mos",
         "vel-ho",
+        "vel-hot",
         "velt-to",
         "ven-ho",
         "ver-ho",
+        "ver-hon",
+        "ver-hot",
+        "ver-kot",
         "ver-so",
         "ver-to",
         "verk-ko"
     ],
     "ee-o-a": [
         "eh-do-kas",
+        "es-so-ja",
         "hel-po-ta",
+        "help-po-a",
+        "help-po-ja",
         "hen-no-a",
+        "her-mo-ja",
+        "her-mo-na",
         "her-vo-ta",
         "jel-lo-na",
+        "jel-lo-nat",
         "keh-no-ta",
+        "kel-lo-a",
         "kel-lo-kas",
         "kel-vo-kas",
         "ker-mo-a",
+        "ker-so-ja",
         "ker-to-a",
         "ker-to-ja",
         "ker-to-ma",
+        "ker-to-mal",
+        "ker-to-mas",
+        "ker-to-vat",
         "len-no-kas",
+        "mek-ko-a",
+        "mes-to-ja",
+        "pel-ko-a",
+        "pel-to-a",
+        "pel-to-ja",
         "pen-ko-a",
         "pen-so-a",
         "per-go-la",
+        "per-vo-ja",
+        "ref-lo-ja",
         "ses-to-a",
         "tem-po-a",
         "ten-ho-ta",
         "trenc-hco-at",
         "vel-ko-a",
         "vel-ko-ja",
+        "vel-ko-jat",
         "vel-lo-a",
+        "vel-lo-vat",
         "ver-ho-ta",
         "ver-so-a",
-        "ver-to-ja"
+        "ver-so-vat",
+        "ver-to-ja",
+        "verk-ko-ja",
+        "ves-so-ja"
     ],
     "ee-o-aa": [
+        "kel-lo-aan",
+        "ker-ro-taan",
+        "ker-to-maa",
+        "ker-to-maan",
         "leh-to-maa",
-        "pel-to-maa"
+        "met-so-maa",
+        "met-so-maan",
+        "pel-to-maa",
+        "ter-vo-maa",
+        "ver-so-maan"
     ],
     "ee-o-e": [
+        "chek-ko-nen",
+        "chek-ko-sen",
+        "em-mo-jen",
         "hen-ko-nen",
+        "hep-po-nen",
+        "her-ro-jen",
+        "kek-ko-nen",
         "kep-po-nen",
+        "kep-po-sen",
+        "ker-to-en",
         "kes-ko-nen",
         "pen-no-nen",
+        "pep-po-ne",
         "per-ho-nen",
+        "per-ho-sen",
+        "per-ho-set",
         "sel-ko-nen",
         "sel-ko-sen",
         "sep-po-sen",
@@ -10695,11 +15848,14 @@ export default {
     ],
     "ee-o-i": [
         "fen-ko-li",
+        "kel-lo-ni",
+        "ker-to-sin",
         "leh-to-ri",
         "lep-to-ni",
         "men-to-li",
         "men-to-ri",
         "peh-to-ri",
+        "pel-ko-ni",
         "pet-ro-li",
         "reh-to-ri",
         "sek-to-ri",
@@ -10713,6 +15869,12 @@ export default {
         "peh-mo-mies",
         "pel-to-mies",
         "pel-to-tie"
+    ],
+    "ee-o-ii": [
+        "peh-mo-sii",
+        "per-ho-sii",
+        "tef-lo-nii",
+        "tret-to-nii"
     ],
     "ee-o-iu": [
         "reh-to-rius"
@@ -10730,7 +15892,10 @@ export default {
         "hel-po-tus",
         "her-mo-tus",
         "ker-to-mus",
+        "ker-to-nu",
+        "ker-to-nut",
         "mel-lo-tus",
+        "prec-ho-rus",
         "vel-ko-mus",
         "ver-ko-tus"
     ],
@@ -10750,15 +15915,29 @@ export default {
         "len-to-sää"
     ],
     "ee-oi": [
+        "bel-loi",
+        "eh-doin",
+        "es-soi",
+        "fem-moi",
+        "kel-loi",
         "ker-roin",
+        "ker-roit",
+        "ker-toi",
+        "mes-toi",
+        "mes-toist",
+        "pres-sois",
         "ver-roin"
     ],
     "ee-oi-a": [
+        "eh-doit-ta",
         "eh-toi-sa",
+        "hel-moil-ta",
+        "hen-noil-la",
         "hen-toil-la",
         "her-moil-la",
         "ker-toil-la",
         "lep-poi-sa",
+        "mes-toil-la",
         "peh-moil-la",
         "tem-poil-la",
         "velt-toil-la",
@@ -10766,20 +15945,36 @@ export default {
         "ver-hoil-la"
     ],
     "ee-oi-aa": [
+        "ker-roin-kaan",
         "tee-moit-taa",
         "vel-voit-taa"
     ],
     "ee-oi-e": [
         "es-toi-nen",
+        "hel-moil-le",
         "hen-toi-nen",
         "hep-poi-nen",
         "kel-poi-nen",
         "kes-toi-nen",
         "mel-koi-nen",
+        "peh-moi-len",
         "peh-moi-nen",
         "sem-moi-nen",
         "vel-voi-te",
         "ver-koit-se"
+    ],
+    "ee-oi-ee": [
+        "ker-soil-leen",
+        "vel-koi-neen"
+    ],
+    "ee-oi-i": [
+        "ker-toi-si",
+        "ker-toi-sin",
+        "ker-toi-sit",
+        "mes-toi-hi"
+    ],
+    "ee-oi-oo": [
+        "ep-toi-voon"
     ],
     "ee-oi-u": [
         "hen-toi-lu",
@@ -10801,10 +15996,26 @@ export default {
         "peh-moi-sä"
     ],
     "ee-oo": [
-        "eh-too"
+        "eh-too",
+        "eh-toon",
+        "gek-koo",
+        "help-poo",
+        "keh-too",
+        "kel-loo",
+        "ker-too",
+        "ker-toon",
+        "met-roo",
+        "pel-koo",
+        "sel-koo",
+        "tek-noo",
+        "tem-poo"
     ],
     "ee-oo-a": [
+        "hel-pol-la",
         "ker-ron-ta",
+        "len-nol-la",
+        "met-ros-sa",
+        "pel-los-sa",
         "pen-gon-ta",
         "per-soo-na",
         "res-kont-ra",
@@ -10814,12 +16025,16 @@ export default {
     "ee-oo-aa": [
         "eh-dot-taa",
         "el-lot-taa",
+        "hel-pom-paa",
         "hel-pon-taa",
         "hel-pot-taa",
         "her-mot-taa",
+        "keh-dos-taan",
         "keh-non-taa",
+        "kel-lot-kaan",
         "kel-lot-taa",
         "ker-ros-taa",
+        "ker-too-kaan",
         "mel-lot-taa",
         "per-hos-taa",
         "rep-sot-taa",
@@ -10827,8 +16042,15 @@ export default {
         "vel-tos-taa",
         "ver-kot-taa"
     ],
+    "ee-oo-e": [
+        "el-lok-sen"
+    ],
     "ee-oo-i": [
         "des-poot-ti",
+        "eh-dol-list",
+        "es-cor-tin",
+        "hel-pom-min",
+        "hel-pom-pi",
         "hel-pos-ti",
         "keh-nos-ti",
         "leh-dok-ki",
@@ -10840,6 +16062,9 @@ export default {
         "vel-tos-ti",
         "ver-rok-ki"
     ],
+    "ee-oo-ii": [
+        "ker-rot-tiin"
+    ],
     "ee-oo-o": [
         "her-mos-to",
         "ken-nos-to",
@@ -10847,11 +16072,15 @@ export default {
         "ver-hoo-mo",
         "ver-kos-to"
     ],
+    "ee-oo-oo": [
+        "ver-kos-toon"
+    ],
     "ee-oo-u": [
         "her-mos-tus"
     ],
     "ee-oo-uu": [
         "eh-dok-kuus",
+        "hel-pot-tuu",
         "len-nok-kuus"
     ],
     "ee-ou": [
@@ -10871,11 +16100,16 @@ export default {
         "ren-tou-te"
     ],
     "ee-ou-u": [
-        "ren-tou-tus"
+        "ren-tou-tus",
+        "ver-hou-dun"
     ],
     "ee-u": [
         "brenk-ku",
         "dee-ku",
+        "ee-tu",
+        "elt-sun",
+        "enk-ku",
+        "ep-pu",
         "es-su",
         "heh-ku",
         "hel-mus",
@@ -10893,6 +16127,7 @@ export default {
         "kes-kus",
         "kes-su",
         "ket-ju",
+        "ket-jut",
         "ket-ku",
         "ket-tu",
         "ketc-hup",
@@ -10905,6 +16140,7 @@ export default {
         "let-tu",
         "men-kut",
         "men-sut",
+        "mer-su",
         "mes-su",
         "mes-sut",
         "met-ku",
@@ -10924,10 +16160,16 @@ export default {
         "res-su",
         "ret-ku",
         "sel-lu",
+        "sen-ku",
+        "sen-kun",
+        "ser-kun",
         "ser-kus",
         "serk-ku",
+        "tee-muks",
+        "tee-mun",
         "telk-ku",
         "tem-pus",
+        "tem-put",
         "temp-pu",
         "tent-tu",
         "ter-kut",
@@ -10937,6 +16179,7 @@ export default {
     "ee-u-a": [
         "ber-mu-dat",
         "heh-ku-a",
+        "heh-ku-va",
         "hert-tu-a",
         "het-ku-a",
         "kel-lu-a",
@@ -10946,30 +16189,43 @@ export default {
         "lerp-pu-a",
         "mes-su-ta",
         "pel-mu-ta",
-        "ret-ku-a"
+        "pen-tu-na",
+        "ret-ku-a",
+        "terk-ku-ja"
+    ],
+    "ee-u-aa": [
+        "pen-tu-jaan"
     ],
     "ee-u-e": [
+        "heh-ku-en",
+        "her-ku-les",
         "kel-lu-ke",
         "kel-lu-te",
         "kert-tu-nen",
         "len-tu-e",
         "pen-tu-e",
         "per-ku-le",
+        "per-su-jen",
+        "pres-su-re",
         "ret-ku-e"
     ],
     "ee-u-ei": [
         "hel-lu-rei"
     ],
     "ee-u-i": [
+        "heh-ku-vin",
         "kek-ku-li",
         "kers-ku-ri",
         "met-su-ri",
+        "met-su-ril",
         "pel-ku-ri",
+        "pel-ku-rit",
         "pet-tu-ri",
         "plee-nu-mi",
         "rep-pu-ri",
         "see-ru-mi",
         "teks-tu-ri",
+        "tem-pu-rin",
         "vek-ku-li",
         "vem-pu-tin"
     ],
@@ -10992,6 +16248,11 @@ export default {
         "pel-ku-ruus",
         "pet-tu-ruus"
     ],
+    "ee-ui": [
+        "brenk-kui",
+        "kled-juil",
+        "kled-juist"
+    ],
     "ee-ui-a": [
         "jek-kuil-la",
         "kel-juil-la",
@@ -11001,6 +16262,9 @@ export default {
         "rent-tuil-la",
         "temp-puil-la",
         "vel-muil-la"
+    ],
+    "ee-ui-i": [
+        "rent-tui-hin"
     ],
     "ee-ui-u": [
         "kel-jui-lu",
@@ -11025,26 +16289,40 @@ export default {
         "mens-truoi-da"
     ],
     "ee-uu": [
+        "brenk-kuu",
+        "enk-kuu",
+        "heh-kuu",
         "her-ruus",
+        "jek-kuu",
         "keh-ruu",
         "kel-juus",
+        "kel-luu",
         "ker-juu",
         "lep-suus",
+        "let-tuu",
         "per-kuu",
         "pes-tuu",
-        "serk-kuus"
+        "rent-tuun",
+        "rep-puun",
+        "sel-luu",
+        "serk-kuus",
+        "set-kuu",
+        "telk-kuun"
     ],
     "ee-uu-a": [
         "hel-mus-ta",
         "hem-puk-ka",
         "kel-luk-ka",
         "kel-lun-ta",
+        "kelt-sus-ta",
         "kes-kus-ta",
+        "ket-jus-sa",
         "ren-tuk-ka",
         "res-suk-ka"
     ],
     "ee-uu-aa": [
         "en-nus-taa",
+        "es-sus-saan",
         "heh-kut-taa",
         "het-kut-taa",
         "keh-ruut-taa",
@@ -11052,6 +16330,7 @@ export default {
         "kel-lut-taa",
         "kel-puut-taa",
         "ken-kut-taa",
+        "kes-kus-taan",
         "kes-sut-taa",
         "ket-jut-taa",
         "peh-mus-taa",
@@ -11065,13 +16344,16 @@ export default {
     ],
     "ee-uu-e": [
         "en-nus-te",
+        "jee-suk-sen",
         "keh-ruuk-set",
         "peh-mus-te",
         "per-suk-set",
-        "per-suuk-set"
+        "per-suuk-set",
+        "tel-luk-sen"
     ],
     "ee-uu-ee": [
         "jet-sul-leen",
+        "kes-kuk-seen",
         "kes-kuu-teen"
     ],
     "ee-uu-i": [
@@ -11080,6 +16362,7 @@ export default {
         "hel-kut-ti",
         "hels-kut-ti",
         "kel-jus-ti",
+        "kel-jut-ti",
         "ket-sup-pi",
         "lep-sus-ti",
         "meet-vurs-ti",
@@ -11103,24 +16386,43 @@ export default {
         "peh-mus-tus"
     ],
     "ee-y": [
+        "ek-sy",
+        "ek-syn",
         "hen-ry",
         "les-ty",
+        "men-ny",
         "men-nyt",
+        "men-ty",
+        "peg-gy",
         "peh-myt",
         "pen-ny",
+        "pern-ty",
+        "rem-my",
+        "ren-ny",
         "sher-ry",
         "ted-dy",
-        "teel-mys"
+        "teel-mys",
+        "teh-ny",
+        "teh-nyt",
+        "teh-ty"
     ],
     "ee-y-e": [
         "el-vy-ke",
         "frees-ty-le"
+    ],
+    "ee-y-ee": [
+        "eh-ty-neet",
+        "ek-sy-neet",
+        "frees-ty-lee",
+        "pet-ty-neet",
+        "vet-ty-neet"
     ],
     "ee-y-o": [
         "emb-ry-o"
     ],
     "ee-y-y": [
         "ek-sy-mys",
+        "ek-sy-nyt",
         "ek-sy-tys",
         "el-vy-tys",
         "hel-ky-tys",
@@ -11144,14 +16446,26 @@ export default {
         "lep-py-ä",
         "pet-ty-ä",
         "sees-ty-ä",
+        "teh-ty-jä",
+        "teh-ty-ä",
         "ver-ty-ä",
         "vet-ty-ä"
     ],
+    "ee-y-ää": [
+        "ek-sy-tään",
+        "pet-ty-mään"
+    ],
+    "ee-yi": [
+        "ek-syi"
+    ],
     "ee-yy": [
         "eh-jyys",
+        "eh-tyy",
         "hel-lyys",
         "herk-kyys",
+        "pes-tyy",
         "sel-vyys",
+        "teh-tyy",
         "vel-jyys"
     ],
     "ee-yy-i": [
@@ -11165,7 +16479,10 @@ export default {
     ],
     "ee-yy-ä": [
         "hel-kyn-tä",
-        "leh-dyk-kä"
+        "hel-lyyt-tä",
+        "leh-dyk-kä",
+        "men-nyt-tä",
+        "peg-gys-sä"
     ],
     "ee-yy-ää": [
         "eh-dyt-tää",
@@ -11174,51 +16491,100 @@ export default {
         "hel-kyt-tää",
         "hel-lyt-tää",
         "hels-kyt-tää",
+        "teh-nyt-kään",
         "ver-ryt-tää"
     ],
     "ee-ä": [
+        "25vee-nä",
+        "ees-sä",
         "eh-jä",
         "eh-kä",
+        "ek-sä",
+        "em-mä",
+        "en-hä",
+        "en-hän",
+        "en-kä",
         "en-tä",
         "en-täs",
         "er-sä",
+        "es-tä",
+        "et-hän",
+        "et-kä",
+        "et-sä",
         "et-tä",
         "hel-lä",
+        "her-käks",
         "herk-kä",
         "keh-nä",
         "keh-rä",
         "keh-räs",
+        "kel-lä",
+        "ken-gäst",
+        "ken-gät",
         "ken-kä",
+        "ken-täl",
+        "ken-tän",
+        "ken-tät",
         "kent-tä",
         "kerk-kä",
+        "kes-tä",
+        "kes-tän",
+        "kes-täs",
+        "ket-kä",
         "leh-mä",
         "leh-vä",
+        "len-nä",
+        "len-nän",
+        "len-nät",
         "lep-pä",
         "les-tä",
+        "meep-pä",
         "men-nä",
+        "men-täs",
         "met-sä",
+        "met-sän",
         "nel-jä",
+        "nel-jän",
         "nel-jäs",
+        "pel-käks",
+        "pel-käst",
         "pelk-kä",
         "pes-tä",
+        "rees-sä",
+        "rees-tä",
+        "ref-räng",
         "sel-kä",
+        "sel-käs",
         "sel-vä",
+        "sel-vän",
+        "sel-vät",
         "sep-pä",
+        "tee-tä",
         "teel-mä",
         "teh-dä",
+        "teh-täs",
         "telk-kä",
         "veh-nä",
-        "vep-sä"
+        "vep-sä",
+        "vet-tä"
     ],
     "ee-ä-aa": [
         "met-sä-maa"
     ],
     "ee-ä-e": [
+        "keh-rä-ten",
         "veh-nä-nen"
+    ],
+    "ee-ä-ee": [
+        "len-tä-neen"
     ],
     "ee-ä-i": [
         "len-nä-tin",
-        "pers-lä-pi"
+        "pel-kä-si",
+        "pel-kä-sin",
+        "pel-kä-sit",
+        "pers-lä-pi",
+        "sel-kä-ni"
     ],
     "ee-ä-ie": [
         "kent-tä-mies",
@@ -11235,6 +16601,8 @@ export default {
     ],
     "ee-ä-y": [
         "en-nä-tys",
+        "kes-tä-ny",
+        "kes-tä-nyt",
         "len-nä-tys",
         "sel-kä-mys"
     ],
@@ -11246,6 +16614,8 @@ export default {
         "met-sä-työ"
     ],
     "ee-ä-ä": [
+        "eh-jä-nä",
+        "eh-kä-pä",
         "en-tä-pä",
         "en-tä-päs",
         "es-tä-jä",
@@ -11256,21 +16626,42 @@ export default {
         "kes-tä-vä",
         "len-tä-jä",
         "len-tä-vä",
+        "len-tä-vän",
+        "men-tä-vä",
         "nel-jä-käs",
         "pel-jä-tä",
         "pet-tä-jä",
+        "pet-tä-vät",
+        "sel-vä-nä",
         "sel-vä-tä",
         "teet-tä-jä",
         "teh-tä-vä",
         "tel-mä-tä"
     ],
+    "ee-ä-äi": [
+        "ees-sä-päin"
+    ],
+    "ee-ä-ää": [
+        "kes-tä-mään",
+        "kes-tä-vää",
+        "len-tä-mään",
+        "pet-tä-mään",
+        "teh-tä-vää"
+    ],
     "ee-ä-ö": [
         "met-sä-lö"
+    ],
+    "ee-ä-öö": [
+        "kes-tä-köön"
     ],
     "ee-äi": [
         "ees-päin",
         "ken-käin",
-        "sel-käin"
+        "kes-täis",
+        "men-täis",
+        "pel-käis",
+        "sel-käin",
+        "teh-täis"
     ],
     "ee-äi-e": [
         "lep-päi-nen",
@@ -11279,7 +16670,10 @@ export default {
         "veh-näi-nen"
     ],
     "ee-äi-i": [
-        "eh-käi-sin"
+        "eh-käi-sin",
+        "hen-käi-si",
+        "len-täi-sin",
+        "pet-täi-si"
     ],
     "ee-äi-y": [
         "eh-käi-sy",
@@ -11306,27 +16700,65 @@ export default {
         "keh-räyt-tää"
     ],
     "ee-ää": [
+        "eh-jää",
         "en-tää",
         "es-tää",
         "hels-kää",
+        "keh-rää",
+        "kel-lään",
+        "kel-tää",
+        "kel-tään",
+        "ken-kää",
         "ken-kään",
+        "kent-tään",
         "kes-tää",
+        "ket-kään",
+        "ket-tään",
         "len-tää",
+        "men-kää",
+        "men-kääs",
+        "men-nää",
+        "men-nään",
+        "met-sään",
+        "met-tään",
+        "nel-jään",
+        "pel-kää",
+        "pel-kään",
+        "pel-käät",
+        "pelk-kää",
+        "pes-tään",
         "pet-tää",
         "sees-tää",
+        "sel-kää",
+        "sel-kään",
+        "sel-kääs",
+        "sel-vää",
+        "sen-tää",
         "sen-tään",
+        "teen-kään",
         "teet-tää",
-        "tel-mää"
+        "teh-dää",
+        "teh-dään",
+        "teh-kää",
+        "tel-mää",
+        "men-kää"
     ],
     "ee-ää-e": [
+        "ken-täl-le",
+        "len-näm-me",
         "nel-jän-nes"
+    ],
+    "ee-ää-ee": [
+        "men-näk-seen"
     ],
     "ee-ää-i": [
         "eh-jäs-ti",
         "hel-läs-ti",
+        "hen-gäh-dit",
         "her-käs-ti",
         "nel-jäs-ti",
         "pers-kän-ni",
+        "sel-kää-ni",
         "sel-väs-ti"
     ],
     "ee-ää-uu": [
@@ -11339,45 +16771,75 @@ export default {
     ],
     "ee-ää-ä": [
         "keh-rää-jä",
+        "ken-gäs-sä",
+        "met-säs-sä",
+        "pee-äl-läs",
         "pee-är-rä",
-        "pel-kää-jä"
+        "pee-är-räs",
+        "pel-kää-jä",
+        "sel-kään-sä"
     ],
     "ee-ää-ää": [
         "en-nät-tää",
         "hels-käh-tää",
         "hen-gäh-tää",
+        "keh-rää-mään",
         "len-näh-tää",
         "len-nät-tää",
         "met-säs-tää",
         "nel-jäs-tään",
         "pel-käs-tään",
+        "pel-kää-mään",
         "tee-tät-tää"
     ],
     "ee-ää-ö": [
         "keh-rää-mö",
-        "leh-väs-tö"
+        "leh-väs-tö",
+        "len-tää-kö",
+        "men-täs-kö"
+    ],
+    "ee-ö": [
+        "ehn-ström",
+        "et-kö",
+        "meet-kös"
     ],
     "ee-öy-ä": [
         "tee-pöy-tä"
     ],
+    "ee-öö": [
+        "teh-kööt"
+    ],
+    "eei-i": [
+        "beei-bi"
+    ],
     "ei-a": [
         "drei-ja",
+        "ein-mal",
+        "fei-las",
         "geis-ha",
         "hei-la",
         "heip-pa",
+        "heis-san",
         "kei-das",
         "kei-ja",
+        "kei-kal",
         "kei-la",
         "keik-ka",
+        "keik-kas",
+        "krei-kast",
         "kreik-ka",
         "lei-ja",
+        "lei-jat",
         "lei-ma",
         "peit-ta",
         "rei-ma",
         "rei-pas",
+        "rei-past",
+        "reis-kat",
         "sei-ta",
         "seik-ka",
         "seis-ka",
+        "seis-kal",
         "skei-da",
         "veik-ka"
     ],
@@ -11414,19 +16876,36 @@ export default {
         "vei-sa-ta",
         "vei-va-ta"
     ],
+    "ei-a-aa": [
+        "lei-ma-taan",
+        "vei-sa-taan"
+    ],
     "ei-a-e": [
         "sei-sa-ke"
     ],
     "ei-a-i": [
+        "ei-na-ri",
+        "fei-da-sit",
         "hei-ja-ri",
         "kei-ka-ri",
         "kei-sa-ri",
+        "kei-sa-rin",
+        "keik-ka-si",
+        "keik-ka-sin",
         "lei-ka-ri",
         "lei-ma-sin",
+        "leik-ka-si",
+        "leik-ka-sin",
+        "mei-na-sin",
         "mei-ra-mi",
         "peit-sa-ri",
+        "pleik-ka-ri",
+        "pleik-ka-rin",
         "rei-ma-ri",
         "vei-ja-ri"
+    ],
+    "ei-a-ii": [
+        "peint-ta-rii"
     ],
     "ei-a-iu": [
         "kei-sa-rius"
@@ -11435,10 +16914,45 @@ export default {
         "keik-ka-työ"
     ],
     "ei-aa": [
-        "rei-laan"
+        "breik-kaa",
+        "breik-kaan",
+        "cheis-saa",
+        "fei-daan",
+        "fei-daat",
+        "feik-kaa",
+        "geis-haa",
+        "hei-laa",
+        "heit-taa",
+        "heit-taan",
+        "keik-kaa",
+        "keik-kaan",
+        "lei-jaa",
+        "leik-kaa",
+        "leik-kaan",
+        "leis-saan",
+        "mei-naa",
+        "mei-naan",
+        "mei-naat",
+        "meik-kaa",
+        "pei-laan",
+        "peint-taa",
+        "peip-paan",
+        "pleik-kaa",
+        "rei-laan",
+        "reis-taa",
+        "sei-vaa",
+        "seik-kaan",
+        "shei-vaan",
+        "skei-daa",
+        "sprei-jaa",
+        "teip-paan",
+        "vei-saan",
+        "veik-kaan"
     ],
     "ei-aa-a": [
         "hei-lak-ka",
+        "heit-taa-jat",
+        "kei-kal-la",
         "kei-laa-ja",
         "lei-maa-ja",
         "leik-kaa-ja",
@@ -11448,6 +16962,7 @@ export default {
         "rei-vaa-ja",
         "sei-saal-la",
         "sei-saal-ta",
+        "seis-kas-ta",
         "skeit-taa-ja",
         "veik-kaa-ja"
     ],
@@ -11464,7 +16979,9 @@ export default {
     ],
     "ei-aa-e": [
         "hei-jas-te",
-        "sei-saal-le"
+        "krei-kal-le",
+        "sei-saal-le",
+        "seis-kal-le"
     ],
     "ei-aa-ee": [
         "sei-saal-leen"
@@ -11477,22 +16994,33 @@ export default {
         "leik-kaa-mo"
     ],
     "ei-aa-u": [
+        "brei-kan-nut",
+        "fei-kat-tu",
         "hei-jas-tus",
         "hei-lah-dus",
         "kei-kah-dus",
         "kei-nah-dus",
         "lei-mah-dus",
         "leis-kah-dus",
-        "sei-sah-dus"
+        "mei-kat-tu",
+        "pei-an-nu",
+        "pein-tan-nu",
+        "sei-lan-nu",
+        "sei-sah-dus",
+        "vei-kan-nut"
     ],
     "ei-aa-uo": [
         "kei-das-suo"
     ],
     "ei-aa-uu": [
-        "leik-kaa-vuus"
+        "hei-as-tuu",
+        "hei-jas-tuu",
+        "leik-kaa-vuus",
+        "sei-sah-tuu"
     ],
     "ei-ai": [
-        "leik-kain"
+        "leik-kain",
+        "vei-sais"
     ],
     "ei-ai-a": [
         "kei-kail-la",
@@ -11507,8 +17035,15 @@ export default {
         "seik-kail-la",
         "veik-kail-la"
     ],
+    "ei-ai-aa": [
+        "lei-jail-laan"
+    ],
     "ei-ai-e": [
+        "lei-jai-len",
         "pei-jai-set"
+    ],
+    "ei-ai-ee": [
+        "lei-jai-lee"
     ],
     "ei-ai-u": [
         "kei-kai-lu",
@@ -11518,7 +17053,11 @@ export default {
         "lei-jai-lu",
         "reip-pai-lu",
         "seik-kai-lu",
+        "seik-kail-lu",
         "veik-kai-lu"
+    ],
+    "ei-ai-uu": [
+        "seik-kai-luun"
     ],
     "ei-au": [
         "breik-kaus",
@@ -11563,21 +17102,33 @@ export default {
         "hei-lau-tus"
     ],
     "ei-e": [
+        "bei-be",
         "bei-ge",
         "beig-net",
         "ei-len",
         "ei-ne",
         "ei-nes",
         "hei-te",
+        "heil-le",
+        "kei-ne",
         "lei-ke",
+        "mei-ne",
+        "meil-le",
         "pei-te",
+        "tei-den",
+        "teil-le",
+        "teim-me",
         "teit-se"
     ],
     "ei-e-e": [
         "leik-ke-le"
     ],
+    "ei-e-ee": [
+        "peit-te-lee"
+    ],
     "ei-e-i": [
         "blei-se-ri",
+        "lei-be-lit",
         "mei-je-ri",
         "meis-se-li",
         "rei-ke-li"
@@ -11591,14 +17142,29 @@ export default {
         "hei-ke-tä",
         "seit-se-män",
         "seit-se-mäs",
+        "seit-te-män",
         "vei-ke-ä",
         "vei-te-rä"
     ],
+    "ei-e-ää": [
+        "hei-te-tään",
+        "pei-te-tään",
+        "seit-se-mää",
+        "seit-te-mään"
+    ],
+    "ei-ee": [
+        "bei-gee",
+        "vei-kee"
+    ],
     "ei-ee-e": [
-        "hei-ken-ne"
+        "hei-ken-ne",
+        "pei-tel-len"
     ],
     "ei-ee-i": [
         "sei-ree-ni"
+    ],
+    "ei-ee-ii": [
+        "hei-tel-tiin"
     ],
     "ei-ee-y": [
         "hei-ken-nys"
@@ -11615,9 +17181,21 @@ export default {
         "hei-ken-tää",
         "veit-sen-pää"
     ],
+    "ei-ei": [
+        "dei-teil",
+        "hei-hei",
+        "reit-tei"
+    ],
     "ei-ei-e": [
         "heit-teil-le",
         "peit-tei-nen"
+    ],
+    "ei-ei-ee": [
+        "pei-leil-leen"
+    ],
+    "ei-ei-i": [
+        "eins-tei-nin",
+        "pei-lei-hin"
     ],
     "ei-ei-ä": [
         "heit-teil-lä",
@@ -11633,6 +17211,11 @@ export default {
         "breik-ki",
         "deis-mi",
         "deis-ti",
+        "fei-mi",
+        "feik-ki",
+        "feis-si",
+        "gei-mi",
+        "gei-min",
         "gei-mit",
         "gei-sir",
         "gneis-si",
@@ -11640,24 +17223,45 @@ export default {
         "hei-li",
         "hei-si",
         "hei-tin",
+        "hei-tit",
+        "heik-ki",
         "kei-mit",
         "kei-tin",
+        "keis-si",
         "krei-si",
         "krei-vi",
         "lei-di",
+        "lei-ki",
+        "lei-kin",
+        "lei-kit",
         "lei-li",
         "lei-ni",
         "lei-ri",
         "leik-ki",
+        "leik-kis",
+        "mei-hi",
+        "mei-kil",
+        "mei-kit",
         "meik-ki",
         "meis-ti",
         "meit-si",
+        "meit-sil",
+        "meit-sin",
+        "meit-sit",
+        "nei-dit",
         "nei-ti",
         "pei-li",
+        "pei-lin",
+        "pei-list",
+        "pei-tin",
         "peip-pi",
+        "peis-si",
         "peit-si",
+        "pleis-si",
         "rei-ki",
         "rei-si",
+        "rei-tin",
+        "rei-tit",
         "rei-vi",
         "rei-vit",
         "reit-ti",
@@ -11670,20 +17274,35 @@ export default {
         "skeit-ti",
         "tei-li",
         "tei-ni",
+        "tei-nit",
         "teik-ki",
         "teip-pi",
         "teis-mi",
         "teis-ti",
+        "vei-sin",
+        "vei-sit",
         "vei-vi",
+        "veis-ti",
         "veit-si"
     ],
     "ei-i-e": [
         "deis-ti-nen",
         "ei-li-nen",
+        "ei-li-seks",
+        "ei-li-sen",
+        "heik-ki-nen",
         "lei-ki-ten",
         "lei-vi-te",
         "seis-mi-nen",
         "teis-ti-nen"
+    ],
+    "ei-i-ee": [
+        "ei-li-seen"
+    ],
+    "ei-i-i": [
+        "leik-ki-ni",
+        "mei-ni-ki",
+        "meit-si-ki"
     ],
     "ei-i-uu": [
         "rei-si-luu",
@@ -11699,26 +17318,81 @@ export default {
     "ei-i-ä": [
         "krei-vi-tär",
         "leik-ki-jä",
+        "leik-ki-mäs",
         "leik-ki-sä",
-        "leik-ki-ä"
+        "leik-ki-vät",
+        "leik-ki-ä",
+        "meit-si-ä",
+        "rei-ki-ä",
+        "rei-si-ä",
+        "reit-ti-ä",
+        "sei-ni-ä",
+        "tei-ni-nä"
+    ],
+    "ei-i-ää": [
+        "lei-ki-tään",
+        "leik-ki-mään",
+        "peit-si-ään"
     ],
     "ei-i-ö": [
         "heit-ti-ö",
         "keit-ti-mö",
         "keit-ti-ö"
     ],
+    "ei-ie": [
+        "leik-kien",
+        "meit-sien"
+    ],
     "ei-ie-äi": [
         "leik-kie-läin"
+    ],
+    "ei-ii": [
+        "beis-sii",
+        "breik-kii",
+        "ei-niin",
+        "eis-sii",
+        "fei-mii",
+        "feis-sii",
+        "feis-siin",
+        "gei-mii",
+        "greit-tii",
+        "krei-sii",
+        "lei-riin",
+        "leik-kii",
+        "leik-kiin",
+        "leis-sii",
+        "meit-sii",
+        "meit-siin",
+        "nei-tii",
+        "pei-lii",
+        "pei-liin",
+        "pleis-sii",
+        "rei-kiin",
+        "reit-tii",
+        "sei-nii",
+        "sei-niin",
+        "sheit-tii",
+        "skeit-tii",
+        "steis-sii",
+        "tei-lii"
     ],
     "ei-ii-a": [
         "nei-lik-ka",
         "vei-tik-ka"
     ],
+    "ei-ii-e": [
+        "sei-nil-le"
+    ],
     "ei-ii-i": [
         "lei-kis-ti",
         "lei-nik-ki",
         "mei-nin-ki",
+        "pei-lik-si",
         "sei-tik-ki"
+    ],
+    "ei-ii-ii": [
+        "lei-kit-tiin",
+        "mei-nin-kii"
     ],
     "ei-ii-o": [
         "hei-nik-ko",
@@ -11727,8 +17401,14 @@ export default {
         "seit-sik-ko"
     ],
     "ei-ii-ä": [
+        "ei-lis-tä",
+        "fei-mil-lä",
         "lei-rin-tä",
-        "lei-vis-kä"
+        "lei-vis-kä",
+        "nei-dil-lä",
+        "pei-lis-sä",
+        "pei-lis-tä",
+        "rei-til-tä"
     ],
     "ei-ii-äi": [
         "lei-kin-päin"
@@ -11746,19 +17426,36 @@ export default {
         "hei-nik-kö"
     ],
     "ei-o": [
+        "ei-no",
+        "hei-kot",
         "hei-mo",
+        "hei-tol",
         "heik-ko",
         "heit-to",
+        "kei-jo",
+        "kei-mo",
         "kei-no",
+        "kei-nol",
+        "kei-not",
         "kei-so",
+        "kei-ton",
         "kei-tos",
+        "kei-tot",
         "keit-to",
+        "lei-no",
         "lei-vo",
         "lei-vos",
+        "meil-lon",
         "nei-to",
+        "pei-ton",
         "peik-ko",
         "peip-po",
         "peit-to",
+        "rei-no",
+        "sei-so",
+        "sei-son",
+        "sei-sot",
+        "vei-jo",
         "veik-ko",
         "veis-to",
         "veis-tos"
@@ -11766,15 +17463,28 @@ export default {
     "ei-o-a": [
         "fei-jo-a",
         "hei-ko-ta",
+        "heik-ko-ja",
+        "heik-ko-na",
         "keit-to-la",
         "lei-jo-na",
+        "lei-jo-nat",
         "lei-po-a",
         "lei-po-ja",
+        "lei-po-jan",
+        "lei-po-mas",
         "pei-to-ta",
         "sei-so-a",
         "sei-so-ja",
         "sei-so-ma",
-        "sei-so-va"
+        "sei-so-mas",
+        "sei-so-va",
+        "vei-to-lan"
+    ],
+    "ei-o-aa": [
+        "lei-po-maan",
+        "lei-vo-taan",
+        "sei-so-maan",
+        "sei-so-vaa"
     ],
     "ei-o-e": [
         "lei-vo-nen",
@@ -11783,8 +17493,15 @@ export default {
         "sei-to-nen",
         "veik-ko-nen"
     ],
+    "ei-o-i": [
+        "lei-jo-nil"
+    ],
     "ei-o-o": [
-        "lei-po-mo"
+        "lei-po-mo",
+        "lei-po-mon"
+    ],
+    "ei-o-oo": [
+        "lei-po-moon"
     ],
     "ei-o-u": [
         "lei-po-mus",
@@ -11793,14 +17510,28 @@ export default {
     "ei-o-ää": [
         "kei-no-pää"
     ],
+    "ei-oi": [
+        "kei-koil",
+        "kei-noi",
+        "sei-sois",
+        "vei-koin"
+    ],
     "ei-oi-ui": [
         "heit-tois-tuin"
     ],
     "ei-oo": [
         "ei-oo",
-        "peit-toon"
+        "heik-koo",
+        "heit-too",
+        "keit-too",
+        "lei-poo",
+        "peit-toon",
+        "sei-soo"
     ],
     "ei-oo-a": [
+        "hei-kol-la",
+        "hei-kos-ta",
+        "kei-tol-la",
         "lei-von-ta",
         "pei-tos-sa",
         "pei-tos-ta",
@@ -11811,41 +17542,74 @@ export default {
         "hei-kot-taa",
         "sei-sot-taa"
     ],
+    "ei-oo-e": [
+        "hei-kol-le"
+    ],
     "ei-oo-i": [
+        "hei-kom-pi",
         "hei-kos-ti",
         "mei-oo-si",
         "pei-joo-ni",
         "sei-sok-ki"
     ],
+    "ei-oo-o": [
+        "sei-son-ko"
+    ],
+    "ei-oo-oo": [
+        "pei-tot-koon"
+    ],
     "ei-ou": [
         "hei-mous",
         "heik-kous"
+    ],
+    "ei-ou-a": [
+        "heik-kout-ta"
     ],
     "ei-oui-i": [
         "heit-touis-tin"
     ],
     "ei-u": [
+        "ei-ku",
         "kei-ju",
         "kei-nu",
+        "kei-nut",
+        "lei-jun",
         "lei-mu",
         "meik-ku",
         "rei-lu",
         "reis-su",
+        "reis-sut",
         "sei-nus",
         "vei-su"
     ],
     "ei-u-a": [
         "hei-lu-a",
+        "hei-lu-tat",
         "kei-nu-a",
+        "kei-nu-vat",
         "keik-ku-a",
         "lei-ju-a",
         "lei-ju-ma",
         "lei-mu-ta",
-        "leis-ku-a"
+        "leis-ku-a",
+        "reis-su-ja"
+    ],
+    "ei-u-aa": [
+        "hei-lu-maan",
+        "kei-nu-taan",
+        "lei-ju-taan"
+    ],
+    "ei-u-e": [
+        "kei-ju-jen"
+    ],
+    "ei-u-ee": [
+        "kei-nu-neen"
     ],
     "ei-u-i": [
         "hei-lu-ri",
+        "hei-lu-tin",
         "lei-pu-ri",
+        "lei-pu-rin",
         "leik-ku-ri"
     ],
     "ei-u-ie": [
@@ -11856,7 +17620,13 @@ export default {
         "kei-ku-tus",
         "kei-nu-tus"
     ],
+    "ei-ui": [
+        "lei-juin"
+    ],
     "ei-uu": [
+        "hei-luu",
+        "kei-nuu",
+        "lei-juu",
         "leik-kuu",
         "rei-luus",
         "vei-suu"
@@ -11892,18 +17662,57 @@ export default {
         "keit-ty-ä",
         "peit-ty-ä"
     ],
+    "ei-y-ää": [
+        "peit-ty-vään"
+    ],
     "ei-yy": [
         "neit-syys"
     ],
     "ei-ä": [
+        "ei-hän",
+        "ei-kä",
+        "ei-pä",
+        "ei-vät",
+        "hei-dät",
         "hei-nä",
+        "hei-tä",
+        "hei-tän",
+        "hei-tät",
         "kei-häs",
         "lei-pä",
+        "lei-väst",
+        "mei-dän",
+        "mei-dät",
+        "mei-jä",
+        "mei-jän",
+        "mei-jät",
         "mei-kä",
+        "mei-kän",
+        "mei-tä",
+        "mei-ä",
+        "mei-än",
+        "meil-lä",
+        "meil-tä",
+        "meis-tä",
+        "pei-tä",
         "rei-kä",
+        "rei-än",
         "sei-nä",
+        "sei-nän",
+        "sei-nät",
         "sei-väs",
-        "seis-tä"
+        "seis-tä",
+        "tei-dän",
+        "tei-dät",
+        "tei-jän",
+        "tei-jät",
+        "tei-tä",
+        "tei-än",
+        "teil-lä",
+        "teil-tä",
+        "teis-sä",
+        "teis-tä",
+        "vei-vät"
     ],
     "ei-ä-aa": [
         "hei-nä-maa"
@@ -11911,12 +17720,19 @@ export default {
     "ei-ä-e": [
         "sei-nä-ke"
     ],
+    "ei-ä-i": [
+        "heit-tä-sin"
+    ],
     "ei-ä-ie": [
         "hei-nä-mies"
     ],
     "ei-ä-uu": [
         "hei-nä-kuu",
+        "hei-nä-kuun",
         "lei-pä-puu"
+    ],
+    "ei-ä-y": [
+        "heit-tä-nyt"
     ],
     "ei-ä-yö": [
         "hei-nä-työ",
@@ -11925,28 +17741,56 @@ export default {
     "ei-ä-ä": [
         "heit-tä-jä",
         "keit-tä-jä",
+        "peit-tä-vät",
         "rei-ä-käs",
-        "sei-nä-mä"
+        "sei-nä-mä",
+        "veis-tä-mä"
+    ],
+    "ei-ä-äi": [
+        "meil-lä-päin"
+    ],
+    "ei-ä-ää": [
+        "peit-tä-mään"
     ],
     "ei-ä-ö": [
         "keit-tä-mö",
         "lei-vä-tön",
         "veis-tä-mö"
     ],
+    "ei-äi": [
+        "sei-näist"
+    ],
     "ei-äi-e": [
         "hei-näi-nen",
         "rei-käi-nen"
     ],
+    "ei-äi-i": [
+        "keit-täi-sin"
+    ],
     "ei-ää": [
+        "hei-nää",
         "heit-tää",
         "keit-tää",
+        "lei-pää",
         "meis-tää",
         "peit-tää",
+        "sei-nää",
+        "sei-nään",
+        "seis-tään",
+        "tein-kään",
         "veis-tää"
+    ],
+    "ei-ää-i": [
+        "mei-dät-kin"
     ],
     "ei-ää-y": [
         "kei-häs-tys",
         "sei-väs-tys"
+    ],
+    "ei-ää-ä": [
+        "rei-äl-lä",
+        "sei-näl-lä",
+        "sei-näs-tä"
     ],
     "ei-ää-äi": [
         "sei-näk-käin"
@@ -11957,11 +17801,24 @@ export default {
         "kei-tät-tää",
         "sei-väs-tää"
     ],
+    "ei-ö": [
+        "ei-kö",
+        "ei-kös",
+        "tein-kö"
+    ],
+    "ei-ö-ä": [
+        "ei-kö-hä"
+    ],
     "eii-i": [
         "teii-ni"
     ],
+    "eii-ää": [
+        "reiit-tää"
+    ],
     "eu-a": [
         "keu-la",
+        "keu-las",
+        "leu-at",
         "leu-ka",
         "leuh-ka",
         "neu-la",
@@ -11970,7 +17827,10 @@ export default {
         "reu-na",
         "reuh-ka",
         "seu-la",
+        "seu-las",
         "seu-ra",
+        "seu-ras",
+        "seu-rat",
         "teu-ras"
     ],
     "eu-a-a": [
@@ -11983,10 +17843,16 @@ export default {
         "seu-ra-ta",
         "teu-ha-ta"
     ],
+    "eu-a-aa": [
+        "seu-ra-naan"
+    ],
     "eu-a-e": [
         "neu-la-nen",
         "reu-ha-ke",
         "reu-na-ke"
+    ],
+    "eu-a-i": [
+        "seu-ra-sin"
     ],
     "eu-a-ie": [
         "keu-la-mies",
@@ -12000,18 +17866,41 @@ export default {
         "leu-ka-vuus",
         "seu-la-luu"
     ],
+    "eu-aa": [
+        "keu-laa",
+        "leu-kaa",
+        "leuh-kaa",
+        "meuh-kaa",
+        "neu-laan",
+        "reu-naa",
+        "seu-raa",
+        "seu-raan"
+    ],
     "eu-aa-a": [
+        "reu-nal-la",
         "seu-raa-ja",
         "seu-raa-va",
-        "seu-ran-ta"
+        "seu-raa-vaks",
+        "seu-raa-van",
+        "seu-raa-vat",
+        "seu-ran-ta",
+        "seu-ras-sa"
     ],
     "eu-aa-aa": [
         "leu-hah-taa",
+        "seu-raa-maan",
+        "seu-raa-vaa",
+        "seu-raa-vaan",
         "teu-ras-taa"
     ],
     "eu-aa-i": [
         "leuh-kas-ti",
-        "neut-raa-li"
+        "neu-man-ni",
+        "neut-raa-li",
+        "seu-raa-vis"
+    ],
+    "eu-aa-ii": [
+        "seu-raa-jii"
     ],
     "eu-aa-iu": [
         "neut-raa-lius"
@@ -12027,6 +17916,9 @@ export default {
     "eu-ai-a": [
         "leu-kail-la",
         "seu-rail-la"
+    ],
+    "eu-ai-i": [
+        "seu-rai-sin"
     ],
     "eu-ai-u": [
         "leu-kai-lu",
@@ -12056,6 +17948,8 @@ export default {
         "reu-nem-paa"
     ],
     "eu-i": [
+        "keu-lin",
+        "keu-lis",
         "neut-ri",
         "preus-si"
     ],
@@ -12080,11 +17974,15 @@ export default {
         "leu-to",
         "neu-los",
         "neu-vo",
+        "neu-von",
         "neu-vos",
-        "seu-los"
+        "neu-vost",
+        "seu-los",
+        "teu-vo"
     ],
     "eu-o-a": [
         "leu-do-ta",
+        "leu-ko-jas",
         "neu-lo-a",
         "neu-lo-ja",
         "neu-vo-a",
@@ -12094,7 +17992,11 @@ export default {
         "reu-to-a",
         "reuh-to-a",
         "seu-lo-a",
+        "teu-vo-a",
         "veuh-to-a"
+    ],
+    "eu-o-aa": [
+        "keuh-ko-jaan"
     ],
     "eu-o-e": [
         "euk-ko-nen"
@@ -12110,15 +18012,33 @@ export default {
     "eu-o-u": [
         "neu-lo-mus"
     ],
+    "eu-oi": [
+        "neu-voi"
+    ],
     "eu-oi-a": [
-        "leu-koi-ja"
+        "leu-koi-ja",
+        "reu-noil-la",
+        "reu-noil-ta"
+    ],
+    "eu-oi-aa": [
+        "reu-nois-taan"
+    ],
+    "eu-oi-i": [
+        "keuh-koi-hin"
+    ],
+    "eu-oo": [
+        "eu-roo",
+        "neu-voo"
     ],
     "eu-oo-a": [
         "neu-lon-ta",
         "neu-von-ta",
+        "neu-vos-ta",
         "seu-lon-ta"
     ],
     "eu-oo-aa": [
+        "eu-roop-paan",
+        "keuh-koo-maan",
         "leu-don-taa",
         "leu-hot-taa",
         "reu-hot-taa"
@@ -12143,6 +18063,7 @@ export default {
     "eu-u": [
         "leu-ku",
         "neuk-ku",
+        "peu-kut",
         "peuk-ku",
         "reu-nus",
         "seu-tu"
@@ -12179,6 +18100,9 @@ export default {
     "ey-i": [
         "gey-sir"
     ],
+    "ey-o": [
+        "bey-ond"
+    ],
     "ey-y-ä": [
         "ley-hy-ä"
     ],
@@ -12198,35 +18122,56 @@ export default {
         "ley-häh-tää"
     ],
     "i-a": [
+        "ji-ah",
+        "bi-atch",
+        "di-gas",
+        "fi-at",
         "fi-ba",
+        "fi-lat",
         "hi-das",
         "hi-ha",
         "hi-la",
         "hi-ma",
+        "hi-mas",
         "hi-pat",
         "i-han",
+        "i-mas",
+        "i-natt",
         "ki-na",
         "ki-sa",
         "ki-ta",
         "ki-va",
+        "ki-vas",
+        "li-am",
+        "li-an",
         "li-ha",
         "li-has",
         "li-ka",
+        "li-kat",
         "li-la",
         "li-ma",
         "li-pas",
+        "mi-ka",
+        "mi-kan",
         "ni-la",
         "ni-va",
         "pi-an",
         "pi-ha",
+        "pi-hal",
+        "pi-han",
         "pi-la",
+        "pi-lal",
+        "pi-las",
+        "pi-raq",
         "ri-al",
         "ri-kas",
         "ri-ma",
+        "ri-man",
         "ri-pa",
         "ri-sa",
         "ri-ta",
         "si-al",
+        "si-an",
         "si-ja",
         "si-ka",
         "si-lat",
@@ -12234,12 +18179,22 @@ export default {
         "si-sal",
         "si-sar",
         "si-tar",
+        "ti-kat",
         "ti-la",
         "ti-na",
+        "ti-pan",
         "tri-al",
+        "vi-ba",
         "vi-ha",
+        "vi-haks",
+        "vi-han",
         "vi-ka",
+        "vi-kal",
+        "vi-kan",
+        "vi-kat",
+        "vi-ran",
         "vi-sa",
+        "vi-san",
         "vi-ta"
     ],
     "i-a-a": [
@@ -12253,6 +18208,8 @@ export default {
         "i-ta-ra",
         "i-va-ta",
         "ki-ha-ra",
+        "ki-ha-ran",
+        "ki-ha-rat",
         "ki-ma-ra",
         "ki-na-ta",
         "ki-pa-ta",
@@ -12266,13 +18223,17 @@ export default {
         "li-ma-ta",
         "mi-ta-ta",
         "ni-ka-ma",
+        "pi-ka-na",
         "pi-la-ta",
         "pi-pa-na",
         "pi-sa-ma",
         "pi-sa-ra",
+        "pi-sa-ran",
         "ri-sa-kas",
         "si-ja-ta",
         "si-ka-la",
+        "si-ka-na",
+        "si-la-kan",
         "si-la-ta",
         "si-la-va",
         "si-pa-ta",
@@ -12287,42 +18248,80 @@ export default {
         "vi-pa-ta"
     ],
     "i-a-aa": [
+        "i-ha-haa",
+        "i-ha-naa",
+        "i-va-taan",
         "ki-ha-raan",
+        "ki-pa-taa",
+        "ki-ta-raa",
+        "ki-ta-raan",
+        "ki-ta-taan",
+        "li-ha-vaa",
         "pi-ha-maa",
+        "pi-sa-raa",
+        "pi-sa-raan",
+        "ti-la-taan",
+        "ti-na-taan",
+        "ti-ra-naa",
+        "vi-ha-taan",
         "vi-pa-jaa"
     ],
     "i-a-e": [
         "i-ma-ge",
         "ki-pa-le",
+        "li-ka-nen",
         "li-pa-re",
+        "pi-ka-nen",
+        "ti-ka-ten",
+        "vi-ha-seks",
         "vi-va-ce"
     ],
     "i-a-i": [
         "di-va-ri",
+        "hi-ma-ni",
+        "i-ha-nin",
+        "i-la-rilt",
         "mi-ta-li",
+        "mi-ta-lit",
         "pi-ka-ri",
         "pi-la-ri",
+        "pi-la-sin",
+        "pi-la-sit",
         "pi-pa-ri",
+        "pi-pa-rin",
         "pi-ta-li",
         "ri-pa-ri",
         "ri-ta-ri",
         "si-ka-ri",
+        "si-ka-rit",
         "si-sa-li",
         "si-va-ri",
+        "si-va-ris",
         "ti-ka-ri"
     ],
     "i-a-ie": [
         "vi-ha-mies"
     ],
+    "i-a-ii": [
+        "i-ha-niin",
+        "i-na-riin",
+        "li-ka-sii",
+        "li-ma-sii",
+        "pi-pa-rii"
+    ],
     "i-a-o": [
         "hi-ha-ton",
         "i-ma-go",
         "ki-ra-mo",
+        "mi-ta-ton",
         "pi-a-no",
         "si-ja-ton",
         "ti-la-ton",
         "vi-a-ton",
         "vi-ra-ton"
+    ],
+    "i-a-oi": [
+        "i-la-koin"
     ],
     "i-a-u": [
         "ki-ka-tus",
@@ -12344,31 +18343,76 @@ export default {
         "vi-ka-pää"
     ],
     "i-aa": [
-        "pi-kaa"
+        "di-gaan",
+        "fi-laa",
+        "hi-haa",
+        "hi-maa",
+        "hi-maan",
+        "hi-taat",
+        "ki-naa",
+        "ki-vaa",
+        "ki-vaan",
+        "li-haa",
+        "li-kaa",
+        "li-kaan",
+        "li-saa",
+        "pi-haa",
+        "pi-haan",
+        "pi-kaa",
+        "pi-laa",
+        "ri-maa",
+        "si-jaa",
+        "si-jaan",
+        "si-kaa",
+        "si-maa",
+        "ti-laa",
+        "ti-laan",
+        "ti-vaa",
+        "vi-haa",
+        "vi-haan",
+        "vi-haat",
+        "vi-kaa"
     ],
     "i-aa-a": [
+        "hi-das-ta",
+        "hi-mas-sa",
+        "hi-mas-ta",
         "hi-naa-ja",
+        "i-mat-ran",
+        "ki-lah-dan",
         "ki-mak-ka",
         "ki-pak-ka",
+        "ki-val-ta",
+        "li-hal-la",
         "li-kaa-ja",
         "li-mas-ka",
+        "li-pal-ta",
         "ni-vas-ka",
+        "pi-an-han",
+        "pi-hal-la",
         "pi-laa-ja",
         "pi-lal-la",
         "ri-pas-ka",
         "ri-vak-ka",
         "si-al-ma",
+        "si-as-ta",
+        "si-jas-ta",
         "si-lak-ka",
         "si-vak-ka",
         "ti-aa-ra",
         "ti-laa-ja",
+        "ti-las-sa",
+        "ti-nas-sa",
+        "vi-ag-ra",
         "vi-haa-ja",
         "vi-han-ta"
     ],
     "i-aa-aa": [
         "hi-das-taa",
+        "hi-mas-saan",
         "hi-sah-taa",
         "i-nah-taa",
+        "ki-das-taa",
         "ki-hah-taa",
         "ki-har-taa",
         "ki-kat-taa",
@@ -12379,6 +18423,7 @@ export default {
         "li-rah-taa",
         "li-vah-taa",
         "pi-hah-taa",
+        "pi-laa-maan",
         "pi-mah-taa",
         "pi-rah-taa",
         "ri-kas-taa",
@@ -12387,6 +18432,7 @@ export default {
         "si-mah-taa",
         "si-rah-taa",
         "si-val-taa",
+        "ti-laa-maan",
         "ti-pah-taa",
         "ti-rah-taa",
         "vi-lah-taa",
@@ -12398,13 +18444,23 @@ export default {
         "i-han-ne",
         "i-mar-re",
         "ki-mal-le",
+        "pi-hal-le",
         "pi-lal-le",
         "ri-kas-te",
         "ti-lan-ne",
+        "vi-hal-le",
         "vi-han-nes",
         "vi-vah-de"
     ],
+    "i-aa-ee": [
+        "ti-lan-teen",
+        "ti-lan-tees"
+    ],
+    "i-aa-ei": [
+        "ti-mant-tei"
+    ],
     "i-aa-i": [
+        "bi-atc-hist",
         "bi-lans-si",
         "bi-sar-ri",
         "di-aa-ri",
@@ -12413,6 +18469,8 @@ export default {
         "fi-nans-sit",
         "hi-das-tin",
         "hi-has-tin",
+        "hi-maa-ni",
+        "hi-taam-min",
         "hi-taas-ti",
         "i-maa-mi",
         "ki-har-rin",
@@ -12435,9 +18493,15 @@ export default {
         "si-taat-ti",
         "spi-raa-li",
         "spi-taa-li",
+        "ti-man-tit",
         "ti-mant-ti",
+        "ti-pah-dit",
+        "ti-pah-ti",
         "ti-taa-ni",
         "vi-taa-li"
+    ],
+    "i-aa-ii": [
+        "fi-naa-liin"
     ],
     "i-aa-iu": [
         "pi-kant-tius",
@@ -12455,9 +18519,11 @@ export default {
         "vi-ras-to"
     ],
     "i-aa-oi": [
+        "i-han-noit",
         "pi-ak-koin"
     ],
     "i-aa-u": [
+        "fli-pan-nu",
         "hi-das-tus",
         "hi-sah-dus",
         "i-has-tus",
@@ -12468,6 +18534,7 @@ export default {
         "ki-rah-dus",
         "ki-vah-dus",
         "li-rah-dus",
+        "mi-tat-tu",
         "pi-hah-dus",
         "pi-rah-dus",
         "ri-kas-tus",
@@ -12484,6 +18551,8 @@ export default {
     ],
     "i-aa-uu": [
         "hi-han-suu",
+        "i-has-tuu",
+        "ki-har-tuu",
         "ki-mak-kuus",
         "ki-pak-kuus",
         "ri-vak-kuus"
@@ -12516,6 +18585,8 @@ export default {
     "i-ai-e": [
         "li-hai-nen",
         "li-kai-nen",
+        "li-kai-sest",
+        "li-kai-set",
         "li-mai-nen",
         "pi-kai-nen",
         "ri-sai-nen",
@@ -12525,12 +18596,23 @@ export default {
         "vi-hai-nen",
         "vi-sai-nen"
     ],
+    "i-ai-ee": [
+        "hi-pai-see",
+        "li-kai-seen"
+    ],
     "i-ai-i": [
-        "si-jain-ti"
+        "hi-pai-sin",
+        "i-hai-lin",
+        "si-jain-ti",
+        "vi-hai-sin"
+    ],
+    "i-ai-ii": [
+        "vi-hai-siin"
     ],
     "i-ai-u": [
         "hi-pai-su",
         "i-hai-lu",
+        "i-hai-lut",
         "i-mai-su",
         "i-vai-lu",
         "ki-nai-lu",
@@ -12539,6 +18621,7 @@ export default {
         "li-pai-su",
         "pi-lai-lu",
         "si-kai-lu",
+        "si-kai-lut",
         "si-pai-su",
         "si-tai-su",
         "vi-sai-lu"
@@ -12584,6 +18667,9 @@ export default {
         "ti-raut-taa",
         "vi-laut-taa"
     ],
+    "i-au-i": [
+        "vi-laut-ti"
+    ],
     "i-au-u": [
         "vi-lau-tus"
     ],
@@ -12591,32 +18677,63 @@ export default {
         "ti-laus-työ"
     ],
     "i-e": [
+        "bi-kel",
+        "di-rekt",
+        "di-se",
         "hi-le",
         "hi-ven",
+        "i-met",
         "ji-ve",
         "ki-de",
+        "ki-ven",
         "ki-ves",
+        "ki-vet",
+        "li-ke",
+        "li-kes",
         "li-me",
         "li-ve",
+        "mi-te",
         "mi-ten",
+        "mi-tes",
         "ni-de",
+        "ni-ken",
+        "ni-men",
+        "ni-met",
         "ni-vel",
+        "ri-de",
         "ri-ke",
         "ri-pe",
         "si-de",
         "si-ten",
-        "vi-re"
+        "spri-te",
+        "vi-re",
+        "wi-fe",
+        "zi-zek"
     ],
     "i-e-a": [
-        "i-de-a"
+        "i-de-a",
+        "i-ke-an"
+    ],
+    "i-e-aa": [
+        "i-de-aa",
+        "i-ke-aan",
+        "ni-ve-aa"
     ],
     "i-e-e": [
         "i-ke-net",
-        "ni-me-ke"
+        "ni-me-ke",
+        "ni-ve-let"
     ],
     "i-e-i": [
         "li-pe-ri",
-        "li-pe-rit"
+        "li-pe-rit",
+        "ni-me-ni",
+        "ni-me-si",
+        "pfi-ze-rin",
+        "pi-te-li"
+    ],
+    "i-e-ii": [
+        "i-ve-rii"
     ],
     "i-e-o": [
         "ci-ce-ro",
@@ -12638,6 +18755,7 @@ export default {
     ],
     "i-e-ä": [
         "hi-ke-vä",
+        "hi-ke-ä",
         "i-me-lä",
         "i-me-ä",
         "ki-me-ä",
@@ -12647,18 +18765,25 @@ export default {
         "ki-re-ä",
         "ki-ve-rä",
         "ki-ve-tä",
+        "li-ke-jä",
         "li-pe-vä",
         "li-pe-ä",
         "li-ve-tä",
         "ni-me-käs",
         "ni-me-tä",
+        "ni-me-ä",
+        "ni-me-äs",
         "pi-de-tä",
         "pi-me-tä",
         "pi-me-ä",
+        "pi-me-än",
+        "pi-me-äs",
+        "pi-me-ät",
         "ri-pe-ä",
         "si-ke-ä",
         "si-le-tä",
         "si-le-ä",
+        "si-le-än",
         "si-se-tä",
         "si-ve-ä",
         "ti-he-tä",
@@ -12666,6 +18791,14 @@ export default {
         "vi-re-ä"
     ],
     "i-e-ää": [
+        "ki-pe-ää",
+        "ki-pe-ään",
+        "li-pe-ää",
+        "ni-me-tään",
+        "ni-me-ään",
+        "pi-de-tään",
+        "pi-me-ää",
+        "pi-me-ään",
         "ti-he-ään"
     ],
     "i-e-ö": [
@@ -12674,9 +18807,28 @@ export default {
     "i-ee": [
         "bi-dee",
         "bi-leet",
+        "di-see",
         "fi-lee",
+        "hi-kee",
+        "i-mee",
+        "i-nee",
+        "i-neen",
+        "ki-pee",
+        "ki-peet",
+        "ki-veen",
         "kli-see",
-        "pi-kee"
+        "kli-seet",
+        "li-pee",
+        "li-peen",
+        "ni-mee",
+        "ni-meen",
+        "pi-kee",
+        "pi-mee",
+        "pi-meeks",
+        "pi-meel",
+        "pi-meen",
+        "pi-mees",
+        "pi-meet"
     ],
     "i-ee-a": [
         "di-lem-ma",
@@ -12690,14 +18842,22 @@ export default {
     ],
     "i-ee-e": [
         "i-mel-le",
+        "i-tel-le",
+        "ki-vek-set",
         "li-kel-le",
         "ni-lel-le"
+    ],
+    "i-ee-ee": [
+        "i-tel-lee",
+        "ni-mek-seen"
     ],
     "i-ee-i": [
         "bri-ket-ti",
         "fi-nes-si",
         "i-dem-pi",
         "i-nert-ti",
+        "i-tek-ki",
+        "ki-vem-pi",
         "kri-ket-ti",
         "kri-tee-ri",
         "li-kem-min",
@@ -12705,8 +18865,10 @@ export default {
         "li-met-ti",
         "li-sens-si",
         "mi-ten-kin",
+        "ni-mek-si",
         "pi-kem-min",
         "pi-let-ti",
+        "pi-meek-si",
         "pi-nee-ni",
         "pi-pet-ti",
         "si-net-ti",
@@ -12717,18 +18879,23 @@ export default {
         "spi-net-ti",
         "sti-let-ti",
         "sti-pen-di",
+        "sti-pen-din",
         "ti-ket-ti"
     ],
     "i-ee-ii": [
-        "li-pet-tiin"
+        "li-pet-tiin",
+        "pi-dem-pii",
+        "pi-det-tiin"
     ],
     "i-ee-o": [
         "pi-men-to"
     ],
     "i-ee-y": [
         "i-mel-lys",
+        "i-met-ty",
         "ki-her-rys",
         "li-ver-rys",
+        "pi-del-ly",
         "pi-den-nys",
         "pi-men-nys",
         "pi-per-rys",
@@ -12746,15 +18913,23 @@ export default {
         "ni-mek-kyys"
     ],
     "i-ee-ä": [
+        "di-ses-sä",
         "hi-vel-lä",
         "i-dem-mäs",
+        "i-tel-täs",
         "li-kel-lä",
         "li-kel-tä",
         "li-kem-mäs",
         "mi-tel-lä",
+        "mi-ten-hä",
         "mi-ten-kä",
         "ni-lel-lä",
+        "ni-mel-tä",
+        "ni-men-sä",
         "pi-del-lä",
+        "pi-mee-nä",
+        "pi-mee-tä",
+        "pi-mees-sä",
         "si-ker-mä",
         "si-nel-mä",
         "si-ner-vä",
@@ -12771,6 +18946,7 @@ export default {
         "i-dem-pää",
         "i-mel-tää",
         "i-met-tää",
+        "i-tes-tään",
         "ki-her-tää",
         "ki-per-tää",
         "ki-ver-tää",
@@ -12780,15 +18956,19 @@ export default {
         "li-ken-tää",
         "li-ver-tää",
         "li-vet-tää",
+        "mi-ten-kää",
         "mi-ten-kään",
         "ni-vel-tää",
+        "pi-dem-pään",
         "pi-den-tää",
         "pi-men-tää",
         "pi-per-tää",
+        "pi-tem-pään",
         "pi-ten-tää",
         "si-ner-tää",
         "si-sem-pää",
         "si-sen-tää",
+        "ti-heem-pää",
         "ti-hen-tää",
         "ti-her-tää",
         "vi-hel-tää",
@@ -12800,17 +18980,31 @@ export default {
         "ki-tee-tön",
         "si-vee-tön"
     ],
+    "i-ei": [
+        "bi-leis",
+        "hi-teist",
+        "kli-seist",
+        "pi-meit",
+        "ski-dei"
+    ],
     "i-ei-e": [
         "ki-tei-nen",
+        "kli-sei-den",
         "li-kei-nen",
         "li-pei-nen",
         "vi-reil-le"
+    ],
+    "i-ei-ii": [
+        "bi-lei-siin",
+        "pi-mei-sii"
     ],
     "i-ei-yy": [
         "ki-tei-syys",
         "li-kei-syys"
     ],
     "i-ei-ä": [
+        "pi-mei-nä",
+        "si-tei-tä",
         "vi-reil-lä"
     ],
     "i-ei-äi": [
@@ -12831,7 +19025,23 @@ export default {
         "si-leys",
         "si-veys",
         "ti-heys",
-        "vi-reys"
+        "vi-reys",
+        "wi-fey"
+    ],
+    "i-ey-e": [
+        "pi-mey-del",
+        "pi-mey-den",
+        "pi-mey-des",
+        "pi-mey-dest"
+    ],
+    "i-ey-ee": [
+        "pi-mey-teen"
+    ],
+    "i-ey-i": [
+        "pi-meys-kin"
+    ],
+    "i-ey-ie": [
+        "pi-meyk-sien"
     ],
     "i-ey-y": [
         "i-mey-tys",
@@ -12859,9 +19069,18 @@ export default {
         "gi-ni",
         "hi-fi",
         "hi-ki",
+        "hi-kist",
+        "hi-pin",
+        "hi-tin",
+        "hi-tit",
         "i-cing",
         "i-dis",
+        "i-kin",
+        "i-min",
+        "i-sin",
         "ki-li",
+        "ki-mil",
+        "ki-min",
         "ki-ri",
         "ki-vi",
         "ki-wi",
@@ -12870,28 +19089,47 @@ export default {
         "li-kin",
         "li-ri",
         "li-ti",
+        "mi-cis",
         "mi-di",
+        "mi-hi",
         "mi-hin",
         "mi-kin",
         "mi-ni",
+        "mi-ri",
         "ni-mi",
         "pi-din",
         "pi-hi",
         "pi-ki",
         "pi-pi",
+        "pi-ris",
         "pi-si",
+        "pi-ti",
         "pri-ki",
         "ri-ki",
         "ri-vi",
+        "ri-vit",
         "sci-fi",
+        "si-kin",
         "si-ni",
         "si-sin",
+        "ski-di",
+        "ski-dist",
+        "ski-dit",
         "ski-ni",
         "sti-di",
+        "ti-ki",
+        "ti-kis",
         "ti-li",
+        "ti-lil",
+        "ti-list",
+        "ti-lit",
         "vi-hi",
         "vi-ri",
-        "vi-ti"
+        "vi-ti",
+        "xzi-bit"
+    ],
+    "i-i-a": [
+        "di-di-dam"
     ],
     "i-i-ai": [
         "li-ki-main"
@@ -12899,27 +19137,44 @@ export default {
     "i-i-e": [
         "hi-ki-nen",
         "i-ki-nen",
+        "i-ki-sen",
         "ki-vi-nen",
         "ni-mi-ke",
         "ni-mi-nen",
         "pi-di-ke",
         "pi-ki-nen",
         "si-ni-nen",
+        "si-ni-seks",
+        "si-ni-sen",
+        "si-ni-set",
+        "vi-ki-set",
         "vi-ri-ke"
+    ],
+    "i-i-ee": [
+        "ki-ti-see",
+        "ni-ti-see",
+        "vi-ki-see"
     ],
     "i-i-i": [
         "bi-ki-nit",
         "fri-gi-di",
+        "ki-ki-di",
         "li-mi-tin",
         "li-pi-di",
         "mi-ni-mi",
         "si-ki-si",
+        "si-li-tin",
+        "spi-ri-tist",
+        "vi-li-si",
         "vi-ri-tin"
     ],
     "i-i-ie": [
         "ni-mi-mies",
         "pi-ki-tie",
         "ri-vi-mies"
+    ],
+    "i-i-ii": [
+        "pi-ti-kii"
     ],
     "i-i-iu": [
         "i-ri-dium"
@@ -12930,8 +19185,15 @@ export default {
     "i-i-o": [
         "fi-ni-to",
         "li-bi-do",
+        "li-bi-dot",
         "mi-ni-golf",
         "vi-si-o"
+    ],
+    "i-i-oi": [
+        "kri-ti-soi"
+    ],
+    "i-i-oo": [
+        "vi-si-oo"
     ],
     "i-i-u": [
         "spi-ri-tus"
@@ -12968,8 +19230,12 @@ export default {
         "ki-hi-nä",
         "ki-li-nä",
         "ki-pi-nä",
+        "ki-pi-näl",
+        "ki-pi-nän",
         "ki-ri-ä",
         "ki-ti-nä",
+        "ki-vi-tät",
+        "ki-vi-ä",
         "li-ri-nä",
         "li-ri-ä",
         "li-ti-nä",
@@ -12984,6 +19250,7 @@ export default {
         "ri-ti-nä",
         "si-hi-nä",
         "si-li-tä",
+        "si-li-äks",
         "si-pi-nä",
         "si-ri-nä",
         "vi-ki-nä",
@@ -12996,8 +19263,11 @@ export default {
         "si-ki-äin"
     ],
     "i-i-ää": [
+        "i-ni-nää",
+        "ki-pi-nää",
         "li-ki-kään",
-        "si-ki-ää"
+        "si-ki-ää",
+        "vi-pi-nää"
     ],
     "i-i-ö": [
         "i-ti-ö",
@@ -13006,8 +19276,28 @@ export default {
         "si-ki-ö",
         "vi-ri-ö"
     ],
+    "i-ie": [
+        "ri-vien"
+    ],
     "i-ie-a": [
         "di-xie-land"
+    ],
+    "i-ie-i": [
+        "i-sie-ni"
+    ],
+    "i-ii": [
+        "bi-nii",
+        "i-sii",
+        "ji-nii",
+        "ki-vii",
+        "mi-dii",
+        "ni-mii",
+        "ni-miin",
+        "pi-rii",
+        "ri-vii",
+        "ri-viin",
+        "ski-dii",
+        "ti-lii"
     ],
     "i-ii-a": [
         "i-tik-ka",
@@ -13015,13 +19305,20 @@ export default {
         "mi-miik-ka"
     ],
     "i-ii-e": [
+        "ki-vis-ten",
         "pi-ris-te",
+        "si-nis-ten",
+        "ti-lil-le",
         "vi-hil-le"
+    ],
+    "i-ii-ee": [
+        "lmpi-mik-seen"
     ],
     "i-ii-i": [
         "ki-nii-ni",
         "ki-ris-tin",
         "ki-tii-ni",
+        "kri-tii-kit",
         "kri-tiik-ki",
         "li-miit-ti",
         "mi-hin-kin",
@@ -13030,19 +19327,31 @@ export default {
         "pi-kim-min",
         "ri-sii-ni",
         "si-vii-li",
+        "si-vii-lis",
+        "si-vii-lit",
         "sti-lis-ti",
         "tri-kii-ni",
         "vi-rii-li",
+        "vi-rit-ti",
         "vi-sii-ri",
         "vi-siit-ti"
     ],
     "i-ii-ie": [
         "ni-mis-mies"
     ],
+    "i-ii-ii": [
+        "i-dik-sii",
+        "kri-tiik-kii",
+        "mi-dik-sii",
+        "si-vii-liin"
+    ],
     "i-ii-o": [
         "ki-vik-ko",
         "mi-nic-ross",
         "ni-mik-ko"
+    ],
+    "i-ii-oo": [
+        "ki-vik-koon"
     ],
     "i-ii-u": [
         "hi-bis-kus"
@@ -13060,6 +19369,7 @@ export default {
         "ti-ris-tys"
     ],
     "i-ii-ä": [
+        "gi-gil-lä",
         "i-mik-kä",
         "i-nis-tä",
         "ki-his-tä",
@@ -13069,17 +19379,24 @@ export default {
         "li-kin-nä",
         "li-ris-tä",
         "li-tis-tä",
+        "mi-dis-tä",
         "mi-hin-kä",
+        "mi-kis-sä",
+        "ni-mil-lä",
         "ni-tis-tä",
         "pi-his-tä",
         "pi-ris-tä",
+        "pi-sim-mät",
         "ri-pis-tä",
         "ri-tis-tä",
         "si-his-tä",
+        "si-nis-tä",
+        "si-pis-sä",
         "si-pis-tä",
         "si-ris-tä",
         "si-sim-mäs",
         "si-sin-nä",
+        "ti-lil-lä",
         "ti-ris-tä",
         "vi-hil-lä",
         "vi-hil-tä",
@@ -13110,6 +19427,7 @@ export default {
         "li-rit-tää",
         "li-tis-tää",
         "li-vis-tää",
+        "mi-hin-kää",
         "mi-hin-kään",
         "ni-mit-tää",
         "ni-pis-tää",
@@ -13124,6 +19442,7 @@ export default {
         "si-ris-tää",
         "si-rit-tää",
         "si-sim-pää",
+        "si-sim-pään",
         "si-vis-tää",
         "ti-kit-tää",
         "ti-lit-tää",
@@ -13147,8 +19466,16 @@ export default {
     ],
     "i-o": [
         "hi-mo",
+        "hi-ton",
+        "i-hon",
+        "i-loks",
+        "i-lon",
+        "i-soh",
+        "i-son",
+        "i-sot",
         "ki-ho",
         "ki-lo",
+        "ki-lot",
         "ki-mo",
         "ki-no",
         "ki-nos",
@@ -13156,16 +19483,24 @@ export default {
         "li-no",
         "li-ro",
         "li-to",
+        "mi-kost",
         "ni-dos",
         "pi-dot",
         "pi-no",
         "pi-po",
+        "pi-pon",
         "pi-to",
         "pi-vo",
         "ri-kos",
+        "ri-kot",
         "ri-vo",
+        "si-do",
         "si-dos",
+        "si-mo",
+        "si-mon",
         "si-ro",
+        "ti-mo",
+        "ti-mon",
         "tri-o",
         "vi-no",
         "vi-ro"
@@ -13177,9 +19512,15 @@ export default {
         "hi-o-ta",
         "hi-po-a",
         "i-ho-kas",
+        "i-lo-a",
+        "i-so-ja",
+        "i-so-na",
         "i-so-ta",
         "ki-ho-ta",
+        "ki-lo-ja",
+        "ki-ro-an",
         "ki-ro-ta",
+        "ki-vo-ja",
         "li-ho-a",
         "li-ho-ta",
         "li-o-ta",
@@ -13190,22 +19531,39 @@ export default {
         "ni-to-ja",
         "ni-vo-a",
         "pi-no-ta",
+        "pi-po-a",
+        "ri-ko-ta",
         "ri-so-a",
+        "ri-vo-ja",
+        "si-ko-ja",
+        "si-mo-na",
         "si-ro-ta",
         "si-to-a",
         "si-to-ja",
+        "vi-ko-ja",
         "vi-no-kas",
         "vi-o-la",
         "vi-ro-ta",
         "vi-to-a"
     ],
+    "i-o-aa": [
+        "hi-mo-aa",
+        "hi-o-taan",
+        "ri-ko-taan"
+    ],
     "i-o-e": [
         "hi-o-ke",
+        "hi-po-en",
+        "i-so-jen",
+        "pi-to-jen",
         "si-lo-te",
         "si-ro-te",
+        "ti-lo-jen",
+        "vi-ko-jen",
         "vi-to-nen"
     ],
     "i-o-ei": [
+        "i-do-leit",
         "ti-mo-tei"
     ],
     "i-o-i": [
@@ -13213,16 +19571,20 @@ export default {
         "di-o-di",
         "di-po-li",
         "i-do-li",
+        "i-ho-ni",
         "i-ko-ni",
         "i-o-ni",
+        "ki-ro-sin",
         "kli-to-ris",
         "li-no-li",
         "ni-o-bi",
+        "pi-lo-tin",
         "pi-o-ni",
         "si-fo-ni",
         "si-ro-tin",
         "sli-vo-vits",
         "ti-vo-li",
+        "ti-vo-lin",
         "tri-o-li"
     ],
     "i-o-iu": [
@@ -13247,16 +19609,27 @@ export default {
     "i-o-uu": [
         "si-to-vuus"
     ],
+    "i-oi": [
+        "hi-hoi",
+        "i-soin",
+        "ki-voi",
+        "ri-koit"
+    ],
     "i-oi-a": [
         "hi-koil-la",
         "hi-moi-ta",
         "i-loi-ta",
+        "i-soil-la",
+        "i-soim-mat",
+        "i-sois-ta",
         "ki-roil-la",
         "pi-loil-la",
+        "si-joi-tan",
         "si-joil-la",
         "si-joil-ta",
         "vi-hois-sa",
-        "vi-noil-la"
+        "vi-noil-la",
+        "vi-soil-la"
     ],
     "i-oi-aa": [
         "i-lois-saan",
@@ -13277,9 +19650,15 @@ export default {
         "vi-noit-tain"
     ],
     "i-oi-e": [
+        "hi-koi-le",
+        "hi-koi-len",
+        "hi-koil-len",
+        "hi-moi-ten",
+        "hi-moit-sen",
         "i-loi-nen",
         "i-soi-nen",
         "ki-loi-nen",
+        "ki-roil-len",
         "pi-loil-le",
         "si-joil-le",
         "si-loi-nen",
@@ -13289,10 +19668,13 @@ export default {
         "si-joil-leen"
     ],
     "i-oi-i": [
-        "li-poi-di"
+        "ki-roi-lin",
+        "li-poi-di",
+        "si-koi-hin"
     ],
     "i-oi-u": [
         "hi-koi-lu",
+        "hi-koil-lu",
         "ki-roi-lu",
         "mi-toi-tus",
         "ri-moi-tus",
@@ -13308,24 +19690,41 @@ export default {
         "i-soi-sä"
     ],
     "i-oo": [
+        "hi-oo",
+        "i-loo",
+        "i-loon",
+        "i-soo",
+        "i-soon",
+        "ki-loo",
+        "ki-roo",
         "li-koon",
+        "li-moon",
+        "ri-oo",
         "tri-koo",
+        "trtrttri-loo",
         "vi-noon"
     ],
     "i-oo-a": [
         "hi-on-ta",
+        "i-hol-la",
+        "i-sol-la",
+        "i-som-maks",
+        "i-sos-sa",
         "li-os-sa",
         "li-os-ta",
+        "mi-kol-ta",
         "mi-moo-sa",
         "ni-don-ta",
         "si-don-ta",
         "si-ron-ta",
-        "vi-nos-sa"
+        "vi-nos-sa",
+        "vi-ros-ta"
     ],
     "i-oo-aa": [
         "hi-mot-taa",
         "hi-os-taa",
         "hi-ot-taa",
+        "i-som-paa",
         "i-son-taa",
         "ki-lot-taa",
         "ki-nos-taa",
@@ -13342,11 +19741,21 @@ export default {
         "vi-rot-taa"
     ],
     "i-oo-ai": [
+        "i-hol-lain",
         "vi-not-tain"
+    ],
+    "i-oo-e": [
+        "hi-mol-le",
+        "ti-mol-le"
+    ],
+    "i-oo-ee": [
+        "ki-nok-seen"
     ],
     "i-oo-i": [
         "bri-os-si",
         "hi-tos-ti",
+        "i-lok-si",
+        "i-som-pi",
         "i-sos-ti",
         "ki-hok-ki",
         "ki-os-ki",
@@ -13356,6 +19765,8 @@ export default {
         "vi-nos-ti"
     ],
     "i-oo-ii": [
+        "ki-rot-tiin",
+        "ri-kot-tiin",
         "si-dok-siin"
     ],
     "i-oo-o": [
@@ -13364,6 +19775,7 @@ export default {
     ],
     "i-oo-u": [
         "hi-os-tus",
+        "hi-ot-tu",
         "ki-rot-tu"
     ],
     "i-oo-uu": [
@@ -13382,50 +19794,74 @@ export default {
     "i-ou-aa": [
         "vi-nout-taa"
     ],
+    "i-ou-e": [
+        "ki-rouk-sen"
+    ],
     "i-ou-u": [
         "si-tou-mus"
     ],
     "i-u": [
         "hi-lut",
         "hi-tu",
+        "i-mus",
         "ki-hu",
         "ki-lu",
         "ki-pu",
         "ki-su",
+        "ki-vun",
+        "ki-vust",
         "li-mu",
         "li-ru",
         "li-tu",
+        "mi-nun",
+        "mi-nut",
         "mi-su",
         "ni-su",
         "pi-mu",
         "pi-ru",
+        "pi-run",
         "pi-su",
         "ri-su",
+        "si-nun",
+        "si-nust",
         "si-nut",
         "si-ru",
         "si-su",
         "si-sus",
         "si-vu",
+        "si-vul",
+        "si-vult",
         "ti-hu",
         "ti-lus",
         "ti-pu",
+        "ti-put",
         "ti-su",
         "vi-lu",
         "vi-pu",
         "vi-rus",
-        "vi-su"
+        "vi-su",
+        "vi-tu",
+        "vi-tus",
+        "vi-tut"
     ],
     "i-u-a": [
+        "fi-su-ja",
+        "hi-lu-ja",
         "ki-nu-a",
         "ki-nu-ta",
+        "ki-pu-a",
         "ki-pu-na",
         "ki-tu-a",
         "ki-vu-ta",
         "li-pu-a",
         "li-ru-a",
+        "mi-nu-a",
         "si-ku-na",
+        "si-nu-a",
+        "si-ru-ja",
         "si-su-kas",
         "si-vu-ta",
+        "ti-pu-tan",
         "vi-ru-a",
         "vi-vu-ta"
     ],
@@ -13447,6 +19883,8 @@ export default {
         "fi-lu-ri",
         "i-mu-ri",
         "ki-mu-li",
+        "ki-nu-sit",
+        "ki-pu-si",
         "ni-tu-ri",
         "ri-pu-li",
         "si-ku-ri",
@@ -13459,8 +19897,14 @@ export default {
     "i-u-ie": [
         "si-vu-tie"
     ],
+    "i-u-ii": [
+        "ni-vu-siin"
+    ],
     "i-u-o": [
         "ki-vu-ton"
+    ],
+    "i-u-oi": [
+        "i-mu-roin"
     ],
     "i-u-u": [
         "hi-vu-tus",
@@ -13482,7 +19926,11 @@ export default {
         "si-vu-työ",
         "ti-hu-työ"
     ],
+    "i-ui": [
+        "li-pui"
+    ],
     "i-ui-a": [
+        "i-kuis-ta",
         "ki-puil-la",
         "pi-ruil-la"
     ],
@@ -13495,9 +19943,13 @@ export default {
     ],
     "i-ui-e": [
         "i-kui-nen",
+        "i-kui-sen",
         "pi-tui-nen",
         "si-vuit-se",
         "vi-lui-nen"
+    ],
+    "i-ui-ee": [
+        "i-kui-seen"
     ],
     "i-ui-i": [
         "i-nuit-ti",
@@ -13519,13 +19971,30 @@ export default {
         "si-vuo-vi"
     ],
     "i-uu": [
+        "fi-suu",
+        "li-puu",
+        "mi-nuun",
         "mi-nuus",
+        "pi-muu",
         "pi-tuus",
-        "si-vuun"
+        "pi-tuut",
+        "si-duu",
+        "si-nuun",
+        "si-vuun",
+        "ti-puu"
     ],
     "i-uu-a": [
+        "ki-tuu-tan",
+        "ki-vus-tas",
         "li-tuk-ka",
+        "mi-nul-la",
+        "mi-nul-ta",
+        "mi-nus-ta",
         "ni-puk-ka",
+        "si-nul-la",
+        "si-nus-sa",
+        "si-nus-ta",
+        "si-nut-ta",
         "si-sus-ta",
         "si-vul-la",
         "si-vul-ta",
@@ -13562,8 +20031,12 @@ export default {
     ],
     "i-uu-e": [
         "ki-duk-set",
+        "mi-nul-le",
+        "ni-pul-le",
+        "si-nul-le",
         "si-sus-te",
-        "si-vul-le"
+        "si-vul-le",
+        "ti-put-te"
     ],
     "i-uu-ee": [
         "pri-kul-leen"
@@ -13575,6 +20048,8 @@ export default {
         "ki-nus-ki",
         "ki-rur-gi",
         "li-tur-gi",
+        "mi-nut-kin",
+        "mi-nuu-tin",
         "mi-nuut-ti",
         "pi-rus-ti",
         "ri-pus-tin",
@@ -13582,10 +20057,15 @@ export default {
         "si-nuk-si",
         "tri-buu-ni",
         "tsi-nus-ki",
-        "vi-sus-ti"
+        "vi-sus-ti",
+        "vi-tus-ti",
+        "vi-tut-ti"
     ],
     "i-uu-ie": [
         "ti-lus-tie"
+    ],
+    "i-uu-ii": [
+        "mi-nuut-tii"
     ],
     "i-uu-o": [
         "ri-suk-ko",
@@ -13599,6 +20079,9 @@ export default {
     "i-uu-uu": [
         "si-suk-kuus"
     ],
+    "i-uu-äi": [
+        "mi-nuun-päin"
+    ],
     "i-y": [
         "ci-ty"
     ],
@@ -13606,7 +20089,9 @@ export default {
         "pi-nyin"
     ],
     "i-yy": [
-        "i-syys"
+        "ci-tyy",
+        "i-syys",
+        "si-lyy"
     ],
     "i-yy-i": [
         "fri-syy-ri",
@@ -13614,13 +20099,32 @@ export default {
         "vi-nyy-li"
     ],
     "i-ä": [
+        "mi-tä",
+        "mi-tä",
+        "i-dän",
+        "i-däs",
+        "i-sän",
+        "i-säs",
+        "i-sät",
         "li-sä",
+        "li-säks",
         "mi-kä",
+        "mi-käs",
         "mi-nä",
         "mi-tä",
+        "mi-täs",
         "ni-sä",
+        "pi-dä",
+        "pi-dän",
+        "pi-dät",
+        "pi-täs",
         "si-nä",
-        "si-tä"
+        "si-säl",
+        "si-sält",
+        "si-tä",
+        "ti-ät",
+        "vi-äl",
+        "mi-tä"
     ],
     "i-ä-aa": [
         "i-tä-maat",
@@ -13632,19 +20136,29 @@ export default {
         "pi-tä-en"
     ],
     "i-ä-i": [
+        "i-sä-ni",
+        "i-sä-si",
         "i-ä-ti",
         "mi-kä-kin",
         "mi-kä-li",
+        "mi-nä-kin",
+        "mi-nä-ni",
         "pi-dä-tin",
-        "si-kä-li"
+        "pi-tä-sit",
+        "si-kä-li",
+        "si-nä-kin",
+        "si-tä-kin"
     ],
     "i-ä-ie": [
-        "i-kä-mies"
+        "i-kä-mies",
+        "mi-kä-lie"
     ],
     "i-ä-y": [
         "i-dä-tys",
         "pi-dä-tys",
-        "pi-tä-mys"
+        "pi-tä-mys",
+        "pi-tä-ny",
+        "pi-tä-nyt"
     ],
     "i-ä-yy": [
         "i-kä-vyys",
@@ -13661,21 +20175,53 @@ export default {
         "i-ä-käs",
         "i-ä-tä",
         "li-sä-tä",
+        "mi-nä-hän",
+        "mi-tä-hän",
+        "mi-tä-pä",
+        "mi-tä-sä",
         "ni-sä-käs",
+        "pi-dä-hän",
+        "pi-dä-tä",
+        "pi-dä-tän",
         "pi-tä-jä",
+        "pi-tä-jän",
         "pi-tä-mä",
         "pi-tä-vä"
+    ],
+    "i-ä-ää": [
+        "i-kä-vää",
+        "i-kä-vään",
+        "mi-nä-kään",
+        "pi-tä-kää",
+        "pi-tä-mään",
+        "si-nä-kään"
     ],
     "i-ä-ö": [
         "i-sä-tön",
         "i-ä-tön",
-        "mi-tä-tön"
+        "mi-tä-tön",
+        "si-tä-kö"
+    ],
+    "i-ä-öi": [
+        "i-kä-vöin"
+    ],
+    "i-äi": [
+        "pi-täis"
     ],
     "i-äi-e": [
         "i-käi-nen",
         "i-täi-nen",
         "i-äi-nen",
-        "si-säi-nen"
+        "i-äi-sen",
+        "si-säi-nen",
+        "si-säi-sest"
+    ],
+    "i-äi-ee": [
+        "li-säi-lee"
+    ],
+    "i-äi-i": [
+        "li-säi-sin",
+        "pi-täi-si"
     ],
     "i-äi-ui": [
         "li-säis-tuin"
@@ -13692,22 +20238,38 @@ export default {
     "i-äi-ää": [
         "si-säis-tää"
     ],
+    "i-äi-ö": [
+        "pi-täis-kö"
+    ],
     "i-äy": [
         "i-käys",
         "li-säys"
     ],
     "i-ää": [
+        "i-kää",
         "i-kään",
+        "i-sää",
         "i-tää",
+        "i-tään",
         "li-sää",
+        "li-sään",
+        "mi-kää",
         "mi-kään",
+        "mi-nään",
+        "mi-tää",
+        "mi-tääh",
+        "mi-tään",
         "pi-tää",
+        "pi-tääks",
+        "pi-tään",
+        "si-sää",
         "si-sään"
     ],
     "i-ää-aa": [
         "i-sän-maa"
     ],
     "i-ää-e": [
+        "pi-dät-te",
         "si-säl-le"
     ],
     "i-ää-ee": [
@@ -13719,41 +20281,67 @@ export default {
         "ki-vää-ri",
         "li-säk-si",
         "mi-sää-ri",
+        "pi-tää-ki",
+        "pi-tää-kin",
         "pri-mää-ri"
+    ],
+    "i-ää-ie": [
+        "bi-nää-rien"
     ],
     "i-ää-y": [
         "si-säl-lys"
     ],
     "i-ää-yy": [
         "i-sän-nyys",
-        "i-äk-kyys"
+        "i-äk-kyys",
+        "li-sään-tyy"
     ],
     "i-ää-ä": [
+        "i-kän-sä",
+        "i-sän-sä",
         "i-sän-tä",
+        "pi-tää-hän",
         "si-nän-sä",
         "si-säl-lä",
+        "si-säl-läs",
         "si-säl-tä",
         "si-säs-sä",
-        "si-säs-tä"
+        "si-säs-tä",
+        "si-sään-sä",
+        "ti-ät-sä"
     ],
     "i-ää-äi": [
         "si-säk-käin",
+        "si-säl-läin",
         "si-sät-täin",
         "si-sään-päin"
     ],
     "i-ää-ää": [
         "i-dät-tää",
+        "i-säl-tään",
+        "i-sän-tää",
         "pi-dät-tää",
         "si-näl-lään",
         "si-näl-tään",
-        "si-säl-tää"
+        "si-nän-sää",
+        "si-säl-lään",
+        "si-säl-tää",
+        "ti-äk-sää"
     ],
     "i-ää-ö": [
+        "pi-täs-kö",
         "si-säk-kö",
+        "si-säl-lön",
         "si-säl-tö"
+    ],
+    "i-ää-öö": [
+        "si-säl-töö"
     ],
     "i-öö-i": [
         "li-köö-ri"
+    ],
+    "ie-": [
+        "kierr-tt"
     ],
     "ie-a": [
         "fies-ta",
@@ -13772,6 +20360,9 @@ export default {
         "rie-tas",
         "ries-ka",
         "sie-ra",
+        "siel-ta",
+        "sier-ra",
+        "sier-ran",
         "sies-ta",
         "tie-ra",
         "vie-kas",
@@ -13793,9 +20384,15 @@ export default {
         "pien-ta-re",
         "rie-ka-le"
     ],
+    "ie-a-ei": [
+        "rie-ka-lein"
+    ],
     "ie-a-i": [
         "kie-va-ri",
-        "siep-pa-ri"
+        "pie-ta-ri",
+        "pie-ta-rin",
+        "siep-pa-ri",
+        "viet-na-min"
     ],
     "ie-a-o": [
         "pien-ta-lo"
@@ -13803,17 +20400,33 @@ export default {
     "ie-a-u": [
         "hien-ha-ju"
     ],
+    "ie-aa": [
+        "fies-taa",
+        "hiek-kaa",
+        "hiek-kaan",
+        "lies-kaa",
+        "siep-paa",
+        "siep-paan",
+        "sies-taa",
+        "tie-naa",
+        "tie-naan",
+        "vie-raan",
+        "vie-raat"
+    ],
     "ie-aa-a": [
+        "hie-kal-la",
         "hie-rak-ka",
         "lie-hak-ka",
         "mies-par-ka",
         "pien-kar-ja",
+        "pien-nar-ta",
         "rie-hak-ka",
         "rie-naa-ja",
         "siep-paa-ja",
         "tie-kart-ta",
         "tie-naa-ja",
-        "tien-haa-ra"
+        "tien-haa-ra",
+        "vie-raal-la"
     ],
     "ie-aa-aa": [
         "hie-vah-taa",
@@ -13825,11 +20438,14 @@ export default {
     ],
     "ie-aa-i": [
         "bien-naa-li",
+        "hie-kak-si",
+        "lie-lah-ti",
         "mies-pap-pi",
         "mies-van-ki",
         "riet-taas-ti",
         "tien-var-si",
         "trien-naa-li",
+        "vie-raa-si",
         "viek-kaas-ti"
     ],
     "ie-aa-ie": [
@@ -13854,7 +20470,9 @@ export default {
         "rie-hak-kuus"
     ],
     "ie-ai": [
-        "sie-rain"
+        "sie-rain",
+		"vie-rain",
+		"viek-kain"
     ],
     "ie-ai-a": [
         "hie-rais-ta",
@@ -13868,13 +20486,16 @@ export default {
         "sie-mais-ta",
         "tie-nail-la",
         "tien-lai-ta",
+        "vie-rai-ta",
         "vie-rail-la",
         "vie-rais-sa"
     ],
     "ie-ai-e": [
         "hie-tai-nen",
         "hiek-kai-nen",
-        "pien-pai-ne"
+        "nie-lai-sen",
+        "pien-pai-ne",
+        "vie-rait-ten"
     ],
     "ie-ai-u": [
         "kie-kai-su",
@@ -13907,6 +20528,9 @@ export default {
         "lie-haut-taa",
         "vie-raut-taa"
     ],
+    "ie-au-e": [
+        "vie-rau-den"
+    ],
     "ie-au-u": [
         "kie-hau-tus",
         "kie-pau-tus"
@@ -13917,28 +20541,66 @@ export default {
     "ie-e": [
         "die-sel",
         "hier-re",
+        "kie-len",
+        "kie-les",
+        "kie-let",
+        "kiel-ten",
         "kier-re",
+        "lie-den",
+        "lie-mes",
+        "lie-mest",
         "lie-te",
         "lie-ve",
+        "mie-heks",
+        "mie-hen",
+        "mie-het",
+        "mie-len",
+        "mie-les",
+        "mie-lest",
+        "mie-let",
         "mie-te",
         "miel-le",
+        "mies-ten",
+        "nie-le",
+        "nie-len",
+        "nie-let",
+        "pie-ce",
         "pie-les",
+        "pie-let",
+        "pie-nen",
+        "pie-nes",
+        "pie-nest",
+        "pie-net",
+        "piek-sen",
+        "pien-ten",
         "sie-men",
         "tie-de",
+        "tie-hen",
         "tie-ten",
+        "tiel-le",
+        "tiem-me",
         "vie-he",
-        "vier-re"
+        "vie-res",
+        "vier-re",
+        "vier-ten",
+        "viet-te"
     ],
     "ie-e-aa": [
         "lie-te-maa"
     ],
     "ie-e-e": [
         "kie-le-ke",
+        "kier-te-le",
         "nie-me-ke",
-        "pien-ve-ne"
+        "pie-ne-hen",
+        "pien-ve-ne",
+        "viet-te-let"
     ],
     "ie-e-i": [
+        "mie-le-ni",
+        "mie-le-si",
         "pien-ve-si",
+        "tiel-le-ni",
         "vie-te-ri"
     ],
     "ie-e-ie": [
@@ -13955,46 +20617,81 @@ export default {
     ],
     "ie-e-ä": [
         "kie-le-vä",
+        "kie-se-jä",
         "lie-re-ä",
         "lie-ve-tä",
         "mie-he-käs",
+        "mie-he-nä",
         "mie-he-vä",
         "mie-le-käs",
         "mie-le-vä",
+        "nie-le-mäs",
+        "pie-ne-nä",
         "pie-ne-tä",
         "sie-ve-tä",
         "vie-re-mä",
-        "vieh-ke-ä"
+        "vieh-ke-ä",
+        "vies-te-jä"
     ],
     "ie-e-ää": [
+        "kiel-le-tään",
         "kier-re-pää",
-        "mie-he-lään"
+        "kier-re-tään",
+        "mie-he-lään",
+        "nie-le-mään",
+        "tie-de-tään"
     ],
     "ie-e-ö": [
         "mie-le-tön"
     ],
     "ie-ee": [
         "lie-nee",
+        "mie-heen",
         "mie-leen",
-        "vie-reen"
+        "mie-lees",
+        "nie-lee",
+        "pie-lee",
+        "pie-leen",
+        "pie-neen",
+        "pie-ree",
+        "tie-teen",
+        "vie-heen",
+        "vie-neet",
+        "vie-ree",
+        "vie-reen",
+        "vie-rees"
     ],
     "ie-ee-a": [
         "tien-penk-ka"
     ],
     "ie-ee-e": [
+        "lie-del-le",
+        "pie-nel-le",
         "pien-per-he",
         "tie-pen-ger",
         "tien-pen-ger",
         "vie-rel-le"
     ],
+    "ie-ee-ei": [
+        "vie-rel-lein"
+    ],
     "ie-ee-eie": [
         "bie-der-meier"
     ],
     "ie-ee-i": [
+        "mie-lee-ni",
         "mies-les-ki",
+        "pie-nem-pi",
         "pie-teet-ti",
         "tie-nes-ti",
-        "tie-ten-kin"
+        "tie-ten-kin",
+        "vie-ree-ni",
+        "vie-ree-si"
+    ],
+    "ie-ee-ii": [
+        "kier-ret-tiin",
+        "pie-nem-pii",
+        "tie-det-tiin"
     ],
     "ie-ee-o": [
         "tie-verk-ko"
@@ -14007,57 +20704,91 @@ export default {
     ],
     "ie-ee-y": [
         "kiel-let-ty",
+        "kier-rel-ly",
         "lie-ven-nys",
         "pie-les-tys",
         "pie-nen-nys",
         "sie-men-nys",
         "sie-nes-tys",
-        "sie-ven-nys"
+        "sie-ven-nys",
+        "vie-tel-ly"
     ],
     "ie-ee-yy": [
+        "kiel-let-tyy",
         "mie-hek-kyys",
+        "mie-hek-kyyt",
         "mie-lek-kyys"
     ],
     "ie-ee-ä": [
+        "kie-lel-läs",
+        "kie-les-sä",
         "kiel-lel-lä",
         "kier-rel-lä",
+        "mie-lel-täs",
+        "mie-les-sä",
         "mie-les-tä",
+        "mie-les-täs",
         "mie-tel-mä",
+        "pie-les-sä",
+        "pie-nel-tä",
+        "pie-nem-mäs",
+        "pie-nem-mät",
+        "pie-nes-sä",
+        "pie-nes-tä",
+        "tie-det-tä",
         "tie-hen-sä",
+        "vie-reen-sä",
         "vie-rel-lä",
+        "vie-rel-läs",
         "vie-rel-tä",
+        "vie-rel-täs",
         "vie-res-sä",
+        "vie-res-sän",
         "vie-res-tä",
         "vie-tel-lä"
     ],
     "ie-ee-äi": [
+        "mie-les-säin",
         "vie-rek-käin",
         "vie-ret-täin"
     ],
     "ie-ee-ää": [
         "kie-len-tää",
+        "kier-rel-lään",
         "lie-ven-tää",
         "mie-lel-lään",
+        "mie-les-sään",
+        "mie-les-tää",
         "pie-les-tää",
+        "pie-nem-pää",
         "pie-nen-tää",
         "pie-ret-tää",
         "sie-men-tää",
         "sie-nes-tää",
         "sie-ret-tää",
         "sie-ven-tää",
+        "tie-teen-kään",
         "tie-ten-kään"
     ],
     "ie-ee-ö": [
         "pie-nen-nös"
     ],
+    "ie-ei": [
+        "lie-keis",
+        "viel-leicht"
+    ],
     "ie-ei-e": [
         "kiel-tei-nen",
+        "kiel-tei-sest",
         "kiep-peil-le",
         "kier-tei-nen",
         "lie-peil-le",
         "liet-tei-nen",
         "mie-lei-nen",
         "vie-rei-nen"
+    ],
+    "ie-ei-ii": [
+        "lie-pei-siin"
     ],
     "ie-ei-y": [
         "kier-tei-tys",
@@ -14072,7 +20803,8 @@ export default {
         "kiep-peis-sä",
         "lie-peil-lä",
         "lie-peil-tä",
-        "tie-teil-lä"
+        "tie-teil-lä",
+        "vies-teil-läs"
     ],
     "ie-ei-ää": [
         "kier-teit-tää"
@@ -14090,20 +20822,43 @@ export default {
     "ie-i": [
         "hier-rin",
         "kie-li",
+        "kie-rin",
+        "kie-si",
+        "kie-sin",
+        "kie-sis",
+        "kie-sist",
         "kie-sit",
+        "kiel-si",
         "kiep-pi",
         "kier-rin",
+        "lie-kin",
         "lie-mi",
         "lie-ri",
         "lie-si",
         "liek-ki",
         "mie-li",
+        "mie-lin",
+        "mie-ti",
+        "mie-tin",
+        "mie-tit",
         "nie-mi",
         "pie-li",
         "pie-ni",
+        "pie-nin",
         "pie-ti",
+        "piek-sis",
+        "rien-si",
         "sie-ni",
+        "tie-ni",
+        "tie-si",
+        "tie-sin",
+        "tie-sit",
+        "tien-si",
+        "vie-ki",
         "vie-ri",
+        "vie-tin",
+        "viel-ki",
+        "viel-kin",
         "vien-ti",
         "vies-ti",
         "vies-tin",
@@ -14122,6 +20877,10 @@ export default {
         "mie-hi-nen",
         "vie-mi-nen"
     ],
+    "ie-i-i": [
+        "pie-ni-ki",
+        "piek-si-sin"
+    ],
     "ie-i-ie": [
         "kie-li-mies",
         "vies-ti-mies"
@@ -14139,6 +20898,7 @@ export default {
         "kie-ri-tys",
         "lie-vi-tys",
         "mie-hi-tys",
+        "miet-ti-nyt",
         "vie-ri-tys",
         "vies-ti-tys"
     ],
@@ -14152,19 +20912,36 @@ export default {
         "kie-li-jä",
         "kie-li-ä",
         "kie-ri-ä",
+        "liek-ki-ä",
+        "mie-hi-ä",
         "mie-li-ä",
+        "mie-ti-tä",
         "miet-ti-ä",
         "nie-ri-ä",
+        "pie-ni-nä",
         "pie-ni-ä",
+        "sie-ni-ä",
+        "vie-ri-tät",
         "vie-ri-ä",
-        "vies-ti-ä"
+        "vies-ti-nä",
+        "vies-ti-ä",
+        "viet-ti-ä"
     ],
     "ie-i-ää": [
-        "kie-li-pää"
+        "kie-li-pää",
+        "kie-ri-tään",
+        "mie-ti-tää",
+        "mie-ti-tään",
+        "miet-ti-mään",
+        "vie-ri-mään"
     ],
     "ie-i-ö": [
         "lie-ri-ö",
         "sie-ni-mö"
+    ],
+    "ie-ie": [
+        "liek-kien",
+        "miet-tien"
     ],
     "ie-ie-a": [
         "mies-vie-ras"
@@ -14175,12 +20952,28 @@ export default {
     "ie-ie-äi": [
         "sie-nie-läin"
     ],
+    "ie-ii": [
+        "kie-sii",
+        "liek-kii",
+        "mie-hii",
+        "mie-lii",
+        "mie-liin",
+        "miet-tii",
+        "miet-tiin",
+        "pie-nii",
+        "pie-niin",
+        "pries-tii",
+        "vie-rii",
+        "vie-tiin",
+        "vies-tii"
+    ],
     "ie-ii-a": [
         "tie-lin-ja",
         "tien-pin-ta",
         "tien-viit-ta"
     ],
     "ie-ii-e": [
+        "pie-nil-le",
         "vie-rit-se"
     ],
     "ie-ii-ee": [
@@ -14200,18 +20993,31 @@ export default {
     ],
     "ie-ii-o": [
         "hie-tik-ko",
-        "lie-rik-ko"
+        "lie-rik-ko",
+        "pie-nis-no"
+    ],
+    "ie-ii-y": [
+        "mie-his-ty",
+        "mie-lit-ty",
+        "mie-tit-ty"
     ],
     "ie-ii-ä": [
+        "kie-lil-lä",
         "kie-rin-tä",
         "mie-tin-tä",
-        "vies-tin-tä"
+        "pie-nil-lä",
+        "pie-nim-mät",
+        "pie-nin-tä",
+        "pie-nis-tä",
+        "vies-tin-tä",
+        "wie-nis-sä"
     ],
     "ie-ii-ää": [
         "kie-rit-tää",
         "lie-kit-tää",
         "lie-vit-tää",
         "mie-hit-tää",
+        "mie-hit-tään",
         "mie-lis-sään",
         "sie-vis-tää",
         "vie-rit-tää",
@@ -14220,7 +21026,9 @@ export default {
     "ie-ii-ö": [
         "mie-his-tö",
         "mie-tin-tö",
-        "sie-lik-kö"
+        "sie-lik-kö",
+        "tie-sit-kö",
+        "vie-rii-kö"
     ],
     "ie-iui-i": [
         "vies-tiuin-ti"
@@ -14231,9 +21039,11 @@ export default {
     "ie-o": [
         "hie-ho",
         "hie-no",
+        "hie-no",
         "hier-to",
         "kie-lo",
         "kie-ro",
+        "kie-rol",
         "kiek-ko",
         "kiel-to",
         "kier-ros",
@@ -14242,31 +21052,42 @@ export default {
         "lie-ro",
         "liet-so",
         "liet-to",
+        "mie-dot",
         "mie-ro",
+        "mie-ron",
         "mie-to",
         "nie-tos",
         "riek-ko",
         "rien-to",
         "sie-to",
         "siep-po",
+        "tie-don",
+        "tie-dos",
+        "tie-dot",
         "tie-to",
         "vie-no",
         "vieh-ko",
         "viet-to"
     ],
     "ie-o-a": [
+        "hie-no-a",
         "hie-no-ta",
         "hie-ro-a",
         "hie-ro-ja",
+        "kie-lo-ja",
         "kie-to-a",
         "kieh-to-a",
         "kieh-to-va",
         "lieh-to-a",
         "liet-so-a",
         "liet-so-ja",
+        "mie-to-ja",
         "rie-po-a",
         "tie-o-sa",
         "vie-ro-a"
+    ],
+    "ie-o-aa": [
+        "kieh-to-vaa"
     ],
     "ie-o-e": [
         "miek-ko-nen",
@@ -14294,7 +21115,9 @@ export default {
         "tie-to-työ"
     ],
     "ie-oi": [
-        "liet-soin"
+        "kie-roist",
+        "liet-soin",
+        "tie-toi"
     ],
     "ie-oi-a": [
         "kie-roil-la",
@@ -14338,27 +21161,39 @@ export default {
         "tie-toi-suus"
     ],
     "ie-oo": [
-        "tie-noo"
+        "hie-noo",
+        "hie-roo",
+        "kie-roo",
+        "kie-roon",
+        "kiek-koo",
+        "tie-noo",
+        "tie-noot",
+        "tie-too"
     ],
     "ie-oo-a": [
         "hie-ron-ta",
-        "kie-don-ta"
+        "kie-don-ta",
+        "tie-dos-sa"
     ],
     "ie-oo-aa": [
+        "hie-nom-paa",
         "hie-non-taa",
         "hie-rot-taa",
         "mie-don-taa",
         "nie-tos-taa",
         "rie-pot-taa",
         "tie-dos-taa",
-        "tie-dot-taa"
+        "tie-dot-taa",
+        "tie-too-kaan"
     ],
     "ie-oo-i": [
+        "hie-nom-min",
         "hie-non-nin",
         "hie-nos-ti",
         "kie-ros-ti",
         "mie-dos-ti",
         "mies-pol-vi",
+        "tie-dos-tin",
         "vie-nos-ti",
         "vieh-kos-ti"
     ],
@@ -14389,6 +21224,7 @@ export default {
     ],
     "ie-u": [
         "hie-su",
+        "kie-hu",
         "lie-ju",
         "lie-su",
         "liet-su",
@@ -14396,9 +21232,12 @@ export default {
         "pie-lus",
         "pie-ru",
         "piek-su",
+        "rie-hun",
         "rie-mu",
         "rie-pu",
         "sie-lu",
+        "sie-lun",
+        "sie-lut",
         "vie-rus"
     ],
     "ie-u-a": [
@@ -14418,6 +21257,7 @@ export default {
         "rie-hu-a",
         "rie-mu-kas",
         "riek-ku-a",
+        "sie-lu-a",
         "sie-lu-kas"
     ],
     "ie-u-aa": [
@@ -14429,6 +21269,8 @@ export default {
         "tie-tu-e"
     ],
     "ie-u-i": [
+        "sie-lu-ni",
+        "sie-lu-si",
         "tie-tu-ri"
     ],
     "ie-u-o": [
@@ -14440,12 +21282,16 @@ export default {
         "mies-su-ku",
         "sie-lu-tus"
     ],
+    "ie-ui": [
+        "rie-huin"
+    ],
     "ie-ui-a": [
         "mie-lui-sa",
         "rie-mui-sa",
         "rie-mui-ta"
     ],
     "ie-ui-aa": [
+        "mie-lui-saan",
         "rie-muis-saan"
     ],
     "ie-ui-e": [
@@ -14474,9 +21320,15 @@ export default {
         "mies-kuo-ro"
     ],
     "ie-uu": [
+        "kie-huu",
+        "lie-huu",
         "mie-huus",
+        "nie-luun",
         "pie-nuus",
-        "pien-puu"
+        "pien-puu",
+        "rie-huu",
+        "rie-muu",
+        "sie-luun"
     ],
     "ie-uu-a": [
         "kie-hun-ta",
@@ -14486,6 +21338,8 @@ export default {
         "mies-huk-ka",
         "mies-mur-ha",
         "rie-hun-ta",
+        "rie-mus-ta",
+        "sie-lus-sa",
         "tie-kun-ta",
         "tien-mut-ka",
         "vie-rus-ta"
@@ -14500,11 +21354,15 @@ export default {
         "tie-dus-taa"
     ],
     "ie-uu-e": [
+        "mie-huu-den",
         "mies-suh-de"
     ],
     "ie-uu-i": [
+        "mie-lum-min",
+        "mie-luu-min",
         "mie-luum-min",
         "mie-luus-ti",
+        "rie-muk-si",
         "tie-tul-li"
     ],
     "ie-uu-o": [
@@ -14522,7 +21380,11 @@ export default {
     ],
     "ie-y": [
         "tie-hyt",
-        "tiet-ty"
+        "tien-ny",
+        "tien-nyt",
+        "tiet-ty",
+        "vie-ny",
+        "vie-nyt"
     ],
     "ie-y-y": [
         "lien-ny-tys",
@@ -14540,6 +21402,7 @@ export default {
         "lies-ty-ä",
         "liet-ty-mä",
         "liet-ty-ä",
+        "miel-ly-tä",
         "miel-ty-ä",
         "tie-jy-rä",
         "vieh-ty-ä"
@@ -14570,27 +21433,50 @@ export default {
         "tie-työ-maa"
     ],
     "ie-ä": [
+        "hiel-lä",
         "kie-rä",
+        "kiel-lä",
+        "kiel-tä",
+        "kier-rän",
         "lie-vä",
+        "miel-tä",
+        "mies-tä",
         "niel-lä",
         "pie-tä",
+        "pien-tä",
+        "pien-täs",
         "pier-rä",
         "pies-tä",
         "rie-vä",
+        "sie-lä",
         "sie-tä",
         "sie-vä",
         "siel-lä",
         "siel-tä",
+        "tie-dä",
+        "tie-dän",
+        "tie-dät",
         "tie-tä",
+        "tiel-lä",
+        "tiel-tä",
+        "ties-tä",
+        "tiet-sä",
         "vie-dä",
         "vie-jä",
-        "vie-lä"
+        "vie-lä",
+        "vie-mäs",
+        "vie-tän",
+        "viel-lä"
     ],
     "ie-ä-aa": [
         "vie-jä-maa"
     ],
     "ie-ä-i": [
+        "miel-tä-si",
         "mies-vä-ki",
+        "tie-tä-si",
+        "vie-lä-ki",
+        "vie-lä-kin",
         "vie-mä-ri"
     ],
     "ie-ä-y": [
@@ -14607,9 +21493,14 @@ export default {
         "kiel-tä-jä",
         "kiel-tä-vä",
         "kier-tä-jä",
+        "kier-tä-vän",
+        "kier-tä-vät",
+        "siel-tä-hän",
         "tie-tä-jä",
         "tie-tä-mä",
         "tie-tä-vä",
+        "tie-tä-vän",
+        "vie-lä-hän",
         "vie-tä-vä",
         "viet-tä-jä"
     ],
@@ -14617,11 +21508,25 @@ export default {
         "siel-lä-päin",
         "siel-tä-päin"
     ],
+    "ie-ä-ää": [
+        "kier-tä-mään",
+        "piek-sä-mää",
+        "sie-tä-mään",
+        "tie-dä-kään",
+        "tie-tä-kää",
+        "vie-dä-kään",
+        "vie-lä-kään"
+    ],
     "ie-ä-ö": [
-        "hier-tä-mö"
+        "hier-tä-mö",
+        "vie-lä-kö"
     ],
     "ie-äi-e": [
         "mies-mäi-nen"
+    ],
+    "ie-äi-i": [
+        "tie-täi-sin",
+        "tie-täi-sit"
     ],
     "ie-äi-yy": [
         "mies-mäi-syys"
@@ -14645,11 +21550,17 @@ export default {
         "lien-tää",
         "liet-tää",
         "miel-tää",
+        "niel-lään",
         "piek-sää",
         "rien-tää",
         "sie-tää",
         "tie-tää",
         "ties-sään",
+        "vie-dään",
+        "vie-kää",
+        "vie-mää",
+        "viel-kää",
+        "viel-kään",
         "viet-tää"
     ],
     "ie-ää-ee": [
@@ -14658,7 +21569,8 @@ export default {
     "ie-ää-i": [
         "lie-väs-ti",
         "mie-sää-ni",
-        "sie-väs-ti"
+        "sie-väs-ti",
+        "vie-räh-ti"
     ],
     "ie-ää-y": [
         "kie-räh-dys",
@@ -14666,7 +21578,9 @@ export default {
     ],
     "ie-ää-ä": [
         "kier-rän-tä",
-        "piek-sän-tä"
+        "piek-sän-tä",
+        "tie-dät-hän",
+        "tie-dät-sä"
     ],
     "ie-ää-ää": [
         "kie-räh-tää",
@@ -14674,7 +21588,12 @@ export default {
         "vie-hät-tää",
         "vie-räh-tää"
     ],
+    "ie-ää-ö": [
+        "tie-dät-kö",
+        "vie-dään-kö"
+    ],
     "ie-ö": [
+        "lie-kö",
         "tie-tön",
         "ties-tö"
     ],
@@ -14691,49 +21610,72 @@ export default {
         "tieyh-teys"
     ],
     "ii-": [
-        "kits-ch"
+        "ifr-ån",
+        "kits-ch",
+        "nich-t“"
     ],
     "ii-a": [
         "bil-sa",
         "bis-marck",
+        "dig-gas",
         "dii-va",
+        "fii-las",
         "fik-ka",
         "fir-ma",
+        "fir-man",
+        "fir-mat",
         "flik-ka",
+        "flin-da",
         "gim-ma",
         "hih-na",
         "hii-va",
+        "hii-vat",
         "hiip-pa",
         "hik-ka",
         "hil-jan",
+        "hil-jast",
         "hil-la",
         "hilk-ka",
+        "hin-nan",
         "hin-ta",
         "hip-pa",
         "hir-vas",
         "his-sa",
+        "his-sas",
         "ih-ka",
         "ih-ra",
+        "ii-na",
         "iik-ka",
+        "il-lal",
+        "il-lan",
+        "il-last",
+        "il-lat",
         "il-ma",
         "il-man",
+        "il-mast",
         "il-ta",
+        "il-tan",
         "in-ka",
+        "ins-tas",
         "irs-tas",
         "is-lam",
         "kih-lat",
         "kii-la",
         "kii-ma",
         "kii-na",
+        "kii-ra",
         "kii-vas",
         "kiis-ta",
         "kik-ka",
         "kil-pa",
         "kil-sa",
+        "kil-san",
+        "kil-sat",
         "kil-ta",
         "kil-van",
         "kilk-ka",
         "kim-ma",
+        "kim-pas",
         "kimp-pa",
         "kin-nas",
         "kip-sa",
@@ -14742,36 +21684,57 @@ export default {
         "kir-va",
         "kirp-pa",
         "kis-ka",
+        "kis-kalt",
+        "kis-kan",
         "kis-sa",
+        "kis-sat",
         "kit-ka",
         "kit-sas",
+        "kris-tal",
         "lii-an",
         "lii-ga",
         "lii-ka",
         "lii-la",
         "lii-ma",
         "lii-na",
+        "lii-nat",
         "lii-ra",
+        "lii-sa",
+        "lii-san",
         "liip-pa",
         "lik-ka",
         "lik-sa",
         "lil-ja",
         "lim-sa",
         "lims-ka",
+        "lin-ga",
         "lin-ja",
         "lin-na",
+        "lin-nan",
+        "lin-nas",
+        "lin-nast",
         "lip-pa",
         "lis-ta",
+        "lis-tas",
+        "lis-tat",
         "lit-ra",
+        "lit-ran",
+        "lit-rat",
         "lit-sa",
         "mii-na",
         "miik-ka",
+        "mil-la",
         "mir-ha",
         "mit-ra",
         "mit-ta",
+        "nik-las",
         "nilk-ka",
         "nip-pa",
         "nis-ka",
+        "nis-kan",
+        "nis-kas",
+        "nis-kast",
+        "nis-kat",
         "pih-ka",
         "pih-ta",
         "pii-ka",
@@ -14782,7 +21745,12 @@ export default {
         "pilk-ka",
         "pin-ja",
         "pin-na",
+        "pin-nal",
+        "pin-nan",
+        "pin-nas",
+        "pin-nat",
         "pin-ta",
+        "pin-tas",
         "pink-ka",
         "pir-ta",
         "pirs-ta",
@@ -14793,9 +21761,11 @@ export default {
         "prii-ma",
         "prii-mas",
         "prik-ka",
+        "pris-kan",
         "pris-ma",
         "rih-la",
         "rih-ma",
+        "rii-dan",
         "rii-ta",
         "riip-pa",
         "riis-ta",
@@ -14803,7 +21773,11 @@ export default {
         "rik-sa",
         "riks-ha",
         "rimp-sa",
+        "rin-nal",
         "rin-nan",
+        "rin-nas",
+        "rin-nast",
+        "rin-nat",
         "rin-ta",
         "rink-ka",
         "rit-sa",
@@ -14814,23 +21788,32 @@ export default {
         "sii-ra",
         "siip-pa",
         "sil-la",
+        "sil-lan",
         "sil-sa",
         "sil-ta",
         "silk-ka",
+        "sir-pa",
+        "sir-pan",
         "sirk-ka",
         "sit-kas",
         "sit-ra",
         "skim-ba",
         "skis-ma",
         "skrip-ta",
+        "smit-tar",
         "stig-ma",
         "tii-ma",
+        "tii-na",
         "tii-ra",
         "tik-ka",
+        "til-kan",
         "til-sa",
         "tilk-ka",
+        "timp-pa",
+        "tin-ga",
         "tin-ka",
         "tip-pa",
+        "tip-pat",
         "tir-sat",
         "trip-la",
         "vih-das",
@@ -14839,12 +21822,18 @@ export default {
         "vii-la",
         "vii-ma",
         "vii-na",
+        "vii-nan",
+        "vii-nast",
+        "vii-nat",
         "vii-ra",
         "vii-sas",
         "vii-ta",
         "vii-va",
+        "vii-val",
+        "vii-van",
         "viit-ta",
         "vil-ja",
+        "vil-jat",
         "vil-kas",
         "vil-la",
         "vil-pas",
@@ -14854,7 +21843,9 @@ export default {
         "vip-pa",
         "vir-ka",
         "vir-na",
+        "vir-ran",
         "vir-ta",
+        "vir-tast",
         "virs-ta",
         "virt-sa",
         "vis-va",
@@ -14875,6 +21866,7 @@ export default {
         "hii-pa-ta",
         "hii-ta-ta",
         "hii-va-ta",
+        "him-ma-ta",
         "hin-ka-ta",
         "hin-na-kas",
         "hin-ta-va",
@@ -14923,9 +21915,11 @@ export default {
         "pif-fa-ta",
         "pih-da-ta",
         "pih-la-ja",
+        "pih-la-jan",
         "pii-ka-ta",
         "pii-na-ta",
         "pii-pa-ta",
+        "pii-ra-kan",
         "pii-sa-ta",
         "pii-ta-ta",
         "piis-ka-ta",
@@ -14940,6 +21934,7 @@ export default {
         "rih-la-ta",
         "rii-a-ta",
         "rii-va-ta",
+        "rim-ma-ta",
         "rin-ta-ma",
         "rin-ta-va",
         "sih-da-ta",
@@ -14963,6 +21958,7 @@ export default {
         "tis-la-ta",
         "tit-ra-ta",
         "trim-ma-ta",
+        "tsii-ga-ta",
         "tsii-ka-ta",
         "twis-ta-ta",
         "vih-ja-ta",
@@ -14972,6 +21968,7 @@ export default {
         "vii-ta-ta",
         "vii-va-ta",
         "vil-ja-va",
+        "vil-ja-van",
         "vil-la-va",
         "vin-ka-ta",
         "vin-ta-ta",
@@ -14984,13 +21981,18 @@ export default {
         "vis-pa-ta"
     ],
     "ii-a-aa": [
+        "nir-va-naan",
         "riis-ta-maa",
         "rin-ta-maa",
         "sik-ka-raan",
+        "viis-sa-taa",
         "vir-ta-naan"
     ],
     "ii-a-e": [
+        "hit-ta-de",
         "ih-ka-sen",
+        "il-ma-seks",
+        "il-ma-sen",
         "il-ta-nen",
         "kil-va-ten",
         "kim-pa-le",
@@ -14999,29 +22001,41 @@ export default {
         "lii-va-te",
         "lin-na-ke",
         "lis-ta-ke",
+        "mil-la-nen",
+        "mil-la-set",
         "pii-ra-nen",
         "pik-ka-nen",
+        "pil-ka-ten",
         "pirs-ta-le",
         "sii-ta-ke",
         "sir-pa-le",
         "tilk-ka-nen",
         "vii-ka-te",
         "vii-pa-le",
+        "vii-ta-te",
         "vir-ta-nen"
     ],
     "ii-a-ee": [
-        "il-ta-tee"
+        "il-ta-tee",
+        "sir-pa-leet"
+    ],
+    "ii-a-ei": [
+        "mit-ta-reit",
+        "pik-ka-reis"
     ],
     "ii-a-i": [
         "bii-sa-mi",
+        "dii-la-sit",
         "dir-ha-mi",
         "fik-ka-ri",
         "fil-la-ri",
         "hiih-ta-rit",
         "hiip-pa-ri",
         "hil-pa-ri",
+        "hin-ta-ni",
         "hint-ta-ri",
         "hit-sa-ri",
+        "il-ta-sin",
         "ink-ka-ri",
         "it-sa-ri",
         "kii-ka-ri",
@@ -15029,19 +22043,24 @@ export default {
         "kir-ja-sin",
         "kirp-pa-ri",
         "lif-ta-ri",
+        "lii-na-si",
         "lii-va-ri",
         "liip-pa-ri",
         "limp-pa-ri",
         "lint-sa-ri",
         "mir-ha-mi",
         "mit-ta-ri",
+        "mit-ta-ril",
         "nik-ka-ri",
         "nim-ma-ri",
+        "nim-ma-rin",
         "nimp-pa-ri",
         "pih-ta-ri",
         "pii-sa-mi",
         "piik-ka-ri",
         "pin-na-ri",
+        "sig-na-sit",
+        "sil-ta-ni",
         "sim-ma-rit",
         "sir-ta-ki",
         "sliip-pa-ri",
@@ -15050,11 +22069,13 @@ export default {
         "tim-ja-mi",
         "tip-pa-ri",
         "tis-ka-ri",
+        "tis-ka-sin",
         "vig-va-mi",
         "vii-ka-ri",
         "vii-la-ri",
         "vii-sa-ri",
-        "vink-ka-ri"
+        "vink-ka-ri",
+        "wis-ka-ri"
     ],
     "ii-a-ie": [
         "mit-ta-mies",
@@ -15075,6 +22096,7 @@ export default {
         "rii-da-ton",
         "spic-ca-to",
         "vib-ra-to",
+        "vii-da-kon",
         "vii-na-ton"
     ],
     "ii-a-u": [
@@ -15082,9 +22104,12 @@ export default {
         "kil-ka-tus",
         "lip-la-tus",
         "rin-ta-mus",
+        "slii-pa-tut",
         "twist-na-ru"
     ],
     "ii-a-uu": [
+        "hil-ja-suus",
+        "il-ma-suun",
         "il-ma-vuus",
         "kii-na-puu",
         "kir-ja-vuus",
@@ -15109,52 +22134,200 @@ export default {
         "vii-na-pää"
     ],
     "ii-aa": [
+        "bif-faan",
+        "biif-faa",
+        "chil-laa",
+        "chil-laan",
+        "dig-gaa",
+        "dig-gaan",
+        "dii-laa",
+        "dii-vaan",
+        "dip-paa",
+        "dis-saa",
+        "dis-saat",
+        "fii-laa",
+        "fii-laan",
+        "fii-laat",
+        "fik-saa",
+        "fil-maa",
+        "fil-maan",
+        "fir-maan",
+        "fit-taa",
+        "gril-laa",
+        "grin-daa",
+        "hif-faa",
+        "hif-faan",
         "hil-jaa",
+        "hin-taa",
+        "his-saa",
+        "il-maa",
+        "il-maan",
+        "il-taa",
+        "il-taan",
+        "imp-paan",
+        "ins-paa",
+        "kii-laa",
+        "kii-naan",
+        "kiis-taa",
         "kil-paa",
         "kilk-kaa",
+        "kip-paa",
+        "kir-jaa",
+        "kir-raa",
+        "kis-saa",
+        "kriip-paa",
+        "lii-daan",
+        "lii-gaa",
+        "lii-gaan",
         "lii-kaa",
+        "lii-laa",
+        "lii-maa",
+        "lii-maat",
+        "lii-saan",
+        "liis-kaan",
+        "lik-saa",
+        "lil-jaa",
+        "lin-naa",
+        "lin-naan",
         "lint-taan",
+        "lip-paan",
+        "lis-taan",
+        "mii-aa",
+        "miit-taa",
+        "mit-taa",
+        "nii-aa",
+        "niit-taa",
         "nik-saa",
+        "nis-kaa",
+        "nis-kaan",
+        "nis-kaas",
+        "pif-faa",
+        "pii-aa",
         "pii-maa",
+        "pii-naa",
+        "pii-raas",
+        "piip-paa",
+        "piis-kaa",
+        "piis-kaan",
+        "piit-taa",
+        "pin-naa",
+        "pin-taa",
+        "pin-taan",
+        "pink-kaa",
+        "pit-saa",
+        "piz-zaa",
+        "prii-maa",
+        "rii-vaa",
+        "rik-kaan",
+        "rim-maa",
+        "rin-taa",
+        "rin-taan",
+        "rip-laa",
+        "ris-kaa",
+        "sig-naa",
+        "sil-taa",
+        "silk-kaa",
+        "sip-paa",
+        "sirk-laan",
         "sit-kaan",
+        "sit-taa",
+        "sit-taan",
+        "skip-paa",
+        "skip-paan",
+        "skrii-naan",
+        "skrin-naa",
+        "snif-faa",
+        "spit-taa",
+        "switc-haa",
+        "tii-maan",
         "tik-kaat",
+        "tilt-taat",
         "tin-kaan",
+        "tip-paa",
+        "tsii-gaa",
+        "tsii-gaan",
+        "tsim-maa",
+        "twiit-taa",
+        "twiit-taan",
+        "vii-laan",
+        "vii-maan",
+        "vii-naa",
+        "vii-naan",
+        "vii-vaa",
+        "viit-taa",
+        "vil-jaa",
         "vilk-kaa",
+        "vir-taa",
+        "vir-taan",
         "virk-kaa",
+        "vis-kaan",
         "vit-kaan"
     ],
     "ii-aa-a": [
         "fil-maa-ja",
+        "hii-val-la",
+        "hin-nal-la",
+        "hin-nas-ta",
         "hip-rak-ka",
         "hit-saa-ja",
+        "il-lal-la",
+        "il-las-ta",
+        "il-mas-sa",
+        "il-mas-ta",
+        "kii-nas-sa",
+        "kim-pas-sa",
         "kir-pak-ka",
+        "kirk-kaa-na",
         "lif-taa-ja",
+        "lii-kah-da",
+        "lin-jal-la",
+        "lin-nas-sa",
+        "lin-nas-ta",
         "lin-tas-sa",
         "lint-saa-ja",
+        "lis-tal-la",
         "mii-naa-ja",
         "mik-saa-ja",
         "mit-taa-ja",
         "nir-pal-la",
         "nir-pas-sa",
+        "nis-kas-ta",
         "pih-taa-ja",
         "pii-rak-ka",
+        "piin-nal-la",
         "pilk-kaa-ja",
         "pin-naa-ja",
+        "pin-nal-la",
+        "pin-nal-ta",
+        "pin-nas-ta",
         "rii-pal-la",
         "rii-vaa-ja",
+        "rii-vaa-jat",
         "rin-nal-la",
         "rin-nal-ta",
+        "rin-nas-sa",
+        "sil-lal-la",
+        "sil-lal-ta",
         "sir-pak-ka",
         "tin-gas-sa",
         "tin-kaa-ja",
         "tis-kaa-ja",
         "vii-laa-ja",
+        "vii-nan-sa",
+        "vii-saam-mat",
+        "vii-val-la",
+        "vii-vas-ta",
+        "vil-kas-ta",
         "vir-taa-ma",
+        "vir-taa-va",
+        "vir-taa-vat",
         "vir-tas-ka"
     ],
     "ii-aa-aa": [
+        "dir-lan-daan",
         "hiis-kah-taa",
         "hir-nah-taa",
+        "hit-saa-maan",
         "il-las-taa",
         "il-mas-taa",
         "ir-ral-laan",
@@ -15165,26 +22338,31 @@ export default {
         "kim-mah-taa",
         "kir-kas-taa",
         "kirs-kah-taa",
+        "kis-san-maan",
         "lii-kah-taa",
         "lin-tal-laan",
         "lip-lat-taa",
         "lip-sah-taa",
         "lit-sah-taa",
+        "mit-taa-maan",
         "nik-sah-taa",
         "nip-sah-taa",
         "nir-pal-laan",
         "nirs-kah-taa",
         "pii-pah-taa",
+        "piit-taa-kaan",
         "pil-kah-taa",
         "pil-kal-laan",
         "pil-lah-taa",
         "pirs-kah-taa",
         "pis-sat-taa",
         "rii-pal-laan",
+        "rii-vaa-maan",
         "rik-sah-taa",
         "rin-nas-taa",
         "rip-sah-taa",
         "sin-gah-taa",
+        "tip-paa-kaan",
         "tirs-kah-taa",
         "vii-sas-taa",
         "vil-kah-taa",
@@ -15195,23 +22373,31 @@ export default {
     "ii-aa-ai": [
         "hil-jat-tain",
         "pin-nak-kain",
-        "rin-nak-kain"
+        "rin-nak-kain",
+        "rin-nas-tain"
     ],
     "ii-aa-au": [
         "kid-nap-paus"
     ],
     "ii-aa-e": [
+        "hih-nal-le",
         "il-jan-ne",
         "il-mas-te",
+        "kil-jas-ten",
         "kir-kas-te",
+        "lis-tal-le",
+        "pin-nal-le",
         "rii-pal-le",
+        "rii-tan-ne",
         "rin-nal-le",
         "vii-nak-set"
     ],
     "ii-aa-ee": [
         "hil-jak-seen",
         "hil-jal-leen",
+        "il-mat-teeks",
         "ir-ral-leen",
+        "lin-nak-keet",
         "lin-tal-leen",
         "rii-pal-leen",
         "tis-mal-leen"
@@ -15221,22 +22407,32 @@ export default {
         "bril-jant-ti",
         "dis-kant-ti",
         "hii-vat-ti",
+        "il-lak-si",
+        "il-man-kin",
         "il-mas-tin",
+        "il-taa-ni",
         "imp-lant-ti",
         "in-fark-ti",
+        "in-gal-sin",
         "in-sat-si",
         "ins-tans-si",
         "irs-taas-ti",
         "is-lan-ti",
+        "kih-lat-kin",
         "kii-vaas-ti",
         "kim-naa-si",
+        "kirk-kaam-pi",
         "kirk-kaas-ti",
         "kit-saas-ti",
         "klii-mak-si",
         "kris-tal-li",
         "lii-ak-si",
         "lii-al-ti",
+        "lii-an-kin",
+        "lii-kaa-ki",
+        "lii-kaa-kin",
         "liis-kak-si",
+        "lin-naa-kin",
         "mil-jar-di",
         "nit-raat-ti",
         "pirs-kat-ti",
@@ -15249,11 +22445,21 @@ export default {
         "sit-kaas-ti",
         "til-talt-ti",
         "tim-baa-li",
+        "tsii-gaa-ki",
+        "vii-saam-pi",
         "vii-saas-ti",
         "vil-jal-ti",
         "vilk-kaas-ti",
         "vin-has-ti",
         "vis-kaa-li"
+    ],
+    "ii-aa-ii": [
+        "chil-lat-tiin",
+        "mil-jar-dii",
+        "mis-sat-tiin",
+        "pis-taa-sii",
+        "vii-vaa-kii",
+        "whis-kas-sii"
     ],
     "ii-aa-o": [
         "hii-rak-ko",
@@ -15262,20 +22468,24 @@ export default {
         "il-jan-ko",
         "il-lak-ko",
         "il-mas-to",
+        "il-mas-ton",
         "kir-jaa-mo",
         "kir-jas-to",
+        "kir-jas-tot",
         "lii-nak-ko",
         "lii-vak-ko",
         "rih-mas-to",
         "tis-laa-mo",
         "vii-dak-ko",
         "vii-vas-to",
-        "vil-lak-ko"
+        "vil-lak-ko",
+        "vir-taa-ko"
     ],
     "ii-aa-oi": [
         "hil-jak-koin"
     ],
     "ii-aa-u": [
+        "dis-san-nu",
         "hiis-kah-dus",
         "himp-hamp-pu",
         "hir-nah-dus",
@@ -15291,9 +22501,12 @@ export default {
         "kirs-kah-dus",
         "lii-kah-dus",
         "lip-sah-dus",
+        "mis-san-nu",
+        "nii-tat-tu",
         "nik-sah-dus",
         "nip-sah-dus",
         "pii-pah-dus",
+        "pii-tat-tu",
         "pil-kah-dus",
         "pirs-kah-dus",
         "rii-vat-tu",
@@ -15306,6 +22519,9 @@ export default {
         "vin-gah-dus",
         "vink-sah-dus"
     ],
+    "ii-aa-ui": [
+        "pil-las-tuin"
+    ],
     "ii-aa-uu": [
         "il-lan-suu",
         "lin-jak-kuus",
@@ -15315,13 +22531,30 @@ export default {
         "rin-nan-pää",
         "sil-lan-pää"
     ],
+    "ii-aaa": [
+        "flip-paaa"
+    ],
+    "ii-aaau-oo": [
+        "pii-paaau-too"
+    ],
+    "ii-aai-a": [
+        "kitc-hmaail-man"
+    ],
     "ii-ai": [
+        "il-lain",
         "ir-tain",
+        "kii-vait",
         "kir-jain",
+        "kirk-kain",
+        "lip-pait",
+        "mis-sais",
         "mit-tain",
         "nilk-kain",
+        "rik-kait",
+        "sil-lai",
         "tiis-tai",
         "tis-lain",
+        "vii-sait",
         "vii-vain",
         "vim-pain"
     ],
@@ -15330,6 +22563,7 @@ export default {
         "flirt-tail-la",
         "hih-kais-ta",
         "hiip-pail-la",
+        "hil-jais-ta",
         "hil-pais-ta",
         "il-mail-la",
         "il-mais-ta",
@@ -15345,6 +22579,7 @@ export default {
         "kir-mail-la",
         "kir-mais-ta",
         "kir-pais-ta",
+        "kirk-kai-ta",
         "kis-kais-ta",
         "lii-pais-ta",
         "mit-tail-la",
@@ -15353,14 +22588,18 @@ export default {
         "rii-ail-la",
         "rii-pais-ta",
         "rii-tai-sa",
+        "rik-kail-ta",
         "sih-tail-la",
         "tii-rail-la",
+        "tiis-tai-na",
+        "tsii-gail-la",
         "vih-jail-la",
         "vih-jais-ta",
         "vih-kais-ta",
         "vih-lais-ta",
         "viit-tail-la",
         "vil-kais-ta",
+        "vilk-kai-na",
         "vim-mai-sa",
         "vin-kais-ta",
         "vip-pail-la",
@@ -15374,16 +22613,22 @@ export default {
         "sil-lai-kaa"
     ],
     "ii-ai-e": [
+        "dig-gai-len",
         "hil-jai-nen",
+        "hil-jai-sen",
+        "hil-jai-set",
         "hin-tai-nen",
         "il-mai-nen",
         "il-tai-nen",
         "irs-tai-nen",
         "kii-mai-nen",
+        "kii-mai-set",
         "kiis-tai-nen",
+        "kir-jail-len",
         "kit-kai-nen",
         "mil-lai-nen",
         "mit-tai-nen",
+        "mit-tai-set",
         "nil-jai-nen",
         "pih-kai-nen",
         "pik-kai-nen",
@@ -15393,15 +22638,23 @@ export default {
         "vih-mai-nen",
         "vii-mai-nen",
         "vii-nai-nen",
+        "viik-kai-len",
         "vil-lai-nen",
         "vim-mai-nen",
         "vir-tai-nen",
         "vis-vai-nen"
     ],
+    "ii-ai-ee": [
+        "kis-kai-see"
+    ],
     "ii-ai-i": [
+        "hiip-pai-lin",
+        "hil-jai-sin",
         "il-mai-sin",
         "il-tai-sin",
+        "imp-pai-li",
         "lii-pai-sin",
+        "mit-tai-lin",
         "tiis-tai-sin"
     ],
     "ii-ai-o": [
@@ -15421,6 +22674,7 @@ export default {
         "kik-kai-lu",
         "kil-jai-su",
         "kil-pai-lu",
+        "kil-pai-lun",
         "kir-jai-lu",
         "kir-kai-su",
         "kir-pai-su",
@@ -15437,6 +22691,7 @@ export default {
     ],
     "ii-ai-uu": [
         "hil-jai-suus",
+        "kil-pai-luun",
         "rii-tai-suus",
         "vim-mai-suus"
     ],
@@ -15445,6 +22700,7 @@ export default {
     ],
     "ii-au": [
         "briif-faus",
+        "chil-laus",
         "dip-paus",
         "dis-kaus",
         "fil-maus",
@@ -15522,6 +22778,8 @@ export default {
     ],
     "ii-au-a": [
         "ir-tau-ma",
+        "trip-lauh-ka",
+        "vii-saut-ta",
         "vir-kau-ra"
     ],
     "ii-au-aa": [
@@ -15542,8 +22800,16 @@ export default {
         "sin-kaut-taa",
         "tirs-kaut-taa"
     ],
+    "ii-au-e": [
+        "kirk-kau-den",
+        "vii-sau-den",
+        "vii-sau-det"
+    ],
     "ii-au-i": [
         "virt-saum-pi"
+    ],
+    "ii-au-ii": [
+        "vih-jauk-siin"
     ],
     "ii-au-yö": [
         "virk-kaus-työ"
@@ -15557,39 +22823,74 @@ export default {
         "kir-jauu-tuus"
     ],
     "ii-e": [
+        "bii-sej",
         "bis-nes",
+        "bis-nest",
+        "bis-se",
+        "bis-set",
         "bit-ter",
+        "bitc-hes",
         "brid-ge",
+        "hii-ren",
         "hil-se",
         "ih-me",
+        "ih-met",
         "il-me",
         "il-ve",
         "il-ves",
+        "in-gen",
+        "in-ne",
+        "in-te",
+        "is-ke",
+        "is-ken",
+        "it-ke",
+        "it-ken",
+        "it-ket",
         "it-se",
+        "it-te",
+        "it-tes",
         "kii-re",
         "kiil-le",
         "kiin-ne",
         "kil-ke",
+        "kil-ven",
+        "kil-vet",
         "kin-ner",
         "kir-je",
         "kir-ves",
         "lii-ke",
         "lii-te",
+        "mik-set",
+        "mil-le",
         "min-ne",
+        "nii-den",
+        "niil-le",
+        "niit-ten",
+        "nik-ke",
         "nis-se",
         "piir-re",
         "pil-ke",
+        "pil-ven",
+        "pil-vet",
         "pin-ne",
         "pirs-ke",
         "pis-te",
         "rii-te",
+        "rin-ger",
         "rin-ne",
+        "sii-he",
         "sii-hen",
         "sii-mes",
+        "sii-vel",
+        "sii-ves",
+        "sii-vet",
         "siir-re",
+        "sil-le",
         "sin-ne",
         "sing-le",
+        "sit-te",
         "sit-ten",
+        "skill-sters",
         "tii-bet",
         "tii-ne",
         "til-de",
@@ -15597,11 +22898,15 @@ export default {
         "tis-le",
         "vih-je",
         "vih-ne",
+        "vii-del",
+        "vii-den",
         "vii-des",
         "vii-me",
+        "vii-meks",
         "vii-te",
         "vii-ve",
         "viih-de",
+        "viik-set",
         "viil-le",
         "viis-te",
         "vil-ke",
@@ -15609,7 +22914,9 @@ export default {
         "vir-he",
         "vir-ke",
         "vir-ne",
-        "whip-pet"
+        "vir-ren",
+        "whip-pet",
+        "hii-let"
     ],
     "ii-e-a": [
         "lit-te-ra",
@@ -15622,7 +22929,19 @@ export default {
         "kin-te-re",
         "sii-ve-ke",
         "stil-le-ben",
-        "vii-le-ke"
+        "vii-le-ke",
+        "vii-me-sen",
+        "vii-me-set"
+    ],
+    "ii-e-ee": [
+        "hil-je-nee",
+        "him-me-nee",
+        "kir-ve-lee",
+        "vii-le-nee",
+        "vii-me-seen"
+    ],
+    "ii-e-ei": [
+        "vii-me-sein"
     ],
     "ii-e-i": [
         "dii-le-ri",
@@ -15632,6 +22951,10 @@ export default {
         "flip-pe-ri",
         "hil-le-ri",
         "him-me-li",
+        "ir-me-lin",
+        "it-se-kin",
+        "it-se-ni",
+        "it-te-ni",
         "kih-ve-li",
         "kii-pe-li",
         "kiis-se-li",
@@ -15640,9 +22963,11 @@ export default {
         "kir-ve-li",
         "klink-ke-ri",
         "kvit-te-ni",
+        "lii-de-lin",
         "lii-te-ri",
         "liis-te-ri",
         "mik-ke-li",
+        "mik-ke-lin",
         "mik-se-ri",
         "min-ne-kin",
         "mis-pe-li",
@@ -15650,38 +22975,54 @@ export default {
         "nik-ke-li",
         "nip-pe-li",
         "pil-le-ri",
+        "pil-le-rin",
         "pils-ne-ri",
         "pin-se-ri",
         "pin-se-tit",
         "pip-pe-li",
+        "pis-te-li",
         "print-te-ri",
         "rin-ke-li",
         "sii-de-ri",
+        "sii-de-rit",
+        "sii-pe-si",
         "simp-pe-li",
         "sirk-ke-li",
         "smir-ge-li",
         "spiik-ke-ri",
         "sprink-le-ri",
         "sprint-te-ri",
+        "tii-be-tin",
         "tii-ke-ri",
         "tim-pe-ri",
         "tin-ne-ri",
         "tit-te-li",
         "tit-te-ri",
         "tril-le-ri",
+        "vii-le-ni",
+        "vii-me-sin",
         "vii-ne-ri",
         "vink-ke-li",
         "vir-ve-li"
     ],
     "ii-e-ie": [
         "lii-ke-mies",
+        "pil-le-rien",
         "pis-te-mies"
+    ],
+    "ii-e-ii": [
+        "pil-le-rii",
+        "vii-me-sii"
+    ],
+    "ii-e-iii": [
+        "pis-te-tiiin"
     ],
     "ii-e-y": [
         "hii-le-tys",
         "hiih-te-ly",
         "ih-me-tys",
         "il-je-tys",
+        "it-ke-ny",
         "kiil-te-ly",
         "kiis-te-ly",
         "kir-ve-ly",
@@ -15708,6 +23049,8 @@ export default {
         "ih-me-työ"
     ],
     "ii-e-ä": [
+        "bii-se-jä",
+        "fil-me-jä",
         "hil-je-tä",
         "hil-pe-ä",
         "him-me-tä",
@@ -15721,8 +23064,15 @@ export default {
         "is-ke-mä",
         "is-ke-vä",
         "is-ke-ä",
+        "it-ke-tän",
+        "it-ke-vä",
+        "it-ke-vän",
         "it-ke-ä",
+        "it-se-hän",
         "it-se-käs",
+        "it-se-äs",
+        "it-te-äs",
+        "kii-pe-ät",
         "kii-ve-tä",
         "kiih-ke-ä",
         "kiik-ke-rä",
@@ -15737,28 +23087,48 @@ export default {
         "pii-le-vä",
         "pil-ve-tä",
         "pir-te-ä",
+        "rib-se-jä",
+        "rii-me-jä",
         "ris-te-tä",
         "sii-ve-käs",
+        "sip-se-jä",
         "sir-ke-ä",
         "sit-ke-tä",
         "sit-ke-ä",
         "vih-re-ä",
+        "vih-re-än",
         "vii-le-tä",
         "vii-le-ä",
+        "vii-ne-jä",
         "viik-se-käs",
         "vik-ke-lä",
         "vin-ke-ä",
         "vir-ke-ä"
     ],
     "ii-e-äi": [
+        "it-se-äin",
         "min-ne-päin",
         "sin-ne-päin"
     ],
     "ii-e-ää": [
+        "drink-ke-jään",
+        "hil-pe-ään",
+        "is-ke-tään",
+        "it-ke-mään",
+        "it-ke-tään",
+        "it-se-kään",
+        "it-se-ään",
+        "kii-ve-tään",
+        "kiih-ke-ään",
         "min-ne-kään",
+        "pis-te-tään",
+        "vih-re-ää",
+        "vii-le-ää",
+        "vii-le-ään",
         "vik-ke-lään"
     ],
     "ii-e-ö": [
+        "it-se-kö",
         "kit-ke-rö",
         "mit-te-lö",
         "pil-ve-tön",
@@ -15766,19 +23136,51 @@ export default {
         "sii-ve-tön"
     ],
     "ii-ee": [
+        "bis-see",
         "fris-bee",
+        "hir-vee",
+        "hir-veet",
+        "ih-meen",
+        "ih-mees",
+        "il-kee",
+        "il-meet",
         "ir-veen",
+        "is-kee",
+        "it-kee",
+        "it-sees",
+        "it-tees",
+        "kii-pee",
+        "kii-peen",
+        "kii-rees",
+        "kii-reest",
+        "kir-jeet",
+        "kir-veen",
+        "liik-kees",
+        "liik-keet",
         "liv-ree",
+        "piir-teet",
         "sik-seen",
-        "sil-leen"
+        "sil-lee",
+        "sil-leen",
+        "sit-kee",
+        "vii-lee",
+        "vii-tee",
+        "vii-teen",
+        "vii-veel",
+        "viih-teeks",
+        "vir-hees",
+        "vir-heet"
     ],
     "ii-ee-a": [
         "fin-gels-ka",
-        "prin-ses-sa"
+        "prin-ses-sa",
+        "prin-ses-san",
+        "prin-ses-sat"
     ],
     "ii-ee-aa": [
         "pin-nem-paa",
-        "pin-nem-paan"
+        "pin-nem-paan",
+        "ris-kee-raa"
     ],
     "ii-ee-au": [
         "bril-jee-raus",
@@ -15786,6 +23188,12 @@ export default {
         "sig-nee-raus"
     ],
     "ii-ee-e": [
+        "gil-let-ten",
+        "il-vek-sen",
+        "in-ter-net",
+        "it-seen-ne",
+        "it-sem-me",
+        "it-tem-me",
         "kik-her-ne",
         "kim-mel-le",
         "lii-ken-ne",
@@ -15794,10 +23202,15 @@ export default {
         "vii-den-nes"
     ],
     "ii-ee-ee": [
+        "ih-mee-seen",
         "it-sek-seen",
-        "pin-tee-seen"
+        "it-sel-leen",
+        "nih-kee-see",
+        "pin-tee-seen",
+        "pis-tee-seen"
     ],
     "ii-ee-i": [
+        "bis-sen-kin",
         "dis-ket-ti",
         "him-men-nin",
         "ih-meem-min",
@@ -15807,28 +23220,50 @@ export default {
         "in-ses-ti",
         "ing-res-si",
         "int-res-si",
+        "it-ket-ti",
+        "it-see-ni",
+        "it-see-si",
+        "it-tee-ni",
         "kii-rees-ti",
+        "kir-jee-ni",
         "kvin-tet-ti",
+        "liik-kee-ni",
         "mig-ree-ni",
         "pig-ment-ti",
         "pik-kels-si",
+        "rip-pee-si",
         "sih-tee-ri",
+        "sil-lek-ki",
         "sim-set-ti",
         "sit-tem-min",
         "sit-ten-kin",
         "vii-des-ti",
         "vii-mek-si",
-        "vin-jet-ti"
+        "vin-jet-ti",
+        "vir-hee-ni"
     ],
     "ii-ee-ie": [
         "kir-ves-mies"
+    ],
+    "ii-ee-ii": [
+        "imp-res-sii",
+        "int-res-sii",
+        "kii-tel-tiin",
+        "pis-tet-tii",
+        "pis-tet-tiin",
+        "rii-del-tiin",
+        "ris-pek-tii"
     ],
     "ii-ee-iy": [
         "sih-tee-riys"
     ],
     "ii-ee-o": [
         "kvin-tet-to",
-        "lib-ret-to"
+        "lib-ret-to",
+        "nin-ten-do"
+    ],
+    "ii-ee-oo": [
+        "nin-ten-doo"
     ],
     "ii-ee-y": [
         "hil-jen-nys",
@@ -15836,32 +23271,53 @@ export default {
         "hir-ves-tys",
         "il-men-nys",
         "il-mes-tys",
+        "il-mes-tyt",
         "il-met-ty",
         "kim-mel-lys",
         "kir-vel-lys",
         "pii-per-rys",
+        "piir-ret-ty",
         "tii-mel-lys",
         "vii-len-nys"
     ],
+    "ii-ee-yi": [
+        "il-mes-tyit"
+    ],
     "ii-ee-yy": [
+        "il-mes-tyy",
         "it-sek-kyys"
     ],
     "ii-ee-ä": [
         "hiih-del-lä",
+        "hil-jen-nä",
+        "hil-jen-nät",
+        "ih-mee-nä",
+        "il-meel-lä",
         "ir-ves-sä",
         "is-kel-mä",
+        "is-kel-män",
         "is-ken-tä",
+        "it-seen-sä",
+        "it-sen-sä",
+        "it-ses-tä",
+        "it-teen-sä",
+        "it-ten-sä",
         "kii-tel-lä",
         "kiil-lel-lä",
         "kiin-nem-mäs",
         "kiis-tel-lä",
         "kir-jel-mä",
+        "kir-jet-tä",
         "kir-vel-lä",
+        "kir-ves-tä",
         "kit-ken-tä",
         "lii-del-lä",
+        "lii-ket-tä",
         "liik-keel-lä",
         "liik-kees-sä",
+        "nih-kee-tä",
         "piir-rel-lä",
+        "pil-ves-sä",
         "pin-tees-sä",
         "pin-tees-tä",
         "pis-tel-lä",
@@ -15870,10 +23326,16 @@ export default {
         "siir-rel-lä",
         "sin-nem-mä",
         "sin-nem-mäs",
+        "vii-lee-tä",
+        "viih-det-tä",
         "viil-lel-lä",
         "vil-jel-lä",
         "vil-jel-mä",
         "vis-kel-lä"
+    ],
+    "ii-ee-äi": [
+        "it-ses-täin",
+        "kir-jees-säin"
     ],
     "ii-ee-ää": [
         "hii-let-tää",
@@ -15885,18 +23347,24 @@ export default {
         "il-men-tää",
         "is-ket-tää",
         "it-ket-tää",
+        "it-sel-tään",
         "it-ses-sään",
         "it-ses-tään",
         "kii-reh-tää",
         "kim-mel-tää",
         "kir-vel-tää",
+        "min-nek-kään",
         "pii-per-tää",
+        "rii-del-lään",
+        "sii-hen-kään",
         "sin-nem-pää",
         "sit-ten-kään",
         "tii-len-pää",
         "tii-neh-tää",
+        "vih-reem-pää",
         "vii-len-tää",
-        "vii-let-tää"
+        "vii-let-tää",
+        "vii-mes-tään"
     ],
     "ii-ee-ö": [
         "il-mee-tön",
@@ -15908,23 +23376,81 @@ export default {
         "sigh-tseeing"
     ],
     "ii-ei": [
+        "bii-sei",
+        "bii-seist",
+        "biit-tei",
+        "bils-tein",
+        "chick-sei",
+        "chik-sei",
+        "chik-seil",
+        "dik-kei",
+        "fii-nei",
+        "fin-nei",
         "hih-hei",
-        "mil-tei"
+        "him-mein",
+        "hip-pei",
+        "kin-gei",
+        "krii-sei",
+        "liik-keit",
+        "mik-sei",
+        "mil-tei",
+        "nip-pei",
+        "pii-reis",
+        "piis-sei",
+        "pik-seist",
+        "pil-lei",
+        "rii-mei",
+        "rin-geis",
+        "ris-keist",
+        "siis-tei",
+        "skil-lei",
+        "stii-lei",
+        "vii-lein",
+        "vii-leit",
+        "vii-mein",
+        "vir-heist",
+        "vit-sei",
+        "vit-seist"
     ],
     "ii-ei-a": [
         "it-sei-va"
     ],
     "ii-ei-e": [
+        "chick-seil-le",
         "hil-sei-nen",
         "il-mei-nen",
         "kii-rei-nen",
+        "kii-rei-set",
         "kir-jeit-se",
+        "mim-meil-le",
+        "nih-kei-le",
         "riit-tei-nen",
+        "rin-teil-le",
+        "rip-pei-den",
         "vii-mei-nen",
+        "vii-mei-sen",
+        "vii-mei-set",
         "vii-meis-te"
     ],
+    "ii-ei-ee": [
+        "ris-tei-lee",
+        "vii-mei-seen"
+    ],
     "ii-ei-i": [
-        "sprii-kei-tin"
+        "lii-vei-hin",
+        "mim-mei-hin",
+        "nis-teik-si",
+        "pii-rei-hin",
+        "sprii-kei-tin",
+        "vii-mei-sin",
+        "vii-mein-kin",
+        "vii-rei-hin",
+        "vir-heik-si",
+        "vit-seik-si"
+    ],
+    "ii-ei-ii": [
+        "ih-mei-siin",
+        "kir-jei-siin"
     ],
     "ii-ei-o": [
         "it-sein-ho"
@@ -15944,15 +23470,30 @@ export default {
         "kii-rei-syys"
     ],
     "ii-ei-ä": [
+        "bii-teil-lä",
+        "bii-teis-sä",
+        "bii-teis-tä",
         "hil-seil-lä",
+        "him-mei-tä",
         "il-keil-lä",
         "il-mei-käs",
         "il-meil-lä",
+        "il-meis-tä",
         "il-veil-lä",
         "kii-peil-lä",
+        "kir-veil-lä",
+        "liik-kei-tä",
+        "mim-meil-tä",
+        "pii-reis-sä",
         "pil-veil-lä",
         "ris-teil-lä",
-        "sii-peil-lä"
+        "sii-peil-lä",
+        "vih-jei-tä",
+        "vii-lei-tä",
+        "vii-meis-tä",
+        "viit-tei-tä",
+        "vir-hei-tä",
+        "vit-seis-tä"
     ],
     "ii-ei-äi": [
         "pii-reit-täin"
@@ -15961,6 +23502,7 @@ export default {
         "ih-meis-sään",
         "il-meit-tää",
         "pis-teit-tää",
+        "ris-teil-lään",
         "vii-meis-tää",
         "vii-meis-tään"
     ],
@@ -15995,11 +23537,23 @@ export default {
         "vin-keys",
         "vir-keys"
     ],
+    "ii-ey-e": [
+        "ris-teyk-sen"
+    ],
+    "ii-ey-ee": [
+        "ris-teyk-seen"
+    ],
     "ii-ey-ey": [
         "kir-jeyh-teys"
     ],
+    "ii-ey-ii": [
+        "ris-teyk-siin"
+    ],
     "ii-ey-y": [
         "ris-tey-tys"
+    ],
+    "ii-ey-yy": [
+        "ris-tey-tyy"
     ],
     "ii-ey-ä": [
         "ris-tey-mä"
@@ -16015,28 +23569,43 @@ export default {
     ],
     "ii-i": [
         "bii-si",
+        "bii-sin",
+        "bii-sis",
+        "bii-sit",
+        "bii-tit",
+        "biif-fi",
         "biit-ti",
+        "bil-li",
         "bit-ti",
         "brit-ti",
         "dip-pi",
         "dril-li",
         "drink-ki",
         "fii-lis",
+        "fii-list",
         "fii-ni",
+        "fiit-ti",
         "fil-mi",
+        "fil-mit",
         "filt-ti",
         "fin-ni",
         "flirt-ti",
+        "frii-kit",
         "frii-si",
         "friik-ki",
+        "fritz-lin",
         "gril-li",
+        "hif-kist",
         "hii-li",
+        "hii-lil",
         "hii-ri",
         "hii-si",
+        "hii-vin",
         "hiih-din",
         "hiit-ti",
         "hin-di",
         "hink-ki",
+        "hink-kis",
         "hint-ti",
         "hip-pi",
         "hir-si",
@@ -16050,16 +23619,22 @@ export default {
         "ii-ris",
         "ii-si",
         "il-ki",
+        "il-li",
         "il-mi",
         "ilt-ti",
         "im-pi",
         "ins-si",
         "int-ti",
         "ir-ti",
+        "is-ki",
+        "is-kin",
         "is-mi",
+        "it-kin",
+        "it-kit",
         "jid-di",
         "jid-dish",
         "jii-ri",
+        "kick-sit",
         "kih-ti",
         "kii-ri",
         "kii-vi",
@@ -16084,49 +23659,71 @@ export default {
         "klimp-pi",
         "klip-si",
         "krii-si",
+        "krii-sin",
+        "krii-sis",
         "kril-li",
         "kvint-ti",
         "lif-ti",
         "lii-din",
         "lii-tin",
         "lii-vi",
+        "lii-vin",
         "liik-kis",
         "lin-ni",
         "link-ki",
+        "link-kis",
         "lins-si",
+        "lint-sin",
         "lip-pi",
         "lip-pis",
         "lit-si",
         "mik-ki",
         "mik-si",
         "mil-li",
+        "milk-kis",
         "mim-mi",
+        "mim-min",
+        "mim-mit",
+        "min-kit",
         "mink-ki",
         "mir-ri",
         "mis-si",
         "nih-ti",
+        "nii-hi",
+        "nii-hin",
+        "nii-li",
         "nii-ni",
         "nii-si",
+        "niin-ki",
+        "niin-kin",
         "niit-ti",
         "nik-si",
+        "nik-sit",
         "nilk-ki",
         "nir-ri",
         "nis-ti",
+        "nis-tit",
         "pic-nic",
         "pih-dit",
         "pih-vi",
         "pii-hin",
+        "pii-kin",
         "pii-ri",
+        "pii-rit",
         "pii-si",
         "piik-ki",
         "piir-rin",
         "pil-li",
+        "pil-lin",
+        "pil-tit",
         "pil-vi",
+        "pil-vis",
         "pilk-ki",
         "pils-si",
         "pilt-ti",
         "pimp-pi",
         "pin-gis",
+        "pin-kit",
         "pin-ni",
         "pink-ki",
         "pins-si",
@@ -16134,38 +23731,52 @@ export default {
         "pirt-ti",
         "pis-ki",
         "pis-si",
+        "pis-ti",
         "pis-tin",
+        "pis-tit",
+        "pit-ki",
         "pit-kin",
         "pit-si",
+        "pit-sin",
         "prii-mi",
         "pril-lit",
         "prins-si",
+        "prins-sit",
         "print-ti",
         "rii-hi",
         "rii-mi",
+        "rii-min",
+        "rii-mit",
         "rii-si",
         "riit-ti",
+        "riit-tis",
         "rik-ki",
         "rik-si",
         "ril-lit",
         "rim-pi",
+        "rin-gis",
         "rin-ki",
         "rip-pi",
         "rip-pis",
         "rip-si",
         "ris-ki",
         "ris-ti",
+        "ris-tin",
         "sfink-si",
         "sih-ti",
         "sii-li",
         "sii-pi",
         "sii-tin",
+        "sii-vin",
         "siir-rin",
         "siis-ti",
         "sik-hi",
         "sik-li",
         "sik-si",
         "sil-li",
+        "sil-mil",
+        "sil-min",
+        "sil-mis",
         "sil-ti",
         "silk-ki",
         "silt-ti",
@@ -16180,35 +23791,48 @@ export default {
         "skit-si",
         "smink-ki",
         "spiik-ki",
+        "splif-fi",
         "stik-ki",
         "sviit-ti",
         "svin-gi",
         "tii-li",
+        "tii-lin",
         "tii-mi",
         "tii-vis",
         "tiik-ki",
         "tik-ki",
         "tik-li",
+        "tik-si",
         "til-hi",
         "til-li",
         "til-sit",
+        "til-tis",
         "tin-ki",
         "tint-ti",
         "tip-pi",
         "tir-ri",
         "tis-ki",
+        "tis-kin",
+        "tis-kit",
         "tis-si",
+        "tis-sit",
         "trik-ki",
         "tril-li",
         "trip-pi",
         "tvil-li",
         "vih-min",
         "vii-li",
+        "vii-mist",
         "vii-ni",
+        "vii-nin",
         "vii-ri",
         "vii-si",
         "viik-si",
+        "viit-ti",
+        "viit-tis",
         "vil-li",
+        "vil-lin",
+        "vil-list",
         "vilp-pi",
         "vilt-ti",
         "vink-ki",
@@ -16218,14 +23842,18 @@ export default {
         "vir-pi",
         "vir-si",
         "vis-ki",
+        "vis-kit",
         "vis-si",
         "vis-ti",
-        "vit-si"
+        "vis-tit",
+        "vit-si",
+        "witc-hit"
     ],
     "ii-i-a": [
         "bib-li-a",
         "is-ki-as",
         "klii-vi-a",
+        "kris-ti-an",
         "pip-li-a",
         "rint-si-kat"
     ],
@@ -16236,6 +23864,9 @@ export default {
         "fin-ni-nen",
         "hir-si-nen",
         "ih-mi-nen",
+        "ih-mi-sel",
+        "ih-mi-sen",
+        "ih-mi-set",
         "kiin-ni-ke",
         "kiin-ni-te",
         "kiit-ti-met",
@@ -16261,9 +23892,11 @@ export default {
     ],
     "ii-i-i": [
         "int-ri-gi",
+        "it-ki-si",
         "kiin-ni-tin",
         "lik-vi-di",
-        "pii-ki-vi"
+        "pii-ki-vi",
+        "sil-ti-kin"
     ],
     "ii-i-ie": [
         "link-ki-mies",
@@ -16272,11 +23905,16 @@ export default {
         "sii-pi-mies",
         "silk-ki-tie"
     ],
+    "ii-i-ii": [
+        "ih-mi-sii",
+        "ih-mi-siin"
+    ],
     "ii-i-o": [
         "dis-ti-kon",
         "fik-ti-o",
         "fis-si-o",
         "in-di-go",
+        "krii-ti-kon",
         "mis-si-o"
     ],
     "ii-i-u": [
@@ -16323,6 +23961,7 @@ export default {
         "hil-li-tä",
         "hip-si-ä",
         "hir-vi-tä",
+        "ii-si-ä",
         "ir-vi-ä",
         "is-ki-jä",
         "it-ki-jä",
@@ -16331,9 +23970,12 @@ export default {
         "lil-li-ä",
         "lis-ti-ä",
         "lit-ki-ä",
+        "milk-ki-ä",
         "nii-si-ä",
         "pii-ki-käs",
         "pii-mi-ä",
+        "pil-li-tä",
+        "pil-li-tän",
         "pilk-ki-jä",
         "pilk-ki-ä",
         "pin-ni-ä",
@@ -16342,9 +23984,11 @@ export default {
         "rin-ki-lä",
         "rip-si-ä",
         "ris-ki-lä",
+        "ris-ki-ä",
         "ris-ti-ä",
         "sii-vi-lä",
         "siis-ti-ä",
+        "sil-mi-ä",
         "sil-pi-ä",
         "sin-ki-lä",
         "sin-ki-tä",
@@ -16354,10 +23998,13 @@ export default {
         "vih-ki-jä",
         "vih-ki-ä",
         "vih-vi-lä",
+        "vii-ni-ä",
         "viik-si-käs",
+        "viik-si-ä",
         "viit-si-ä",
         "vil-li-tä",
         "vin-ti-lä",
+        "vink-ki-nä",
         "vis-pi-lä",
         "vit-si-käs"
     ],
@@ -16366,7 +24013,10 @@ export default {
         "viik-si-säie"
     ],
     "ii-i-ää": [
-        "ril-li-pää"
+        "ir-ti-kään",
+        "mik-si-kään",
+        "ril-li-pää",
+        "tin-ki-mään"
     ],
     "ii-i-ö": [
         "hil-li-tön",
@@ -16383,18 +24033,81 @@ export default {
         "vil-pi-tön",
         "vin-ti-ö"
     ],
+    "ii-ie": [
+        "biit-tien",
+        "hii-pien",
+        "hip-pien",
+        "it-kien",
+        "pil-lien",
+        "pil-vien",
+        "sil-mien",
+        "sil-mies"
+    ],
+    "ii-ie-e": [
+        "sil-miem-me"
+    ],
+    "ii-ie-i": [
+        "sil-mie-ni"
+    ],
     "ii-ie-äi": [
         "hir-vie-läin",
         "rip-sie-läin",
         "vil-lie-läin"
     ],
     "ii-ii": [
+        "bii-sii",
+        "bii-siit",
+        "biif-fii",
+        "biit-tii",
+        "biit-tiin",
+        "bit-tii",
+        "blin-dii",
+        "chil-lii",
+        "dic-kii",
+        "drink-kii",
+        "fiit-tii",
+        "friik-kii",
+        "gril-liin",
+        "hii-pii",
+        "hit-tii",
+        "ii-sii",
+        "int-tii",
         "ir-viin",
+        "kii-rii",
         "kiik-kiin",
+        "krii-siin",
+        "lit-tii",
+        "mik-kii",
+        "mik-kiin",
+        "mim-mii",
+        "nip-pii",
+        "piik-kii",
+        "piik-kiin",
+        "pil-lii",
+        "pil-viin",
+        "pink-kii",
+        "rii-mii",
+        "rii-miit",
         "ris-tiin",
+        "shit-tii",
+        "sii-sii",
+        "siis-tii",
+        "sil-mii",
+        "sil-miin",
+        "sint-tiin",
         "sir-riin",
+        "skil-lii",
         "tii-pii",
-        "vis-siin"
+        "tii-viin",
+        "tis-siin",
+        "vii-nii",
+        "viit-tii",
+        "vink-kii",
+        "vint-tiin",
+        "vis-kii",
+        "vis-sii",
+        "vis-siin",
+        "wiik-kii"
     ],
     "ii-ii-a": [
         "chinc-hil-la",
@@ -16405,16 +24118,23 @@ export default {
         "tii-rik-ka"
     ],
     "ii-ii-e": [
+        "dil-lin-ger",
+        "fii-lik-set",
+        "fii-lis-ten",
+        "ih-mis-ten",
+        "pil-vil-le",
         "pit-kik-set",
         "sir-ril-le",
         "tii-vis-te",
         "vir-kis-te"
     ],
     "ii-ii-ee": [
+        "sii-vil-leen",
         "sir-ril-leen"
     ],
     "ii-ii-i": [
         "fib-rii-ni",
+        "fii-lik-sis",
         "fii-lin-ki",
         "ii-sis-ti",
         "in-dii-si",
@@ -16427,10 +24147,12 @@ export default {
         "ling-vis-ti",
         "mii-tin-ki",
         "nit-riit-ti",
+        "pii-rit-ti",
         "pik-nik-ki",
         "ping-vii-ni",
         "prin-siip-pi",
         "rii-tin-ki",
+        "rin-tin-tin",
         "ris-tik-ki",
         "shil-lin-ki",
         "siis-tis-ti",
@@ -16444,6 +24166,10 @@ export default {
     ],
     "ii-ii-ie": [
         "ris-tin-tie"
+    ],
+    "ii-ii-ii": [
+        "ris-tit-tiin",
+        "vit-rii-niin"
     ],
     "ii-ii-iy": [
         "in-tii-miys"
@@ -16474,22 +24200,38 @@ export default {
     "ii-ii-yy": [
         "pii-kik-kyys",
         "sin-nik-kyys",
+        "tii-vis-tyy",
+        "vil-liin-tyy",
         "vit-sik-kyys"
     ],
     "ii-ii-yö": [
         "ih-mis-työ"
     ],
     "ii-ii-ä": [
+        "bii-sis-tä",
+        "dic-kil-lä",
+        "fii-lis-tä",
         "hii-vin-tä",
         "hil-lin-tä",
+        "ih-mis-tä",
         "ir-vis-sä",
         "kii-kis-sä",
         "kii-kis-tä",
+        "krii-sis-tä",
         "pil-kin-tä",
+        "pil-vis-sä",
+        "ris-kil-lä",
         "ris-tis-sä",
+        "sii-vil-lä",
+        "sil-mis-sä",
+        "sil-mis-tä",
         "sir-ril-lä",
         "sir-ris-sä",
-        "til-kin-tä"
+        "tii-mis-tä",
+        "til-kin-tä",
+        "tis-kil-lä",
+        "vii-nis-tä",
+        "vit-sil-lä"
     ],
     "ii-ii-äi": [
         "ih-mis-täi",
@@ -16499,6 +24241,7 @@ export default {
         "sil-mik-käin"
     ],
     "ii-ii-ää": [
+        "fii-lis-tää",
         "fil-min-tää",
         "hir-vit-tää",
         "ir-vis-tää",
@@ -16507,6 +24250,7 @@ export default {
         "kil-lit-tää",
         "kip-ris-tää",
         "kis-mit-tää",
+        "lii-din-tään",
         "lin-kit-tää",
         "nii-sit-tää",
         "pii-kit-tää",
@@ -16521,6 +24265,9 @@ export default {
         "rii-hit-tää",
         "rii-mit-tää",
         "sii-vit-tää",
+        "siis-tim-pää",
+        "sil-mil-lään",
+        "sil-mis-sään",
         "sir-ril-lään",
         "sit-kis-tää",
         "tii-vis-tää",
@@ -16534,7 +24281,11 @@ export default {
         "fil-min-nös",
         "hii-lis-tö",
         "lins-sis-tö",
+        "nii-nis-tö",
         "pil-lis-tö"
+    ],
+    "ii-ii-öö": [
+        "nii-nis-töö"
     ],
     "ii-iu": [
         "in-dium"
@@ -16563,8 +24314,10 @@ export default {
         "link-kiyh-teys"
     ],
     "ii-o": [
+        "bil-bo",
         "bin-go",
         "bist-ro",
+        "din-go",
         "dis-ko",
         "hii-op",
         "hiih-to",
@@ -16574,6 +24327,7 @@ export default {
         "hip-hop",
         "hirt-to",
         "hit-to",
+        "il-po",
         "in-fo",
         "in-ho",
         "in-to",
@@ -16582,26 +24336,38 @@ export default {
         "jip-po",
         "kii-to",
         "kii-tos",
+        "kii-tost",
         "kiih-ko",
         "kiil-to",
         "kip-po",
         "kir-jo",
         "kirk-ko",
         "kis-ko",
+        "kis-kon",
+        "klin-gon",
         "lii-to",
         "lii-tos",
         "liir-to",
         "liit-to",
         "lim-bo",
         "lin-ko",
+        "lind-roth",
         "lip-po",
+        "lip-post",
         "lis-ko",
+        "lis-kot",
+        "mig-non",
+        "mik-ko",
         "mik-ro",
+        "mil-lo",
+        "mil-lon",
+        "niin-ko",
         "niit-to",
         "nir-so",
         "nirk-ko",
         "nit-ro",
         "pii-lo",
+        "pii-los",
         "piik-ko",
         "piip-po",
         "piir-ros",
@@ -16613,6 +24379,7 @@ export default {
         "pit-ko",
         "riis-to",
         "rik-ko",
+        "rin-gon",
         "shin-to",
         "sii-lo",
         "sii-tos",
@@ -16621,13 +24388,26 @@ export default {
         "siir-ros",
         "siir-to",
         "sil-ko",
+        "sil-lo",
+        "sil-lon",
+        "sin-gol",
+        "sin-gon",
         "sin-ko",
         "sis-ko",
+        "sis-kon",
         "sit-com",
         "sit-ko",
         "skit-so",
         "tip-top",
         "vih-ko",
+        "vih-kos",
+        "vii-koks",
+        "vii-kol",
+        "vii-kolt",
+        "vii-kon",
+        "vii-kos",
+        "vii-ton",
+        "vii-tot",
         "viik-ko",
         "viil-los",
         "viil-to",
@@ -16644,12 +24424,22 @@ export default {
         "ir-ro-ta",
         "ir-vo-kas",
         "kiih-ko-ta",
+        "kiil-lo-tan",
+        "kil-so-ja",
         "kim-mo-ta",
         "kir-jo-a",
+        "kir-jo-ja",
+        "kir-jo-tan",
         "kir-vo-ta",
         "kis-ko-a",
         "kis-ko-ja",
+        "kis-ko-mas",
+        "kis-so-ja",
+        "lii-ko-ja",
+        "lii-lo-ja",
         "lin-go-ta",
+        "lin-jo-ja",
+        "mik-ko-la",
         "pii-ko-a",
         "pii-lo-kas",
         "piin-ko-va",
@@ -16658,7 +24448,9 @@ export default {
         "pin-ko-a",
         "pirs-to-a",
         "pis-to-kas",
+        "rih-ko-la",
         "rii-po-a",
+        "rii-to-ja",
         "rik-ko-a",
         "rik-ko-ja",
         "sii-vo-ta",
@@ -16666,34 +24458,52 @@ export default {
         "siit-to-la",
         "sil-po-a",
         "sin-go-ta",
+        "sis-ko-ja",
         "vih-lo-a",
         "vih-mo-a",
         "vih-to-a",
+        "vii-vo-ja",
+        "viik-ko-a",
         "viis-to-ta",
         "viit-to-a",
         "viit-to-ja",
         "viit-to-ma",
         "vil-po-la",
+        "vir-ko-ja",
         "vir-po-a",
         "vir-po-ja",
         "vis-ko-a",
         "vit-so-a"
     ],
     "ii-o-aa": [
+        "ir-to-aa",
         "ir-to-maa",
         "kirk-ko-maa",
+        "kirk-ko-maan",
+        "pilk-ko-maan",
+        "sii-vo-taan",
         "siir-to-maa"
+    ],
+    "ii-o-ai": [
+        "sii-vo-ais"
     ],
     "ii-o-e": [
         "hil-lo-ke",
         "il-ko-sen",
+        "il-mo-jen",
         "kii-ho-ke",
         "kii-ho-te",
         "kiil-lo-ke",
         "kiil-lo-te",
         "kim-mo-ke",
+        "lik-ko-jen",
+        "lis-ko-jen",
+        "lis-to-jen",
         "pis-to-ke",
+        "sil-to-jen",
+        "tii-ho-sen",
         "vih-ko-nen",
+        "vii-mo-sen",
         "vii-to-nen",
         "vir-vo-ke"
     ],
@@ -16702,15 +24512,19 @@ export default {
         "dip-lo-mi",
         "gib-bo-ni",
         "hik-ko-ri",
+        "hip-ho-pin",
         "kii-ho-tin",
         "kiil-lo-tin",
+        "lii-do-kin",
         "lii-po-tin",
         "lik-vo-ri",
         "mik-ro-bi",
         "mik-ro-ni",
+        "pii-lo-tin",
         "pii-so-ni",
         "pin-go-tin",
         "sir-ko-ni",
+        "sis-ko-si",
         "vih-to-ri",
         "zir-ko-ni"
     ],
@@ -16743,17 +24557,31 @@ export default {
         "vii-po-tus"
     ],
     "ii-o-ää": [
+        "ir-to-pää",
         "kiin-to-jää",
         "kirk-ko-häät"
     ],
     "ii-oi": [
+        "hin-toi",
+        "il-loin",
+        "kir-joist",
         "lii-oin",
         "mil-loin",
+        "mil-loink",
+        "pii-oin",
+        "sil-loi",
         "sil-loin",
-        "vih-doin"
+        "vih-doi",
+        "vih-doin",
+        "vii-voi",
+        "viis-toist"
     ],
     "ii-oi-a": [
         "fik-soi-da",
+        "hin-nois-ta",
+        "il-moi-tan",
+        "il-toi-na",
+        "in-noi-tan",
         "in-toil-la",
         "jip-poil-la",
         "kih-lois-sa",
@@ -16762,12 +24590,20 @@ export default {
         "kiin-toi-sa",
         "kim-moi-sa",
         "kim-poil-la",
+        "kir-joi-tan",
+        "kir-jois-sa",
+        "kir-jois-ta",
         "lim-boil-la",
+        "lin-nois-sa",
         "mil-loin-ka",
         "nir-soil-la",
         "riit-toi-sa",
+        "rin-noil-ta",
+        "rin-nois-ta",
         "sin-koil-la",
+        "sis-kois-ta",
         "tii-moil-ta",
+        "viis-tois-ta",
         "viit-toil-la",
         "vil-poi-sa"
     ],
@@ -16781,14 +24617,17 @@ export default {
         "kir-voit-taa",
         "lii-moit-taa",
         "lin-joit-taa",
+        "lin-nois-taan",
         "lin-noit-taa",
         "lis-toit-taa",
         "mii-noit-taa",
         "mil-loin-kaan",
         "pil-koit-taa",
         "pin-noit-taa",
+        "sil-loin-kaan",
         "sil-loit-taa",
         "vih-moit-taa",
+        "vii-moil-laan",
         "vii-toit-taa",
         "vii-voit-taa",
         "vil-loit-taa",
@@ -16808,6 +24647,8 @@ export default {
         "in-noi-te",
         "kim-moi-nen",
         "kir-joi-te",
+        "kir-joil-le",
+        "kis-soil-le",
         "lii-moi-te",
         "lin-noi-te",
         "mii-noi-te",
@@ -16822,11 +24663,21 @@ export default {
     "ii-oi-i": [
         "dip-loi-di",
         "fik-soin-ti",
+        "il-moi-tin",
         "kih-loi-hin",
+        "kir-joi-hin",
         "kir-joi-tin",
+        "kir-joi-tit",
         "mil-loin-kin",
+        "nilk-koi-hin",
+        "pin-toi-hin",
+        "sii-voi-sit",
+        "sil-loin-kin",
+        "sin-koi-li",
+        "vih-doin-kin",
         "vih-moi-tin",
         "vii-voi-tin",
+        "viik-koi-hin",
         "vir-roi-tin"
     ],
     "ii-oi-u": [
@@ -16867,26 +24718,58 @@ export default {
         "kirk-koi-sä"
     ],
     "ii-oo": [
-        "viis-toon"
+        "dis-koon",
+        "hil-loo",
+        "in-foo",
+        "in-hoon",
+        "in-too",
+        "ir-too",
+        "kirk-koo",
+        "kirk-koon",
+        "kis-koo",
+        "pii-loo",
+        "pii-loon",
+        "pin-koo",
+        "rik-koo",
+        "sii-voo",
+        "sii-voon",
+        "siir-too",
+        "viik-koo",
+        "viik-koon",
+        "viis-toon",
+        "vir-poo"
     ],
     "ii-oo-a": [
         "bil-joo-na",
+        "dis-cos-sa",
+        "dis-kos-sa",
+        "in-nos-ta",
+        "int-ros-sa",
+        "kii-tos-ta",
+        "kiin-nos-ta",
         "kil-joo-na",
         "kir-jon-ta",
+        "kir-kos-sa",
         "kis-kon-ta",
         "mil-joo-na",
+        "mil-joo-nan",
         "mil-joo-nas",
+        "pii-los-sa",
         "sii-vol-la",
         "sii-voo-ja",
+        "sil-lon-ha",
         "sil-von-ta",
         "tril-joo-na",
         "vih-don-ta",
+        "vii-kol-la",
+        "vii-kos-sa",
         "viis-tos-sa",
         "viis-tos-ta",
         "vis-kon-ta"
     ],
     "ii-oo-aa": [
         "hiil-los-taa",
+        "ig-noo-raat",
         "in-hot-taa",
         "in-nos-taa",
         "ir-rot-taa",
@@ -16894,9 +24777,13 @@ export default {
         "kii-hot-taa",
         "kiil-lot-taa",
         "kiin-nos-taa",
+        "kir-jot-taa",
         "kis-kot-taa",
         "lii-hot-taa",
         "lii-tos-taa",
+        "mil-joo-naa",
+        "mil-lon-kaa",
+        "mil-lon-kaan",
         "pii-lot-taa",
         "pii-pot-taa",
         "pil-kot-taa",
@@ -16911,13 +24798,24 @@ export default {
         "dis-kont-taus"
     ],
     "ii-oo-e": [
+        "kii-tok-seks",
+        "kii-tok-set",
+        "kim-mol-le",
         "sis-kok-set"
+    ],
+    "ii-oo-ee": [
+        "hiil-lok-seen",
+        "kim-mok-keen"
     ],
     "ii-oo-i": [
         "dif-ton-gi",
+        "hip-hop-pi",
+        "hitc-hcoc-kin",
         "ii-sop-pi",
         "kir-roo-si",
         "lii-dok-ki",
+        "mil-joo-nin",
+        "nir-som-pi",
         "nir-sos-ti",
         "pii-ron-ki",
         "pis-too-li",
@@ -16930,16 +24828,24 @@ export default {
     "ii-oo-ie": [
         "kir-kon-mies"
     ],
+    "ii-oo-ii": [
+        "hip-hop-pii",
+        "kis-kot-tiin",
+        "pis-too-lii"
+    ],
     "ii-oo-iu": [
         "vis-koo-sius"
     ],
     "ii-oo-o": [
-        "dis-kont-to"
+        "dis-kont-to",
+        "nic-hol-son",
+        "sil-lon-ko"
     ],
     "ii-oo-u": [
         "imp-romp-tu",
         "in-nos-tus",
         "kiin-nos-tus",
+        "sii-von-nu",
         "siir-ros-tus"
     ],
     "ii-oo-uu": [
@@ -16966,9 +24872,12 @@ export default {
     ],
     "ii-u": [
         "cir-rus",
+        "figh-tclub",
         "fii-kus",
         "fik-su",
         "frit-su",
+        "hih-ku",
+        "hii-pu",
         "him-pun",
         "hin-du",
         "hin-ku",
@@ -16977,14 +24886,22 @@ export default {
         "ig-lu",
         "in-put",
         "is-ku",
+        "is-kut",
+        "is-tu",
+        "is-tun",
+        "is-tut",
         "it-ku",
+        "jip-pu",
         "kii-lu",
         "kii-ru",
         "kii-su",
         "kiik-ku",
         "kil-ju",
+        "kil-jut",
+        "kim-pus",
         "kimp-pu",
         "kimp-sut",
+        "kin-kun",
         "kink-ku",
         "kint-tu",
         "kir-nu",
@@ -16993,8 +24910,15 @@ export default {
         "kirs-tu",
         "kis-sus",
         "kit-ku",
+        "kit-kut",
+        "klit-sust",
+        "kris-tus",
+        "lii-ku",
+        "lii-kun",
         "lii-tu",
+        "lim-pun",
         "limp-pu",
+        "lin-nut",
         "lin-tu",
         "link-ku",
         "lip-pu",
@@ -17002,14 +24926,18 @@ export default {
         "mii-lu",
         "mii-nus",
         "mint-tu",
+        "nii-ku",
         "niin-ku",
+        "niin-kun",
         "nilk-ku",
         "nip-pu",
+        "nit-kut",
         "pii-lu",
         "pii-ru",
         "piip-pu",
         "piis-ku",
         "pik-ku",
+        "pil-kut",
         "pil-lu",
         "pilk-ku",
         "pir-tu",
@@ -17018,6 +24946,7 @@ export default {
         "prik-ku",
         "rii-mu",
         "rii-pus",
+        "rii-sun",
         "rim-su",
         "rimp-su",
         "rims-su",
@@ -17027,6 +24956,7 @@ export default {
         "sii-vu",
         "sil-mu",
         "sil-mus",
+        "sil-mut",
         "silp-pu",
         "simp-pu",
         "sink-ku",
@@ -17036,6 +24966,8 @@ export default {
         "tii-nu",
         "tik-ku",
         "tilk-ku",
+        "tip-pu",
+        "tsii-gut",
         "vii-lu",
         "vii-ru",
         "vii-su",
@@ -17046,6 +24978,7 @@ export default {
         "vit-tu"
     ],
     "ii-u-a": [
+        "fik-su-na",
         "hih-ku-a",
         "hii-pu-a",
         "hiis-ku-a",
@@ -17054,29 +24987,43 @@ export default {
         "hip-pu-lat",
         "hir-nu-a",
         "ik-ku-na",
+        "ik-ku-nan",
+        "ik-ku-nast",
+        "ik-ku-nat",
         "ilk-ku-a",
+        "is-ku-ja",
         "is-tu-a",
         "is-tu-kas",
         "is-tu-ma",
+        "is-tu-van",
+        "it-ku-ja",
         "kii-lu-a",
         "kii-ru-na",
         "kiik-ku-a",
+        "kiik-ku-van",
         "kil-ju-a",
         "kil-ju-va",
         "kil-lu-a",
+        "kink-ku-a",
         "kip-pu-ra",
         "kir-ku-a",
         "kir-ku-na",
         "kir-ku-va",
+        "kir-ku-vat",
         "kir-nu-ta",
         "kirs-ku-a",
         "kirs-ku-na",
         "krii-ku-na",
         "lii-du-ta",
+        "lii-ku-ta",
+        "lii-ku-tat",
         "liik-ku-a",
         "liik-ku-ja",
         "liik-ku-va",
+        "liik-ku-vat",
         "lil-lu-a",
+        "lin-tu-ja",
+        "lin-tu-na",
         "lip-su-a",
         "nik-su-a",
         "nirs-ku-a",
@@ -17086,8 +25033,10 @@ export default {
         "rii-su-a",
         "riip-pu-a",
         "riip-pu-ma",
+        "riip-pu-mat",
         "riip-pu-va",
         "rik-ku-a",
+        "rimp-su-ja",
         "rin-ku-la",
         "rip-su-a",
         "sik-ku-ra",
@@ -17100,18 +25049,31 @@ export default {
         "tirs-ku-a",
         "vii-ku-na",
         "vii-ru-kas",
+        "vil-ku-ta",
+        "vil-ku-tan",
         "vilk-ku-a",
         "vin-ku-a"
     ],
     "ii-u-aa": [
+        "hiis-ku-maa",
+        "ik-ku-naan",
+        "ilk-ku-vaa",
+        "is-tu-maan",
+        "is-tu-taan",
         "kip-pu-raan",
-        "sik-ku-raan"
+        "rii-su-taan",
+        "sik-ku-raan",
+        "sil-pu-taan",
+        "silp-pu-aa"
     ],
     "ii-u-e": [
+        "is-ku-jen",
         "is-tu-te",
         "lin-tu-nen",
         "lip-pu-e",
         "lip-pu-nen",
+        "pik-ku-nen",
+        "pik-ku-se",
         "rip-pu-nen"
     ],
     "ii-u-ee": [
@@ -17120,16 +25082,20 @@ export default {
     "ii-u-i": [
         "hih-hu-li",
         "is-ku-ri",
+        "it-ku-ni",
         "kil-lu-tin",
+        "kint-tu-si",
         "kir-ju-ri",
         "kis-ku-ri",
         "lin-ju-ri",
+        "lin-tu-ni",
         "nilk-ku-ri",
         "nis-ku-ri",
         "piir-tu-ri",
         "piis-ku-ri",
         "pilk-ku-mi",
         "pip-pu-ri",
+        "pip-pu-rin",
         "rik-ku-ri",
         "sig-nu-mi",
         "sil-mu-ri",
@@ -17138,12 +25104,17 @@ export default {
         "tim-pu-ri",
         "tip-pu-ri",
         "vii-nu-ri",
+        "vii-pu-ri",
         "vii-su-mi",
         "vint-tu-ri"
     ],
     "ii-u-ie": [
         "piip-pu-mies",
         "pik-ku-mies"
+    ],
+    "ii-u-o": [
+        "kin-ku-ton",
+        "lin-nu-ton"
     ],
     "ii-u-u": [
         "hip-su-tus",
@@ -17177,43 +25148,73 @@ export default {
         "is-tu-vuus",
         "liik-ku-vuus",
         "riip-pu-vuus",
+        "riip-pu-vuut",
         "vii-lu-puu"
     ],
     "ii-u-yö": [
         "hir-mu-työ"
     ],
     "ii-u-ää": [
-        "is-ku-pää"
+        "is-ku-pää",
+        "pik-ku-pää"
     ],
     "ii-ui": [
-        "is-tuin"
+        "drink-sui",
+        "is-tui",
+        "is-tuin",
+        "jip-pui",
+        "kil-jui",
+        "kir-kui",
+        "lii-kuin",
+        "liik-kui",
+        "lip-pui",
+        "niin-kuin",
+        "tip-puis"
     ],
     "ii-ui-a": [
+        "is-tui-vat",
+        "lin-nuis-ta",
         "rim-puil-la",
+        "tip-pui-vat",
         "vil-kuil-la",
         "vir-nuil-la",
         "vit-tuil-la"
+    ],
+    "ii-ui-aa": [
+        "liik-kui-kaan"
     ],
     "ii-ui-ai": [
         "kim-puit-tain"
     ],
     "ii-ui-e": [
         "hir-mui-nen",
+        "is-tuim-me",
         "it-kui-nen",
+        "lin-nuil-le",
         "pik-kui-nen",
         "pik-kui-sen",
         "pilk-kui-nen",
         "pis-kui-nen",
+        "rim-pui-len",
         "tih-kui-nen",
         "tih-rui-nen",
         "tik-kui-nen",
-        "vii-rui-nen"
+        "vii-rui-nen",
+        "vil-kui-len"
+    ],
+    "ii-ui-ee": [
+        "is-tui-meen",
+        "vir-nui-lee"
     ],
     "ii-ui-i": [
-        "hin-duis-mi"
+        "hii-pui-sin",
+        "hin-duis-mi",
+        "rii-sui-sin",
+        "sil-muik-si"
     ],
     "ii-ui-u": [
         "rim-pui-lu",
+        "rim-puil-tu",
         "vil-kui-lu",
         "vit-tui-lu"
     ],
@@ -17228,10 +25229,25 @@ export default {
         "vir-tuoo-si"
     ],
     "ii-uu": [
+        "fik-suu",
         "fik-suus",
+        "hii-puu",
+        "hil-luu",
+        "him-muu",
+        "is-tuu",
+        "it-kuu",
         "kimp-puun",
+        "kink-kuun",
+        "lii-tuu",
+        "liik-kuu",
+        "limp-puun",
+        "lip-suu",
         "piis-puus",
         "pilt-tuu",
+        "riip-puu",
+        "tik-kuun",
+        "tip-puu",
+        "vilk-kuu",
         "virk-kuu"
     ],
     "ii-uu-a": [
@@ -17247,24 +25263,32 @@ export default {
         "kil-puk-ka",
         "kim-pus-sa",
         "kim-pus-ta",
+        "kin-tus-sa",
         "kirs-kun-ta",
         "lii-kun-ta",
         "lii-suk-ka",
         "lil-luk-ka",
+        "lin-kus-sa",
+        "lin-nul-la",
         "miks-tuu-ra",
         "nirs-kun-ta",
+        "pits-kus-ta",
         "rii-pun-ta",
         "rii-sun-ta",
+        "rii-sut-han",
         "rin-nus-ta",
         "sil-muk-ka",
         "sim-puk-ka",
+        "sin-kul-la",
         "sit-ruu-na",
         "tih-rus-sa",
         "tink-tuu-ra",
+        "tril-lul-la",
         "vil-kun-ta",
         "vin-gun-ta"
     ],
     "ii-uu-aa": [
+        "hip-puu-kaan",
         "hip-sut-taa",
         "his-sut-taa",
         "is-kut-taa",
@@ -17309,23 +25333,33 @@ export default {
         "vin-gut-taa",
         "vit-kut-taa"
     ],
+    "ii-uu-e": [
+        "is-tum-me",
+        "mii-nuk-set"
+    ],
     "ii-uu-ee": [
         "his-suk-seen"
     ],
     "ii-uu-i": [
         "dif-fuu-si",
         "dis-kurs-si",
+        "fik-sum-pi",
         "fik-sus-ti",
         "im-muu-ni",
         "im-puls-si",
+        "in-dust-ri",
+        "it-kuu-ni",
         "kib-but-si",
         "kii-ruus-ti",
+        "kimp-puu-ni",
         "rin-nus-tin",
+        "sim-mut-kin",
         "vis-mut-ti"
     ],
     "ii-uu-ii": [
         "his-suk-siin",
-        "rii-puk-siin"
+        "rii-puk-siin",
+        "rii-sut-tiin"
     ],
     "ii-uu-iu": [
         "im-muu-nius"
@@ -17334,9 +25368,13 @@ export default {
         "is-tun-to",
         "lin-nus-to"
     ],
+    "ii-uu-oi": [
+        "is-tun-noil"
+    ],
     "ii-uu-u": [
         "lin-nus-tus",
-        "pii-rus-tus"
+        "pii-rus-tus",
+        "rii-sut-tu"
     ],
     "ii-uu-uu": [
         "sit-rus-puu"
@@ -17345,13 +25383,25 @@ export default {
         "virk-kuu-työ"
     ],
     "ii-y": [
+        "bil-ly",
+        "dirr-ty",
         "im-myt",
+        "lii-tyn",
         "niit-ty",
+        "pim-еys",
+        "pist-ny",
+        "siin-nyt",
+        "siir-ryn",
+        "siir-ryt",
+        "siir-ty",
+        "skin-ny",
         "vic-hy",
+        "viih-dyn",
         "vis-sy",
         "whis-ky"
     ],
     "ii-y-e": [
+        "niit-ty-jen",
         "viih-dy-ke",
         "viih-dy-te"
     ],
@@ -17374,9 +25424,11 @@ export default {
     "ii-y-ä": [
         "hiil-ty-ä",
         "hirt-ty-ä",
+        "kiih-ty-vän",
         "kiih-ty-ä",
         "kiin-ty-ä",
         "liit-ty-mä",
+        "liit-ty-män",
         "liit-ty-ä",
         "piin-ty-mä",
         "piin-ty-ä",
@@ -17385,11 +25437,17 @@ export default {
         "pint-ty-ä",
         "riit-ty-ä",
         "siir-ty-mä",
+        "siir-ty-vän",
         "siir-ty-ä",
         "vii-py-mä",
         "vii-py-ä",
         "viih-ty-ä",
-        "virt-ty-ä"
+        "virt-ty-ä",
+        "vis-sy-ä"
+    ],
+    "ii-y-ää": [
+        "liit-ty-mään",
+        "siir-ry-tään"
     ],
     "ii-yi-yy": [
         "viih-tyi-syys"
@@ -17398,6 +25456,11 @@ export default {
         "siir-tyil-lä",
         "vii-pyil-lä",
         "viih-tyi-sä"
+    ],
+    "ii-yy": [
+        "kin-kyy",
+        "liit-tyy",
+        "siir-tyy"
     ],
     "ii-yy-i": [
         "trip-tyyk-ki"
@@ -17417,27 +25480,72 @@ export default {
         "viil-lyt-tää"
     ],
     "ii-ä": [
+        "hir-tä",
+        "ik-väll",
         "is-kä",
+        "kii-tän",
+        "kiil-lä",
+        "mil-lä",
+        "mil-tä",
+        "min-kä",
         "mis-sä",
         "mis-tä",
+        "mit-kä",
+        "nii-tä",
+        "niil-lä",
+        "niil-tä",
+        "niin-hän",
+        "niin-pä",
+        "niis-sä",
+        "niis-tä",
         "pii-mä",
+        "pii-mät",
         "piil-lä",
+        "piir-rän",
         "piis-sä",
+        "pis-tä",
+        "pis-tän",
+        "pis-täs",
+        "pis-tät",
         "pit-kä",
+        "pit-käks",
+        "pit-käl",
+        "pit-kän",
+        "pit-käst",
+        "rii-tä",
+        "rii-tät",
         "sii-nä",
         "sii-tä",
+        "siir-rän",
         "sil-lä",
-        "sil-mä"
+        "sil-mä",
+        "sil-män",
+        "sil-mäs",
+        "sil-mät",
+        "sil-tä",
+        "tii-ä",
+        "tii-än",
+        "tii-ät",
+        "vii-ä",
+        "viil-län",
+        "virt-tä"
     ],
     "ii-ä-e": [
         "sil-mä-ke"
     ],
     "ii-ä-i": [
         "mis-sä-kin",
-        "mis-tä-kin"
+        "mis-tä-kin",
+        "sil-lä-kin",
+        "sil-mä-ni",
+        "sil-mä-si"
     ],
     "ii-ä-ii": [
         "riit-tä-miin"
+    ],
+    "ii-ä-y": [
+        "piir-tä-nyt",
+        "riit-tä-nyt"
     ],
     "ii-ä-yy": [
         "kiil-tä-vyys",
@@ -17448,7 +25556,9 @@ export default {
         "kii-tä-jä",
         "kiil-tä-vä",
         "kiit-tä-jä",
+        "lii-tä-vät",
         "piir-tä-jä",
+        "piir-tä-mä",
         "pis-tä-vä",
         "riis-tä-jä",
         "riit-tä-vä",
@@ -17461,7 +25571,17 @@ export default {
         "mis-tä-päin"
     ],
     "ii-ä-ää": [
-        "pit-kä-nään"
+        "kiil-tä-vää",
+        "piir-tä-mään",
+        "pis-tä-kää",
+        "pis-tä-mään",
+        "pit-kä-nään",
+        "rii-tä-kään",
+        "riit-tä-mään",
+        "riit-tä-vää"
+    ],
+    "ii-äi": [
+        "riit-täis"
     ],
     "ii-äi-e": [
         "pii-mäi-nen",
@@ -17488,15 +25608,25 @@ export default {
         "kiis-tää",
         "kiit-tää",
         "lii-tää",
+        "lii-tään",
         "liir-tää",
         "liit-tää",
+        "mih-kää",
+        "mil-lää",
         "mil-lään",
+        "mil-tään",
+        "min-kään",
+        "mis-sää",
         "mis-sään",
+        "mis-tää",
         "mis-tään",
+        "mit-tää",
+        "niin-kää",
         "niis-tää",
         "niit-tää",
         "piir-tää",
         "pis-tää",
+        "pit-kää",
         "pit-kään",
         "riis-tää",
         "riit-tää",
@@ -17504,12 +25634,16 @@ export default {
         "siir-tää",
         "siit-tää",
         "sil-lään",
+        "sil-mää",
+        "sil-mään",
         "sil-tään",
         "viil-tää",
         "viis-tää"
     ],
     "ii-ää-e": [
-        "pit-käl-le"
+        "pit-käl-le",
+        "sil-mäm-me",
+        "tii-ät-te"
     ],
     "ii-ää-ee": [
         "pit-käk-seen",
@@ -17517,16 +25651,21 @@ export default {
     ],
     "ii-ää-i": [
         "pit-käl-ti",
-        "pit-käs-ti"
+        "pit-käs-ti",
+        "sil-mää-ni"
     ],
     "ii-ää-y": [
         "vii-väs-tys"
     ],
     "ii-ää-ä": [
         "hiih-dän-tä",
+        "is-käl-täs",
         "lii-tän-tä",
         "pit-käl-lä",
-        "siir-rän-tä"
+        "pit-käs-tä",
+        "siir-rän-tä",
+        "sil-män-sä",
+        "tii-ät-sä"
     ],
     "ii-ää-äi": [
         "sil-mäk-käin"
@@ -17542,6 +25681,9 @@ export default {
         "vii-väh-tää",
         "vii-väs-tää"
     ],
+    "ii-ää-ö": [
+        "riit-tää-kö"
+    ],
     "ii-öö": [
         "mil-jöö"
     ],
@@ -17554,8 +25696,14 @@ export default {
     "iie-i-e": [
         "piie-si-ne"
     ],
+    "iie-y": [
+        "tiiet-ty"
+    ],
     "iie-ä": [
         "liie-tä"
+    ],
+    "iie-ää": [
+        "tiie-tää"
     ],
     "iie-ää-i": [
         "liiem-mäl-ti"
@@ -17585,6 +25733,8 @@ export default {
         "rius-ka",
         "riut-ta",
         "tiu-ha",
+        "tiu-kan",
+        "tiu-kat",
         "tiuk-ka",
         "viuh-ka"
     ],
@@ -17592,13 +25742,16 @@ export default {
         "hius-ra-ja",
         "kiu-sa-ta",
         "siu-na-ta",
-        "tiu-ka-ta"
+        "tiu-ka-ta",
+        "tiuk-ka-na"
     ],
     "iu-a-e": [
         "hiu-ta-le",
         "hiuk-ka-nen"
     ],
     "iu-aa": [
+        "kiu-kaan",
+        "siu-naa",
         "tiuk-kaan"
     ],
     "iu-aa-a": [
@@ -17620,6 +25773,7 @@ export default {
         "tiu-kal-le"
     ],
     "iu-aa-i": [
+        "liu-kas-kin",
         "liuk-kaas-ti",
         "niu-kal-ti",
         "niu-kas-ti",
@@ -17632,8 +25786,10 @@ export default {
         "hius-mar-to"
     ],
     "iu-aa-u": [
+        "hius-laa-tu",
         "liu-kas-tus",
         "niu-kah-dus",
+        "siu-nat-tu",
         "viu-hah-dus"
     ],
     "iu-ai-a": [
@@ -17649,6 +25805,9 @@ export default {
         "hius-lai-te",
         "lius-kai-nen",
         "riut-tai-nen"
+    ],
+    "iu-ai-ee": [
+        "riuh-tai-see"
     ],
     "iu-ai-u": [
         "riuh-tai-su",
@@ -17666,8 +25825,12 @@ export default {
     "iu-au-aa": [
         "viu-haut-taa"
     ],
+    "iu-au-ii": [
+        "siu-nauk-siin"
+    ],
     "iu-e": [
         "hiu-e",
+        "hiuk-set",
         "lius-ke",
         "viuh-ke"
     ],
@@ -17678,7 +25841,15 @@ export default {
         "tiu-he-ta",
         "tiu-ke-ta"
     ],
+    "iu-e-e": [
+        "hius-me-ren",
+        "liu-ke-nen"
+    ],
+    "iu-e-ee": [
+        "liu-ke-nee"
+    ],
     "iu-e-i": [
+        "hiuk-se-ni",
         "hius-ve-si"
     ],
     "iu-ee-aa": [
@@ -17688,7 +25859,8 @@ export default {
         "tiu-ken-taa"
     ],
     "iu-ee-i": [
-        "diu-reet-ti"
+        "diu-reet-ti",
+        "hiuk-set-kin"
     ],
     "iu-ee-o": [
         "hius-verk-ko"
@@ -17706,12 +25878,22 @@ export default {
         "trium-fi"
     ],
     "iu-i-a": [
+        "hiuk-si-a",
         "tius-ki-a",
         "viu-hi-na"
     ],
+    "iu-ii": [
+        "hiuk-sii"
+    ],
     "iu-ii-a": [
+        "hiuk-sis-sa",
+        "hiuk-sis-tas",
         "hius-vii-va",
         "tiu-kil-la"
+    ],
+    "iu-ii-aa": [
+        "hiuk-sil-laan",
+        "hiuk-sis-saan"
     ],
     "iu-ii-e": [
         "hius-kiin-ne",
@@ -17737,8 +25919,14 @@ export default {
     "iu-o-u": [
         "niu-ho-tus"
     ],
+    "iu-oi": [
+        "piu-hoi",
+        "tiuk-koi",
+        "viuh-koi"
+    ],
     "iu-oi-a": [
-        "tiu-koil-la"
+        "tiu-koil-la",
+        "tiu-kois-sa"
     ],
     "iu-oi-aa": [
         "lius-koit-taa"
@@ -17751,6 +25939,9 @@ export default {
     ],
     "iu-oi-uu": [
         "liu-koi-suus"
+    ],
+    "iu-oo": [
+        "riuh-too"
     ],
     "iu-oo-a": [
         "hius-poh-ja"
@@ -17769,13 +25960,15 @@ export default {
         "liu-ku",
         "riu-ku",
         "tiu-ku",
-        "viu-lu"
+        "viu-lu",
+        "viu-lut"
     ],
     "iu-u-a": [
         "hiu-tu-a",
         "hiu-tu-ma",
         "liu-ku-a",
         "liu-ku-ma",
+        "liu-ku-vat",
         "riu-tu-a",
         "tiuk-ku-a",
         "viu-hu-a"
@@ -17807,6 +26000,7 @@ export default {
         "liu-kuo-vi"
     ],
     "iu-uu": [
+        "liu-kuu",
         "niuk-kuus",
         "piuk-kuus",
         "rius-kuus",
@@ -17857,23 +26051,54 @@ export default {
         "liuo-tus"
     ],
     "o-a": [
+        "bo-at",
+        "bo-sa",
+        "co-lan",
+        "co-sa",
+        "jo-han",
         "jo-ka",
         "jo-pa",
         "jo-ta",
         "ko-la",
         "ko-ta",
         "ko-va",
+        "ko-val",
+        "ko-vat",
+        "kro-pan",
         "lo-ka",
         "lo-ma",
+        "lo-man",
         "mo-ka",
+        "mo-na",
         "no-ja",
+        "no-jas",
         "no-va",
+        "o-jan",
+        "o-jast",
+        "o-jat",
+        "o-lalt",
+        "o-lan",
         "o-las",
+        "o-mal",
+        "o-man",
+        "o-mas",
+        "o-mast",
+        "o-mat",
         "o-pas",
         "o-ras",
+        "o-san",
+        "o-sas",
+        "o-tan",
+        "o-tas",
+        "o-tat",
+        "o-vat",
+        "po-jan",
+        "po-jat",
         "po-ka",
         "po-la",
         "po-ra",
+        "so-dan",
+        "so-dast",
         "so-la",
         "so-ma",
         "so-pa",
@@ -17885,7 +26110,9 @@ export default {
         "to-ka",
         "to-la",
         "to-ra",
-        "vo-da"
+        "to-ta",
+        "vo-da",
+        "wo-ah"
     ],
     "o-a-a": [
         "blo-ka-ta",
@@ -17906,11 +26133,13 @@ export default {
         "mo-ta-ta",
         "no-ja-ta",
         "no-la-ta",
+        "o-ma-na",
         "o-ma-ta",
         "o-ra-kas",
         "o-ra-va",
         "o-sa-kas",
         "o-sa-ta",
+        "o-ta-pa",
         "po-ka-ta",
         "po-ma-da",
         "po-pa-ta",
@@ -17926,6 +26155,9 @@ export default {
         "tro-ka-ta"
     ],
     "o-a-e": [
+        "jo-ka-nen",
+        "jo-ka-sel",
+        "jo-ka-sen",
         "lo-a-fer",
         "lo-ma-ke",
         "no-ka-re",
@@ -17940,13 +26172,19 @@ export default {
         "bo-da-ri",
         "bro-ka-di",
         "ho-da-ri",
+        "jo-a-lin",
+        "jo-ta-kin",
         "ko-la-ri",
         "ko-va-sin",
+        "lo-ha-rin",
         "lo-ka-ri",
         "lo-pa-rit",
         "mo-la-ri",
         "no-ma-di",
         "o-ha-ri",
+        "o-la-vi",
+        "o-sa-ni",
+        "o-sa-sit",
         "po-ra-ri",
         "po-va-ri",
         "ro-ma-ni",
@@ -17958,9 +26196,17 @@ export default {
     "o-a-ie": [
         "jo-ka-mies",
         "so-ra-tie",
+        "so-ra-tien",
         "so-ta-mies"
     ],
+    "o-a-ii": [
+        "ko-la-rii",
+        "o-ha-rii",
+        "o-ma-rii",
+        "so-ma-lii"
+    ],
     "o-a-o": [
+        "mo-na-co",
         "o-sa-ton",
         "stro-ga-nov"
     ],
@@ -17976,27 +26222,61 @@ export default {
         "o-sa-syy"
     ],
     "o-aa": [
+        "bo-naa",
+        "co-laa",
+        "do-kaa",
+        "do-kaan",
+        "do-kaat",
+        "flo-waan",
         "ko-vaa",
         "ko-vaan",
+        "ko-vaa",
+        "lo-maa",
         "lo-maan",
-        "no-jaan"
+        "no-jaan",
+        "no-laa",
+        "o-jaan",
+        "o-maa",
+        "o-maan",
+        "o-saa",
+        "o-saan",
+        "o-saat",
+        "sco-raan",
+        "so-taa"
     ],
     "o-aa-a": [
         "bo-daa-ja",
+        "do-kaa-mal",
+        "jo-han-na",
         "ko-val-la",
         "ko-vas-sa",
         "lo-mas-sa",
         "lo-mas-ta",
         "no-jal-la",
         "no-jas-sa",
+        "no-kal-ta",
+        "o-jas-ta",
+        "o-lal-la",
+        "o-maan-sa",
+        "o-mal-la",
+        "o-man-sa",
+        "o-mas-sa",
+        "o-mas-ta",
         "o-saa-ja",
         "o-tan-ta",
+        "po-hajs-sa",
         "po-hat-ta",
+        "po-jas-ta",
+        "po-kal-la",
         "po-lak-ka",
         "po-raa-ja",
         "po-tas-ka",
         "po-vaa-ja",
+        "ro-kas-ta",
+        "ro-mah-da",
+        "so-das-ta",
         "so-lak-ka",
+        "to-kal-la",
         "to-lal-la",
         "to-lal-ta",
         "to-pak-ka",
@@ -18005,6 +26285,7 @@ export default {
     "o-aa-aa": [
         "ho-lah-taa",
         "ko-hah-taa",
+        "ko-hal-laan",
         "ko-lah-taa",
         "ko-pah-taa",
         "ko-rah-taa",
@@ -18033,7 +26314,10 @@ export default {
     ],
     "o-aa-e": [
         "ko-val-le",
+        "mo-kaat-te",
+        "o-mam-me",
         "o-pas-te",
+        "po-jal-le",
         "po-lan-ne",
         "to-lal-le"
     ],
@@ -18048,14 +26332,17 @@ export default {
         "ko-kar-di",
         "ko-raa-li",
         "ko-ral-li",
+        "ko-vaa-ki",
         "ko-vas-ti",
         "kro-aat-ti",
         "kro-kaa-ni",
         "lo-jaa-li",
         "mo-daa-li",
+        "mo-kaa-ki",
         "mo-nark-ki",
         "mo-nas-ti",
         "mo-raa-li",
+        "mo-raa-lin",
         "no-taa-ri",
         "o-paa-li",
         "o-paak-ki",
@@ -18065,6 +26352,7 @@ export default {
         "o-sak-si",
         "o-vaa-li",
         "po-kaa-li",
+        "po-kaa-lin",
         "po-taat-ti",
         "pro-faa-ni",
         "pro-paa-ni",
@@ -18076,17 +26364,24 @@ export default {
         "slo-vak-ki",
         "so-mas-ti",
         "so-naat-ti",
+        "spo-raa-ki",
         "to-maat-ti",
         "to-paa-si",
         "to-taa-li",
-        "vo-kaa-li"
+        "vo-kaa-li",
+        "vo-kaa-lit"
+    ],
+    "o-aa-ii": [
+        "mo-kat-tiin",
+        "o-sat-tiin"
     ],
     "o-aa-iu": [
         "lo-jaa-lius"
     ],
     "o-aa-o": [
         "o-jas-to",
-        "o-sas-to"
+        "o-sas-to",
+        "o-vat-ko"
     ],
     "o-aa-u": [
         "ko-hah-dus",
@@ -18096,8 +26391,11 @@ export default {
         "lo-jah-dus",
         "lo-rah-dus",
         "mo-jah-dus",
+        "mo-kan-nut",
         "o-pas-tus",
         "o-ras-tus",
+        "o-san-nu",
+        "o-san-nut",
         "po-sah-dus",
         "ro-jah-dus",
         "ro-mah-dus",
@@ -18114,10 +26412,14 @@ export default {
         "po-jan-pää"
     ],
     "o-ai": [
+        "jo-nain",
+        "jo-tai",
+        "jo-tain",
         "mo-hair"
     ],
     "o-ai-a": [
         "ho-tais-ta",
+        "jo-kais-ta",
         "lo-mail-la",
         "no-jail-la",
         "po-vail-la",
@@ -18130,14 +26432,25 @@ export default {
     ],
     "o-ai-e": [
         "jo-kai-nen",
+        "jo-kai-sen",
         "lo-kai-nen",
+        "lo-mai-len",
         "o-kai-nen",
         "o-mai-nen",
+        "o-mai-set",
+        "so-kai-sen",
         "so-rai-nen",
         "so-tai-nen",
+        "to-kai-sen",
         "to-rai-nen"
     ],
+    "o-ai-ee": [
+        "jo-kai-seen"
+    ],
     "o-ai-i": [
+        "jo-kai-kist",
+        "o-sai-si",
+        "o-sai-sit",
         "pro-sais-ti"
     ],
     "o-ai-u": [
@@ -18170,6 +26483,10 @@ export default {
         "so-raus",
         "tro-kaus"
     ],
+    "o-au-a": [
+        "bo-daus-ta",
+        "ko-hau-tan"
+    ],
     "o-au-aa": [
         "ho-laut-taa",
         "ko-haut-taa",
@@ -18191,23 +26508,50 @@ export default {
         "lo-mau-tus"
     ],
     "o-e": [
+        "ccco-me",
+        "cho-sen",
+        "co-me",
+        "do-esnt",
         "ho-me",
+        "ho-tel",
+        "jo-en",
+        "jo-et",
         "jo-ten",
+        "ko-et",
         "ko-je",
         "ko-ne",
         "lo-den",
         "lo-pen",
+        "lo-ve",
+        "mo-nel",
+        "mo-nen",
         "mo-nes",
+        "mo-net",
         "mo-sel",
+        "o-len",
+        "o-let",
+        "o-pen",
+        "o-pet",
+        "o-ven",
+        "o-ves",
+        "o-vest",
+        "o-vet",
+        "po-de",
+        "po-ke",
         "po-re",
         "po-se",
+        "po-vet",
         "ro-ve",
-        "so-se"
+        "sko-bet",
+        "so-se",
+        "sto-bes"
     ],
     "o-e-a": [
         "ho-ke-a",
         "ho-ke-ma",
         "ho-pe-a",
+        "ko-e-ta",
+        "ko-e-tan",
         "ko-he-ta",
         "ko-ke-a",
         "ko-ke-las",
@@ -18218,45 +26562,80 @@ export default {
         "ko-re-a",
         "ko-ve-ra",
         "ko-ve-ta",
+        "lo-pe-ta",
+        "lo-pe-tan",
         "lo-ve-ta",
         "no-e-ta",
         "no-pe-a",
         "o-he-ta",
+        "o-le-mas",
+        "o-le-tan",
         "o-le-va",
+        "o-le-van",
+        "o-le-vas",
         "o-me-na",
+        "o-me-nan",
+        "o-pe-na",
+        "o-pe-ta",
+        "o-pe-tan",
+        "o-te-ta",
+        "o-ve-a",
         "o-ve-la",
+        "po-re-ja",
         "po-te-a",
         "ro-te-va",
         "so-e-ta",
         "so-ke-a",
+        "so-me-tan",
         "so-re-a",
+        "so-re-ja",
         "to-de-ta",
         "to-e-ta",
+        "to-le-ja",
         "to-me-ra"
     ],
+    "o-e-aa": [
+        "ho-ke-maan",
+        "ko-ke-laat",
+        "o-le-kaan",
+        "o-le-maan",
+        "o-te-taan",
+        "to-de-taan"
+    ],
     "o-e-e": [
-        "ko-ve-te"
+        "ko-ve-te",
+        "o-ne-ten",
+        "o-ve-hen"
     ],
     "o-e-i": [
         "jo-ke-ri",
         "ko-e-tin",
         "ko-he-li",
+        "lo-pe-tin",
         "mo-pe-di",
+        "o-ge-li",
+        "o-le-tin",
         "po-ke-ri",
         "po-re-tin",
         "so-ke-ri",
+        "to-te-sin",
         "to-ve-ri"
+    ],
+    "o-e-ii": [
+        "jo-de-liin"
     ],
     "o-e-o": [
         "bo-le-ro",
         "ko-he-lo",
         "ko-me-ro",
+        "ko-me-ron",
         "ko-te-lo",
         "lo-ke-ro",
         "po-me-lo",
         "po-te-ro",
         "po-ve-ton",
         "ro-de-o",
+        "ro-me-o",
         "so-me-ro",
         "to-he-lo",
         "to-re-ro"
@@ -18264,6 +26643,8 @@ export default {
     "o-e-u": [
         "ko-e-tus",
         "ko-ke-mus",
+        "ko-ke-must",
+        "ko-ke-nu",
         "ko-ke-nut",
         "ko-ve-tus",
         "lo-pe-tus",
@@ -18282,22 +26663,49 @@ export default {
     ],
     "o-ee": [
         "fro-tee",
+        "ho-kee",
+        "ho-meeks",
+        "ko-kee",
+        "ko-mee",
+        "ko-neen",
+        "ko-nees",
+        "ko-neet",
+        "lo-vee",
+        "mo-neen",
+        "no-pee",
+        "no-peet",
         "o-heen",
+        "o-lee",
+        "o-veen",
+        "o-vees",
+        "po-tee",
         "ro-see",
+        "sko-been",
+        "so-kee",
         "to-teen",
-        "tro-kee"
+        "tro-kee",
+        "zo-nee"
     ],
     "o-ee-a": [
         "ho-en-ta",
+        "ho-met-ta",
+        "jo-el-la",
+        "jo-es-ta",
         "ko-meet-ta",
+        "ko-men-nan",
         "ko-peek-ka",
         "mo-lem-mat",
         "o-del-ma",
         "o-hel-la",
         "o-hes-sa",
         "o-hes-ta",
+        "o-len-han",
         "o-met-ta",
         "o-tel-la",
+        "o-vel-la",
+        "o-vel-las",
+        "o-vel-tas",
+        "o-ves-ta",
         "pro-feet-ta",
         "to-del-la",
         "to-des-ta",
@@ -18310,6 +26718,7 @@ export default {
         "ko-hel-taa",
         "ko-hen-taa",
         "ko-men-taa",
+        "ko-vem-paa",
         "ko-ven-taa",
         "ko-ver-taa",
         "ko-vet-taa",
@@ -18318,6 +26727,8 @@ export default {
         "mo-nen-taa",
         "o-hen-taa",
         "o-jen-taa",
+        "o-len-kaan",
+        "o-let-kaan",
         "o-let-taa",
         "o-pet-taa",
         "so-kel-taa",
@@ -18333,8 +26744,19 @@ export default {
         "po-see-raus"
     ],
     "o-ee-e": [
+        "jo-el-le",
         "ko-ver-re",
-        "o-hen-ne"
+        "mo-nel-le",
+        "o-hen-ne",
+        "o-lem-me",
+        "o-let-te",
+        "o-vel-le",
+        "o-vel-les",
+        "po-vel-les",
+        "ro-sen-lew"
+    ],
+    "o-ee-ee": [
+        "ko-nee-seen"
     ],
     "o-ee-i": [
         "bo-hee-mi",
@@ -18345,14 +26767,19 @@ export default {
         "fo-rel-li",
         "gro-tes-ki",
         "ho-tel-li",
+        "ho-tel-lin",
+        "jo-ek-si",
+        "jo-ten-ki",
         "jo-ten-kin",
         "jo-tes-kin",
         "klo-set-ti",
         "ko-keek-si",
         "ko-ket-ti",
         "ko-leh-ti",
+        "ko-vem-min",
         "ko-ver-rin",
         "kro-ket-ti",
+        "lo-pet-ti",
         "mo-dee-mi",
         "mo-der-ni",
         "mo-ment-ti",
@@ -18360,9 +26787,13 @@ export default {
         "mo-ree-ni",
         "mo-tel-li",
         "mo-tet-ti",
+        "no-peem-min",
+        "no-pees-ti",
         "no-vel-li",
+        "o-pet-ti",
         "po-let-ti",
         "po-tens-si",
+        "po-tens-sin",
         "po-tent-ti",
         "pro-jek-ti",
         "pro-pel-li",
@@ -18371,10 +26802,25 @@ export default {
         "pro-tee-si",
         "pro-tes-ti",
         "ro-set-ti",
+        "sko-let-ki",
         "slo-vee-ni",
         "so-net-ti",
         "to-des-ti",
         "to-tee-mi"
+    ],
+    "o-ee-ie": [
+        "mo-lem-pien"
+    ],
+    "o-ee-ii": [
+        "ho-tel-liin",
+        "ko-vem-pii",
+        "mo-der-nii",
+        "o-fens-sii",
+        "o-tet-tii",
+        "o-tet-tiin",
+        "po-tens-siin",
+        "pro-ses-sii",
+        "pro-tes-tii"
     ],
     "o-ee-iu": [
         "mo-der-nius"
@@ -18384,10 +26830,15 @@ export default {
         "ko-ren-to",
         "o-len-to"
     ],
+    "o-ee-oo": [
+        "o-len-too"
+    ],
     "o-ee-u": [
         "jo-kel-lus",
         "ko-es-tus",
+        "ko-et-tu",
         "ko-hen-nus",
+        "ko-hen-tus",
         "ko-men-nus",
         "ko-ven-nus",
         "ko-ver-rus",
@@ -18396,13 +26847,16 @@ export default {
         "so-kel-lus",
         "so-per-rus",
         "so-vel-lus",
-        "to-den-nus"
+        "to-den-nus",
+        "to-tel-lut"
     ],
     "o-ee-uu": [
         "jo-en-suu",
         "o-ven-suu"
     ],
     "o-ei": [
+        "ko-mein",
+        "no-pein",
         "o-kei"
     ],
     "o-ei-a": [
@@ -18410,12 +26864,18 @@ export default {
         "ho-teis-ta",
         "ko-keil-la",
         "ko-meil-la",
+        "ko-meim-man",
         "ko-peil-la",
         "ko-reil-la",
+        "ko-tei-na",
+        "lo-keil-la",
+        "no-pei-ta",
         "o-leil-la",
-        "po-reil-la"
+        "po-reil-la",
+        "so-kei-na"
     ],
     "o-ei-aa": [
+        "ko-deis-saan",
         "ko-jeis-taa",
         "ko-neis-taa",
         "o-heis-taa"
@@ -18430,16 +26890,22 @@ export default {
         "o-hei-nen",
         "po-rei-nen"
     ],
+    "o-ei-i": [
+        "ko-kei-li",
+        "ko-kei-lin"
+    ],
     "o-ei-ii": [
         "ho-tei-siin"
     ],
     "o-ei-o": [
         "ko-jeis-to",
         "ko-neik-ko",
-        "ko-neis-to"
+        "ko-neis-to",
+        "ko-neis-ton"
     ],
     "o-ei-u": [
         "ko-kei-lu",
+        "ko-keil-tu",
         "ko-mei-lu",
         "ko-neis-tus",
         "ko-rei-lu",
@@ -18463,6 +26929,7 @@ export default {
         "so-reus"
     ],
     "o-eu-a": [
+        "no-peut-ta",
         "so-peu-ma",
         "to-teu-ma"
     ],
@@ -18474,21 +26941,35 @@ export default {
         "to-teut-taa"
     ],
     "o-eu-u": [
+        "so-keu-dun",
+        "so-peu-du",
         "so-peu-tus",
         "to-teu-tus"
     ],
+    "o-eu-uu": [
+        "to-teu-tuu"
+    ],
+    "o-ey": [
+        "ho-ney",
+        "mo-ney"
+    ],
     "o-i": [
+        "bo-bin",
         "bo-di",
         "bro-mi",
         "do-ping",
+        "flo-wil",
         "gro-gi",
         "ho-vi",
         "jo-di",
         "jo-ki",
         "jo-kin",
         "jo-pi",
+        "jo-vi",
+        "ko-din",
         "ko-mi",
         "ko-ni",
+        "ko-pist",
         "ko-ri",
         "ko-ris",
         "ko-ti",
@@ -18497,31 +26978,60 @@ export default {
         "kro-mi",
         "lo-hi",
         "lo-ki",
+        "lo-kin",
+        "lo-kit",
         "lo-vi",
         "mo-ni",
         "no-ki",
+        "no-ni",
+        "o-liks",
+        "o-lin",
+        "o-lis",
+        "o-lit",
+        "o-min",
+        "o-mis",
+        "o-pin",
         "o-sin",
         "o-tin",
+        "po-jist",
         "po-li",
         "po-ni",
+        "po-ris",
+        "po-tin",
         "po-vi",
         "pro-sit",
         "pso-ri",
+        "ro-bin",
+        "ro-ni",
+        "sho-kin",
+        "sho-tin",
         "smo-king",
         "sno-bi",
+        "sno-bin",
+        "so-kin",
         "so-ri",
+        "so-vi",
         "to-ki",
+        "to-mi",
+        "to-ni",
         "to-ri",
+        "to-rin",
         "to-si",
         "to-sin",
         "to-ti",
-        "to-vi"
+        "to-vi",
+        "to-vin",
+        "tvsho-pin",
+        "vo-li"
     ],
     "o-i-a": [
         "fo-bi-a",
         "glo-ri-a",
+        "ho-ki-a",
         "ho-ri-na",
+        "jo-ki-a",
         "jo-ri-na",
+        "jo-ri-nan",
         "ko-di-kas",
         "ko-hi-na",
         "ko-li-na",
@@ -18530,12 +27040,20 @@ export default {
         "ko-si-a",
         "ko-si-ja",
         "ko-ti-a",
+        "ko-vi-a",
         "lo-li-ta",
+        "lo-mi-a",
         "lo-ri-na",
         "lo-ti-na",
+        "mo-ni-a",
         "mo-ni-as",
+        "no-ki-a",
+        "no-ki-an",
+        "no-ki-as",
+        "o-li-han",
         "o-li-ja",
         "o-mi-a",
+        "o-si-a",
         "po-ri-na",
         "po-ti-las",
         "ro-hi-na",
@@ -18549,14 +27067,27 @@ export default {
         "so-ti-a",
         "so-ti-ja",
         "so-ti-las",
-        "to-hi-na"
+        "to-hi-na",
+        "to-si-a"
     ],
     "o-i-aa": [
+        "ho-ri-naa",
+        "ko-hi-naa",
+        "ko-li-naa",
+        "ko-ri-naa",
         "ko-ti-maa",
+        "o-li-kaan",
         "o-mi-aan",
+        "o-vi-aan",
+        "so-pi-maan",
+        "so-ri-naan",
+        "so-ti-laan",
+        "so-ti-maan",
+        "so-vi-taan",
         "to-si-aan"
     ],
     "o-i-e": [
+        "jo-ki-sen",
         "ko-vi-ke",
         "ko-vi-te",
         "lo-vi-nen",
@@ -18566,12 +27097,26 @@ export default {
         "to-si-te",
         "to-ti-nen"
     ],
+    "o-i-ee": [
+        "ro-pi-see",
+        "to-ti-see"
+    ],
     "o-i-i": [
         "jo-di-di",
+        "ko-li-si",
         "ko-si-ni",
+        "ko-ti-hin",
+        "ko-ti-ni",
+        "ko-ti-si",
         "no-mi-ni",
+        "o-li-kin",
+        "o-li-si",
+        "o-li-sin",
+        "o-li-sit",
         "so-li-di",
-        "so-vi-tin"
+        "so-pi-si",
+        "so-vi-tin",
+        "to-pi-cis"
     ],
     "o-i-ie": [
         "ho-vi-mies",
@@ -18586,16 +27131,22 @@ export default {
         "do-mi-no",
         "fo-li-o",
         "ko-di-ton",
+        "ko-li-kon",
         "ko-pi-o",
         "ko-ti-lo",
+        "ko-ti-lon",
         "lo-ti-on",
         "o-hi-mo",
         "o-li-o",
         "o-ri-go",
+        "o-ri-on",
         "o-si-o",
         "po-li-o",
         "ro-vi-o",
         "to-si-o"
+    ],
+    "o-i-oo": [
+        "ro-vi-oo"
     ],
     "o-i-u": [
         "ko-vi-tus",
@@ -18620,14 +27171,36 @@ export default {
         "ko-ri-työ",
         "ko-ti-työ"
     ],
+    "o-ie": [
+        "ho-mie",
+        "jo-kien"
+    ],
+    "o-ie-a": [
+        "o-mien-sa"
+    ],
     "o-ie-i": [
-        "o-rient-ti"
+        "o-rient-ti",
+        "o-vie-ni"
     ],
     "o-ie-äi": [
         "ko-tie-läin"
     ],
     "o-ii": [
-        "ko-tiin"
+        "bo-dii",
+        "ko-niin",
+        "ko-riin",
+        "ko-tii",
+        "ko-tiin",
+        "ko-tiis",
+        "ko-vii",
+        "mo-niin",
+        "no-niin",
+        "o-mii",
+        "o-miin",
+        "o-vii",
+        "so-pii",
+        "so-tii",
+        "so-tiin"
     ],
     "o-ii-a": [
         "go-ril-la",
@@ -18641,23 +27214,37 @@ export default {
         "ko-ris-ta",
         "ko-sin-ta",
         "ko-vil-la",
+        "ko-vim-mat",
+        "kro-mil-la",
         "kro-nik-ka",
         "lo-giik-ka",
         "lo-ris-ta",
         "lo-tis-ta",
+        "mo-nis-ta",
+        "o-lis-han",
+        "o-mil-la",
+        "o-mis-sa",
+        "o-mis-ta",
+        "o-mis-tan",
         "po-ris-ta",
         "ro-his-ta",
         "ro-mis-ta",
         "ro-pis-ta",
+        "sho-til-la",
+        "so-dis-ta",
         "so-fis-ta",
         "so-lis-ta",
         "so-ris-ta",
         "to-his-ta",
         "to-lil-la",
         "to-lil-ta",
+        "to-ril-la",
+        "to-sis-sas",
+        "to-tis-ta",
         "vo-sik-ka"
     ],
     "o-ii-aa": [
+        "go-ril-laa",
         "jo-dit-taa",
         "ko-lis-taa",
         "ko-mis-taa",
@@ -18666,6 +27253,7 @@ export default {
         "ko-vis-taa",
         "ko-vit-taa",
         "kro-mit-taa",
+        "lo-giik-kaa",
         "lo-mit-taa",
         "lo-vit-taa",
         "mo-nis-taa",
@@ -18675,6 +27263,7 @@ export default {
         "o-jit-taa",
         "o-mil-laan",
         "o-mis-taa",
+        "o-mis-taan",
         "o-sit-taa",
         "so-mis-taa",
         "so-rit-taa",
@@ -18682,6 +27271,7 @@ export default {
         "to-dis-taa",
         "to-lil-laan",
         "to-lil-taan",
+        "to-sis-saa",
         "to-sis-saan",
         "to-sit-taa"
     ],
@@ -18693,14 +27283,22 @@ export default {
         "o-sit-tain"
     ],
     "o-ii-e": [
+        "ko-kik-sen",
         "ko-ris-te",
+        "ko-tiim-me",
         "ko-vil-le",
         "lo-mit-se",
+        "mo-nil-le",
         "mo-nis-te",
         "o-hit-se",
+        "o-lim-me",
         "o-mis-te",
+        "o-vil-le",
+        "po-jil-le",
+        "po-pil-le",
         "pro-mil-le",
         "so-mis-te",
+        "sto-pil-le",
         "to-dis-te",
         "to-lil-le"
     ],
@@ -18708,10 +27306,14 @@ export default {
         "o-mil-leen",
         "to-lil-leen"
     ],
+    "o-ii-ei": [
+        "po-lii-seil"
+    ],
     "o-ii-i": [
         "do-nit-si",
         "flo-rii-ni",
         "flo-ris-ti",
+        "ho-bit-ti",
         "ho-lis-mi",
         "ho-lis-ti",
         "jo-rii-ni",
@@ -18719,13 +27321,18 @@ export default {
         "ko-liik-ki",
         "ko-pis-ti",
         "ko-rint-ti",
+        "ko-tii-hin",
+        "ko-tii-ni",
+        "ko-tii-si",
         "mo-dis-ti",
         "mo-nis-mi",
         "mo-nis-ti",
         "mo-tii-vi",
         "no-vii-si",
         "o-lii-vi",
+        "o-lin-ki",
         "po-lii-si",
+        "po-lii-sin",
         "pro-fii-li",
         "pro-vins-si",
         "sno-bis-mi",
@@ -18737,16 +27344,26 @@ export default {
         "tro-pis-mi"
     ],
     "o-ii-ie": [
-        "o-pin-tie"
+        "o-pin-tie",
+        "po-lii-sien"
     ],
     "o-ii-ii": [
-        "jo-disp-rii"
+        "jo-dik-sii",
+        "jo-disp-rii",
+        "ko-vik-sii",
+        "no-lik-sii",
+        "o-pit-tiin",
+        "po-lii-siin",
+        "so-lis-tii",
+        "so-vit-tii",
+        "so-vit-tiin"
     ],
     "o-ii-o": [
         "ho-ris-ko",
         "ko-lik-ko",
         "mo-nik-ko",
         "o-jik-ko",
+        "o-lis-ko",
         "o-pin-not",
         "o-pis-to",
         "o-sin-ko",
@@ -18754,11 +27371,15 @@ export default {
         "so-vin-to",
         "to-sik-ko"
     ],
+    "o-ii-oo": [
+        "ko-lik-koo"
+    ],
     "o-ii-u": [
         "ko-mis-tus",
         "ko-ris-tus",
         "mo-nis-tus",
         "o-mis-tus",
+        "o-pit-tu",
         "so-mis-tus",
         "to-dis-tus"
     ],
@@ -18781,55 +27402,83 @@ export default {
         "jo-kiuo-ma"
     ],
     "o-o": [
+        "bo-no",
         "fo-to",
+        "fro-do",
         "ho-mo",
+        "ho-ro",
+        "jo-hon",
         "jo-jo",
         "jo-ko",
         "jo-no",
+        "jo-not",
         "jo-ro",
         "jo-tos",
         "ko-ho",
         "ko-ko",
         "ko-lo",
         "ko-to",
+        "ko-ton",
         "lo-go",
         "mo-no",
         "mo-po",
+        "mo-pot",
         "mo-ro",
         "mo-ron",
         "mo-to",
         "no-lo",
+        "no-no",
         "no-ro",
         "o-hoh",
         "o-tos",
+        "po-kon",
         "po-lo",
         "po-mo",
         "po-ro",
         "pro-to",
         "ro-po",
         "ro-so",
+        "sklo-bot",
         "slo-bo",
+        "so-lo",
+        "to-ho",
+        "to-hon",
         "to-to",
-        "vo-ro"
+        "vo-ro",
+        "xo-xo"
     ],
     "o-o-a": [
+        "fo-to-ja",
+        "ko-ho-a",
         "ko-ho-kas",
         "ko-ho-ta",
         "ko-lo-a",
         "ko-ro-na",
+        "ko-ro-ta",
+        "ko-ro-tan",
         "ko-to-a",
         "ko-to-na",
         "lo-to-ta",
         "mo-jo-va",
         "mo-ko-ma",
+        "o-do-ta",
+        "o-do-tan",
+        "o-lo-ja",
+        "po-po-jat",
         "to-to-ta"
     ],
     "o-o-aa": [
+        "ko-ho-aa",
+        "ko-ko-aa",
+        "ko-ko-naa",
         "ko-ko-naan",
-        "ko-to-maa"
+        "ko-to-maa",
+        "ko-to-naan"
     ],
     "o-o-e": [
+        "ko-ko-nen",
         "ko-ro-ke",
+        "mo-no-sen",
         "no-ko-set",
         "o-bo-e",
         "ro-ko-te",
@@ -18839,6 +27488,8 @@ export default {
         "bo-fo-ri",
         "bo-so-ni",
         "fo-to-ni",
+        "ko-ro-tin",
+        "o-do-tin",
         "pro-lo-gi",
         "pro-to-ni"
     ],
@@ -18853,7 +27504,8 @@ export default {
         "ko-ro-ton"
     ],
     "o-o-oo": [
-        "ro-ko-koo"
+        "ro-ko-koo",
+        "so-ro-noo"
     ],
     "o-o-u": [
         "ho-ho-tus",
@@ -18867,7 +27519,8 @@ export default {
         "o-do-tus",
         "po-lo-tus",
         "po-ro-tus",
-        "ro-ko-tus"
+        "ro-ko-tus",
+        "to-lo-kun"
     ],
     "o-o-uo": [
         "ko-ho-suo"
@@ -18877,15 +27530,19 @@ export default {
     ],
     "o-oi": [
         "ho-hoi",
+        "ho-roi",
         "o-hoi"
     ],
     "o-oi-a": [
         "ko-hoil-la",
         "ko-koil-la",
         "ko-koil-ta",
+        "ko-rois-sa",
         "ko-toi-sa",
         "lo-koi-sa",
         "mo-poil-la",
+        "o-lois-ta",
+        "po-lois-ta",
         "po-moil-la"
     ],
     "o-oi-aa": [
@@ -18893,7 +27550,9 @@ export default {
         "o-soit-taa"
     ],
     "o-oi-e": [
+        "ho-roi-let",
         "ko-koi-nen",
+        "ko-koi-set",
         "ko-loi-nen",
         "ko-toi-nen",
         "o-loi-nen",
@@ -18916,16 +27575,24 @@ export default {
         "ro-soi-suus"
     ],
     "o-oo": [
+        "bo-boo",
+        "ko-hoo",
         "ko-koon",
+        "no-joo",
         "o-joon",
-        "so-joon"
+        "o-loo",
+        "po-goo",
+        "so-joon",
+        "stro-boo"
     ],
     "o-oo-a": [
         "ko-hol-la",
         "ko-koo-ja",
         "ko-lon-na",
+        "lo-tos-sa",
         "o-jol-la",
         "o-jos-sa",
+        "po-kol-ta",
         "sko-too-ma",
         "so-jol-la",
         "so-jos-sa"
@@ -18938,6 +27605,7 @@ export default {
         "jo-rot-taa",
         "ko-hol-laan",
         "ko-hot-taa",
+        "ko-koo-maan",
         "ko-lot-taa",
         "ko-ros-taa",
         "ko-rot-taa",
@@ -18948,6 +27616,8 @@ export default {
         "no-lot-taa",
         "o-dot-taa",
         "o-jol-laan",
+        "o-lol-laan",
+        "o-sot-taa",
         "po-lot-taa",
         "po-rot-taa",
         "po-sot-taa",
@@ -18966,10 +27636,12 @@ export default {
     ],
     "o-oo-ee": [
         "ko-hol-leen",
+        "ko-hon-neet",
         "o-jol-leen",
         "so-jol-leen"
     ],
     "o-oo-i": [
+        "jo-hon-ki",
         "jo-hon-kin",
         "ko-bolt-ti",
         "ko-hok-ki",
@@ -18979,14 +27651,17 @@ export default {
         "ko-lon-ni",
         "ko-los-si",
         "ko-sol-ti",
+        "lo-ton-ki",
         "no-los-ti",
         "ro-bot-ti",
         "ro-sol-li"
     ],
     "o-oo-o": [
+        "mo-poos-to",
         "mo-toc-ross"
     ],
     "o-oo-u": [
+        "ko-hon-nut",
         "ko-koo-mus",
         "ko-ros-tus"
     ],
@@ -19008,6 +27683,7 @@ export default {
     ],
     "o-u": [
         "bo-nus",
+        "cho-rus",
         "do-ku",
         "fo-kus",
         "ho-ku",
@@ -19015,13 +27691,21 @@ export default {
         "ko-hu",
         "ko-ju",
         "ko-ru",
+        "lo-pu",
+        "lo-puks",
+        "lo-pult",
+        "lo-pun",
+        "lo-pust",
+        "lo-put",
         "lo-ru",
         "mo-dus",
         "o-hut",
         "o-lut",
         "o-pus",
+        "o-sun",
         "o-tus",
         "po-ju",
+        "po-lun",
         "po-ru",
         "ro-ju",
         "ro-mu",
@@ -19029,6 +27713,7 @@ export default {
         "so-lu",
         "so-pu",
         "so-tu",
+        "so-vus",
         "to-fu",
         "to-mu",
         "to-nus",
@@ -19044,18 +27729,31 @@ export default {
         "o-hu-kas",
         "o-su-a",
         "o-su-ma",
+        "o-su-man",
         "o-su-va",
         "po-pu-la",
+        "po-ru-kast",
+        "ro-mu-a",
         "so-lu-a",
+        "to-mu-na",
         "to-mu-ta",
+        "to-mu-tan",
         "to-ru-a"
+    ],
+    "o-u-aa": [
+        "ko-ru-jaan",
+        "o-su-maa",
+        "so-pu-saa"
     ],
     "o-u-e": [
         "jo-ku-nen",
         "lo-pu-ke",
-        "o-ju-ke"
+        "o-ju-ke",
+        "vo-lu-met"
     ],
     "o-u-i": [
+        "ho-pu-tin",
+        "ko-pu-tin",
         "mo-gu-li",
         "ro-ku-li",
         "so-pu-li",
@@ -19068,6 +27766,7 @@ export default {
     ],
     "o-u-u": [
         "ko-pu-tus",
+        "o-su-nut",
         "ro-mu-tus",
         "so-lu-tus",
         "to-mu-tus"
@@ -19078,8 +27777,12 @@ export default {
     "o-u-yö": [
         "so-lu-työ"
     ],
+    "o-ui": [
+        "o-sui"
+    ],
     "o-ui-a": [
         "lo-ruil-la",
+        "o-hui-ta",
         "so-pui-sa",
         "so-puil-la"
     ],
@@ -19108,29 +27811,42 @@ export default {
     ],
     "o-uu": [
         "ko-vuus",
+        "lo-juu",
         "o-huus",
+        "o-suu",
         "o-suus",
+        "so-puu",
+        "to-ruu",
         "to-tuus"
     ],
     "o-uu-a": [
         "ko-puk-ka",
+        "ko-vuut-ta",
         "lo-pul-la",
         "lo-pul-ta",
         "lo-pus-sa",
+        "o-lut-ta",
         "po-ruk-ka",
+        "po-ruk-kas",
         "pro-kuu-ra",
-        "so-puk-ka"
+        "so-lul-la",
+        "so-puk-ka",
+        "to-tuut-ta"
     ],
     "o-uu-aa": [
         "ho-put-taa",
         "ko-put-taa",
         "lo-pul-laan",
         "o-sut-taa",
+        "po-lul-laan",
         "po-tut-taa",
         "ro-mut-taa",
         "so-lut-taa",
         "to-mut-taa",
         "to-tut-taa"
+    ],
+    "o-uu-e": [
+        "to-tuu-den"
     ],
     "o-uu-i": [
         "jo-gurt-ti",
@@ -19138,19 +27854,39 @@ export default {
         "ko-run-di",
         "ko-tur-ni",
         "lo-puk-si",
+        "lo-put-kin",
         "mo-duu-li",
         "no-duu-li",
+        "o-lut-kin",
+        "po-lut-kin",
         "ro-bus-ti"
     ],
     "o-uu-o": [
         "so-luk-ko"
     ],
+    "o-uu-u": [
+        "to-tut-tu"
+    ],
+    "o-uu-ui": [
+        "ro-mut-tui"
+    ],
     "o-y": [
         "co-py",
+        "sto-ry",
+        "to-ny",
         "zlo-ty"
     ],
     "o-y-i": [
         "co-py-right"
+    ],
+    "o-y-o": [
+        "to-ky-o"
+    ],
+    "o-yy": [
+        "to-nyy"
+    ],
+    "o-yy-e": [
+        "bbo-yl-le"
     ],
     "o-yy-i": [
         "bro-dyy-ri",
@@ -19164,29 +27900,71 @@ export default {
     "o-yy-ie": [
         "bo-yf-riend"
     ],
+    "o-öö-i": [
+        "o-döö-ri"
+    ],
     "oi-a": [
         "crois-sant",
+        "hoi-da",
+        "hoi-dan",
         "hoi-va",
         "hoik-ka",
+        "joi-na",
+        "joi-ta",
+        "joi-vat",
+        "joil-la",
+        "joil-ta",
+        "jois-sa",
+        "jois-ta",
         "koi-ra",
+        "koi-ran",
         "koi-ras",
+        "koi-rat",
         "koi-sa",
+        "koi-ta",
+        "koi-tan",
+        "koi-tat",
         "loi-va",
         "loik-ka",
+        "lois-ta",
+        "lois-tan",
         "noi-ta",
+        "noil-la",
+        "nois-sa",
+        "nois-ta",
         "oi-nas",
         "oi-va",
+        "ois-han",
         "poi-ka",
+        "poi-kas",
         "pois-sa",
+        "pois-ta",
+        "pois-tan",
         "roi-ma",
         "roi-na",
         "roik-ka",
         "soi-da",
         "soi-ja",
+        "soi-ta",
+        "soi-tan",
+        "soi-tat",
+        "soi-vat",
+        "sois-sa",
         "tois-sa",
+        "tois-ta",
+        "tois-tan",
         "troik-ka",
+        "tskoi-rat",
         "voi-da",
+        "voi-han",
         "voi-ma",
+        "voi-mal",
+        "voi-man",
+        "voi-mat",
+        "voi-ta",
+        "voi-tan",
+        "voi-tas",
+        "voi-vat",
         "voik-ka"
     ],
     "oi-a-a": [
@@ -19198,29 +27976,61 @@ export default {
         "koi-sa-ta",
         "loi-ka-ta",
         "lois-ta-va",
+        "lois-ta-van",
         "moi-ka-ta",
         "soi-ma-ta",
         "soit-ta-ja",
+        "soit-ta-vat",
         "voi-ma-kas",
         "voi-ma-la",
         "voi-ta-va",
         "voit-ta-ja"
     ],
+    "oi-a-aa": [
+        "hoi-va-taan",
+        "koit-ta-kaa",
+        "lois-ta-maan",
+        "lois-ta-vaa",
+        "soit-ta-maan",
+        "tois-ta-maa",
+        "tois-ta-maan",
+        "tois-ta-vaa"
+    ],
     "oi-a-e": [
+        "lois-ta-en",
         "poi-ka-nen",
         "roi-ka-le"
     ],
+    "oi-a-ee": [
+        "voit-ta-nees",
+        "voit-ta-neet"
+    ],
     "oi-a-i": [
-        "loik-ka-ri"
+        "joil-la-kin",
+        "loik-ka-ri",
+        "poi-ka-ki",
+        "toi-ma-rin",
+        "voi-ma-ni",
+        "voi-ma-si"
     ],
     "oi-a-ie": [
         "poi-ka-mies",
         "voi-ma-mies"
     ],
+    "oi-a-ii": [
+        "loi-va-rii",
+        "voit-ta-jii",
+        "voit-ta-jiin"
+    ],
     "oi-a-o": [
         "lois-ma-to",
         "pois-pa-no",
         "voi-ma-ton"
+    ],
+    "oi-a-u": [
+        "hoi-ta-nu",
+        "koit-ta-nu",
+        "tois-ta-nut"
     ],
     "oi-a-uu": [
         "lois-ta-vuus"
@@ -19229,26 +28039,48 @@ export default {
         "hoi-va-työ"
     ],
     "oi-aa": [
+        "hoi-laat",
         "hoi-taa",
+        "hoi-vaa",
+        "koi-raa",
         "koit-taa",
         "lois-taa",
         "moi-kaa",
+        "moik-kaa",
+        "oi-vaa",
+        "ois-kaa",
+        "ois-kaan",
+        "poi-kaa",
+        "pois-kaa",
         "pois-taa",
         "roi-kaa",
+        "soi-maa",
+        "soi-maan",
         "sois-taa",
         "soit-taa",
         "tois-taa",
+        "tois-taan",
+        "voi-daa",
+        "voi-daan",
+        "voi-kaan",
+        "voi-maa",
+        "vois-kaa",
         "voit-taa"
     ],
     "oi-aa-a": [
+        "koi-ras-ta",
         "soi-tan-ta",
         "toi-saal-la",
-        "toi-saal-ta"
+        "toi-saal-ta",
+        "tois-tan-sa",
+        "voi-mal-la",
+        "voi-mas-ta"
     ],
     "oi-aa-aa": [
         "hoi-dat-taa",
         "loi-mah-taa",
         "lois-kah-taa",
+        "moik-kaa-kaan",
         "mois-kah-taa",
         "oi-val-taa",
         "pois-tat-taa",
@@ -19257,10 +28089,16 @@ export default {
         "soin-nah-taa"
     ],
     "oi-aa-e": [
+        "koi-ral-le",
+        "koi-tat-te",
+        "poi-kan-ne",
+        "soi-maam-me",
         "toi-saal-le",
-        "toi-saan-ne"
+        "toi-saan-ne",
+        "tois-tan-ne"
     ],
     "oi-aa-i": [
+        "hoi-dan-ki",
         "krois-sant-ti",
         "loi-vas-ti",
         "lois-kas-vi",
@@ -19272,6 +28110,7 @@ export default {
     "oi-aa-o": [
         "soi-tan-to",
         "voi-hap-po",
+        "voi-tas-ko",
         "voi-vaah-to"
     ],
     "oi-aa-u": [
@@ -19279,10 +28118,18 @@ export default {
         "mois-kah-dus",
         "oi-val-lus",
         "rois-kah-dus",
-        "soin-nah-dus"
+        "soin-nah-dus",
+        "voi-maan-nun"
     ],
     "oi-aa-uu": [
         "voi-mak-kuus"
+    ],
+    "oi-ai": [
+        "bpoi-kain",
+        "joil-lain",
+        "jois-tain",
+        "poi-kain",
+        "voi-tais"
     ],
     "oi-ai-a": [
         "hoi-vail-la",
@@ -19296,7 +28143,14 @@ export default {
         "lois-sai-raus"
     ],
     "oi-ai-e": [
+        "oi-kai-sen",
         "tois-tai-nen"
+    ],
+    "oi-ai-i": [
+        "soit-tai-sin"
+    ],
+    "oi-ai-ii": [
+        "voi-tai-siin"
     ],
     "oi-ai-u": [
         "oi-kai-su",
@@ -19330,34 +28184,60 @@ export default {
     ],
     "oi-e": [
         "hoi-de",
+        "joi-den",
+        "joil-le",
         "koi-te",
+        "loi-he",
         "loi-nen",
         "lois-ke",
         "lois-te",
         "moi-ke",
         "moi-nen",
         "moi-te",
+        "noi-den",
+        "noil-le",
         "oi-re",
         "pois-te",
         "rois-ke",
         "soi-nen",
+        "toi-ne",
         "toi-nen",
+        "toi-sel",
+        "toi-sen",
+        "toi-ses",
+        "toi-set",
         "toi-ve",
         "tois-te",
+        "tois-ten",
         "voi-de",
         "voi-nen",
-        "voih-ke"
+        "voih-ke",
+        "voit-te"
     ],
     "oi-e-a": [
         "hoi-ke-ta",
         "loi-ve-ta",
         "oi-ke-a",
+        "oi-ke-an",
+        "oi-ke-at",
         "poi-ke-ta",
         "soi-ke-a",
-        "toi-me-kas"
+        "toi-me-kas",
+        "voi-te-ta"
     ],
     "oi-e-aa": [
-        "oi-ke-aan"
+        "hoi-de-taa",
+        "hoi-de-taan",
+        "koi-te-taan",
+        "oi-ke-aa",
+        "oi-ke-aan",
+        "soi-te-taan"
+    ],
+    "oi-e-ee": [
+        "hoi-te-lee",
+        "lois-te-lee",
+        "soit-te-lee",
+        "tois-te-lee"
     ],
     "oi-e-i": [
         "boi-le-ri",
@@ -19379,32 +28259,78 @@ export default {
         "loi-se-läin"
     ],
     "oi-ee": [
+        "oi-kee",
+        "oi-keelt",
+        "oi-keen",
+        "oi-kees",
+        "oi-keest",
+        "oi-keet",
+        "poik-kee",
+        "soi-keen",
+        "toi-meen",
+        "toi-seen",
+        "toi-veen",
+        "toi-veet",
         "voi-lee"
     ],
     "oi-ee-a": [
         "hoi-del-la",
+        "lois-tees-sa",
+        "oi-kee-ta",
+        "oi-keel-ta",
+        "oi-kees-sa",
+        "oi-kees-ta",
+        "poik-kee-va",
+        "soi-des-sa",
         "soi-tel-la",
+        "toi-sel-la",
+        "toi-sel-ta",
+        "toi-sen-sa",
+        "toi-ses-sa",
+        "toi-ses-ta",
         "tois-tel-la",
+        "tois-ten-sa",
         "voi-del-la"
     ],
     "oi-ee-aa": [
         "hoi-ken-taa",
-        "loi-ven-taa"
+        "loi-ven-taa",
+        "oi-kees-taa",
+        "oi-kees-taan",
+        "pois-tel-laan",
+        "toi-nen-kaan",
+        "toi-set-kaan",
+        "tois-tel-laan"
+    ],
+    "oi-ee-e": [
+        "toi-sel-le",
+        "toi-sem-me",
+        "toi-sen-ne",
+        "tois-tem-me"
     ],
     "oi-ee-ee": [
         "toi-sek-seen"
     ],
     "oi-ee-i": [
         "noi-set-ti",
+        "oi-kees-ti",
         "toi-let-ti",
-        "toi-sek-si"
+        "toi-nen-kin",
+        "toi-sek-si",
+        "toi-sen-kin",
+        "toi-vee-si"
+    ],
+    "oi-ee-ii": [
+        "lois-tet-tiin",
+        "tois-tet-tiin"
     ],
     "oi-ee-o": [
         "moit-tee-ton",
         "oi-ree-ton"
     ],
     "oi-ee-u": [
-        "loi-ven-nus"
+        "loi-ven-nus",
+        "soi-tel-lu"
     ],
     "oi-ee-uu": [
         "toi-mek-kuus"
@@ -19413,17 +28339,28 @@ export default {
         "pois-men-nyt"
     ],
     "oi-ei": [
-        "oi-kein"
+        "broi-dei",
+        "oi-kei",
+        "oi-kein",
+        "soi-kein",
+        "toi-veit"
     ],
     "oi-ei-a": [
+        "oi-kei-ta",
         "oi-reil-la",
-        "toi-vei-kas"
+        "oi-reis-ta",
+        "toi-vei-kas",
+        "toi-vei-ta"
     ],
     "oi-ei-e": [
-        "oi-rei-nen"
+        "oi-rei-nen",
+        "toi-veit-tes"
     ],
     "oi-ei-i": [
         "voi-veit-si"
+    ],
+    "oi-ei-ii": [
+        "oi-kei-siin"
     ],
     "oi-ei-o": [
         "oi-keis-to",
@@ -19458,24 +28395,52 @@ export default {
     "oi-eu-ie": [
         "oi-keus-tie"
     ],
+    "oi-eu-ii": [
+        "oi-keuk-sii"
+    ],
     "oi-eu-u": [
         "oi-keu-tus"
     ],
     "oi-i": [
         "broi-di",
+        "broi-din",
+        "droi-di",
+        "hoi-ti",
+        "joi-hin",
+        "joi-sin",
+        "joint-ti",
         "koi-pi",
+        "koi-tin",
+        "koi-tit",
         "loi-mi",
+        "oi-si",
+        "oi-sin",
+        "oi-sit",
         "oi-tis",
+        "poi-kin",
+        "poi-min",
         "poik-ki",
         "point-si",
         "point-ti",
         "pois-tin",
+        "roi-his",
         "roi-si",
         "soi-din",
+        "soi-sin",
         "soi-tin",
         "soin-ti",
+        "soit-ti",
+        "toi-kin",
         "toi-mi",
+        "toi-min",
+        "toi-si",
         "toi-sin",
+        "toi-sit",
+        "voi-si",
+        "voi-sin",
+        "voi-sinks",
+        "voi-sit",
+        "voin-ki",
         "voin-ti"
     ],
     "oi-i-a": [
@@ -19483,6 +28448,7 @@ export default {
         "loi-si-a",
         "loih-ti-a",
         "loik-ki-a",
+        "loik-ki-va",
         "lois-ki-a",
         "lois-ki-na",
         "loit-si-a",
@@ -19490,8 +28456,10 @@ export default {
         "moit-ti-a",
         "moit-ti-ja",
         "poi-ki-a",
+        "poi-ki-na",
         "poi-mi-a",
         "poi-mi-ja",
+        "roi-hi-kas",
         "roi-mi-a",
         "rois-ki-a",
         "soin-ni-kas",
@@ -19500,21 +28468,32 @@ export default {
         "toi-mi-kas",
         "toi-mi-va",
         "toi-pi-las",
+        "toi-si-a",
+        "voi-mi-a",
         "voih-ki-a",
         "voih-ki-na"
     ],
     "oi-i-aa": [
-        "toi-si-naan"
+        "poi-ki-aan",
+        "toi-mi-taa",
+        "toi-si-aan",
+        "toi-si-naan",
+        "voi-mi-aan"
     ],
     "oi-i-e": [
         "koil-li-nen",
         "soin-ti-nen",
         "toi-mi-te"
     ],
+    "oi-i-ee": [
+        "soit-ti-meen",
+        "toi-mi-neeks"
+    ],
     "oi-i-o": [
         "moi-si-o",
         "soi-ki-o",
-        "soin-ni-ton"
+        "soin-ni-ton",
+        "voi-si-ko"
     ],
     "oi-i-u": [
         "toi-mi-tus"
@@ -19528,6 +28507,11 @@ export default {
     "oi-i-äi": [
         "poik-ki-päin"
     ],
+    "oi-ie": [
+        "koi-pien",
+        "koi-rien",
+        "poi-kien"
+    ],
     "oi-ie-a": [
         "poi-miel-ma"
     ],
@@ -19535,46 +28519,84 @@ export default {
         "lois-sie-ni",
         "toi-mie-lin"
     ],
+    "oi-ii": [
+        "noi-tii",
+        "poi-kii",
+        "toi-mii",
+        "toi-sii",
+        "toi-siin",
+        "voi-mii",
+        "voi-miin",
+        "voi-tiin"
+    ],
     "oi-ii-a": [
+        "broi-dil-ta",
         "lois-kin-ta",
         "lois-vir-ta",
         "poi-min-ta",
-        "toi-min-ta"
+        "roi-hik-ka",
+        "soi-tin-pa",
+        "toi-min-ta",
+        "toi-siin-sa",
+        "toi-sil-la"
     ],
     "oi-ii-aa": [
         "hoi-kis-taa",
+        "roi-hik-kaa",
         "soi-tin-taa",
+        "soi-tin-taan",
+        "toi-min-taa",
+        "toi-min-taan",
         "toi-mit-taa",
+        "toi-sin-kaan",
         "toi-sin-taa",
-        "voi-mis-taa"
+        "toi-sis-taan",
+        "voi-mis-taa",
+        "voi-mis-taan"
     ],
     "oi-ii-ai": [
         "poi-kit-tain"
     ],
     "oi-ii-e": [
-        "toi-min-ne"
+        "noi-dil-le",
+        "poi-mim-me",
+        "toi-min-ne",
+        "toi-siim-me",
+        "toi-sil-le",
+        "voi-sim-me",
+        "voi-sit-te"
+    ],
+    "oi-ii-ee": [
+        "toi-sil-leen"
     ],
     "oi-ii-i": [
-        "soi-lik-ki"
+        "oi-sin-kin",
+        "soi-lik-ki",
+        "voi-sin-kin"
     ],
     "oi-ii-o": [
         "koi-vik-ko",
         "koi-vis-to",
+        "koi-vis-ton",
         "poi-min-to",
         "toi-min-to",
         "toi-mis-to",
+        "toi-mis-ton",
         "toi-sin-nos",
-        "toi-sin-to"
+        "toi-sin-to",
+        "voi-sin-ko"
     ],
     "oi-ii-u": [
         "soi-tin-nus",
+        "toi-sin-ku",
         "voi-mis-tus"
     ],
     "oi-ii-uu": [
         "soin-nik-kuus"
     ],
     "oi-ii-ä": [
-        "voi-sil-mä"
+        "voi-sil-mä",
+        "voi-sit-sä"
     ],
     "oi-ii-äi": [
         "toi-sin-päin"
@@ -19588,25 +28610,51 @@ export default {
         "kroi-sos",
         "loik-ko",
         "lois-to",
+        "ois-ko",
+        "oit-zo",
         "pois-to",
         "roi-lo",
         "roik-ko",
         "rois-to",
         "soi-ro",
+        "soi-ton",
         "soik-ko",
         "soit-to",
         "toi-vo",
+        "toi-von",
+        "toi-vot",
         "tois-to",
+        "tois-tol",
+        "voi-ko",
+        "vois-ko",
+        "voit-ko",
         "voit-to"
     ],
     "oi-o-a": [
         "hoi-to-la",
         "loi-ko-a",
         "loi-to-ta",
+        "lois-to-a",
         "lois-to-kas",
         "oi-ko-a",
+        "ois-ko-han",
         "toi-vo-a",
-        "voi-to-kas"
+        "toi-vo-mat",
+        "voi-to-kas",
+        "voit-to-a"
+    ],
+    "oi-o-aa": [
+        "toi-vo-taan"
+    ],
+    "oi-o-e": [
+        "toi-vo-en",
+        "toi-vo-nen"
+    ],
+    "oi-o-ee": [
+        "loit-to-nee"
+    ],
+    "oi-o-i": [
+        "toi-vo-ni"
     ],
     "oi-o-ie": [
         "oi-ko-tie"
@@ -19628,7 +28676,10 @@ export default {
         "tois-to-työ"
     ],
     "oi-oi": [
-        "oi-joi"
+        "oi-joi",
+        "toi-voi",
+        "toi-voin",
+        "toi-voit"
     ],
     "oi-oi-a": [
         "loi-koil-la",
@@ -19639,17 +28690,29 @@ export default {
     "oi-oi-e": [
         "oi-koi-nen"
     ],
+    "oi-oi-i": [
+        "toi-voi-sin"
+    ],
     "oi-oi-u": [
         "loi-koi-lu"
     ],
     "oi-oi-uu": [
         "voit-toi-suus"
     ],
+    "oi-oo": [
+        "hoi-too",
+        "soi-koon",
+        "soit-toon",
+        "toi-voo",
+        "tois-too",
+        "voit-too"
+    ],
     "oi-oo-a": [
         "loi-tol-la",
         "loi-tol-ta",
         "loi-tom-mas",
-        "oi-on-ta"
+        "oi-on-ta",
+        "toi-vos-ta"
     ],
     "oi-oo-aa": [
         "hoi-lot-taa",
@@ -19678,19 +28741,30 @@ export default {
         "voi-tok-kuus"
     ],
     "oi-u": [
+        "hoi-pun",
+        "hoit-sun",
         "joi-ku",
         "koi-tus",
         "koi-vu",
+        "koi-vun",
+        "koi-vut",
         "loi-mu",
         "loit-su",
+        "oi-kut",
         "oik-ku",
         "poi-ju",
         "poi-mu",
         "poit-su",
         "roi-hu",
         "roik-ku",
+        "soi-nu",
+        "soih-dun",
         "soih-tu",
-        "soin-tu"
+        "soin-nun",
+        "soin-tu",
+        "voi-nu",
+        "voi-nut",
+        "voi-tu"
     ],
     "oi-u-a": [
         "hoi-tu-a",
@@ -19701,12 +28775,14 @@ export default {
         "lois-ku-a",
         "lois-ku-na",
         "lois-ku-ta",
+        "loit-su-ja",
         "moi-ku-a",
         "noi-tu-a",
         "oi-ku-kas",
         "poi-mu-kas",
         "pois-tu-a",
         "pois-tu-ma",
+        "pois-tu-van",
         "roi-hu-ta",
         "roi-ku-a",
         "roik-ku-a",
@@ -19718,11 +28794,20 @@ export default {
         "toi-pu-a",
         "toin-tu-a",
         "tois-tu-a",
+        "tois-tu-vat",
         "voi-pu-a",
         "voi-su-la"
     ],
+    "oi-u-aa": [
+        "pois-tu-maan",
+        "roi-ku-taan",
+        "toi-pu-maan",
+        "tois-tu-vaan"
+    ],
     "oi-u-e": [
-        "poi-ku-e"
+        "koi-vu-jen",
+        "poi-ku-e",
+        "roi-hu-ten"
     ],
     "oi-u-i": [
         "hoi-tu-ri",
@@ -19743,6 +28828,9 @@ export default {
         "koi-vu-puu",
         "tois-tu-vuus"
     ],
+    "oi-ui": [
+        "roik-kuis"
+    ],
     "oi-ui-a": [
         "oik-kuil-la",
         "poi-muil-la",
@@ -19752,6 +28840,9 @@ export default {
         "koi-vui-nen",
         "poi-mui-nen",
         "soin-tui-nen"
+    ],
+    "oi-ui-i": [
+        "hoip-pui-lin"
     ],
     "oi-ui-u": [
         "oik-kui-lu"
@@ -19769,10 +28860,15 @@ export default {
         "loi-vuus",
         "noi-tuus",
         "poi-kuus",
-        "soi-suus"
+        "pois-tuu",
+        "roik-kuu",
+        "rois-kuu",
+        "soi-suus",
+        "tois-tuu"
     ],
     "oi-uu-a": [
         "lois-kun-ta",
+        "loit-sus-ta",
         "voi-kuk-ka",
         "voi-pul-la"
     ],
@@ -19786,7 +28882,8 @@ export default {
         "voi-vut-taa"
     ],
     "oi-uu-i": [
-        "koi-pus-si"
+        "koi-pus-si",
+        "toi-vun-kin"
     ],
     "oi-uu-ii": [
         "voi-vuk-siin"
@@ -19798,8 +28895,15 @@ export default {
     "oi-yö-ä": [
         "koin-syö-mä"
     ],
+    "oi-ä": [
+        "oi-dä",
+        "voit-sä"
+    ],
     "oi-äi": [
         "pois-päin"
+    ],
+    "oi-ää-e": [
+        "koin-täh-den"
     ],
     "oi-ää-i": [
         "koin-täh-ti",
@@ -19825,20 +28929,35 @@ export default {
         "don-na",
         "dor-ka",
         "floo-ra",
+        "flow-ta",
         "fok-ka",
         "hoh-ka",
         "hom-ma",
+        "hom-man",
+        "hom-mat",
         "hon-ka",
         "hor-na",
         "hork-ka",
         "hors-ma",
+        "hors-man",
+        "hot-lan",
+        "joh-da",
         "jol-la",
         "jol-ma",
+        "jol-ta",
+        "jon-ka",
+        "jon-na",
         "joo-ga",
+        "jor-ma",
         "jos-pa",
+        "jos-sa",
+        "jos-ta",
+        "jot-ka",
         "jot-ta",
         "kob-ra",
+        "koh-dast",
         "koh-ta",
+        "koh-tas",
         "koh-va",
         "kok-ka",
         "kol-ja",
@@ -19849,6 +28968,7 @@ export default {
         "kon-na",
         "kon-sa",
         "konk-ka",
+        "kons-ta",
         "koo-kas",
         "koo-ma",
         "koo-ta",
@@ -19857,13 +28977,22 @@ export default {
         "kop-la",
         "kop-pa",
         "kop-ra",
+        "kor-jas",
         "kor-va",
+        "kor-van",
+        "kor-vas",
+        "kor-vast",
+        "kor-vat",
         "kors-ka",
         "kos-ka",
         "kot-ka",
+        "kot-kan",
+        "kot-kat",
         "kot-sa",
         "kot-va",
         "krop-pa",
+        "loh-ja",
+        "loh-jan",
         "lomp-sa",
         "lon-ka",
         "lonk-ka",
@@ -19873,15 +29002,21 @@ export default {
         "lot-ta",
         "mok-ka",
         "mon-ta",
+        "mon-taks",
+        "moon-walk",
         "mord-va",
         "mos-ka",
         "nok-ka",
         "nol-la",
         "nol-las",
+        "nol-lat",
         "nop-pa",
         "nop-sa",
         "nor-ja",
         "norp-pa",
+        "nos-ta",
+        "nos-tan",
+        "nos-tat",
         "oh-ja",
         "oh-jas",
         "oh-ra",
@@ -19889,15 +29024,33 @@ export default {
         "ok-sa",
         "ol-ka",
         "ol-la",
+        "ol-tas",
+        "on-ha",
+        "on-han",
+        "on-pa",
+        "oo-tan",
+        "oo-tat",
+        "oon-han",
+        "oot-han",
         "or-ja",
+        "or-jan",
+        "os-ta",
+        "os-tan",
         "ot-sa",
+        "ot-sal",
         "poh-ja",
+        "poh-jal",
+        "poh-jalt",
         "pok-ka",
         "pol-la",
+        "pol-las",
+        "pol-ta",
+        "pol-tan",
         "polk-ka",
         "pols-ka",
         "pomp-pa",
         "pop-pa",
+        "por-kat",
         "por-ras",
         "por-sas",
         "pork-ka",
@@ -19908,8 +29061,11 @@ export default {
         "proo-sa",
         "pros-sa",
         "rok-ka",
+        "roo-mas",
         "roo-sa",
         "ros-ka",
+        "ros-kamct",
+        "ros-kat",
         "rot-ta",
         "sof-ta",
         "soh-va",
@@ -19918,28 +29074,38 @@ export default {
         "son-ta",
         "sont-sa",
         "soo-da",
+        "soo-dan",
         "soo-ma",
         "soo-pa",
         "sop-pa",
         "sor-ja",
+        "sor-kat",
         "sor-sa",
         "sor-va",
         "sork-ka",
         "sot-ka",
         "stoo-la",
         "tok-ka",
+        "tol-la",
+        "tol-last",
         "tolp-pa",
+        "ton-kan",
         "tonk-ka",
         "too-ga",
         "too-ra",
         "too-sa",
         "top-pa",
         "torp-pa",
+        "tos-sa",
+        "tos-ta",
         "tot-ta",
         "vod-ka",
         "voh-la",
         "vors-chmack",
-        "vot-ka"
+        "vot-ka",
+        "wolf-gang",
+        "on-han",
+        "pol-la"
     ],
     "oo-a-a": [
         "blon-da-ta",
@@ -19954,6 +29120,7 @@ export default {
         "hoo-sa-ta",
         "jod-la-ta",
         "joh-ta-ja",
+        "joh-ta-jat",
         "joh-ta-va",
         "joo-ga-ta",
         "kloo-na-ta",
@@ -19988,13 +29155,16 @@ export default {
         "oh-ja-ta",
         "oh-ra-na",
         "ok-sa-kas",
+        "ol-ta-va",
         "ol-ta-vat",
         "oot-ra-ta",
+        "oot-ta-vat",
         "or-pa-na",
         "os-ta-ja",
         "ot-ta-ja",
         "ot-ta-va",
         "poh-ja-ta",
+        "pok-ka-na",
         "polt-ta-ja",
         "polt-ta-ma",
         "polt-ta-va",
@@ -20020,39 +29190,84 @@ export default {
         "zoo-ma-ta"
     ],
     "oo-a-aa": [
+        "jod-la-taan",
+        "joh-ta-jaa",
+        "joh-ta-maan",
+        "koh-da-taan",
         "kon-sa-naan",
-        "poh-ja-maa"
+        "nos-ta-maan",
+        "oh-ja-taan",
+        "oot-ta-maan",
+        "os-ta-maan",
+        "ot-ta-kaa",
+        "ot-ta-maan",
+        "poh-ja-maa",
+        "polt-ta-maan",
+        "sol-va-taan",
+        "tot-ta-kaan"
+    ],
+    "oo-a-ai": [
+        "tot-ta-kai"
     ],
     "oo-a-e": [
+        "front-pa-ge",
+        "hok-ka-sen",
         "joh-da-te",
         "kok-ka-re",
         "kor-va-ke",
         "kot-va-nen",
         "loh-ka-re",
         "oh-da-ke",
+        "oot-ta-en",
         "ot-sa-ke",
         "roh-ja-ke",
         "soft-wa-re",
         "von-ka-le"
     ],
+    "oo-a-ee": [
+        "hot-ka-see"
+    ],
+    "oo-a-ei": [
+        "kom-ma-reil"
+    ],
     "oo-a-i": [
         "bon-ga-ri",
         "dol-la-ri",
+        "dol-la-rin",
         "don-ga-rit",
         "golf-fa-ri",
         "hok-ka-ri",
+        "hom-ma-ni",
         "job-ba-ri",
         "joh-da-tin",
+        "jor-da-nit",
         "jos-sa-kin",
         "jos-ta-kin",
+        "koh-ta-sin",
         "kok-ka-rit",
         "kom-ma-ri",
         "kon-ka-ri",
         "kon-na-ri",
         "kop-pa-ri",
+        "kor-ja-sit",
+        "kor-va-ni",
+        "kork-ka-rit",
+        "kort-ta-ni",
         "lob-ba-ri",
+        "l’or-éa-lin",
+        "mon-ta-kin",
         "mots-ka-ri",
+        "nos-ta-sin",
+        "nos-ta-vi",
+        "oc-ca-min",
+        "ol-ka-ni",
         "os-ta-ri",
+        "os-ta-ril",
+        "os-ta-rin",
+        "os-ta-sin",
+        "ot-ta-sin",
+        "ot-ta-sit",
+        "poh-ja-ni",
         "pok-ka-ri",
         "pol-la-ri",
         "pol-va-rit",
@@ -20062,7 +29277,9 @@ export default {
         "pop-la-ri",
         "pop-pa-ri",
         "por-va-ri",
+        "por-va-rit",
         "port-sa-ri",
+        "pot-ka-sit",
         "rok-ka-ri",
         "sor-va-ri",
         "stop-pa-ri",
@@ -20085,14 +29302,21 @@ export default {
     ],
     "oo-a-o": [
         "koh-ta-lo",
+        "koh-ta-lon",
         "on-ka-lo",
         "ot-ta-mo",
         "poh-ja-ton",
         "tor-na-do"
     ],
+    "oo-a-oo": [
+        "koh-ta-loon"
+    ],
     "oo-a-u": [
         "joh-da-tus",
-        "nos-ta-tus"
+        "nos-ta-tus",
+        "os-ta-nu",
+        "ot-ta-nu",
+        "polt-ta-nu"
     ],
     "oo-a-uu": [
         "hon-ka-puu",
@@ -20112,45 +29336,112 @@ export default {
         "poh-ja-jää"
     ],
     "oo-aa": [
+        "bon-daa",
+        "bon-jaat",
+        "boo-gaa",
+        "chop-paan",
+        "donk-kaa",
+        "flos-saa",
+        "flos-saan",
+        "fron-taa",
+        "front-taa",
+        "goog-laa",
         "hoh-kaa",
         "hoh-taa",
+        "hom-maa",
+        "hom-maan",
+        "hop-paa",
+        "jod-laa",
         "joh-taa",
         "jos-kaan",
+        "koh-taa",
         "koh-taan",
         "kolk-kaa",
         "kon-saan",
+        "konk-kaan",
+        "kont-taa",
+        "kont-taan",
+        "koo-daa",
+        "koo-daan",
         "koon-taa",
         "koos-taa",
         "kop-saa",
+        "kor-jaa",
+        "kor-jaan",
+        "kor-jaat",
+        "kor-vaa",
+        "kork-kaan",
+        "kos-kaa",
         "kos-kaan",
         "kos-taa",
+        "kroo-laa",
         "lok-saa",
         "mon-taa",
+        "nok-kaan",
+        "nol-laa",
+        "nop-saa",
         "nop-saan",
         "nos-taa",
+        "oh-jaa",
+        "oh-jaan",
+        "ol-kaa",
+        "ol-kaan",
+        "ol-laa",
+        "ol-laaks",
+        "ol-laan",
+        "on-kaan",
+        "oo-kaan",
+        "ook-kaan",
+        "oot-taa",
         "os-taa",
+        "ot-saan",
         "ot-taa",
+        "poh-jaa",
+        "poh-jaan",
+        "pol-laas",
         "polt-taa",
         "por-taat",
-        "sor-taa"
+        "pros-saa",
+        "rok-kaa",
+        "rok-kaan",
+        "rop-laa",
+        "ros-kaa",
+        "ros-kaan",
+        "shop-paa",
+        "sor-taa",
+        "stop-paa"
     ],
     "oo-aa-a": [
         "gol-faa-ja",
+        "goog-laap-pa",
+        "koh-dal-la",
+        "koh-taa-vat",
         "kok-kaa-ja",
         "koo-daa-ja",
         "kor-jaa-ja",
         "kor-vaa-ja",
+        "krop-paan-sa",
         "lob-baa-ja",
         "mork-kaa-ja",
+        "nol-las-ta",
         "oh-jaa-ja",
         "oh-jan-ta",
+        "ot-sal-la",
+        "poh-jal-la",
+        "poh-jas-sa",
+        "poh-jas-ta",
         "ros-kaa-ja",
+        "soh-val-la",
+        "soh-val-ta",
         "sor-vaa-ja"
     ],
     "oo-aa-aa": [
         "hor-jah-taa",
         "joh-dat-taa",
+        "koh-dal-laan",
+        "koh-taa-maan",
         "kon-tal-laan",
+        "koo-mas-kaa",
         "kop-sah-taa",
         "kors-kah-taa",
         "lok-sah-taa",
@@ -20161,8 +29452,10 @@ export default {
         "not-kah-taa",
         "oh-jas-taa",
         "ok-sas-taa",
+        "ol-laan-kaan",
         "on-nah-taa",
         "os-tat-taa",
+        "ot-taak-kaan",
         "poh-jan-maa",
         "pok-sah-taa",
         "pol-tat-taa",
@@ -20184,9 +29477,14 @@ export default {
         "kor-van-taus"
     ],
     "oo-aa-e": [
-        "kol-man-nes"
+        "koh-dal-le",
+        "kol-man-nen",
+        "kol-man-nes",
+        "soh-val-le"
     ],
     "oo-aa-ee": [
+        "koh-dal-leen",
+        "kol-man-teen",
         "kon-tal-leen"
     ],
     "oo-aa-i": [
@@ -20209,6 +29507,8 @@ export default {
         "kons-tant-ti",
         "kont-rah-ti",
         "kont-ras-ti",
+        "kor-vaa-ni",
+        "kor-vat-ki",
         "korp-raa-li",
         "lok-vat-ti",
         "mon-taa-si",
@@ -20224,7 +29524,16 @@ export default {
         "poks-taa-vi",
         "por-taa-li",
         "spon-taa-ni",
+        "stock-man-nil",
         "vot-jak-ki"
+    ],
+    "oo-aa-ii": [
+        "bon-gat-tii",
+        "koh-dat-tiin",
+        "kol-lat-tiin",
+        "kor-vat-tiin",
+        "nor-maa-lii",
+        "ol-lak-kii"
     ],
     "oo-aa-iu": [
         "for-maa-lius",
@@ -20241,6 +29550,7 @@ export default {
         "lom-pak-ko",
         "oh-jaa-mo",
         "ok-sas-to",
+        "ol-laan-ko",
         "por-taa-ton",
         "sop-raa-no",
         "sor-vaa-mo",
@@ -20249,10 +29559,15 @@ export default {
     "oo-aa-oi": [
         "koh-dak-koin"
     ],
+    "oo-aa-oo": [
+        "lom-pak-koon"
+    ],
     "oo-aa-u": [
         "hor-jah-dus",
         "kom-pas-tus",
+        "kon-tan-nut",
         "kop-sah-dus",
+        "kor-jan-nu",
         "kors-kah-dus",
         "lok-sah-dus",
         "mok-sah-dus",
@@ -20266,6 +29581,7 @@ export default {
         "pon-nah-dus",
         "por-ras-tus",
         "rop-sah-dus",
+        "snor-tan-nu",
         "sor-sas-tus",
         "tor-kah-dus",
         "wok-pan-nu"
@@ -20278,11 +29594,16 @@ export default {
     ],
     "oo-ai": [
         "cock-tail",
+        "jol-lain",
+        "jol-tain",
+        "jos-sai",
         "jos-sain",
+        "jos-tai",
         "jos-tain",
         "kor-jain",
         "oh-jain",
         "ol-kain",
+        "ol-tais",
         "tors-tai"
     ],
     "oo-ai-a": [
@@ -20303,24 +29624,28 @@ export default {
         "pok-kail-la",
         "pol-kais-ta",
         "pon-kais-ta",
+        "por-tail-la",
         "pot-kais-ta",
         "roh-kais-ta",
         "shop-pail-la",
         "snob-bail-la",
         "som-pail-la",
         "sor-vail-la",
-        "tol-jail-la"
+        "tol-jail-la",
+        "tors-tai-na"
     ],
     "oo-ai-ai": [
         "por-tait-tain"
     ],
     "oo-ai-e": [
         "hoh-kai-nen",
+        "hol-lai-le",
         "hon-kai-nen",
         "jol-lai-nen",
         "los-kai-nen",
         "mok-kai-nen",
         "mos-kai-nen",
+        "oh-jain-ten",
         "oh-kai-nen",
         "oh-rai-nen",
         "ok-sai-nen",
@@ -20330,9 +29655,20 @@ export default {
         "sot-tai-nen",
         "tors-tai-nen"
     ],
+    "oo-ai-ee": [
+        "hot-kai-see",
+        "oh-jai-lee"
+    ],
     "oo-ai-i": [
+        "cock-tai-li",
+        "joh-tai-si",
         "kok-tai-li",
+        "ot-tai-sin",
         "tors-tai-sin"
+    ],
+    "oo-ai-ii": [
+        "hos-hait-tii",
+        "por-tai-siin"
     ],
     "oo-ai-o": [
         "por-taik-ko"
@@ -20417,27 +29753,34 @@ export default {
         "rop-saut-taa"
     ],
     "oo-au-e": [
+        "koh-tauk-set",
         "nok-kau-net"
     ],
     "oo-au-yö": [
         "kor-jaus-työ"
     ],
     "oo-e": [
+        "bos-ses",
+        "com-ments",
         "for-te",
         "gos-pel",
         "hoh-de",
         "hor-re",
         "joh-de",
+        "jol-le",
         "jon-ne",
         "koh-de",
         "koh-den",
         "kol-ke",
         "kol-me",
+        "kol-men",
         "kool-le",
         "koos-te",
         "kop-se",
         "kor-te",
         "kos-her",
+        "kos-ke",
+        "kos-ket",
         "kos-te",
         "lok-se",
         "mols-ke",
@@ -20446,71 +29789,124 @@ export default {
         "nos-te",
         "off-set",
         "oh-je",
+        "ol-jen",
+        "ol-jet",
         "om-mel",
+        "on-neks",
+        "on-nen",
+        "onk-se",
+        "oom-me",
+        "oot-te",
         "poh-je",
+        "pol-jen",
         "pol-le",
         "pol-te",
+        "pol-vet",
+        "pos-kel",
+        "pos-ket",
+        "pos-se",
+        "pos-sel",
+        "pos-ses",
+        "prob-lems",
         "rom-pe",
         "rop-se",
         "snoo-ker",
+        "sor-men",
+        "sor-mes",
+        "sor-met",
         "ton-ne",
         "too-pe",
         "top-less",
-        "tor-ke"
+        "tor-ke",
+        "tor-vet"
     ],
     "oo-e-a": [
         "kol-le-ga",
         "kor-ke-a",
+        "kor-ke-an",
         "kor-ve-ta",
         "kors-ke-a",
         "kos-ke-a",
+        "kos-ke-ta",
+        "kos-ke-tan",
         "kos-te-a",
+        "kos-te-at",
         "loh-je-ta",
         "nok-ke-la",
         "nor-je-ta",
         "not-ke-a",
+        "on-ne-a",
         "on-ne-kas",
         "on-ne-la",
+        "on-ne-lan",
         "on-ne-tar",
         "oo-me-ga",
         "oop-pe-ra",
+        "op-pe-ja",
         "pol-ke-a",
         "pol-le-a",
         "pon-ne-kas",
         "pon-te-va",
         "roh-je-ta",
         "roh-ke-a",
+        "roo-pe-a",
+        "shot-te-ja",
+        "son-ne-ja",
         "sor-je-ta",
         "sot-ke-a"
     ],
     "oo-e-aa": [
-        "sol-ke-naan"
+        "kos-ke-kaan",
+        "nos-te-taa",
+        "nos-te-taan",
+        "oop-pe-raa",
+        "os-te-taan",
+        "pol-te-taan",
+        "sol-ke-naan",
+        "sot-ke-taan"
+    ],
+    "oo-e-ai": [
+        "pos-ke-ain"
     ],
     "oo-e-au": [
         "bor-de-aux"
     ],
     "oo-e-e": [
         "col-le-ge",
+        "kor-pe-hen",
+        "nos-te-len",
         "ok-se-te",
         "om-pe-le",
+        "on-ne-hen",
         "pol-ve-ke"
     ],
     "oo-e-ee": [
-        "kor-ke-nee"
+        "koh-te-lee",
+        "kor-ke-nee",
+        "nos-te-lee",
+        "oot-te-lee"
     ],
     "oo-e-i": [
+        "blos-se-kin",
         "bok-se-ri",
         "boos-te-ri",
+        "coo-pe-rin",
         "hol-ke-ri",
         "hom-me-li",
         "honk-ke-li",
+        "hor-ne-tit",
+        "jol-le-ki",
+        "jol-le-kin",
         "jon-ne-kin",
+        "koh-te-lin",
         "kok-ke-li",
         "kop-te-ri",
         "kort-te-li",
         "kos-ke-tin",
         "kron-ke-li",
         "mort-te-li",
+        "on-ne-ni",
+        "on-ne-si",
         "os-te-ri",
         "pols-te-ri",
         "pop-pe-li",
@@ -20523,6 +29919,7 @@ export default {
         "soo-pe-li",
         "sport-te-li",
         "toh-ve-li",
+        "toh-ve-lin",
         "tomp-pe-li",
         "voh-ve-li"
     ],
@@ -20537,12 +29934,14 @@ export default {
         "lon-ke-ro",
         "on-ne-ton",
         "on-te-lo",
+        "oot-te-ko",
         "pon-ne-ton",
         "pos-ke-ton",
         "rot-te-lo",
         "sok-ke-lo",
         "somb-re-ro",
         "tor-pe-do",
+        "tor-pe-doks",
         "tor-ve-lo"
     ],
     "oo-e-u": [
@@ -20558,6 +29957,7 @@ export default {
         "ot-te-lu"
     ],
     "oo-e-uu": [
+        "koh-te-luu",
         "nok-ke-luus",
         "pon-te-vuus"
     ],
@@ -20565,32 +29965,67 @@ export default {
         "pop-le-vy"
     ],
     "oo-ee": [
+        "koh-teeks",
+        "kol-mee",
+        "kol-meen",
+        "kor-kee",
+        "kor-keel",
+        "kor-keelt",
+        "kos-kee",
+        "kos-keen",
+        "kos-teet",
+        "on-nee",
+        "on-neen",
+        "ot-teen",
+        "pol-kee",
+        "polt-teen",
+        "pos-keen",
+        "pos-see",
+        "sot-kee",
         "spon-dee",
-        "tof-fee"
+        "tof-fee",
+        "tol-lee",
+        "tol-leen"
     ],
     "oo-ee-a": [
         "hoh-del-la",
         "hor-tees-sa",
         "koh-del-la",
         "koh-mees-sa",
+        "koh-tee-na",
         "koos-tel-ma",
+        "kor-keel-la",
+        "kor-keem-mal",
+        "kor-ves-sa",
         "mor-jens-ta",
         "mor-jes-ta",
         "nos-tel-la",
         "not-kel-ma",
         "oh-jel-ma",
+        "ol-les-sa",
         "om-mel-la",
         "on-gel-ma",
+        "on-gel-mas",
+        "on-gel-mat",
+        "on-nen-sa",
+        "on-nes-ta",
         "os-tel-la",
+        "ot-tees-ta",
         "pol-jen-ta",
+        "pol-lel-la",
         "pol-tel-la",
+        "pol-ves-ta",
+        "polt-tees-sa",
+        "pos-kel-la",
         "prob-lee-ma"
     ],
     "oo-ee-aa": [
         "koh-den-taa",
         "koh-met-taa",
+        "koh-tees-taan",
         "kol-mes-taan",
         "kor-ven-taa",
+        "kos-ken-kaan",
         "kos-ket-taa",
         "lon-ger-taa",
         "mon-ger-taa",
@@ -20598,51 +30033,76 @@ export default {
         "mor-jes-taa",
         "mor-set-taa",
         "nor-jen-taa",
+        "nos-tel-laan",
         "ok-sen-taa",
         "ok-set-taa",
+        "ol-len-kaa",
         "ol-len-kaan",
+        "on-gel-maa",
         "on-nen-maa",
         "on-nes-taa",
-        "poh-jem-paa"
+        "ot-tees-taan",
+        "poh-jem-paa",
+        "pol-vel-laan"
     ],
     "oo-ee-ee": [
-        "koh-mee-seen"
+        "koh-mee-seen",
+        "ot-tee-seen",
+        "poh-kee-seen"
     ],
     "oo-ee-ei": [
         "pol-ter-geist"
     ],
     "oo-ee-i": [
         "bor-del-li",
+        "bor-del-lit",
         "jok-seen-kin",
+        "jol-lek-ki",
+        "jon-nek-ki",
+        "jon-nek-kin",
+        "kol-men-kin",
         "kol-mes-ti",
+        "kom-men-tit",
         "kom-ment-ti",
         "komp-lek-si",
         "komp-res-si",
         "kon-sep-ti",
         "kon-ser-ni",
+        "kon-ser-nit",
         "kon-sert-ti",
         "kon-teks-ti",
         "kon-veh-ti",
         "kon-vent-ti",
         "kong-res-si",
         "koo-dek-si",
+        "kor-keem-pi",
         "kor-net-ti",
+        "kor-pee-ni",
         "kor-rek-ti",
         "kor-set-ti",
         "kor-vet-ti",
         "kors-tee-ni",
         "kort-tee-ri",
+        "kos-ket-ti",
         "kot-let-ti",
         "lorn-jet-ti",
         "mor-fee-mi",
         "ob-jek-ti",
+        "ok-sen-sin",
         "ok-tet-ti",
+        "on-gel-milt",
         "on-nek-si",
+        "ot-tee-ni",
         "pot-ret-ti",
         "prob-lee-mi",
         "pros-pek-ti",
         "sor-bet-ti",
         "sor-set-ti"
+    ],
+    "oo-ee-ii": [
+        "on-gel-mii",
+        "oo-tel-tiin",
+        "pol-jet-tiin"
     ],
     "oo-ee-iu": [
         "kor-rek-tius"
@@ -20652,12 +30112,19 @@ export default {
         "ok-tet-to",
         "pol-jen-to"
     ],
+    "oo-ee-oi": [
+        "kon-ser-toin"
+    ],
     "oo-ee-u": [
         "kom-mel-lus",
         "kon-sen-sus",
         "kor-ven-nus",
         "mon-ger-rus",
-        "ok-sen-nus"
+        "nos-tel-lu",
+        "ok-sen-nus",
+        "om-mel-tu",
+        "os-tet-tu",
+        "pol-tel-lu"
     ],
     "oo-ee-uu": [
         "on-nek-kuus",
@@ -20667,13 +30134,31 @@ export default {
         "sor-men-pää"
     ],
     "oo-ei": [
-        "jol-lei"
+        "blok-kei",
+        "bol-sei",
+        "coo-lei",
+        "donk-kei",
+        "hol-leil",
+        "hop-pei",
+        "jol-lei",
+        "jos-sei",
+        "jot-tei",
+        "kor-keit",
+        "kos-tein",
+        "tol-lei",
+        "ton-nei",
+        "ton-neil"
     ],
     "oo-ei-a": [
+        "kor-keim-malt",
+        "kor-keis-sa",
         "kors-keil-la",
         "loh-keil-la",
         "mos-kei-ja",
+        "ot-teis-sa",
         "pol-veil-la",
+        "por-teil-la",
+        "short-seil-la",
         "sol-meil-la",
         "sor-meil-la",
         "tor-veil-la"
@@ -20692,6 +30177,7 @@ export default {
         "joh-tei-nen",
         "koh-mei-nen",
         "koos-tei-nen",
+        "kor-kei-den",
         "pos-kei-nen",
         "rott-wei-ler"
     ],
@@ -20713,11 +30199,16 @@ export default {
         "roh-keus"
     ],
     "oo-eu-a": [
+        "kos-teut-ta",
+        "roh-keut-ta",
         "sot-keu-ma"
     ],
     "oo-eu-aa": [
         "kos-teut-taa",
         "not-keut-taa"
+    ],
+    "oo-eu-ee": [
+        "kor-keu-teen"
     ],
     "oo-eu-ii": [
         "sot-keuk-siin"
@@ -20728,13 +30219,17 @@ export default {
     "oo-i": [
         "blok-ki",
         "blon-di",
+        "blon-dit",
         "bok-si",
         "boo-li",
         "boo-mi",
         "boo-ri",
         "boor-di",
         "boot-si",
+        "boot-sit",
         "bors-si",
+        "bots-kil",
+        "coo-lin",
         "dog-mi",
         "flok-ki",
         "flok-si",
@@ -20747,9 +30242,13 @@ export default {
         "hol-vi",
         "holk-ki",
         "holt-ti",
+        "hoo-kis",
+        "hop-pi",
         "hor-mi",
+        "hor-mis",
         "hors-ti",
         "joh-din",
+        "joh-ti",
         "jolp-pi",
         "joo-gi",
         "joo-li",
@@ -20759,6 +30258,7 @@ export default {
         "kloot-ti",
         "klop-pi",
         "klov-ni",
+        "klov-nin",
         "knop-pi",
         "knor-ri",
         "koh-ti",
@@ -20772,18 +30272,24 @@ export default {
         "kons-ti",
         "kont-ti",
         "koo-di",
+        "koo-din",
         "koom-min",
         "koon-ti",
         "kop-pi",
         "kop-ti",
         "kor-ni",
+        "kor-nilt",
         "kor-pi",
         "kor-si",
+        "kor-til",
+        "kor-tin",
+        "kor-tit",
         "kor-vis",
         "kork-ki",
         "korp-pi",
         "kort-ti",
         "kos-ki",
+        "kos-kis",
         "kroo-li",
         "kros-si",
         "lok-ki",
@@ -20793,56 +30299,82 @@ export default {
         "mol-li",
         "mols-ki",
         "moo-di",
+        "moo-dis",
         "moo-li",
+        "moovs-sit",
         "mop-pi",
         "mop-si",
         "mork-kis",
         "mot-ti",
+        "nok-ki",
         "noot-ti",
+        "nor-din",
         "nor-mi",
+        "nor-miks",
         "nor-ri",
         "nors-si",
+        "nos-ti",
         "nos-tin",
         "oh-mi",
         "ol-ki",
         "ol-mi",
         "ol-vi",
+        "on-gin",
         "on-ki",
+        "on-kin",
         "on-ni",
         "oo-di",
         "op-pi",
         "or-hi",
         "or-si",
         "os-si",
+        "os-ti",
+        "os-tin",
+        "os-tit",
+        "ot-ti",
         "plom-bi",
         "poh-din",
+        "poh-jiks",
         "pok-si",
         "pol-jin",
         "pol-tin",
         "pol-vi",
         "pols-ki",
+        "polt-ti",
         "pom-mi",
+        "pom-mit",
+        "pom-pin",
         "pom-si",
         "pon-di",
         "pon-nin",
         "pon-si",
         "pont-ti",
         "poo-li",
+        "por-til",
+        "por-tin",
+        "por-tit",
         "port-ti",
         "pos-ki",
         "pos-ti",
+        "pos-tit",
+        "pot-ki",
+        "pot-kin",
         "pot-ti",
+        "prob-sit",
         "prons-si",
         "prop-ri",
         "prop-si",
+        "prop-sit",
         "roh-din",
         "rok-ki",
         "rom-bi",
         "rom-mi",
+        "rom-min",
         "ron-di",
         "rons-ki",
         "ront-ti",
         "roo-li",
+        "roo-lin",
         "ros-kis",
         "ros-ti",
         "rot-si",
@@ -20855,23 +30387,33 @@ export default {
         "sol-ki",
         "son-di",
         "son-ni",
+        "son-nin",
         "soo-ni",
         "soo-si",
         "sop-pi",
         "sor-mi",
+        "sor-mil",
+        "sor-min",
+        "sor-mis",
+        "sor-tin",
         "sor-vi",
         "sort-sit",
         "sort-ti",
         "sport-ti",
         "spot-ti",
+        "ston-dis",
         "stoo-ri",
         "stop-pi",
+        "tom-mi",
+        "tom-min",
         "ton-git",
         "ton-ni",
+        "ton-nin",
         "tont-ti",
         "top-pi",
         "top-pis",
         "tor-ni",
+        "tor-nin",
         "tor-vi",
         "trom-bi",
         "troo-li",
@@ -20884,10 +30426,12 @@ export default {
     "oo-i-a": [
         "gloo-ri-a",
         "hot-ki-a",
+        "koh-ti-a",
         "kol-hi-a",
         "kol-mi-a",
         "kons-ti-kas",
         "kor-ki-ta",
+        "kork-ki-a",
         "lor-vi-a",
         "mols-ki-a",
         "mols-ki-na",
@@ -20906,11 +30450,14 @@ export default {
         "por-si-a",
         "pot-ki-a",
         "pot-ki-ja",
+        "roc-ki-a",
         "ronk-ki-a",
+        "roo-li-a",
         "rop-si-a",
         "sol-mi-a",
         "sol-mi-ta",
         "son-ti-a",
+        "sor-mi-as",
         "sor-mi-kas",
         "sor-si-a",
         "sork-ki-a",
@@ -20920,13 +30467,17 @@ export default {
         "voh-ki-a"
     ],
     "oo-i-aa": [
+        "hot-ki-taan",
         "kor-pi-maa",
+        "op-pi-kaa",
+        "op-pi-maan",
         "tont-ti-maa"
     ],
     "oo-i-ai": [
         "kort-ti-hai"
     ],
     "oo-i-e": [
+        "fo´-li-fe",
         "hoh-ti-met",
         "jol-ti-nen",
         "kol-mi-sen",
@@ -20948,9 +30499,14 @@ export default {
         "tok-si-nen",
         "troop-pi-nen"
     ],
+    "oo-i-ee": [
+        "op-pi-neet"
+    ],
     "oo-i-i": [
         "kol-mi-sin",
+        "kos-ki-si",
         "ok-si-di",
+        "op-pi-sin",
         "op-ti-mi"
     ],
     "oo-i-ie": [
@@ -20963,10 +30519,12 @@ export default {
         "koh-ti-o",
         "kol-mi-o",
         "kon-ti-o",
+        "mor-ri-son",
         "mor-si-o",
         "op-ti-o",
         "polt-ti-mo",
         "sol-mi-o",
+        "sol-mi-ot",
         "sor-mi-o",
         "sor-si-mo",
         "tor-si-o"
@@ -20976,8 +30534,10 @@ export default {
         "koo-di-tus",
         "kor-ki-tus",
         "nor-mi-tus",
+        "op-pi-nu",
         "op-pi-nut",
         "pom-mi-tus",
+        "pop-si-nu",
         "por-si-tus",
         "pos-ti-tus",
         "prons-si-tus",
@@ -21005,30 +30565,87 @@ export default {
         "sol-ki-vyö"
     ],
     "oo-i-ää": [
+        "hop-pi-päät",
         "pos-ki-pää"
     ],
     "oo-ie": [
+        "bon-nie",
+        "boo-gie",
         "col-lie",
+        "foo-dien",
+        "kor-vien",
+        "kor-vies",
+        "lok-kien",
+        "ok-sien",
+        "oot-sie",
+        "rot-tien",
+        "sor-mien",
         "zom-bie"
     ],
     "oo-iee-i": [
         "por-tiee-ri"
     ],
+    "oo-ii": [
+        "bloc-kii",
+        "bon-gii",
+        "flop-pii",
+        "hom-mii",
+        "hop-pii",
+        "hop-piin",
+        "kol-hii",
+        "koo-dii",
+        "kop-pii",
+        "kop-piin",
+        "kor-nii",
+        "kor-vii",
+        "kot-tii",
+        "nok-kii",
+        "nok-kiis",
+        "ol-tiin",
+        "op-pii",
+        "or-jii",
+        "poh-tii",
+        "pom-mii",
+        "pop-pii",
+        "pos-kiin",
+        "pot-kii",
+        "pot-kiin",
+        "pot-tii",
+        "shok-kii",
+        "smoot-hii",
+        "sol-mii",
+        "sor-mii",
+        "sort-tii",
+        "sport-tii",
+        "ton-kii",
+        "ton-nii"
+    ],
     "oo-ii-a": [
+        "coo-lil-ta",
+        "koh-dis-ta",
+        "koh-dis-tan",
+        "koo-mis-ta",
+        "kor-sis-ta",
         "kor-vil-la",
         "kor-vis-sa",
+        "mol-lis-ta",
         "ok-sin-ta",
         "on-gin-ta",
         "on-nik-ka",
         "op-tiik-ka",
+        "or-sis-ta",
         "os-viit-ta",
         "poh-din-ta",
         "pon-tik-ka",
+        "poo-lil-la",
+        "por-til-la",
+        "por-tis-ta",
         "pos-til-la",
         "sol-min-ta",
         "son-tik-ka",
         "sor-sin-ta",
         "ton-sil-la",
+        "tor-nis-ta",
         "tor-til-la",
         "vos-sik-ka"
     ],
@@ -21057,12 +30674,15 @@ export default {
         "pol-vis-taa",
         "pom-mit-taa",
         "pon-nis-taa",
+        "pon-tik-kaa",
         "por-sit-taa",
+        "pos-kil-laan",
         "pos-mit-taa",
         "pos-tit-taa",
         "prons-sit-taa",
         "ton-tit-taa",
-        "tor-nit-taa"
+        "tor-nit-taa",
+        "wol-tit-taa"
     ],
     "oo-ii-ai": [
         "koh-dit-tain",
@@ -21070,11 +30690,14 @@ export default {
     ],
     "oo-ii-e": [
         "kor-vil-le",
-        "pos-tit-se"
+        "mork-kik-set",
+        "pos-tit-se",
+        "ros-kik-sest"
     ],
     "oo-ii-ee": [
         "kon-til-leen",
-        "pol-vil-leen"
+        "pol-vil-leen",
+        "ros-kik-seen"
     ],
     "oo-ii-i": [
         "blon-dii-ni",
@@ -21087,15 +30710,20 @@ export default {
         "kon-sii-li",
         "konf-lik-ti",
         "koo-lin-ki",
+        "kor-vii-ni",
         "lob-bis-mi",
         "lob-bis-ti",
         "los-sik-si",
         "mor-fii-ni",
         "nor-dis-ti",
+        "nor-mis-ti",
+        "pom-mit-ti",
         "pop-lii-ni",
         "por-fii-ni",
         "port-vii-ni",
         "pos-lii-ni",
+        "pos-tin-kin",
+        "rons-kim-min",
         "rons-kis-ti",
         "rot-tin-ki",
         "sot-tii-si",
@@ -21111,6 +30739,7 @@ export default {
         "kol-mik-ko",
         "koo-mik-ko",
         "kor-tis-to",
+        "kor-tis-ton",
         "kroo-nik-ko",
         "mos-kiit-to",
         "nor-mis-to",
@@ -21122,6 +30751,8 @@ export default {
     ],
     "oo-ii-u": [
         "koh-dis-tus",
+        "kol-hit-tu",
+        "on-nis-tu",
         "pon-nis-tus"
     ],
     "oo-ii-uu": [
@@ -21147,11 +30778,15 @@ export default {
     ],
     "oo-o": [
         "bon-go",
+        "coc-co",
+        "doc-tor",
         "hoh-to",
         "hoo-po",
         "hor-ros",
+        "joh-don",
         "joh-dos",
         "joh-to",
+        "jos-ko",
         "kok-ko",
         "kol-ho",
         "kol-lo",
@@ -21164,17 +30799,24 @@ export default {
         "kors-to",
         "kos-mos",
         "kos-to",
+        "kos-toks",
         "loh-ko",
         "lom-mo",
         "lot-to",
+        "mor-gon",
         "mot-to",
         "nons-top",
         "nork-ko",
         "nos-to",
         "not-ko",
         "oh-hoh",
+        "on-ko",
+        "on-ton",
         "ont-to",
+        "oon-ko",
+        "oot-ko",
         "or-po",
+        "os-mon",
         "os-to",
         "os-tos",
         "ot-so",
@@ -21207,26 +30849,46 @@ export default {
     "oo-o-a": [
         "hoh-do-kas",
         "hol-ho-ta",
+        "kos-to-a",
         "loh-ko-a",
+        "mos-ko-va",
+        "nos-to-a",
+        "on-ko-han",
         "poh-jo-la",
         "port-to-la",
         "ros-vo-ta",
         "toh-jo-na"
     ],
+    "oo-o-aa": [
+        "mos-ko-vaan"
+    ],
     "oo-o-e": [
         "folk-lo-re",
+        "hol-ho-ten",
         "kol-mo-nen",
+        "kol-mo-selt",
         "kolt-to-nen",
         "nok-ko-nen",
         "pop-lo-re",
-        "ront-to-nen"
+        "ront-to-nen",
+        "tom-mo-set"
+    ],
+    "oo-o-ee": [
+        "kol-mo-seen"
+    ],
+    "oo-o-ei": [
+        "pom-po-mei"
     ],
     "oo-o-i": [
+        "bon-bo-ni",
         "brok-ko-li",
         "fos-fo-ri",
         "gon-do-li",
+        "gor-do-ni",
         "hor-mo-ni",
+        "hor-mo-nit",
         "kon-do-mi",
+        "kon-do-min",
         "kon-do-ri",
         "kon-so-li",
         "kont-to-ri",
@@ -21237,9 +30899,11 @@ export default {
         "pod-so-li",
         "pog-ro-mi",
         "pont-to-ni",
+        "rol-lo-ni",
         "root-to-ri",
         "spon-so-ri",
         "toh-to-ri",
+        "tom-to-mi",
         "zoo-lo-gi"
     ],
     "oo-o-ie": [
@@ -21251,6 +30915,7 @@ export default {
         "kol-lo-tus",
         "kot-ko-tus",
         "pom-po-tus",
+        "post-cho-rus",
         "sol-ko-tus",
         "tol-jo-tus",
         "tol-lo-tus",
@@ -21270,6 +30935,7 @@ export default {
         "hor-toil-la",
         "lom-moil-la",
         "nor-koil-la",
+        "poh-jois-ta",
         "pomp-poil-la",
         "ros-voil-la",
         "soo-loil-la"
@@ -21281,15 +30947,22 @@ export default {
     ],
     "oo-oi-e": [
         "hoh-toi-nen",
+        "hor-toi-len",
         "jom-moi-nen",
         "loh-koi-nen",
         "lom-moi-nen",
         "poh-joi-nen",
+        "poh-joi-sen",
         "rok-koi-nen",
         "soh-joi-nen",
+        "tol-loil-len",
         "tom-moi-nen"
     ],
+    "oo-oi-ee": [
+        "poh-joi-seen"
+    ],
     "oo-oi-i": [
+        "hor-toi-lit",
         "jol-loin-kin",
         "kol-loi-di"
     ],
@@ -21301,13 +30974,22 @@ export default {
         "soo-loi-lu"
     ],
     "oo-oo": [
+        "joo-joo",
+        "kos-toon",
+        "lon-toon",
+        "ol-koon",
+        "oo-koo",
         "pop-poo",
+        "por-noo",
         "voo-doo"
     ],
     "oo-oo-a": [
         "hol-hon-ta",
         "hol-hoo-ja",
-        "joh-dos-ta"
+        "joh-dol-la",
+        "joh-dos-ta",
+        "tom-mos-ta",
+        "vol-dog-rad"
     ],
     "oo-oo-aa": [
         "homp-sot-taa",
@@ -21324,7 +31006,11 @@ export default {
         "tol-lot-taa",
         "vol-lot-taa"
     ],
+    "oo-oo-ee": [
+        "lon-too-seen"
+    ],
     "oo-oo-i": [
+        "corn-rows-sit",
         "foks-trot-ti",
         "gong-gon-gi",
         "hol-hok-ki",
@@ -21334,11 +31020,13 @@ export default {
         "kom-pos-ti",
         "kom-pot-ti",
         "kont-rol-li",
+        "kor-ton-gin",
         "kor-ton-ki",
         "lor-doo-si",
         "on-tos-ti",
         "or-vok-ki",
         "os-moo-si",
+        "os-tost-vnkin",
         "prog-noo-si",
         "sov-hoo-si",
         "toh-jok-si",
@@ -21347,7 +31035,12 @@ export default {
     "oo-oo-ii": [
         "sot-kok-siin"
     ],
+    "oo-oo-o": [
+        "bow-wow-wow",
+        "rock-´n´roll-show"
+    ],
     "oo-oo-oi": [
+        "kont-rol-loi",
         "koo-kos-voi"
     ],
     "oo-oo-uu": [
@@ -21376,9 +31069,14 @@ export default {
         "for-mu",
         "homs-su",
         "hop-pu",
+        "jon-ku",
+        "jon-kun",
         "jort-sut",
         "jos-kus",
+        "jot-ku",
+        "jot-kut",
         "koh-tu",
+        "kok-sus",
         "kol-hu",
         "kolt-tu",
         "kom-pus",
@@ -21388,14 +31086,20 @@ export default {
         "kor-su",
         "kor-vus",
         "korp-pu",
+        "kos-tun",
         "kroo-kus",
         "loh-tu",
         "loo-tus",
         "lop-pu",
+        "lop-pus",
         "mont-tu",
         "nor-su",
+        "not-kut",
         "oh-jus",
+        "ol-lu",
+        "ol-lut",
         "omp-pu",
+        "onk-sul",
         "ork-ku",
         "ploo-tu",
         "poh-jus",
@@ -21403,6 +31107,7 @@ export default {
         "pomp-pu",
         "pos-su",
         "pot-ku",
+        "pot-kut",
         "pot-tu",
         "proo-mu",
         "prop-pu",
@@ -21411,15 +31116,21 @@ export default {
         "romp-su",
         "roms-ku",
         "sol-mu",
+        "sol-mus",
         "solt-tu",
         "sor-mus",
         "sos-su",
+        "sos-sun",
         "sot-ku",
+        "sot-kut",
         "tolk-ku",
+        "ton-tun",
         "tont-tu",
+        "tor-tun",
         "tork-ku",
         "tort-tu",
         "tos-su",
+        "tos-sut",
         "vor-mu"
     ],
     "oo-u-a": [
@@ -21427,6 +31138,7 @@ export default {
         "for-mu-la",
         "for-tu-na",
         "hoh-ku-a",
+        "hop-pu-a",
         "hor-ju-a",
         "hor-ju-va",
         "joh-tu-a",
@@ -21435,21 +31147,29 @@ export default {
         "kop-pu-ra",
         "kors-ku-a",
         "kors-ku-na",
+        "kos-su-a",
         "kos-tu-a",
+        "loh-tu-a",
         "lok-su-a",
         "lonk-su-a",
         "lop-pu-a",
+        "lop-pu-ja",
         "mon-ku-a",
         "not-ku-a",
+        "not-ku-mas",
         "on-tu-a",
+        "pol-ku-a",
+        "pol-ku-ja",
         "pom-pu-la",
         "pors-tu-a",
+        "pors-tu-an",
         "roh-mu-ta",
         "roh-tu-a",
         "roh-tu-ma",
         "sol-ju-a",
         "sor-tu-a",
         "sor-tu-ma",
+        "sor-tu-vat",
         "tok-ku-ra",
         "tor-ju-a",
         "tor-ju-va",
@@ -21457,27 +31177,47 @@ export default {
         "tot-tu-a",
         "von-ku-a"
     ],
+    "oo-u-aa": [
+        "hor-ju-taan",
+        "lop-pu-maan",
+        "ol-lu-kaa"
+    ],
     "oo-u-e": [
         "fon-du-e",
         "kos-tu-ke",
         "kos-tu-te",
         "loh-du-ke",
+        "lop-pu-en",
+        "lop-pu-jen",
         "sol-mu-ke"
+    ],
+    "oo-u-ee": [
+        "lop-pu-neen",
+        "sor-tu-neet"
     ],
     "oo-u-i": [
         "foo-ru-mi",
         "kol-ku-tin",
         "kon-su-li",
         "kos-tu-tin",
+        "loh-du-tin",
         "mons-tru-mi",
         "nos-tu-ri",
+        "pol-ku-ni",
+        "pol-ku-si",
         "pol-ku-sin",
         "pot-ku-ri",
         "pot-pu-ri"
     ],
+    "oo-u-ii": [
+        "sot-ku-sii"
+    ],
     "oo-u-o": [
         "loh-du-ton",
         "tol-ku-ton"
+    ],
+    "oo-u-oi": [
+        "pok-ku-roin"
     ],
     "oo-u-u": [
         "kol-ku-tus",
@@ -21486,8 +31226,10 @@ export default {
         "loh-du-tus",
         "lon-ku-tus",
         "lonk-su-tus",
+        "lop-pu-nu",
         "tol-ku-tus",
-        "tot-tu-mus"
+        "tot-tu-mus",
+        "tot-tu-nut"
     ],
     "oo-u-uu": [
         "hor-ju-vuus",
@@ -21500,9 +31242,20 @@ export default {
     "oo-u-ää": [
         "lop-pu-pää"
     ],
+    "oo-ui": [
+        "kol-hui",
+        "lop-pui",
+        "lop-puis",
+        "not-kuin",
+        "pol-kui",
+        "tont-tui"
+    ],
     "oo-ui-a": [
         "hop-puil-la",
+        "kol-huis-ta",
         "lop-puil-ta",
+        "lop-puil-tas",
+        "pos-suil-ta",
         "pot-tuil-la",
         "tont-tuil-la"
     ],
@@ -21510,7 +31263,11 @@ export default {
         "homs-sui-nen",
         "kor-kui-nen",
         "sol-mui-nen",
-        "sot-kui-nen"
+        "sot-kui-nen",
+        "sot-kui-sen"
+    ],
+    "oo-ui-i": [
+        "lop-pui-si"
     ],
     "oo-ui-u": [
         "hop-pui-lu",
@@ -21534,21 +31291,38 @@ export default {
         "kons-truoin-ti"
     ],
     "oo-uu": [
+        "joh-tuu",
+        "klonk-kuu",
         "koh-tuus",
+        "kok-suu",
         "kon-nuus",
+        "koos-tuu",
         "kor-juu",
         "kor-juun",
+        "kos-suu",
+        "kos-tuu",
+        "loh-tuu",
+        "lop-puu",
         "lop-puun",
+        "mont-tuun",
+        "ol-tuu",
         "or-juus",
-        "sot-kuun"
+        "pol-kuu",
+        "sor-tuu",
+        "sot-kuun",
+        "tot-tuu"
     ],
     "oo-uu-a": [
+        "hop-kun-nan",
         "hor-jun-ta",
         "kor-jus-sa",
         "kor-juus-sa",
         "kors-kun-ta",
         "not-kun-ta",
         "poh-juk-ka",
+        "pol-kun-sa",
+        "sor-bus-ta",
+        "sor-mus-ta",
         "sot-kus-sa",
         "sot-kus-ta",
         "tor-jun-ta",
@@ -21568,6 +31342,7 @@ export default {
         "or-juut-taa",
         "poh-jus-taa",
         "pols-kut-taa",
+        "pom-put-taa",
         "pors-kut-taa",
         "sol-jut-taa",
         "son-nus-taa",
@@ -21575,7 +31350,9 @@ export default {
         "top-puut-taa"
     ],
     "oo-uu-e": [
-        "poh-jus-te"
+        "ghost-bus-ter",
+        "poh-jus-te",
+        "sor-mus-ten"
     ],
     "oo-uu-ee": [
         "kor-juu-seen"
@@ -21583,14 +31360,18 @@ export default {
     "oo-uu-i": [
         "kom-muu-ni",
         "kon-kurs-si",
+        "kon-kurs-sin",
         "kon-sult-ti",
+        "loh-dut-ti",
         "mon-suu-ni",
+        "noc-tur-ni",
         "pos-tuu-mi",
         "sol-muk-ki",
         "sor-mus-tin",
         "ton-suu-ri"
     ],
     "oo-uu-ii": [
+        "kon-kurs-siin",
         "sot-kuk-siin"
     ],
     "oo-uu-o": [
@@ -21615,8 +31396,14 @@ export default {
     ],
     "oo-y": [
         "hob-by",
+        "john-ny",
+        "kol-kyt",
         "lob-by",
+        "roc-ky",
         "sor-ry"
+    ],
+    "oo-y-oo": [
+        "hol-ly-wood"
     ],
     "oo-yy": [
         "fon-dyy"
@@ -21629,6 +31416,9 @@ export default {
         "kos-tyy-mi",
         "por-fyy-ri"
     ],
+    "oo-ä": [
+        "oot-sä"
+    ],
     "oo-ää-i": [
         "rock-täh-ti"
     ],
@@ -21636,19 +31426,26 @@ export default {
         "jong-löö-ri",
         "mont-töö-ri"
     ],
+    "ooo-oo": [
+        "ooo-hooh"
+    ],
     "ou-a": [
         "dou-la",
         "gou-da",
         "houk-ka",
+        "jou-dan",
+        "jous-ta",
         "kou-ra",
         "lou-nas",
         "mouk-ka",
+        "nou-dan",
         "nou-gat",
         "nous-ta",
         "pou-ta",
         "rou-ta",
         "rou-va",
         "souk-ka",
+        "sound-track",
         "touk-ka"
     ],
     "ou-a-a": [
@@ -21666,12 +31463,19 @@ export default {
         "sou-ta-ja",
         "vouh-ka-ta"
     ],
+    "ou-a-aa": [
+        "jou-ta-vaa",
+        "nou-ta-maan"
+    ],
     "ou-a-e": [
         "vou-ha-ke"
     ],
     "ou-a-i": [
         "mou-ka-ri",
         "rou-da-ri"
+    ],
+    "ou-a-u": [
+        "lou-ka-tuks"
     ],
     "ou-a-uu": [
         "jous-ta-vuus"
@@ -21680,10 +31484,23 @@ export default {
         "pou-ta-sää"
     ],
     "ou-aa": [
+        "bous-taa",
+        "doup-paa",
+        "jou-aa",
         "jou-taa",
         "jous-taa",
+        "jous-taan",
+        "kou-raan",
+        "louk-kaa",
         "nou-taa",
+        "nous-taan",
+        "smouk-kaa",
         "sou-taa"
+    ],
+    "ou-aa-a": [
+        "lou-naal-la",
+        "lou-naas-ta",
+        "rou-das-sa"
     ],
     "ou-aa-aa": [
         "lou-nas-taa",
@@ -21693,6 +31510,8 @@ export default {
         "sou-dat-taa"
     ],
     "ou-aa-u": [
+        "louk-kaan-nu",
+        "louk-kaan-nut",
         "pou-kah-dus"
     ],
     "ou-ai": [
@@ -21722,6 +31541,7 @@ export default {
         "pou-kaut-taa"
     ],
     "ou-e": [
+        "cou-peé",
         "gour-met",
         "hou-re",
         "hou-se",
@@ -21731,6 +31551,9 @@ export default {
         "lou-he",
         "lous-ke",
         "mous-se",
+        "nou-se",
+        "nou-sen",
+        "nou-set",
         "rou-he",
         "rous-ke",
         "rous-te",
@@ -21738,8 +31561,15 @@ export default {
     ],
     "ou-e-a": [
         "jou-he-a",
+        "nou-se-mas",
+        "nou-se-van",
+        "nou-se-vat",
         "rou-he-a",
         "sou-ke-ta"
+    ],
+    "ou-e-aa": [
+        "nou-se-maan",
+        "nou-se-vaa"
     ],
     "ou-e-i": [
         "lou-fe-ri"
@@ -21750,6 +31580,12 @@ export default {
     ],
     "ou-e-u": [
         "sou-te-lu"
+    ],
+    "ou-ee": [
+        "jou-seen",
+        "nou-see",
+        "nous-seet",
+        "sour-ceen"
     ],
     "ou-ee-a": [
         "jou-tes-sa",
@@ -21763,6 +31599,9 @@ export default {
     "ou-ee-e": [
         "bou-ret-te"
     ],
+    "ou-ee-ou": [
+        "vou-lez-vous"
+    ],
     "ou-ee-u": [
         "sou-ken-nus"
     ],
@@ -21774,15 +31613,25 @@ export default {
         "jou-heus"
     ],
     "ou-i": [
+        "dou-pil",
+        "doup-pi",
+        "ghous-til",
+        "hou-ri",
         "jou-hi",
+        "jou-kil",
         "jou-si",
         "jous-tin",
         "kout-si",
         "krou-vi",
+        "krou-vin",
+        "nou-si",
+        "nou-sis",
         "rou-hin",
         "sou-vi",
+        "soulc-hild",
         "soun-di",
         "tou-vi",
+        "touc-hil",
         "vou-ti"
     ],
     "ou-i-a": [
@@ -21800,6 +31649,10 @@ export default {
     "ou-i-e": [
         "out-si-der"
     ],
+    "ou-i-i": [
+        "nou-si-si",
+        "nou-si-sin"
+    ],
     "ou-i-ie": [
         "jou-si-mies"
     ],
@@ -21811,12 +31664,23 @@ export default {
     "ou-i-u": [
         "jou-si-tus"
     ],
+    "ou-ii": [
+        "doup-pii",
+        "kou-lii",
+        "kou-rii",
+        "mou-lii",
+        "nous-tiin",
+        "soun-dii",
+        "touc-hii"
+    ],
     "ou-ii-a": [
         "kou-lin-ta",
+        "kou-ris-sa",
         "lou-hin-ta",
         "rou-hin-ta"
     ],
     "ou-ii-aa": [
+        "dou-pim-paa",
         "jou-sit-taa",
         "kou-kis-taa",
         "kou-ris-taa",
@@ -21833,15 +31697,24 @@ export default {
     ],
     "ou-o": [
         "bour-bon",
+        "jou-kon",
+        "jou-koss",
+        "jou-kost",
         "jouk-ko",
         "jous-to",
         "kou-ho",
         "lou-hos",
         "louk-ko",
         "nou-to",
+        "ou-don",
         "ou-to",
         "ou-zo",
+        "out-ro",
         "tou-ko"
+    ],
+    "ou-o-a": [
+        "ou-to-a",
+        "ou-to-ja"
     ],
     "ou-o-aa": [
         "jou-to-maa"
@@ -21861,13 +31734,24 @@ export default {
         "tou-ko-työt"
     ],
     "ou-oi-a": [
+        "jou-kois-sa",
         "pouk-koil-la"
     ],
     "ou-oi-ai": [
         "jou-koit-tain"
     ],
     "ou-oi-u": [
-        "pouk-koi-lu"
+        "pouk-koi-lu",
+        "pouk-koil-lu"
+    ],
+    "ou-oo": [
+        "jouk-koon",
+        "louk-koon",
+        "mou-hoo",
+        "ou-too"
+    ],
+    "ou-oo-a": [
+        "jou-kos-ta"
     ],
     "ou-oo-aa": [
         "kou-hot-taa",
@@ -21877,23 +31761,40 @@ export default {
     "ou-oo-e": [
         "bour-gog-ne"
     ],
+    "ou-oo-ee": [
+        "lou-hok-seen"
+    ],
     "ou-oo-i": [
         "cou-lom-bi",
         "ou-dos-ti"
     ],
     "ou-ou": [
         "cous-cous",
-        "ou-tous"
+        "ou-tous",
+        "shou-tout"
     ],
     "ou-u": [
         "hou-sut",
+        "jou-dun",
+        "jou-dut",
         "jou-lu",
+        "jou-tu",
+        "jou-tus",
+        "kou-kus",
         "kou-lu",
+        "kou-lun",
+        "kou-lus",
+        "kou-lust",
+        "kou-lut",
         "kou-ru",
         "kouk-ku",
         "louk-ku",
         "mouk-ku",
         "nou-su",
+        "nou-sun",
+        "nous-su",
+        "nous-sut",
+        "nous-tu",
         "out-put",
         "rous-ku",
         "sou-tu",
@@ -21901,15 +31802,23 @@ export default {
     ],
     "ou-u-a": [
         "hou-ru-la",
+        "jou-lu-a",
         "jou-tu-a",
         "kou-ku-ta",
+        "kou-lu-tan",
         "lous-ku-a",
+        "lous-ku-ta",
         "mou-ku-a",
         "mou-ru-ta",
+        "nou-su-a",
         "nou-su-kas",
         "rous-ku-a",
+        "tou-hu-ja",
         "tou-hu-kas",
         "tou-hu-ta"
+    ],
+    "ou-u-aa": [
+        "jou-du-taan"
     ],
     "ou-u-e": [
         "bou-qu-et",
@@ -21925,6 +31834,7 @@ export default {
     ],
     "ou-u-u": [
         "hou-ku-tus",
+        "jou-tu-nut",
         "kou-lu-tus",
         "rous-ku-tus"
     ],
@@ -21937,9 +31847,16 @@ export default {
         "kou-lu-työ"
     ],
     "ou-ui": [
-        "jou-tuin"
+        "jou-duin",
+        "jou-duit",
+        "jou-tui",
+        "jou-tuin",
+        "kou-kuil",
+        "kou-luis",
+        "nou-suis"
     ],
     "ou-ui-a": [
+        "hou-suis-sa",
         "jou-luil-ta",
         "jou-tui-sa",
         "kou-ruil-la",
@@ -21948,6 +31865,12 @@ export default {
     "ou-ui-e": [
         "jou-lui-nen",
         "kouk-kui-nen"
+    ],
+    "ou-ui-i": [
+        "hou-sui-hin",
+        "jou-tui-sin",
+        "jou-tui-sit",
+        "nou-sui-hin"
     ],
     "ou-ui-u": [
         "tou-hui-lu"
@@ -21959,19 +31882,41 @@ export default {
         "jou-luos-tos"
     ],
     "ou-uu": [
-        "kouk-kuun"
+        "hou-suu",
+        "hou-suun",
+        "jou-luu",
+        "jou-tuu",
+        "kou-luu",
+        "kou-luun",
+        "kouk-kuun",
+        "nou-suun",
+        "rous-kuu",
+        "tou-huu"
     ],
     "ou-uu-a": [
-        "kou-kus-sa"
+        "hou-sus-sa",
+        "kou-kus-sa",
+        "kou-lus-sa",
+        "kou-lus-ta",
+        "lou-kus-sa",
+        "ou-lus-sa"
     ],
     "ou-uu-aa": [
         "hou-kut-taa",
         "jou-dut-taa",
+        "kou-kut-taa",
         "kou-lut-taa",
         "kou-rut-taa",
         "lou-kut-taa",
         "lous-kut-taa",
         "rous-kut-taa"
+    ],
+    "ou-uu-e": [
+        "kou-lul-le"
+    ],
+    "ou-uu-i": [
+        "hou-sut-ki",
+        "jou-luk-si"
     ],
     "ou-uu-uu": [
         "tou-huk-kuus"
@@ -21979,41 +31924,74 @@ export default {
     "ou-y": [
         "count-ry"
     ],
+    "oui-e": [
+        "loui-se"
+    ],
+    "oui-o-ii": [
+        "vouit-to-nii"
+    ],
     "ouo-e-o": [
         "touon-te-ko"
     ],
     "u-a": [
+        "bru-na",
+        "du-ran",
+        "hu-kan",
+        "hu-kas",
         "hu-la",
         "hu-pa",
+        "ju-han",
         "ju-na",
+        "ju-nan",
+        "ju-nas",
         "ku-ha",
+        "ku-han",
         "ku-ja",
         "ku-ka",
+        "ku-kan",
+        "ku-kas",
+        "ku-kat",
         "ku-ra",
         "ku-ta",
         "ku-va",
+        "ku-van",
         "ku-vas",
+        "ku-vat",
         "lu-ja",
+        "lu-kas",
         "lu-pa",
+        "lu-pas",
+        "lu-van",
+        "lu-vas",
         "mu-ka",
+        "mu-kan",
         "mu-na",
         "mu-ra",
         "mu-sa",
+        "mu-sat",
         "mu-ta",
         "nu-ha",
         "pu-das",
+        "pu-hast",
         "pu-la",
         "pu-na",
+        "pu-ran",
         "ru-ma",
+        "ru-mat",
+        "squ-ad",
         "squ-ash",
         "su-ka",
+        "su-kat",
         "su-la",
         "su-ma",
+        "su-pa",
         "tu-hat",
+        "tu-kan",
         "tu-ma",
         "tu-pa",
         "tu-pas",
         "tu-ta",
+        "tu-van",
         "u-dar"
     ],
     "u-a-a": [
@@ -22023,13 +32001,19 @@ export default {
         "gu-a-va",
         "hu-ka-ta",
         "hu-ma-la",
+        "hu-ma-las",
         "hu-na-ja",
         "ju-da-ta",
         "ju-ma-la",
+        "ju-ma-lan",
+        "ju-ma-lat",
+        "ku-ka-pa",
         "ku-ma-ra",
+        "ku-ma-ras",
         "ku-pa-ta",
         "ku-ra-ta",
         "ku-va-ta",
+        "lu-ja-na",
         "lu-va-ta",
         "mu-ka-mas",
         "mu-ka-na",
@@ -22046,15 +32030,25 @@ export default {
         "ru-ta-ta",
         "sku-la-ta",
         "su-ha-ta",
+        "su-la-ta",
         "su-la-va",
+        "su-la-vat",
         "su-ta-ta",
         "tu-ka-la",
+        "tu-pa-kan",
         "tu-pa-ta",
         "u-ha-ta"
     ],
     "u-a-aa": [
+        "hu-ka-taan",
+        "hu-ma-laan",
+        "ju-ma-laa",
+        "ju-ma-laan",
         "ku-ma-jaa",
-        "ku-ma-raan"
+        "ku-ma-raan",
+        "mu-ka-naan",
+        "su-la-maan",
+        "su-la-vaa"
     ],
     "u-a-au": [
         "ju-ma-laut"
@@ -22063,20 +32057,29 @@ export default {
         "ku-ra-re",
         "ku-ta-le",
         "ku-va-ke",
+        "pu-na-nen",
         "su-ka-nen",
         "su-la-ke",
         "su-la-te",
         "tu-ma-ke",
         "u-ta-re"
     ],
+    "u-a-ee": [
+        "u-ta-reet"
+    ],
     "u-a-i": [
         "ku-pa-ri",
+        "lu-pa-sin",
+        "lu-pa-sit",
+        "mu-a-ki",
         "pu-ka-ri",
         "pu-ra-sin",
         "qu-a-si",
         "ru-la-di",
+        "squ-a-di",
         "su-ha-ri",
-        "tu-na-ri"
+        "tu-na-ri",
+        "tu-pa-kit"
     ],
     "u-a-ie": [
         "ju-na-mies",
@@ -22088,12 +32091,14 @@ export default {
         "ru-ba-to"
     ],
     "u-a-oi": [
+        "ju-ma-loi",
         "mu-na-voi"
     ],
     "u-a-u": [
         "ku-va-tus",
         "su-la-tus",
-        "su-pa-tus"
+        "su-pa-tus",
+        "u-ha-tuks"
     ],
     "u-a-uu": [
         "ju-ma-luus",
@@ -22104,34 +32109,73 @@ export default {
         "tu-ka-luus"
     ],
     "u-a-ää": [
+        "mu-na-pää",
         "pu-na-pää"
     ],
     "u-aa": [
+        "du-maa",
+        "fu-daan",
+        "hu-baa",
+        "hu-daa",
+        "ju-naa",
+        "ju-naan",
         "ju-taa",
+        "ku-jaa",
+        "ku-kaa",
         "ku-kaan",
+        "ku-raa",
+        "ku-vaa",
+        "ku-vaan",
+        "ku-vaas",
         "lu-jaa",
         "lu-jaan",
+        "lu-paa",
+        "lu-paan",
         "mu-kaa",
         "mu-kaan",
+        "mu-naa",
+        "mu-naan",
+        "mu-saa",
+        "mu-saan",
         "nu-gaa",
-        "su-laa"
+        "pu-laa",
+        "pu-naan",
+        "ru-maa",
+        "ru-maan",
+        "sku-laa",
+        "sku-laan",
+        "su-laa",
+        "tu-paan",
+        "u-paa"
     ],
     "u-aa-a": [
         "fu-taa-ja",
         "hu-kas-sa",
         "ju-pak-ka",
+        "ku-mar-ra",
         "ku-vaa-ja",
         "ku-vaa-va",
+        "ku-vas-sa",
         "lu-jal-la",
         "lu-jas-sa",
         "lu-jas-ta",
         "lu-paa-va",
+        "lu-val-la",
+        "lu-vas-sa",
         "mu-as-sa",
+        "mu-kaan-sa",
+        "mu-nal-la",
         "nu-jak-ka",
+        "pu-hal-la",
+        "pu-hal-lan",
+        "pu-las-sa",
         "pu-mas-ka",
         "pu-nak-ka",
         "pu-sak-ka",
         "su-jak-ka",
+        "su-kas-sa",
+        "tu-hat-ta",
+        "tu-kas-ta",
         "tu-pak-ka",
         "u-hal-la",
         "u-lap-pa",
@@ -22158,6 +32202,7 @@ export default {
         "pu-jah-taa",
         "pu-kah-taa",
         "pu-lah-taa",
+        "pu-nat-kaa",
         "pu-rat-taa",
         "ru-sah-taa",
         "su-hah-taa",
@@ -22165,18 +32210,27 @@ export default {
         "su-lat-taa",
         "su-pat-taa",
         "su-rah-taa",
+        "su-san-naa",
         "tu-hah-taa",
+        "tu-pak-kaa",
         "tu-pas-taa",
         "u-hal-laan",
         "u-lah-taa",
         "u-rah-taa"
     ],
     "u-aa-e": [
+        "ju-mal-ten",
         "ku-jan-ne",
         "lu-jal-le",
+        "mu-ham-med",
         "plu-sas-te",
         "tu-han-nen",
-        "tu-han-nes"
+        "tu-han-nes",
+        "tu-han-net"
+    ],
+    "u-aa-ee": [
+        "lu-van-neet",
+        "tu-han-teen"
     ],
     "u-aa-i": [
         "bru-taa-li",
@@ -22186,20 +32240,32 @@ export default {
         "hu-maa-ni",
         "hu-saa-ri",
         "ku-lak-ki",
+        "ku-mar-si",
         "ku-rant-ti",
+        "ku-vaa-si",
         "ku-vas-tin",
         "lu-jas-ti",
         "lu-kaa-li",
+        "mu-kaa-ni",
         "mu-lat-ti",
         "mu-rat-ti",
         "mu-tant-ti",
         "plu-raa-li",
         "pu-hal-lin",
+        "pu-hal-si",
         "ru-mas-ti",
         "su-kaat-ti",
         "tu-pak-ki",
         "u-kaa-si",
         "u-raa-ni"
+    ],
+    "u-aa-ie": [
+        "tu-han-sien"
+    ],
+    "u-aa-ii": [
+        "lu-vat-tiin",
+        "tu-han-sii",
+        "tu-han-siin"
     ],
     "u-aa-iu": [
         "bru-taa-lius",
@@ -22209,6 +32275,7 @@ export default {
         "hu-pak-ko",
         "ku-vaa-mo",
         "ku-vas-to",
+        "ku-vas-ton",
         "pu-nak-ko",
         "ru-sak-ko",
         "su-lat-to",
@@ -22216,6 +32283,8 @@ export default {
     ],
     "u-aa-u": [
         "hu-jah-dus",
+        "hu-kan-nu",
+        "hu-kat-tu",
         "hu-mah-dus",
         "hu-rah-dus",
         "ju-han-nus",
@@ -22224,16 +32293,19 @@ export default {
         "ku-mar-rus",
         "ku-vas-tus",
         "lu-nas-tus",
+        "lu-van-nu",
         "mu-lah-dus",
         "mu-rah-dus",
         "nu-kah-dus",
         "pu-hal-lus",
         "pu-lah-dus",
         "pu-nas-tus",
+        "pu-nas-tut",
         "ru-sah-dus",
         "su-hah-dus",
         "su-jah-dus",
         "tu-hah-dus",
+        "u-han-nu",
         "u-lah-dus",
         "u-rah-dus"
     ],
@@ -22251,22 +32323,32 @@ export default {
         "lu-kais-ta",
         "lu-pail-la",
         "mu-kail-la",
+        "pu-nais-ta",
         "pu-rais-ta",
         "su-hail-la",
         "su-kais-ta",
         "su-tais-ta",
         "su-vai-ta"
     ],
+    "u-ai-aa": [
+        "su-vait-kaa"
+    ],
     "u-ai-au": [
         "ku-vail-maus"
     ],
     "u-ai-e": [
+        "ttu-mai-nen",
         "hu-pai-nen",
         "ku-rai-nen",
         "mu-kai-nen",
         "mu-tai-nen",
         "nu-hai-nen",
-        "pu-nai-nen"
+        "pu-nai-nen",
+        "pu-nai-sen",
+        "pu-nai-set"
+    ],
+    "u-ai-ee": [
+        "pu-nai-seen"
     ],
     "u-ai-u": [
         "hu-pai-lu",
@@ -22297,6 +32379,7 @@ export default {
         "tu-jaus"
     ],
     "u-au-a": [
+        "lu-paus-ta",
         "mu-kau-ma",
         "su-lau-ma"
     ],
@@ -22318,67 +32401,129 @@ export default {
         "tu-haut-taa",
         "u-raut-taa"
     ],
+    "u-au-e": [
+        "lu-pauk-set"
+    ],
+    "u-au-ii": [
+        "lu-pauk-sii"
+    ],
     "u-au-u": [
         "pu-lau-tus"
     ],
+    "u-au-uu": [
+        "su-lau-tuu"
+    ],
     "u-e": [
         "blu-es",
+        "bru-ce",
+        "du-de",
+        "hu-ge",
         "ju-gend",
+        "ku-be",
         "ku-de",
         "ku-je",
         "ku-re",
+        "ku-sel",
+        "ku-sen",
+        "ku-set",
         "ku-ten",
         "ku-ve",
         "lu-de",
+        "lu-en",
         "lu-es",
+        "lu-et",
         "lu-me",
         "lu-men",
         "mu-ren",
+        "pu-en",
         "pu-he",
+        "pu-het",
         "pu-ne",
-        "tu-ke"
+        "pu-ren",
+        "ru-pes",
+        "su-den",
+        "su-det",
+        "thu-be",
+        "tru-e",
+        "tu-bes",
+        "tu-el",
+        "tu-ke",
+        "tu-le",
+        "tu-len",
+        "tu-les",
+        "tu-let",
+        "u-nen",
+        "u-nest"
     ],
     "u-e-a": [
         "hu-te-ra",
         "hu-ve-ta",
         "ku-me-a",
         "ku-pe-ra",
+        "ku-se-ta",
         "ku-te-a",
+        "lu-e-ta",
         "lu-je-ta",
         "lu-ke-a",
         "lu-ke-ma",
+        "lu-ke-mal",
+        "lu-me-na",
         "lu-me-ta",
         "mu-he-a",
         "mu-he-va",
         "mu-re-a",
         "mu-re-na",
         "mu-re-ta",
+        "nu-e-ra",
         "nu-re-a",
         "pu-ke-a",
         "pu-re-ma",
         "pu-re-va",
         "ru-me-ta",
+        "ru-pe-an",
         "ru-ve-ta",
         "su-e-ta",
         "su-me-a",
+        "su-me-at",
         "su-me-ta",
         "su-pe-ta",
+        "su-re-ta",
         "su-re-va",
         "tu-ke-a",
+        "tu-ke-na",
         "tu-ke-ta",
         "tu-ke-va",
         "tu-le-va",
+        "tu-le-van",
         "u-pe-a",
         "u-re-a",
         "u-se-a"
     ],
+    "u-e-aa": [
+        "lu-e-taan",
+        "pu-ke-kaa",
+        "pu-re-maan",
+        "ru-ve-taan",
+        "su-re-maan",
+        "tu-ke-kaa",
+        "tu-ke-vaa",
+        "tu-le-maan",
+        "tu-le-naan",
+        "tu-le-vaan",
+        "u-pe-aa"
+    ],
     "u-e-e": [
         "mu-re-ke",
-        "mu-re-ne"
+        "mu-re-ne",
+        "u-te-len"
     ],
     "u-e-i": [
+        "du-re-xin",
+        "fu-ge-li",
         "pu-he-lin",
         "pu-te-li",
+        "ru-pe-si",
+        "ru-pe-sit",
         "su-me-ri"
     ],
     "u-e-ie": [
@@ -22391,13 +32536,21 @@ export default {
         "ju-ke-box",
         "mu-se-o",
         "nu-me-ro",
+        "nu-me-roks",
         "pu-se-ro",
         "u-ne-ton"
     ],
+    "u-e-oo": [
+        "nu-me-roo",
+        "pu-se-roon"
+    ],
     "u-e-u": [
+        "ku-se-tus",
+        "lu-ke-nu",
         "lu-me-tus",
         "nu-me-rus",
         "pu-he-lu",
+        "pu-he-lun",
         "u-te-lu"
     ],
     "u-e-uu": [
@@ -22407,9 +32560,28 @@ export default {
     ],
     "u-ee": [
         "bu-kee",
+        "ku-jeet",
+        "ku-see",
         "ku-teet",
+        "lu-kee",
+        "lu-meen",
+        "pu-heen",
+        "pu-hees",
+        "pu-heet",
+        "pu-kee",
         "pu-keet",
-        "tu-pee"
+        "pu-ree",
+        "qu-een",
+        "ru-pee",
+        "su-meest",
+        "su-ree",
+        "tu-kee",
+        "tu-lee",
+        "tu-leen",
+        "tu-pee",
+        "u-neen",
+        "u-pee",
+        "u-peen"
     ],
     "u-ee-a": [
         "ju-tel-la",
@@ -22420,12 +32592,24 @@ export default {
         "ku-pees-ta",
         "lu-en-ta",
         "mu-ree-na",
+        "mu-ren-nan",
+        "pu-hees-sa",
         "pu-hel-la",
+        "pu-het-ta",
         "pu-ner-va",
         "pu-ren-ta",
+        "su-kel-la",
         "tu-en-ta",
+        "tu-lee-han",
+        "tu-lel-la",
+        "tu-len-sa",
+        "tu-les-sa",
+        "tu-let-han",
         "u-del-la",
-        "u-nel-ma"
+        "u-nel-ma",
+        "u-nel-man",
+        "u-nel-mat",
+        "u-nes-sa"
     ],
     "u-ee-aa": [
         "hu-jel-taa",
@@ -22436,6 +32620,7 @@ export default {
         "ku-per-taa",
         "ku-set-taa",
         "lu-et-taa",
+        "lu-jem-paa",
         "lu-jen-taa",
         "lu-met-taa",
         "mu-hen-taa",
@@ -22452,7 +32637,10 @@ export default {
         "su-men-taa",
         "su-ret-taa",
         "tu-her-taa",
+        "tu-lee-kaan",
         "u-jel-taa",
+        "u-nel-maa",
+        "u-nel-maan",
         "u-net-taa"
     ],
     "u-ee-au": [
@@ -22460,7 +32648,9 @@ export default {
         "tu-pee-raus"
     ],
     "u-ee-e": [
-        "ku-peel-le"
+        "ju-tel-len",
+        "ku-peel-le",
+        "mu-tel-le"
     ],
     "u-ee-ee": [
         "ku-pee-seen"
@@ -22470,21 +32660,42 @@ export default {
         "glu-tee-ni",
         "ku-vert-ti",
         "lu-ser-ni",
+        "mu-reh-di",
         "nu-get-ti",
         "pu-ket-ti",
         "pu-ser-rin",
         "pu-tel-li",
         "ru-let-ti",
+        "ru-mem-pi",
         "ru-set-ti",
-        "stu-ert-ti"
+        "stu-ert-ti",
+        "su-kel-sin",
+        "su-ret-ti",
+        "u-nee-si",
+        "u-nek-si",
+        "u-seem-min",
+        "u-seem-pi"
     ],
     "u-ee-ie": [
         "su-per-mies"
     ],
+    "u-ee-ii": [
+        "pu-ret-tiin",
+        "u-nel-mii",
+        "u-nel-miin",
+        "u-nel-miis"
+    ],
     "u-ee-o": [
         "du-et-to",
         "lu-en-to",
-        "mu-hen-nos"
+        "mu-hen-nos",
+        "tu-lee-ko"
+    ],
+    "u-ee-oi": [
+        "lu-en-noi",
+        "u-nel-moi",
+        "u-nel-moin",
+        "u-nel-moit"
     ],
     "u-ee-u": [
         "hu-jel-lus",
@@ -22499,23 +32710,32 @@ export default {
         "pu-ser-rus",
         "ru-men-nus",
         "ru-sen-nus",
+        "ru-ven-nu",
         "su-kel-lus",
         "tu-her-rus",
         "tu-leh-dus",
         "u-jel-lus"
     ],
     "u-ei": [
+        "ru-peis",
+        "u-peit",
         "u-sein"
     ],
     "u-ei-a": [
         "ku-jeil-la",
+        "ku-tei-ta",
         "ku-teil-la",
+        "pu-hei-ta",
         "pu-heil-la",
         "pu-heil-ta",
         "pu-heis-sa",
-        "su-meil-la"
+        "pu-heis-tas",
+        "su-meil-la",
+        "u-seis-ta"
     ],
     "u-ei-aa": [
+        "hu-veis-taan",
+        "ku-teis-saan",
         "nu-reis-saan"
     ],
     "u-ei-e": [
@@ -22523,6 +32743,9 @@ export default {
         "ku-tei-nen",
         "ku-teil-le",
         "pu-heil-le"
+    ],
+    "u-ei-i": [
+        "u-sein-ki"
     ],
     "u-ei-ii": [
         "pu-hei-siin"
@@ -22539,6 +32762,15 @@ export default {
     "u-eu-aa": [
         "mu-reut-taa"
     ],
+    "u-eu-u": [
+        "pu-keu-dun"
+    ],
+    "u-eu-ui": [
+        "pu-keu-duin"
+    ],
+    "u-eu-uu": [
+        "pu-keu-tuu"
+    ],
     "u-ey-ey": [
         "pu-heyh-teys"
     ],
@@ -22550,54 +32782,79 @@ export default {
         "hu-pi",
         "hu-ti",
         "hu-vi",
+        "hu-vit",
         "ju-mi",
+        "ju-ti",
+        "ju-tin",
         "klu-bi",
+        "klu-bil",
         "ku-din",
+        "ku-ki",
         "ku-kin",
         "ku-li",
         "ku-mi",
+        "ku-pin",
         "ku-ri",
         "ku-rin",
         "ku-si",
         "ku-ti",
+        "lu-ki",
         "lu-mi",
         "lu-ti",
         "mu-ki",
         "mu-li",
         "nu-pi",
+        "nu-pit",
         "nu-rin",
         "nu-ti",
         "pu-bi",
+        "pu-kin",
         "pu-li",
+        "pu-ri",
         "pu-si",
         "ru-pi",
+        "schu-min",
+        "su-li",
+        "su-lit",
         "su-pi",
         "su-si",
         "su-ti",
         "su-vi",
         "tu-bi",
         "tu-ki",
-        "tu-li"
+        "tu-kin",
+        "tu-li",
+        "tu-lin",
+        "tu-lis",
+        "tu-lit"
     ],
     "u-i-a": [
         "fu-di-a",
         "fu-ti-a",
+        "hu-bi-a",
         "hu-li-na",
         "hu-mi-na",
         "hu-ri-na",
         "hu-vi-la",
+        "hu-vi-lan",
+        "hu-vi-lat",
+        "ju-li-a",
         "ju-pi-na",
         "ku-hi-las",
         "ku-hi-na",
         "ku-ki-kas",
+        "ku-mi-a",
         "ku-mi-na",
         "ku-ri-na",
         "ku-ti-na",
+        "ku-vi-a",
         "lu-ki-ja",
         "lu-ki-ta",
+        "lu-mi-a",
         "lu-si-a",
         "mu-hi-a",
         "mu-hi-na",
+        "mu-ki-a",
         "mu-ki-na",
         "mu-mi-na",
         "mu-ni-a",
@@ -22610,6 +32867,7 @@ export default {
         "pu-ri-ja",
         "pu-ri-las",
         "pu-si-a",
+        "ru-mi-a",
         "ru-pi-a",
         "ru-si-na",
         "ru-ti-na",
@@ -22620,7 +32878,9 @@ export default {
         "su-ti-a",
         "tu-hi-na",
         "tu-ki-ja",
+        "tu-ki-ta",
         "tu-li-ja",
+        "tu-li-pa",
         "tu-ni-ka",
         "tu-ri-las",
         "tu-ri-na",
@@ -22631,7 +32891,11 @@ export default {
         "u-ri-na"
     ],
     "u-i-aa": [
-        "ku-ti-aa"
+        "hu-mi-naa",
+        "ku-ti-aa",
+        "lu-si-maan",
+        "tu-li-kaa",
+        "u-li-naa"
     ],
     "u-i-e": [
         "bu-si-ness",
@@ -22646,7 +32910,15 @@ export default {
         "su-vi-nen",
         "tu-li-nen",
         "tu-li-te",
-        "u-ni-nen"
+        "u-ni-nen",
+        "u-ni-sen",
+        "u-ni-set"
+    ],
+    "u-i-i": [
+        "lu-ki-sit",
+        "mu-ri-si",
+        "tu-li-kin",
+        "tu-li-sin"
     ],
     "u-i-ie": [
         "lu-mi-mies",
@@ -22656,13 +32928,24 @@ export default {
         "ju-ni-or",
         "ku-ri-ton",
         "ku-vi-o",
+        "ku-vi-ot",
         "lu-ki-o",
+        "lu-ki-on",
+        "lu-ki-os",
         "pu-ki-mo",
-        "stu-di-o"
+        "stu-di-o",
+        "stu-di-os"
+    ],
+    "u-i-oo": [
+        "ku-vi-oon",
+        "lu-ki-oo",
+        "stu-di-oon"
     ],
     "u-i-u": [
         "hu-ti-lus",
         "hu-vi-tus",
+        "ju-mi-tus",
+        "ju-mi-tut",
         "ku-ri-mus",
         "ku-ri-tus",
         "ku-ti-tus",
@@ -22693,7 +32976,10 @@ export default {
         "pu-li-pää"
     ],
     "u-ie": [
-        "lu-kien"
+        "ku-vien",
+        "lu-kien",
+        "su-sien",
+        "u-nien"
     ],
     "u-ie-ä": [
         "lu-mie-rä"
@@ -22702,28 +32988,52 @@ export default {
         "kru-piee-ri"
     ],
     "u-ii": [
+        "bu-mii",
+        "hu-vii",
         "ju-miin",
-        "mu-kiin"
+        "ju-niin",
+        "ku-mii",
+        "ku-rii",
+        "lu-pii",
+        "mu-hii",
+        "mu-kii",
+        "mu-kiin",
+        "mu-nii",
+        "pu-biin",
+        "ru-miin",
+        "ru-nii",
+        "tu-lii",
+        "u-nii",
+        "u-niin"
     ],
     "u-ii-a": [
+        "bu-lil-la",
+        "bu-lim-mat",
+        "fu-tis-ta",
         "hu-mis-ta",
         "hu-ris-ta",
         "hu-tik-ka",
+        "ju-lis-tan",
         "ju-mis-sa",
         "ju-pis-ta",
+        "klu-bil-la",
         "ku-his-ta",
+        "ku-jil-la",
         "ku-kin-ta",
         "ku-mis-ta",
         "ku-nin-gas",
         "ku-rik-ka",
         "ku-ris-ta",
+        "ku-sis-ta",
         "ku-tis-ta",
+        "ku-vis-sa",
         "lu-jil-la",
         "lu-sik-ka",
         "lu-tik-ka",
         "mu-kis-ta",
         "mu-mis-ta",
         "mu-nin-ta",
+        "mu-nis-sa",
         "mu-rik-ka",
         "mu-ris-ta",
         "mu-sik-ka",
@@ -22731,16 +33041,23 @@ export default {
         "nu-lik-ka",
         "nu-ris-ta",
         "pu-his-ta",
+        "pu-kil-la",
+        "pu-kil-ta",
         "pu-lik-ka",
         "pu-lis-ta",
+        "pu-ris-ta",
         "ru-tis-ta",
         "su-his-ta",
+        "su-kil-ta",
+        "su-kis-sa",
         "su-pis-ta",
         "su-ris-ta",
         "tu-his-ta",
         "tu-ris-ta",
         "tu-tis-ta",
         "u-lis-ta",
+        "u-nis-sa",
+        "u-nis-ta",
         "u-ris-ta"
     ],
     "u-ii-aa": [
@@ -22751,6 +33068,7 @@ export default {
         "ku-kis-taa",
         "ku-kit-taa",
         "ku-mit-taa",
+        "ku-nin-kaan",
         "ku-ril-laan",
         "ku-ris-taa",
         "ku-rit-taa",
@@ -22763,6 +33081,7 @@ export default {
         "lu-rit-taa",
         "mu-nit-taa",
         "nu-kit-taa",
+        "nu-lik-kaa",
         "nu-tis-taa",
         "pu-dis-taa",
         "pu-kit-taa",
@@ -22783,11 +33102,15 @@ export default {
     "u-ii-e": [
         "ju-lis-te",
         "lu-jil-le",
+        "lu-kit-sen",
+        "pu-kil-le",
         "pu-ris-te",
         "ru-kii-nen"
     ],
     "u-ii-ee": [
-        "hu-vik-seen"
+        "hu-vik-see",
+        "hu-vik-seen",
+        "ku-lik-see"
     ],
     "u-ii-i": [
         "ju-ris-ti",
@@ -22800,6 +33123,7 @@ export default {
         "ku-ris-tin",
         "lu-kit-sin",
         "lu-pii-ni",
+        "mu-sii-kin",
         "mu-siik-ki",
         "nu-dis-mi",
         "nu-dis-ti",
@@ -22812,15 +33136,23 @@ export default {
         "pu-tin-ki",
         "ru-bii-ni",
         "ru-tii-ni",
+        "tu-lis-kin",
         "tu-lis-tin",
         "tu-ris-mi",
         "tu-ris-ti",
+        "u-nii-ni",
         "u-niik-ki"
+    ],
+    "u-ii-ii": [
+        "mu-siik-kii",
+        "pu-pil-liin",
+        "u-niik-kii"
     ],
     "u-ii-o": [
         "ku-kin-to",
         "lu-mik-ko",
         "pu-sik-ko",
+        "tu-lin-ko",
         "u-nik-ko"
     ],
     "u-ii-u": [
@@ -22849,7 +33181,9 @@ export default {
         "su-viyö"
     ],
     "u-o": [
+        "u-los",
         "bu-do",
+        "chu-lo",
         "ju-do",
         "ju-ro",
         "ku-dos",
@@ -22857,11 +33191,13 @@ export default {
         "ku-po",
         "lu-mo",
         "mu-ro",
+        "mu-rot",
         "nu-po",
         "pu-jo",
         "pu-jos",
         "pu-nos",
         "pu-ro",
+        "pu-tos",
         "ru-ho",
         "ru-jo",
         "ru-ko",
@@ -22873,9 +33209,12 @@ export default {
         "tu-kos",
         "tu-lo",
         "tu-los",
+        "tu-lost",
+        "tu-lot",
         "tu-po",
         "tu-ro",
         "tu-tor",
+        "u-kot",
         "u-los",
         "u-ros"
     ],
@@ -22884,24 +33223,35 @@ export default {
         "ju-ro-a",
         "ku-mo-ta",
         "ku-ro-a",
+        "ku-ro-tan",
         "ku-to-a",
         "ku-to-ja",
         "lu-mo-ta",
         "pu-do-kas",
         "pu-do-ta",
+        "pu-do-tan",
         "pu-jo-a",
         "pu-no-a",
         "pu-no-ja",
+        "pu-to-an",
+        "ru-no-ja",
         "ru-no-tar",
         "ru-so-kas",
         "su-lo-kas",
         "su-lo-tar",
+        "tu-ho-a",
         "tu-ho-ta",
         "tu-lo-kas",
         "u-ho-ta",
+        "u-ko-ta",
         "u-lo-ta",
         "u-po-kas",
         "u-po-ta"
+    ],
+    "u-o-aa": [
+        "pu-do-taan",
+        "pu-to-aa",
+        "tu-lo-aan"
     ],
     "u-o-au": [
         "ju-ko-laut"
@@ -22909,12 +33259,26 @@ export default {
     "u-o-e": [
         "ku-to-nen",
         "pu-jo-ke",
+        "ru-no-jen",
         "u-lo-ke",
         "u-po-te"
     ],
+    "u-o-ee": [
+        "pu-no-neet"
+    ],
     "u-o-i": [
         "ju-do-gi",
-        "ku-po-li"
+        "ku-po-li",
+        "ku-ro-tit",
+        "ku-to-vi",
+        "pu-do-tin",
+        "pu-do-tit",
+        "pu-to-si",
+        "pu-to-sit",
+        "tu-ho-sin",
+        "tu-ho-sit",
+        "u-ho-sin",
+        "u-no-hit"
     ],
     "u-o-iu": [
         "plu-to-nium"
@@ -22942,18 +33306,24 @@ export default {
         "nu-po-pää"
     ],
     "u-oi": [
+        "tu-loi",
+        "u-foi",
         "u-loin"
     ],
     "u-oi-a": [
         "mu-hoil-la",
+        "mu-rois-sa",
         "pu-toil-la",
         "ru-koil-la",
         "ru-noil-la",
         "su-loi-sa",
+        "su-lois-ta",
         "tu-hoi-sa",
+        "tu-loil-la",
         "tu-loil-ma",
         "u-foil-la",
         "u-joil-la",
+        "u-kois-ta",
         "u-loim-mas",
         "u-loin-na"
     ],
@@ -22963,7 +33333,14 @@ export default {
         "u-loim-paa"
     ],
     "u-oi-e": [
+        "ru-koil-len",
         "su-loi-nen"
+    ],
+    "u-oi-ee": [
+        "pu-toi-lee"
+    ],
+    "u-oi-i": [
+        "ru-koi-lin"
     ],
     "u-oi-u": [
         "ku-kois-tus",
@@ -22978,7 +33355,13 @@ export default {
         "tu-hoi-suus"
     ],
     "u-oo": [
-        "ku-moon"
+        "ku-moon",
+        "plu-toon",
+        "pu-too",
+        "tu-hoo",
+        "u-hoo",
+        "u-hoon",
+        "u-hoot"
     ],
     "u-oo-a": [
         "ku-don-ta",
@@ -22991,7 +33374,13 @@ export default {
         "pu-non-ta",
         "tu-hoo-ja",
         "tu-kos-sa",
-        "u-lom-mas"
+        "tu-los-sa",
+        "u-fol-la",
+        "u-lom-mas",
+        "u-noh-da",
+        "u-noh-dan",
+        "u-noh-dat",
+        "u-noh-tan"
     ],
     "u-oo-aa": [
         "ju-rot-taa",
@@ -23002,46 +33391,66 @@ export default {
         "ku-vot-taa",
         "pu-dot-taa",
         "pu-jot-taa",
+        "pu-not-taa",
         "ru-sot-taa",
         "su-los-taa",
+        "tu-lol-laan",
         "tu-los-taa",
+        "u-kos-taa",
         "u-lom-paa",
         "u-lon-taa",
+        "u-los-kaan",
         "u-los-taa",
         "u-lot-taa",
         "u-noh-taa",
+        "u-noh-taan",
         "u-pot-taa"
     ],
     "u-oo-e": [
+        "tu-lok-set",
         "tu-los-te",
-        "u-los-te"
+        "u-los-te",
+        "u-rok-set"
     ],
     "u-oo-ee": [
-        "ku-mol-leen"
+        "ku-mol-leen",
+        "pu-don-neet"
     ],
     "u-oo-i": [
         "glu-koo-si",
         "hu-jop-pi",
         "ju-ros-ti",
         "ku-pon-ki",
+        "pu-dot-ti",
         "ru-sok-ki",
         "ru-tos-ti",
         "su-los-ti",
+        "tu-bor-gi",
         "tu-los-tin",
         "u-jos-ti",
-        "u-lom-pi"
+        "u-lom-pi",
+        "u-noh-din",
+        "u-noh-dit",
+        "u-noh-ti"
     ],
     "u-oo-ii": [
+        "pu-dot-tiin",
+        "tu-lok-sii",
+        "u-jom-pii",
         "u-pok-siin"
     ],
     "u-oo-o": [
         "ru-nos-to"
     ],
     "u-oo-u": [
+        "pu-don-nut",
         "tu-los-tus",
+        "u-hon-nu",
         "u-lon-nus",
         "u-los-tus",
-        "u-noh-dus"
+        "u-noh-du",
+        "u-noh-dus",
+        "u-pon-nut"
     ],
     "u-oo-uu": [
         "pu-ron-suu",
@@ -23062,13 +33471,21 @@ export default {
         "u-jous"
     ],
     "u-ou-a": [
-        "ku-rou-ma"
+        "ku-rou-ma",
+        "ru-nout-ta"
     ],
     "u-ou-aa": [
         "tu-lout-taa"
     ],
+    "u-ou-e": [
+        "ru-kouk-sen",
+        "ru-kouk-set"
+    ],
     "u-ou-u": [
         "tu-lou-tus"
+    ],
+    "u-ou-uu": [
+        "ku-rou-tuu"
     ],
     "u-ouu-i": [
         "u-pouu-si"
@@ -23077,55 +33494,100 @@ export default {
         "fu-dut",
         "gu-ru",
         "hu-hu",
+        "hu-hut",
+        "hu-kun",
         "hu-mu",
         "hu-mus",
         "hu-tu",
         "ju-ju",
         "ju-ku",
+        "ju-tun",
+        "ju-tut",
         "ku-hun",
         "ku-lu",
+        "ku-lut",
         "ku-mu",
         "ku-pu",
         "ku-ru",
         "ku-tu",
         "lu-ku",
+        "lu-vun",
+        "mu-hun",
         "mu-ru",
         "mu-tu",
+        "mu-tus",
+        "nu-ku",
+        "nu-kun",
+        "nu-kut",
         "nu-pu",
+        "pu-hu",
+        "pu-hun",
+        "pu-hut",
         "pu-ku",
         "pu-lu",
         "pu-pu",
         "pu-ru",
         "pu-su",
+        "su-hun",
         "su-jut",
         "su-ku",
         "su-mu",
+        "su-mus",
         "su-ru",
+        "su-run",
+        "su-rut",
         "tu-ku",
+        "tu-tun",
+        "tu-tut",
         "u-rut",
         "zu-lu"
     ],
     "u-u-a": [
+        "hu-hu-ja",
         "hu-hu-ta",
+        "hu-ku-ta",
+        "hu-ku-tat",
+        "ju-ju-ta",
         "ku-lu-a",
         "ku-lu-ma",
+        "ku-lu-tan",
+        "ku-lu-van",
+        "ku-lu-vat",
         "ku-pu-la",
         "ku-pu-ra",
         "mu-ku-la",
         "mu-ku-ra",
+        "mu-tu-al",
+        "mu-tu-ja",
         "nu-ju-ta",
         "nu-ku-la",
+        "nu-ku-ta",
         "nu-pu-la",
         "nu-pu-ra",
         "nu-tu-kas",
         "pu-hu-a",
         "pu-hu-ja",
+        "pu-hu-ta",
         "pu-hu-va",
+        "pu-hu-van",
+        "pu-hu-vat",
+        "pu-pu-ja",
         "su-ju-a",
         "su-ju-va",
         "su-mu-ta",
+        "su-ru-a",
+        "tsu-pu-ta",
         "tu-tu-a",
         "u-ju-a"
+    ],
+    "u-u-aa": [
+        "hu-hu-taan",
+        "hu-ku-taan",
+        "pu-hu-kaa",
+        "pu-hu-maa",
+        "pu-hu-maan",
+        "pu-hu-taa",
+        "pu-hu-taan"
     ],
     "u-u-e": [
         "lu-ku-set",
@@ -23133,28 +33595,42 @@ export default {
         "mu-ru-nen",
         "nu-ku-te",
         "su-lu-te",
-        "su-mu-te"
+        "su-mu-te",
+        "su-ru-jen"
+    ],
+    "u-u-ee": [
+        "ku-lu-neet"
     ],
     "u-u-i": [
         "bu-zu-ki",
         "ku-mu-ri",
         "pu-hu-ri",
         "su-mu-tin",
+        "su-ru-ni",
         "u-ku-li"
     ],
     "u-u-ie": [
         "lu-ku-mies"
+    ],
+    "u-u-ii": [
+        "mu-ru-siin"
     ],
     "u-u-o": [
         "lu-vu-ton",
         "su-ru-ton",
         "su-vu-ton"
     ],
+    "u-u-oo": [
+        "pu-hu-koot"
+    ],
     "u-u-u": [
         "cu-mu-lus",
         "hu-pu-tus",
+        "ku-lu-nu",
         "ku-lu-tus",
         "nu-ku-tus",
+        "pu-hu-nu",
+        "pu-hu-nut",
         "su-lu-tus",
         "su-mu-tus",
         "tu-hu-tus",
@@ -23170,9 +33646,21 @@ export default {
     "u-u-yö": [
         "su-ru-työ"
     ],
+    "u-ui": [
+        "hu-kuin",
+        "ju-tuis",
+        "ku-lui",
+        "nu-kuin",
+        "pu-hui",
+        "pu-huin",
+        "pu-huit",
+        "su-rui"
+    ],
     "u-ui-a": [
         "hu-huil-la",
-        "lu-kui-sa"
+        "lu-kui-sa",
+        "pu-hui-vat",
+        "su-luis-sa"
     ],
     "u-ui-ai": [
         "su-vuit-tain",
@@ -23187,6 +33675,7 @@ export default {
         "u-tui-nen"
     ],
     "u-ui-i": [
+        "pu-hui-sin",
         "su-kui-sin"
     ],
     "u-ui-u": [
@@ -23196,19 +33685,33 @@ export default {
         "su-kuoi-keus"
     ],
     "u-uu": [
+        "hu-huu",
+        "ku-luu",
         "lu-juus",
-        "ru-muus"
+        "pu-huu",
+        "pu-luu",
+        "ru-muus",
+        "su-buu",
+        "su-buun",
+        "su-muun"
     ],
     "u-uu-a": [
+        "50lu-vul-ta",
         "ku-hun-ka",
         "ku-kun-ta",
         "ku-lus-sa",
         "lu-tuk-ka",
         "pu-hun-ta",
+        "pu-vus-sa",
         "ru-tus-sa",
         "su-puk-ka",
         "su-pul-la",
-        "su-pus-sa"
+        "su-pus-sa",
+        "su-rus-ta",
+        "su-rut-ta",
+        "su-ruun-sa",
+        "su-vus-ta",
+        "tu-kus-ta"
     ],
     "u-uu-aa": [
         "hu-kut-taa",
@@ -23220,6 +33723,7 @@ export default {
         "mu-rus-taa",
         "mu-tus-taa",
         "nu-juut-taa",
+        "nu-kuk-kaa",
         "nu-kut-taa",
         "pu-hut-taa",
         "pu-put-taa",
@@ -23237,6 +33741,7 @@ export default {
         "u-sut-taa"
     ],
     "u-uu-e": [
+        "pu-hut-te",
         "su-pul-le",
         "tu-luk-set"
     ],
@@ -23248,46 +33753,90 @@ export default {
         "ju-gurt-ti",
         "ju-kurt-ti",
         "ku-lun-ki",
+        "mu-ruk-si",
         "nu-puk-ki",
+        "su-rul-list",
         "tu-tus-ti"
     ],
     "u-uu-ii": [
         "hu-kuk-siin",
-        "nu-kuk-siin"
+        "nu-kuk-siin",
+        "pu-hut-tiin"
     ],
     "u-uu-o": [
+        "ku-kun-non",
         "pu-vus-to"
     ],
+    "u-uu-u": [
+        "hu-kut-tu",
+        "nu-kut-tu",
+        "pu-hut-tu"
+    ],
+    "u-uu-uu": [
+        "nu-kut-tuu",
+        "tu-tus-tuu"
+    ],
     "u-y": [
+        "bu-sy",
         "ju-ry"
     ],
     "u-yy-i": [
         "ku-tyy-mi"
     ],
+    "u-ä-ii": [
+        "du-rä-giin"
+    ],
     "u-öö-i": [
         "ku-löö-ri"
     ],
     "ui-a": [
+        "gui-tar",
         "hui-ma",
         "huik-ka",
         "huis-ka",
         "kui-va",
+        "kui-vaks",
+        "kui-van",
         "kuik-ka",
         "kuin-ka",
+        "kuis-kas",
         "kuis-ma",
+        "lui-ta",
         "luik-ka",
+        "luil-la",
         "luis-ka",
+        "luis-sas",
+        "luis-ta",
         "mui-ja",
+        "mui-jas",
+        "mui-jat",
+        "mui-ta",
+        "muil-la",
+        "muil-ta",
+        "muis-sa",
+        "muis-ta",
+        "muis-taks",
+        "muis-tan",
+        "muis-tanks",
+        "muis-tat",
         "nui-ja",
         "nui-va",
         "pui-da",
         "pui-ja",
+        "pui-ta",
+        "puil-la",
+        "puis-sa",
+        "puis-ta",
+        "puis-tan",
         "suik-ka",
         "tui-ja",
         "tui-ma",
+        "tuil-la",
         "ui-da",
         "ui-ja",
-        "ui-va"
+        "ui-mas",
+        "ui-va",
+        "ui-van"
     ],
     "ui-a-a": [
         "hui-ja-ta",
@@ -23298,6 +33847,7 @@ export default {
         "kui-ta-ta",
         "kui-va-kas",
         "kui-va-ta",
+        "kuin-ka-han",
         "kuis-ka-ta",
         "lui-ka-ta",
         "luis-ka-ta",
@@ -23311,7 +33861,11 @@ export default {
         "sui-ka-ta",
         "suih-ka-ta",
         "tui-ka-ta",
-        "ui-ma-la"
+        "ui-ma-la",
+        "ui-ma-lan"
+    ],
+    "ui-a-aa": [
+        "krui-sa-taan"
     ],
     "ui-a-e": [
         "huis-ka-le",
@@ -23320,7 +33874,11 @@ export default {
     ],
     "ui-a-i": [
         "hui-ja-ri",
+        "hui-ma-si",
         "kui-va-tin",
+        "kuis-ka-sin",
+        "lui-ta-ni",
+        "mui-ta-kin",
         "puik-ka-ri",
         "suih-ka-ri",
         "ui-ma-ri",
@@ -23334,7 +33892,9 @@ export default {
     ],
     "ui-a-u": [
         "kui-va-tus",
-        "puis-ta-tus"
+        "muis-ta-nut",
+        "puis-ta-tus",
+        "uit-ta-nut"
     ],
     "ui-a-ää": [
         "hui-ma-pää",
@@ -23342,15 +33902,29 @@ export default {
         "nui-ja-pää"
     ],
     "ui-aa": [
+        "hui-jaa",
+        "hui-jaan",
+        "hui-maa",
+        "huik-kaa",
+        "huik-kaan",
         "huis-kaa",
+        "krui-saa",
         "kui-vaa",
         "kuin-kaan",
+        "kuis-kaan",
         "luis-taa",
+        "luis-taan",
+        "mui-jaa",
+        "mui-jaas",
         "muis-taa",
         "puis-taa",
+        "rui-naan",
+        "slui-baan",
         "suin-kaan",
         "suis-taa",
         "tuik-kaa",
+        "tuik-kaan",
+        "ui-maan",
         "uis-taa",
         "uit-taa"
     ],
@@ -23358,10 +33932,13 @@ export default {
         "hui-maa-va",
         "kui-vaa-ja",
         "kui-vak-ka",
-        "kuis-kaa-ja"
+        "kuis-kaa-ja",
+        "mui-jal-la",
+        "muis-tat-han"
     ],
     "ui-aa-aa": [
         "huis-kah-taa",
+        "krui-saal-laan",
         "kui-vah-taa",
         "kui-vat-taa",
         "lui-kah-taa",
@@ -23378,6 +33955,7 @@ export default {
     "ui-aa-i": [
         "hui-mas-ti",
         "kui-vas-ti",
+        "mui-jat-ki",
         "nui-vas-ti",
         "tui-mas-ti"
     ],
@@ -23385,7 +33963,8 @@ export default {
         "kui-vasp-rii"
     ],
     "ui-aa-o": [
-        "kui-vaa-mo"
+        "kui-vaa-mo",
+        "muis-tat-ko"
     ],
     "ui-aa-u": [
         "luis-kah-dus",
@@ -23396,21 +33975,35 @@ export default {
     "ui-aa-uu": [
         "hui-maa-vuus"
     ],
+    "ui-aa-ä": [
+        "muis-tat-sä"
+    ],
     "ui-ai": [
         "kui-vain",
         "suit-sait"
     ],
     "ui-ai-a": [
         "hui-kais-ta",
+        "hui-lail-la",
         "hui-tais-ta",
         "huis-kais-ta",
+        "krui-sail-la",
         "kui-vail-la",
         "kuis-kail-la",
         "ruis-kais-ta",
+        "slui-bail-la",
         "ui-nail-la"
     ],
+    "ui-ai-aa": [
+        "krui-sail-laan"
+    ],
     "ui-ai-e": [
+        "krui-sai-len",
         "mui-nai-nen"
+    ],
+    "ui-ai-i": [
+        "kuit-tai-sin",
+        "muis-tai-si"
     ],
     "ui-ai-u": [
         "hui-tai-su",
@@ -23441,13 +34034,25 @@ export default {
         "muis-kaut-taa",
         "ruis-kaut-taa"
     ],
+    "ui-au-e": [
+        "kuis-kauk-sen"
+    ],
+    "ui-au-i": [
+        "kuis-kaus-kin"
+    ],
     "ui-au-o": [
         "ruis-jau-ho"
     ],
     "ui-e": [
+        "crui-sen",
         "huis-ke",
         "kuis-ke",
         "lui-nen",
+        "luit-te",
+        "mui-den",
+        "muil-le",
+        "muit-ten",
+        "pui-den",
         "pui-nen",
         "pui-te",
         "quic-he",
@@ -23456,15 +34061,18 @@ export default {
         "suih-ke",
         "suit-set",
         "tui-ke",
-        "tuis-ke"
+        "tuis-ke",
+        "uit-te"
     ],
     "ui-e-a": [
         "hui-ke-a",
         "hui-me-ta",
         "hui-pe-ta",
+        "hui-ve-ja",
         "huis-ke-a",
         "lui-se-va",
         "mui-ke-a",
+        "muis-te-ta",
         "pui-ke-a",
         "pui-se-va",
         "sui-ke-a",
@@ -23472,6 +34080,14 @@ export default {
         "suit-se-a",
         "tui-ke-a",
         "tui-me-ta"
+    ],
+    "ui-e-aa": [
+        "muis-te-taan"
+    ],
+    "ui-e-e": [
+        "luis-te-len",
+        "muis-te-len",
+        "puis-te-len"
     ],
     "ui-e-ii": [
         "tui-te-riin"
@@ -23495,11 +34111,18 @@ export default {
     "ui-e-uu": [
         "pui-se-vuus"
     ],
+    "ui-ee": [
+        "hui-kee",
+        "puit-tees",
+        "puit-teet",
+        "tuis-kees"
+    ],
     "ui-ee-a": [
         "hui-del-la",
         "luis-tel-la",
         "muis-tel-la",
         "muis-tel-ma",
+        "muis-tel-mat",
         "ui-tel-la",
         "uis-tel-la"
     ],
@@ -23508,23 +34131,34 @@ export default {
         "kui-ten-kaan",
         "kui-vet-taa",
         "lui-ker-taa",
+        "muis-tel-laan",
         "sui-ker-taa",
         "sui-pen-taa",
         "tui-men-taa",
         "tui-ver-taa"
     ],
     "ui-ee-i": [
-        "kui-ten-kin"
+        "kui-ten-ki",
+        "kui-ten-kin",
+        "mui-den-kin"
+    ],
+    "ui-ee-ii": [
+        "muis-tel-mii"
     ],
     "ui-ee-o": [
         "ruis-pel-to"
     ],
     "ui-ee-u": [
         "hui-pen-nus",
+        "muis-tel-tu",
         "tui-ver-rus"
     ],
     "ui-ee-ä": [
         "ruis-veh-nä"
+    ],
+    "ui-ei-a": [
+        "hui-veis-sa",
+        "puit-tei-ta"
     ],
     "ui-ei-ä": [
         "ruis-lei-pä"
@@ -23539,13 +34173,20 @@ export default {
         "huit-sin",
         "juip-pi",
         "kui-ri",
+        "kui-vin",
+        "kuis-ki",
         "kuis-ti",
         "kuit-ti",
         "luis-ti",
         "luis-tin",
+        "mui-jist",
         "muis-ti",
+        "muis-tin",
+        "muis-tit",
+        "pui-hin",
         "puin-ti",
         "quis-ling",
+        "sui-hin",
         "suin-kin",
         "truis-mi",
         "tui-ki",
@@ -23559,6 +34200,7 @@ export default {
         "huis-ki-na",
         "kuis-ki-a",
         "kuis-ki-na",
+        "kuis-ki-vat",
         "luik-ki-a",
         "nui-ji-a",
         "puik-ki-a",
@@ -23572,7 +34214,11 @@ export default {
     ],
     "ui-i-e": [
         "kui-vi-ke",
+        "luis-ti-met",
         "truis-ti-nen"
+    ],
+    "ui-i-i": [
+        "muis-ti-ni"
     ],
     "ui-i-o": [
         "huis-ki-lo",
@@ -23581,17 +34227,22 @@ export default {
         "muis-ti-o"
     ],
     "ui-ii": [
-        "kui-viin"
+        "hui-viin",
+        "kui-viin",
+        "mui-jii",
+        "muis-tiin"
     ],
     "ui-ii-a": [
         "huis-kin-ta",
         "kui-vil-la",
         "kuis-kin-ta",
+        "muis-tis-ta",
         "tui-kin-ta",
         "tuis-kin-ta"
     ],
     "ui-ii-aa": [
         "hui-pis-taa",
+        "krui-sil-laan",
         "kui-vil-taan",
         "lui-mis-taa",
         "mui-kis-taa",
@@ -23615,18 +34266,32 @@ export default {
     "ui-o": [
         "luis-to",
         "muis-to",
+        "muis-ton",
+        "muis-tot",
         "puik-ko",
         "puis-to",
+        "puis-ton",
+        "puis-tos",
         "suip-po",
         "suis-to",
+        "suis-tot",
         "uis-ko",
         "uit-to"
     ],
     "ui-o-a": [
-        "hui-to-a"
+        "hui-to-a",
+        "puis-to-a",
+        "tui-jo-tan"
     ],
     "ui-o-aa": [
         "suis-to-maa"
+    ],
+    "ui-o-e": [
+        "puis-to-jen"
+    ],
+    "ui-o-i": [
+        "muis-to-si",
+        "tui-jo-tin"
     ],
     "ui-o-ie": [
         "puis-to-tie",
@@ -23643,50 +34308,80 @@ export default {
         "mui-noin"
     ],
     "ui-oi-a": [
-        "muis-toi-sa"
+        "muis-toi-sa",
+        "muis-tois-sa",
+        "muis-tois-ta"
+    ],
+    "ui-oi-aa": [
+        "muis-tois-saan"
     ],
     "ui-oi-e": [
         "mui-noi-nen"
     ],
+    "ui-oi-i": [
+        "muis-toi-hin"
+    ],
+    "ui-oo": [
+        "luis-too"
+    ],
+    "ui-oo-a": [
+        "puis-tos-sa"
+    ],
     "ui-oo-aa": [
+        "puis-tos-taan",
         "tui-jot-taa"
+    ],
+    "ui-oo-e": [
+        "muis-tol-les"
+    ],
+    "ui-oo-i": [
+        "tui-jot-ti"
     ],
     "ui-oo-u": [
         "ruis-korp-pu"
     ],
     "ui-u": [
         "hui-lu",
+        "hui-pult",
         "huip-pu",
         "huis-ku",
         "kui-lu",
+        "kui-lun",
         "kui-tu",
         "lui-hu",
         "lui-ku",
         "lui-ru",
         "lui-su",
         "muik-ku",
+        "muik-ku",
         "muis-ku",
         "ruis-ku",
         "suih-ku",
+        "suih-kus",
         "suip-pu",
         "tui-ju",
         "tuik-ku",
         "tuis-ku",
+        "tuis-kun",
         "uik-ku"
     ],
     "ui-u-a": [
+        "hui-pu-ta",
+        "huip-pu-a",
         "kui-vu-a",
         "kuih-tu-a",
         "lui-su-a",
         "muis-tu-a",
         "muis-tu-ma",
+        "muis-tu-ta",
         "ruis-ku-ta",
         "sui-ku-la",
         "suih-ku-ta",
         "suis-tu-a",
         "suit-su-ta",
         "tuis-ku-ta",
-        "ui-nu-a"
+        "ui-nu-a",
+        "ui-nu-va"
     ],
     "ui-u-e": [
         "ruis-ku-te",
@@ -23726,6 +34421,9 @@ export default {
     "ui-u-ää": [
         "tuit-tu-pää"
     ],
+    "ui-ui": [
+        "kuih-tuis"
+    ],
     "ui-ui-a": [
         "kui-kuil-la",
         "tuit-tuil-la"
@@ -23737,16 +34435,29 @@ export default {
         "kui-kui-lu",
         "tuit-tui-lu"
     ],
+    "ui-uo-i": [
+        "ruis-kuo-ri"
+    ],
     "ui-uu": [
+        "hui-luu",
+        "huip-puu",
         "kui-vuus",
         "lui-muun",
+        "lui-suu",
+        "muis-tuu",
         "nui-vuus",
-        "tui-muus"
+        "suih-kuun",
+        "tui-muus",
+        "tuik-kuu"
     ],
     "ui-uu-a": [
+        "hui-pul-la",
+        "hui-pul-ta",
         "hui-tuk-ka",
+        "huip-puun-sa",
         "lui-mus-sa",
-        "ruis-kuk-ka"
+        "ruis-kuk-ka",
+        "suih-kus-sa"
     ],
     "ui-uu-aa": [
         "hui-put-taa",
@@ -23765,8 +34476,16 @@ export default {
         "tuis-kut-taa",
         "ui-kut-taa"
     ],
+    "ui-uu-e": [
+        "hui-pul-le"
+    ],
+    "ui-uu-ee": [
+        "kui-vuu-teen"
+    ],
     "ui-uu-i": [
         "lui-hus-ti",
+        "mui-lut-ti",
+        "muis-tut-ti",
         "ui-guu-ri"
     ],
     "ui-uu-o": [
@@ -23777,12 +34496,16 @@ export default {
         "ruis-rääk-kä"
     ],
     "uo-a": [
+        "huo-kas",
+        "huo-mas",
         "huo-pa",
         "huo-ra",
+        "huol-ta",
         "huot-ra",
         "juo-da",
         "juo-ma",
         "juo-pa",
+        "juo-ta",
         "juo-va",
         "juos-ta",
         "kuo-ha",
@@ -23793,34 +34516,49 @@ export default {
         "kuol-la",
         "kuop-pa",
         "kuor-ma",
+        "kuor-ta",
         "luo-da",
         "luo-ja",
+        "luo-jan",
+        "luo-kan",
+        "luo-kas",
         "luo-la",
         "luo-ma",
         "luo-na",
+        "luo-nas",
         "luo-ta",
+        "luo-tan",
+        "luo-tas",
         "luo-va",
         "luok-ka",
         "luot-ta",
         "muo-na",
         "nuo-ra",
         "nuol-la",
+        "nuor-ta",
         "nuos-ka",
         "nuot-ta",
         "puo-la",
+        "puol-ta",
         "ruo-ja",
         "ruo-ka",
         "ruos-ka",
         "suo-da",
         "suo-ja",
+        "suo-jan",
         "suo-la",
+        "suo-lan",
         "suo-pa",
         "suo-ra",
+        "suo-ran",
+        "suo-ras",
         "suo-va",
         "suot-ta",
         "tuo-da",
         "tuo-ja",
         "tuo-mas",
+        "tuo-ta",
+        "tuoh-ta",
         "tuol-la",
         "tuol-ta",
         "tuos-sa",
@@ -23832,7 +34570,8 @@ export default {
         "vuo-ta",
         "vuok-ra",
         "vuol-la",
-        "vuon-na"
+        "vuon-na",
+        "vuot-ta"
     ],
     "uo-a-a": [
         "fluo-ra-ta",
@@ -23859,15 +34598,27 @@ export default {
         "ruo-pa-ta",
         "suo-ja-ta",
         "suo-la-ta",
+        "suo-ra-na",
         "suo-ta-va",
         "tuot-ta-ja",
         "tuot-ta-va",
+        "vuo-da-ta",
+        "vuo-da-tat",
         "vuo-ra-ta",
         "vuok-ra-ta"
     ],
     "uo-a-aa": [
+        "huo-ma-taan",
+        "huol-ta-kaan",
+        "juo-ta-vaa",
+        "kuo-pa-taan",
+        "luot-ta-kaa",
+        "luot-ta-maan",
+        "puol-ta-kaan",
+        "puot-ta-maa",
         "suo-ra-naan",
-        "vuok-ra-maa"
+        "vuok-ra-maa",
+        "vuot-ta-kaan"
     ],
     "uo-a-e": [
         "kuo-pa-ke"
@@ -23875,16 +34626,26 @@ export default {
     "uo-a-i": [
         "juo-ma-ri",
         "kuo-ha-ri",
+        "luo-na-ni",
+        "luo-na-si",
+        "luo-ta-ni",
+        "luo-ta-si",
         "luos-ta-ri",
+        "luot-ta-sin",
         "puos-ka-ri",
         "suo-da-tin",
-        "tuo-ma-ri"
+        "tuo-ma-ri",
+        "vuok-ra-sin"
     ],
     "uo-a-ie": [
         "kuok-ka-mies",
+        "luos-ta-rien",
         "muo-na-mies",
         "suo-ja-tie",
         "vuok-ra-mies"
+    ],
+    "uo-a-ii": [
+        "kuo-ha-rii"
     ],
     "uo-a-iuo": [
         "suo-la-liuos"
@@ -23892,14 +34653,19 @@ export default {
     "uo-a-o": [
         "huol-ta-mo",
         "kuon-ta-lo",
+        "kuon-ta-lon",
         "luo-ka-ton",
         "suo-ja-ton",
         "suo-la-ton"
+    ],
+    "uo-a-oo": [
+        "vuo-ta-koon"
     ],
     "uo-a-u": [
         "luot-ta-mus",
         "suo-da-tus",
         "tuot-ta-mus",
+        "tuot-ta-nut",
         "vuo-da-tus"
     ],
     "uo-a-uu": [
@@ -23921,34 +34687,68 @@ export default {
         "suo-ja-sää"
     ],
     "uo-aa": [
+        "huo-kaa",
+        "huo-maa",
         "huo-maan",
+        "huo-maat",
         "huol-taa",
         "huos-taan",
+        "juo-daan",
+        "juo-kaa",
+        "juo-maan",
         "juon-taa",
+        "juos-taan",
         "juot-taa",
+        "kuo-laa",
+        "kuol-laan",
+        "luo-daan",
+        "luo-jaa",
+        "luo-laan",
+        "luok-kaa",
         "luot-taa",
+        "nuo-raan",
+        "puol-kaan",
         "puol-taa",
+        "ruo-kaa",
+        "suo-jaa",
+        "suo-jaas",
+        "suo-jaat",
+        "suo-laat",
+        "suo-raa",
         "suo-raan",
         "suo-taa",
         "suol-taa",
+        "tuo-daan",
+        "tuo-kaa",
+        "tuo-kaa",
+        "tuo-maan",
         "tuol-laan",
         "tuol-taan",
         "tuot-taa",
-        "vuo-taa"
+        "vuo-taa",
+        "vuok-raa"
     ],
     "uo-aa-a": [
         "huo-mas-sa",
         "huos-tas-sa",
         "huos-tas-ta",
+        "juo-mat-ta",
         "kuor-maa-ja",
+        "kuor-man-sa",
+        "kuor-mas-ta",
+        "luo-jal-ta",
         "muok-kaa-ja",
         "nuor-kar-ja",
         "ruop-paa-ja",
+        "suo-las-ta",
+        "suo-ras-sa",
+        "uo-maan-sa",
         "vuok-raa-ja"
     ],
     "uo-aa-aa": [
         "huo-ah-taa",
         "huo-jah-taa",
+        "huo-maa-maan",
         "huol-lat-taa",
         "juo-lah-taa",
         "kuo-hah-taa",
@@ -23960,7 +34760,10 @@ export default {
         "vuo-dat-taa"
     ],
     "uo-aa-e": [
-        "kuo-pan-ne"
+        "huo-paam-me",
+        "kuo-pan-ne",
+        "luo-jam-me",
+        "luo-kal-le"
     ],
     "uo-aa-i": [
         "luo-vas-ti",
@@ -23969,11 +34772,16 @@ export default {
         "suo-lam-pi",
         "suo-mal-mi",
         "suo-ras-ti",
+        "vuo-dat-ti",
+        "vuo-laam-min",
         "vuo-laas-ti"
     ],
     "uo-aa-o": [
+        "huo-maa-ko",
+        "huo-maat-ko",
         "kuor-mas-to",
         "luo-las-to",
+        "nuo-las-ko",
         "puo-las-to",
         "suo-lak-ko",
         "tuo-tan-to",
@@ -23981,10 +34789,13 @@ export default {
     ],
     "uo-aa-u": [
         "huo-ah-dus",
+        "huo-man-nut",
+        "huo-mat-tu",
         "suo-kaa-su",
         "tuok-sah-dus"
     ],
     "uo-ai": [
+        "huo-mais",
         "kuor-main",
         "luo-tain",
         "muok-kain",
@@ -24003,20 +34814,32 @@ export default {
         "suo-jai-sa",
         "suo-jail-ma"
     ],
+    "uo-ai-aa": [
+        "huo-kail-laan"
+    ],
     "uo-ai-au": [
         "suon-rai-vaus"
     ],
     "uo-ai-e": [
+        "huo-kai-len",
         "huo-pai-nen",
         "juo-vai-nen",
         "kuo-lai-met",
         "kuo-lai-nen",
         "kuop-pai-nen",
         "luon-tai-nen",
+        "nuo-lai-sen",
         "nuos-kai-nen",
         "suo-jai-nen",
         "suo-lai-nen",
+        "suo-lai-sen",
         "tuol-lai-nen"
+    ],
+    "uo-ai-ee": [
+        "huo-kai-lee"
+    ],
+    "uo-ai-i": [
+        "muo-vai-li"
     ],
     "uo-ai-u": [
         "huo-kai-lu",
@@ -24054,7 +34877,8 @@ export default {
     ],
     "uo-au-aa": [
         "huo-maut-taa",
-        "huo-paut-taa"
+        "huo-paut-taa",
+        "suo-hau-taan"
     ],
     "uo-au-u": [
         "huo-mau-tus"
@@ -24063,48 +34887,108 @@ export default {
         "muok-kaus-työ"
     ],
     "uo-e": [
+        "huo-len",
+        "huo-len",
+        "huo-let",
         "huo-men",
         "huo-ne",
         "juo-te",
+        "juok-se",
+        "juok-sen",
         "juon-ne",
         "juos-te",
+        "juos-ten",
+        "kuo-le",
+        "kuo-len",
+        "kuo-let",
         "kuo-re",
+        "kuo-ren",
+        "kuol-les",
         "luo-de",
         "luok-se",
+        "luok-ses",
         "luon-ne",
+        "nuo-len",
+        "nuo-reks",
+        "nuo-ren",
+        "nuo-ret",
+        "puo-lel",
+        "puo-lelt",
+        "puo-len",
+        "puo-les",
+        "puo-lest",
+        "puo-let",
         "ruo-de",
         "ruos-te",
+        "suo-let",
+        "suo-mel",
+        "suo-men",
+        "suo-mes",
+        "suo-nen",
+        "tuo-nen",
         "tuo-re",
         "tuo-te",
         "tuon-ne",
+        "tuot-te",
         "vuo-de",
+        "vuo-den",
+        "vuo-des",
+        "vuo-dest",
+        "vuo-det",
+        "vuo-len",
+        "vuo-ren",
+        "vuo-tes",
+        "vuok-ses",
         "vuol-le"
     ],
     "uo-e-a": [
         "huo-je-ta",
         "huo-ke-a",
         "huo-le-kas",
+        "huo-le-na",
         "juo-he-a",
         "juo-he-va",
         "juok-se-va",
         "kuo-le-ma",
+        "kuo-le-man",
         "kuoh-ke-a",
         "kuoh-ke-ta",
         "luon-te-va",
         "nuo-re-kas",
+        "nuo-re-na",
         "nuo-re-ta",
         "nuor-te-a",
         "suo-ne-kas",
         "suo-pe-a",
         "suo-re-ta",
-        "tuo-ne-la"
+        "tuo-ne-la",
+        "tuo-ne-lan",
+        "tuop-pe-ja"
+    ],
+    "uo-e-aa": [
+        "juo-te-taan",
+        "kuo-le-maa",
+        "kuo-le-maan",
+        "nuo-se-maan",
+        "tuo-ne-laa",
+        "tuo-ne-laan"
     ],
     "uo-e-e": [
         "huo-ne-ke",
-        "juok-se-te"
+        "juok-se-te",
+        "suo-je-len"
+    ],
+    "uo-e-ee": [
+        "suo-je-lee"
     ],
     "uo-e-i": [
-        "huo-le-ti"
+        "huo-le-ni",
+        "huo-le-ti",
+        "juo-ne-ni",
+        "luok-se-ni",
+        "luok-se-si",
+        "vuok-se-ni",
+        "vuok-se-si"
     ],
     "uo-e-o": [
         "huo-le-ton"
@@ -24125,22 +35009,61 @@ export default {
         "tuon-ne-päin"
     ],
     "uo-ee": [
+        "huo-neen",
+        "huo-neet",
+        "juok-see",
+        "kuo-lee",
+        "kuo-reen",
+        "kuol-leen",
+        "kuol-leet",
+        "luok-seen",
+        "nuo-lee",
+        "nuo-reen",
         "puo-leen",
-        "tuol-leen"
+        "suo-pee",
+        "tuo-neen",
+        "tuo-neet",
+        "tuol-leen",
+        "vuo-tee",
+        "vuo-teen",
+        "vuo-teet"
     ],
     "uo-ee-a": [
+        "huo-lel-la",
+        "huo-les-sa",
         "huo-let-ta",
         "huo-men-na",
+        "huo-nees-sa",
+        "huo-net-ta",
+        "juo-nes-sa",
+        "kuol-lee-na",
+        "kuol-les-sa",
+        "luo-tees-ta",
         "luo-tel-la",
+        "luon-net-ta",
+        "nuo-lel-la",
+        "puo-lel-la",
+        "puo-len-sa",
         "puo-les-ta",
         "suo-jel-la",
+        "suo-mel-la",
+        "suo-mes-sa",
+        "tuo-hes-ta",
+        "tuo-nes-ta",
+        "tuo-ret-ta",
         "tuon-nem-ma",
-        "tuon-nem-mas"
+        "tuon-nem-mas",
+        "vuo-del-la",
+        "vuo-des-sa",
+        "vuo-des-ta",
+        "vuo-teen-sa",
+        "vuo-tees-sa"
     ],
     "uo-ee-aa": [
         "huo-jen-taa",
         "huo-let-taa",
         "juok-set-taa",
+        "kuo-lek-kaan",
         "kuo-let-taa",
         "nuo-ren-taa",
         "suo-men-taa",
@@ -24148,11 +35071,32 @@ export default {
         "suo-ren-taa",
         "tuo-hes-taa",
         "tuo-reel-taan",
-        "tuon-nem-paa"
+        "tuon-nem-paa",
+        "vuo-tees-saan"
+    ],
+    "uo-ee-e": [
+        "luon-teel-le",
+        "vuo-rel-le",
+        "vuo-teel-le"
+    ],
+    "uo-ee-ee": [
+        "huo-nee-seen",
+        "luo-tee-seen",
+        "vuo-tee-seen"
     ],
     "uo-ee-i": [
+        "huo-leh-din",
+        "huo-leh-dit",
+        "huo-let-ki",
+        "nuo-rem-pi",
         "puo-lek-si",
+        "suo-mek-si",
+        "suo-rem-pi",
         "tuo-rees-ti"
+    ],
+    "uo-ee-ii": [
+        "huo-leh-tii",
+        "nuo-rem-pii"
     ],
     "uo-ee-o": [
         "kuol-lee-ton",
@@ -24176,10 +35120,18 @@ export default {
     "uo-ee-ää": [
         "nuo-len-pää"
     ],
+    "uo-ei": [
+        "kuol-leit",
+        "luok-sein"
+    ],
     "uo-ei-a": [
         "huo-neil-ma",
+        "huo-neis-sa",
         "juon-tei-kas",
-        "luon-tei-kas"
+        "kuol-leil-la",
+        "luon-tei-kas",
+        "tuo-leil-ta",
+        "tuo-rei-ta"
     ],
     "uo-ei-aa": [
         "tuot-teis-taa"
@@ -24192,6 +35144,9 @@ export default {
         "luon-tei-nen",
         "puo-lei-nen",
         "ruos-tei-nen"
+    ],
+    "uo-ei-ii": [
+        "huo-nei-siin"
     ],
     "uo-ei-o": [
         "huo-neis-to"
@@ -24218,45 +35173,67 @@ export default {
     "uo-i": [
         "fluo-ri",
         "huo-li",
+        "huo-lin",
+        "huo-mist",
+        "huo-ri",
         "huo-rin",
         "huo-vi",
+        "juo-mist",
         "juo-ni",
         "juo-tin",
+        "juok-sin",
         "juon-ti",
+        "kuo-li",
+        "kuo-lis",
         "kuo-ri",
         "kuo-si",
+        "kuo-sis",
+        "kuo-sist",
         "kuo-vi",
         "luo-mi",
         "luo-ti",
+        "luo-tin",
+        "luo-tit",
         "luo-vi",
         "luok-ki",
         "luon-ti",
         "luot-si",
         "luot-ti",
         "muo-ri",
+        "muo-rin",
         "muo-ti",
         "muo-vi",
         "muot-ti",
         "nuo-li",
+        "nuo-lit",
         "nuo-ri",
+        "nuo-tin",
+        "nuo-tit",
         "nuot-ti",
         "puo-li",
+        "puo-liks",
         "puo-mi",
         "puo-ti",
         "ruo-dis",
+        "ruo-ki",
         "ruo-kis",
+        "ruo-kit",
         "ruo-ri",
         "ruo-ti",
         "ruok-ki",
         "ruot-si",
+        "ruot-sin",
         "suo-din",
         "suo-li",
         "suo-mi",
         "suo-ni",
+        "suo-nis",
+        "suo-riks",
         "tuo-hi",
         "tuo-li",
         "tuo-mi",
         "tuo-ni",
+        "tuo-pis",
         "tuon-ti",
         "tuop-pi",
         "vuo-hi",
@@ -24285,26 +35262,46 @@ export default {
         "luo-vi-a",
         "luon-ni-kas",
         "muo-di-kas",
+        "muo-ti-a",
+        "nuo-ri-a",
+        "nuo-ri-na",
         "puo-li-kas",
         "ruo-pi-a",
         "ruo-ti-a",
         "ruok-ki-a",
         "ruos-ki-a",
+        "ruos-ki-vat",
         "suo-mi-a",
         "suo-ni-kas",
         "suo-ri-a",
+        "suo-ri-tan",
         "suo-si-a",
         "suo-si-ja",
+        "suo-si-ta",
         "tuo-hi-a",
         "tuo-mi-ta",
         "tuok-si-na",
+        "tuop-pi-a",
         "vuo-hi-kas",
-        "vuo-ni-a"
+        "vuo-ni-a",
+        "vuo-ri-a",
+        "vuo-si-a"
+    ],
+    "uo-i-aa": [
+        "luo-mi-aan",
+        "ruo-ti-maan",
+        "ruok-ki-maan",
+        "tuo-mi-taan"
     ],
     "uo-i-e": [
         "huo-mi-nen",
+        "huo-mi-sen",
+        "huo-mi-sest",
         "juo-mi-nen",
+        "juo-mi-sen",
+        "juo-mi-sest",
         "kuo-ri-ke",
+        "luo-mi-nen",
         "muo-ri-nen",
         "muo-vi-nen",
         "puo-li-nen",
@@ -24316,8 +35313,12 @@ export default {
         "vuo-hi-nen",
         "vuo-ri-nen"
     ],
+    "uo-i-ee": [
+        "huo-mi-seen"
+    ],
     "uo-i-i": [
-        "suo-ri-tin"
+        "suo-ri-tin",
+        "suo-si-kin"
     ],
     "uo-i-ie": [
         "nuo-ri-mies",
@@ -24325,16 +35326,23 @@ export default {
     ],
     "uo-i-o": [
         "huo-mi-o",
+        "huo-mi-ost",
         "kuo-li-o",
         "kuo-ri-mo",
         "luo-pi-o",
         "nuo-ri-so",
         "nuo-ti-o",
+        "nuo-ti-on",
         "puo-li-so",
         "suo-si-o",
+        "suo-si-ost",
         "tuo-ki-o",
         "tuo-mi-o",
         "vuo-ri-ton"
+    ],
+    "uo-i-oo": [
+        "huo-mi-oon",
+        "suo-si-oon"
     ],
     "uo-i-u": [
         "fluo-ri-tus",
@@ -24361,16 +35369,46 @@ export default {
     "uo-i-yö": [
         "tuo-hi-työ"
     ],
+    "uo-ie": [
+        "vuo-sien"
+    ],
+    "uo-ii": [
+        "huo-lii",
+        "juo-tiin",
+        "juos-tii",
+        "juos-tiin",
+        "kuo-sii",
+        "luo-tiin",
+        "nuo-rii",
+        "puo-lii",
+        "ruok-kii",
+        "ruot-siin",
+        "suo-sii",
+        "tuo-tii",
+        "tuo-tiin",
+        "tuop-pii",
+        "vuo-sii",
+        "vuo-siin"
+    ],
     "uo-ii-a": [
         "huo-lin-ta",
+        "huo-mis-ta",
         "kuo-hin-ta",
         "kuo-kin-ta",
         "kuo-rin-ta",
+        "kuo-sis-sa",
+        "luo-lis-ta",
+        "muo-dis-ta",
         "ruo-din-ta",
         "ruo-kin-ta",
+        "suo-jis-sa",
+        "suo-nis-sa",
+        "suo-ril-ta",
         "suo-sin-ta",
         "suo-vil-la",
-        "tuon-nim-mas"
+        "tuon-nim-mas",
+        "uo-mis-sa",
+        "vuo-sis-ta"
     ],
     "uo-ii-aa": [
         "fluo-rit-taa",
@@ -24388,6 +35426,7 @@ export default {
         "nuo-rit-taa",
         "nuo-tin-taa",
         "nuo-tit-taa",
+        "puo-lii-kaan",
         "puo-lil-laan",
         "puo-lit-taa",
         "puo-mit-taa",
@@ -24413,6 +35452,7 @@ export default {
     "uo-ii-i": [
         "juo-min-git",
         "puo-lik-si",
+        "suo-rik-si",
         "suo-sik-ki",
         "suo-sir-ri"
     ],
@@ -24433,6 +35473,7 @@ export default {
         "vuo-ris-to"
     ],
     "uo-ii-u": [
+        "ruo-kit-tu",
         "suo-ris-tus",
         "suo-sit-tu"
     ],
@@ -24457,27 +35498,39 @@ export default {
     "uo-iu-ee": [
         "puo-liu-neen"
     ],
+    "uo-iu-uu": [
+        "kuo-riu-tuu"
+    ],
     "uo-iyö": [
         "puo-liyö"
     ],
     "uo-o": [
         "huo-no",
+        "huo-non",
+        "huo-not",
         "huol-to",
+        "juo-pon",
+        "juo-pot",
         "juo-tos",
         "juon-to",
         "juop-po",
+        "juot-ko",
         "juot-to",
         "kuo-lo",
         "kuo-no",
         "kuo-ro",
+        "kuo-ron",
         "luo-ko",
         "luo-to",
+        "luo-ton",
         "luon-nos",
         "luon-to",
         "luot-to",
+        "muo-don",
         "muo-to",
         "puol-to",
         "ruo-ho",
+        "ruo-hon",
         "ruo-ko",
         "ruo-to",
         "ruok-ko",
@@ -24487,6 +35540,7 @@ export default {
         "tuot-to",
         "vuo-no",
         "vuo-ro",
+        "vuo-ros",
         "vuo-to",
         "vuok-ko"
     ],
@@ -24500,10 +35554,16 @@ export default {
         "ruo-ko-ta"
     ],
     "uo-o-aa": [
-        "luon-to-jaan"
+        "luon-to-jaan",
+        "muo-to-aan"
+    ],
+    "uo-o-au": [
+        "vuo-ro-kaus"
     ],
     "uo-o-e": [
         "huo-ko-nen",
+        "luo-to-nen",
+        "muo-to-nen",
         "tuok-ko-nen"
     ],
     "uo-o-ie": [
@@ -24525,11 +35585,15 @@ export default {
         "vuo-ro-työ"
     ],
     "uo-oi": [
+        "huo-noi",
+        "huo-nois",
         "tuol-loin",
-        "tuon-noin"
+        "tuon-noin",
+        "tuot-toi"
     ],
     "uo-oi-a": [
         "fluo-roi-da",
+        "huo-nois-ta",
         "muo-toil-la",
         "tuot-toi-sa"
     ],
@@ -24541,6 +35605,7 @@ export default {
         "luo-toi-nen",
         "luon-toi-nen",
         "muo-toi-nen",
+        "muo-toi-sen",
         "ruo-hoi-nen",
         "ruo-koi-nen",
         "ruo-toi-nen",
@@ -24561,17 +35626,32 @@ export default {
         "muo-toi-suus",
         "tuot-toi-suus"
     ],
+    "uo-oo": [
+        "huo-noo",
+        "luon-toon",
+        "muo-toon"
+    ],
     "uo-oo-a": [
+        "huo-nos-sa",
+        "kuo-ros-sa",
+        "luon-nos-sa",
+        "luon-ton-sa",
         "muo-don-ta",
-        "nuo-hoo-ja"
+        "muo-dos-sa",
+        "nuo-hoo-ja",
+        "vuo-nos-sa",
+        "vuo-ros-sa",
+        "vuo-ros-ta"
     ],
     "uo-oo-aa": [
         "huo-hot-taa",
+        "huo-nom-paa",
         "huo-non-taa",
         "luo-tot-taa",
         "luon-nos-taan",
         "muo-don-taa",
         "muo-dos-taa",
+        "vuo-rol-laan",
         "vuo-ros-taan",
         "vuo-rot-taa"
     ],
@@ -24580,6 +35660,7 @@ export default {
         "suo-kor-te"
     ],
     "uo-oo-i": [
+        "huo-nom-min",
         "huo-nos-ti"
     ],
     "uo-oo-iu": [
@@ -24603,25 +35684,38 @@ export default {
     "uo-u": [
         "huo-ku",
         "juo-mu",
+        "juo-nu",
+        "juo-nut",
         "juo-ru",
+        "juo-tu",
         "juok-su",
+        "juos-tu",
         "kuo-hu",
+        "kuo-hut",
         "kuo-mu",
         "kuo-pus",
+        "kuol-lu",
         "kuol-lut",
         "luo-mus",
+        "luo-nu",
+        "luo-tu",
+        "luo-vu",
         "nuo-lu",
         "puo-su",
         "ruo-tu",
         "suo-jus",
         "suo-mu",
         "suo-mus",
+        "suo-mut",
+        "suos-tu",
         "tuo-hus",
         "tuok-su",
+        "tuok-sut",
         "vuo-lu"
     ],
     "uo-u-a": [
         "huo-ju-a",
+        "huo-ju-va",
         "huo-ku-a",
         "huo-pu-a",
         "juo-lu-a",
@@ -24635,6 +35729,8 @@ export default {
         "kuor-tu-a",
         "kuor-tu-ma",
         "luo-pu-a",
+        "luo-tu-ja",
+        "luo-vu-ta",
         "luon-tu-a",
         "nuok-ku-a",
         "nuor-tu-a",
@@ -24646,7 +35742,16 @@ export default {
         "suos-tu-a",
         "tuoh-tu-a",
         "tuok-su-a",
-        "tuok-su-ta"
+        "tuok-su-ta",
+        "tuok-su-va"
+    ],
+    "uo-u-aa": [
+        "juo-vu-taan",
+        "kuo-hu-vaa",
+        "kuo-hu-vaan",
+        "luo-pu-maan",
+        "luo-vu-taan",
+        "ruos-tu-vaan"
     ],
     "uo-u-e": [
         "juok-su-te",
@@ -24654,8 +35759,10 @@ export default {
         "puo-lu-e"
     ],
     "uo-u-i": [
+        "juok-su-si",
         "juok-su-tin",
-        "kuor-mu-ri"
+        "kuor-mu-ri",
+        "tuok-su-si"
     ],
     "uo-u-o": [
         "tuok-su-ton"
@@ -24673,6 +35780,11 @@ export default {
     ],
     "uo-u-ää": [
         "kuo-hu-pää"
+    ],
+    "uo-ui": [
+        "juo-ruist",
+        "kuo-hui",
+        "tuok-sui"
     ],
     "uo-ui-a": [
         "juo-ruil-la",
@@ -24693,22 +35805,32 @@ export default {
         "suo-tui-suus"
     ],
     "uo-uu": [
+        "huo-juu",
         "huo-ruus",
+        "luo-puu",
         "luo-vuus",
         "nuo-ruus",
-        "suo-ruus"
+        "suo-ruus",
+        "suos-tuu",
+        "tuo-tuu",
+        "tuok-suu"
     ],
     "uo-uu-a": [
         "huo-jun-ta",
         "juo-luk-ka",
         "kuo-hun-ta",
         "kuo-ruk-ka",
+        "kuol-lut-ta",
+        "nuo-ruut-ta",
         "puo-luk-ka",
+        "puo-lus-ta",
+        "puo-lus-tas",
         "suo-kuk-ka"
     ],
     "uo-uu-aa": [
         "huo-jut-taa",
         "huo-vut-taa",
+        "juo-nut-kaan",
         "juo-vut-taa",
         "juok-sut-taa",
         "kuo-hut-taa",
@@ -24720,6 +35842,7 @@ export default {
         "luon-nut-taa",
         "nuor-rut-taa",
         "puo-lus-taa",
+        "ruo-dus-taan",
         "ruo-put-taa",
         "ruos-tut-taa",
         "suo-mus-taa",
@@ -24729,6 +35852,9 @@ export default {
     ],
     "uo-uu-ai": [
         "suo-muu-rain"
+    ],
+    "uo-uu-e": [
+        "nuo-ruu-den"
     ],
     "uo-uu-i": [
         "juo-ruk-ki",
@@ -24778,42 +35904,67 @@ export default {
         "huoun-ta"
     ],
     "uu-a": [
+        "bub-ba",
+        "bub-ka",
         "bul-la",
+        "bur-nas",
+        "bus-ta",
         "dur-ra",
         "duu-ma",
         "fluns-sa",
         "fuu-ga",
+        "gum-ball",
+        "hub-ba",
         "huh-mar",
         "huh-ta",
         "huk-ka",
         "hum-ma",
         "hump-pa",
         "hur-ja",
+        "hur-jaks",
         "hur-ma",
         "hurs-kas",
         "hurt-ta",
+        "huu-da",
+        "huu-dan",
+        "huu-dat",
         "huu-ma",
+        "huu-man",
+        "huu-mas",
+        "huu-tas",
         "juh-la",
+        "juh-lan",
+        "juh-lat",
         "juh-ta",
         "juk-ka",
         "juk-ra",
         "jul-ma",
         "jump-pa",
         "junt-ta",
+        "jut-ta",
+        "juu-a",
         "juu-das",
         "juu-tas",
         "krus-ka",
         "kruu-na",
+        "kruu-nas",
         "kuk-ka",
         "kuk-sa",
+        "kul-lan",
         "kul-ma",
+        "kul-man",
         "kul-ta",
+        "kul-tast",
         "kum-ma",
+        "kum-mas",
+        "kun-han",
         "kun-nas",
+        "kun-nat",
         "kun-pa",
         "kun-ta",
         "kunt-ta",
         "kup-la",
+        "kup-las",
         "kup-pa",
         "kur-ja",
         "kur-ra",
@@ -24822,40 +35973,63 @@ export default {
         "kus-sa",
         "kus-ta",
         "kut-ka",
+        "kuu-bas",
         "kuu-la",
         "kuu-las",
         "kuu-ma",
+        "kuu-man",
         "kuu-ra",
+        "kuu-ta",
         "kuul-la",
         "kuup-pa",
         "kuur-na",
+        "kuus-sa",
+        "kuus-ta",
+        "kuut-ta",
         "luh-ta",
         "lul-la",
+        "lun-ta",
         "lunt-ta",
         "lut-ka",
         "luu-das",
         "luu-ta",
         "luul-la",
         "luus-ka",
+        "mul-la",
+        "mul-lan",
         "mul-las",
         "mul-ta",
         "mur-ha",
+        "mur-ran",
         "murs-ka",
+        "mus-sa",
         "mus-ta",
+        "mus-taks",
+        "mus-tan",
+        "mus-tat",
         "mut-ka",
+        "mut-kat",
         "mut-ta",
+        "muu-al",
         "muu-an",
         "muu-sa",
+        "muu-ta",
+        "muu-tan",
+        "muul-la",
         "nuk-ka",
         "nun-na",
         "nur-ja",
+        "nur-kan",
+        "nur-kas",
         "nurk-ka",
         "nuu-ka",
         "nuus-ka",
         "plus-sa",
+        "plus-sat",
         "puh-das",
         "pul-ja",
         "pul-la",
+        "pul-lat",
         "pul-ma",
         "pulk-ka",
         "puls-ka",
@@ -24865,12 +36039,19 @@ export default {
         "pur-ra",
         "purk-ka",
         "pus-ka",
+        "pus-kat",
         "pus-ta",
         "put-ka",
+        "put-kas",
+        "put-kast",
         "puu-ha",
         "puu-ma",
+        "puu-ta",
         "puuh-ka",
+        "puul-la",
+        "puul-ta",
         "puus-ka",
+        "puus-ta",
         "ruk-ka",
         "rul-la",
         "rum-ba",
@@ -24887,52 +36068,85 @@ export default {
         "suk-ka",
         "sul-fa",
         "sul-ka",
+        "sul-la",
+        "sul-ta",
         "sum-ma",
         "sun-na",
         "sup-pa",
         "sur-ma",
         "sur-ra",
+        "sus-sa",
+        "sus-ta",
         "suu-la",
         "suu-las",
         "suu-ra",
+        "suu-ta",
+        "suu-tas",
+        "suul-la",
+        "suul-ta",
+        "suun-naks",
+        "suun-nan",
+        "suun-nas",
         "suun-ta",
+        "suur-ta",
+        "suus-sa",
+        "suus-ta",
         "truut-ta",
         "tsuh-na",
         "tuh-ka",
+        "tuh-kaks",
+        "tuh-kan",
         "tuh-ma",
         "tuk-ka",
+        "tuk-kas",
         "tul-la",
+        "tul-ta",
         "tul-va",
         "tulk-ka",
         "tulp-pa",
         "tum-ma",
+        "tum-man",
         "tund-ra",
         "tup-la",
+        "tup-lap",
         "tur-ha",
+        "tur-haks",
+        "tur-han",
+        "tur-hat",
         "tur-ma",
         "tur-pa",
+        "tur-pas",
         "tur-sas",
         "tur-ta",
         "tur-va",
         "turs-ka",
         "tus-ka",
+        "tus-kan",
+        "tus-kast",
         "tut-ka",
+        "tut-kal",
+        "tuu-a",
         "tuu-ba",
         "tuu-las",
         "tuu-ma",
         "tuu-ra",
         "tuu-san",
+        "tuuk-ka",
         "tuul-la",
+        "tuul-ta",
         "tuur-na",
         "uh-ka",
         "uh-ma",
         "ul-jas",
+        "ul-la",
         "umb-ra",
+        "un-ta",
         "us-sa",
         "us-va",
         "uu-ma",
         "uu-ras",
         "uur-na",
+        "uut-ta",
         "vul-va"
     ],
     "uu-a-a": [
@@ -24961,6 +36175,7 @@ export default {
         "kruk-sa-ta",
         "kruu-na-ta",
         "kruu-sa-ta",
+        "kuk-ka-na",
         "kul-la-ta",
         "kul-ma-ta",
         "kul-ta-la",
@@ -24983,12 +36198,15 @@ export default {
         "mul-ta-va",
         "mur-ha-ta",
         "mur-ta-ja",
+        "mur-ta-mat",
         "murs-ka-na",
         "murs-ka-ta",
+        "mus-ta-na",
         "mus-ta-ta",
         "muu-ra-ta",
         "muu-sa-ta",
         "muu-ta-ma",
+        "muu-ta-man",
         "muun-ta-ja",
         "muut-ta-ja",
         "nuh-ja-ta",
@@ -25040,6 +36258,8 @@ export default {
         "tul-ka-ta",
         "tul-la-ta",
         "tul-pa-ta",
+        "tul-ta-va",
+        "tul-va-na",
         "tum-pa-ta",
         "tup-la-ta",
         "tur-va-ta",
@@ -25055,10 +36275,20 @@ export default {
         "uh-ra-ta"
     ],
     "uu-a-aa": [
+        "dum-pa-taan",
+        "hur-ra-taan",
+        "huu-ta-maan",
         "kuk-ka-maa",
         "kul-ta-maa",
+        "kus-ta-kaan",
+        "kuus-ta-kaan",
         "mul-ta-maa",
+        "muu-ta-kaan",
+        "muu-ta-maan",
         "puu-va-paa",
+        "rul-la-taan",
+        "surf-fa-taan",
+        "tuh-la-taan",
         "tul-va-maa"
     ],
     "uu-a-au": [
@@ -25066,11 +36296,16 @@ export default {
     ],
     "uu-a-e": [
         "huh-ma-re",
+        "huu-ta-en",
+        "jur-va-nen",
         "kuk-ka-nen",
+        "kuk-ka-set",
         "kul-ta-nen",
+        "kul-ta-set",
         "kum-pa-re",
         "puu-ha-ke",
         "ruk-ka-nen",
+        "ruk-ka-set",
         "rut-ja-ke",
         "sul-ha-nen",
         "suu-la-ke",
@@ -25078,11 +36313,17 @@ export default {
         "tur-ka-nen"
     ],
     "uu-a-ee": [
-        "kuk-ka-tee"
+        "kuk-ka-tee",
+        "muut-ta-neet"
+    ],
+    "uu-a-ei": [
+        "muut-ta-neit"
     ],
     "uu-a-i": [
         "duu-na-ri",
+        "huk-ka-sin",
         "hup-pa-ri",
+        "huu-ta-sit",
         "junk-ka-ri",
         "krus-ta-di",
         "kum-ma-rit",
@@ -25092,7 +36333,10 @@ export default {
         "kuu-na-ri",
         "luk-ka-ri",
         "lump-pa-ri",
+        "mul-la-ki",
+        "mus-ta-kin",
         "muu-ra-ri",
+        "muu-ta-ki",
         "plus-la-sit",
         "puk-ka-ri",
         "pul-sa-ri",
@@ -25103,8 +36347,11 @@ export default {
         "puu-la-ji",
         "rum-pa-li",
         "runk-ka-ri",
+        "sul-la-ki",
+        "sus-ta-kin",
         "suu-la-ki",
         "suu-ta-ri",
+        "suus-ta-ni",
         "tsup-pa-ri",
         "tuh-la-ri",
         "tun-na-ri",
@@ -25117,11 +36364,16 @@ export default {
         "puu-ha-mies",
         "tur-va-mies"
     ],
+    "uu-a-ii": [
+        "kuk-ka-siin"
+    ],
     "uu-a-o": [
         "bun-ga-low",
         "hul-va-ton",
         "kuk-ka-ro",
+        "kuk-ka-ron",
         "kuu-ta-mo",
+        "kuu-ta-mon",
         "kuun-va-lo",
         "luu-ka-to",
         "luu-va-lo",
@@ -25137,11 +36389,17 @@ export default {
         "tus-ka-ton",
         "uus-ja-ko"
     ],
+    "uu-a-oo": [
+        "kuu-ta-moon"
+    ],
     "uu-a-ou": [
         "suur-ta-lous"
     ],
     "uu-a-u": [
-        "kuu-a-lus"
+        "kuu-a-lus",
+        "muu-ta-ku",
+        "muut-ta-nu",
+        "muut-ta-nut"
     ],
     "uu-a-uu": [
         "huk-ka-puu",
@@ -25149,6 +36407,7 @@ export default {
         "kump-pa-nuus",
         "kuul-ta-vuus",
         "mul-ta-vuus",
+        "puu-ka-luu",
         "tut-ta-vuus"
     ],
     "uu-a-yö": [
@@ -25163,36 +36422,147 @@ export default {
         "mus-ta-pää"
     ],
     "uu-aa": [
+        "ttuu-kaan",
+        "bump-paa",
+        "bur-maa",
+        "bur-naan",
+        "bus-taa",
+        "buut-taa",
+        "dump-paa",
+        "dunk-kaa",
+        "dup-paa",
+        "duu-naa",
+        "duu-naan",
+        "duu-naat",
+        "fus-kaa",
+        "huk-kaa",
         "huk-kaan",
+        "huk-kaat",
+        "hump-paa",
+        "hur-maan",
         "hur-raa",
+        "hust-laan",
         "huu-haa",
+        "huu-maan",
         "huu-taa",
+        "huuk-kaa",
         "huul-taa",
         "huur-taa",
+        "juh-laa",
+        "jul-maa",
+        "jump-paa",
         "juur-taa",
+        "kuk-kaa",
+        "kuk-kaan",
+        "kul-laan",
+        "kul-taa",
+        "kul-taan",
+        "kum-paa",
+        "kum-paan",
+        "kup-laa",
+        "kup-laan",
+        "kur-jaa",
+        "kur-laa",
+        "kus-kaa",
+        "kus-kaan",
+        "kuu-laa",
+        "kuu-maa",
         "kuu-naan",
+        "kuul-kaa",
         "kuul-taa",
+        "lump-paa",
         "lun-naat",
+        "lurk-kaa",
         "lurp-paan",
+        "luu-haan",
+        "luu-raa",
+        "luu-taa",
+        "mul-taa",
+        "mul-taan",
         "mur-taa",
+        "murs-kaa",
+        "mus-taa",
+        "mut-kaa",
+        "mut-kaan",
+        "muu-kaa",
+        "muun-kaan",
         "muun-taa",
+        "muut-kaa",
         "muut-taa",
+        "nurk-kaan",
+        "plus-saa",
+        "puf-faa",
         "puh-kaa",
+        "puh-taaks",
+        "puh-taan",
+        "puh-taat",
+        "puk-kaa",
+        "pul-laa",
+        "pulk-kaan",
+        "pump-paa",
+        "pump-paan",
+        "punk-kaa",
         "pur-kaa",
+        "purk-kaa",
+        "pus-haan",
+        "pus-kaan",
+        "pus-saa",
+        "put-kaan",
+        "put-saan",
         "puur-taa",
+        "ruk-kaa",
+        "rul-laa",
+        "rul-laan",
+        "run-daan",
+        "runt-taa",
         "rus-kaa",
+        "rus-taan",
+        "skruu-daa",
+        "skump-paa",
+        "skut-taa",
         "suk-laa",
+        "sun-kaa",
+        "sur-maan",
+        "suun-taa",
+        "suun-taan",
+        "suus-saan",
+        "tuh-kaa",
+        "tuh-laa",
+        "tuh-laan",
+        "tuh-laat",
+        "tuk-kaa",
+        "tul-kaa",
+        "tul-laa",
+        "tul-laan",
+        "tur-haa",
         "tur-haan",
+        "tur-paa",
+        "tur-paan",
+        "tur-vaan",
+        "tus-kaa",
+        "tut-kaa",
+        "tut-kaan",
+        "tuu-kaan",
+        "tuu-raa",
         "tuul-taa",
+        "tuup-paa",
+        "tuut-taa",
+        "uh-kaa",
         "uur-taa",
         "uut-taa"
     ],
     "uu-aa-a": [
         "hur-maa-ja",
         "hur-maa-va",
+        "huu-mas-sa",
+        "juh-las-ta",
         "kruu-naa-ja",
+        "kul-las-ta",
+        "kul-mal-la",
+        "kup-las-sa",
         "kup-paa-ja",
         "kuu-lak-ka",
+        "kuu-mas-sa",
         "kuu-mat-ka",
         "kuu-naa-ma",
         "kuu-san-ka",
@@ -25201,6 +36571,8 @@ export default {
         "lur-pas-sa",
         "luu-kam-pa",
         "luu-mar-ja",
+        "mul-lal-la",
+        "mul-las-ta",
         "mur-haa-ja",
         "mur-haa-va",
         "murs-kaa-ja",
@@ -25208,26 +36580,38 @@ export default {
         "muu-al-la",
         "muu-al-ta",
         "nul-jas-ka",
+        "nur-kas-sa",
         "nurk-kaa-ja",
+        "puh-das-ta",
+        "puh-taal-ta",
+        "pul-kal-la",
         "pur-naa-ja",
         "puu-haa-ja",
         "puu-jal-ka",
         "puu-mas-sa",
         "puu-tar-ha",
+        "puu-tar-han",
+        "puu-tar-hat",
         "puun-lat-va",
         "puus-kas-sa",
         "rus-sak-ka",
+        "ruuh-kas-sa",
         "sum-mas-sa",
         "sur-maa-ja",
         "surf-faa-ja",
         "sut-jak-ka",
         "suu-haa-ra",
+        "suun-nal-ta",
         "suur-val-ta",
+        "tuh-kas-ta",
         "tuh-laa-ja",
         "tur-vaa-ja",
+        "tur-vas-sa",
         "tuu-raa-ja",
         "uh-kaa-ja",
         "uh-kaa-va",
+        "us-kal-la",
+        "us-kal-lan",
         "uus-van-ha"
     ],
     "uu-aa-aa": [
@@ -25239,6 +36623,8 @@ export default {
         "huu-dah-taa",
         "huu-dat-taa",
         "kul-las-taa",
+        "kul-taa-kaan",
+        "kum-paa-kaan",
         "kup-sah-taa",
         "kus-tan-taa",
         "kuu-kah-taa",
@@ -25252,6 +36638,7 @@ export default {
         "nul-jah-taa",
         "nur-jah-taa",
         "nuu-kah-taa",
+        "nuus-kal-laan",
         "plump-sah-taa",
         "pul-lah-taa",
         "pul-pah-taa",
@@ -25261,6 +36648,7 @@ export default {
         "rup-sah-taa",
         "sur-kas-taa",
         "suu-tah-taa",
+        "tuh-laa-maan",
         "tul-vah-taa",
         "tup-rah-taa",
         "tup-sah-taa",
@@ -25275,35 +36663,48 @@ export default {
     ],
     "uu-aa-ai": [
         "luu-kas-vain",
-        "nur-kak-kain"
+        "nur-kak-kain",
+        "us-kal-tais"
     ],
     "uu-aa-au": [
         "suur-pak-kaus"
     ],
     "uu-aa-e": [
+        "huu-dat-te",
+        "kuk-kan-ne",
         "kum-man-ne",
         "kus-tan-ne",
         "lur-pal-le",
         "muu-al-le",
         "muu-an-ne",
+        "nun-nal-le",
         "suh-dan-ne",
         "suur-han-ke",
+        "tuh-laat-te",
+        "un-tam-me",
         "uu-sas-te"
     ],
     "uu-aa-ee": [
-        "lur-pal-leen"
+        "lur-pal-leen",
+        "tul-lak-seen"
     ],
     "uu-aa-i": [
         "bul-gaa-ri",
         "bul-vaa-ni",
         "bus-man-ni",
         "bush-man-ni",
+        "gum-bal-lin",
         "hur-jas-ti",
         "hurs-kaas-ti",
         "jul-mas-ti",
         "jung-man-ni",
+        "kul-lak-si",
+        "kum-man-kin",
         "kum-mas-ti",
+        "kum-paa-kin",
+        "kum-paan-kin",
         "kumk-vat-ti",
+        "kup-laa-ni",
         "kur-jas-ti",
         "kuu-mas-ti",
         "kuuk-vart-si",
@@ -25316,6 +36717,7 @@ export default {
         "mus-tan-gi",
         "nur-jas-ti",
         "nuu-kas-ti",
+        "puh-taak-si",
         "puh-taas-ti",
         "puls-kas-ti",
         "puu-laa-ki",
@@ -25323,12 +36725,14 @@ export default {
         "rul-jans-si",
         "run-saas-ti",
         "rut-kas-ti",
+        "ruu-ak-si",
         "subs-tans-si",
         "suk-kaat-ti",
         "sul-faat-ti",
         "sult-taa-ni",
         "suu-laas-ti",
         "suu-palt-ti",
+        "suun-taa-ni",
         "tuh-mas-ti",
         "tulp-paa-ni",
         "tunk-rah-vi",
@@ -25337,12 +36741,22 @@ export default {
         "tur-vat-ti",
         "ul-jaas-ti",
         "ur-baa-ni",
+        "us-kal-sin",
         "uus-nat-si",
         "vul-gaa-ri",
         "vul-kaa-ni"
     ],
     "uu-aa-ie": [
         "sul-has-mies"
+    ],
+    "uu-aa-ii": [
+        "hust-laa-jii",
+        "kul-taa-mii",
+        "puu-nat-tiin",
+        "tuh-lat-tiin",
+        "tup-lat-tiin",
+        "tuu-mat-tiin",
+        "tuu-nat-tiin"
     ],
     "uu-aa-iu": [
         "ur-baa-nius"
@@ -25351,6 +36765,7 @@ export default {
         "juu-rak-ko",
         "kuu-kas-vot",
         "luu-kal-vo",
+        "luu-ran-gon",
         "luu-ran-ko",
         "murs-kaa-mo",
         "pump-paa-mo",
@@ -25366,7 +36781,9 @@ export default {
     "uu-aa-u": [
         "hul-mah-dus",
         "hul-vah-dus",
+        "hus-lan-nu",
         "huu-dah-dus",
+        "kruu-nat-tu",
         "kum-mas-tus",
         "kus-tan-nus",
         "muk-sah-dus",
@@ -25378,6 +36795,7 @@ export default {
         "puu-kaa-su",
         "puu-laa-tu",
         "puu-las-tu",
+        "tuh-lan-nu",
         "tup-rah-dus",
         "tup-sah-dus",
         "tus-sah-dus",
@@ -25387,7 +36805,11 @@ export default {
         "uu-ras-tus",
         "uu-vah-dus"
     ],
+    "uu-aa-ui": [
+        "hul-laan-nuin"
+    ],
     "uu-aa-uu": [
+        "duu-nat-tuu",
         "kuu-lak-kuus",
         "lup-sak-kuus",
         "puu-hak-kuus",
@@ -25399,8 +36821,10 @@ export default {
         "pun-tar-pää"
     ],
     "uu-ai": [
+        "huu-tais",
         "murs-kain",
         "muu-rain",
+        "muut-tais",
         "suun-tain",
         "tut-kain"
     ],
@@ -25440,10 +36864,16 @@ export default {
         "uk-rai-na",
         "ul-vais-ta"
     ],
+    "uu-ai-aa": [
+        "hurs-kain-kaan",
+        "mut-kais-taa"
+    ],
     "uu-ai-e": [
         "fluns-sai-nen",
         "kuk-kai-nen",
         "kul-tai-nen",
+        "kul-tai-sen",
+        "kul-tai-set",
         "kum-pai-nen",
         "kup-lai-nen",
         "kup-pai-nen",
@@ -25460,16 +36890,23 @@ export default {
         "puus-kai-nen",
         "run-sai-ten",
         "ruuh-kai-nen",
+        "surf-fai-len",
         "suun-tai-nen",
         "suur-pai-ne",
         "tul-vai-nen",
         "tunk-kai-nen",
         "tus-kai-nen",
+        "tus-kai-sen",
+        "tus-kail-les",
         "tuu-mai-nen",
         "uh-mai-nen",
         "us-vai-nen"
     ],
+    "uu-ai-ee": [
+        "murs-kai-meen"
+    ],
     "uu-ai-i": [
+        "huu-tai-sin",
         "puun-tai-mi"
     ],
     "uu-ai-u": [
@@ -25572,6 +37009,7 @@ export default {
         "uh-raus"
     ],
     "uu-au-a": [
+        "kuu-kaut-ta",
         "luu-nau-la",
         "pur-kau-ma",
         "puu-kau-ha",
@@ -25601,14 +37039,33 @@ export default {
         "tup-raut-taa",
         "tur-haut-taa"
     ],
+    "uu-au-e": [
+        "kuu-kau-den"
+    ],
+    "uu-au-ee": [
+        "kuu-kau-teen"
+    ],
     "uu-au-i": [
         "kuu-kau-si",
         "suu-tau-ti"
+    ],
+    "uu-au-ie": [
+        "kuu-kau-sien"
     ],
     "uu-au-o": [
         "kuu-au-to",
         "luu-jau-ho",
         "suu-auk-ko"
+    ],
+    "uu-au-u": [
+        "pur-kau-dun",
+        "suh-tau-dun"
+    ],
+    "uu-au-uu": [
+        "mur-tau-tuu",
+        "suh-tau-tuu",
+        "tur-vau-tuu",
+        "uh-rau-tuu"
     ],
     "uu-au-yö": [
         "pur-kaus-työ"
@@ -25618,43 +37075,104 @@ export default {
     ],
     "uu-e": [
         "buf-fet",
+        "fuc-ked",
+        "gub-be",
         "hur-me",
+        "huu-les",
+        "huu-lest",
+        "huu-let",
         "huu-me",
         "huuh-de",
         "huur-re",
+        "juu-pel",
+        "juu-rel",
         "juu-res",
+        "juu-ret",
+        "kul-je",
+        "kul-jen",
+        "kul-jet",
         "kun-ne",
         "kun-nes",
         "kur-re",
+        "kur-ren",
+        "kuu-delt",
+        "kuu-den",
         "kuu-des",
+        "kuu-dest",
+        "kuu-es",
+        "kuu-le",
+        "kuu-len",
+        "kuu-let",
         "kuu-me",
+        "kuu-sel",
+        "kuu-sen",
+        "kuul-le",
         "lum-me",
         "lus-te",
+        "lut-her",
+        "luu-le",
+        "luu-len",
+        "luu-let",
         "luu-men",
+        "mul-le",
         "mur-he",
         "mur-re",
+        "mur-ret",
         "murs-ke",
         "mus-te",
+        "mut-ten",
+        "mut-tet",
         "muu-ten",
         "nuh-de",
         "nuk-ke",
+        "nur-met",
         "puh-de",
         "pur-je",
+        "pur-ren",
         "pur-se",
+        "pus-ken",
+        "pus-ket",
         "puu-te",
         "puzz-le",
         "ruh-je",
+        "ruu-ben",
         "ruu-men",
+        "spus-seks",
         "suh-de",
+        "suk-set",
         "sul-je",
+        "sul-jen",
+        "sul-jet",
+        "sul-le",
+        "sup-pe",
         "sur-ve",
         "suu-de",
         "suu-re",
+        "suu-relt",
+        "suu-ren",
+        "suu-ret",
         "suu-te",
+        "tul-len",
+        "tun-ge",
+        "tun-gen",
         "tun-ne",
+        "tun-nen",
+        "tun-net",
         "tur-ve",
+        "tuu-le",
+        "tuu-len",
+        "tuu-les",
+        "tuu-let",
+        "tuul-ten",
+        "tuut-te",
         "um-met",
+        "un-ten",
+        "uu-den",
+        "uu-dest",
+        "uu-det",
+        "uu-et",
         "uu-men",
+        "uu-ren",
         "uu-te",
         "uur-re"
     ],
@@ -25667,13 +37185,22 @@ export default {
         "juu-re-va",
         "kuk-ke-a",
         "kul-ke-a",
+        "kul-ke-va",
+        "kul-ke-vat",
         "kum-me-ta",
+        "kur-ke-la",
+        "kuu-le-han",
         "kuu-le-ma",
+        "kuu-le-vas",
         "kuu-me-ta",
         "muh-ke-a",
+        "munk-ke-ja",
         "mus-te-ta",
+        "muu-re-ja",
+        "muu-te-ta",
         "puh-je-ta",
         "pul-le-a",
+        "pul-le-at",
         "pus-ke-a",
         "rus-ke-a",
         "suk-ke-la",
@@ -25683,7 +37210,10 @@ export default {
         "suu-re-ta",
         "tum-me-ta",
         "tun-ke-a",
+        "tun-ne-ta",
         "tun-te-a",
+        "tun-te-ja",
+        "tun-te-vat",
         "tur-pe-a",
         "tuu-he-a",
         "tuu-he-ta",
@@ -25693,33 +37223,71 @@ export default {
         "uut-te-ra"
     ],
     "uu-e-aa": [
+        "huu-de-taan",
+        "kul-je-taan",
+        "kul-ke-maan",
         "kun-ne-kaan",
-        "suk-ke-laan"
+        "kuu-le-maan",
+        "muu-te-taan",
+        "num-me-laa",
+        "puh-ke-aa",
+        "pus-ke-taa",
+        "pus-ke-taan",
+        "rus-ke-aa",
+        "suk-ke-laan",
+        "sul-je-taan",
+        "tun-ne-taan",
+        "tun-te-maan",
+        "tuu-le-maan"
+    ],
+    "uu-e-ai": [
+        "puh-ke-ais"
+    ],
+    "uu-e-e": [
+        "huu-te-let",
+        "kuun-te-le",
+        "kuun-te-len",
+        "sup-re-men",
+        "suu-te-le",
+        "suu-te-len",
+        "suu-te-let"
     ],
     "uu-e-ee": [
-        "mus-te-nee"
+        "huu-te-lee",
+        "kuu-me-nee",
+        "kuun-te-lee",
+        "kuun-te-leen",
+        "mus-te-nee",
+        "suu-te-lee",
+        "tum-me-nee"
     ],
     "uu-e-i": [
+        "bud-je-tist",
         "bunk-ke-ri",
         "duf-fe-li",
         "gul-de-ni",
         "hum-me-ri",
         "hup-pe-li",
+        "huu-le-ni",
         "jump-pe-ri",
         "juu-ke-li",
         "juu-pe-li",
         "klus-te-ri",
         "kul-je-tin",
+        "kul-je-tit",
+        "kul-ke-vi",
         "kum-me-li",
         "kum-pe-li",
         "kun-ne-kin",
         "kut-te-ri",
         "kuuk-ke-li",
+        "kuun-te-lin",
         "luu-se-ri",
         "mum-me-li",
         "mur-me-li",
         "mus-ke-li",
         "mut-te-ri",
+        "num-me-lin",
         "nuu-de-li",
         "puh-ve-li",
         "pul-te-ri",
@@ -25729,14 +37297,19 @@ export default {
         "puu-de-li",
         "puu-te-ri",
         "struu-de-li",
+        "suk-se-ni",
+        "sul-le-kin",
         "sum-me-ri",
         "suu-ve-si",
+        "tum-me-li",
         "tun-ne-li",
+        "tun-te-hin",
         "tuu-le-tin",
         "uk-ke-li",
         "uls-te-ri"
     ],
     "uu-e-ii": [
+        "bunk-ke-riin",
         "kuu-le-miin"
     ],
     "uu-e-o": [
@@ -25755,13 +37328,19 @@ export default {
         "huuh-te-lu",
         "jut-te-lu",
         "kul-je-tus",
+        "kul-ke-nu",
+        "kul-ke-nut",
         "kuun-te-lu",
         "muun-te-lu",
         "nuh-te-lu",
         "run-te-lu",
         "rus-ke-tus",
+        "sul-je-tul",
+        "sul-ke-nut",
         "suu-te-lu",
         "tun-te-mus",
+        "tun-te-nu",
+        "tun-te-nut",
         "tur-me-lu",
         "tur-me-lus",
         "tuu-le-tus",
@@ -25784,14 +37363,42 @@ export default {
     ],
     "uu-ee": [
         "buk-lee",
+        "bun-bee",
         "dub-lee",
         "gur-mee",
+        "juu-reen",
+        "kul-kee",
+        "kuu-lee",
+        "kuu-leeks",
+        "kuu-meen",
+        "luu-lee",
+        "muh-kee",
+        "mur-heen",
+        "mur-heet",
+        "mus-teel",
+        "puh-kee",
+        "pus-kee",
+        "put-keen",
         "puu-see",
+        "rus-kee",
         "suf-lee",
         "suh-teen",
+        "suh-tees",
+        "suh-teest",
+        "suh-teet",
         "suk-see",
+        "sul-kee",
+        "sur-keeks",
+        "suu-reen",
+        "tun-kee",
+        "tun-tee",
+        "tun-teen",
+        "tun-teet",
         "tur-nee",
-        "um-peen"
+        "tuu-lee",
+        "tuu-leen",
+        "um-peen",
+        "uu-teen"
     ],
     "uu-ee-a": [
         "huu-del-la",
@@ -25800,6 +37407,7 @@ export default {
         "kuun-nel-la",
         "kuun-nel-ma",
         "mus-tel-ma",
+        "mus-tel-mat",
         "muu-tel-la",
         "muun-nel-la",
         "muun-nel-ma",
@@ -25809,38 +37417,75 @@ export default {
         "run-nel-la",
         "suu-del-la",
         "suu-del-ma",
+        "suu-rem-man",
+        "suu-res-ta",
         "tuk-kees-sa",
+        "tul-les-sa",
+        "tum-mem-mat",
         "tun-nel-ma",
+        "tun-nel-man",
+        "tun-net-ta",
+        "tun-tees-sa",
         "tur-mel-la",
-        "um-mes-sa"
+        "tuu-les-sa",
+        "tuu-les-ta",
+        "um-mes-sa",
+        "uu-del-ta",
+        "uu-des-sa"
     ],
     "uu-ee-aa": [
+        "hur-met-taan",
+        "huu-del-laan",
         "kul-jet-taa",
+        "kuu-des-taa",
         "kuu-men-taa",
+        "kuun-nel-laan",
         "mus-ten-taa",
+        "muu-ten-kaan",
         "nur-met-taa",
         "pun-ner-taa",
         "rus-ket-taa",
+        "suu-del-laan",
+        "suu-del-maa",
+        "suu-del-maan",
+        "suu-rem-paa",
+        "suu-rem-paan",
         "suu-ren-taa",
+        "suu-ret-kaan",
         "tum-men-taa",
+        "tun-nel-maan",
+        "tur-hem-paa",
         "tur-hen-taa",
         "tuu-hen-taa",
         "tuu-let-taa",
         "uu-den-taa",
+        "uu-des-taa",
         "uu-des-taan"
+    ],
+    "uu-ee-ai": [
+        "tun-net-tais"
     ],
     "uu-ee-au": [
         "jus-tee-raus"
     ],
     "uu-ee-e": [
         "duc-hes-se",
+        "juu-rel-le",
         "kuu-den-nes",
+        "kuu-let-te",
+        "kuun-nel-len",
+        "luu-let-te",
+        "muun-nel-len",
         "suur-per-he",
         "uus-per-he"
     ],
     "uu-ee-ee": [
+        "mur-hee-seen",
+        "suh-tee-seen",
+        "suu-del-leen",
         "tuk-kee-seen",
-        "uu-del-leen"
+        "uu-del-leen",
+        "uu-el-lee"
     ],
     "uu-ee-i": [
         "bud-jet-ti",
@@ -25849,11 +37494,17 @@ export default {
         "jus-tee-ri",
         "kup-let-ti",
         "kuu-des-ti",
+        "kuu-mem-pi",
         "kuu-men-nin",
+        "luu-len-kin",
+        "mur-hee-ni",
         "mus-ket-ti",
+        "muu-ten-ki",
+        "muu-ten-kin",
         "plus-merk-ki",
         "puh-vet-ti",
         "pul-pet-ti",
+        "pus-kee-kin",
         "puu-hel-mi",
         "puu-merk-ki",
         "puu-penk-ki",
@@ -25861,19 +37512,45 @@ export default {
         "puus-tel-li",
         "sub-jek-ti",
         "sub-ret-ti",
+        "suu-rem-pi",
         "suu-res-ti",
         "suu-sek-si",
         "trum-pet-ti",
+        "tuh-mem-pi",
+        "tum-mem-pi",
         "turk-mee-ni",
-        "up-see-ri"
+        "up-see-ri",
+        "uu-dem-pi"
+    ],
+    "uu-ee-ii": [
+        "bud-jet-tiin",
+        "bul-let-tii",
+        "huu-del-tiin",
+        "huu-det-tiin",
+        "kul-jet-tiin",
+        "kuun-nel-tii",
+        "kuun-nel-tiin",
+        "mus-tel-mii",
+        "mus-tem-pii",
+        "muu-tet-tiin",
+        "pul-pet-tiin",
+        "sul-jet-tii",
+        "sul-jet-tiin",
+        "suu-del-tiin",
+        "tum-mem-pii",
+        "tun-nel-mii",
+        "tun-net-tiin"
     ],
     "uu-ee-o": [
         "kuu-len-to",
+        "kuu-let-ko",
         "kuu-mee-ton",
         "nuh-tee-ton",
         "suh-tee-ton",
         "suu-ren-nos",
         "tum-men-nos",
+        "tun-nen-ko",
+        "tun-net-ko",
         "tun-tee-ton",
         "uu-den-nos"
     ],
@@ -25885,6 +37562,7 @@ export default {
         "kuu-men-nus",
         "pun-ner-rus",
         "pur-jeh-dus",
+        "sul-jet-tu",
         "suu-ren-nus",
         "tum-men-nus",
         "tun-net-tu",
@@ -25896,23 +37574,57 @@ export default {
         "tun-net-tuus"
     ],
     "uu-ee-ä": [
+        "kuu-lek-sä",
+        "kuu-let-sä",
         "puu-ken-kä",
         "puu-sep-pä"
     ],
+    "uu-ei": [
+        "duu-nei",
+        "duus-sei",
+        "hunt-tei",
+        "huu-meist",
+        "huu-meit",
+        "huur-teist",
+        "junt-tei",
+        "kun-deist",
+        "mul-lei",
+        "mut-tei",
+        "muu-rei",
+        "muu-vei",
+        "tun-tei",
+        "tun-teit"
+    ],
     "uu-ei-a": [
         "huu-leil-la",
+        "huu-mei-ta",
+        "huu-meil-la",
+        "huu-meis-ta",
         "kul-keil-la",
         "kuu-meil-la",
+        "mun-keis-ta",
+        "mur-hei-ta",
         "puh-keil-la",
+        "pur-jeis-sa",
+        "suh-teis-sa",
         "sur-keil-la",
+        "tul-leis-ta",
         "tun-keil-la",
         "tun-tei-kas",
+        "tun-tei-ta",
         "tun-teil-la",
-        "ur-heil-la"
+        "tun-teis-sa",
+        "tun-teis-ta",
+        "ur-hei-na",
+        "ur-heil-la",
+        "uur-tei-ta"
     ],
     "uu-ei-aa": [
         "mur-heis-saan",
-        "suh-teit-taa"
+        "suh-teit-taa",
+        "sur-kein-kaan",
+        "tun-teil-laan",
+        "tun-teis-taa"
     ],
     "uu-ei-ai": [
         "mur-teit-tain",
@@ -25927,13 +37639,25 @@ export default {
         "hur-mei-nen",
         "huur-tei-nen",
         "kul-keil-le",
+        "kun-deil-le",
         "kuu-mei-nen",
         "mur-hei-nen",
         "sul-kei-nen",
+        "tun-tei-den",
         "uur-tei-nen"
     ],
+    "uu-ei-ee": [
+        "hur-mei-seen",
+        "huur-tei-seen"
+    ],
     "uu-ei-i": [
+        "luu-rei-hin",
         "puu-veit-si"
+    ],
+    "uu-ei-ii": [
+        "mur-hei-siin",
+        "tun-tei-sii",
+        "tun-tei-siin"
     ],
     "uu-ei-o": [
         "lum-peik-ko",
@@ -25951,6 +37675,7 @@ export default {
     ],
     "uu-ei-uu": [
         "tun-teik-kuus",
+        "ur-hei-luu",
         "uur-tei-suus"
     ],
     "uu-eu": [
@@ -25980,47 +37705,73 @@ export default {
         "sul-keuk-siin",
         "tuk-keuk-siin"
     ],
+    "uu-eu-uu": [
+        "sul-keu-tuu"
+    ],
     "uu-i": [
         "bluf-fi",
         "bruns-si",
         "bulk-ki",
+        "bus-hi",
         "bus-si",
+        "bus-sin",
         "buu-mi",
         "buu-ri",
         "druu-si",
         "dum-ping",
+        "dunk-kis",
         "duu-ni",
+        "duu-nin",
+        "duu-nis",
+        "duu-nist",
+        "duu-nit",
         "duu-ri",
+        "duu-rin",
+        "fuc-kin",
+        "fuc-king",
         "fuk-si",
         "fun-kis",
         "funk-kis",
+        "huh-kin",
         "hun-ni",
+        "hun-til",
+        "hun-tis",
         "hunt-ti",
         "hup-sis",
         "hur-ri",
         "hurs-ti",
         "hurt-ti",
         "huu-li",
+        "huu-lin",
         "huu-ri",
         "huu-si",
+        "huu-sin",
+        "huu-sit",
         "huu-ti",
         "huus-si",
+        "juh-li",
         "jul-ki",
         "jul-li",
         "julk-kis",
+        "jun-tin",
         "junt-ti",
         "jup-pi",
         "jur-ri",
+        "jus-si",
         "juu-ri",
         "juut-ti",
         "kluut-ti",
         "kruk-si",
+        "kul-jin",
+        "kul-ki",
         "kul-li",
+        "kul-mil",
         "kul-ti",
         "kult-ti",
         "kum-mi",
         "kum-pi",
         "kun-di",
+        "kun-dit",
         "kup-pi",
         "kur-di",
         "kur-ki",
@@ -26028,33 +37779,59 @@ export default {
         "kur-vi",
         "kurs-si",
         "kus-ki",
+        "kus-kiks",
         "kut-rit",
+        "kuu-lin",
+        "kuu-lit",
+        "kuu-min",
         "kuu-ri",
         "kuu-si",
         "kuut-ti",
         "luh-ti",
         "luk-ki",
         "luk-si",
+        "lun-gi",
         "lun-ki",
         "lun-ni",
         "lunt-ti",
         "lup-pi",
+        "luu-li",
+        "luu-lin",
+        "luu-lis",
+        "luu-lit",
         "luu-ri",
+        "luu-rin",
         "luup-pi",
         "muh-vi",
+        "mul-ki",
+        "mul-kin",
         "mul-li",
         "mum-mi",
+        "mun-kin",
         "munk-ki",
         "mut-si",
+        "mut-sin",
+        "mut-sis",
+        "muu-ki",
         "muu-li",
+        "muu-mi",
         "muu-ri",
+        "muu-rit",
         "muu-si",
+        "muu-tin",
+        "muu-tit",
         "muun-nin",
+        "muut-ki",
+        "muut-ti",
         "nuk-ki",
         "nulk-ki",
         "num-mi",
         "nup-pi",
+        "nur-kist",
         "nur-mi",
+        "nurt-si",
+        "nurt-sil",
+        "nut-hin",
         "puf-fi",
         "puh-ki",
         "puh-ti",
@@ -26063,12 +37840,15 @@ export default {
         "puls-si",
         "pult-ti",
         "pum-mi",
+        "pum-pis",
         "pun-tis",
         "punk-ki",
         "puns-si",
         "punt-ti",
+        "pur-kin",
         "pur-si",
         "purk-ki",
+        "pus-ki",
         "pus-kin",
         "pus-si",
         "put-ki",
@@ -26076,27 +37856,38 @@ export default {
         "ruk-ki",
         "ruk-si",
         "run-di",
+        "run-dit",
         "ruu-hi",
         "ruu-mis",
         "ruu-ti",
         "ruu-vi",
+        "ruu-vit",
         "ruuk-ki",
         "skruu-vi",
         "skunk-ki",
         "skuup-pi",
         "slum-mi",
+        "smut-sig",
         "spurt-ti",
         "strut-si",
         "stuk-ki",
         "suk-si",
         "sul-jin",
         "sump-pi",
+        "sun-ki",
+        "sun-kin",
         "sun-ni",
         "sun-tis",
+        "sund-qvist",
         "sunt-ti",
         "sur-vin",
+        "sus-hi",
         "sut-ki",
+        "sut-kin",
+        "suu-ni",
         "suu-ri",
+        "suu-rin",
+        "suu-si",
         "suu-tin",
         "suun-nin",
         "truk-ki",
@@ -26107,9 +37898,16 @@ export default {
         "tul-li",
         "tulk-ki",
         "tump-pi",
+        "tun-kin",
+        "tun-nin",
+        "tun-nis",
+        "tun-nit",
+        "tun-sin",
         "tun-ti",
+        "tun-tis",
         "tunk-ki",
         "tup-pi",
+        "tur-hil",
         "tur-kis",
         "tur-ri",
         "tur-vin",
@@ -26117,13 +37915,16 @@ export default {
         "turs-ki",
         "tus-kin",
         "tus-si",
+        "tut-kin",
         "tut-si",
         "tut-ti",
         "tuu-bi",
         "tuu-li",
+        "tuu-pi",
         "tuu-ri",
         "tuut-ti",
         "uh-ri",
+        "uh-rin",
         "uk-ki",
         "uk-si",
         "um-pi",
@@ -26132,15 +37933,20 @@ export default {
         "uu-din",
         "uu-hi",
         "uu-ni",
-        "uu-si"
+        "uu-si",
+        "uu-siks"
     ],
     "uu-i-a": [
+        "bul-li-a",
+        "duu-ni-a",
         "funt-si-a",
         "huh-ki-a",
         "hup-si-a",
         "hut-ki-a",
+        "huu-li-a",
         "juh-li-a",
         "juh-li-ja",
+        "juh-li-vat",
         "jurp-pi-a",
         "juu-ri-a",
         "juu-ri-kas",
@@ -26148,9 +37954,12 @@ export default {
         "kuh-ni-a",
         "kuk-ki-a",
         "kul-ki-ja",
+        "kul-mi-a",
         "kul-mi-kas",
         "kun-ni-a",
+        "kun-ni-al",
         "kup-li-a",
+        "kup-li-van",
         "kup-pi-la",
         "kur-ni-a",
         "kur-si-a",
@@ -26160,10 +37969,15 @@ export default {
         "kuu-ri-a",
         "kuuk-ki-a",
         "kuur-ni-ta",
+        "luu-li-vat",
         "luu-ti-a",
         "muk-si-a",
+        "mul-ti-a",
         "mur-ki-na",
+        "mus-ti-a",
         "mut-ki-kas",
+        "mut-si-a",
+        "mut-si-as",
         "nus-si-a",
         "nut-ri-a",
         "nuuh-ki-a",
@@ -26171,16 +37985,21 @@ export default {
         "nuus-ki-ja",
         "puh-ki-a",
         "puh-ki-na",
+        "puk-ki-a",
         "pun-ni-ta",
+        "pur-ki-tat",
         "pus-ki-ja",
         "ruh-ti-nas",
         "ruu-di-kas",
+        "ruu-ti-a",
         "suk-si-a",
         "sul-ki-a",
         "sul-ki-ja",
         "sult-si-na",
         "sump-li-a",
+        "sun-ji-a",
         "suu-di-ta",
+        "suu-ri-a",
         "suu-ri-ma",
         "suu-ti-a",
         "suun-ni-kas",
@@ -26193,6 +38012,7 @@ export default {
         "tul-pi-ta",
         "tul-vi-a",
         "tun-ti-ja",
+        "tur-hi-a",
         "tut-ki-a",
         "tut-ki-ja",
         "tut-ki-va",
@@ -26205,8 +38025,17 @@ export default {
         "uu-si-ja"
     ],
     "uu-i-aa": [
+        "juh-li-aa",
+        "juh-li-maan",
+        "juh-li-taan",
+        "juu-ri-aan",
+        "kul-ki-jaa",
         "kum-pi-kaan",
-        "num-mi-maa"
+        "num-mi-maa",
+        "nurk-ki-aan",
+        "nus-si-maa",
+        "nus-si-taan",
+        "uk-ki-kaan"
     ],
     "uu-i-e": [
         "jul-ki-nen",
@@ -26218,17 +38047,28 @@ export default {
         "suul-li-nen",
         "suun-ni-te",
         "tuu-li-nen",
-        "uu-ti-nen"
+        "tuu-li-sen",
+        "uu-ti-nen",
+        "uu-ti-set"
     ],
     "uu-i-ee": [
         "pus-si-tee"
     ],
     "uu-i-i": [
+        "kul-ki-sin",
         "kum-pi-kin",
         "kuu-ki-vi",
+        "kuu-li-sin",
         "muf-fi-ni",
         "mus-li-mi",
+        "mut-si-ni",
+        "puls-si-ni",
         "sul-fi-di",
+        "sul-ki-si",
+        "tun-ti-sit",
+        "tuu-di-tin",
+        "uu-si-hin",
+        "uu-ti-sis",
         "zucc-hi-ni"
     ],
     "uu-i-ie": [
@@ -26239,8 +38079,10 @@ export default {
         "tul-li-tie"
     ],
     "uu-i-o": [
+        "duu-ni-ton",
         "funk-ti-o",
         "fuu-si-o",
+        "fuu-si-on",
         "hul-pi-lo",
         "hul-pi-o",
         "hult-ti-o",
@@ -26250,8 +38092,10 @@ export default {
         "kuu-si-lo",
         "kuu-si-o",
         "kuu-ti-o",
+        "kuu-ti-on",
         "lum-pi-o",
         "muu-mi-o",
+        "nuuk-si-on",
         "punk-ti-o",
         "pur-ti-lo",
         "put-ki-lo",
@@ -26270,6 +38114,9 @@ export default {
     "uu-i-oi": [
         "pus-si-koi"
     ],
+    "uu-i-oo": [
+        "juh-li-koot"
+    ],
     "uu-i-u": [
         "hur-ji-mus",
         "kum-mi-tus",
@@ -26277,6 +38124,7 @@ export default {
         "kuur-ni-tus",
         "luun-si-ru",
         "mul-li-tus",
+        "nuuh-ki-nu",
         "pun-ni-tus",
         "pus-si-tus",
         "put-ki-tus",
@@ -26287,12 +38135,14 @@ export default {
     "uu-i-uu": [
         "huh-ti-kuu",
         "jul-ki-suus",
+        "jul-ki-suut",
         "juu-ri-puu",
         "kuu-si-puu",
         "puk-si-puu",
         "suul-li-suus",
         "tuk-ki-puu",
         "tup-pi-suu",
+        "tup-pi-suut",
         "tuu-li-suus",
         "uh-ri-puu",
         "um-pi-luu",
@@ -26310,20 +38160,41 @@ export default {
         "um-pi-jää"
     ],
     "uu-ie": [
-        "suur-mies"
+        "juh-lien",
+        "jup-pien",
+        "kuk-kien",
+        "kul-kien",
+        "kul-mien",
+        "kuu-mien",
+        "pul-lien",
+        "suur-mies",
+        "tul-lien",
+        "tum-mien",
+        "tun-tien",
+        "uu-sien"
     ],
     "uu-ie-a": [
         "tut-kiel-ma"
     ],
+    "uu-ie-e": [
+        "suu-pie-lest"
+    ],
     "uu-ie-i": [
+        "fun-kies-tis",
         "puu-lie-si",
         "suu-liek-ki",
         "suu-pie-li",
         "uus-vien-ti"
     ],
+    "uu-ie-ii": [
+        "tut-kiel-mii"
+    ],
     "uu-ie-o": [
         "kurs-sie-ro",
         "kuun-kier-to"
+    ],
+    "uu-ie-u": [
+        "duu-nie-dut"
     ],
     "uu-ie-äi": [
         "juu-rie-läin",
@@ -26331,39 +38202,117 @@ export default {
         "uh-rie-läin"
     ],
     "uu-ii": [
+        "buck-sii",
+        "buu-mii",
+        "cuu-liin",
+        "duu-nii",
+        "duu-niin",
+        "funt-sii",
+        "guc-cii",
         "jus-tiin",
-        "puusp-rii"
+        "juu-riin",
+        "kuk-sii",
+        "kul-mii",
+        "kup-lii",
+        "kur-nii",
+        "kurk-kii",
+        "kuu-mii",
+        "kuul-tii",
+        "luu-riin",
+        "mul-tiin",
+        "mus-tiin",
+        "mut-sii",
+        "nuuh-kii",
+        "puk-kii",
+        "pul-lii",
+        "pul-mii",
+        "pus-siin",
+        "puusp-rii",
+        "ruu-miit",
+        "sluut-tii",
+        "suu-rii",
+        "suun-tiin",
+        "tuk-kii",
+        "tul-tii",
+        "tul-tiin",
+        "tul-vii",
+        "tun-tii",
+        "tun-tiin",
+        "tur-piin",
+        "turk-kii",
+        "tut-kii",
+        "tuu-liin",
+        "tuu-mii",
+        "tuu-rii",
+        "uu-niin",
+        "uu-sii",
+        "uu-siin"
     ],
     "uu-ii-a": [
+        "buut-sil-las",
+        "duu-nis-sa",
+        "duu-nis-ta",
+        "fun-kis-ta",
+        "guc-cil-las",
         "hup-sis-ta",
+        "hurs-til-la",
+        "huu-lil-la",
         "juh-lin-ta",
+        "juh-lis-sa",
         "jul-lik-ka",
         "jur-rik-ka",
+        "jur-ris-sa",
         "jus-tiin-sa",
+        "kul-mil-la",
+        "kul-mil-las",
         "kur-mit-sa",
         "kur-pit-sa",
+        "kuu-mil-la",
         "kuun-lil-ja",
         "kuun-sil-ta",
+        "luu-ris-ta",
         "mul-lik-ka",
+        "mul-lis-tat",
         "murt-sik-ka",
         "mus-tik-ka",
+        "mut-sil-las",
+        "mut-sin-sa",
         "nur-kil-la",
         "nur-mik-ka",
+        "nur-mil-la",
         "puh-kin-ta",
+        "pul-mil-las",
         "pun-nin-ta",
+        "pun-tis-ta",
         "puu-lis-ta",
         "puu-pin-ta",
         "puu-sil-ta",
         "puu-vil-la",
         "rus-tiik-ka",
+        "ruu-miis-sa",
         "ruus-tin-na",
+        "suu-rim-mat",
+        "suu-ris-ta",
+        "suun-nis-tan",
         "suur-riis-ta",
         "tul-kin-ta",
+        "tum-mil-la",
+        "tun-nis-ta",
+        "tun-nis-tan",
+        "tun-nis-tat",
+        "tur-his-ta",
+        "tur-piin-sa",
+        "tur-vis-sas",
+        "tus-kin-pa",
         "tut-kin-ta",
+        "um-mis-tan",
         "up-pis-ta",
         "up-sis-ta",
         "ur-kin-ta",
-        "uu-sin-ta"
+        "uu-nis-sa",
+        "uu-nis-ta",
+        "uu-sin-ta",
+        "uu-sis-ta"
     ],
     "uu-ii-aa": [
         "hur-jis-taa",
@@ -26379,16 +38328,20 @@ export default {
         "kurs-sit-taa",
         "kuu-mil-taan",
         "kuu-mis-saan",
+        "kuun-sil-taa",
         "kuur-nit-taa",
+        "luu-lit-kaan",
         "mul-lis-taa",
         "mul-lit-taa",
         "mut-kis-taa",
         "mut-ris-taa",
         "muu-rit-taa",
+        "nur-kis-saan",
         "puh-dis-taa",
         "pul-lis-taa",
         "pul-tit-taa",
         "puls-kis-taa",
+        "pun-nit-taa",
         "pur-kit-taa",
         "pus-sit-taa",
         "put-kit-taa",
@@ -26398,11 +38351,15 @@ export default {
         "suun-nis-taa",
         "tul-pit-taa",
         "tun-nis-taa",
+        "tun-tii-kaan",
         "tur-kis-taa",
         "tut-kit-taa",
         "tuu-dit-taa",
         "um-mis-taa",
         "uu-dis-taa"
+    ],
+    "uu-ii-aaaa": [
+        "kur-tis-taaaa"
     ],
     "uu-ii-ai": [
         "kul-mit-tain",
@@ -26413,17 +38370,28 @@ export default {
         "sum-mit-tain"
     ],
     "uu-ii-e": [
+        "buck-sil-le",
+        "huu-lil-le",
+        "julk-kik-set",
+        "juu-ril-le",
+        "kuu-lit-te",
+        "mut-sil-le",
         "nur-kil-le",
         "plus-pis-te",
         "puh-dis-te",
+        "ruu-dil-le",
+        "ruu-mii-den",
         "suk-kik-set",
-        "tun-nis-te"
+        "tun-nis-te",
+        "tunk-kin-ne",
+        "uu-tis-ten"
     ],
     "uu-ii-ee": [
         "suun-nil-leen"
     ],
     "uu-ii-i": [
         "budd-his-mi",
+        "kum-min-ki",
         "kum-min-kin",
         "kup-riit-ti",
         "kur-sii-vi",
@@ -26431,6 +38399,7 @@ export default {
         "kuun-sirp-pi",
         "lun-kis-ti",
         "luu-piik-ki",
+        "mul-lis-ti",
         "mus-lii-ni",
         "pub-liik-ki",
         "puh-dis-tin",
@@ -26450,15 +38419,25 @@ export default {
         "tur-bii-ni",
         "tur-nip-si",
         "tur-pii-ni",
-        "ug-ris-ti"
+        "tuu-dit-ti",
+        "tuu-lik-ki",
+        "ug-ris-ti",
+        "uu-sik-si"
+    ],
+    "uu-ii-ii": [
+        "julk-kik-sii",
+        "pun-nit-tiin",
+        "tur-bii-niin"
     ],
     "uu-ii-o": [
+        "hun-nin-ko",
         "juu-ris-to",
         "kuu-sik-ko",
         "kuu-sis-to",
         "luun-siir-to",
         "mun-kis-to",
         "muu-sik-ko",
+        "muu-tin-ko",
         "nur-mik-ko",
         "pus-kik-ko",
         "pus-sik-ko",
@@ -26494,7 +38473,11 @@ export default {
         "mut-kik-kuus",
         "uu-nin-suu"
     ],
+    "uu-ii-ä": [
+        "kuu-lit-sä"
+    ],
     "uu-ii-ää": [
+        "luu-lit-sää",
         "tuu-lis-pää"
     ],
     "uu-iu": [
@@ -26518,13 +38501,19 @@ export default {
     "uu-o": [
         "brut-to",
         "hur-mos",
+        "huu-don",
+        "huu-dot",
         "huu-to",
+        "huu-tos",
         "huul-los",
         "jum-bo",
         "juus-to",
+        "juus-ton",
         "kuk-ko",
         "kul-ho",
+        "kun-no",
         "kun-non",
+        "kun-nos",
         "kun-to",
         "kup-ro",
         "kur-ho",
@@ -26538,19 +38527,30 @@ export default {
         "lup-po",
         "lus-to",
         "luu-lo",
+        "luu-los",
+        "luu-lot",
         "luu-ton",
         "luus-to",
+        "mul-lon",
         "mul-los",
         "mum-mo",
+        "mum-mon",
+        "mum-mos",
+        "mum-mot",
         "mur-ros",
         "mur-to",
+        "muu-ton",
         "muu-tos",
+        "muu-tost",
         "muun-nos",
         "muun-to",
         "muut-to",
         "pul-lo",
+        "pul-lon",
+        "pul-lot",
         "pur-jo",
         "pur-so",
+        "put-ro",
         "put-to",
         "puu-ro",
         "puu-ton",
@@ -26558,27 +38558,41 @@ export default {
         "puuk-ko",
         "puun-to",
         "puus-to",
+        "run-got",
         "run-ko",
         "rus-ko",
         "rus-to",
+        "rus-ton",
         "rut-to",
         "stuk-ko",
         "suht-koht",
         "sul-ho",
+        "sul-lon",
+        "sul-lot",
         "sup-po",
         "sur-vos",
         "suuk-ko",
+        "tuh-dot",
         "tuh-to",
         "tuk-ko",
         "tun-gos",
         "tun-to",
         "tup-po",
         "tur-bo",
+        "tur-pos",
         "tur-so",
+        "tuuk-ko",
+        "tuun-ko",
         "uk-ko",
+        "ul-kon",
+        "ul-vo",
+        "ul-von",
         "un-ho",
+        "up-pos",
         "ur-ho",
         "us-ko",
+        "us-kon",
+        "us-kot",
         "uu-no",
         "uur-ros",
         "uur-to",
@@ -26586,6 +38600,7 @@ export default {
     ],
     "uu-o-a": [
         "huh-to-a",
+        "huu-to-a",
         "huuh-to-a",
         "huuh-to-ja",
         "juus-to-la",
@@ -26594,9 +38609,15 @@ export default {
         "mum-mo-la",
         "mur-jo-a",
         "puh-ko-a",
+        "pul-lo-ja",
+        "pun-to-a",
+        "puu-ko-tan",
+        "puu-ro-a",
         "ruh-jo-a",
         "run-no-a",
+        "rus-to-a",
         "sul-lo-a",
+        "sul-lo-mas",
         "sur-vo-a",
         "suu-so-la",
         "suur-so-ta",
@@ -26605,6 +38626,7 @@ export default {
         "ul-ko-a",
         "ul-ko-na",
         "ul-vo-a",
+        "ul-vo-van",
         "un-ho-la",
         "us-ko-a",
         "us-ko-va"
@@ -26612,7 +38634,11 @@ export default {
     "uu-o-aa": [
         "mur-to-maa",
         "rus-ko-maa",
-        "ul-ko-maa"
+        "ul-ko-maa",
+        "ul-ko-maan",
+        "up-po-aa",
+        "us-ko-kaan",
+        "us-ko-maan"
     ],
     "uu-o-e": [
         "kuk-ko-nen",
@@ -26622,17 +38648,21 @@ export default {
         "pul-lo-te",
         "suuk-ko-nen",
         "tuu-lo-nen",
-        "uk-ko-nen"
+        "uk-ko-nen",
+        "ul-vo-en",
+        "us-ko-en"
     ],
     "uu-o-ee": [
         "ul-ko-nee"
     ],
     "uu-o-i": [
+        "hub-lo-tin",
         "huu-mo-ri",
         "kur-so-ri",
         "pur-so-tin",
         "puu-ko-ri",
-        "tuu-mo-ri"
+        "tuu-mo-ri",
+        "up-po-sin"
     ],
     "uu-o-ie": [
         "mur-to-mies",
@@ -26656,7 +38686,8 @@ export default {
         "rus-ko-tus",
         "suu-ko-pu",
         "tur-vo-tus",
-        "us-ko-mus"
+        "us-ko-mus",
+        "us-ko-nu"
     ],
     "uu-o-uu": [
         "kuu-lo-luu",
@@ -26671,7 +38702,12 @@ export default {
     "uu-oi": [
         "muu-toin",
         "muul-loin",
-        "sur-voin"
+        "sur-voin",
+        "ul-voi",
+        "ul-voin",
+        "us-koi",
+        "us-koin",
+        "us-kois"
     ],
     "uu-oi-a": [
         "frust-roi-da",
@@ -26703,7 +38739,10 @@ export default {
         "ul-koi-nen"
     ],
     "uu-oi-i": [
-        "kul-loin-kin"
+        "kul-loin-kin",
+        "luk-koi-hin",
+        "muul-loin-ki",
+        "us-koi-si"
     ],
     "uu-oi-o": [
         "suun-soit-to",
@@ -26725,20 +38764,42 @@ export default {
         "uk-koi-kä"
     ],
     "uu-oo": [
+        "huu-toon",
         "kun-toon",
+        "luk-koo",
         "luk-koon",
-        "tuk-koon"
+        "mur-joo",
+        "puh-koo",
+        "pul-loo",
+        "puuk-koo",
+        "run-koon",
+        "tuk-koon",
+        "tul-koon",
+        "ul-koo",
+        "ul-voo",
+        "up-poo",
+        "ur-poo",
+        "us-koo",
+        "us-koon"
     ],
     "uu-oo-a": [
         "huuh-don-ta",
         "kun-nol-la",
         "kun-nos-sa",
+        "kuu-los-ta",
+        "muu-tos-ta",
         "puh-kon-ta",
+        "pul-los-sa",
         "puu-nok-sa",
         "puu-poh-ja",
         "puu-soh-va",
+        "puu-ton-ta",
         "sul-lon-ta",
-        "ul-von-ta"
+        "tuk-hol-man",
+        "tun-nos-sa",
+        "ul-von-ta",
+        "up-poo-mas",
+        "ur-pol-ta"
     ],
     "uu-oo-aa": [
         "kun-nos-taa",
@@ -26761,27 +38822,42 @@ export default {
         "uur-ros-taa"
     ],
     "uu-oo-e": [
-        "mur-ros-te"
+        "mur-ros-te",
+        "muu-tok-sen",
+        "muu-tok-set",
+        "tun-gok-ses",
+        "ul-koo-ven",
+        "ul-vot-te"
     ],
     "uu-oo-ee": [
-        "pul-lol-leen"
+        "kuu-lok-keet",
+        "muu-tok-seen",
+        "pul-lol-leen",
+        "tun-gok-seen"
     ],
     "uu-oo-i": [
         "bull-dog-gi",
         "fruk-too-si",
         "huns-vot-ti",
         "huus-hol-li",
+        "kuu-rot-kin",
         "mus-kot-ti",
+        "muu-tok-sist",
         "rust-hol-li",
         "suur-loo-si",
-        "tur-koo-si"
+        "tur-koo-si",
+        "tur-koo-sin",
+        "us-kon-kin"
     ],
     "uu-oo-ii": [
-        "tur-vok-siin"
+        "tur-vok-siin",
+        "us-kot-tiin"
     ],
     "uu-oo-o": [
         "mur-rok-ko",
-        "us-kon-to"
+        "us-kon-non",
+        "us-kon-to",
+        "us-kot-ko"
     ],
     "uu-oo-u": [
         "kun-nos-tus",
@@ -26819,15 +38895,22 @@ export default {
     ],
     "uu-u": [
         "fus-ku",
+        "huh-huh",
         "hul-lu",
+        "hul-luks",
+        "hul-lun",
+        "hul-lut",
+        "hun-nut",
         "hun-tu",
         "hup-pu",
         "hup-su",
         "hut-su",
+        "hut-sun",
         "hut-tu",
         "huu-ru",
         "julk-ku",
         "jun-nu",
+        "jun-nut",
         "jut-ku",
         "jut-tu",
         "juts-ku",
@@ -26843,15 +38926,27 @@ export default {
         "kurk-ku",
         "kurt-tu",
         "kus-kus",
+        "kus-su",
         "kut-su",
+        "kut-sun",
         "kut-tu",
+        "kuu-hun",
         "kuu-lu",
+        "kuu-lun",
+        "kuu-lut",
+        "kuul-lu",
+        "kuul-luks",
+        "kuul-lut",
+        "kuul-tu",
         "luk-sus",
         "lump-pu",
         "lunt-tu",
         "lur-jus",
+        "lus-su",
         "luu-mu",
         "luuk-ku",
+        "luul-lu",
+        "luul-lut",
         "luut-tu",
         "muk-su",
         "mulk-ku",
@@ -26860,11 +38955,17 @@ export default {
         "mur-su",
         "murk-ku",
         "mus-su",
+        "muu-hun",
+        "muu-tu",
+        "muu-tut",
+        "muut-ku",
+        "muut-tu",
         "nul-ju",
         "nup-pu",
         "nut-tu",
         "pul-ju",
         "pul-mu",
+        "pul-sut",
         "pump-pu",
         "pun-nus",
         "punk-ku",
@@ -26872,75 +38973,113 @@ export default {
         "pur-ku",
         "pur-su",
         "pus-ku",
+        "puu-tu",
+        "rum-mut",
         "rum-pu",
         "rut-tu",
+        "ruu-dul",
+        "ruu-dun",
+        "ruu-dus",
+        "ruu-dut",
         "ruu-su",
         "ruu-tu",
         "ruuk-ku",
         "spur-gu",
+        "spur-gut",
         "sul-ku",
         "sulp-pu",
         "sump-pu",
         "sur-ku",
         "sus-su",
         "sut-tu",
+        "suu-hu",
+        "suu-hun",
         "suu-rus",
+        "suu-tu",
+        "suu-tun",
+        "suu-tut",
         "tuh-ru",
         "tuk-ku",
+        "tul-lu",
+        "tul-lut",
+        "tul-tu",
         "tump-pu",
         "tun-ku",
+        "tun-nu",
         "tun-nus",
         "tun-tu",
         "tup-su",
         "tur-ku",
         "tus-su",
         "tut-tu",
+        "uh-huh",
         "uh-ku",
+        "ul-pu",
         "um-pu",
         "ur-pu",
-        "uut-tu"
+        "uut-tu",
+        "whuw-hu"
     ],
     "uu-u-a": [
         "huk-ku-a",
+        "huk-ku-vat",
         "hul-ju-a",
+        "hul-lu-han",
+        "hul-lu-ja",
+        "hul-lu-na",
         "hul-mu-ta",
         "huu-ru-ta",
         "huur-tu-a",
+        "jut-tu-ha",
+        "jut-tu-ja",
         "juur-tu-a",
         "juut-tu-a",
         "kuh-mu-ra",
         "kuk-ku-a",
         "kuk-ku-la",
+        "kuk-ku-lal",
         "kuk-ku-ra",
         "kum-mu-ta",
         "kur-ku-ma",
         "kut-ku-ta",
         "kut-su-a",
         "kut-su-ja",
+        "kut-su-ta",
         "kut-tu-la",
         "kuu-lu-a",
+        "kuu-lu-ta",
+        "kuu-lu-tan",
         "kuu-lu-va",
         "kuu-mu-a",
+        "luu-ku-tan",
         "luu-tu-a",
         "luu-tu-ma",
         "luu-tu-ta",
+        "luuk-ku-ja",
         "muh-ku-ra",
         "mur-tu-a",
         "mur-tu-ma",
+        "mus-su-ta",
         "mus-tu-a",
         "mus-tu-ma",
         "muun-tu-a",
         "muut-tu-a",
         "muut-tu-ja",
         "muut-tu-ma",
+        "muut-tu-van",
+        "muut-tu-vat",
         "nuk-ku-a",
         "nuk-ku-ja",
+        "nuk-ku-va",
+        "nuk-ku-van",
+        "nuk-ku-vat",
         "nur-ku-a",
         "nut-tu-ra",
         "nuu-tu-a",
         "puh-ku-a",
         "pul-pu-ta",
         "pum-pu-ta",
+        "pur-ku-a",
         "pur-pu-ra",
         "pur-su-a",
         "pur-su-ta",
@@ -26952,6 +39091,8 @@ export default {
         "puut-tu-a",
         "rus-ku-a",
         "ruu-du-kas",
+        "ruu-su-a",
+        "ruu-su-ja",
         "suk-ku-la",
         "sut-tu-ra",
         "suut-tu-a",
@@ -26961,32 +39102,65 @@ export default {
         "tun-tu-ma",
         "tun-tu-va",
         "tup-ru-ta",
+        "tur-ku-ja",
         "tur-su-a",
         "tur-su-ta",
         "tur-tu-a",
         "turs-ku-a",
+        "tut-tu-a",
+        "tut-tu-ja",
         "tuu-tu-a",
         "tuul-tu-a",
         "uh-ku-a",
         "un-tu-va",
         "uu-pu-a"
     ],
+    "uu-u-aa": [
+        "huk-ku-maan",
+        "huk-ku-vaan",
+        "kut-su-taan",
+        "kuu-lu-taan",
+        "kuu-lu-vaan",
+        "muu-tu-taan",
+        "muut-tu-maan",
+        "muut-tu-vaa",
+        "nuk-ku-maa",
+        "nuk-ku-maan",
+        "nuk-ku-vaa",
+        "nuk-ku-vaan",
+        "pur-su-aa",
+        "purp-pu-raa",
+        "purp-pu-raan",
+        "puut-tu-maan",
+        "puut-tu-vaa",
+        "suut-tu-maan",
+        "tul-lu-kaa"
+    ],
     "uu-u-e": [
+        "hut-su-jen",
+        "jut-tu-jen",
         "kul-ku-e",
         "kul-ku-nen",
+        "kum-pu-jen",
         "kuu-ku-nen",
         "pul-mu-nen",
         "puu-du-te",
         "ruu-su-ke",
+        "ruu-su-nen",
         "suu-pu-he"
+    ],
+    "uu-u-ee": [
+        "muut-tu-neet"
     ],
     "uu-u-i": [
         "hur-mu-ri",
         "jul-mu-ri",
         "kuh-nu-ri",
         "kul-ku-ri",
+        "kul-ku-rin",
         "kul-mu-ri",
         "pum-pu-li",
+        "pum-pu-lis",
         "pur-pu-ri",
         "purp-pu-ri",
         "pus-ku-ri",
@@ -27001,7 +39175,9 @@ export default {
         "kul-ku-tie"
     ],
     "uu-u-ii": [
-        "kuu-lu-viin"
+        "kuu-lu-viin",
+        "muut-tu-vii",
+        "pum-pu-liin"
     ],
     "uu-u-o": [
         "luu-ku-dos"
@@ -27013,23 +39189,36 @@ export default {
         "jum-pu-tus",
         "jur-nu-tus",
         "juur-ru-tus",
+        "juut-tu-nu",
+        "juut-tu-nut",
         "kut-su-mus",
         "kuu-lu-tus",
         "lut-ku-tus",
+        "luu-ku-tus",
+        "luu-ru-tus",
+        "muut-tu-nu",
+        "nuk-ku-nut",
+        "nuu-tu-nu",
         "prut-ku-tus",
         "puk-su-tus",
         "pul-pu-tus",
         "purs-ku-tus",
         "puu-du-tus",
+        "puu-du-tust",
         "puu-tu-mus",
+        "puu-tu-nu",
         "puus-ku-tus",
+        "puut-tu-nu",
         "rum-mu-tus",
         "ruu-du-tus",
         "ruu-ku-tus",
         "sul-pu-tus",
         "sum-pu-tus",
+        "suu-tu-tus",
         "suut-tu-mus",
+        "suut-tu-nut",
         "tun-nu-tus",
+        "tun-tu-nut",
         "tup-ru-tus",
         "tup-su-tus",
         "tur-ru-tus",
@@ -27047,6 +39236,7 @@ export default {
         "mur-tu-vuus",
         "muut-tu-vuus",
         "ruu-su-puu",
+        "ruu-su-suu",
         "tun-tu-vuus"
     ],
     "uu-u-yö": [
@@ -27054,9 +39244,26 @@ export default {
     ],
     "uu-u-ää": [
         "kruu-nu-pää",
+        "kruu-nu-pään",
         "tup-su-pää"
     ],
+    "uu-ui": [
+        "huk-kui",
+        "hul-luin",
+        "jut-tui",
+        "kut-sui",
+        "kuu-lui",
+        "kuu-luis",
+        "muk-sui",
+        "mur-tui",
+        "mur-tuis",
+        "muu-tuin",
+        "puut-tui",
+        "tun-tui",
+        "tut-tui"
+    ],
     "uu-ui-a": [
+        "huk-kui-vat",
         "kum-puil-la",
         "kup-ruil-la",
         "kuu-lui-sa",
@@ -27070,6 +39277,7 @@ export default {
     ],
     "uu-ui-e": [
         "huu-rui-nen",
+        "jun-nuil-le",
         "kuh-mui-nen",
         "kum-pui-nen",
         "kurt-tui-nen",
@@ -27083,6 +39291,9 @@ export default {
         "suu-suih-ke",
         "tuh-rui-nen",
         "tun-tui-nen"
+    ],
+    "uu-ui-ii": [
+        "hul-luim-pii"
     ],
     "uu-ui-u": [
         "puu-kui-tu"
@@ -27107,7 +39318,8 @@ export default {
         "plus-puo-li",
         "puu-tuo-li",
         "puun-kuo-ri",
-        "suu-puo-li"
+        "suu-puo-li",
+        "uus-vuo-si"
     ],
     "uu-uo-o": [
         "kuu-ruo-ho",
@@ -27118,35 +39330,77 @@ export default {
         "kul-kuoi-keus"
     ],
     "uu-uu": [
+        "huk-kuu",
+        "hul-luu",
         "hul-luus",
+        "hul-muun",
+        "hun-tuun",
         "hup-suus",
         "hur-juus",
+        "huu-ruu",
+        "huul-luus",
         "jul-muus",
+        "jut-tuu",
         "kuk-kuu",
+        "kul-kuun",
         "kur-juus",
+        "kut-suu",
+        "kuu-luu",
         "kuu-muus",
+        "lus-suu",
+        "luut-tuu",
+        "mur-tuu",
         "mus-tuus",
         "mut-ruun",
+        "muut-tuu",
+        "nuk-kuu",
         "nuu-kuus",
         "plus-puu",
+        "puu-tuu",
+        "puut-tuu",
+        "puut-tuun",
+        "run-tuu",
         "rut-tuun",
+        "ruu-tuu",
+        "spur-guu",
         "sup-puun",
         "suu-ruus",
+        "suut-tuu",
         "tuh-muus",
+        "tum-muu",
+        "tun-tuu",
         "tur-huus",
+        "tus-suu",
+        "tus-suun",
+        "tut-tuu",
+        "tut-tuun",
         "tut-tuus",
         "ul-juus",
+        "uu-puu",
         "uu-tuus"
     ],
     "uu-uu-a": [
+        "hul-lul-ta",
+        "hul-luut-ta",
+        "huu-rus-sa",
+        "kur-juut-ta",
+        "kur-kus-sa",
+        "kur-kus-ta",
+        "kur-kus-tas",
         "kut-sun-ta",
+        "luk-sus-ta",
         "lul-luk-ka",
+        "muk-sun-sa",
+        "muk-sus-ta",
         "mut-rul-la",
         "mut-rus-sa",
+        "nuh-jus-ta",
         "puh-kun-ta",
         "pul-luk-ka",
         "pur-nuk-ka",
         "puu-tut-ka",
+        "tun-nus-ta",
+        "tur-huut-ta",
         "tus-suk-ka",
         "ul-puk-ka"
     ],
@@ -27161,6 +39415,7 @@ export default {
         "kut-kut-taa",
         "kut-sut-taa",
         "kuu-lut-taa",
+        "kuu-luu-kaan",
         "luk-sut-taa",
         "lut-kut-taa",
         "luu-kut-taa",
@@ -27170,6 +39425,7 @@ export default {
         "nuu-dut-taa",
         "prut-kut-taa",
         "puk-sut-taa",
+        "pul-luk-kaa",
         "pul-put-taa",
         "purs-kut-taa",
         "puu-dut-taa",
@@ -27191,12 +39447,17 @@ export default {
         "uu-vut-taa"
     ],
     "uu-uu-ai": [
-        "sun-nun-tai"
+        "sun-nun-tai",
+        "sun-nun-tait"
     ],
     "uu-uu-e": [
+        "hul-luu-den",
+        "kuu-muu-den",
+        "luu-kul-le",
         "mut-rul-le",
         "suu-rus-te",
-        "tun-nus-te"
+        "tun-nus-te",
+        "tur-huu-den"
     ],
     "uu-uu-ee": [
         "mut-rul-leen"
@@ -27205,10 +39466,14 @@ export default {
         "hur-lum-hei"
     ],
     "uu-uu-i": [
+        "hul-luk-si",
         "hul-lus-ti",
         "hum-puu-ki",
         "hup-sus-ti",
+        "kruu-nuk-si",
         "kult-tuu-ri",
+        "kurk-kuu-si",
+        "kuu-luu-ki",
         "puu-ruu-vi",
         "puun-juu-ri",
         "struk-tuu-ri",
@@ -27216,23 +39481,31 @@ export default {
         "ud-murt-ti"
     ],
     "uu-uu-ii": [
+        "hul-lum-pii",
+        "mur-rut-tiin",
         "puu-duk-siin",
         "suu-tuk-siin",
         "tur-ruk-siin",
         "uu-vuk-siin"
     ],
     "uu-uu-o": [
+        "kuu-luu-ko",
         "puu-run-ko",
         "puun-run-ko",
         "rum-mus-to",
         "ruu-duk-ko",
-        "ruu-sus-to"
+        "ruu-sus-to",
+        "tun-tuu-ko"
     ],
     "uu-uu-u": [
+        "dum-dum-dum",
+        "kut-sut-tu",
         "kuu-hul-lu",
+        "rum-rum-rum",
         "suu-luuk-ku",
         "suu-rus-tus",
-        "tun-nus-tus"
+        "tun-nus-tus",
+        "wuh-wuh-wuh"
     ],
     "uu-uu-uu": [
         "kuu-hul-luus",
@@ -27244,6 +39517,7 @@ export default {
     ],
     "uu-y": [
         "cur-ry",
+        "kuus-kyt",
         "rug-by"
     ],
     "uu-y-i": [
@@ -27253,7 +39527,8 @@ export default {
         "puu-sy-lys"
     ],
     "uu-yy": [
-        "puu-syy"
+        "puu-syy",
+        "rug-byy"
     ],
     "uu-yy-i": [
         "tur-nyy-ri"
@@ -27274,6 +39549,10 @@ export default {
     ],
     "uu-yö-ö": [
         "puun-työs-tö"
+    ],
+    "uu-ä": [
+        "tuuk-sä",
+        "tuut-sä"
     ],
     "uu-ä-e": [
         "kuun-sä-de",
@@ -27319,8 +39598,14 @@ export default {
     "uuo-e-o": [
         "suuon-te-lo"
     ],
+    "y-a": [
+        "dry-ta"
+    ],
     "y-a-a": [
         "py-ja-ma"
+    ],
+    "y-a-i": [
+        "dy-la-nin"
     ],
     "y-a-o": [
         "dy-na-mo"
@@ -27335,13 +39620,37 @@ export default {
         "ty-ran-nius"
     ],
     "y-e": [
+        "by-ke",
         "by-te",
+        "cly-de",
         "hy-men",
         "hy-ve",
         "ky-se",
+        "sty-le",
         "sy-ke",
         "ty-ven",
+        "y-hel",
+        "y-helt",
+        "y-hen",
+        "y-hes",
+        "y-lel",
         "y-len"
+    ],
+    "y-e-a": [
+        "y-e-ah"
+    ],
+    "y-e-e": [
+        "ky-ke-ne"
+    ],
+    "y-e-ee": [
+        "ky-ke-nee",
+        "ky-se-lee",
+        "ky-se-leen",
+        "sy-ve-nee"
+    ],
+    "y-e-i": [
+        "ky-se-li",
+        "ky-se-lin"
     ],
     "y-e-o": [
         "ly-se-o"
@@ -27359,6 +39668,7 @@ export default {
     "y-e-ä": [
         "jy-ke-vä",
         "ky-e-tä",
+        "ky-te-vät",
         "ky-te-ä",
         "ly-he-tä",
         "ny-re-ä",
@@ -27366,10 +39676,15 @@ export default {
         "sy-ve-tä",
         "ty-pe-käs",
         "ty-pe-rä",
+        "ty-pe-rän",
         "ty-ve-käs",
         "ty-ve-tä",
         "y-le-tä",
         "y-le-vä"
+    ],
+    "y-e-ää": [
+        "sy-le-tään",
+        "y-le-vää"
     ],
     "y-e-ö": [
         "my-ke-rö",
@@ -27378,16 +39693,23 @@ export default {
         "y-le-tön"
     ],
     "y-ee": [
-        "py-ree"
+        "by-geen",
+        "ky-tee",
+        "py-geeks",
+        "py-ree",
+        "ty-pee",
+        "ty-teen"
     ],
     "y-ee-a": [
         "hy-ee-na"
     ],
     "y-ee-e": [
-        "ly-hen-ne"
+        "ly-hen-ne",
+        "y-hel-le"
     ],
     "y-ee-i": [
         "sy-ree-ni",
+        "sy-vem-pi",
         "y-lem-pi"
     ],
     "y-ee-y": [
@@ -27397,19 +39719,29 @@ export default {
         "ty-per-rys",
         "y-len-nys"
     ],
+    "y-ee-yi": [
+        "y-let-tyis"
+    ],
     "y-ee-yy": [
         "ty-vek-kyys",
         "y-lem-myys"
     ],
     "y-ee-ä": [
         "hy-pel-lä",
+        "hy-vet-tä",
+        "ky-mel-lä",
+        "ky-sees-sä",
         "ky-sel-lä",
         "ry-hel-mä",
         "ry-kel-mä",
+        "sy-ket-tä",
         "sy-vem-mäs",
+        "y-hel-lä",
+        "y-hes-sä",
         "y-leen-sä",
         "y-lem-mä",
-        "y-lem-mäs"
+        "y-lem-mäs",
+        "y-let-täs"
     ],
     "y-ee-ää": [
         "hy-ker-tää",
@@ -27420,6 +39752,7 @@ export default {
         "ry-vet-tää",
         "sy-ker-tää",
         "sy-vem-pää",
+        "sy-vem-pään",
         "sy-ven-tää",
         "ty-pet-tää",
         "y-lem-pää",
@@ -27428,7 +39761,8 @@ export default {
     ],
     "y-ei-e": [
         "ky-sei-nen",
-        "y-lei-nen"
+        "y-lei-nen",
+        "y-lei-sen"
     ],
     "y-ei-ie": [
         "y-leis-mies"
@@ -27449,22 +39783,33 @@ export default {
     ],
     "y-ei-ö": [
         "ry-teik-kö",
-        "y-lei-sö"
+        "y-lei-sö",
+        "y-lei-sön"
     ],
     "y-ey": [
         "ny-reys",
         "ty-veys"
     ],
     "y-i": [
+        "gy-mil",
+        "hy-vi",
+        "hy-vil",
         "hy-vin",
         "ky-mi",
         "ky-tis",
+        "py-rin",
         "ry-ti",
         "sy-li",
+        "sy-lis",
         "sy-si",
+        "ty-ri",
+        "ty-rin",
         "ty-vi",
         "y-din",
         "y-lin"
+    ],
+    "y-i-a": [
+        "ly-di-ga"
     ],
     "y-i-e": [
         "hy-vi-ke",
@@ -27473,9 +39818,15 @@ export default {
         "y-li-set",
         "y-li-te"
     ],
+    "y-i-ee": [
+        "y-ti-mee",
+        "y-ti-meen"
+    ],
     "y-i-i": [
         "py-hi-sin",
-        "sy-fi-lis"
+        "sy-fi-lis",
+        "y-ri-tin",
+        "y-ri-tit"
     ],
     "y-i-y": [
         "hy-vi-tys",
@@ -27494,6 +39845,7 @@ export default {
         "hy-mi-nä",
         "hy-ri-nä",
         "hy-ti-nä",
+        "hy-vi-ä",
         "jy-li-nä",
         "jy-mi-nä",
         "jy-ri-nä",
@@ -27504,11 +39856,18 @@ export default {
         "py-ki-ä",
         "ry-ki-ä",
         "ry-mi-nä",
+        "ry-mi-näl",
         "ry-ti-nä",
         "sy-si-ä",
+        "sy-vi-ä",
         "ty-ri-ä",
         "ty-ti-nä",
-        "y-ni-nä"
+        "y-li-tät",
+        "y-ni-nä",
+        "y-ri-tä",
+        "y-ri-tän",
+        "y-ri-täs",
+        "y-ri-tät"
     ],
     "y-i-ää": [
         "ty-vi-pää"
@@ -27518,19 +39877,34 @@ export default {
         "my-ki-ö",
         "y-li-ö"
     ],
+    "y-ii": [
+        "hy-vii",
+        "ny-kiin",
+        "sty-lii",
+        "sy-liin",
+        "ty-mii",
+        "ty-rii"
+    ],
     "y-ii-a": [
         "fy-siik-ka",
         "ly-riik-ka"
     ],
     "y-ii-e": [
+        "ky-lil-le",
         "y-lit-se"
     ],
     "y-ii-ee": [
         "hy-vil-leen"
     ],
     "y-ii-i": [
+        "hy-vin-kin",
         "py-riit-ti",
-        "py-tin-ki"
+        "py-tin-ki",
+        "sy-lii-ni",
+        "sy-lii-si"
+    ],
+    "y-ii-ii": [
+        "hy-vik-sii"
     ],
     "y-ii-uu": [
         "y-din-luu",
@@ -27551,13 +39925,18 @@ export default {
         "jy-mis-tä",
         "jy-ris-tä",
         "jy-tis-tä",
+        "ky-lil-lä",
         "py-rin-tä",
         "ry-mis-tä",
         "ry-tis-tä",
         "sy-kin-tä",
+        "sy-liin-sä",
+        "sy-lis-sä",
+        "ty-kil-lä",
         "ty-tis-tä",
         "y-lim-mä",
         "y-lim-mäs",
+        "y-lim-mäst",
         "y-nis-tä"
     ],
     "y-ii-äi": [
@@ -27572,12 +39951,15 @@ export default {
         "jy-ris-tää",
         "jy-tis-tää",
         "jy-vit-tää",
+        "ly-him-pään",
         "ly-tis-tää",
         "my-kis-tää",
         "py-hit-tää",
         "ry-mis-tää",
         "ry-pis-tää",
         "ry-tis-tää",
+        "sy-lis-sään",
+        "sy-vim-pään",
         "ty-kit-tää",
         "ty-pis-tää",
         "y-lis-tää",
@@ -27593,6 +39975,7 @@ export default {
         "py-ton"
     ],
     "y-o-i": [
+        "gly-ko-li",
         "ly-so-li",
         "py-lo-ni",
         "sy-no-di"
@@ -27604,32 +39987,58 @@ export default {
         "ky-bor-gi",
         "psy-koo-si",
         "sy-nop-sis",
-        "tsy-goot-ti"
+        "tsy-goot-ti",
+        "y-or-kin",
+        "y-or-kis"
+    ],
+    "y-oo-ii": [
+        "y-or-kiin"
+    ],
+    "y-ou": [
+        "y-our",
+        "y-ou´s"
+    ],
+    "y-ou-e": [
+        "y-our-self"
     ],
     "y-y": [
         "hy-my",
+        "hy-myt",
+        "hy-pyn",
         "jy-ly",
         "jy-my",
         "jy-ry",
         "jy-ty",
         "ky-ky",
         "ky-ly",
+        "ky-sy",
+        "ky-syn",
+        "ky-syt",
+        "ky-vyn",
         "ly-hyt",
         "ly-ly",
         "my-ky",
+        "ny-pyn",
         "py-ry",
+        "py-sy",
+        "py-syn",
+        "py-syt",
         "ry-my",
         "ry-sy",
         "sy-lys",
-        "ty-ly"
+        "sy-tytt",
+        "ty-ly",
+        "ty-py"
     ],
     "y-y-e": [
+        "ly-hy-eks",
         "sy-ty-ke"
     ],
     "y-y-ee": [
         "ly-hy-een"
     ],
     "y-y-i": [
+        "ny-ky-sin",
         "sy-ty-tin"
     ],
     "y-y-ui": [
@@ -27637,7 +40046,9 @@ export default {
     ],
     "y-y-y": [
         "ky-sy-mys",
+        "ky-sy-nyt",
         "ny-ky-tys",
+        "py-sy-ny",
         "ry-py-tys",
         "sy-ty-tys",
         "ty-ky-tys"
@@ -27647,10 +40058,12 @@ export default {
     ],
     "y-y-ä": [
         "hy-my-tä",
+        "hy-my-ä",
         "jy-ry-tä",
         "ky-sy-jä",
         "ky-sy-mä",
         "ky-sy-vä",
+        "ky-sy-vän",
         "ky-sy-ä",
         "ky-vy-käs",
         "ly-my-tä",
@@ -27658,26 +40071,52 @@ export default {
         "ny-py-lä",
         "py-ry-tä",
         "py-sy-vä",
+        "py-sy-väs",
+        "py-sy-vät",
         "py-sy-ä",
-        "ry-my-tä"
+        "ry-my-tä",
+        "sy-ty-tän"
     ],
     "y-y-ää": [
+        "ky-sy-mää",
         "ny-ky-jään",
-        "ny-ky-ään"
+        "ny-ky-ää",
+        "ny-ky-ään",
+        "py-sy-mään",
+        "py-sy-tään",
+        "py-sy-vää"
     ],
     "y-y-ö": [
         "ky-vy-tön"
+    ],
+    "y-yi": [
+        "ky-syi",
+        "ky-syin",
+        "ky-syit",
+        "py-syi",
+        "py-syis"
     ],
     "y-yi-a": [
         "py-ryil-ma"
     ],
     "y-yi-e": [
+        "hy-myi-le",
+        "hy-myi-len",
+        "hy-myil-len",
         "ny-kyi-nen",
         "py-ryi-nen",
         "sy-vyi-nen"
     ],
+    "y-yi-ee": [
+        "hy-myi-lee"
+    ],
     "y-yi-i": [
-        "ny-kyi-sin"
+        "ky-syi-sit",
+        "ny-kyi-sin",
+        "py-syi-sin"
+    ],
+    "y-yi-ii": [
+        "ny-kyi-siin"
     ],
     "y-yi-y": [
         "hy-myi-ly"
@@ -27690,28 +40129,43 @@ export default {
         "hy-myil-lä",
         "ly-myil-lä"
     ],
+    "y-yi-ää": [
+        "hy-myil-lään"
+    ],
     "y-yy": [
+        "hy-myyn",
         "hy-vyys",
+        "ky-syy",
         "ly-hyys",
         "ly-syyn",
+        "ny-kyy",
         "py-hyys",
+        "py-syy",
         "sy-vyys",
         "ty-lyys"
     ],
     "y-yy-i": [
         "ty-lys-ti"
     ],
+    "y-yy-ii": [
+        "ky-syt-tii",
+        "ky-syt-tiin"
+    ],
     "y-yy-y": [
+        "py-syt-ty",
         "sy-vyy-tys"
     ],
     "y-yy-yy": [
         "ky-vyk-kyys"
     ],
     "y-yy-ä": [
+        "hy-mys-tä",
         "ky-syn-tä",
         "ly-sys-sä",
         "ly-tys-sä",
+        "my-tys-sä",
         "ny-pyk-kä",
+        "py-tys-sä",
         "ty-pyk-kä"
     ],
     "y-yy-ää": [
@@ -27730,22 +40184,39 @@ export default {
     "y-ä": [
         "hy-nä",
         "hy-vä",
+        "hy-vält",
+        "hy-vän",
+        "hy-väst",
+        "hy-vät",
         "jy-rä",
         "jy-tä",
         "jy-vä",
+        "khy-ä",
+        "ky-bä",
+        "ky-bäl",
+        "ky-bäst",
         "ky-lä",
+        "ky-län",
         "ky-nä",
+        "ky-näl",
+        "ky-nän",
+        "ky-tät",
         "ny-sä",
         "py-hä",
+        "py-hän",
         "py-kä",
         "ry-päs",
         "ry-sä",
         "ry-väs",
         "sy-dän",
+        "sy-dänt",
         "sy-vä",
+        "sy-väl",
+        "sy-vät",
         "ty-päs",
         "ty-rä",
-        "ty-tär"
+        "ty-tär",
+        "ty-tärt"
     ],
     "y-ä-aa": [
         "y-lä-maa"
@@ -27753,10 +40224,20 @@ export default {
     "y-ä-e": [
         "hy-vä-nen",
         "jy-vä-nen",
-        "ry-pä-le"
+        "ky-sä-sen",
+        "ry-pä-le",
+        "sy-dä-men",
+        "sy-dä-mes"
+    ],
+    "y-ä-ee": [
+        "sy-dä-mee",
+        "sy-dä-meen",
+        "sy-dä-mees"
     ],
     "y-ä-i": [
-        "y-hä-ti"
+        "py-sä-kin",
+        "y-hä-ti",
+        "y-sä-rin"
     ],
     "y-ä-ie": [
         "ky-lä-tie",
@@ -27776,6 +40257,7 @@ export default {
         "hy-lä-tä",
         "hy-pä-tä",
         "hy-vä-käs",
+        "hy-vä-näs",
         "jy-dä-tä",
         "jy-rä-tä",
         "ky-hä-tä",
@@ -27790,6 +40272,7 @@ export default {
         "y-lä-vä"
     ],
     "y-ä-ää": [
+        "ky-hä-tään",
         "y-lä-pää"
     ],
     "y-äi-a": [
@@ -27797,11 +40280,17 @@ export default {
         "y-läil-ma"
     ],
     "y-äi-e": [
+        "hy-väil-len",
         "jy-väi-nen",
         "py-häi-nen"
     ],
+    "y-äi-ee": [
+        "hy-väi-lee",
+        "ky-räi-lee"
+    ],
     "y-äi-i": [
-        "py-häi-sin"
+        "py-häi-sin",
+        "y-häi-dit"
     ],
     "y-äi-y": [
         "hy-räi-ly",
@@ -27846,6 +40335,9 @@ export default {
     "y-äy-y": [
         "py-säy-tys"
     ],
+    "y-äy-ä": [
+        "py-säy-tä"
+    ],
     "y-äy-ää": [
         "jy-mäyt-tää",
         "jy-räyt-tää",
@@ -27854,8 +40346,16 @@ export default {
         "ry-säyt-tää"
     ],
     "y-ää": [
+        "hy-nään",
+        "hy-vää",
+        "hy-vään",
+        "jy-rää",
         "jy-tää",
         "ky-lään",
+        "py-hää",
+        "sy-dään",
+        "sy-sää",
+        "sy-vää",
         "sy-vään"
     ],
     "y-ää-aa": [
@@ -27877,6 +40377,9 @@ export default {
     "y-ää-ie": [
         "ky-län-mies"
     ],
+    "y-ää-ii": [
+        "ty-kät-tiin"
+    ],
     "y-ää-uu": [
         "sy-dän-puu"
     ],
@@ -27884,11 +40387,14 @@ export default {
         "hy-mäh-dys",
         "hy-päh-dys",
         "hy-räh-dys",
+        "hy-väk-sy",
         "jy-mäh-dys",
         "jy-räh-dys",
         "jy-säh-dys",
         "my-häh-dys",
         "py-räh-dys",
+        "py-säh-dy",
+        "py-säh-dyn",
         "py-säh-dys",
         "py-äl-lys",
         "ry-mäh-dys",
@@ -27896,12 +40402,24 @@ export default {
         "sy-käh-dys",
         "y-näh-dys"
     ],
+    "y-ää-yi": [
+        "py-säh-dyin",
+        "py-säh-tyi"
+    ],
+    "y-ää-yy": [
+        "hy-väk-syy",
+        "py-säh-tyy"
+    ],
     "y-ää-ä": [
+        "hy-mäh-dä",
+        "hy-väl-tä",
         "hy-vän-sä",
         "ky-läs-sä",
         "ky-läs-tä",
         "my-räk-kä",
         "ry-täk-kä",
+        "sy-dän-tä",
+        "sy-dän-täs",
         "sy-väl-lä",
         "sy-väl-tä",
         "sy-väs-sä",
@@ -27921,7 +40439,9 @@ export default {
         "py-äl-tää",
         "ry-mäh-tää",
         "ry-säh-tää",
+        "sy-dän-tään",
         "sy-käh-tää",
+        "ty-tär-tään",
         "y-näh-tää"
     ],
     "y-ää-ö": [
@@ -27935,7 +40455,13 @@ export default {
         "ry-tö",
         "ty-kö",
         "ty-pö",
+        "ty-tön",
+        "ty-töst",
+        "ty-töt",
         "y-lös"
+    ],
+    "y-ö-e": [
+        "y-gö-sel"
     ],
     "y-ö-y": [
         "ky-dö-tys"
@@ -27944,11 +40470,24 @@ export default {
         "ty-kö-nä",
         "ty-kö-ä"
     ],
+    "y-öi": [
+        "ty-töil"
+    ],
+    "y-öi-e": [
+        "ty-töil-le"
+    ],
     "y-öy-i": [
         "y-pöyk-sin"
     ],
+    "y-öö-e": [
+        "ty-töl-le"
+    ],
     "y-öö-ui": [
         "y-lös-suin"
+    ],
+    "y-öö-ä": [
+        "ty-töl-lä",
+        "ty-tös-tä"
     ],
     "y-öö-äi": [
         "y-lös-päin"
@@ -27983,19 +40522,29 @@ export default {
     "yi-y-ö": [
         "lyi-jy-tön"
     ],
+    "yi-yy": [
+        "lyi-jyy"
+    ],
     "yi-yy-ää": [
         "lyi-jyt-tää"
     ],
     "yi-ä": [
         "nyin-tä",
-        "ryin-tä"
+        "ryin-tä",
+        "syi-tä",
+        "syis-tä"
     ],
     "yi-ää": [
         "ryit-tää"
     ],
+    "yy-": [
+        "nygå-rd",
+        "tytr-tn"
+    ],
     "yy-a": [
         "byg-ga",
         "fyrk-ka",
+        "fys-sas",
         "kryp-ta",
         "kys-ta",
         "lym-fa",
@@ -28014,12 +40563,17 @@ export default {
         "syys-sa-de"
     ],
     "yy-a-i": [
+        "byg-ga-sin",
         "kyyp-pa-ri"
     ],
     "yy-aa": [
+        "styy-laa",
+        "synk-kaa",
         "synk-kaan"
     ],
     "yy-aa-a": [
+        "kyy-naa-ma",
+        "kyy-naa-mat",
         "syn-kas-sa",
         "syys-hal-la"
     ],
@@ -28046,16 +40600,21 @@ export default {
         "syys-kau-si"
     ],
     "yy-e": [
+        "cyp-ress",
         "hyl-je",
         "hyrs-ke",
         "hyy-de",
         "jys-ke",
         "jyt-ke",
         "kyl-jes",
+        "kyl-jest",
         "kym-men",
+        "kyn-net",
         "kyn-te",
+        "kyn-tes",
         "kyy-nel",
         "lyh-de",
+        "nyt-te",
         "nyt-ten",
         "nyyh-ke",
         "psyy-ke",
@@ -28063,10 +40622,15 @@ export default {
         "pyy-he",
         "rys-ke",
         "ryt-ke",
+        "syl-jen",
         "syy-te",
         "tyrs-ke",
+        "tyy-nen",
         "tyy-ten",
+        "yh-de",
+        "yh-den",
         "yh-des",
+        "yh-det",
         "yl-le"
     ],
     "yy-e-e": [
@@ -28074,15 +40638,33 @@ export default {
         "kym-me-nes",
         "kyy-ne-le"
     ],
+    "yy-e-ee": [
+        "hyp-pe-lee",
+        "kyl-me-nee",
+        "kyy-ne-leen",
+        "kyy-ne-leet",
+        "synk-ke-nee"
+    ],
+    "yy-e-ei": [
+        "kyy-ne-leit"
+    ],
     "yy-e-i": [
         "flyy-ge-li",
         "gryn-de-ri",
         "kyn-te-li",
         "kynt-te-li",
+        "kyy-ne-lin",
         "lys-te-ri",
+        "psyy-ke-ni",
         "sys-te-ri",
+        "sys-te-rin",
         "tryf-fe-li",
-        "tyt-te-li"
+        "tyt-te-li",
+        "yl-le-ni"
+    ],
+    "yy-e-ii": [
+        "kyy-ne-lii",
+        "kyy-ne-liin"
     ],
     "yy-e-y": [
         "hyp-pe-ly",
@@ -28113,13 +40695,18 @@ export default {
         "tyl-pe-tä",
         "tyl-se-tä",
         "tym-pe-ä",
+        "tyy-ne-nä",
         "vyyh-de-tä",
         "yh-de-tä",
+        "yh-te-nä",
         "yl-pe-ä",
         "yn-se-ä",
         "yr-me-ä"
     ],
     "yy-e-ää": [
+        "kyl-ve-tään",
+        "kyn-ne-tään",
+        "pyy-de-tään",
         "yh-te-nään"
     ],
     "yy-e-ö": [
@@ -28129,15 +40716,30 @@ export default {
         "nyn-ne-rö",
         "tyl-le-rö"
     ],
+    "yy-e-öö": [
+        "syl-ke-kööt"
+    ],
     "yy-ee": [
         "hynt-teet",
+        "kyl-keen",
+        "kyl-pee",
+        "kyt-kee",
         "rynt-teet",
-        "yh-teen"
+        "yh-tee",
+        "yh-teen",
+        "yl-pee",
+        "yl-peen",
+        "yl-peet"
+    ],
+    "yy-ee-e": [
+        "kyy-nel-ten",
+        "yh-del-le"
     ],
     "yy-ee-ee": [
         "kyl-jel-leen"
     ],
     "yy-ee-i": [
+        "kyl-mem-pi",
         "mys-tee-ri",
         "nym-fet-ti",
         "nyt-tem-min",
@@ -28147,7 +40749,12 @@ export default {
         "sys-tee-mi",
         "syyd-ves-ti",
         "tyy-nes-ti",
+        "yh-dek-si",
+        "yh-den-kin",
         "yh-des-ti"
+    ],
+    "yy-ee-ii": [
+        "hyl-jek-sii"
     ],
     "yy-ee-u": [
         "syys-heh-ku"
@@ -28161,8 +40768,13 @@ export default {
         "syy-tet-ty",
         "tyh-jen-nys"
     ],
+    "yy-ee-yy": [
+        "tyh-jen-tyy"
+    ],
     "yy-ee-ä": [
+        "kym-men-tä",
         "kyt-ken-tä",
+        "myy-nee-nä",
         "nyl-jen-tä",
         "nys-ter-mä",
         "pyy-del-lä",
@@ -28174,7 +40786,9 @@ export default {
         "yh-dek-säs",
         "yh-del-mä",
         "yh-des-sä",
-        "yh-teen-sä"
+        "yh-des-tä",
+        "yh-teen-sä",
+        "yl-pee-nä"
     ],
     "yy-ee-äi": [
         "kyl-jek-käin"
@@ -28196,16 +40810,30 @@ export default {
         "tyh-men-tää",
         "tyl-pen-tää",
         "tyl-sen-tää",
-        "yh-den-tää"
+        "yh-den-tää",
+        "yh-teen-kään"
     ],
     "yy-ee-ö": [
         "pyy-tee-tön"
+    ],
+    "yy-ei": [
+        "kymp-pei",
+        "tyy-lei",
+        "yh-teist"
     ],
     "yy-ei-aa": [
         "yh-teis-maa"
     ],
     "yy-ei-e": [
-        "yh-tei-nen"
+        "yh-tei-nen",
+        "yh-tei-sen",
+        "yh-tei-set"
+    ],
+    "yy-ei-ee": [
+        "yh-tei-seen"
+    ],
+    "yy-ei-i": [
+        "yh-tei-sist"
     ],
     "yy-ei-u": [
         "syys-lei-mu"
@@ -28222,6 +40850,11 @@ export default {
     ],
     "yy-ei-ä": [
         "nyrk-keil-lä",
+        "nyy-meil-tä",
+        "tyy-leil-lä",
+        "yh-teis-tä",
+        "yl-pei-nä",
+        "yl-pei-tä",
         "yl-peil-lä"
     ],
     "yy-ei-äi": [
@@ -28245,11 +40878,16 @@ export default {
         "yn-seys",
         "yr-meys"
     ],
+    "yy-ey-e": [
+        "yh-tey-den"
+    ],
     "yy-ey-y": [
         "yh-tey-tys"
     ],
     "yy-ey-ä": [
-        "kyt-key-mä"
+        "kyt-key-mä",
+        "yh-teyt-tä",
+        "yl-peyt-tä"
     ],
     "yy-ey-ää": [
         "tym-peyt-tää",
@@ -28265,12 +40903,16 @@ export default {
         "krys-si",
         "kyl-ki",
         "kyl-lin",
+        "kyl-tis",
         "kylt-ti",
+        "kym-pin",
         "kym-ri",
         "kymp-pi",
         "kyn-si",
+        "kyn-sin",
         "kyp-si",
         "kyt-kin",
+        "kyy-dis",
         "kyy-ti",
         "kyyp-pi",
         "lys-ti",
@@ -28283,7 +40925,13 @@ export default {
         "myyn-ti",
         "myyt-ti",
         "nym-fi",
+        "nyr-kin",
+        "nyr-kit",
         "nyrk-ki",
+        "nyt-ki",
+        "nyt-kin",
+        "nyy-tit",
+        "nyyh-kin",
         "nyyt-ti",
         "plyy-mi",
         "plyy-si",
@@ -28291,6 +40939,8 @@ export default {
         "pys-ti",
         "pys-tis",
         "pyy-hin",
+        "pyy-kit",
+        "pyy-sin",
         "pyyk-ki",
         "pyyn-ti",
         "ryh-ti",
@@ -28302,15 +40952,24 @@ export default {
         "syk-li",
         "syl-ki",
         "symp-pis",
+        "syn-kin",
         "syn-ti",
         "syy-ni",
+        "syyk-si",
+        "tyh-jin",
+        "tyh-min",
         "tyk-ki",
         "tyl-li",
         "typ-pi",
         "tyr-ni",
         "tyt-ti",
         "tyy-li",
+        "tyy-lil",
+        "tyy-lin",
+        "tyy-list",
+        "tyy-lit",
         "tyy-ni",
+        "tyy-pit",
         "tyy-ris",
         "tyyn-ni",
         "tyyp-pi",
@@ -28318,16 +40977,20 @@ export default {
         "vyyh-ti",
         "yk-si",
         "yk-sin",
-        "yrt-ti"
+        "yrt-ti",
+        "ys-ki",
+        "ys-kin"
     ],
     "yy-i-a": [
         "tyys-si-ja"
     ],
     "yy-i-aa": [
-        "ryy-ti-maa"
+        "ryy-ti-maa",
+        "syy-ri-aan"
     ],
     "yy-i-e": [
         "fyy-si-nen",
+        "kryp-ti-nen",
         "kyy-ni-nen",
         "lyy-ri-nen",
         "mys-ti-nen",
@@ -28338,26 +41001,37 @@ export default {
         "syk-li-nen",
         "syn-ti-nen",
         "syyl-li-nen",
+        "syyl-li-sen",
+        "syyl-li-set",
         "tyy-li-nen",
-        "tyyp-pi-nen"
+        "tyyp-pi-nen",
+        "tyyp-pi-sen",
+        "tyyp-pi-set"
     ],
     "yy-i-ee": [
         "yrt-ti-tee"
     ],
     "yy-i-i": [
-        "hyb-ri-di"
+        "hyb-ri-di",
+        "pyy-ni-kin",
+        "syn-ti-si"
     ],
     "yy-i-ie": [
         "kyy-ti-mies",
         "myyn-ti-mies",
         "tyk-ki-mies"
     ],
+    "yy-i-o": [
+        "fyy-si-kon"
+    ],
     "yy-i-uu": [
-        "kyl-ki-luu"
+        "kyl-ki-luu",
+        "kyl-ki-luut"
     ],
     "yy-i-y": [
         "kyy-di-tys",
         "pyr-ki-mys",
+        "pyr-ki-ny",
         "pyy-ki-tys",
         "ryh-mi-tys",
         "ryt-mi-tys",
@@ -28387,15 +41061,19 @@ export default {
         "jys-ki-nä",
         "jys-ki-ä",
         "kyk-ki-ä",
+        "kyl-mi-ä",
         "kyl-pi-jä",
+        "kymp-pi-ä",
         "kyn-si-käs",
         "kyn-si-ä",
         "kynt-ti-lä",
+        "kynt-ti-lät",
         "kyy-di-tä",
         "kyy-ti-ä",
         "kyyk-ki-ä",
         "lyk-ki-ä",
         "lys-ti-käs",
+        "myk-ki-ä",
         "myl-vi-nä",
         "myl-vi-ä",
         "nyn-ni-ä",
@@ -28416,17 +41094,26 @@ export default {
         "ryy-si-ä",
         "syk-ki-ä",
         "syr-ji-ä",
+        "syy-li-ä",
+        "tyh-ji-nä",
+        "tyh-ji-ä",
+        "tyh-mi-nä",
         "tym-pi-ä",
         "tyrk-ki-ä",
         "tyrs-ki-nä",
         "tyrs-ki-ä",
         "tyy-li-käs",
+        "tyy-li-ä",
         "vyyh-ti-ä",
         "yh-ti-käs",
+        "yk-si-näs",
         "ys-ki-nä",
         "ys-ki-ä"
     ],
     "yy-i-ää": [
+        "kyn-si-ään",
+        "pyy-hi-tään",
+        "yk-si-kään",
         "yk-si-nään"
     ],
     "yy-i-ö": [
@@ -28445,13 +41132,43 @@ export default {
     "yy-i-öy": [
         "yk-si-löys"
     ],
+    "yy-ie": [
+        "tyh-jien"
+    ],
     "yy-ie-o": [
         "myyn-tieh-to",
         "syys-kier-ros"
     ],
     "yy-ii": [
+        "flyys-sii",
+        "hyk-siin",
+        "kyk-kii",
+        "kyl-lii",
+        "kyl-mii",
+        "kyl-miin",
+        "kyn-sii",
+        "kyy-tiin",
+        "myy-tiin",
+        "nyp-pii",
+        "nyrk-kii",
+        "pyr-kii",
+        "pyyh-kii",
+        "ryh-miin",
+        "ryn-nii",
+        "ryt-mii",
+        "ryt-miin",
+        "ryy-nii",
+        "syk-kii",
+        "syk-lii",
+        "syl-liin",
+        "tyh-jii",
         "tyh-jiin",
-        "yk-siin"
+        "tyh-mii",
+        "tyy-lii",
+        "tyy-liin",
+        "tyyp-pii",
+        "yk-siin",
+        "ys-kii"
     ],
     "yy-ii-a": [
         "mys-tiik-ka",
@@ -28460,6 +41177,7 @@ export default {
         "syys-vil-ja"
     ],
     "yy-ii-e": [
+        "pyy-him-me",
         "yh-dis-te"
     ],
     "yy-ii-ee": [
@@ -28467,12 +41185,20 @@ export default {
         "tyh-jil-leen",
         "yk-sik-seen"
     ],
+    "yy-ii-ei": [
+        "yk-sin-tein"
+    ],
     "yy-ii-i": [
+        "kyl-lik-ki",
         "kyl-lik-si",
         "kys-tiit-ti",
+        "kyy-tii-ni",
+        "pyl-lis-tit",
+        "pyy-nik-ki",
         "stryk-nii-ni",
         "syy-lin-ki",
-        "syy-tin-ki"
+        "syy-tin-ki",
+        "tyl-sik-si"
     ],
     "yy-ii-o": [
         "fyy-sik-ko",
@@ -28502,12 +41228,29 @@ export default {
         "tyy-lik-kyys"
     ],
     "yy-ii-ä": [
+        "fyy-sis-tä",
         "hyl-jin-tä",
         "jyr-sin-tä",
+        "kyl-jis-tä",
+        "kyn-sil-lä",
+        "kyt-kin-tä",
+        "kyy-dis-sä",
+        "kyy-dis-tä",
+        "lyy-ris-tä",
         "myl-vin-tä",
+        "myyn-nis-sä",
+        "nyr-kil-lä",
+        "pyl-lis-tät",
         "pyy-hin-tä",
+        "ryy-sis-tä",
         "syr-jin-tä",
+        "syy-nis-sä",
+        "tyl-sil-lä",
         "tyrs-kin-tä",
+        "tyy-lil-lä",
+        "tyy-lis-täs",
+        "tyy-pis-tä",
+        "yh-dis-tän",
         "yk-sis-sä",
         "ys-kin-tä"
     ],
@@ -28536,6 +41279,7 @@ export default {
         "ryt-mit-tää",
         "ryy-dit-tää",
         "syn-kis-tää",
+        "syy-lis-tää",
         "syyl-lis-tää",
         "tyh-jil-lään",
         "tyh-jil-tään",
@@ -28568,14 +41312,23 @@ export default {
         "sym-bo-li",
         "symp-to-mi"
     ],
+    "yy-oi-a": [
+        "yks-tois-ta"
+    ],
     "yy-oo-a": [
         "lym-foo-ma",
         "synd-roo-ma"
+    ],
+    "yy-oo-aa": [
+        "synd-roo-maan"
     ],
     "yy-oo-i": [
         "hyp-noo-si",
         "kyk-loop-pi",
         "syn-koop-pi"
+    ],
+    "yy-oo-ii": [
+        "hyp-noo-siin"
     ],
     "yy-u": [
         "tyy-fus"
@@ -28607,6 +41360,7 @@ export default {
         "hyl-sy",
         "hyp-py",
         "hyrs-ky",
+        "hyy-dyn",
         "kyh-my",
         "kyl-jys",
         "kyl-py",
@@ -28623,8 +41377,10 @@ export default {
         "myl-ly",
         "myrk-ky",
         "myrs-ky",
+        "myrs-kyn",
         "mys-sy",
         "myt-ty",
+        "myy-nyt",
         "myy-ty",
         "nyl-ky",
         "nyn-ny",
@@ -28634,9 +41390,16 @@ export default {
         "pyl-ly",
         "pyr-ky",
         "pys-sy",
+        "pys-syt",
         "pys-ty",
+        "pys-tyn",
+        "pys-tys",
+        "pys-tyt",
         "pyt-ty",
         "pyy-dys",
+        "ryh-dy",
+        "ryh-dyn",
+        "ryh-dyt",
         "ryh-my",
         "rynk-ky",
         "ryp-py",
@@ -28645,21 +41408,29 @@ export default {
         "ryy-sy",
         "ryyp-py",
         "syk-sy",
+        "syk-syks",
+        "syk-syn",
         "syl-ky",
         "sylt-ty",
         "syn-ty",
         "syy-hy",
         "tyk-ky",
+        "tyr-kyl",
         "tyrs-ky",
-        "tyy-ny"
+        "tyy-dy",
+        "tyy-dyn",
+        "tyy-ny",
+        "tyy-nyn"
     ],
     "yy-y-e": [
         "hyp-py-set",
         "hyt-ty-nen",
         "hyy-dy-ke",
         "hyy-dy-te",
+        "hyy-ry-nen",
         "kyyh-ky-nen",
         "rys-ty-nen",
+        "rys-ty-set",
         "tyy-dy-ke",
         "yh-ty-e",
         "yl-ly-ke"
@@ -28667,9 +41438,12 @@ export default {
     "yy-y-i": [
         "hyp-py-ri",
         "nyl-ky-ri",
+        "nyyh-ky-tin",
         "pyr-ky-ri",
+        "pyr-ky-rit",
         "ryh-my-ri",
         "ryy-py-tin",
+        "syk-sy-sin",
         "tyh-my-ri",
         "tyn-ny-ri",
         "tyy-dy-tin",
@@ -28687,21 +41461,25 @@ export default {
         "hyy-dy-tys",
         "jys-ky-tys",
         "jyt-ky-tys",
+        "kyl-ty-ny",
         "kyp-sy-tys",
         "kyy-ky-tys",
         "myl-ly-tys",
         "myr-ky-tys",
         "nyt-ky-tys",
         "nyyh-ky-tys",
+        "pys-ty-nyt",
         "pys-ty-tys",
         "ryh-ty-mys",
         "ryn-ky-tys",
         "rys-ky-tys",
         "ryt-ky-tys",
         "syn-ny-tys",
+        "syn-ty-ny",
         "syt-ky-tys",
         "tyy-dy-tys",
-        "yl-ly-tys"
+        "yl-ly-tys",
+        "yl-ty-ny"
     ],
     "yy-y-yy": [
         "pyr-ky-ryys",
@@ -28724,11 +41502,15 @@ export default {
         "myh-ky-rä",
         "myk-ky-rä",
         "myr-ty-ä",
+        "myrk-ky-jä",
+        "myrk-ky-ä",
+        "myrs-ky-jä",
         "myrs-ky-tä",
         "nyp-py-lä",
         "nys-ty-rä",
         "nyt-ky-ä",
         "pyl-py-rä",
+        "pys-sy-jä",
         "pys-ty-vä",
         "pys-ty-ä",
         "ryh-ty-ä",
@@ -28736,13 +41518,17 @@ export default {
         "ryt-ky-ä",
         "ryy-ty-ä",
         "syk-ky-rä",
+        "syk-sy-ä",
+        "syn-ny-tä",
         "syn-ty-mä",
+        "syn-ty-vät",
         "syn-ty-ä",
         "syt-ty-ä",
         "syy-hy-tä",
         "syy-hy-ä",
         "tyl-sy-ä",
         "tyls-ty-ä",
+        "tyr-ky-tä",
         "tyrs-ky-tä",
         "tyy-ty-ä",
         "tyyn-ty-ä",
@@ -28755,12 +41541,28 @@ export default {
         "pys-ty-päin"
     ],
     "yy-y-ää": [
+        "kyt-ty-rää",
         "myrs-ky-sää",
         "syn-ty-jään",
-        "syn-ty-ään"
+        "syn-ty-mään",
+        "syn-ty-ään",
+        "tyy-ny-kään",
+        "ym-py-rää"
     ],
     "yy-y-ö": [
         "myr-ky-tön"
+    ],
+    "yy-yi": [
+        "nyn-nyi",
+        "pys-tyi",
+        "pys-tyis",
+        "ryh-dyin",
+        "ryh-tyis",
+        "ryy-syist",
+        "syn-nyin",
+        "syn-tyi",
+        "yh-tyis",
+        "yl-tyi"
     ],
     "yy-yi-a": [
         "myrs-kyil-ma"
@@ -28800,31 +41602,51 @@ export default {
     ],
     "yy-yy": [
         "hynt-tyyt",
+        "hyy-tyy",
         "jyl-hyys",
         "jyrk-kyys",
         "kyl-lyys",
         "kyl-myys",
+        "kyl-pyyn",
         "kyp-syys",
         "kyr-myyn",
         "kyy-ryyn",
         "kyyk-kyyn",
         "lyt-tyyn",
         "myk-kyys",
+        "pyl-lyy",
+        "pys-tyy",
+        "pys-tyyks",
         "pys-tyyn",
+        "ryh-tyy",
         "rynt-tyyt",
+        "ryy-tyy",
+        "syn-tyy",
         "synk-kyys",
         "sys-syyn",
+        "syt-tyy",
+        "syt-tyyn",
         "tyh-jyys",
         "tyh-myys",
         "tyl-syys",
-        "tylp-pyys"
+        "tylp-pyys",
+        "tyy-tyy",
+        "yl-tyy"
     ],
     "yy-yy-e": [
+        "kyn-nyk-sen",
+        "kyn-nyk-set",
         "tyr-kyl-le"
     ],
     "yy-yy-ee": [
         "kyy-kyl-leen",
-        "kyy-ryl-leen"
+        "kyy-ryl-leen",
+        "tyh-jyy-teen",
+        "tyl-syy-teen"
+    ],
+    "yy-yy-i": [
+        "kylt-tyy-ri",
+        "syk-syk-si"
     ],
     "yy-yy-ie": [
         "yh-dys-mies",
@@ -28838,9 +41660,11 @@ export default {
     ],
     "yy-yy-y": [
         "pyy-dys-tys",
+        "syn-nyt-ty",
         "syys-myrs-ky"
     ],
     "yy-yy-ä": [
+        "hyl-lys-sä",
         "kyr-mys-sä",
         "kyy-kys-sä",
         "kyy-kys-tä",
@@ -28849,8 +41673,12 @@ export default {
         "nys-syk-kä",
         "pys-tys-sä",
         "pys-tys-tä",
+        "syk-syl-lä",
         "syk-sym-mäs",
         "syys-kyl-mä",
+        "tyh-jyyt-tä",
+        "tyh-myyt-tä",
+        "tyl-syyt-tä",
         "tyr-kyl-lä",
         "yh-dyn-tä"
     ],
@@ -28882,6 +41710,7 @@ export default {
         "syn-nyt-tää",
         "syt-kyt-tää",
         "syy-hyt-tää",
+        "tyh-jyyt-tään",
         "tyl-syt-tää",
         "tyls-tyt-tää",
         "tyr-kyt-tää",
@@ -28893,42 +41722,71 @@ export default {
     "yy-yy-ö": [
         "hyl-lyk-kö",
         "hyl-lys-tö",
+        "pys-tyn-kö",
         "syys-kyl-vö",
         "syys-kyn-tö"
     ],
     "yy-ä": [
         "brys-sä",
         "hyh-mä",
+        "hyp-päs",
         "hyr-rä",
+        "hyr-rät",
         "hyyh-mä",
         "jyl-hä",
         "jyrk-kä",
+        "kyl-hä",
+        "kyl-hän",
         "kyl-lä",
         "kyl-mä",
+        "kyl-mäks",
+        "kyl-män",
+        "kyl-mät",
         "kyn-näs",
         "kyp-sä",
         "kyr-pä",
         "kyr-sä",
+        "kyr-vät",
         "kys-sä",
         "kys-tä",
         "kyt-tä",
         "kyy-lä",
         "kyyk-kä",
+        "lyt-tä",
         "myk-kä",
         "myy-dä",
         "myy-jä",
         "myy-rä",
+        "myy-vät",
+        "nyt-hän",
         "pyl-väs",
         "pylk-kä",
+        "pyy-dä",
+        "pyy-dän",
+        "pyy-dät",
         "ryh-mä",
+        "ryh-män",
+        "ryh-mät",
         "ryn-näs",
         "rys-sä",
+        "ryyp-päs",
         "syl-tä",
+        "syn-käs",
         "synk-kä",
         "syr-jä",
         "syy-lä",
+        "syy-tä",
+        "syy-tän",
+        "syyn-sä",
+        "syys-tä",
+        "syyt-tä",
         "tyh-jä",
+        "tyh-jän",
+        "tyh-jät",
         "tyh-mä",
+        "tyh-män",
+        "tyh-mät",
+        "tyk-käs",
         "tyl-sä",
         "tylp-pä",
         "tyn-kä",
@@ -28941,26 +41799,35 @@ export default {
         "yn-nä",
         "ys-kä"
     ],
+    "yy-ä-e": [
+        "kyl-vä-en"
+    ],
     "yy-ä-i": [
         "kylp-pä-ri",
+        "kylp-pä-rin",
         "myl-lä-ri",
         "nyyt-tä-rit",
         "pyyk-kä-ri",
         "ryn-nä-ri",
         "synt-tä-rit",
         "syt-kä-ri",
+        "syt-kä-rin",
         "ym-pä-ri"
     ],
     "yy-ä-ie": [
         "syr-jä-tie",
-        "yl-kä-mies"
+        "yl-kä-mies",
+        "ys-tä-vien"
     ],
     "yy-ä-y": [
         "lyp-sä-tys",
+        "pyy-tä-ny",
+        "pyy-tä-nyt",
         "yl-lä-tys",
         "ym-pä-rys"
     ],
     "yy-ä-yy": [
+        "yl-lä-tyys",
         "ys-tä-vyys"
     ],
     "yy-ä-yö": [
@@ -28968,11 +41835,14 @@ export default {
     ],
     "yy-ä-ä": [
         "hyl-jä-tä",
+        "hyp-pä-mäl",
         "hyr-rä-tä",
         "hyy-sä-tä",
         "jyl-lä-tä",
         "jyns-sä-tä",
         "jyr-rä-tä",
+        "kyl-lä-hän",
+        "kyl-mä-nä",
         "kyl-mä-tä",
         "kyl-vä-jä",
         "kyn-tä-jä",
@@ -28995,6 +41865,7 @@ export default {
         "ryy-sä-tä",
         "syy-nä-tä",
         "syyt-tä-jä",
+        "syyt-tä-jän",
         "tyh-jä-tä",
         "tyr-kä-tä",
         "tyr-mä-tä",
@@ -29002,13 +41873,33 @@ export default {
         "tyy-tä-tä",
         "ym-pä-tä",
         "yn-nä-tä",
-        "ys-tä-vä"
+        "ys-tä-vä",
+        "ys-tä-väks",
+        "ys-tä-vät"
+    ],
+    "yy-ä-äi": [
+        "ys-tä-väin"
     ],
     "yy-ä-ää": [
-        "tyk-kä-nään"
+        "hyy-tä-vää",
+        "pyy-tä-mään",
+        "ryy-pä-tään",
+        "ryys-tä-mään",
+        "syt-kä-tään",
+        "tyk-kä-nään",
+        "yh-tä-kään",
+        "ys-tä-vää",
+        "ys-tä-vään"
     ],
     "yy-ä-ö": [
         "yh-tä-lö"
+    ],
+    "yy-ä-öi": [
+        "ym-pä-röi",
+        "ym-pä-röin"
+    ],
+    "yy-äi": [
+        "yl-täin"
     ],
     "yy-äi-e": [
         "hyh-mäi-nen",
@@ -29019,6 +41910,12 @@ export default {
         "syr-jäi-nen",
         "yl-häi-nen",
         "ys-käi-nen"
+    ],
+    "yy-äi-ee": [
+        "syl-käi-see"
+    ],
+    "yy-äi-i": [
+        "hyp-päi-sin"
     ],
     "yy-äi-y": [
         "kyt-täi-ly",
@@ -29076,6 +41973,9 @@ export default {
     "yy-äy-y": [
         "syr-jäy-tys"
     ],
+    "yy-äy-ä": [
+        "nyp-läys-tä"
+    ],
     "yy-äy-ää": [
         "hyp-päyt-tää",
         "hyt-käyt-tää",
@@ -29085,26 +41985,53 @@ export default {
         "syr-jäyt-tää"
     ],
     "yy-ää": [
+        "hyl-kää",
+        "hyp-pää",
+        "hyp-pään",
+        "hyp-päät",
+        "hyr-rää",
         "hyy-tää",
+        "jyl-lää",
         "jys-kää",
         "jyys-tää",
+        "kyl-mää",
+        "kyl-mään",
         "kyl-vää",
         "kyn-tää",
         "kynt-tää",
+        "kyt-tää",
+        "lyk-kää",
         "lyp-sää",
+        "lys-tään",
         "myn-kään",
+        "myy-dään",
         "nyh-tää",
+        "nyt-kään",
         "pyy-tää",
+        "pyyk-kää",
+        "ryh-mään",
         "ryn-täät",
         "rys-kää",
+        "ryyp-pää",
         "ryys-tää",
         "syk-kää",
+        "synk-kää",
         "syr-jään",
         "syy-pää",
         "syy-tää",
         "syys-jää",
         "syyt-tää",
+        "tyh-jää",
+        "tyh-jään",
+        "tyh-mää",
+        "tyk-kää",
+        "tyk-kään",
+        "tyk-käät",
+        "tyl-sää",
+        "tys-sää",
+        "yh-tää",
         "yh-tään",
+        "yl-hääl",
         "yl-tää"
     ],
     "yy-ää-e": [
@@ -29114,6 +42041,7 @@ export default {
         "yh-tääl-le",
         "yh-tään-ne",
         "yl-hääl-le",
+        "yl-täm-me",
         "ym-mäl-le"
     ],
     "yy-ää-ee": [
@@ -29123,19 +42051,27 @@ export default {
     "yy-ää-i": [
         "jyl-häs-ti",
         "jyr-käs-ti",
+        "kyl-mäk-si",
         "kyl-mäs-ti",
         "kyp-säs-ti",
         "syn-käs-ti",
         "syr-jää-ni",
         "tyh-mäs-ti",
         "tyl-päs-ti",
-        "yl-vääs-ti"
+        "yl-vääs-ti",
+        "ym-mär-si",
+        "ym-mär-sin"
+    ],
+    "yy-ää-ii": [
+        "yh-täk-kii"
     ],
     "yy-ää-uu": [
         "kyy-när-luu"
     ],
     "yy-ää-y": [
+        "kyl-läs-tyn",
         "kyl-läs-tys",
+        "kyl-läst-nyt",
         "myl-väh-dys",
         "nyr-jäh-dys",
         "nyt-käh-dys",
@@ -29150,19 +42086,31 @@ export default {
     ],
     "yy-ää-ä": [
         "hyp-pää-jä",
+        "jyr-käl-tä",
+        "kyl-mäl-tä",
+        "kyl-mäs-tä",
         "kyt-tää-jä",
         "myl-läk-kä",
         "nys-säk-kä",
+        "syr-jäl-lä",
         "syr-jäs-sä",
         "syr-jäs-tä",
+        "tyh-jäs-tä",
         "tyr-mää-jä",
         "yh-tääl-lä",
         "yh-tääl-tä",
         "yl-hääl-lä",
         "yl-hääl-tä",
-        "ym-mäl-lä"
+        "yl-väs-tä",
+        "ym-mäl-lä",
+        "ym-mär-rä",
+        "ym-mär-rän"
+    ],
+    "yy-ää-äi": [
+        "yl-lät-täin"
     ],
     "yy-ää-ää": [
+        "hyp-pää-mään",
         "hyrs-käh-tää",
         "hyt-käh-tää",
         "jys-käh-tää",
@@ -29180,6 +42128,8 @@ export default {
         "pyrs-käh-tää",
         "pyy-häl-tää",
         "ryt-käh-tää",
+        "ryyp-pää-mään",
+        "syl-käs-tään",
         "syr-jäl-lään",
         "tyrs-käh-tää",
         "tys-säh-tää",
@@ -29203,19 +42153,31 @@ export default {
         "kyyt-tö",
         "pyrs-tö",
         "pys-tö",
+        "pyyn-nön",
         "pyyn-tö",
         "ryn-tö",
         "syy-tön",
         "syy-tös",
         "tyh-jö",
         "tyt-tö",
+        "tyt-tön",
+        "tyt-tös",
         "yr-jö",
         "ys-kös"
     ],
     "yy-ö-e": [
         "tym-pö-nen",
+        "tyt-tö-jen",
         "tyt-tö-nen",
-        "yk-kö-nen"
+        "yk-kö-nen",
+        "yk-kö-set"
+    ],
+    "yy-ö-i": [
+        "tyt-tö-ni",
+        "tyt-tö-si"
+    ],
+    "yy-ö-ii": [
+        "yk-kö-sii"
     ],
     "yy-ö-yy": [
         "syyt-tö-myys"
@@ -29225,6 +42187,8 @@ export default {
     ],
     "yy-ö-ä": [
         "pyrs-tö-käs",
+        "tyt-tö-jä",
+        "tyt-tö-ä",
         "yr-jö-tä"
     ],
     "yy-öi-ä": [
@@ -29233,8 +42197,14 @@ export default {
     "yy-öy": [
         "tyt-töys"
     ],
+    "yy-öö-i": [
+        "tyt-töö-ni"
+    ],
     "yy-öö-ie": [
         "yk-kös-mies"
+    ],
+    "yy-öö-ä": [
+        "tyt-tön-sä"
     ],
     "yy-öö-ää": [
         "kyh-jöt-tää",
@@ -29272,6 +42242,7 @@ export default {
     ],
     "yö-aa-a": [
         "työ-kan-sa",
+        "työ-maal-ta",
         "työ-mat-ka",
         "työ-palk-ka",
         "työ-sar-ka",
@@ -29279,12 +42250,16 @@ export default {
         "yö-tak-sa"
     ],
     "yö-aa-aa": [
+        "työn-sar-kaa",
         "yö-jal-kaan"
     ],
     "yö-aa-e": [
         "työ-vaa-te",
         "yö-kas-te",
         "yö-vaa-te"
+    ],
+    "yö-aa-ee": [
+        "työ-vaat-teet"
     ],
     "yö-aa-i": [
         "työ-tah-ti",
@@ -29299,16 +42274,23 @@ export default {
         "työ-tar-mo"
     ],
     "yö-aa-u": [
+        "yö-lam-pun",
         "yö-lamp-pu"
     ],
     "yö-ai-a": [
         "työ-ai-ka",
+        "työ-pai-kan",
+        "työ-pai-kat",
         "työ-paik-ka",
         "yö-ai-ka",
         "yö-pai-ta",
         "yö-paik-ka",
         "yö-tai-vas",
         "yö-vaip-pa"
+    ],
+    "yö-ai-aa": [
+        "työ-paik-kaa",
+        "työ-paik-kaan"
     ],
     "yö-ai-e": [
         "työ-pai-ne",
@@ -29334,6 +42316,7 @@ export default {
         "myö-den",
         "myö-ten",
         "pyör-re",
+        "syös-ten",
         "vyö-te"
     ],
     "yö-e-ey": [
@@ -29359,6 +42342,9 @@ export default {
     "yö-e-äi": [
         "yö-e-läin"
     ],
+    "yö-ee": [
+        "työk-seen"
+    ],
     "yö-ee-a": [
         "vyö-ren-gas"
     ],
@@ -29368,12 +42354,19 @@ export default {
     "yö-ee-e": [
         "työ-es-te"
     ],
+    "yö-ee-ee": [
+        "pyö-ree-seen"
+    ],
     "yö-ee-ey": [
         "työ-ter-veys"
     ],
     "yö-ee-i": [
+        "myö-hem-mi",
         "myö-hem-min",
         "vyös-pekt-ri"
+    ],
+    "yö-ee-ii": [
+        "syö-tet-tiin"
     ],
     "yö-ee-o": [
         "työ-eh-to",
@@ -29411,6 +42404,9 @@ export default {
     "yö-ei-yy": [
         "myön-tei-syys"
     ],
+    "yö-ei-ä": [
+        "pyö-rei-tä"
+    ],
     "yö-eu-u": [
         "yön-seu-tu"
     ],
@@ -29419,13 +42415,21 @@ export default {
     ],
     "yö-i": [
         "kyök-ki",
+        "lyön-nit",
         "lyön-ti",
         "myös-kin",
         "nyö-ri",
+        "pyö-ri",
+        "pyö-rin",
+        "pyö-rit",
         "pyök-ki",
         "syö-tin",
         "syön-ti",
-        "syöt-ti"
+        "syöt-ti",
+        "työ-ni",
+        "työn-sin",
+        "yö-ni",
+        "yök-si"
     ],
     "yö-i-a": [
         "työ-ti-la",
@@ -29451,6 +42455,7 @@ export default {
     ],
     "yö-i-y": [
         "nyö-ri-tys",
+        "pyö-ri-nyt",
         "pyö-ri-tys",
         "syö-ti-tys"
     ],
@@ -29462,8 +42467,14 @@ export default {
         "hyö-ri-ä",
         "nyök-ki-ä",
         "pyö-ri-nä",
+        "pyö-ri-tän",
         "pyö-ri-ä",
         "ryö-mi-ä"
+    ],
+    "yö-i-ää": [
+        "pyö-ri-mään",
+        "pyö-ri-tään",
+        "ryö-mi-tään"
     ],
     "yö-i-ö": [
         "pyö-ri-ö"
@@ -29474,11 +42485,22 @@ export default {
     "yö-ie-a": [
         "yö-vie-ras"
     ],
+    "yö-ie-e": [
+        "työ-mie-hen"
+    ],
     "yö-ie-i": [
         "työ-kie-li"
     ],
     "yö-ie-o": [
         "työ-kier-to"
+    ],
+    "yö-ii": [
+        "hyö-rii",
+        "pyö-rii",
+        "pyö-tii",
+        "ryö-mii",
+        "syö-tiin",
+        "syöt-tii"
     ],
     "yö-ii-a": [
         "työ-kir-ja",
@@ -29583,6 +42605,9 @@ export default {
         "työ-pu-ku",
         "yö-pu-ku"
     ],
+    "yö-uo-aa": [
+        "työ-kuor-maa"
+    ],
     "yö-uo-e": [
         "työ-huo-ne"
     ],
@@ -29595,8 +42620,12 @@ export default {
         "työ-vuo-ro",
         "yö-vuo-ro"
     ],
+    "yö-uo-oo": [
+        "yö-vuo-roon"
+    ],
     "yö-uo-u": [
-        "yö-juok-su"
+        "yö-juok-su",
+        "yö-juok-sut"
     ],
     "yö-uu": [
         "yö-puu"
@@ -29626,11 +42655,14 @@ export default {
         "vyö-ruu-su"
     ],
     "yö-y": [
+        "hyö-dyst",
         "hyö-ky",
         "hyö-ty",
         "kyö-my",
         "pyö-ry",
         "ryöp-py",
+        "syö-ny",
+        "syö-nyt",
         "syök-sy",
         "vyö-ry"
     ],
@@ -29674,15 +42706,24 @@ export default {
         "yö-sy-dän"
     ],
     "yö-y-ää": [
+        "ryöp-py-ää",
         "yö-ky-lään"
     ],
     "yö-y-ö": [
         "hyö-dy-tön"
     ],
+    "yö-yi": [
+        "vyö-ryi"
+    ],
     "yö-yi-ä": [
         "hyö-tyi-sä",
         "pyör-tyil-lä",
         "syök-syil-lä"
+    ],
+    "yö-yy": [
+        "syök-syy",
+        "työn-tyy",
+        "vyö-ryy"
     ],
     "yö-yy-i": [
         "työ-ryt-mi"
@@ -29715,22 +42756,46 @@ export default {
     "yö-yö-ä": [
         "yö-myö-hä"
     ],
+    "yö-yö-ää": [
+        "yö-myö-hään"
+    ],
     "yö-yö-ö": [
         "yö-syöt-tö"
     ],
     "yö-ä": [
         "lyö-dä",
         "lyö-jä",
+        "lyö-täs",
+        "lyö-vät",
         "myö-dä",
         "myö-hä",
         "myö-tä",
+        "myön-nä",
+        "myön-nän",
         "pyö-rä",
+        "pyö-rän",
+        "pyö-räst",
+        "pyö-rät",
+        "pyör-rän",
+        "pyör-rät",
         "ryö-nä",
         "syö-dä",
         "syö-jä",
         "syö-pä",
+        "syö-tä",
+        "syö-tän",
         "syös-tä",
-        "työ-läs"
+        "työ-läs",
+        "työ-tä",
+        "työl-lä",
+        "työn-nä",
+        "työs-sä",
+        "yö-nä",
+        "yö-tä",
+        "yöl-lä",
+        "yön-sä",
+        "yös-sä",
+        "yös-tä"
     ],
     "yö-ä-aa": [
         "myö-tä-maa"
@@ -29742,7 +42807,10 @@ export default {
     "yö-ä-i": [
         "ryö-vä-ri",
         "syö-mä-ri",
-        "työ-vä-ki"
+        "työ-vä-ki",
+        "työk-kä-rin",
+        "työs-tä-ni",
+        "vyö-tä-kin"
     ],
     "yö-ä-ie": [
         "pyö-rä-tie",
@@ -29769,6 +42837,10 @@ export default {
         "työn-tä-jä",
         "yö-kä-tä"
     ],
+    "yö-ä-ää": [
+        "hyö-kä-tään",
+        "myön-nä-kään"
+    ],
     "yö-ä-ö": [
         "hyö-tä-mö",
         "lyö-mä-tön",
@@ -29786,6 +42858,10 @@ export default {
     "yö-äi-ee": [
         "myö-häi-seen"
     ],
+    "yö-äi-i": [
+        "hyök-käi-sit",
+        "ryös-täi-sin"
+    ],
     "yö-äi-y": [
         "hyök-käi-ly",
         "myö-täi-ly",
@@ -29793,10 +42869,12 @@ export default {
     ],
     "yö-äi-ä": [
         "hyök-käil-lä",
+        "myö-häis-tä",
         "myö-täil-lä",
         "nyök-käil-lä",
         "pyö-räil-lä",
-        "työ-päi-vä"
+        "työ-päi-vä",
+        "työ-päi-vän"
     ],
     "yö-äi-ö": [
         "yö-säi-lö"
@@ -29814,6 +42892,9 @@ export default {
     "yö-äy-e": [
         "työ-näy-te"
     ],
+    "yö-äy-ee": [
+        "hyök-käyk-seen"
+    ],
     "yö-äy-ää": [
         "nyö-käyt-tää",
         "pyö-räyt-tää",
@@ -29821,13 +42902,23 @@ export default {
     ],
     "yö-ää": [
         "hyö-tää",
+        "hyök-kää",
+        "lyö-dään",
+        "lyö-mään",
         "lyöt-tää",
         "myö-hään",
         "myön-tää",
+        "myös-kää",
         "myös-kään",
         "myös-tää",
+        "nyök-kää",
+        "nyök-käät",
         "pyör-tää",
         "ryös-tää",
+        "syö-dään",
+        "syö-kää",
+        "syö-mään",
+        "syös-tää",
         "syöt-tää",
         "työn-tää",
         "työs-tää",
@@ -29838,6 +42929,7 @@ export default {
         "pyö-räl-le"
     ],
     "yö-ää-i": [
+        "pyö-räh-din",
         "työ-lääs-ti"
     ],
     "yö-ää-y": [
@@ -29852,10 +42944,14 @@ export default {
     "yö-ää-ä": [
         "hyök-kää-jä",
         "hyök-kää-vä",
+        "lyö-mäl-lä",
+        "lyö-mäs-tä",
         "myö-häl-lä",
         "myö-häs-sä",
         "myö-tään-sä",
         "pyö-räl-lä",
+        "pyö-räs-sä",
+        "syö-mäs-tä",
         "työ-mää-rä"
     ],
     "yö-ää-äi": [
@@ -29884,13 +42980,18 @@ export default {
         "myös-tö",
         "pyö-rö",
         "ryös-tö",
+        "syö-tön",
         "syön-nös",
         "syöp-pö",
         "syöt-tö",
+        "työ-hön",
+        "työ-hös",
         "työ-tön",
         "työn-tö",
         "työs-tö",
         "vyö-tön",
+        "yö-hö",
+        "yö-hön",
         "yö-tön",
         "yök-kö"
     ],
@@ -29906,6 +43007,9 @@ export default {
     "yö-öy-ä": [
         "työ-pöy-tä",
         "yö-pöy-tä"
+    ],
+    "yö-öö-ä": [
+        "yö-tön-tä"
     ],
     "yö-öö-ää": [
         "yö-köt-tää"
@@ -29936,12 +43040,28 @@ export default {
     ],
     "ä-e": [
         "bä-net",
+        "hä-nen",
+        "hä-net",
+        "jä-lel",
         "jä-sen",
         "jä-te",
+        "kä-den",
+        "kä-des",
+        "kä-dess",
+        "kä-det",
+        "kä-et",
+        "kä-tes",
+        "lä-he",
+        "lä-hel",
+        "lä-hell",
+        "lä-hen",
         "lä-hes",
+        "lä-het",
+        "nä-en",
         "nä-es",
         "nä-et",
         "nä-re",
+        "pä-de",
         "pä-re",
         "rä-me",
         "schä-fer",
@@ -29953,14 +43073,30 @@ export default {
         "vä-re"
     ],
     "ä-e-e": [
+        "hä-ve-ten",
+        "kä-ve-le",
+        "kä-ve-len",
         "lä-he-te",
-        "sä-ke-ne"
+        "sä-ke-ne",
+        "sä-ve-len",
+        "sä-ve-let",
+        "ä-e-ren"
+    ],
+    "ä-e-ee": [
+        "kä-ve-lee",
+        "kä-ve-leen",
+        "vä-he-nee"
     ],
     "ä-e-i": [
+        "kä-te-ni",
+        "kä-te-si",
+        "kä-ve-li",
+        "kä-ve-lin",
         "lä-he-tin",
         "nä-ve-ri",
         "sä-de-tin",
-        "sä-te-ri"
+        "sä-te-ri",
+        "vä-ke-vin"
     ],
     "ä-e-ii": [
         "nä-ke-miin"
@@ -29992,11 +43128,14 @@ export default {
         "hä-ve-tä",
         "jä-me-rä",
         "jä-re-ä",
+        "jä-te-tä",
         "kä-he-tä",
         "kä-he-ä",
         "kä-re-ä",
         "kä-te-vä",
         "lä-he-tä",
+        "lä-he-tän",
+        "lä-he-tät",
         "nä-ke-mä",
         "nä-ke-vä",
         "pä-te-vä",
@@ -30008,30 +43147,70 @@ export default {
         "ä-ke-ä",
         "ä-re-ä"
     ],
+    "ä-e-ää": [
+        "hä-pe-ää",
+        "jä-te-tään",
+        "kä-te-vää",
+        "lä-he-tää",
+        "lä-he-tään",
+        "pä-te-mää",
+        "pä-te-mään",
+        "vä-ke-vää"
+    ],
     "ä-e-ö": [
         "kä-de-tön",
         "vä-e-tön"
+    ],
+    "ä-ee": [
+        "hä-pee",
+        "kä-teen",
+        "mä-keen",
+        "nä-kee",
+        "nä-keen",
+        "pä-tee",
+        "pä-teen",
+        "sä-keen",
+        "sä-keet",
+        "sä-teel",
+        "sä-teet",
+        "vä-kee"
     ],
     "ä-ee-aa": [
         "jä-sen-maa"
     ],
     "ä-ee-e": [
-        "lä-hel-le"
+        "hä-nel-le",
+        "kä-vel-len",
+        "lä-hel-le",
+        "lä-het-te"
+    ],
+    "ä-ee-ee": [
+        "ä-lerh-tee"
     ],
     "ä-ee-i": [
+        "kä-tee-ni",
         "lä-hem-min",
         "lä-hem-pi",
         "lä-het-ti",
         "nä-ver-rin",
+        "vä-hem-min",
         "vä-hem-pi"
     ],
     "ä-ee-ie": [
         "kä-den-tie"
     ],
+    "ä-ee-ii": [
+        "kä-vel-tiin",
+        "lä-het-tii"
+    ],
     "ä-ee-y": [
         "hä-kel-lys",
+        "hä-ven-nyt",
         "jä-sen-nys",
+        "jä-tet-ty",
         "kä-her-rys",
+        "kä-per-ry",
+        "kä-vel-ty",
         "nä-per-rys",
         "rä-pel-lys",
         "sä-es-tys",
@@ -30045,6 +43224,15 @@ export default {
         "vä-hem-myys"
     ],
     "ä-ee-ä": [
+        "hä-mees-tä",
+        "hä-nel-lä",
+        "hä-nel-tä",
+        "hä-nes-sä",
+        "kä-del-lä",
+        "kä-des-sä",
+        "kä-des-tä",
+        "kä-des-täs",
+        "kä-teen-sä",
         "kä-tel-lä",
         "kä-vel-lä",
         "lä-hel-lä",
@@ -30053,17 +43241,30 @@ export default {
         "lä-hem-mäs",
         "lä-peen-sä",
         "nä-em-mä",
+        "nä-kee-hä",
+        "sä-et-tä",
+        "sä-teel-lä",
         "sä-vel-mä",
         "vä-hem-män"
     ],
     "ä-ee-äi": [
+        "kä-vel-täis",
         "lä-hek-käin"
     ],
     "ä-ee-ää": [
+        "hä-pee-mään",
         "hä-vet-tää",
         "jä-sen-tää",
+        "kä-del-lään",
+        "kä-des-sään",
+        "kä-det-kää",
+        "kä-det-tää",
         "kä-her-tää",
         "kä-per-tää",
+        "kä-tel-lään",
+        "kä-vel-lään",
+        "lä-heet-tää",
+        "lä-hel-kään",
         "lä-hem-pää",
         "lä-hen-tää",
         "lä-hes-kään",
@@ -30076,19 +43277,40 @@ export default {
         "sä-es-tää",
         "sä-hel-tää",
         "sä-vel-tää",
+        "vä-hem-pää",
+        "vä-hem-pään",
         "vä-hen-tää",
+        "vä-hen-tään",
         "ä-es-tää",
         "ä-hel-tää"
     ],
     "ä-ee-ö": [
+        "lä-hen-kö",
+        "lä-het-kö",
         "vä-es-tö"
     ],
+    "ä-ei": [
+        "kä-teist",
+        "vä-leis",
+        "vä-rei",
+        "vä-reit"
+    ],
     "ä-ei-e": [
+        "hä-pei-le",
         "kä-tei-nen",
+        "kä-tei-set",
         "lä-hei-nen",
-        "rä-mei-nen"
+        "lä-hei-set",
+        "lä-heis-ten",
+        "rä-mei-nen",
+        "rä-peil-le",
+        "sä-tei-len"
+    ],
+    "ä-ei-ee": [
+        "vä-rei-lee"
     ],
     "ä-ei-i": [
+        "lä-hei-sis",
         "sä-tei-lin"
     ],
     "ä-ei-y": [
@@ -30099,7 +43321,9 @@ export default {
     ],
     "ä-ei-ä": [
         "hä-peil-lä",
+        "rä-peil-lä",
         "sä-teil-lä",
+        "vä-rei-tä",
         "vä-reil-lä",
         "ä-keil-lä"
     ],
@@ -30109,6 +43333,7 @@ export default {
     ],
     "ä-ei-ää": [
         "hä-peis-sään",
+        "sä-teil-lään",
         "ä-keis-sään",
         "ä-reis-sään"
     ],
@@ -30127,24 +43352,56 @@ export default {
         "ä-reys"
     ],
     "ä-i": [
+        "bä-git",
+        "dä-ni",
+        "jä-bil",
         "jä-nis",
         "jä-rin",
+        "jä-tin",
         "kä-ki",
         "kä-si",
         "kä-sin",
+        "kä-sis",
+        "kä-sist",
+        "kä-vi",
+        "kä-vin",
+        "kä-vis",
+        "kä-vit",
         "lä-hin",
         "lä-pi",
         "lä-si",
         "mä-ki",
+        "mä-kin",
         "mä-sis",
         "mä-ti",
+        "nä-ki",
+        "nä-kis",
+        "nä-tin",
+        "nä-tis",
         "plä-si",
+        "rä-kist",
+        "rä-pil",
+        "rä-pin",
+        "rä-pist",
+        "rä-pit",
+        "snä-kin",
+        "swä-gi",
+        "sä-ki",
+        "sä-kin",
+        "sä-kit",
         "tä-gi",
         "tä-ti",
         "vä-hin",
         "vä-ki",
         "vä-li",
-        "vä-ri"
+        "vä-lil",
+        "vä-lis",
+        "vä-list",
+        "vä-lit",
+        "vä-ri",
+        "vä-rin",
+        "vä-rist",
+        "vä-rit"
     ],
     "ä-i-aa": [
         "mä-ki-maa"
@@ -30156,6 +43413,7 @@ export default {
         "hä-vi-te",
         "kä-si-ne",
         "kä-si-te",
+        "lä-ti-set",
         "mä-ki-nen",
         "nä-ki-met",
         "vä-hi-ten",
@@ -30165,6 +43423,13 @@ export default {
         "vä-ri-nen"
     ],
     "ä-i-i": [
+        "hä-vi-si",
+        "kä-vi-kin",
+        "kä-vi-si",
+        "kä-vi-sin",
+        "kä-vi-sit",
+        "nä-ki-sin",
+        "nä-ki-sit",
         "vä-ki-sin"
     ],
     "ä-i-ie": [
@@ -30195,20 +43460,27 @@ export default {
         "vä-li-työ"
     ],
     "ä-i-ä": [
+        "bä-gi-ä",
         "hä-li-nä",
         "hä-vi-tä",
+        "hä-vi-ä",
+        "hä-vi-ät",
         "jä-ri-nä",
         "kä-hi-nä",
         "kä-ni-nä",
         "kä-ri-nä",
+        "kä-si-tä",
+        "kä-si-tät",
         "kä-vi-jä",
         "lä-si-ä",
         "lä-ti-nä",
         "nä-ki-jä",
         "nä-si-ä",
         "pä-ki-ä",
+        "pä-ki-ät",
         "pä-ri-nä",
         "rä-hi-nä",
+        "rä-hi-nän",
         "rä-ki-ä",
         "rä-mi-nä",
         "rä-ti-nä",
@@ -30216,24 +43488,52 @@ export default {
         "sä-pi-nä",
         "sä-ri-nä",
         "tä-ri-nä",
+        "vä-li-tä",
+        "vä-li-tän",
+        "vä-li-ä",
         "vä-ri-käs",
         "vä-ri-nä",
+        "vä-ri-nät",
         "ä-hi-nä",
         "ä-li-nä",
         "ä-ri-nä"
+    ],
+    "ä-i-ää": [
+        "hä-vi-ää",
+        "kä-si-ään",
+        "rä-hi-nää"
     ],
     "ä-i-ö": [
         "hä-vi-ö",
         "kä-ti-lö",
         "lä-hi-ö",
+        "lä-hi-ön",
+        "lä-hi-ös",
+        "lä-hi-öst",
         "vä-li-tön",
         "vä-ri-tön"
+    ],
+    "ä-i-öi": [
+        "lä-hi-öis",
+        "lä-hi-öist"
+    ],
+    "ä-i-öö": [
+        "lä-hi-öö"
     ],
     "ä-ie-ä": [
         "vä-lie-rä"
     ],
     "ä-ii": [
+        "bä-gii",
+        "hä-vii",
+        "hä-viin",
+        "kä-sii",
+        "kä-siin",
+        "rä-kii",
+        "rä-kiin",
+        "vä-hii",
         "vä-hiin",
+        "vä-lii",
         "vä-liin"
     ],
     "ä-ii-e": [
@@ -30243,7 +43543,8 @@ export default {
         "lä-vit-se",
         "vä-kis-ten",
         "vä-lil-le",
-        "vä-lit-se"
+        "vä-lit-se",
+        "vä-ris-ten"
     ],
     "ä-ii-ee": [
         "hä-mil-leen"
@@ -30260,6 +43561,8 @@ export default {
         "ä-kis-ti"
     ],
     "ä-ii-y": [
+        "hä-vin-nyt",
+        "hä-vit-ty",
         "jä-ris-tys",
         "kä-ris-tys",
         "lä-vis-tys",
@@ -30279,14 +43582,19 @@ export default {
         "kä-ris-tä",
         "kä-sil-lä",
         "kä-sis-sä",
+        "kä-sis-tä",
         "lä-him-mäs",
         "lä-hin-nä",
+        "lä-pis-tä",
         "lä-tis-tä",
+        "mä-kil-lä",
+        "nä-tim-mäks",
         "pä-ris-tä",
         "rä-his-tä",
         "rä-mis-tä",
         "rä-pis-kä",
         "rä-tis-tä",
+        "stä-kil-lä",
         "sä-his-tä",
         "sä-pis-tä",
         "sä-ris-tä",
@@ -30304,15 +43612,20 @@ export default {
     "ä-ii-äi": [
         "kä-sik-käin",
         "lä-jit-täin",
-        "vä-hit-täin"
+        "vä-hit-täin",
+        "vä-rik-käit"
     ],
     "ä-ii-ää": [
         "hä-dis-sään",
+        "hä-kis-sään",
         "hä-mil-lään",
         "hä-tis-tää",
+        "hä-vii-mään",
         "hä-vit-tää",
         "jä-nis-tää",
         "kä-ris-tää",
+        "kä-sil-lään",
+        "kä-sis-sään",
         "kä-sit-tää",
         "lä-him-pää",
         "lä-jit-tää",
@@ -30338,6 +43651,7 @@ export default {
     "ä-y": [
         "hä-jy",
         "hä-ly",
+        "hä-lyn",
         "hä-my",
         "hä-py",
         "kä-ly",
@@ -30359,6 +43673,9 @@ export default {
         "sä-vy-te",
         "tä-dy-ke"
     ],
+    "ä-y-ee": [
+        "vä-sy-neet"
+    ],
     "ä-y-i": [
         "hä-ly-tin",
         "kä-ty-ri",
@@ -30378,12 +43695,14 @@ export default {
         "hä-ly-tys",
         "kä-ry-tys",
         "lä-py-tys",
+        "nä-ky-ny",
         "rä-ky-tys",
         "rä-py-tys",
         "sä-ly-tys",
         "sä-vy-tys",
         "tä-ry-tys",
         "vä-sy-mys",
+        "vä-sy-ny",
         "vä-sy-nyt",
         "vä-sy-tys",
         "ä-ly-tys"
@@ -30393,13 +43712,18 @@ export default {
     ],
     "ä-y-ä": [
         "hä-ly-tä",
+        "kä-py-lä",
         "kä-ry-tä",
+        "nä-ky-jä",
         "nä-ky-mä",
+        "nä-ky-mät",
         "nä-ky-vä",
         "nä-ky-ä",
         "rä-py-lä",
+        "sä-vy-jä",
         "sä-vy-käs",
         "tä-hy-tä",
+        "vä-sy-tän",
         "vä-sy-ä",
         "ä-ly-käs",
         "ä-ly-tä"
@@ -30411,6 +43735,10 @@ export default {
         "hä-vy-tön",
         "sä-vy-tön",
         "ä-ly-tön"
+    ],
+    "ä-yi": [
+        "vä-syin",
+        "vä-syit"
     ],
     "ä-yi-e": [
         "hä-myi-nen",
@@ -30431,6 +43759,9 @@ export default {
         "tä-hyil-lä"
     ],
     "ä-yy": [
+        "hä-pyy",
+        "nä-kyy",
+        "sä-vyyn",
         "vä-hyys"
     ],
     "ä-yy-e": [
@@ -30451,7 +43782,11 @@ export default {
         "ä-lyk-kyys"
     ],
     "ä-yy-ä": [
-        "lä-pys-kä"
+        "lä-pys-kä",
+        "sä-vys-tä"
+    ],
+    "ä-yy-äi": [
+        "vä-syt-täis"
     ],
     "ä-yy-ää": [
         "hä-lyt-tää",
@@ -30471,34 +43806,71 @@ export default {
         "ä-lyk-kö"
     ],
     "ä-ä": [
+        "hä-däs",
         "hä-kä",
         "hä-tä",
+        "jä-bä",
+        "jä-bäks",
+        "jä-bäl",
+        "jä-bän",
+        "jä-bät",
         "jä-mä",
+        "jä-mät",
+        "jä-tä",
+        "jä-tän",
+        "jä-tät",
         "krä-nä",
         "kä-nä",
         "lä-jä",
+        "lä-päl",
+        "lä-pät",
+        "mä-hän",
         "mä-sä",
         "mä-tä",
         "mä-täs",
+        "nä-hä",
         "nä-mä",
         "nä-rä",
+        "pä-kä",
+        "rä-bäst",
         "rä-kä",
         "rä-mä",
+        "sä-hän",
         "sä-kä",
         "sä-lä",
+        "tä-hä",
         "tä-hän",
         "tä-mä",
+        "tä-män",
+        "tä-nä",
+        "tä-tä",
         "vä-hä",
         "vä-hän",
-        "vä-kä"
+        "vä-kä",
+        "ä-xän"
     ],
     "ä-ä-e": [
         "sä-pä-le",
+        "vä-hä-sen",
         "vä-kä-nen",
         "ä-pä-re"
     ],
+    "ä-ä-ee": [
+        "kä-vä-see"
+    ],
     "ä-ä-i": [
-        "lä-mä-ri"
+        "hä-tä-sin",
+        "lä-mä-ri",
+        "slä-mä-rin",
+        "sä-hä-rin",
+        "tä-gä-sin",
+        "ä-nä-ris",
+        "ä-pä-rist"
+    ],
+    "ä-ä-ii": [
+        "kä-mä-sii",
+        "ä-nä-rii",
+        "ä-pä-riin"
     ],
     "ä-ä-uu": [
         "mä-tä-kuu"
@@ -30538,11 +43910,15 @@ export default {
         "lä-mä-tä",
         "mä-dä-tä",
         "mä-kä-rä",
+        "mä-kä-tät",
         "nä-pä-tä",
+        "pä-tä-kät",
         "rä-kä-lä",
+        "rä-kä-läs",
         "rä-pä-tä",
         "tä-kä-nä",
         "tä-pä-rä",
+        "tä-tä-hän",
         "vä-sä-tä",
         "ä-kä-mä",
         "ä-kä-tä",
@@ -30552,7 +43928,12 @@ export default {
         "lä-jä-päin"
     ],
     "ä-ä-ää": [
+        "hä-mä-rää",
+        "hä-mä-rään",
         "rä-mä-pää"
+    ],
+    "ä-ä-ö": [
+        "tä-mä-kö"
     ],
     "ä-äi-e": [
         "hä-täi-nen",
@@ -30562,6 +43943,13 @@ export default {
         "vä-häi-nen",
         "vä-häi-sen",
         "ä-käi-nen"
+    ],
+    "ä-äi-ee": [
+        "hä-päi-see"
+    ],
+    "ä-äi-i": [
+        "hä-päi-sin",
+        "lä-päi-sin"
     ],
     "ä-äi-y": [
         "hä-päi-sy",
@@ -30623,13 +44011,31 @@ export default {
         "vä-räyt-tää"
     ],
     "ä-ää": [
-        "tä-nään"
+        "hä-mää",
+        "hä-tää",
+        "jä-bää",
+        "lä-mää",
+        "lä-mään",
+        "nä-hää",
+        "nä-hään",
+        "rä-kää",
+        "swä-gää",
+        "sä-bää",
+        "sä-kään",
+        "tä-nää",
+        "tä-nään",
+        "vä-hään",
+        "vä-sään"
     ],
     "ä-ää-e": [
         "rä-jäh-de"
     ],
     "ä-ää-i": [
-        "rä-kät-ti"
+        "rä-kät-ti",
+        "tä-män-kin",
+        "tä-nään-ki",
+        "vä-hän-kin",
+        "vä-pät-ti"
     ],
     "ä-ää-y": [
         "hä-mään-nys",
@@ -30656,6 +44062,7 @@ export default {
         "ä-räh-dys"
     ],
     "ä-ää-yy": [
+        "hä-mär-tyy",
         "jä-mäk-kyys",
         "rä-mäk-kyys",
         "rä-väk-kyys",
@@ -30663,6 +44070,7 @@ export default {
     ],
     "ä-ää-ä": [
         "jä-mäk-kä",
+        "lä-päl-lä",
         "nä-päk-kä",
         "rä-häk-kä",
         "rä-mäk-kä",
@@ -30704,6 +44112,9 @@ export default {
         "sä-läh-tää",
         "sä-räh-tää",
         "sä-väh-tää",
+        "tä-hän-kään",
+        "tä-nään-kää",
+        "tä-nään-kään",
         "tä-räh-tää",
         "vä-hää-kään",
         "vä-läh-tää",
@@ -30721,8 +44132,10 @@ export default {
         "jä-tös",
         "kä-kö",
         "nä-kö",
+        "nä-ös",
         "sä-lö",
         "sä-rö",
+        "sä-röt",
         "tä-pö"
     ],
     "ä-ö-e": [
@@ -30732,6 +44145,7 @@ export default {
         "tä-pö-sen"
     ],
     "ä-ö-ää": [
+        "nä-kö-jää",
         "nä-kö-jään"
     ],
     "ä-ö-ö": [
@@ -30755,6 +44169,9 @@ export default {
     "ä-öy-ey": [
         "nä-köyh-teys"
     ],
+    "ä-öö-ä": [
+        "nä-kös-tä"
+    ],
     "äi-a-uu": [
         "päin-ma-kuu"
     ],
@@ -30766,12 +44183,17 @@ export default {
     ],
     "äi-e": [
         "häi-ve",
+        "jäi-den",
         "jäi-nen",
+        "jäim-me",
         "jäit-se",
         "läi-ke",
         "läis-ke",
         "mäi-ke",
         "mäis-ke",
+        "näi-den",
+        "näil-le",
+        "näit-ten",
         "päi-ten",
         "päih-de",
         "päis-te",
@@ -30796,7 +44218,14 @@ export default {
         "äi-te-lä"
     ],
     "äi-ee": [
-        "päik-seen"
+        "jäi-seen",
+        "päih-teet",
+        "päik-seen",
+        "räi-keen",
+        "äi-tee"
+    ],
+    "äi-ee-y": [
+        "väis-tel-ly"
     ],
     "äi-ee-ä": [
         "väi-tel-lä",
@@ -30805,6 +44234,9 @@ export default {
     "äi-ee-ää": [
         "näi-vet-tää",
         "päi-vet-tää"
+    ],
+    "äi-ei": [
+        "päih-teit"
     ],
     "äi-ei-e": [
         "säi-kei-nen"
@@ -30816,11 +44248,22 @@ export default {
         "räi-keys"
     ],
     "äi-i": [
+        "jäi-sit",
+        "näi-hin",
+        "näin-kin",
+        "päi-vi",
         "väis-tin",
-        "äi-ti"
+        "äi-dil",
+        "äi-din",
+        "äi-ti",
+        "äi-tin",
+        "äi-tis"
     ],
     "äi-i-i": [
-        "päi-vi-sin"
+        "päi-vi-sin",
+        "äi-ti-kin",
+        "äi-ti-ni",
+        "äi-ti-si"
     ],
     "äi-i-y": [
         "päi-vi-tys"
@@ -30833,38 +44276,64 @@ export default {
         "läis-ki-nä",
         "läis-ki-ä",
         "mäis-ki-ä",
+        "päi-vi-nä",
+        "päi-vi-ä",
         "räi-ki-nä",
         "räis-ki-nä",
-        "räis-ki-ä"
+        "räis-ki-ä",
+        "äi-ti-ä"
     ],
     "äi-i-ö": [
         "häi-ri-ö",
         "säi-li-ö",
         "äi-di-tön"
     ],
+    "äi-ie": [
+        "äi-tien"
+    ],
+    "äi-ii": [
+        "päi-vii",
+        "äi-jii",
+        "äij-jiin"
+    ],
     "äi-ii-aa": [
         "päis-tik-kaa"
+    ],
+    "äi-ii-e": [
+        "äi-dil-le",
+        "äi-jil-le",
+        "äi-til-le"
     ],
     "äi-ii-i": [
         "päi-vik-ki"
     ],
+    "äi-ii-ii": [
+        "räis-kit-tiin"
+    ],
     "äi-ii-ä": [
         "häi-rin-tä",
         "läis-kin-tä",
-        "räis-kin-tä"
+        "räis-kin-tä",
+        "äi-tiin-sä",
+        "äi-tin-sä"
     ],
     "äi-ii-äi": [
         "päi-vit-täin"
     ],
     "äi-ii-ää": [
+        "läi-kit-tää",
         "päi-hit-tää",
-        "päi-vit-tää"
+        "päi-vit-tää",
+        "äi-dil-tään"
     ],
     "äi-ii-ö": [
         "häi-rik-kö"
     ],
     "äi-iy": [
         "äi-tiys"
+    ],
+    "äi-oo": [
+        "näij-joo"
     ],
     "äi-y": [
         "häi-jy",
@@ -30883,6 +44352,7 @@ export default {
         "läis-ky-tys",
         "mäis-ky-tys",
         "päih-ty-mys",
+        "päih-ty-ny",
         "päih-ty-nyt",
         "räis-ky-tys",
         "säi-ly-tys",
@@ -30908,6 +44378,7 @@ export default {
         "räis-ky-nä",
         "räis-ky-vä",
         "räis-ky-ä",
+        "säi-ly-tän",
         "säi-ly-ä",
         "säih-ky-ä",
         "säik-ky-ä",
@@ -30917,15 +44388,25 @@ export default {
         "väis-ty-ä",
         "äi-ty-ä"
     ],
+    "äi-yi": [
+        "häi-pyi",
+        "väi-jyin"
+    ],
     "äi-yy": [
-        "häi-jyys"
+        "häi-jyys",
+        "häi-lyy",
+        "säi-lyy",
+        "säih-kyy",
+        "väi-jyy",
+        "väis-tyy"
     ],
     "äi-yy-i": [
         "häi-jys-ti"
     ],
     "äi-yy-ii": [
         "päih-dyk-siin",
-        "väi-jyk-siin"
+        "väi-jyk-siin",
+        "väi-jyt-tiin"
     ],
     "äi-yy-y": [
         "päi-vys-tys"
@@ -30947,22 +44428,54 @@ export default {
         "säi-lyt-tää"
     ],
     "äi-ä": [
+        "häi-tä",
         "häi-vä",
         "häik-kä",
         "häis-kä",
+        "häis-sä",
+        "häis-tä",
+        "jäi-tä",
+        "jäi-vät",
+        "jäis-tä",
         "läik-kä",
         "läis-kä",
         "mäi-hä",
+        "näi-dän",
+        "näi-nä",
+        "näi-tä",
+        "näil-lä",
+        "näin-hän",
+        "näis-sä",
+        "näis-tä",
+        "päi-tä",
         "päi-vä",
+        "päi-vän",
+        "päi-väs",
+        "päi-väst",
+        "päi-vät",
         "päin-sä",
+        "päis-sä",
+        "päis-säs",
+        "päis-tä",
         "räik-kä",
         "säi-lä",
+        "säi-tä",
+        "väi-tä",
+        "väi-tän",
+        "väi-tät",
         "äi-jä",
+        "äi-jäl",
+        "äi-jän",
+        "äi-jät",
         "äi-mä",
         "äis-kä"
     ],
     "äi-ä-e": [
         "räis-kä-le"
+    ],
+    "äi-ä-i": [
+        "päi-vä-ni",
+        "päik-kä-rit"
     ],
     "äi-ä-yö": [
         "päi-vä-työ"
@@ -30970,8 +44483,10 @@ export default {
     "äi-ä-ä": [
         "häi-pä-tä",
         "läi-mä-tä",
+        "päi-vä-nä",
         "päi-vä-tä",
-        "väit-tä-mä"
+        "väit-tä-mä",
+        "äi-mä-nä"
     ],
     "äi-äi": [
         "päik-käin",
@@ -31010,15 +44525,30 @@ export default {
         "säi-käyt-tää"
     ],
     "äi-ää": [
+        "häi-tään",
+        "häi-vää",
         "mäi-kää",
         "mäis-kää",
+        "päi-vää",
+        "päi-vään",
+        "päis-sää",
         "päis-sään",
         "räi-kää",
         "väis-tää",
-        "väit-tää"
+        "väit-tää",
+        "äi-jää"
+    ],
+    "äi-ää-e": [
+        "häis-säm-me",
+        "päis-säm-me",
+        "äi-jäl-le"
     ],
     "äi-ää-ee": [
         "päi-väl-leen"
+    ],
+    "äi-ää-i": [
+        "päis-sään-ki",
+        "säi-käh-din"
     ],
     "äi-ää-y": [
         "häi-väh-dys",
@@ -31028,6 +44558,13 @@ export default {
         "mäis-käh-dys",
         "räis-käh-dys",
         "säi-käh-dys"
+    ],
+    "äi-ää-ä": [
+        "mäi-häl-lä",
+        "päi-väl-lä",
+        "päi-väs-sä",
+        "päi-väs-tä",
+        "äi-jäl-lä"
     ],
     "äi-ää-ää": [
         "häi-läh-tää",
@@ -31041,6 +44578,7 @@ export default {
     ],
     "äi-ö": [
         "säi-lö",
+        "väi-nö",
         "väi-tös",
         "väis-tö"
     ],
@@ -31070,9 +44608,11 @@ export default {
     ],
     "äy-e": [
         "käy-te",
+        "käym-me",
         "näy-te",
         "räys-ke",
         "säy-ne",
+        "täy-den",
         "täy-te"
     ],
     "äy-e-aa": [
@@ -31092,7 +44632,13 @@ export default {
         "jäy-ke-tä",
         "säy-se-ä"
     ],
+    "äy-e-ää": [
+        "näy-te-tää",
+        "näy-te-tään",
+        "täy-te-tään"
+    ],
     "äy-ee": [
+        "täy-tee",
         "täy-teen"
     ],
     "äy-ee-ee": [
@@ -31131,11 +44677,19 @@ export default {
         "säy-seys"
     ],
     "äy-i": [
+        "käy-tin",
+        "käyn-kin",
         "käyn-ti",
+        "käyt-ti",
         "mäys-tin",
         "näy-tin",
+        "näy-tit",
+        "näyt-ti",
         "täy-si",
+        "täy-sil",
         "täy-sin",
+        "täy-tin",
+        "täyt-ti",
         "äy-ri"
     ],
     "äy-i-a": [
@@ -31155,6 +44709,10 @@ export default {
     ],
     "äy-ie-o": [
         "täys-kiel-to"
+    ],
+    "äy-ii": [
+        "käyn-tiin",
+        "täy-sii"
     ],
     "äy-ii-e": [
         "jäy-kis-te",
@@ -31186,6 +44744,10 @@ export default {
     "äy-uu-a": [
         "täys-kul-ma"
     ],
+    "äy-y": [
+        "käy-ny",
+        "käy-nyt"
+    ],
     "äy-y-y": [
         "räys-ky-tys",
         "täyt-ty-mys"
@@ -31195,27 +44757,54 @@ export default {
         "täy-ty-ä",
         "täyt-ty-ä"
     ],
+    "äy-y-ää": [
+        "käy-ty-ään"
+    ],
+    "äy-yi": [
+        "täy-tyi",
+        "täy-tyis"
+    ],
+    "äy-yi-i": [
+        "täy-tyi-si",
+        "täy-tyis-kin"
+    ],
     "äy-yy": [
         "jäy-hyys",
         "jäyk-kyys",
         "käy-pyys",
         "käy-ryys",
-        "käy-vyys"
+        "käy-vyys",
+        "täy-tyy",
+        "täyt-tyy"
     ],
     "äy-yy-ää": [
         "räys-kyt-tää"
+    ],
+    "äy-yy-ö": [
+        "täy-tyy-kö"
     ],
     "äy-ä": [
         "jäy-hä",
         "jäy-nä",
         "jäyk-kä",
         "käy-dä",
+        "käy-hän",
+        "käy-mäs",
         "käy-pä",
         "käy-rä",
+        "käy-tä",
+        "käy-tän",
+        "käy-tät",
         "käy-vä",
+        "käy-vät",
         "mäy-rä",
+        "näy-tä",
+        "näy-tän",
+        "näy-tät",
+        "päy-dän",
         "räys-kä",
         "räys-täs",
+        "täy-tän",
         "täyn-nä",
         "väy-lä",
         "äy-räs"
@@ -31226,6 +44815,10 @@ export default {
     "äy-ä-i": [
         "täys-kä-si",
         "äys-kä-ri"
+    ],
+    "äy-ä-y": [
+        "täyt-tä-ny",
+        "täyt-tä-nyt"
     ],
     "äy-ä-ä": [
         "käy-mä-lä",
@@ -31238,6 +44831,11 @@ export default {
         "räy-hä-tä",
         "säy-nä-vä",
         "täyt-tä-jä"
+    ],
+    "äy-ä-ää": [
+        "käyt-tä-mään",
+        "näyt-tä-vää",
+        "täyt-tä-vää"
     ],
     "äy-ä-ö": [
         "näyt-tä-mö"
@@ -31252,11 +44850,28 @@ export default {
         "näyk-käis-tä",
         "äys-käis-tä"
     ],
+    "äy-äy-yy": [
+        "käyt-täy-tyy",
+        "käyt-täy-tyyn",
+        "näyt-täy-tyy"
+    ],
     "äy-ää": [
         "jäy-tää",
         "jäys-tää",
+        "käy-dää",
+        "käy-dään",
+        "käy-kää",
+        "käy-kään",
+        "käy-mää",
+        "käy-mään",
         "käyt-tää",
+        "käyt-tään",
+        "näy-kään",
+        "näy-tää",
         "näyt-tää",
+        "räy-hää",
+        "räy-hään",
+        "räy-häät",
         "täyt-tää"
     ],
     "äy-ää-e": [
@@ -31270,10 +44885,14 @@ export default {
     "äy-ää-ä": [
         "räy-hää-jä"
     ],
+    "äy-ää-ää": [
+        "näy-täk-kää"
+    ],
     "äy-ää-ö": [
         "käy-räs-tö",
         "käy-tän-tö",
         "näy-tän-tö",
+        "näyt-täs-kö",
         "täys-kään-nös",
         "väy-läs-tö"
     ],
@@ -31281,8 +44900,11 @@ export default {
         "täy-tän-töön"
     ],
     "äy-ö": [
+        "käy-kö",
         "käy-tös",
+        "käyt-kö",
         "käyt-tö",
+        "näy-tön",
         "näy-tös",
         "näyt-tö",
         "täyt-tö"
@@ -31290,8 +44912,20 @@ export default {
     "äy-ö-aa": [
         "täyt-tö-maa"
     ],
+    "äy-ö-ä": [
+        "käyt-tö-ä"
+    ],
     "äy-öi-ä": [
         "käyt-töi-kä"
+    ],
+    "äy-öö-ä": [
+        "käy-tös-sä",
+        "käy-tös-tä"
+    ],
+    "ää-a": [
+        "hän-da",
+        "kläm-ma",
+        "kän-na"
     ],
     "ää-a-a": [
         "hää-ta-pa",
@@ -31330,15 +44964,21 @@ export default {
     ],
     "ää-aa-i": [
         "hää-mars-si",
+        "hää-vals-sit",
         "jää-hal-li",
+        "jää-kaa-pin",
         "jää-kaap-pi",
         "jää-kah-vi",
         "jää-tans-si"
     ],
+    "ää-aa-ii": [
+        "jää-kaap-piin"
+    ],
     "ää-aa-o": [
         "jää-pal-lo",
         "pää-jak-so",
-        "pää-kal-lo"
+        "pää-kal-lo",
+        "pää-kal-lon"
     ],
     "ää-aa-u": [
         "jää-kar-hu",
@@ -31350,13 +44990,17 @@ export default {
     "ää-ai-a": [
         "jää-ai-ka",
         "jää-kai-ra",
-        "pään-vai-va"
+        "pään-vai-va",
+        "täl-lais-ta"
     ],
     "ää-ai-e": [
         "pää-ai-ne",
         "pää-ai-nes",
         "pää-rai-de",
         "täl-lai-nen"
+    ],
+    "ää-ai-ee": [
+        "täl-lai-seen"
     ],
     "ää-ai-o": [
         "pää-pai-no"
@@ -31373,15 +45017,28 @@ export default {
         "jää-kau-si"
     ],
     "ää-e": [
+        "fädc-hen",
+        "häl-le",
         "här-me",
+        "jäl-jel",
+        "jäl-jen",
+        "jäl-jet",
         "jän-ne",
+        "jär-jen",
+        "jääl-le",
         "jään-ne",
         "käm-men",
+        "käs-ken",
+        "kät-ke",
+        "kät-ken",
         "kää-re",
         "kään-ne",
         "käär-me",
         "läh-de",
+        "läh-den",
+        "läh-det",
         "län-get",
+        "län-nest",
         "läp-se",
         "lää-ke",
         "lää-te",
@@ -31389,35 +45046,62 @@ export default {
         "näh-den",
         "näät-sen",
         "pärs-ke",
+        "pää-se",
+        "pää-sen",
+        "pää-set",
         "pää-te",
         "pääl-le",
         "päär-me",
         "räp-se",
         "säh-ke",
         "sää-de",
+        "tvät-ten",
         "täh-de",
         "täh-den",
+        "täh-det",
+        "täl-le",
         "tän-ne",
         "väl-ke",
         "vär-ve",
         "vään-ne",
         "äh-ke",
         "äs-ken",
+        "ää-nen",
         "ää-nes",
+        "ää-net",
+        "ää-res",
         "ään-ne"
     ],
     "ää-e-e": [
         "jän-te-re",
-        "täs-te-des"
+        "käm-me-nen",
+        "kät-te-let",
+        "päät-te-len",
+        "sääs-te-le",
+        "täs-te-des",
+        "vält-te-len",
+        "vään-te-let",
+        "ään-te-le"
+    ],
+    "ää-e-ee": [
+        "läh-te-neen",
+        "läm-pe-nee",
+        "päät-te-lee",
+        "sää-te-lee"
     ],
     "ää-e-i": [
         "här-ve-li",
+        "jäl-ke-ni",
+        "jäl-ke-si",
         "jää-ke-li",
         "jää-me-ri",
         "jää-ve-si",
+        "kät-te-li",
         "pää-pe-li",
+        "pääl-le-ni",
         "sämp-le-ri",
         "vää-pe-li",
+        "ää-ne-si",
         "ää-ne-ti"
     ],
     "ää-e-o": [
@@ -31428,9 +45112,11 @@ export default {
         "pää-je-hu"
     ],
     "ää-e-y": [
+        "jäh-me-tyn",
         "kät-te-ly",
         "kään-te-ly",
         "läh-de-tys",
+        "läh-te-ny",
         "päät-te-ly",
         "sää-te-ly",
         "sään-te-ly",
@@ -31457,10 +45143,18 @@ export default {
         "kär-ke-vä",
         "käs-ke-ä",
         "kät-ke-ä",
+        "läh-te-mäs",
+        "läh-te-vä",
+        "läh-te-vän",
+        "läh-te-väs",
         "läh-te-ä",
         "läm-me-tä",
+        "nät-te-jä",
+        "sär-ke-vän",
         "sär-ke-ä",
         "täh-de-käs",
+        "täh-te-nä",
+        "täh-te-ä",
         "tär-ke-ä",
         "väl-je-tä",
         "än-ge-tä",
@@ -31469,6 +45163,16 @@ export default {
     "ää-e-äi": [
         "pääl-le-päin",
         "tän-ne-päin"
+    ],
+    "ää-e-ää": [
+        "jär-ke-vää",
+        "kään-ne-tään",
+        "läh-de-kään",
+        "läh-de-tään",
+        "läh-te-mään",
+        "pää-se-kään",
+        "pääs-te-tään",
+        "sääs-te-tään"
     ],
     "ää-e-ö": [
         "jäl-je-tön",
@@ -31479,11 +45183,32 @@ export default {
         "ää-re-tön"
     ],
     "ää-ee": [
+        "jäl-kee",
         "jäl-keen",
         "jäl-leen",
+        "jär-kee",
+        "jär-veen",
         "jää-tee",
+        "käs-kee",
+        "kät-kee",
+        "kään-teet",
+        "läh-tee",
+        "läh-teen",
+        "läm-pee",
+        "län-teen",
+        "lääk-keen",
+        "näh-neet",
+        "pää-see",
+        "pää-seeks",
         "rääp-peet",
+        "täh-tee",
+        "täl-lee",
+        "täl-leeks",
         "täl-leen",
+        "tär-kee",
+        "tär-keet",
+        "välk-kees",
+        "än-kee",
         "ää-neen",
         "ää-reen"
     ],
@@ -31496,14 +45221,25 @@ export default {
     "ää-ee-e": [
         "jäl-jel-le",
         "jäl-jen-ne",
+        "jär-vel-le",
         "jää-es-te",
+        "pää-tel-len",
         "täh-del-le",
+        "ää-nen-ne",
         "ää-rel-le"
     ],
     "ää-ee-i": [
         "häm-men-nin",
+        "jäl-kee-si",
         "jää-hel-mi",
-        "pää-ver-bi"
+        "pää-ver-bi",
+        "täh-dek-si"
+    ],
+    "ää-ee-ii": [
+        "kään-net-tiin",
+        "läh-det-tiin",
+        "pää-tet-tiin",
+        "sää-det-tii"
     ],
     "ää-ee-o": [
         "hää-kel-lot",
@@ -31522,6 +45258,7 @@ export default {
         "jär-jes-tys",
         "käh-vel-lys",
         "kär-ven-nys",
+        "sää-det-ty",
         "täh-den-nys",
         "täs-men-nys",
         "väl-jen-nys",
@@ -31529,21 +45266,35 @@ export default {
         "ää-nes-tys"
     ],
     "ää-ee-yy": [
+        "jäh-met-tyy",
         "kär-jek-kyys",
         "ää-nek-kyys"
     ],
     "ää-ee-ä": [
+        "bät-les-sä",
         "hää-del-lä",
         "jäl-jel-lä",
         "jäl-jem-mä",
         "jäl-jem-mäs",
         "jäl-jes-sä",
         "jäl-jes-tä",
+        "jäl-keen-sä",
+        "jäl-ken-sä",
+        "jär-vel-lä",
+        "jär-ves-sä",
+        "jär-ves-tä",
         "jää-kent-tä",
+        "jää-vet-tä",
         "käm-mek-kä",
         "kät-ken-tä",
         "kään-nel-lä",
+        "läh-den-pä",
+        "läh-tees-tä",
         "län-nem-mäs",
+        "län-nes-tä",
+        "lät-ket-tä",
+        "lää-ket-tä",
+        "mää-ret-tä",
         "nät-kel-mä",
         "pää-tel-lä",
         "pää-tel-mä",
@@ -31551,12 +45302,16 @@ export default {
         "sää-del-lä",
         "sään-nel-lä",
         "sääs-tel-lä",
+        "täh-del-tä",
         "tän-nem-mä",
         "tän-nem-mäs",
         "tär-vel-lä",
         "väl-tel-lä",
         "vään-nel-lä",
+        "äm-cee-nä",
         "än-gel-mä",
+        "ää-nen-sä",
+        "ää-nes-tä",
         "ää-rel-lä",
         "ää-rel-tä",
         "ää-res-sä",
@@ -31577,6 +45332,7 @@ export default {
         "jäl-jem-pää",
         "jäl-jen-tää",
         "jäl-jes-tää",
+        "jäl-keen-kään",
         "jär-jes-tää",
         "jär-jes-tään",
         "jär-ven-jää",
@@ -31584,8 +45340,11 @@ export default {
         "käm-men-tää",
         "kär-ven-tää",
         "käs-ket-tää",
+        "kään-nel-lään",
         "läh-det-tää",
         "län-nem-pää",
+        "näh-des-sään",
+        "pääs-seet-kään",
         "täh-den-tää",
         "tän-nem-pää",
         "täs-men-tää",
@@ -31599,6 +45358,14 @@ export default {
         "päät-tee-tön",
         "vää-ren-nös"
     ],
+    "ää-ei": [
+        "gät-tei",
+        "lääk-keit",
+        "nät-tei",
+        "träk-kei",
+        "tär-keint",
+        "wäk-kei"
+    ],
     "ää-ei-e": [
         "jäl-kei-nen",
         "jän-tei-nen",
@@ -31608,6 +45375,12 @@ export default {
         "säh-keit-se",
         "äs-kei-nen",
         "ää-rei-nen"
+    ],
+    "ää-ei-i": [
+        "räp-gei-min"
+    ],
+    "ää-ei-ii": [
+        "tär-kei-siin"
     ],
     "ää-ei-y": [
         "jär-kei-ly",
@@ -31619,7 +45392,11 @@ export default {
     "ää-ei-ä": [
         "jän-tei-käs",
         "jär-keil-lä",
-        "tär-keil-lä"
+        "käär-mei-tä",
+        "lääk-kei-tä",
+        "tär-keil-lä",
+        "tär-keim-mät",
+        "tär-kein-tä"
     ],
     "ää-ei-äi": [
         "lää-neit-täin"
@@ -31640,14 +45417,25 @@ export default {
     "ää-ey-i": [
         "lää-keyrt-ti"
     ],
+    "ää-ey-yy": [
+        "kät-key-tyy"
+    ],
     "ää-i": [
         "brän-di",
+        "bäk-ki",
         "bän-di",
+        "clääs-si",
+        "drän-kis",
+        "dän-kis",
+        "dän-kit",
+        "flät-ti",
         "fää-ri",
         "gän-gi",
         "häk-ki",
+        "häm-pil",
         "härk-ki",
         "härs-ki",
+        "häs-sin",
         "hää-vi",
         "jäk-ki",
         "jäl-ki",
@@ -31655,6 +45443,7 @@ export default {
         "jämp-ti",
         "jämt-ti",
         "jär-ki",
+        "jär-sin",
         "jär-vi",
         "jät-ti",
         "jäts-ki",
@@ -31662,11 +45451,25 @@ export default {
         "jään-ti",
         "kräk-ki",
         "kän-ni",
+        "kän-nin",
+        "kän-nis",
+        "kän-nist",
+        "kän-nit",
         "kär-hi",
         "kär-ki",
         "kär-ri",
+        "kär-si",
+        "kär-sin",
+        "käs-ki",
+        "käs-kit",
         "kää-mi",
+        "kää-ri",
         "kään-nin",
+        "kään-si",
+        "kään-sit",
+        "läh-din",
+        "läh-dit",
+        "läh-ti",
         "läk-ki",
         "läm-min",
         "län-si",
@@ -31677,20 +45480,31 @@ export default {
         "lää-ni",
         "mäl-li",
         "mäm-mi",
+        "män-gi",
         "mänt-ti",
         "mäs-ki",
+        "mää-rin",
         "näk-ki",
         "nän-ni",
         "näp-pi",
         "när-hi",
         "nät-ti",
+        "nään-ki",
         "pläk-ki",
+        "plää-nit",
         "pränt-ti",
         "präs-si",
         "päl-vi",
         "päs-si",
         "pät-si",
+        "pää-ni",
         "pää-ri",
+        "pää-si",
+        "pää-sis",
+        "pää-sit",
+        "pää-tin",
+        "pää-tit",
+        "päät-ti",
         "räk-ki",
         "räls-si",
         "rän-ni",
@@ -31700,32 +45514,42 @@ export default {
         "rää-vi",
         "rääk-ki",
         "sfää-ri",
+        "stän-diks",
         "säk-ki",
         "säl-li",
+        "säl-lit",
         "sän-ki",
         "säp-pi",
+        "sär-jin",
         "sär-ki",
         "sär-mi",
         "sär-vin",
         "sät-kin",
         "sää-din",
         "sää-li",
+        "sää-list",
         "sää-ri",
         "sääk-si",
         "sääs-ki",
+        "tsäns-sin",
         "tsät-ti",
+        "tsääns-si",
         "täh-ti",
         "täk-ki",
         "täl-li",
         "tärk-ki",
         "tärp-pi",
+        "täs-ki",
+        "tää-kin",
         "värk-ki",
+        "vää-ri",
         "vää-rin",
         "vään-nin",
         "väär-ti",
         "väärt-ti",
         "äl-li",
         "ää-ni",
+        "ää-nin",
         "ää-ri"
     ],
     "ää-i-a": [
@@ -31753,8 +45577,19 @@ export default {
         "ää-ni-nen",
         "ää-ni-te"
     ],
+    "ää-i-ee": [
+        "mät-ki-neen"
+    ],
     "ää-i-i": [
-        "läm-mi-tin"
+        "jäl-ji-tin",
+        "läh-ti-kin",
+        "läh-ti-si",
+        "läh-ti-sin",
+        "läh-ti-sit",
+        "läm-mi-tin",
+        "läm-pi-min",
+        "pää-si-si",
+        "pää-si-sit"
     ],
     "ää-i-ie": [
         "jär-ki-mies",
@@ -31789,9 +45624,14 @@ export default {
         "täh-ti-vyö"
     ],
     "ää-i-ä": [
+        "bän-di-hän",
+        "dänk-ki-ä",
+        "här-ki-ä",
+        "härs-ki-ä",
         "häs-si-ä",
         "hää-ri-nä",
         "hää-ri-ä",
+        "jäl-ki-ä",
         "jär-si-ä",
         "käh-mi-ä",
         "kär-si-jä",
@@ -31801,10 +45641,13 @@ export default {
         "kää-mi-ä",
         "kää-ri-ä",
         "läh-ti-jä",
+        "läh-ti-vät",
         "läm-mi-tä",
+        "läm-mi-tän",
         "läp-si-ä",
         "lät-ki-ä",
         "lää-ki-tä",
+        "lää-vi-ä",
         "lääp-pi-ä",
         "mär-ki-ä",
         "mät-ki-ä",
@@ -31823,35 +45666,52 @@ export default {
         "rät-ki-ä",
         "rää-pi-ä",
         "rääp-pi-ä",
+        "släp-pi-ä",
         "säh-li-ä",
+        "säk-ki-ä",
         "sär-ki-jä",
         "sär-mi-käs",
         "sär-pi-ä",
         "sät-ki-ä",
         "sät-ti-ä",
+        "sää-li-tän",
         "sää-li-ä",
         "täh-di-käs",
         "täh-ki-ä",
+        "täh-ti-nä",
+        "täh-ti-ä",
+        "täk-ki-ä",
         "täp-li-käs",
         "tärp-pi-ä",
         "värt-ti-nä",
+        "vää-ri-ä",
         "äh-ki-nä",
         "äh-ki-ä",
-        "äk-ki-ä"
+        "äk-ki-ä",
+        "ää-ni-ä"
     ],
     "ää-i-ää": [
         "jäl-ki-pää",
+        "jäl-ki-ään",
         "jär-ki-ään",
         "jäs-ti-pää",
         "kär-ki-pää",
+        "kär-si-tään",
+        "kää-ri-mään",
+        "kää-ri-tää",
+        "läm-pi-mään",
         "mänt-ti-pää",
+        "räm-pi-mään",
         "rät-ti-pää",
+        "sää-li-vään",
         "ää-ni-pää",
-        "ää-ri-pää"
+        "ää-ri-pää",
+        "ää-ri-päät"
     ],
     "ää-i-ö": [
         "jää-vi-tön",
         "kää-pi-ö",
+        "kää-pi-öt",
         "läm-pi-ö",
         "rää-vi-tön",
         "sär-mi-ö",
@@ -31863,11 +45723,15 @@ export default {
         "ään-ti-ö"
     ],
     "ää-ie": [
+        "jär-vien",
         "jää-tie",
         "läh-tien",
+        "läh-ties",
         "pää-mies",
         "pää-tie",
-        "pään-tie"
+        "pään-tie",
+        "täh-tien",
+        "äm-mien"
     ],
     "ää-ie-a": [
         "hää-vie-ras"
@@ -31878,6 +45742,43 @@ export default {
     "ää-ie-o": [
         "jää-kiek-ko",
         "sää-tie-dot"
+    ],
+    "ää-ie-ä": [
+        "läh-ties-sä"
+    ],
+    "ää-ii": [
+        "bäk-kii",
+        "bäk-kiin",
+        "hää-vii",
+        "jäl-kii",
+        "jär-viin",
+        "jät-kii",
+        "jää-tiin",
+        "kär-sii",
+        "kääs-hii",
+        "läp-sii",
+        "läs-kii",
+        "lät-siin",
+        "näh-tii",
+        "näh-tiin",
+        "nät-tii",
+        "pän-nii",
+        "pääs-kii",
+        "pääs-tii",
+        "pääs-tiin",
+        "rän-niin",
+        "räp-pii",
+        "räp-piin",
+        "räp-sii",
+        "sää-lii",
+        "täh-tiin",
+        "vää-rii",
+        "vää-riin",
+        "äk-kii",
+        "äm-mii",
+        "ää-nii",
+        "ää-riin",
+        "ääs-sii"
     ],
     "ää-ii-a": [
         "jää-vir-ta",
@@ -31903,10 +45804,12 @@ export default {
         "jämp-tis-ti",
         "jämt-tis-ti",
         "säh-lin-ki",
+        "sää-lik-si",
         "täh-dik-ki",
         "vän-rik-ki",
         "väs-tin-ki",
-        "äk-sii-si"
+        "äk-sii-si",
+        "ää-nit-ti"
     ],
     "ää-ii-u": [
         "hää-kimp-pu"
@@ -31926,14 +45829,19 @@ export default {
         "jäl-jil-tä",
         "jäs-sik-kä",
         "käh-min-tä",
+        "kän-nis-sä",
         "kää-min-tä",
         "kää-rin-tä",
+        "läm-min-tä",
         "lät-kin-tä",
         "lää-kin-tä",
         "räp-sin-tä",
         "rää-tik-kä",
+        "sää-lis-tä",
         "sää-mis-kä",
-        "tän-nim-mäs"
+        "täh-dis-sä",
+        "tän-nim-mäs",
+        "ää-nis-tä"
     ],
     "ää-ii-äi": [
         "päl-vit-täin",
@@ -31951,6 +45859,7 @@ export default {
         "päs-sin-pää",
         "rän-sis-tää",
         "sää-lit-tää",
+        "sää-mis-kää",
         "tän-nim-pää",
         "täp-lit-tää",
         "vää-ris-tää",
@@ -31977,6 +45886,7 @@ export default {
     "ää-o-a": [
         "pää-no-ja",
         "pää-o-ma",
+        "pää-o-man",
         "pää-o-sa"
     ],
     "ää-o-i": [
@@ -32010,7 +45920,8 @@ export default {
         "pää-jouk-ko"
     ],
     "ää-u-a": [
-        "hää-ku-va"
+        "hää-ku-va",
+        "hää-ku-van"
     ],
     "ää-u-e": [
         "hää-pu-he"
@@ -32083,7 +45994,11 @@ export default {
     "ää-y": [
         "hän-nys",
         "järk-ky",
+        "jää-dyn",
         "jää-hy",
+        "jää-ny",
+        "jää-nyt",
+        "jää-ty",
         "kän-ny",
         "känt-ty",
         "kär-ry",
@@ -32091,24 +46006,35 @@ export default {
         "kät-kyt",
         "kää-dyt",
         "kää-ty",
+        "kään-nyn",
         "läk-sy",
         "läl-ly",
         "läs-sy",
         "lät-ty",
+        "män-nyt",
         "män-ty",
         "märs-sy",
         "mät-ky",
         "määr-ly",
+        "näh-ny",
+        "näh-nyt",
+        "näh-ty",
         "näp-py",
         "pärs-ky",
+        "pää-dys",
         "pää-sy",
         "pää-ty",
         "pääl-lys",
         "päär-ly",
         "pääs-ky",
+        "pääs-sy",
+        "pääs-syt",
+        "pääs-ty",
         "rämp-sy",
         "rää-sy",
         "säh-ly",
+        "sän-gyn",
+        "sän-gys",
         "sän-ky",
         "sär-ky",
         "sät-ky",
@@ -32131,9 +46057,15 @@ export default {
         "pääs-ky-nen",
         "är-sy-ke"
     ],
+    "ää-y-ee": [
+        "jää-ty-neen",
+        "jää-ty-neet",
+        "jääh-ty-neen"
+    ],
     "ää-y-i": [
         "hän-ty-ri",
-        "jääh-dy-tin"
+        "jääh-dy-tin",
+        "sän-ky-ni"
     ],
     "ää-y-ie": [
         "kär-ry-tie",
@@ -32172,12 +46104,16 @@ export default {
         "hää-ly-ä",
         "järk-ky-ä",
         "jää-ty-mä",
+        "jää-ty-vät",
         "jää-ty-ä",
         "jääh-ty-ä",
         "käk-ky-rä",
+        "kän-ny-kän",
         "käp-py-rä",
+        "kär-ry-jä",
         "kärk-ky-jä",
         "kärk-ky-ä",
+        "kään-ny-tä",
         "kään-ty-ä",
         "läp-sy-ä",
         "mää-ky-ä",
@@ -32187,7 +46123,9 @@ export default {
         "pärs-ky-ä",
         "pää-ry-nä",
         "pää-ty-ä",
+        "pääs-ty-nä",
         "päät-ty-ä",
+        "räm-py-tän",
         "räns-ty-ä",
         "räp-sy-ä",
         "rää-ky-nä",
@@ -32200,6 +46138,7 @@ export default {
         "sääs-ty-ä",
         "täh-ky-lä",
         "tärs-ky-ä",
+        "välk-ky-vä",
         "välk-ky-ä",
         "vält-ty-ä",
         "vär-jy-ä",
@@ -32213,8 +46152,25 @@ export default {
         "är-ty-ä",
         "ään-ty-ä"
     ],
+    "ää-y-ää": [
+        "jää-ty-vää",
+        "kään-ny-tään",
+        "nään-ny-tään",
+        "nään-ty-vään",
+        "pää-dy-tään",
+        "pää-ty-kään"
+    ],
     "ää-y-ö": [
         "sää-dy-tön"
+    ],
+    "ää-yi": [
+        "kään-nyin",
+        "kään-tyi",
+        "kään-tyis",
+        "nään-tyi",
+        "pää-dyit",
+        "päät-tyi",
+        "vään-tyi"
     ],
     "ää-yi-e": [
         "kär-tyi-nen",
@@ -32224,6 +46180,10 @@ export default {
         "pää-dyit-se",
         "rää-syi-nen",
         "är-tyi-nen"
+    ],
+    "ää-yi-i": [
+        "jää-tyi-sin",
+        "päät-tyi-kin"
     ],
     "ää-yi-y": [
         "äk-syi-ly"
@@ -32244,9 +46204,22 @@ export default {
         "pää-dyit-täin"
     ],
     "ää-yy": [
+        "jää-hyy",
+        "jää-tyy",
+        "kään-tyy",
         "mär-kyys",
+        "pää-tyy",
+        "pää-tyyn",
+        "päät-tyy",
+        "sän-kyy",
+        "sän-kyyn",
+        "sär-kyy",
+        "sää-tyy",
         "väl-jyys",
+        "vält-tyy",
+        "värs-syyn",
         "vää-ryys",
+        "vään-tyy",
         "äk-syys"
     ],
     "ää-yy-e": [
@@ -32256,6 +46229,7 @@ export default {
         "jää-pyyn-ti",
         "pää-kyt-kin",
         "pää-tyyp-pi",
+        "sän-kyy-ni",
         "sää-rys-tin",
         "äk-sys-ti"
     ],
@@ -32273,29 +46247,38 @@ export default {
         "jää-kyl-mä",
         "kän-nyk-kä",
         "kär-kyn-tä",
+        "pää-dys-sä",
+        "pää-sys-tä",
         "pääl-lys-tä",
         "rää-kyn-tä",
+        "sän-gys-sä",
+        "sän-gys-tä",
         "väl-kyn-tä",
         "är-jyn-tä"
     ],
     "ää-yy-ää": [
         "jär-kyt-tää",
         "jää-dyt-tää",
+        "jää-kyl-mää",
         "jääh-dyt-tää",
         "käs-kyt-tää",
         "kään-nyt-tää",
         "läk-syt-tää",
         "läp-syt-tää",
+        "läs-syn-lää",
         "läs-syt-tää",
         "mäs-syt-tää",
+        "näh-nyt-kään",
         "näp-syt-tää",
         "nään-nyt-tää",
         "pärs-kyt-tää",
         "pääl-lys-tää",
+        "pääs-syk-kää",
         "räk-syt-tää",
         "räm-pyt-tää",
         "räp-syt-tää",
         "rät-kyt-tää",
+        "sän-gys-tään",
         "sät-kyt-tää",
         "väl-kyt-tää",
         "än-kyt-tää",
@@ -32303,6 +46286,9 @@ export default {
     ],
     "ää-yy-ö": [
         "pääl-lys-tö"
+    ],
+    "ää-yy-öö": [
+        "pääl-lys-töö"
     ],
     "ää-yö": [
         "pää-työ"
@@ -32314,116 +46300,208 @@ export default {
         "pään-nyök-käys"
     ],
     "ää-ä": [
+        "häl-lä",
         "hän-tä",
         "häp-pä",
         "här-kä",
         "här-mä",
+        "hää-dän",
         "jän-kä",
         "jän-nä",
         "jäns-kä",
         "jät-kä",
+        "jät-kän",
+        "jät-kät",
         "jää-dä",
         "jää-mä",
+        "jää-mäs",
         "jää-rä",
+        "jää-tä",
+        "jää-vän",
+        "jää-vät",
+        "jääl-lä",
+        "jääs-sä",
         "krää-sä",
+        "käm-päs",
+        "käm-päst",
         "kämp-pä",
         "kän-sä",
         "kär-käs",
         "kär-sä",
         "kärp-pä",
         "käs-nä",
+        "kät-tä",
         "kää-pä",
         "kääk-kä",
+        "kään-nä",
+        "kään-nän",
+        "kään-nät",
+        "läp-pä",
         "läp-pä",
         "läs-nä",
         "lät-kä",
         "lät-sä",
         "lää-vä",
+        "lää-väks",
         "mäh-kä",
         "mäl-sä",
         "män-tä",
         "mär-kä",
         "mää-rä",
+        "mää-räl",
+        "mää-räs",
+        "mää-rät",
         "näh-dä",
         "näl-kä",
         "näp-sä",
         "nää-tä",
         "nääm-mä",
+        "näät-sä",
         "prät-kä",
+        "päm-päs",
         "pän-nä",
         "pärs-tä",
         "pät-kä",
+        "pää-hä",
         "pää-hän",
+        "pää-häs",
+        "pää-tä",
+        "pää-tän",
+        "pää-tät",
         "pääl-lä",
         "pääl-tä",
+        "pääl-täs",
+        "pään-sä",
         "pääs-sä",
         "pääs-tä",
+        "pääs-tän",
+        "pääs-täs",
         "räh-jä",
         "räh-mä",
         "rän-tä",
         "sär-mä",
         "särk-kä",
         "sät-kä",
+        "sää-dän",
+        "sää-dät",
+        "sää-hän",
+        "sääs-tä",
+        "sääs-tän",
         "täh-kä",
+        "täh-kän",
+        "täl-lä",
+        "täl-läst",
+        "täl-tä",
         "täp-lä",
         "täs-sä",
         "täs-tä",
         "tääl-lä",
         "tääl-tä",
         "väl-jä",
+        "väl-käl",
         "välk-kä",
         "välp-pä",
+        "vär-jäs",
         "vää-rä",
+        "vää-rält",
+        "vää-räs",
+        "vää-räst",
+        "vää-rät",
+        "vään-nä",
+        "vään-nän",
         "äm-mä",
+        "äm-mät",
         "änk-kä",
-        "äs-sä"
+        "är-rän",
+        "äs-sä",
+        "äs-sän",
+        "ään-nän",
+        "ään-tä",
+        "ään-täs"
     ],
     "ää-ä-aa": [
         "näl-kä-maa"
     ],
     "ää-ä-e": [
         "här-kä-nen",
+        "här-nä-ten",
         "jär-kä-le",
         "kär-pä-nen",
         "läm-pä-re",
         "pää-jä-sen",
         "rää-pä-le"
     ],
+    "ää-ä-ee": [
+        "jär-kä-leet"
+    ],
+    "ää-ä-ei": [
+        "lää-kä-reit",
+        "mäk-kä-reis",
+        "räp-pä-reist",
+        "räp-pä-reit"
+    ],
     "ää-ä-i": [
+        "bän-dä-rit",
         "hää-vä-ki",
         "jälk-kä-ri",
         "jän-nä-ri",
+        "jät-tä-sit",
         "jää-kä-ri",
         "kär-rä-ri",
+        "kät-tä-si",
         "läl-lä-ri",
         "länk-kä-ri",
         "lää-kä-ri",
+        "lää-kä-ris",
+        "lää-kä-rit",
         "näk-kä-ri",
+        "pää-hä-ni",
+        "pää-hä-si",
+        "pää-tä-ni",
+        "pää-tä-si",
         "pää-vä-ri",
+        "pääl-tä-si",
+        "pääs-sä-ni",
+        "pääs-tä-ni",
         "päät-tä-ri",
         "räp-pä-ri",
+        "räp-pä-rin",
+        "räp-pä-rit",
+        "räp-pä-sit",
         "rää-tä-li",
         "säh-lä-ri",
+        "täs-tä-kin",
         "välk-kä-ri",
         "väls-kä-ri",
         "vär-jä-ri",
         "vär-vä-ri",
-        "äm-pä-ri"
+        "äm-pä-ri",
+        "ään-tä-kin"
     ],
     "ää-ä-ii": [
-        "näh-tä-viin"
+        "näh-tä-viin",
+        "näl-kä-sii",
+        "äm-pä-riin"
+    ],
+    "ää-ä-uo": [
+        "näl-kä-vuos"
     ],
     "ää-ä-uu": [
         "hän-tä-luu",
         "rää-vä-suu"
     ],
     "ää-ä-y": [
+        "jät-tä-nyt",
+        "kään-tä-ny",
         "lää-hä-tys",
         "päl-pä-tys",
         "pär-pä-tys",
+        "päät-tä-ny",
+        "päät-tä-nyt",
         "säk-sä-tys",
         "sät-kä-tys",
         "sää-dä-tys",
+        "sää-tä-ny",
         "ään-tä-mys"
     ],
     "ää-ä-yy": [
@@ -32443,6 +46521,7 @@ export default {
         "jän-nä-tä",
         "jär-kä-tä",
         "jää-tä-vä",
+        "jää-tä-vän",
         "jää-vä-tä",
         "käk-kä-rä",
         "kän-nä-tä",
@@ -32457,6 +46536,7 @@ export default {
         "lät-rä-tä",
         "lät-tä-nä",
         "mäl-lä-tä",
+        "mär-kä-nä",
         "mäs-kä-nä",
         "mäs-kä-tä",
         "mäs-sä-tä",
@@ -32472,6 +46552,7 @@ export default {
         "pän-tä-tä",
         "pär-jä-tä",
         "päär-mä-tä",
+        "pääs-tä-vä",
         "päät-tä-jä",
         "päät-tä-vä",
         "räh-jä-tä",
@@ -32497,6 +46578,7 @@ export default {
         "täs-mä-tä",
         "väk-kä-rä",
         "väl-pä-tä",
+        "vält-tä-mät",
         "vält-tä-vä",
         "vän-gä-tä",
         "vär-jä-tä",
@@ -32509,40 +46591,71 @@ export default {
     "ää-ä-äi": [
         "pääl-lä-päin",
         "pääl-tä-päin",
+        "tääl-lä-päi",
         "tääl-lä-päin",
         "tääl-tä-päin"
     ],
     "ää-ä-ää": [
+        "bät-lä-tää",
         "hän-tä-pää",
         "här-kä-pää",
         "hät-hä-tää",
+        "hää-rä-tään",
+        "jär-kä-tään",
+        "jät-tä-kää",
         "jää-rä-pää",
+        "kän-nä-tään",
+        "kään-tä-mään",
+        "mää-rä-tään",
+        "näh-tä-vää",
+        "pär-jä-tään",
+        "sän-nä-tään",
+        "täh-dä-tään",
         "täh-kä-pää",
+        "vään-tä-mään",
         "är-rä-pää"
     ],
     "ää-ä-ö": [
         "kär-sä-mö",
         "mää-rä-tön",
-        "päh-kä-mö"
+        "päh-kä-mö",
+        "pää-tä-kö",
+        "täl-tä-kö",
+        "täs-sä-kö"
     ],
     "ää-äi": [
         "näp-päin",
         "pää-täi",
         "pääk-käin",
+        "pääs-täis",
         "täh-täin"
     ],
     "ää-äi-e": [
         "här-mäi-nen",
         "kän-säi-nen",
+        "lät-räi-le",
         "mär-käi-nen",
         "mät-täi-nen",
         "mää-räi-nen",
         "näl-käi-nen",
+        "näp-päi-len",
         "pääs-täi-nen",
         "räh-jäi-nen",
         "räh-mäi-nen",
         "täh-käi-nen",
         "täp-läi-nen"
+    ],
+    "ää-äi-ee": [
+        "snäp-päi-lee",
+        "täh-täi-meen"
+    ],
+    "ää-äi-i": [
+        "jät-täi-sit",
+        "mää-räi-sin",
+        "pääs-täi-sit"
+    ],
+    "ää-äi-u": [
+        "täs-mäis-ku"
     ],
     "ää-äi-y": [
         "hää-räi-ly",
@@ -32566,6 +46679,7 @@ export default {
         "här-näil-lä",
         "hää-päi-vä",
         "hää-räil-lä",
+        "kän-säis-tä",
         "käp-päil-lä",
         "kää-räis-tä",
         "lät-käis-tä",
@@ -32578,6 +46692,7 @@ export default {
         "päh-käil-lä",
         "pär-jäil-lä",
         "pät-käis-tä",
+        "pää-päi-vä",
         "rät-käis-tä",
         "rää-käis-tä",
         "sän-täil-lä",
@@ -32641,42 +46756,98 @@ export default {
         "vär-jäyt-tää"
     ],
     "ää-ää": [
+        "blääs-tää",
+        "bän-gää",
+        "bät-lää",
+        "cräs-hään",
+        "dän-kää",
+        "gäng-stää",
+        "här-kää",
+        "häs-lään",
         "hää-tää",
+        "hää-tään",
+        "jät-kää",
+        "jät-kään",
         "jät-tää",
+        "jät-tään",
+        "jää-dään",
         "jää-tää",
+        "kräk-kään",
+        "käm-mää",
+        "kämp-pää",
+        "kär-rään",
         "kärt-tää",
+        "käs-sään",
+        "kät-tään",
+        "kään-nään",
         "kään-tää",
+        "lämp-pää",
+        "län-dään",
         "länt-tään",
+        "läp-pää",
         "läp-sää",
+        "lät-kää",
+        "lää-vää",
+        "mänt-tään",
+        "mät-sää",
         "mät-tää",
+        "mää-rää",
+        "näh-dää",
+        "näh-dään",
         "näh-kääs",
+        "näkе-mää",
+        "pämp-pää",
+        "pär-jää",
+        "pär-jäät",
         "pärs-kää",
+        "pää-tään",
+        "pääs-sään",
         "pääs-tää",
+        "pääs-tään",
         "päät-tää",
+        "räp-pää",
+        "räp-pään",
+        "smäk-kään",
+        "snäp-pää",
+        "sät-kää",
         "sää-tää",
+        "sää-tään",
         "sääs-tää",
+        "täh-tää",
+        "täh-tään",
         "täl-lään",
         "täl-tään",
+        "täs-mää",
         "vält-tää",
+        "vär-vää",
+        "vää-rää",
+        "vää-rään",
         "vään-tää",
         "äh-kää",
         "äl-kää",
+        "äm-mää",
+        "äm-määs",
         "ään-tää"
     ],
     "ää-ää-e": [
+        "vää-räl-le",
         "äl-kääm-me"
     ],
     "ää-ää-ee": [
         "län-täl-leen",
         "lää-päl-leen",
         "näh-däk-seen",
+        "pääs-täk-see",
         "räh-mäl-leen",
         "täs-mäl-leen"
     ],
     "ää-ää-i": [
+        "hän-tää-ni",
         "jän-näs-ti",
         "jäns-käs-ti",
+        "jät-kät-kin",
         "kärk-kääs-ti",
+        "kään-nän-kin",
         "mäs-käk-si",
         "näp-säs-ti",
         "pää-täh-ti",
@@ -32685,6 +46856,7 @@ export default {
         "väl-jäs-ti"
     ],
     "ää-ää-y": [
+        "häm-mäs-tyn",
         "häm-mäs-tys",
         "hät-käh-dys",
         "kään-näh-dys",
@@ -32700,32 +46872,41 @@ export default {
         "säp-säh-dys",
         "tärs-käh-dys",
         "väl-käh-dys",
+        "vär-jän-ny",
         "är-jäh-dys",
         "ään-näh-dys"
     ],
     "ää-ää-yy": [
+        "häm-mäs-tyy",
         "är-häk-kyys"
     ],
     "ää-ää-ä": [
         "häs-säk-kä",
         "kär-rää-jä",
         "län-täs-sä",
+        "lät-käs-tä",
         "mää-rää-jä",
         "mää-rää-vä",
         "näp-säk-kä",
         "pää-mää-rä",
         "pää-tän-tä",
+        "pääs-tän-sä",
         "rät-väk-kä",
         "rääk-kää-jä",
         "säh-lää-jä",
         "sää-dän-tä",
         "sääs-tän-tä",
+        "täl-läs-tä",
         "vän-gäl-lä",
         "vär-jää-jä",
         "vär-vää-jä",
-        "är-häk-kä"
+        "vää-räl-lä",
+        "vää-räs-sä",
+        "är-häk-kä",
+        "ään-tän-sä"
     ],
     "ää-ää-ää": [
+        "blääb-lääb-lää",
         "hän-nän-pää",
         "hät-käh-tää",
         "jär-käh-tää",
@@ -32739,6 +46920,7 @@ export default {
         "lää-päl-lään",
         "mät-käh-tää",
         "mää-rän-pää",
+        "prät-käl-lään",
         "päl-käh-tää",
         "päl-pät-tää",
         "pär-pät-tää",
@@ -32763,35 +46945,54 @@ export default {
         "jään-läh-tö",
         "präs-sää-mö",
         "pää-sään-tö",
+        "pää-tät-kö",
         "vär-jää-mö"
     ],
     "ää-ö": [
         "hää-tö",
         "jät-tö",
+        "jää-kö",
+        "jään-kö",
         "jään-nös",
         "kär-hö",
         "kät-kö",
         "kää-rö",
         "kään-nös",
         "kään-tö",
+        "läh-dön",
         "läh-tö",
+        "läm-mön",
         "läm-pö",
+        "nään-kö",
         "pää-tön",
         "pää-tös",
         "pääs-tö",
+        "pääs-töst",
         "säh-kö",
+        "säh-köt",
         "sää-dös",
+        "sää-döt",
         "sää-tö",
+        "sää-tös",
         "sään-nös",
+        "sään-nöt",
         "sään-tö",
         "sääs-tö",
+        "sääs-töst",
+        "täl-lön",
         "vält-tö",
         "vään-nös",
+        "vään-nöt",
         "vään-tö",
         "ään-tö"
     ],
     "ää-ö-e": [
-        "täh-tö-nen"
+        "täh-tö-nen",
+        "täh-tö-set",
+        "täm-mö-set"
+    ],
+    "ää-ö-i": [
+        "läm-pö-si"
     ],
     "ää-ö-ie": [
         "säh-kö-mies"
@@ -32811,10 +47012,17 @@ export default {
         "päät-tö-työ",
         "säh-kö-työ"
     ],
+    "ää-ö-ä": [
+        "läm-pö-ä",
+        "sään-tö-jä",
+        "äl-lö-tän",
+        "äl-lö-tät"
+    ],
     "ää-ö-ö": [
         "sään-nö-tön"
     ],
     "ää-öi": [
+        "sään-töi",
         "täl-löin"
     ],
     "ää-öi-e": [
@@ -32828,7 +47036,8 @@ export default {
         "läh-töi-sin"
     ],
     "ää-öi-u": [
-        "säh-köis-ku"
+        "säh-köis-ku",
+        "säh-köis-kun"
     ],
     "ää-öi-ui": [
         "läm-pöis-tuin"
@@ -32836,12 +47045,29 @@ export default {
     "ää-öi-y": [
         "säh-köis-tys"
     ],
+    "ää-öi-ä": [
+        "sään-nöis-tä"
+    ],
     "ää-öi-ää": [
         "säh-köis-tää"
     ],
     "ää-öö": [
+        "jää-kööt",
+        "läm-pöö",
+        "mät-töö",
+        "sää-töö",
+        "sään-töön",
         "äl-köön",
         "äl-kööt"
+    ],
+    "ää-öö-e": [
+        "kään-nök-sen",
+        "pää-tök-sen",
+        "pää-tök-set",
+        "sää-dök-sen"
+    ],
+    "ää-öö-ee": [
+        "pää-tök-seen"
     ],
     "ää-öö-yö": [
         "kään-nös-työ"
@@ -32909,6 +47135,8 @@ export default {
     "ö-i": [
         "glö-gi",
         "kö-li",
+        "mö-kil",
+        "mö-kin",
         "pö-pi"
     ],
     "ö-i-y": [
@@ -32937,6 +47165,10 @@ export default {
     "ö-ii": [
         "kö-niin"
     ],
+    "ö-ii-e": [
+        "mö-kil-le",
+        "stö-gik-sen"
+    ],
     "ö-ii-ä": [
         "hö-lis-tä",
         "hö-pis-tä",
@@ -32958,6 +47190,7 @@ export default {
     "ö-ii-ää": [
         "hö-ris-tää",
         "kö-hit-tää",
+        "kö-lis-tään",
         "kö-pit-tää",
         "rö-kit-tää",
         "tö-mis-tää"
@@ -32968,6 +47201,7 @@ export default {
     "ö-y": [
         "mö-ly",
         "pö-ly",
+        "pö-lyn",
         "pö-ty"
     ],
     "ö-y-e": [
@@ -32999,6 +47233,9 @@ export default {
     ],
     "ö-ä-e": [
         "pö-kä-le"
+    ],
+    "ö-ä-i": [
+        "tö-nä-sit"
     ],
     "ö-ä-ä": [
         "pö-kä-tä",
@@ -33071,7 +47308,8 @@ export default {
         "sö-pö",
         "tö-nö",
         "tö-pö",
-        "tö-rö"
+        "tö-rö",
+        "tö-sö"
     ],
     "ö-ö-uu": [
         "hö-lö-suu",
@@ -33088,6 +47326,7 @@ export default {
         "tö-pö-tys"
     ],
     "ö-ö-ä": [
+        "dö-dö-ä",
         "lö-hö-tä"
     ],
     "ö-öi-e": [
@@ -33103,6 +47342,7 @@ export default {
     ],
     "ö-öö": [
         "hö-röön",
+        "lö-höön",
         "tö-röön"
     ],
     "ö-öö-e": [
@@ -33152,13 +47392,39 @@ export default {
         "öi-nen"
     ],
     "öi-i": [
+        "blöi-jin",
+        "töi-hin",
+        "vöi-hin",
+        "öi-hin",
         "öi-sin"
+    ],
+    "öi-ii-e": [
+        "öi-sil-le"
+    ],
+    "öi-ä": [
+        "töi-tä",
+        "töil-tä",
+        "töis-sä",
+        "vöis-sä",
+        "öi-tä",
+        "öis-sä",
+        "öis-tä"
+    ],
+    "öi-ä-i": [
+        "töi-tä-kin"
     ],
     "öy-e": [
         "höy-de",
         "höy-hen",
         "höys-te",
+        "köy-den",
         "köy-te"
+    ],
+    "öy-e-e": [
+        "höy-he-nen"
+    ],
+    "öy-e-ii": [
+        "höy-he-nii"
     ],
     "öy-e-y": [
         "höy-he-nys"
@@ -33172,14 +47438,22 @@ export default {
         "röyh-ke-ä",
         "töy-ke-ä"
     ],
+    "öy-e-ää": [
+        "löy-de-tään"
+    ],
     "öy-e-ö": [
         "röy-he-lö"
     ],
     "öy-ee-i": [
         "möy-hen-nin"
     ],
+    "öy-ee-ii": [
+        "köy-hem-pii",
+        "löy-det-tiin"
+    ],
     "öy-ee-y": [
         "höy-hen-nys",
+        "löy-det-ty",
         "löy-hen-nys",
         "möy-hen-nys"
     ],
@@ -33205,17 +47479,34 @@ export default {
     "öy-i": [
         "höy-li",
         "köy-si",
+        "löy-si",
+        "löy-sin",
+        "löy-sit",
         "pöy-hin"
     ],
     "öy-i-ä": [
+        "köy-hi-ä",
+        "löy-si-vät",
         "möy-hi-ä",
         "möy-ri-nä",
         "möy-ri-ä",
         "pöy-hi-ä",
+        "pöy-ti-ä",
         "töyk-ki-ä"
     ],
     "öy-i-ö": [
         "röyk-ki-ö"
+    ],
+    "öy-ie": [
+        "köy-hien"
+    ],
+    "öy-ii": [
+        "köy-hii",
+        "köy-rii",
+        "köy-siin"
+    ],
+    "öy-ii-e": [
+        "köy-hil-le"
     ],
     "öy-ii-i": [
         "höy-lis-ti"
@@ -33241,7 +47532,9 @@ export default {
         "höy-ty",
         "höyk-ky",
         "köy-ry",
+        "löy-dy",
         "löy-ly",
+        "löy-ty",
         "möy-hy",
         "möyk-ky",
         "röy-hy",
@@ -33261,6 +47554,7 @@ export default {
         "höy-ky-tys",
         "höy-ry-tys",
         "löy-ly-tys",
+        "löy-ty-nyt",
         "nöyr-ty-mys",
         "röy-ky-tys"
     ],
@@ -33268,6 +47562,7 @@ export default {
         "höy-ry-tä",
         "höy-ty-vä",
         "köyh-ty-ä",
+        "löy-ty-vän",
         "löy-ty-ä",
         "löyh-ty-ä",
         "löys-ty-ä",
@@ -33276,7 +47571,13 @@ export default {
         "röy-hy-tä"
     ],
     "öy-y-ää": [
-        "höy-ry-pää"
+        "höy-ry-pää",
+        "höy-ry-ää"
+    ],
+    "öy-yi": [
+        "löy-dyin",
+        "löy-tyi",
+        "löy-tyis"
     ],
     "öy-yi-e": [
         "höy-ryi-nen",
@@ -33290,6 +47591,7 @@ export default {
         "köyk-kyyn",
         "löy-hyys",
         "löy-syys",
+        "löy-tyy",
         "nöy-ryys"
     ],
     "öy-yy-i": [
@@ -33324,38 +47626,66 @@ export default {
         "höy-lä",
         "höy-nä",
         "köy-hä",
+        "köy-hän",
+        "löy-dä",
+        "löy-dän",
+        "löy-dät",
         "löy-hä",
         "löy-sä",
         "löyh-kä",
+        "löyh-kän",
         "möyk-kä",
         "nöy-rä",
+        "nöy-rät",
         "nöyh-tä",
+        "pöy-dän",
         "pöy-tä",
-        "töy-räs"
+        "töy-räs",
+        "öys-kät"
     ],
     "öy-ä-e": [
         "höy-kä-nen",
         "höy-tä-le"
     ],
+    "öy-ä-ee": [
+        "löy-tä-neet"
+    ],
     "öy-ä-i": [
+        "löy-tä-sin",
         "öyk-kä-ri"
     ],
     "öy-ä-oi": [
         "pöy-tä-voi"
     ],
+    "öy-ä-y": [
+        "löy-tä-ny",
+        "löy-tä-nyt"
+    ],
     "öy-ä-ä": [
         "höy-lä-tä",
         "löy-sä-tä",
         "löy-tä-jä",
+        "löy-tä-vä",
         "löyh-kä-tä",
         "möy-kä-tä",
         "pöy-dä-tä",
         "töy-dä-tä",
         "töy-kä-tä"
     ],
+    "öy-ä-ää": [
+        "löy-tä-kää"
+    ],
+    "öy-äi": [
+        "löy-täis"
+    ],
     "öy-äi-e": [
         "köy-käi-nen",
         "nöyh-täi-nen"
+    ],
+    "öy-äi-i": [
+        "löy-täi-si",
+        "löy-täi-sin",
+        "löy-täi-sit"
     ],
     "öy-äi-y": [
         "köy-häi-ly",
@@ -33389,9 +47719,15 @@ export default {
     "öy-ää": [
         "höys-tää",
         "köyt-tää",
-        "löy-tää"
+        "löy-sää",
+        "löy-tää",
+        "löy-tääks",
+        "pöy-tää",
+        "pöy-tään"
     ],
     "öy-ää-e": [
+        "löy-däm-me",
+        "pöy-däl-le",
         "töy-rän-ne"
     ],
     "öy-ää-i": [
@@ -33399,11 +47735,19 @@ export default {
         "löy-häs-ti",
         "löy-säs-ti",
         "nöy-räs-ti",
+        "pöy-tää-ni",
         "öy-lät-ti"
     ],
     "öy-ää-y": [
         "röy-häh-dys",
         "töys-säh-dys"
+    ],
+    "öy-ää-ä": [
+        "löyh-käl-tä",
+        "löyh-kää-vän",
+        "pöy-däl-lä",
+        "pöy-däl-tä",
+        "pöy-däs-sä"
     ],
     "öy-ää-ää": [
         "höy-näh-tää",
@@ -33437,8 +47781,14 @@ export default {
         "pöy-höl-lään",
         "pöy-höt-tää"
     ],
+    "öö-a": [
+        "jörk-ka"
+    ],
     "öö-a-a": [
         "föö-na-ta"
+    ],
+    "öö-aa": [
+        "röö-kaan"
     ],
     "öö-aa-i": [
         "grön-lan-ti"
@@ -33447,6 +47797,7 @@ export default {
         "föö-naus"
     ],
     "öö-e": [
+        "brös-ten",
         "rönt-gen"
     ],
     "öö-e-i": [
@@ -33458,6 +47809,9 @@ export default {
         "strös-se-li",
         "sörs-se-li",
         "töp-se-li"
+    ],
+    "öö-e-ii": [
+        "pöm-pe-liin"
     ],
     "öö-e-yy": [
         "köm-pe-lyys"
@@ -33480,6 +47834,9 @@ export default {
     "öö-ee-ää": [
         "höl-len-tää"
     ],
+    "öö-ei-ii": [
+        "tör-kei-siin"
+    ],
     "öö-ei-y": [
         "mök-kei-ly",
         "tör-kei-ly"
@@ -33497,11 +47854,14 @@ export default {
         "höp-sis",
         "klönt-ti",
         "köl-li",
+        "köm-min",
         "könt-ti",
         "kös-si",
         "köö-ri",
         "lönt-ti",
         "lös-si",
+        "lös-sin",
+        "löö-pit",
         "lööp-pi",
         "mök-ki",
         "möl-li",
@@ -33514,15 +47874,27 @@ export default {
         "röl-li",
         "rös-ti",
         "röö-ki",
+        "röö-kil",
+        "röö-kin",
+        "röö-kis",
         "röö-ri",
         "sööt-ti",
         "töl-li",
+        "töl-lin",
         "tölk-ki"
     ],
     "öö-i-ai": [
         "pörs-si-hai"
     ],
+    "öö-i-ie": [
+        "mök-ki-tie",
+        "mök-ki-tien"
+    ],
+    "öö-i-ii": [
+        "pöl-li-tii"
+    ],
     "öö-i-y": [
+        "töh-ri-ny",
         "töl-ki-tys",
         "tör-ki-mys"
     ],
@@ -33546,11 +47918,25 @@ export default {
         "töl-vi-ä",
         "törk-ki-ä"
     ],
+    "öö-i-ää": [
+        "pöl-li-tään"
+    ],
     "öö-ii": [
-        "rök-kiin"
+        "höl-lii",
+        "lös-sii",
+        "röh-kii",
+        "rök-kiin",
+        "röö-kii"
+    ],
+    "öö-ii-e": [
+        "mök-kim-me"
     ],
     "öö-ii-i": [
+        "mök-kii-ni",
         "söö-tis-ti"
+    ],
+    "öö-ii-ii": [
+        "pöl-lit-tiin"
     ],
     "öö-ii-y": [
         "höl-mis-tys"
@@ -33560,6 +47946,7 @@ export default {
         "jör-rik-kä",
         "jös-sik-kä",
         "köl-lik-kä",
+        "löö-pis-sä",
         "rök-kiin-sä"
     ],
     "öö-ii-ää": [
@@ -33575,6 +47962,7 @@ export default {
         "hörp-py",
         "kön-tys",
         "lört-sy",
+        "mölk-ky",
         "mörs-ky",
         "pök-syt",
         "pöl-ly",
@@ -33596,12 +47984,18 @@ export default {
     "öö-y-ä": [
         "höl-ty-ä",
         "höls-ky-ä",
+        "hörp-py-ä",
         "löl-ly-ä",
+        "mölk-ky-ä",
         "pöl-ly-tä",
+        "töh-ry-jä",
         "öl-jy-tä"
     ],
     "öö-y-ää": [
         "pölk-ky-pää"
+    ],
+    "öö-yi": [
+        "pök-syis"
     ],
     "öö-yi-e": [
         "rön-syi-nen",
@@ -33621,7 +48015,10 @@ export default {
         "rön-syil-lä"
     ],
     "öö-yy": [
-        "höl-lyys"
+        "höl-lyys",
+        "mölk-kyy",
+        "völ-jyyn",
+        "öl-jyy"
     ],
     "öö-yy-ää": [
         "höl-kyt-tää",
@@ -33639,6 +48036,7 @@ export default {
         "hös-kä",
         "kön-gäs",
         "könt-tä",
+        "mök-sän",
         "mön-jä",
         "mörs-kä",
         "pöh-nä",
@@ -33653,7 +48051,8 @@ export default {
         "röt-kä-le"
     ],
     "öö-ä-i": [
-        "mörs-sä-ri"
+        "mörs-sä-ri",
+        "tör-mä-sin"
     ],
     "öö-ä-ä": [
         "höl-kä-tä",
@@ -33707,6 +48106,9 @@ export default {
     "öö-äy-y": [
         "tör-mäy-tys"
     ],
+    "öö-äy-ä": [
+        "tök-säy-tän"
+    ],
     "öö-äy-ää": [
         "pöl-läyt-tää",
         "tök-säyt-tää",
@@ -33714,7 +48116,9 @@ export default {
     ],
     "öö-ää": [
         "höl-lään",
-        "mön-kään"
+        "mön-kään",
+        "tör-mään",
+        "tööt-tää"
     ],
     "öö-ää-e": [
         "höl-läl-le",
@@ -33723,6 +48127,9 @@ export default {
     "öö-ää-i": [
         "höl-läs-ti",
         "pöl-väs-ti"
+    ],
+    "öö-ää-ii": [
+        "tör-mät-tiin"
     ],
     "öö-ää-y": [
         "köm-mäh-dys"
@@ -33758,6 +48165,8 @@ export default {
         "pök-kö",
         "pöl-hö",
         "pöl-lö",
+        "pöl-lön",
+        "pöl-löt",
         "pönt-tö",
         "pör-rö",
         "pöt-kö",
@@ -33765,12 +48174,14 @@ export default {
         "sös-sö",
         "tönk-kö",
         "törp-pö",
-        "tört-tö"
+        "tört-tö",
+        "töö-lö"
     ],
     "öö-ö-e": [
         "töp-pö-nen"
     ],
     "öö-ö-i": [
+        "sös-sö-tit",
         "töl-lö-tin"
     ],
     "öö-ö-y": [
@@ -33784,8 +48195,14 @@ export default {
         "töl-lö-tys",
         "tör-rö-tys"
     ],
+    "öö-ö-ä": [
+        "höl-mö-nä"
+    ],
     "öö-ö-ää": [
         "pör-rö-pää"
+    ],
+    "öö-ö-öö": [
+        "töt-tö-röö"
     ],
     "öö-öi-e": [
         "pör-höi-nen",
@@ -33806,8 +48223,12 @@ export default {
         "höl-möys"
     ],
     "öö-öö": [
+        "mös-jöö",
+        "mös-söö",
+        "pönt-töön",
         "pör-höön",
-        "pör-röön"
+        "pör-röön",
+        "pöt-köö"
     ],
     "öö-öö-e": [
         "pör-höl-le",
@@ -33821,10 +48242,12 @@ export default {
         "tör-röl-leen"
     ],
     "öö-öö-i": [
+        "höl-mök-si",
         "höl-mös-ti",
         "pöl-lös-ti"
     ],
     "öö-öö-ä": [
+        "höp-sök-kä",
         "pör-höl-lä",
         "pör-hös-sä",
         "pör-röl-lä",

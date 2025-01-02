@@ -79,6 +79,20 @@ export const areExactRhymeGroups = (group1, group2) => {
   return parts1.every((part, index) => part === parts2[index]);
 };
 
+// Helper function to randomly select N items from an array
+const getRandomItems = (array, n) => {
+  // Create a copy of the array to avoid modifying the original
+  const shuffled = [...array];
+  
+  // Fisher-Yates shuffle
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  
+  return shuffled.slice(0, n);
+};
+
 // Function to find rhyming words from a word list
 const findRhymingWords = (word, group, wordList, maxResults = 5, isFullDict = false) => {
   const rhymingWords = wordList[group] || [];
@@ -106,18 +120,18 @@ const findRhymingWords = (word, group, wordList, maxResults = 5, isFullDict = fa
       group: group
     }));
 
-  // If we have enough exact rhymes, return just those
+  // If we have enough exact rhymes, return random selection
   if (exactRhymes.length >= maxResults) {
-    return exactRhymes.slice(0, maxResults);
+    return getRandomItems(exactRhymes, maxResults);
   }
 
   // If we need more rhymes, look for slant rhymes to fill remaining slots
   const remainingSlots = maxResults - exactRhymes.length;
-  const slantRhymes = findSlantRhymes(word, group, wordList, isFullDict)
-    .slice(0, remainingSlots);
+  const allSlantRhymes = findSlantRhymes(word, group, wordList, isFullDict);
+  const selectedSlantRhymes = getRandomItems(allSlantRhymes, remainingSlots);
 
   // Return exact rhymes first, then fill with slant rhymes
-  return [...exactRhymes, ...slantRhymes];
+  return [...exactRhymes, ...selectedSlantRhymes];
 };
 
 // Helper function to count common prefix length
@@ -136,8 +150,8 @@ export const generateWordList = async (options = {}) => {
     minWordsInGroup = 3,
     vocabulary = 'fi_generic_rap',
     includeRhymes = false,
-    rhymesPerWord = 3,
-    priorityRhymesPerWord = 2
+    rhymesPerWord = 5,
+    themedRhymesPerWord = 5
   } = options;
 
   const words = getVocabulary(vocabulary);
@@ -177,13 +191,13 @@ export const generateWordList = async (options = {}) => {
       // If rhyming words are requested
       if (includeRhymes) {
         // First, find direct themed rhymes from the themed vocabulary
-        const themedDirectRhymes = findRhymingWords(rawWord, group, words, priorityRhymesPerWord, false)
+        const themedDirectRhymes = findRhymingWords(rawWord, group, words, themedRhymesPerWord, false)
           .filter(rhyme => areExactRhymeGroups(rhyme.group, group));
         
         // Then find themed slant rhymes if we need more
         let themedSlantRhymes = [];
-        if (themedDirectRhymes.length < priorityRhymesPerWord) {
-          const remainingSlots = priorityRhymesPerWord - themedDirectRhymes.length;
+        if (themedDirectRhymes.length < themedRhymesPerWord) {
+          const remainingSlots = themedRhymesPerWord - themedDirectRhymes.length;
           themedSlantRhymes = findSlantRhymes(rawWord, group, words, false)
             // Filter out any words that are already in direct rhymes
             .filter(rhyme => !themedDirectRhymes.some(direct => 
@@ -212,7 +226,7 @@ export const generateWordList = async (options = {}) => {
         });
 
         if (allThemedRhymes.length > 0) {
-          entry.priority_rhymes = allThemedRhymes;
+          entry.themed_rhymes = allThemedRhymes;
         }
 
         // Then find additional rhymes from the full dictionary

@@ -122,7 +122,8 @@ export default {
         "ni-sä-käs"
     ],
     "ie-ai": [
-        "sie-rain"
+        "sie-rain",
+		"viek-kain"
     ],
     "ii-a": [
         "kis-sa",

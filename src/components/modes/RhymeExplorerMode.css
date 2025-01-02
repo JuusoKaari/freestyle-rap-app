@@ -41,6 +41,7 @@
   margin: 0 0 1rem 0;
   color: rgba(255, 255, 255, 0.9);
   font-size: 1rem;
+  text-align: center;
 }
 
 .themed-rhymes {
@@ -55,6 +56,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  justify-content: center;
 }
 
 .rhyme {
@@ -64,6 +66,7 @@
   border-color: #fff;
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.9);
+  text-align: center;
 }
 
 .slant-rhyme {
