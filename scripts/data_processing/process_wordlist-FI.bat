@@ -7,7 +7,7 @@ if "%~1"=="" (
 
 set OUTPUT_DIR=%~dp1
 set OUTPUT_DIR=%OUTPUT_DIR:~0,-1%
-set SCRIPT_PATH=%~dp0rhyme_generator-EN.py
+set SCRIPT_PATH=%~dp0wordlist_processor-FI.py
 
 :process_files
 if "%~1"=="" goto end

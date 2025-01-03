@@ -1,4 +1,8 @@
 export default {
+    "AA": [
+        "shark",
+        "wasp"
+    ],
     "AA-AH": [
         "dolphin",
         "harness"
@@ -15,6 +19,16 @@ export default {
         "barking",
         "nostril"
     ],
+    "AA-OW": [
+        "hollow"
+    ],
+    "AE": [
+        "back",
+        "branch",
+        "clam",
+        "crab",
+        "dance"
+    ],
     "AE-AA-ER": [
         "grasshopper"
     ],
@@ -28,6 +42,9 @@ export default {
     ],
     "AE-AH-OW": [
         "antelope"
+    ],
+    "AH": [
+        "duck"
     ],
     "AH-EH": [
         "gazelle"
@@ -48,6 +65,10 @@ export default {
     "AH-IH-OW": [
         "flamingo"
     ],
+    "AO": [
+        "claw",
+        "horse"
+    ],
     "AO-AH": [
         "coral"
     ],
@@ -60,9 +81,16 @@ export default {
         "offspring",
         "ostrich"
     ],
+    "AW": [
+        "mouse",
+        "snout"
+    ],
     "AW-IH": [
         "howling",
         "lounging"
+    ],
+    "AY": [
+        "wild"
     ],
     "AY-AH": [
         "lion"
@@ -73,6 +101,12 @@ export default {
     "AY-IH": [
         "climbing",
         "hiding"
+    ],
+    "EH": [
+        "bear",
+        "care",
+        "nest",
+        "webbed"
     ],
     "EH-AA": [
         "hedgehog"
@@ -101,14 +135,18 @@ export default {
         "nesting",
         "yelping"
     ],
-    "EH-IH-EH": [
-        "self-defense"
-    ],
     "EH-IY": [
         "belly"
     ],
     "EH-IY-IH": [
         "jellyfish"
+    ],
+    "EH-OW-ER": [
+        "enclosure"
+    ],
+    "ER": [
+        "bird",
+        "herd"
     ],
     "ER-AH": [
         "squirrel",
@@ -120,10 +158,27 @@ export default {
     "ER-OW": [
         "burrow"
     ],
+    "EY": [
+        "cage",
+        "mane",
+        "nail",
+        "prey",
+        "scales",
+        "snake",
+        "tail",
+        "whale"
+    ],
     "EY-IH": [
         "mating",
         "playing",
         "reindeer"
+    ],
+    "IH": [
+        "deer",
+        "dish",
+        "fish",
+        "shrimp",
+        "wings"
     ],
     "IH-AH": [
         "chicken"
@@ -139,6 +194,14 @@ export default {
     "IH-IH": [
         "sniffing"
     ],
+    "IY": [
+        "beak",
+        "feet",
+        "leash",
+        "seal",
+        "sheep",
+        "tree"
+    ],
     "IY-AH": [
         "beetle",
         "cheetah",
@@ -153,10 +216,26 @@ export default {
     "IY-IY": [
         "species"
     ],
+    "OW": [
+        "bowl",
+        "coat",
+        "crow",
+        "goat",
+        "mole"
+    ],
     "OW-IH": [
         "growling"
     ],
     "OY-ER": [
         "oyster"
+    ],
+    "UH": [
+        "wolf"
+    ],
+    "UW": [
+        "food",
+        "goose",
+        "hoof",
+        "moose"
     ]
 };

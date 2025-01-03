@@ -159,16 +159,6 @@ def get_syllable_vowel_pattern(word):
     
     return vowel_patterns, syllable_count
 
-def load_existing_data(output_file):
-    """Load existing words from JS file if it exists."""
-    if os.path.exists(output_file):
-        with open(output_file, "r", encoding="utf-8") as js_file:
-            content = js_file.read()
-            # Remove the export default and parse the JSON part
-            json_str = content.replace('export default ', '').strip().rstrip(';')
-            return json.loads(json_str)
-    return {}
-
 def is_appropriate_word(word):
     """Check if the word is appropriate (not a curse word or offensive term)."""
     # Add Finnish inappropriate words here
@@ -243,10 +233,10 @@ def prosessoi_tiedosto(input_file, output_dir):
 
     # Generate output filename based on input filename
     input_basename = os.path.splitext(os.path.basename(input_file))[0]
-    output_file = os.path.join(output_dir, f"FI_{input_basename}.js")
+    output_file = os.path.join(output_dir, f"{input_basename}.js")
 
-    # Load existing data if any
-    vowel_patterns = load_existing_data(output_file)
+    # Initialize new data structures
+    vowel_patterns = {}
     previews = {}
     new_words_count = 0
 

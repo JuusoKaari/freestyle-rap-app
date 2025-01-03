@@ -122,8 +122,7 @@ export default {
         "ni-sä-käs"
     ],
     "ie-ai": [
-        "sie-rain",
-		"viek-kain"
+        "sie-rain"
     ],
     "ii-a": [
         "kis-sa",
@@ -155,6 +154,7 @@ export default {
         "sii-li"
     ],
     "ii-ie-äi": [
+        "hir-vie-läin",
         "vil-lie-läin"
     ],
     "ii-ii-i": [
@@ -164,7 +164,8 @@ export default {
         "lis-ko"
     ],
     "ii-u": [
-        "lin-tu"
+        "lin-tu",
+        "rii-mu"
     ],
     "ii-uu-a": [
         "sim-puk-ka"
@@ -223,10 +224,8 @@ export default {
     "uo-a": [
         "luo-la"
     ],
-    "uo-e": [
-        "vuo-hen"
-    ],
     "uo-ee-a": [
+        "vuo-hel-la",
         "vuo-hes-ta"
     ],
     "uo-ee-i": [

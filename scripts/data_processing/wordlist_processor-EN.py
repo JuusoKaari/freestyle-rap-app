@@ -109,20 +109,11 @@ def process_word(word):
     return None, None
 
 
-def load_existing_data(output_file):
-    if os.path.exists(output_file):
-        with open(output_file, "r", encoding="utf-8") as js_file:
-            content = js_file.read()
-            json_str = content.replace('export default ', '').strip().rstrip(';')
-            return json.loads(json_str)
-    return {}
-
-
 def process_file(input_file, output_dir):
     with open(input_file, "r", encoding="utf-8") as file:
         text = file.read()
 
-    text = re.sub(r'[.,!?:;"\'\(\)\[\]{}]', '', text)
+    text = re.sub(r'[-.,!?:;*”"/\'\(\)\[\]{}]', '', text)
     # Split by whitespace and handle underscore-separated words
     words = []
     for word in text.split():
@@ -134,9 +125,10 @@ def process_file(input_file, output_dir):
             words.append(word.strip().lower())
     
     input_basename = os.path.splitext(os.path.basename(input_file))[0]
-    output_file = os.path.join(output_dir, f"EN_{input_basename}.js")
+    output_file = os.path.join(output_dir, f"{input_basename}.js")
 
-    vowel_patterns = load_existing_data(output_file)
+    # Initialize new data structures
+    vowel_patterns = {}
     previews = {}
     new_words_count = 0
 

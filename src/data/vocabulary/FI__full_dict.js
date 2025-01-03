@@ -10058,9 +10058,6 @@ export default {
     "ai-i-ii": [
         "nai-mi-siin"
     ],
-    "ai-i-iii": [
-        "nai-mi-siiin"
-    ],
     "ai-i-o": [
         "ai-hi-o",
         "ai-ki-do",
@@ -22531,9 +22528,6 @@ export default {
         "rin-nan-pää",
         "sil-lan-pää"
     ],
-    "ii-aaa": [
-        "flip-paaa"
-    ],
     "ii-aaau-oo": [
         "pii-paaau-too"
     ],
@@ -23013,9 +23007,6 @@ export default {
     "ii-e-ii": [
         "pil-le-rii",
         "vii-me-sii"
-    ],
-    "ii-e-iii": [
-        "pis-te-tiiin"
     ],
     "ii-e-y": [
         "hii-le-tys",
@@ -38357,9 +38348,6 @@ export default {
         "tuu-dit-taa",
         "um-mis-taa",
         "uu-dis-taa"
-    ],
-    "uu-ii-aaaa": [
-        "kur-tis-taaaa"
     ],
     "uu-ii-ai": [
         "kul-mit-tain",
