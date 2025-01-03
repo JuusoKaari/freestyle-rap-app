@@ -109,9 +109,3 @@ Access development features with Ctrl+Shift+D:
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Beat creators and contributors
-- Word list and dictionary sources
-- React and supporting libraries 
