@@ -84,47 +84,81 @@ class RhymeGeneratorGUI:
             self.status_text.insert(tk.END, f"Error processing file: {str(e)}\n")
             messagebox.showerror("Error", f"Error processing file: {str(e)}")
 
-def tavuta_uusi(sana):
+def split_into_syllables(word):
     vowels = "aeiouyäö"
-    diftongit = ["ai", "ei", "oi", "ui", "yi", "äi", "öi", "au", "eu", "iu", "ou", "ey", "iy", "äy", "öy", "ie", "yö", "uo"]
+    diphthongs = ["ai", "ei", "oi", "ui", "yi", "äi", "öi", "au", "eu", "iu", "ou", "ey", "iy", "äy", "öy", "ie", "yö", "uo"]
     result = ""
 
     i = 0
-    while i < len(sana):
-        char = sana[i]
+    while i < len(word):
+        char = word[i]
         result += char
 
-        # Jos merkki on vokaali
+        # If character is a vowel
         if char in vowels:
-            next_chars = sana[i+1:i+4]  # Tarkista seuraavat kolme merkkiä
+            next_chars = word[i+1:i+4]  # Check next three characters
             if len(next_chars) == 3 and all(c not in vowels for c in next_chars):
-                # Jos seuraavat kolme merkkiä ovat konsonantteja, lisää tavuviiva toisen ja kolmannen konsonantin väliin
+                # If next three characters are consonants, add hyphen between second and third consonant
                 result += next_chars[0] + next_chars[1] + "-"
-                i += 2  # Hyppää kahden ensimmäisen konsonantin yli
+                i += 2  # Skip first two consonants
             elif len(next_chars) >= 2 and all(c not in vowels for c in next_chars[:2]):
-                # Jos seuraavat kaksi merkkiä ovat konsonantteja, lisää tavuviiva niiden väliin
+                # If next two characters are consonants, add hyphen between them
                 result += next_chars[0] + "-"
-                i += 1  # Hyppää ensimmäisen konsonantin yli
-            elif (i + 1 < len(sana)) and (sana[i + 1] in vowels):
-                # Jos seuraava merkki on vokaali, mutta ei muodosta diftongia tai tuplavokaalia, lisää tavuviiva
-                if sana[i:i+2] in diftongit or sana[i] == sana[i + 1]:
-                    pass  # Älä lisää tavuviivaa diftongien tai tuplavokaalien kohdalla
+                i += 1  # Skip first consonant
+            elif (i + 1 < len(word)) and (word[i + 1] in vowels):
+                # If next character is vowel but doesn't form diphthong or double vowel, add hyphen
+                if word[i:i+2] in diphthongs or word[i] == word[i + 1]:
+                    pass  # Don't add hyphen for diphthongs or double vowels
                 else:
                     result += "-"
-            elif (i + 1 < len(sana)) and (sana[i + 1] not in vowels):
-                # Jos seuraava merkki ei ole vokaali, lisää tavuviiva
+            elif (i + 1 < len(word)) and (word[i + 1] not in vowels):
+                # If next character is not a vowel, add hyphen
                 result += "-"
 
         i += 1
 
-    # Poista viimeinen tavuviiva, jos sen jälkeen on vain yksittäinen konsonantti
+    # Remove last hyphen if it's followed by a single consonant
     split_result = result.split("-")
     if len(split_result) > 1 and len(split_result[-1]) == 1 and split_result[-1] not in vowels:
         split_result[-2] += split_result[-1]
         split_result.pop()
-    result = "-".join(split_result)
 
-    # Palauta tavuviivoilla merkitty sana
+    # Process syllables with special vowel cases
+    final_syllables = []
+    for syllable in split_result:
+        # Count vowels in syllable
+        syllable_vowels = [c for c in syllable if c in vowels]
+        
+        # Skip words with syllables that have no vowels
+        if not syllable_vowels:
+            return None
+        
+        # Handle syllables with 3 or more vowels
+        if len(syllable_vowels) >= 3:
+            # Find indices of all vowels in the syllable
+            vowel_indices = [i for i, c in enumerate(syllable) if c in vowels]
+            
+            if len(vowel_indices) == 3:
+                # Check for "yö" case
+                if syllable[vowel_indices[1]:vowel_indices[2]+1] == "yö":
+                    # Split between 1st and 2nd vowel
+                    split_point = vowel_indices[1]
+                else:
+                    # Split between 2nd and 3rd vowel
+                    split_point = vowel_indices[2]
+                
+                # Add both parts as separate syllables
+                final_syllables.append(syllable[:split_point])
+                final_syllables.append(syllable[split_point:])
+            else:
+                # More than 3 vowels, skip this word
+                return None
+        else:
+            final_syllables.append(syllable)
+    
+    # Join syllables back together
+    result = "-".join(final_syllables)
+    
     return result
 
 def get_vowels_only(syllable, is_last_syllable=False):
@@ -245,7 +279,11 @@ def prosessoi_tiedosto(input_file, output_dir):
         if not sana:
             continue
 
-        hyphenated_word = tavuta_uusi(sana)
+        hyphenated_word = split_into_syllables(sana)
+        # Skip if syllable splitting failed
+        if not hyphenated_word:
+            continue
+            
         vowel_pattern, syllable_count = get_syllable_vowel_pattern(hyphenated_word)
         
         # Skip if no valid vowel pattern or not 2-3 syllables
