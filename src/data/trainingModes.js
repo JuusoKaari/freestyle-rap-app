@@ -100,7 +100,8 @@ export const trainingModes = [
         helperText: 'Click on a vowel pattern to see all words that follow that pattern.\nPatterns are organized by their vowel structure (e.g. "AA-AA", "AA-EE").',
         patternTitle: 'Vowel Pattern',
         wordCount: 'Words',
-        searchPlaceholder: 'Search patterns...'
+        searchPlaceholder: 'Search patterns...',
+        backButton: 'BACK'
       },
       fi: {
         name: 'Riimi Kartta',
@@ -108,7 +109,8 @@ export const trainingModes = [
         helperText: 'Klikkaa vokaalikaavaa nähdäksesi kaikki sanat jotka noudattavat sitä kaavaa.\nKaavat on järjestetty vokaalirakenteen mukaan (esim. "AA-AA", "AA-EE").',
         patternTitle: 'Vokaalikaava',
         wordCount: 'Sanat',
-        searchPlaceholder: 'Etsi kaavoja...'
+        searchPlaceholder: 'Etsi kaavoja...',
+        backButton: 'TAKAISIN'
       }
     }
   }

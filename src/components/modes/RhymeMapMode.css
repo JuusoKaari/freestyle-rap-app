@@ -317,4 +317,15 @@
   width: 100%;
   text-align: center;
   animation: wordFade 0.2s ease-out 0.3s backwards;
+}
+
+.ending-dots {
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-right: 2px;
+}
+
+.pattern-card.empty .ending-dots {
+  color: rgba(255, 255, 255, 0.2);
 } 

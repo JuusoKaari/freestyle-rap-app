@@ -164,7 +164,7 @@ const RhymeMapMode = ({
         >
           ×
         </button>
-        <h2>{translations.patternTitle}: {pattern}</h2>
+        <h2>{pattern}</h2>
         <div className="word-list">
           {modalWords.map((word, index) => (
             <span key={index} className="word">{word.replace(/-/g, '')}</span>
@@ -204,7 +204,7 @@ const RhymeMapMode = ({
                       }
                     }}
                   >
-                    <h3>{combo}</h3>
+                    <h3><span className="ending-dots">...</span>{combo}</h3>
                     <span className="pattern-count">{count} {translations.patterns}</span>
                   </div>
                 );
@@ -229,7 +229,7 @@ const RhymeMapMode = ({
                 setModalPattern(null);
               }}
             >
-              BACK
+              {translations.backButton}
             </button>
           </div>
           <div className="pattern-grid">
