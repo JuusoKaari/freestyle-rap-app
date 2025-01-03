@@ -1,3 +1,26 @@
+/**
+ * Training Modes Configuration
+ * =========================
+ * 
+ * Configuration file defining all available training modes in the application.
+ * Each mode has specific settings and multilingual support.
+ * 
+ * Available Modes:
+ * - Rhyme Explorer: Browse and learn rhyming words
+ * - Find Rhymes: Interactive rhyme identification game
+ * - Two-bar Mode: Practice with setup and punchline (2 bars)
+ * - Four-bar Mode: Extended practice with longer patterns (4 bars)
+ * 
+ * Each mode configuration includes:
+ * - Unique identifier
+ * - Multilingual names and descriptions (FI/EN)
+ * - Helper text for user guidance
+ * - Mode-specific UI text and button labels
+ * 
+ * The configuration supports easy addition of new modes
+ * and maintains consistent structure for all training types.
+ */
+
 export const trainingModes = [
   {
     id: 'rhyme-explorer',

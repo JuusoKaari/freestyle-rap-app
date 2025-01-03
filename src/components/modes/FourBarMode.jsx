@@ -1,3 +1,31 @@
+/**
+ * Four-Bar Training Mode Component
+ * ============================
+ * 
+ * Advanced training mode for practicing four-bar rap patterns with extended
+ * setup and punchline structure. Provides a larger canvas for complex rhyme schemes.
+ * 
+ * Features:
+ * - 4x4 bar grid visualization
+ * - Beat-synchronized progression
+ * - Three setup bars with question marks for freestyle
+ * - Target word display with preview
+ * - Active bar highlighting
+ * - Word change animations
+ * 
+ * Props:
+ * - currentBar: Currently active bar index
+ * - currentBeat: Current beat within the bar
+ * - bpm: Beats per minute for timing
+ * - isWordChanging: Word transition animation state
+ * - shuffledWords: Array of words to use as targets
+ * - wordCounter: Current word index
+ * - Standard BaseTrainingMode props
+ * 
+ * This mode is designed for more advanced practice, allowing users
+ * to build longer rhyme patterns before hitting the target word.
+ */
+
 import React from 'react';
 import BaseTrainingMode from './BaseTrainingMode';
 import '../../styles/TrainingMode.css';

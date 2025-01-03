@@ -1,3 +1,24 @@
+/**
+ * Beats Configuration Module
+ * ========================
+ * 
+ * Configuration file for all available beats in the application.
+ * Defines beat metadata and playback settings.
+ * 
+ * Each beat entry contains:
+ * - id: Unique identifier for the beat
+ * - name: Display name in both languages (FI/EN)
+ * - file: Audio file reference
+ * - bpm: Beats per minute for timing
+ * - credits: Attribution for beat creators
+ * 
+ * The beats are used for:
+ * - Training mode accompaniment
+ * - Word timing synchronization
+ * - Practice rhythm maintenance
+ * - User experience enhancement
+ */
+
 export const beats = [
   {
     id: 'night-ride-slowest',

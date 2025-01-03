@@ -1,3 +1,31 @@
+/**
+ * Two-Bar Training Mode Component
+ * ============================
+ * 
+ * Training mode for practicing two-bar rap patterns with setup and punchline structure.
+ * Displays a visual grid of bars with timing indicators and target words.
+ * 
+ * Features:
+ * - 2x4 bar grid visualization
+ * - Beat-synchronized progression
+ * - Setup bar with question marks for freestyle
+ * - Target word display with preview
+ * - Active bar highlighting
+ * - Word change animations
+ * 
+ * Props:
+ * - currentBar: Currently active bar index
+ * - currentBeat: Current beat within the bar
+ * - bpm: Beats per minute for timing
+ * - isWordChanging: Word transition animation state
+ * - shuffledWords: Array of words to use as targets
+ * - wordCounter: Current word index
+ * - Standard BaseTrainingMode props
+ * 
+ * The mode helps users practice basic setup-punchline patterns
+ * with one freestyle rhyme followed by a target word.
+ */
+
 import React from 'react';
 import BaseTrainingMode from './BaseTrainingMode';
 import '../../styles/TrainingMode.css';

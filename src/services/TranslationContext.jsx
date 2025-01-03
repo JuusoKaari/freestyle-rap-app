@@ -1,3 +1,25 @@
+/**
+ * Translation Context Service
+ * =========================
+ * 
+ * React Context provider for handling multilingual support throughout the application.
+ * Manages language switching and text translations for UI elements.
+ * 
+ * Features:
+ * - Language state management (FI/EN)
+ * - Translation key resolution
+ * - Dynamic language switching
+ * - Fallback handling for missing translations
+ * 
+ * Usage:
+ * - Wrap application with TranslationProvider
+ * - Use useTranslation hook to access translations
+ * - Access current language and translation function
+ * 
+ * The service ensures consistent language handling across all components
+ * and provides a centralized translation management system.
+ */
+
 import React, { createContext, useContext, useState, useCallback, useEffect } from 'react';
 import { en } from '../data/translations/en';
 import { fi } from '../data/translations/fi';

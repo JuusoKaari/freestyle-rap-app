@@ -1,3 +1,30 @@
+/**
+ * FindRhymesMode Component
+ * ======================
+ * 
+ * Interactive training mode where users identify rhyming words against a timer.
+ * Helps develop quick rhyme recognition and vocabulary recall.
+ * 
+ * Key features:
+ * - Target word display
+ * - Multiple word choices
+ * - Timer-based gameplay
+ * - Score tracking
+ * - Beat-synchronized timing
+ * - Difficulty progression
+ * 
+ * Props:
+ * - shuffledWords: Array of word options
+ * - wordCounter: Current word index
+ * - onReturnToMenu: Menu return callback
+ * - modeName: Mode name in current language
+ * - helperText: Instructions text
+ * - onNextWord: Word progression callback
+ * - isPlaying/onPlayPause: Beat control
+ * - isLoading: Loading state
+ * - bpm: Beats per minute for timing
+ */
+
 import React, { useState, useEffect } from 'react';
 import BaseTrainingMode from './BaseTrainingMode';
 import './FindRhymesMode.css';

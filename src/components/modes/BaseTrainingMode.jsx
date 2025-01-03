@@ -1,3 +1,29 @@
+/**
+ * Base Training Mode Component
+ * =========================
+ * 
+ * Core component that provides the common structure and functionality
+ * for all training modes. Serves as a template for consistent UI/UX.
+ * 
+ * Features:
+ * - Standard header with mode name and description
+ * - Return to menu navigation
+ * - Start/Stop button with loading state
+ * - Flexible content area via children prop
+ * 
+ * Props:
+ * - modeName: Display name of the current mode
+ * - helperText: Instructions for the current mode
+ * - onReturnToMenu: Callback for menu navigation
+ * - isPlaying: Current playback state
+ * - onPlayPause: Playback control callback
+ * - isLoading: Loading state indicator
+ * - children: Content specific to each mode
+ * 
+ * This component ensures consistent layout and behavior
+ * across all training modes while allowing for custom content.
+ */
+
 import React from 'react';
 import '../../styles/TrainingMode.css';
 

@@ -1,3 +1,24 @@
+/**
+ * Word List Generation Module
+ * =========================
+ * 
+ * Core module for generating and managing word lists used in the training modes.
+ * Handles word selection, rhyme grouping, and vocabulary management.
+ * 
+ * Key functionalities:
+ * - Dynamic word list generation based on selected vocabulary
+ * - Rhyme group management and filtering
+ * - Support for different vocabulary sets (rap, animals, full dictionary)
+ * - Word shuffling and randomization
+ * - Minimum word group size enforcement
+ * 
+ * The module ensures that generated word lists:
+ * - Contain sufficient rhyming pairs
+ * - Are properly shuffled for training
+ * - Match the selected language and vocabulary set
+ * - Meet minimum group size requirements for training modes
+ */
+
 // Import vocabularies
 import FI_genericVocab from './vocabulary/FI_generic_rap.js';
 import FI_animalVocab from './vocabulary/FI_elaimet.js';

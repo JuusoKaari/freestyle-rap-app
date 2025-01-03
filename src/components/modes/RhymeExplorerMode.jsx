@@ -1,3 +1,29 @@
+/**
+ * RhymeExplorerMode Component
+ * ==========================
+ * 
+ * A training mode that allows users to explore words and their rhyming pairs.
+ * This mode is designed for vocabulary building and understanding rhyme patterns.
+ * 
+ * Key features:
+ * - Display of target word and its rhyming pairs
+ * - Manual navigation through words (Previous/Next)
+ * - Automatic word progression with beat
+ * - Categorized display of rhymes (themed vs other)
+ * - Bilingual support (FI/EN)
+ * 
+ * Props:
+ * - shuffledWords: Array of word objects to display
+ * - wordCounter: Current word index
+ * - onReturnToMenu: Callback to return to main menu
+ * - modeName: Name of the mode in current language
+ * - helperText: Instructions in current language
+ * - onNextWord/onPreviousWord: Word navigation callbacks
+ * - isPlaying: Beat playback state
+ * - onPlayPause: Beat control callback
+ * - isLoading: Loading state indicator
+ */
+
 import React, { useEffect } from 'react';
 import BaseTrainingMode from './BaseTrainingMode';
 import '../../styles/TrainingMode.css';

@@ -1,3 +1,26 @@
+/**
+ * Debug Context Service
+ * ===================
+ * 
+ * React Context provider for managing debug mode functionality across the application.
+ * Provides developer tools and additional features for testing and development.
+ * 
+ * Features:
+ * - Toggle debug mode with Ctrl+Shift+D
+ * - Persistent debug state in localStorage
+ * - Additional UI elements in debug mode
+ * - Word list inspection tools
+ * - Manual word navigation in training modes
+ * 
+ * Usage:
+ * - Wrap application with DebugProvider
+ * - Use useDebug hook to access debug state
+ * - Access isDebugMode and toggleDebugMode function
+ * 
+ * Debug mode enables additional features for development and testing,
+ * while remaining hidden from regular users.
+ */
+
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const DebugContext = createContext({

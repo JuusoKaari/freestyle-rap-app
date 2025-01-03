@@ -1,3 +1,22 @@
+/**
+ * Main Application Component (App.jsx)
+ * ===================================
+ * 
+ * This is the root component of the Freestyle Rap Training application.
+ * It manages the global state and coordinates between different training modes,
+ * beat playback, vocabulary selection, and language settings.
+ * 
+ * Key responsibilities:
+ * - Training mode selection and state management
+ * - Beat playback and synchronization
+ * - Word list generation and management
+ * - Global UI layout and component organization
+ * - Language switching support
+ * 
+ * The component uses various hooks for state management and refs for
+ * audio timing control and beat synchronization.
+ */
+
 import React, { useState, useEffect, useRef } from 'react'
 import './App.css'
 import { generateWordList } from './data/wordList'

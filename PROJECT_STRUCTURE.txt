@@ -1,0 +1,69 @@
+FREESTYLE RAP TRAINING APPLICATION
+============================
+
+Project Overview:
+----------------
+A React-based application for practicing freestyle rap in Finnish and English. The app provides various training modes, vocabulary sets, and beat synchronization features to help users improve their rap and rhyming skills.
+
+Directory Structure:
+------------------
+
+/src
+  /components
+    /modes/
+      - TwoBarMode.jsx         : Training mode for practicing 2-bar rap patterns
+      - FourBarMode.jsx        : Training mode for practicing 4-bar rap patterns
+      - RhymeExplorerMode.jsx  : Mode for exploring words and their rhyming pairs
+      - FindRhymesMode.jsx     : Interactive game mode for finding rhyming words
+    
+    - ModeSelector.jsx         : Component for selecting different training modes
+    - BeatSelector.jsx         : Full-featured beat selection and control
+    - CompactBeatSelector.jsx  : Minimalistic version of beat controls
+    - VocabularySelector.jsx   : Component for choosing word sets
+    - LanguageToggle.jsx       : Language switching between FI/EN
+
+  /data
+    /vocabulary/
+      - vocabularyConfig.js    : Configuration for different vocabulary sets
+      - FI_generic_rap.js      : Finnish rap-oriented vocabulary
+      - EN_generic_rap.js      : English rap-oriented vocabulary
+      - FI_elaimet.js         : Finnish animal-themed vocabulary
+      - FI__full_dict.js      : Complete Finnish dictionary
+      - EN__full_dict.js      : Complete English dictionary
+    
+    - beats.js                : Beat definitions and configurations
+    - trainingModes.js        : Training mode configurations
+    - wordList.js             : Word list generation and processing
+
+  /services
+    - TranslationContext.jsx   : Handles multilingual support
+    - DebugContext.jsx         : Debugging utilities
+
+/scripts
+  /data_processing/
+    - rhyme_generator-FI.py   : Finnish rhyme generation script
+    - combine_vocabulary.py   : Script for combining vocabulary sets
+    - process_rhymes-FI.bat   : Batch processing for Finnish rhymes
+
+Key Features:
+------------
+1. Multiple Training Modes:
+   - Two-bar and Four-bar practice
+   - Rhyme Explorer for vocabulary building
+   - Interactive Find Rhymes game
+
+2. Vocabulary Management:
+   - Multiple predefined word sets
+   - Support for both Finnish and English
+   - Themed collections (e.g., animals)
+   - Full dictionary support
+
+3. Beat System:
+   - Customizable BPM
+   - Multiple beat patterns
+   - Synchronized word changes
+
+4. Bilingual Support:
+   - Full Finnish and English translations
+   - Language-specific rhyme generation
+   - Separate vocabulary sets for each language 

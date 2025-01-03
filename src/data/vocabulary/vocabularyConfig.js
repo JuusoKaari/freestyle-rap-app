@@ -1,3 +1,30 @@
+/**
+ * Vocabulary Configuration Module
+ * ============================
+ * 
+ * Configuration and management system for all vocabulary sets in the application.
+ * Handles vocabulary metadata, file paths, and language-specific collections.
+ * 
+ * Features:
+ * - Language-specific vocabulary sets (FI/EN)
+ * - Themed collections (rap, animals, etc.)
+ * - Vocabulary metadata (name, description, difficulty)
+ * - Word count tracking
+ * - File path resolution
+ * 
+ * Each vocabulary set includes:
+ * - Unique identifier
+ * - Display name and description
+ * - Difficulty rating
+ * - Theme icon
+ * - Word count statistics
+ * 
+ * The module provides helper functions for:
+ * - Getting vocabulary file paths
+ * - Counting words in vocabularies
+ * - Filtering vocabularies by language
+ */
+
 import FI_genericVocab from './FI_generic_rap.js';
 import FI_animalVocab from './FI_elaimet.js';
 import EN_genericVocab from './EN_generic_rap.js';
