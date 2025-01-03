@@ -10,6 +10,7 @@
  * - Find Rhymes: Interactive rhyme identification game
  * - Two-bar Mode: Practice with setup and punchline (2 bars)
  * - Four-bar Mode: Extended practice with longer patterns (4 bars)
+ * - Rhyme Map: Visual grid of vowel rhyme patterns
  * 
  * Each mode configuration includes:
  * - Unique identifier
@@ -87,6 +88,27 @@ export const trainingModes = [
         name: '4-tahdin Setup & Punchline',
         description: 'Harjoitus kolmella setup-riimillä ja satunnaisella kohdesanalla',
         helperText: 'Keksi kohdesanaan sopivat 3 riimiä, räppää ne ja finalisoi homma punchline riimillä!'
+      }
+    }
+  },
+  {
+    id: 'rhyme-map',
+    translations: {
+      en: {
+        name: 'Rhyme Map',
+        description: 'Visual grid of vowel rhyme patterns found in the Finnish dictionary',
+        helperText: 'Click on a vowel pattern to see all words that follow that pattern.\nPatterns are organized by their vowel structure (e.g. "AA-AA", "AA-EE").',
+        patternTitle: 'Vowel Pattern',
+        wordCount: 'Words',
+        searchPlaceholder: 'Search patterns...'
+      },
+      fi: {
+        name: 'Riimi Kartta',
+        description: 'Visuaalinen ruudukko suomen kielen vokaalikaavoja',
+        helperText: 'Klikkaa vokaalikaavaa nähdäksesi kaikki sanat jotka noudattavat sitä kaavaa.\nKaavat on järjestetty vokaalirakenteen mukaan (esim. "AA-AA", "AA-EE").',
+        patternTitle: 'Vokaalikaava',
+        wordCount: 'Sanat',
+        searchPlaceholder: 'Etsi kaavoja...'
       }
     }
   }

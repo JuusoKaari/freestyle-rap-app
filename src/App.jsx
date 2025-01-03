@@ -24,6 +24,7 @@ import TwoBarMode from './components/modes/TwoBarMode'
 import FourBarMode from './components/modes/FourBarMode'
 import RhymeExplorerMode from './components/modes/RhymeExplorerMode'
 import FindRhymesMode from './components/modes/FindRhymesMode'
+import RhymeMapMode from './components/modes/RhymeMapMode'
 import ModeSelector from './components/ModeSelector'
 import BeatSelector from './components/BeatSelector'
 import CompactBeatSelector from './components/CompactBeatSelector'
@@ -199,6 +200,13 @@ function App() {
   const handleModeSelect = async (modeId) => {
     stopPlayback();
     setSelectedMode(modeId);
+
+    // Rhyme Map mode doesn't need word generation
+    if (modeId === 'rhyme-map') {
+      setIsTraining(true);
+      return;
+    }
+
     const words = await generateWordList({ 
       minWordsInGroup: 1,
       vocabulary: selectedVocabulary,
@@ -315,6 +323,18 @@ function App() {
     const currentMode = trainingModes.find(mode => mode.id === selectedMode);
     
     switch (selectedMode) {
+      case 'rhyme-map':
+        return (
+          <RhymeMapMode
+            onReturnToMenu={handleReturnToMenu}
+            modeName={currentMode.translations[language].name}
+            helperText={currentMode.translations[language].helperText}
+            isPlaying={isPlaying}
+            onPlayPause={handlePlayPause}
+            isLoading={isLoading}
+            bpm={bpm}
+          />
+        );
       case 'rhyme-explorer':
         return (
           <RhymeExplorerMode

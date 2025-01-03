@@ -4,9 +4,13 @@
   align-items: center;
   gap: 2rem;
   width: 100%;
-  max-width: 800px;
   margin: 0 auto;
   position: relative;
+}
+
+/* Keep max-width for other modes but not for rhyme-map */
+.training-mode:not(:has(.rhyme-map)) {
+  max-width: 800px;
 }
 
 .mode-header {
