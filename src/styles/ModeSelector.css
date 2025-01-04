@@ -40,4 +40,39 @@
   margin: 0;
   font-size: 0.9rem;
   line-height: 1.4;
+}
+
+.mode-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.mode-icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.difficulty-badge {
+  font-size: 0.8rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.difficulty-badge.easy {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.difficulty-badge.medium {
+  background-color: #FF9800;
+  color: white;
+}
+
+.difficulty-badge.hard {
+  background-color: #F44336;
+  color: white;
 } 

@@ -25,6 +25,7 @@ import FourBarMode from './components/modes/FourBarMode'
 import RhymeExplorerMode from './components/modes/RhymeExplorerMode'
 import FindRhymesMode from './components/modes/FindRhymesMode'
 import RhymeMapMode from './components/modes/RhymeMapMode'
+import SlotMachineMode from './components/modes/SlotMachineMode'
 import ModeSelector from './components/ModeSelector'
 import BeatSelector from './components/BeatSelector'
 import CompactBeatSelector from './components/CompactBeatSelector'
@@ -55,6 +56,7 @@ function App() {
   const [selectedVocabulary, setSelectedVocabulary] = useState('fi_generic_rap')
   const [isPlaying, setIsPlaying] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
+  const [barsPerRound, setBarsPerRound] = useState(2)
 
   const timerRef = useRef(null)
   const nextNoteTimeRef = useRef(0)
@@ -65,9 +67,19 @@ function App() {
       case 'four-bar':
         return 16; // 4 lines * 4 bars
       case 'two-bar':
+        return 8; // 2 lines * 4 bars
+      case 'slot-machine':
+        return barsPerRound * 4; // Convert bars to beats
       default:
         return 8; // 2 lines * 4 bars
     }
+  };
+
+  // Handle bars per round change
+  const handleBarsPerRoundChange = (value) => {
+    setBarsPerRound(value);
+    // Reset current bar to avoid issues with different total lengths
+    setCurrentBar(0);
   };
 
   const createTick = () => {
@@ -333,6 +345,22 @@ function App() {
             onPlayPause={handlePlayPause}
             isLoading={isLoading}
             bpm={bpm}
+          />
+        );
+      case 'slot-machine':
+        return (
+          <SlotMachineMode
+            shuffledWords={shuffledWords}
+            wordCounter={wordCounter}
+            onReturnToMenu={handleReturnToMenu}
+            modeName={currentMode.translations[language].name}
+            helperText={currentMode.translations[language].helperText}
+            onNextWord={handleNextWord}
+            onPreviousWord={handlePreviousWord}
+            isPlaying={isPlaying}
+            onPlayPause={handlePlayPause}
+            isLoading={isLoading}
+            onBarsPerRoundChange={handleBarsPerRoundChange}
           />
         );
       case 'rhyme-explorer':

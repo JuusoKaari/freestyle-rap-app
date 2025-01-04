@@ -25,9 +25,11 @@
 export const trainingModes = [
   {
     id: 'rhyme-explorer',
+    icon: '🔍',
+    difficulty: 'easy',
     translations: {
       en: {
-        name: 'Rhyme Explorer',
+        name: 'Single Rhymes',
         description: 'Browse through words and their rhyming pairs to expand your vocabulary',
         helperText: 'Click NEXT to see the next word and its rhyming pairs.\n If you press START, beat will play and words will change automatically.',
         themedRhymes: 'Themed Rhymes',
@@ -36,7 +38,7 @@ export const trainingModes = [
         nextButton: 'NEXT'
       },
       fi: {
-        name: 'Riimien Selaus',
+        name: 'Yksittäiset Riimit',
         description: 'Selaa sanoja ja niiden riimejä laajentaaksesi sanavarastoasi',
         helperText: 'Klikkaa SEURAAVA nähdäksesi seuraavan sanan ja sen riimit. Kun painat START, biitti alkaa soida ja sanat vaihtuu automaattisesti.',
         themedRhymes: 'Teeman Riimit',
@@ -48,6 +50,8 @@ export const trainingModes = [
   },
   {
     id: 'find-rhymes',
+    icon: '🎯',
+    difficulty: 'medium',
     translations: {
       en: {
         name: 'Find Rhymes',
@@ -63,6 +67,8 @@ export const trainingModes = [
   },
   {
     id: 'two-bar',
+    icon: '🎤',
+    difficulty: 'medium',
     translations: {
       en: {
         name: '2-bar Setup & Punchline',
@@ -78,6 +84,8 @@ export const trainingModes = [
   },
   {
     id: 'four-bar',
+    icon: '🎤',
+    difficulty: 'hard',
     translations: {
       en: {
         name: '4-bar Setup & Punchline',
@@ -93,6 +101,8 @@ export const trainingModes = [
   },
   {
     id: 'rhyme-map',
+    icon: '🗺️',
+    difficulty: 'easy',
     translations: {
       en: {
         name: 'Rhyme Map',
@@ -111,6 +121,37 @@ export const trainingModes = [
         wordCount: 'Sanat',
         searchPlaceholder: 'Etsi kaavoja...',
         backButton: 'TAKAISIN'
+      }
+    }
+  },
+  {
+    id: 'slot-machine',
+    icon: '🎰',
+    difficulty: 'hard',
+    translations: {
+      en: {
+        name: 'Slot Machine',
+        description: 'Like Vegas, but for rappers! Three slots spinning to the beat.',
+        helperText: 'Tell a story, find rhymes, or freestyle with what you get. Every spin is different!',
+        barLengthLabel: 'Bars per round:',
+        barLengthOptions: {
+          '1': '1 bar',
+          '2': '2 bars',
+          '4': '4 bars',
+          '8': '8 bars'
+        }
+      },
+      fi: {
+        name: 'Hedelmäpeli',
+        description: 'Kuin kasino, mutta räppäreille! Kolme slottia pyörii biittiin.',
+        helperText: 'Kerro tarina, etsi riimejä, tai freestylaa mitä saat. Joka pyöräytys on erilainen!',
+        barLengthLabel: 'Tahteja per kierros:',
+        barLengthOptions: {
+          '1': '1 tahti',
+          '2': '2 tahtia',
+          '4': '4 tahtia',
+          '8': '8 tahtia'
+        }
       }
     }
   }
