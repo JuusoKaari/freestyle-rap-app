@@ -296,14 +296,14 @@ function App() {
 
     // Only start visual timing if in training mode
     if (isTraining) {
-      // Add 200ms delay before starting visuals to compensate for audio latency
+      // Add 50ms delay before starting visuals for a more relaxed feel
       setTimeout(() => {
         const beatInterval = 60.0 / bpm / 4;
         nextNoteTimeRef.current = (Date.now() / 1000) + beatInterval;
         
         const tick = createTick();
         tick();
-      }, 200);
+      }, 100);
     }
     
     setIsPlaying(true);
