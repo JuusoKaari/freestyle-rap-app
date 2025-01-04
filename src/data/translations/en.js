@@ -1,6 +1,10 @@
 export const en = {
   app: {
-    title: "Freestyle Rap Trainer"
+    title: "Freestyle Rap Trainer",
+    browser_warning: {
+      title: "Browser Not Supported",
+      message: "Your browser does not support the Web Audio API, which is required for audio playback and recording. Please use a modern browser like Chrome, Firefox, Safari, or Edge."
+    }
   },
   common: {
     start: "Start",

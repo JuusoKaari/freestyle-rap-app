@@ -605,4 +605,35 @@ body {
   background-color: #ffb366;
   box-shadow: 0 0 20px rgba(255, 153, 51, 0.4);
   transform: scale(1.05);
+}
+
+.browser-warning {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: rgba(255, 100, 100, 0.1);
+  border: 1px solid rgba(255, 100, 100, 0.3);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.browser-warning svg {
+  flex-shrink: 0;
+  color: rgb(255, 100, 100);
+}
+
+.browser-warning h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  color: rgb(255, 100, 100);
+}
+
+.browser-warning p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.8);
 } 

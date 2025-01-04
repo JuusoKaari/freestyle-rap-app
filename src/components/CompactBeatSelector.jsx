@@ -1,27 +1,66 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { beats } from '../data/beats';
 import BeatSelectModal from './BeatSelectModal';
+import audioService from '../services/AudioService';
 import '../styles/CompactBeatSelector.css';
 
 const CompactBeatSelector = ({ selectedBeatId, onBeatSelect, isPlaying, onPlayPause, isLoading }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [previewingBeatId, setPreviewingBeatId] = useState(null);
+  const [isLoadingBeat, setIsLoadingBeat] = useState(false);
   const selectedBeat = beats.find(beat => beat.id === selectedBeatId);
 
-  const handlePreviewPlay = (beatId) => {
+  useEffect(() => {
+    // Initialize audio service on mount
+    audioService.initialize();
+
+    // Cleanup on unmount
+    return () => {
+      audioService.dispose();
+    };
+  }, []);
+
+  useEffect(() => {
+    const loadBeat = async () => {
+      if (selectedBeat && selectedBeat.file) {
+        setIsLoadingBeat(true);
+        const beatUrl = `/freestyle-rap-app/beats/${selectedBeat.file}`;
+        await audioService.loadBeat(beatUrl);
+        setIsLoadingBeat(false);
+      }
+    };
+
+    loadBeat();
+  }, [selectedBeat]);
+
+  useEffect(() => {
+    if (isPlaying) {
+      audioService.playBeat();
+    } else {
+      audioService.stopBeat();
+    }
+  }, [isPlaying]);
+
+  const handlePreviewPlay = async (beatId) => {
     if (previewingBeatId === beatId) {
       setPreviewingBeatId(null);
-      onPlayPause(); // Stop current playback
+      audioService.stopBeat();
     } else {
       setPreviewingBeatId(beatId);
-      onBeatSelect(beatId);
-      onPlayPause(); // Start playing the new beat
+      const beat = beats.find(b => b.id === beatId);
+      if (beat) {
+        setIsLoadingBeat(true);
+        const beatUrl = `/freestyle-rap-app/beats/${beat.file}`;
+        await audioService.loadBeat(beatUrl);
+        setIsLoadingBeat(false);
+        audioService.playBeat();
+      }
     }
   };
 
   const handleBeatSelect = (beatId) => {
     if (previewingBeatId) {
-      onPlayPause(); // Stop any preview playback
+      audioService.stopBeat();
       setPreviewingBeatId(null);
     }
     onBeatSelect(beatId);
@@ -45,7 +84,7 @@ const CompactBeatSelector = ({ selectedBeatId, onBeatSelect, isPlaying, onPlayPa
         onClose={() => {
           setIsModalOpen(false);
           if (previewingBeatId) {
-            onPlayPause(); // Stop any preview playback
+            audioService.stopBeat();
             setPreviewingBeatId(null);
           }
         }}
@@ -53,7 +92,7 @@ const CompactBeatSelector = ({ selectedBeatId, onBeatSelect, isPlaying, onPlayPa
         currentBeatId={selectedBeatId}
         onPreviewPlay={handlePreviewPlay}
         previewingBeatId={previewingBeatId}
-        isLoading={isLoading}
+        isLoading={isLoadingBeat}
       />
     </div>
   );

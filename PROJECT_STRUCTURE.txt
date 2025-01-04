@@ -15,11 +15,14 @@ Directory Structure:
       - FourBarMode.jsx        : Training mode for practicing 4-bar rap patterns
       - RhymeExplorerMode.jsx  : Mode for exploring words and their rhyming pairs
       - FindRhymesMode.jsx     : Interactive game mode for finding rhyming words
+      - RhymeMapMode.jsx       : Visual map of rhyming patterns and word groups
+      - SlotMachineMode.jsx    : Customizable bar length practice mode
     
     - ModeSelector.jsx         : Component for selecting different training modes
     - BeatSelector.jsx         : Full-featured beat selection and control
     - CompactBeatSelector.jsx  : Minimalistic version of beat controls
     - VocabularySelector.jsx   : Component for choosing word sets
+    - VocabularySelectModal.jsx: Modal for selecting vocabulary sets
     - LanguageToggle.jsx       : Language switching between FI/EN
 
   /data
@@ -27,17 +30,31 @@ Directory Structure:
       - vocabularyConfig.js    : Configuration for different vocabulary sets
       - FI_generic_rap.js      : Finnish rap-oriented vocabulary
       - EN_generic_rap.js      : English rap-oriented vocabulary
-      - FI_elaimet.js         : Finnish animal-themed vocabulary
-      - FI__full_dict.js      : Complete Finnish dictionary
-      - EN__full_dict.js      : Complete English dictionary
+      - FI_elaimet.js          : Finnish animal-themed vocabulary
+      - FI_tiede.js            : Finnish science-themed vocabulary
+      - FI_ostoslista.js       : Finnish shopping list vocabulary
+      - FI_autot.js            : Finnish car-themed vocabulary
+      - FI_numerot.js          : Finnish numbers vocabulary
+      - FI__full_dict.js       : Complete Finnish dictionary
+      - EN__full_dict.js       : Complete English dictionary
     
     - beats.js                : Beat definitions and configurations
     - trainingModes.js        : Training mode configurations
     - wordList.js             : Word list generation and processing
 
+  /styles
+    - VocabularySelector.css  : Styles for vocabulary selection
+    - VocabularySelectModal.css: Styles for vocabulary selection modal
+    - BeatSelector.css        : Styles for beat selection
+    - BeatSelectModal.css     : Styles for beat selection modal
+    - ModeSelector.css        : Styles for mode selection
+    - TrainingMode.css        : Common styles for training modes
+    - CompactBeatSelector.css : Styles for compact beat selector
+
   /services
-    - TranslationContext.jsx   : Handles multilingual support
-    - DebugContext.jsx         : Debugging utilities
+    - AudioService.js         : Web Audio API based audio playback and mixing
+    - TranslationContext.jsx  : Handles multilingual support
+    - DebugContext.jsx        : Debugging utilities
 
 /scripts
   /data_processing/
@@ -51,17 +68,21 @@ Key Features:
    - Two-bar and Four-bar practice
    - Rhyme Explorer for vocabulary building
    - Interactive Find Rhymes game
+   - Visual Rhyme Map for pattern exploration
+   - Slot Machine mode with adjustable bar length
 
 2. Vocabulary Management:
    - Multiple predefined word sets
    - Support for both Finnish and English
-   - Themed collections (e.g., animals)
+   - Themed collections (animals, science, cars, etc.)
    - Full dictionary support
 
 3. Beat System:
+   - Web Audio API based playback
    - Customizable BPM
    - Multiple beat patterns
    - Synchronized word changes
+   - Beat preview and selection
 
 4. Bilingual Support:
    - Full Finnish and English translations

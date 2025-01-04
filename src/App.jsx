@@ -35,14 +35,28 @@ import { trainingModes } from './data/trainingModes'
 import { beats } from './data/beats'
 import { useTranslation } from './services/TranslationContext'
 import { DebugProvider } from './services/DebugContext'
+import audioService from './services/AudioService'
 
 function App() {
   const { translate, language } = useTranslation();
+  const [isWebAudioSupported, setIsWebAudioSupported] = useState(true);
   
   // Add effect to update document title
   useEffect(() => {
     document.title = translate('app.title');
   }, [translate]);
+
+  // Check Web Audio API support
+  useEffect(() => {
+    try {
+      const AudioContext = window.AudioContext || window.webkitAudioContext;
+      if (!AudioContext) {
+        setIsWebAudioSupported(false);
+      }
+    } catch (error) {
+      setIsWebAudioSupported(false);
+    }
+  }, []);
 
   const [isTraining, setIsTraining] = useState(false)
   const [selectedMode, setSelectedMode] = useState(null)
@@ -60,7 +74,22 @@ function App() {
 
   const timerRef = useRef(null)
   const nextNoteTimeRef = useRef(0)
-  const audioRef = useRef(null)
+
+  // Initialize audio service
+  useEffect(() => {
+    audioService.initialize();
+
+    // Load default beat
+    const defaultBeat = beats.find(beat => beat.id === 'night-ride');
+    if (defaultBeat) {
+      const beatUrl = `/freestyle-rap-app/beats/${defaultBeat.file}`;
+      audioService.loadBeat(beatUrl);
+    }
+
+    return () => {
+      audioService.dispose();
+    };
+  }, []);
 
   const getTotalBars = () => {
     switch (selectedMode) {
@@ -132,26 +161,16 @@ function App() {
   }
 
   useEffect(() => {
-    return () => {
-      stopPlayback();
-      audioRef.current = null;
-    };
-  }, []);
-
-  useEffect(() => {
     if (!isPlaying && timerRef.current) {
       clearTimeout(timerRef.current);
     }
   }, [isPlaying]);
 
   const stopPlayback = () => {
-    if (audioRef.current) {
-      audioRef.current.pause();
-      audioRef.current.currentTime = 0;
-    }
     if (timerRef.current) {
       clearTimeout(timerRef.current);
     }
+    audioService.stopBeat();
     setCurrentBeat(0);
     setCurrentBar(0);
     setIsWordChanging(false);
@@ -237,19 +256,17 @@ function App() {
     setSelectedMode(null);
   };
 
-  const handleBeatSelect = (beatId) => {
+  const handleBeatSelect = async (beatId) => {
     stopPlayback();
     const selectedBeat = beats.find(beat => beat.id === beatId);
     setSelectedBeatId(beatId);
     
     if (selectedBeat) {
       setBpm(selectedBeat.bpm);
-      const audioPath = `/freestyle-rap-app/beats/${selectedBeat.file}`;
-      console.log('Loading audio from:', audioPath);
-      
-      if (audioRef.current) {
-        audioRef.current.src = audioPath;
-      }
+      const beatUrl = `/freestyle-rap-app/beats/${selectedBeat.file}`;
+      setIsLoading(true);
+      await audioService.loadBeat(beatUrl);
+      setIsLoading(false);
     }
   };
 
@@ -262,65 +279,34 @@ function App() {
     setIsLoading(true);
 
     // Start everything from the beginning
-    if (!audioRef.current && selectedBeatId) {
-      const selectedBeat = beats.find(beat => beat.id === selectedBeatId);
-      const audioPath = `/freestyle-rap-app/beats/${selectedBeat.file}`;
-      console.log('Creating new audio element with path:', audioPath);
-      
-      audioRef.current = new Audio(audioPath);
-      audioRef.current.loop = true;
+    const selectedBeat = beats.find(beat => beat.id === selectedBeatId);
+    if (!selectedBeat) {
+      setIsLoading(false);
+      return;
     }
 
-    if (audioRef.current) {
-      // First, stop any existing playback
-      if (timerRef.current) {
-        clearTimeout(timerRef.current);
-      }
+    // Reset states
+    setCurrentBeat(0);
+    setCurrentBar(0);
+    setIsWordChanging(false);
 
-      // Reset states
-      setCurrentBeat(0);
-      setCurrentBar(0);
-      setIsWordChanging(false);
-      audioRef.current.currentTime = 0;
+    // Start audio and visuals
+    audioService.playBeat();
+    setIsLoading(false);
 
-      // Wait for audio to be ready and then start everything together
-      audioRef.current.oncanplaythrough = () => {
-        // Remove the event listener to prevent multiple calls
-        audioRef.current.oncanplaythrough = null;
-
-        // Start audio first
-        const playPromise = audioRef.current.play();
+    // Only start visual timing if in training mode
+    if (isTraining) {
+      // Add 200ms delay before starting visuals to compensate for audio latency
+      setTimeout(() => {
+        const beatInterval = 60.0 / bpm / 4;
+        nextNoteTimeRef.current = (Date.now() / 1000) + beatInterval;
         
-        playPromise.then(() => {
-          setIsLoading(false);
-          // Only start visual timing if in training mode
-          if (isTraining) {
-            // Add 200ms delay before starting visuals to compensate for audio latency
-            setTimeout(() => {
-              const beatInterval = 60.0 / bpm / 4;
-              nextNoteTimeRef.current = (Date.now() / 1000) + beatInterval;
-              
-              const tick = createTick();
-              tick();
-            }, 200);
-          }
-          
-          setIsPlaying(true);
-        }).catch(error => {
-          setIsLoading(false);
-          console.error('Error playing audio:', error);
-        });
-      };
-
-      // Handle loading errors
-      audioRef.current.onerror = () => {
-        setIsLoading(false);
-        console.error('Error loading audio');
-      };
-
-      // Trigger the loading/playing process
-      audioRef.current.load();
+        const tick = createTick();
+        tick();
+      }, 200);
     }
+    
+    setIsPlaying(true);
   };
 
   const handleNextWord = () => {
@@ -432,53 +418,55 @@ function App() {
     }
   };
 
-  // Initialize the audio with default beat
-  useEffect(() => {
-    const defaultBeat = beats.find(beat => beat.id === 'night-ride');
-    if (defaultBeat) {
-      const audioPath = `/freestyle-rap-app/beats/${defaultBeat.file}`;
-      audioRef.current = new Audio(audioPath);
-      audioRef.current.loop = true;
-    }
-  }, []);
-
   return (
     <DebugProvider>
       <div className="app">
         <div className="version-number">v{process.env.APP_VERSION || ''}</div>
         <h1>{translate('app.title')}</h1>
-        <div className="content">
-          {!isTraining ? (
-            <>
-              <LanguageToggle />
-              <div className="setup-container">
-                <BeatSelector
+        {!isWebAudioSupported ? (
+          <div className="browser-warning">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="24" height="24">
+              <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+            <div>
+              <h3>{translate('errors.webAudioNotSupported.title')}</h3>
+              <p>{translate('errors.webAudioNotSupported.message')}</p>
+            </div>
+          </div>
+        ) : (
+          <div className="content">
+            {!isTraining ? (
+              <>
+                <LanguageToggle />
+                <div className="setup-container">
+                  <BeatSelector
+                    selectedBeatId={selectedBeatId}
+                    onBeatSelect={handleBeatSelect}
+                    isPlaying={isPlaying}
+                    onPlayPause={handlePlayPause}
+                    isLoading={isLoading}
+                  />
+                  <VocabularySelector
+                    selectedVocabulary={selectedVocabulary}
+                    onVocabularySelect={setSelectedVocabulary}
+                  />
+                </div>
+                <ModeSelector onSelectMode={handleModeSelect} />
+              </>
+            ) : (
+              <>
+                <CompactBeatSelector
                   selectedBeatId={selectedBeatId}
                   onBeatSelect={handleBeatSelect}
                   isPlaying={isPlaying}
                   onPlayPause={handlePlayPause}
                   isLoading={isLoading}
                 />
-                <VocabularySelector
-                  selectedVocabulary={selectedVocabulary}
-                  onVocabularySelect={setSelectedVocabulary}
-                />
-              </div>
-              <ModeSelector onSelectMode={handleModeSelect} />
-            </>
-          ) : (
-            <>
-              <CompactBeatSelector
-                selectedBeatId={selectedBeatId}
-                onBeatSelect={handleBeatSelect}
-                isPlaying={isPlaying}
-                onPlayPause={handlePlayPause}
-                isLoading={isLoading}
-              />
-              {renderTrainingMode()}
-            </>
-          )}
-        </div>
+                {renderTrainingMode()}
+              </>
+            )}
+          </div>
+        )}
       </div>
     </DebugProvider>
   );
