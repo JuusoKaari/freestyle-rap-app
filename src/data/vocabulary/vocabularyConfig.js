@@ -7,28 +7,20 @@
  * 
  * Features:
  * - Language-specific vocabulary sets (FI/EN)
- * - Themed collections (rap, animals, etc.)
+ * - Themed collections (rap, science, shopping, etc.)
  * - Vocabulary metadata (name, description, difficulty)
  * - Word count tracking
  * - File path resolution
- * 
- * Each vocabulary set includes:
- * - Unique identifier
- * - Display name and description
- * - Difficulty rating
- * - Theme icon
- * - Word count statistics
- * 
- * The module provides helper functions for:
- * - Getting vocabulary file paths
- * - Counting words in vocabularies
- * - Filtering vocabularies by language
  */
 
 import FI_genericVocab from './FI_generic_rap.js';
 import FI_animalVocab from './FI_elaimet.js';
 import EN_genericVocab from './EN_generic_rap.js';
 import EN_animalVocab from './EN_animals.js';
+import FI_tiedeVocab from './FI_tiede.js';
+import FI_ostoslistaVocab from './FI_ostoslista.js';
+import FI_autotVocab from './FI_autot.js';
+import FI_numerotVocab from './FI_numerot.js';
 
 // Helper function to count total words in a vocabulary
 const countWords = (vocab) => {
@@ -50,10 +42,46 @@ const vocabularyConfigs = {
       id: 'fi_elaimet',
       name: 'Eläimet',
       description: 'Eläinaiheinen sanasto',
-      difficulty: 'hard AF',
+      difficulty: 'medium',
       icon: '🦁',
       file: 'FI_elaimet.js',
       wordCount: countWords(FI_animalVocab)
+    },
+    {
+      id: 'fi_tiede',
+      name: 'Tiede',
+      description: 'Tieteeseen liittyvä sanasto',
+      difficulty: 'hard',
+      icon: '🔬',
+      file: 'FI_tiede.js',
+      wordCount: countWords(FI_tiedeVocab)
+    },
+    {
+      id: 'fi_ostoslista',
+      name: 'Kauppalista',
+      description: 'Ruokakauppaan liittyvä sanasto',
+      difficulty: 'easy',
+      icon: '🛒',
+      file: 'FI_ostoslista.js',
+      wordCount: countWords(FI_ostoslistaVocab)
+    },
+    {
+      id: 'fi_autot',
+      name: 'Autot',
+      description: 'Autoihin liittyvä sanasto',
+      difficulty: 'medium',
+      icon: '🚗',
+      file: 'FI_autot.js',
+      wordCount: countWords(FI_autotVocab)
+    },
+    {
+      id: 'fi_numerot',
+      name: 'Numerot',
+      description: 'Numerosanat ja lukusanat',
+      difficulty: 'medium',
+      icon: '🔢',
+      file: 'FI_numerot.js',
+      wordCount: countWords(FI_numerotVocab)
     }
   ],
   en: [
@@ -70,7 +98,7 @@ const vocabularyConfigs = {
       id: 'en_animals',
       name: 'Animals',
       description: 'Animal-themed vocabulary',
-      difficulty: 'hard AF',
+      difficulty: 'medium',
       icon: '🦁',
       file: 'EN_animals.js',
       wordCount: countWords(EN_animalVocab)
@@ -82,10 +110,13 @@ const vocabularyConfigs = {
 export const getVocabularyPath = (vocabId) => {
   const language = vocabId.startsWith('fi_') ? 'fi' : 'en';
   const vocab = vocabularyConfigs[language].find(v => v.id === vocabId);
-  return vocab ? `vocabulary/${vocab.file}` : 'vocabulary/FI_generic_rap.js';
+  return vocab ? `vocabulary/${vocab.file}` : null;
 };
 
 // Export vocabularies based on language
 export const getVocabularies = (language) => {
-  return vocabularyConfigs[language] || vocabularyConfigs.fi;
+  if (!language || !vocabularyConfigs[language]) {
+    return [];
+  }
+  return vocabularyConfigs[language];
 }; 

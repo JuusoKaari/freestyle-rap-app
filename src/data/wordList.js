@@ -26,6 +26,10 @@ import EN_genericVocab from './vocabulary/EN_generic_rap.js';
 import EN_animalVocab from './vocabulary/EN_animals.js';
 import EN_fullDict from './vocabulary/EN__full_dict.js';
 import FI_fullDict from './vocabulary/FI__full_dict.js';
+import FI_tiedeVocab from './vocabulary/FI_tiede.js';
+import FI_ostoslistaVocab from './vocabulary/FI_ostoslista.js';
+import FI_autotVocab from './vocabulary/FI_autot.js';
+import FI_numerotVocab from './vocabulary/FI_numerot.js';
 
 // Helper function to count total words in a vowel group
 const getGroupWordCount = (group, words) => {
@@ -39,6 +43,14 @@ const getVocabulary = (vocabulary) => {
       return FI_genericVocab;
     case 'fi_elaimet':
       return FI_animalVocab;
+    case 'fi_tiede':
+      return FI_tiedeVocab;
+    case 'fi_ostoslista':
+      return FI_ostoslistaVocab;
+    case 'fi_autot':
+      return FI_autotVocab;
+    case 'fi_numerot':
+      return FI_numerotVocab;
     case 'en_generic_rap':
       return EN_genericVocab;
     case 'en_animals':

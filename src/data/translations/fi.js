@@ -15,8 +15,20 @@ export const fi = {
   },
   vocabulary: {
     selector: {
-      title: "Valitse sanasto",
+      title: "Sanasto",
       description: "Valitse sanasto, jota haluat harjoitella",
+      change: "Vaihda sanasto",
+      no_vocabularies: "Ei sanastoja valitulle kielelle",
+      word_count: "{{count}} sanaa"
+    },
+    difficulty: {
+      easy: "Helppo",
+      medium: "Keskitaso",
+      hard: "Vaikea"
+    },
+    modal: {
+      title: "Valitse sanasto",
+      word_count: "{{count}} sanaa"
     }
   },
   training: {

@@ -5,6 +5,9 @@ export default {
     "a-a-o": [
         "ra-ja-ton"
     ],
+    "a-aa-a": [
+        "la-val-la"
+    ],
     "a-e": [
         "sna-re"
     ],
@@ -56,7 +59,8 @@ export default {
         "bas-soo"
     ],
     "aa-uu": [
-        "al-kuun"
+        "al-kuun",
+        "hal-tuun"
     ],
     "ai-a-a": [
         "bai-la-ta"
@@ -259,12 +263,6 @@ export default {
     ],
     "yy-ii-ä": [
         "tyy-lil-lä"
-    ],
-    "ä-ei-ö": [
-        "sä-keis-tö"
-    ],
-    "ä-ei-öö": [
-        "sä-keis-töö"
     ],
     "ä-ii-ä": [
         "rä-pis-tä"

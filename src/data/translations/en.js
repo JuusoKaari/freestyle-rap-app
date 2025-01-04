@@ -17,6 +17,18 @@ export const en = {
     selector: {
       title: "Select Vocabulary",
       description: "Choose the vocabulary set you want to practice with",
+      change: "Change Vocabulary",
+      no_vocabularies: "No vocabularies available for the selected language",
+      word_count: "{{count}} words"
+    },
+    difficulty: {
+      easy: "Easy",
+      medium: "Medium",
+      hard: "Hard"
+    },
+    modal: {
+      title: "Select Vocabulary",
+      word_count: "{{count}} words"
     }
   },
   training: {
