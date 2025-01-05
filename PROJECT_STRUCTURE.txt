@@ -3,7 +3,7 @@ FREESTYLE RAP TRAINING APPLICATION
 
 Project Overview:
 ----------------
-A React-based application for practicing freestyle rap in Finnish and English. The app provides various training modes, vocabulary sets, and beat synchronization features to help users improve their rap and rhyming skills.
+A React-based application for practicing freestyle rap in Finnish and English. The app provides various training modes, vocabulary sets, beat synchronization features, and vocal recording capabilities to help users improve their rap and rhyming skills.
 
 Directory Structure:
 ------------------
@@ -24,6 +24,8 @@ Directory Structure:
     - VocabularySelector.jsx   : Component for choosing word sets
     - VocabularySelectModal.jsx: Modal for selecting vocabulary sets
     - LanguageToggle.jsx       : Language switching between FI/EN
+    - RecordToggle.jsx         : Toggle for enabling/disabling recording
+    - RecordingsModal.jsx      : Modal for managing and playing recordings
 
   /data
     /vocabulary/
@@ -50,11 +52,14 @@ Directory Structure:
     - ModeSelector.css        : Styles for mode selection
     - TrainingMode.css        : Common styles for training modes
     - CompactBeatSelector.css : Styles for compact beat selector
+    - RecordToggle.css        : Styles for recording toggle button
+    - RecordingsModal.css     : Styles for recordings modal
 
   /services
     - AudioService.js         : Web Audio API based audio playback and mixing
+    - RecordingService.js     : Microphone recording and audio processing
     - TranslationContext.jsx  : Handles multilingual support
-    - DebugContext.jsx        : Debugging utilities
+    - DebugContext.jsx        : Debugging utilities and feature flags
 
 /scripts
   /data_processing/
@@ -84,7 +89,14 @@ Key Features:
    - Synchronized word changes
    - Beat preview and selection
 
-4. Bilingual Support:
+4. Recording System:
+   - Microphone input recording
+   - Beat and vocals synchronization
+   - Recording playback with original beat
+   - Recording management and storage
+   - Debug mode access control
+
+5. Bilingual Support:
    - Full Finnish and English translations
    - Language-specific rhyme generation
    - Separate vocabulary sets for each language 

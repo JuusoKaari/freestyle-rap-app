@@ -1,0 +1,60 @@
+.record-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.record-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.record-icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: rgba(255, 50, 50, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.record-dot {
+  width: 1rem;
+  height: 1rem;
+  background: rgb(255, 50, 50);
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.record-button.recording .record-icon {
+  animation: pulse 2s infinite;
+}
+
+.record-button.recording .record-dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 2px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    background: rgba(255, 50, 50, 0.2);
+  }
+  50% {
+    transform: scale(1.1);
+    background: rgba(255, 50, 50, 0.3);
+  }
+  100% {
+    transform: scale(1);
+    background: rgba(255, 50, 50, 0.2);
+  }
+} 

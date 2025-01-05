@@ -1,13 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import './index.css'
 import { TranslationProvider } from './services/TranslationContext'
+import { DebugProvider } from './services/DebugContext'
+import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <TranslationProvider>
-      <App />
-    </TranslationProvider>
-  </React.StrictMode>
+    <DebugProvider>
+      <TranslationProvider>
+        <App />
+      </TranslationProvider>
+    </DebugProvider>
+  </React.StrictMode>,
 ) 

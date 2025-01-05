@@ -636,4 +636,62 @@ body {
   font-size: 0.9rem;
   line-height: 1.4;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.recording-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.recordings-button {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.recordings-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.training-header {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Recording Controls */
+.recording-controls {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.app .recording-controls,
+.app .record-toggle {
+  display: none !important;
+}
+
+/* Show recording controls when debug mode is active */
+.app.debug-mode .recording-controls,
+.app.debug-mode .record-toggle {
+  display: flex !important;
 } 

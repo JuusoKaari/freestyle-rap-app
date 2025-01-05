@@ -16,6 +16,19 @@ export const en = {
     cancel: "Cancel",
     select: "Select",
     close: "×",
+    play: "Play",
+  },
+  recording: {
+    start: "Start Recording",
+    stop: "Stop Recording",
+    toggle: "Recording",
+    enabled: "Recording Enabled",
+    disabled: "Recording Disabled"
+  },
+  recordings: {
+    title: "My Recordings",
+    open: "Open Recordings",
+    empty: "No recordings yet. Start recording your freestyle by enabling recording and playing a beat!"
   },
   vocabulary: {
     selector: {

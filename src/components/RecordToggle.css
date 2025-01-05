@@ -1,0 +1,35 @@
+.record-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.record-toggle:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.record-toggle.enabled {
+  background: rgba(255, 50, 50, 0.1);
+  border-color: rgba(255, 50, 50, 0.3);
+  color: rgb(255, 100, 100);
+}
+
+.record-toggle.enabled:hover {
+  background: rgba(255, 50, 50, 0.15);
+}
+
+.record-toggle .record-dot {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.record-toggle.enabled .record-dot {
+  opacity: 1;
+} 

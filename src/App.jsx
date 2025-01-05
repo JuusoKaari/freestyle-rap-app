@@ -34,11 +34,15 @@ import LanguageToggle from './components/LanguageToggle'
 import { trainingModes } from './data/trainingModes'
 import { beats } from './data/beats'
 import { useTranslation } from './services/TranslationContext'
-import { DebugProvider } from './services/DebugContext'
+import { DebugProvider, useDebug } from './services/DebugContext'
 import audioService from './services/AudioService'
+import RecordToggle from './components/RecordToggle'
+import RecordingsModal from './components/RecordingsModal'
+import recordingService from './services/RecordingService'
 
 function App() {
   const { translate, language } = useTranslation();
+  const { isDebugMode } = useDebug();
   const [isWebAudioSupported, setIsWebAudioSupported] = useState(true);
   
   // Add effect to update document title
@@ -71,6 +75,10 @@ function App() {
   const [isPlaying, setIsPlaying] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
   const [barsPerRound, setBarsPerRound] = useState(2)
+  const [isRecordingEnabled, setIsRecordingEnabled] = useState(false)
+  const [recordings, setRecordings] = useState([])
+  const [isRecordingsModalOpen, setIsRecordingsModalOpen] = useState(false)
+  const currentRecordingRef = useRef(null)
 
   const timerRef = useRef(null)
   const nextNoteTimeRef = useRef(0)
@@ -166,7 +174,7 @@ function App() {
     }
   }, [isPlaying]);
 
-  const stopPlayback = () => {
+  const stopPlayback = async () => {
     if (timerRef.current) {
       clearTimeout(timerRef.current);
     }
@@ -175,6 +183,26 @@ function App() {
     setCurrentBar(0);
     setIsWordChanging(false);
     setIsPlaying(false);
+
+    // Stop recording if it was enabled
+    if (isRecordingEnabled) {
+      console.log('Recording enabled, stopping recording...');
+      const recording = await recordingService.stopRecording();
+      if (recording) {
+        console.log('Recording completed, saving...');
+        const newRecording = {
+          id: Date.now().toString(),
+          timestamp: Date.now(),
+          beatId: selectedBeatId,
+          mode: selectedMode,
+          vocabulary: selectedVocabulary,
+          bpm: bpm,
+          ...recording
+        };
+        setRecordings(prev => [...prev, newRecording]);
+        console.log('New recording saved:', newRecording);
+      }
+    }
   };
 
   // Spread out words from same groups with randomization
@@ -270,13 +298,16 @@ function App() {
     }
   };
 
-  const handlePlayPause = () => {
+  const handlePlayPause = async () => {
     if (isPlaying) {
       stopPlayback();
       return;
     }
 
     setIsLoading(true);
+
+    // Initialize audio context if needed
+    await audioService.initialize();
 
     // Start everything from the beginning
     const selectedBeat = beats.find(beat => beat.id === selectedBeatId);
@@ -294,6 +325,12 @@ function App() {
     audioService.playBeat();
     setIsLoading(false);
 
+    // Start recording if enabled and in training mode
+    if (isRecordingEnabled && isTraining) {
+      console.log('Recording enabled and in training mode, starting recording...');
+      recordingService.startRecording();
+    }
+
     // Only start visual timing if in training mode
     if (isTraining) {
       // Add 50ms delay before starting visuals for a more relaxed feel
@@ -303,7 +340,7 @@ function App() {
         
         const tick = createTick();
         tick();
-      }, 100);
+      }, 50);
     }
     
     setIsPlaying(true);
@@ -315,6 +352,43 @@ function App() {
 
   const handlePreviousWord = () => {
     setWordCounter((prev) => (prev - 1 + shuffledWords.length) % shuffledWords.length);
+  };
+
+  const handleRecordingToggle = async () => {
+    const newState = !isRecordingEnabled;
+    
+    if (newState) {
+      // Initialize audio context if needed
+      await audioService.initialize();
+      
+      // Request microphone permission
+      const hasPermission = await recordingService.requestMicrophonePermission();
+      if (!hasPermission) {
+        console.error('Microphone permission denied');
+        return;
+      }
+    } else {
+      // Stop recording if it's active
+      if (recordingService.isRecording) {
+        const recording = await recordingService.stopRecording();
+        if (recording) {
+          console.log('Recording completed, saving...');
+          const newRecording = {
+            id: Date.now().toString(),
+            timestamp: Date.now(),
+            beatId: selectedBeatId,
+            mode: selectedMode,
+            vocabulary: selectedVocabulary,
+            bpm: bpm,
+            ...recording
+          };
+          setRecordings(prev => [...prev, newRecording]);
+          console.log('New recording saved:', newRecording);
+        }
+      }
+    }
+    
+    setIsRecordingEnabled(newState);
   };
 
   const renderTrainingMode = () => {
@@ -331,6 +405,8 @@ function App() {
             onPlayPause={handlePlayPause}
             isLoading={isLoading}
             bpm={bpm}
+            isRecordingEnabled={isRecordingEnabled}
+            onRecordingToggle={handleRecordingToggle}
           />
         );
       case 'slot-machine':
@@ -418,57 +494,86 @@ function App() {
     }
   };
 
+  // Load saved recordings from localStorage on mount
+  useEffect(() => {
+    const savedRecordings = localStorage.getItem('recordings');
+    if (savedRecordings) {
+      console.log('Loading saved recordings from localStorage');
+      setRecordings(JSON.parse(savedRecordings));
+    }
+  }, []);
+
+  // Save recordings to localStorage when updated
+  useEffect(() => {
+    console.log('Saving recordings to localStorage:', recordings);
+    localStorage.setItem('recordings', JSON.stringify(recordings));
+  }, [recordings]);
+
   return (
-    <DebugProvider>
-      <div className="app">
-        <div className="version-number">v{process.env.APP_VERSION || ''}</div>
-        <h1>{translate('app.title')}</h1>
-        {!isWebAudioSupported ? (
-          <div className="browser-warning">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="24" height="24">
-              <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-            </svg>
-            <div>
-              <h3>{translate('errors.webAudioNotSupported.title')}</h3>
-              <p>{translate('errors.webAudioNotSupported.message')}</p>
-            </div>
+    <div className={`app ${isDebugMode ? 'debug-mode' : ''}`}>
+      {!isWebAudioSupported && (
+        <div className="browser-warning">
+          <h2>{translate('app.browser_warning.title')}</h2>
+          <p>{translate('app.browser_warning.message')}</p>
+        </div>
+      )}
+
+      {isDebugMode && (
+        <div className="recording-controls">
+          <RecordToggle
+            isRecordingEnabled={isRecordingEnabled}
+            onToggle={handleRecordingToggle}
+          />
+          <button
+            className="recordings-button"
+            onClick={() => setIsRecordingsModalOpen(true)}
+          >
+            {translate('recordings.open')}
+          </button>
+        </div>
+      )}
+
+      <LanguageToggle />
+      <h1>{translate('app.title')}</h1>
+
+      {!isTraining ? (
+        <div className="setup-container">
+          <div className="controls">
+            <BeatSelector
+              selectedBeatId={selectedBeatId}
+              onBeatSelect={handleBeatSelect}
+              isPlaying={isPlaying}
+              onPlayPause={handlePlayPause}
+              isLoading={isLoading}
+            />
+            <VocabularySelector
+              selectedVocabulary={selectedVocabulary}
+              onVocabularySelect={setSelectedVocabulary}
+            />
           </div>
-        ) : (
-          <div className="content">
-            {!isTraining ? (
-              <>
-                <LanguageToggle />
-                <div className="setup-container">
-                  <BeatSelector
-                    selectedBeatId={selectedBeatId}
-                    onBeatSelect={handleBeatSelect}
-                    isPlaying={isPlaying}
-                    onPlayPause={handlePlayPause}
-                    isLoading={isLoading}
-                  />
-                  <VocabularySelector
-                    selectedVocabulary={selectedVocabulary}
-                    onVocabularySelect={setSelectedVocabulary}
-                  />
-                </div>
-                <ModeSelector onSelectMode={handleModeSelect} />
-              </>
-            ) : (
-              <>
-                <CompactBeatSelector
-                  selectedBeatId={selectedBeatId}
-                  onBeatSelect={handleBeatSelect}
-                  isPlaying={isPlaying}
-                  onPlayPause={handlePlayPause}
-                  isLoading={isLoading}
-                />
-                {renderTrainingMode()}
-              </>
-            )}
+          <ModeSelector onSelectMode={handleModeSelect} />
+        </div>
+      ) : (
+        <>
+          <div className="training-header">
+            <CompactBeatSelector
+              selectedBeatId={selectedBeatId}
+              onBeatSelect={handleBeatSelect}
+              isPlaying={isPlaying}
+              onPlayPause={handlePlayPause}
+              isLoading={isLoading}
+            />
           </div>
-        )}
-      </div>
-    </DebugProvider>
+          {renderTrainingMode()}
+        </>
+      )}
+
+      <RecordingsModal
+        isOpen={isRecordingsModalOpen}
+        onClose={() => setIsRecordingsModalOpen(false)}
+        recordings={recordings}
+      />
+    </div>
   );
 }
 

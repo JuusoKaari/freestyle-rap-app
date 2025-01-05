@@ -16,11 +16,24 @@ export const fi = {
     cancel: "Peruuta",
     select: "Valitse",
     close: "×",
+    play: "Toista",
+  },
+  recording: {
+    start: "Aloita nauhoitus",
+    stop: "Lopeta nauhoitus",
+    toggle: "Nauhoitus",
+    enabled: "Nauhoitus päällä",
+    disabled: "Nauhoitus pois päältä"
+  },
+  recordings: {
+    title: "Omat nauhoitukset",
+    open: "Avaa nauhoitukset",
+    empty: "Ei nauhoituksia. Aloita freestylen nauhoitus kytkemällä nauhoitus päälle ja soittamalla biitti!"
   },
   vocabulary: {
     selector: {
-      title: "Sanasto",
-      description: "Valitse sanasto, jota haluat harjoitella",
+      title: "Valitse sanasto",
+      description: "Valitse sanasto jolla haluat harjoitella",
       change: "Vaihda sanasto",
       no_vocabularies: "Ei sanastoja valitulle kielelle",
       word_count: "{{count}} sanaa"
