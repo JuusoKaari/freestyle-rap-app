@@ -249,21 +249,29 @@ def prosessoi_tiedosto(input_file, output_dir):
     with open(input_file, "r", encoding="utf-8") as file:
         text = file.read()
     
-    # Remove punctuation and split into words
-    text = re.sub(r'[-.,!?:;*”"/\'\(\)\[\]{}]', '', text)
+    # Remove punctuation (except semicolons) and split into words
+    text = re.sub(r'[-.,!?:*"/\'\(\)\[\]{}]', '', text)
     # Split by whitespace and handle underscore-separated words
     sanat = []
     for word in text.split():
         word = word.strip()
         # Skip empty words and enforce length limits
-        if not word or len(word) < 4 or len(word) > 15:
+        if not word:
+            continue
+        # Split into phonetic and display parts if semicolon is present
+        parts = word.split(';', 1)
+        phonetic_word = parts[0].strip().lower()
+        display_word = parts[1].strip() if len(parts) > 1 else phonetic_word
+        
+        # Skip if phonetic word is too short or too long
+        if len(phonetic_word) < 4 or len(phonetic_word) > 15:
             continue
         # If word contains underscore, keep it as is
-        if '_' in word:
-            sanat.append(word.lower())
+        if '_' in phonetic_word:
+            sanat.append((phonetic_word, display_word))
         # Otherwise add normally
         else:
-            sanat.append(word.lower())
+            sanat.append((phonetic_word, display_word))
 
     # Generate output filename based on input filename
     input_basename = os.path.splitext(os.path.basename(input_file))[0]
@@ -274,12 +282,11 @@ def prosessoi_tiedosto(input_file, output_dir):
     previews = {}
     new_words_count = 0
 
-    for sana in sanat:
-        sana = sana.strip().lower()
-        if not sana:
+    for phonetic_word, display_word in sanat:
+        if not phonetic_word:
             continue
 
-        hyphenated_word = split_into_syllables(sana)
+        hyphenated_word = split_into_syllables(phonetic_word)
         # Skip if syllable splitting failed
         if not hyphenated_word:
             continue
@@ -291,7 +298,7 @@ def prosessoi_tiedosto(input_file, output_dir):
             continue
 
         # Skip inappropriate words
-        if not is_appropriate_word(sana):
+        if not is_appropriate_word(phonetic_word):
             continue
 
         # Create pattern key (e.g., "a-e" or "a-e-i")
@@ -301,19 +308,21 @@ def prosessoi_tiedosto(input_file, output_dir):
         if pattern_key not in vowel_patterns:
             vowel_patterns[pattern_key] = []
         
+        # Create word string - only include display version if it's different from phonetic
+        word_string = hyphenated_word if display_word == phonetic_word else f"{hyphenated_word};{display_word}"
+        
         # Add word if it's not already in the list
-        if hyphenated_word not in vowel_patterns[pattern_key]:
-            vowel_patterns[pattern_key].append(hyphenated_word)
+        if word_string not in vowel_patterns[pattern_key]:
+            vowel_patterns[pattern_key].append(word_string)
             new_words_count += 1
 
     # Sort patterns and prepare output data
     output_data = {}
     for pattern, words in sorted(vowel_patterns.items()):
         if words:  # Only include patterns that have words
-            unique_words = sorted(list(set(words)))
-            output_data[pattern] = unique_words
-            # Store first 5 words of each pattern for preview
-            previews[pattern] = unique_words[:5]
+            output_data[pattern] = sorted(words)
+            # Store first 5 words of each pattern for preview - use display version if present
+            previews[pattern] = [word.split(';')[1] if ';' in word else word for word in words[:5]]
     
     # Save to JS file with export syntax
     with open(output_file, "w", encoding="utf-8") as js_file:

@@ -113,16 +113,28 @@ def process_file(input_file, output_dir):
     with open(input_file, "r", encoding="utf-8") as file:
         text = file.read()
 
-    text = re.sub(r'[-.,!?:;*”"/\'\(\)\[\]{}]', '', text)
+    text = re.sub(r'[-.,!?:*"/\'\(\)\[\]{}]', '', text)
     # Split by whitespace and handle underscore-separated words
     words = []
     for word in text.split():
+        word = word.strip()
+        # Skip empty words
+        if not word:
+            continue
+        # Split into phonetic and display parts if semicolon is present
+        parts = word.split(';', 1)
+        phonetic_word = parts[0].strip().lower()
+        display_word = parts[1].strip() if len(parts) > 1 else phonetic_word
+        
+        # Skip if phonetic word is too short or too long
+        if len(phonetic_word) < 4 or len(phonetic_word) > 15:
+            continue
         # If word contains underscore, keep it as is
-        if '_' in word:
-            words.append(word.strip().lower())
-        # Otherwise split normally
+        if '_' in phonetic_word:
+            words.append((phonetic_word, display_word))
+        # Otherwise add normally
         else:
-            words.append(word.strip().lower())
+            words.append((phonetic_word, display_word))
     
     input_basename = os.path.splitext(os.path.basename(input_file))[0]
     output_file = os.path.join(output_dir, f"{input_basename}.js")
@@ -132,11 +144,11 @@ def process_file(input_file, output_dir):
     previews = {}
     new_words_count = 0
 
-    for word in words:
-        if len(word) < 4 or len(word) > 15:
+    for phonetic_word, display_word in words:
+        if not phonetic_word:
             continue
 
-        rhyme_part, syllable_count = process_word(word)
+        rhyme_part, syllable_count = process_word(phonetic_word)
 
         if not rhyme_part:
             continue
@@ -144,16 +156,20 @@ def process_file(input_file, output_dir):
         if rhyme_part not in vowel_patterns:
             vowel_patterns[rhyme_part] = []
 
-        if word not in vowel_patterns[rhyme_part]:
-            vowel_patterns[rhyme_part].append(word)
+        # Create word string - only include display version if it's different from phonetic
+        word_string = phonetic_word if display_word == phonetic_word else f"{phonetic_word};{display_word}"
+
+        # Add word if it's not already in the list
+        if word_string not in vowel_patterns[rhyme_part]:
+            vowel_patterns[rhyme_part].append(word_string)
             new_words_count += 1
 
     output_data = {}
     for pattern, words in sorted(vowel_patterns.items()):
         if words:
-            unique_words = sorted(list(set(words)))
-            output_data[pattern] = unique_words
-            previews[pattern] = unique_words[:5]
+            output_data[pattern] = sorted(words)
+            # Store first 5 words of each pattern for preview - use display version if present
+            previews[pattern] = [word.split(';')[1] if ';' in word else word for word in words[:5]]
 
     with open(output_file, "w", encoding="utf-8") as js_file:
         js_content = json.dumps(output_data, ensure_ascii=False, indent=4)

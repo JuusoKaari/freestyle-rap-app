@@ -34,17 +34,18 @@ export default {
         "draa-maa",
         "haas-taa"
     ],
-    "aa-e": [
-        "samp-le"
+    "aa-ai": [
+        "pant-slain;punchline"
     ],
-    "aa-ee": [
-        "samp-lee"
+    "aa-ai-ii": [
+        "pant-slai-nii;punchlinee"
     ],
     "aa-i-a": [
         "tah-ti-a"
     ],
     "aa-ii": [
         "mat-sii",
+        "pant-sii;punchii",
         "tah-tii",
         "tans-sii",
         "tat-sii"
@@ -83,6 +84,9 @@ export default {
         "maus-taa",
         "taus-taa"
     ],
+    "au-ii": [
+        "bauns-sii;bouncee"
+    ],
     "e-e": [
         "ske-ne"
     ],
@@ -105,11 +109,8 @@ export default {
         "ver-see"
     ],
     "ee-ee-ä": [
-        "bee_-pee-_äm",
+        "bee_-pee-_äm;BPM",
         "ver-ses-sä"
-    ],
-    "ee-ii": [
-        "em-sii"
     ],
     "ee-o": [
         "get-to",
@@ -180,7 +181,7 @@ export default {
         "ins-pis-tä"
     ],
     "ii-o-ii": [
-        "biit-bo-xii"
+        "biit-bo-xii;beatboxii"
     ],
     "ii-uu": [
         "is-kuu"
@@ -192,27 +193,13 @@ export default {
         "oon_-pa-ras"
     ],
     "oo-i": [
-        "drop-pi",
-        "groo-vi"
+        "drop-pi"
     ],
     "oo-ii": [
-        "drop-pii",
-        "groo-vii"
+        "drop-pii"
     ],
     "oo-uu": [
         "pot-kuu"
-    ],
-    "ou-e": [
-        "boun-ce"
-    ],
-    "ou-ee": [
-        "boun-cee"
-    ],
-    "ou-i": [
-        "bouns-si"
-    ],
-    "ou-ii": [
-        "bouns-sii"
     ],
     "u-i-o": [
         "stu-di-o"
@@ -235,17 +222,12 @@ export default {
         "rus-taa"
     ],
     "uu-i": [
+        "gruu-vi;groovi",
+        "gruu-vi;groovii",
         "huuk-ki"
     ],
-    "uu-i-e": [
-        "punc-hli-ne"
-    ],
-    "uu-i-ee": [
-        "punc-hli-nee"
-    ],
     "uu-ii": [
-        "huuk-kii",
-        "punc-hii"
+        "huuk-kii"
     ],
     "yy-ee": [
         "syl-keen"
@@ -272,14 +254,14 @@ export default {
     ],
     "ää-e": [
         "bän-ger",
-        "sämp-le"
+        "sämp-le;sample"
     ],
     "ää-e-ii": [
         "bän-ge-rii"
     ],
     "ää-ee": [
-        "sämp-lee",
-        "äm-see"
+        "sämp-lee;samplee",
+        "äm-see;MC"
     ],
     "ää-i": [
         "räp-pi"

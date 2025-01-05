@@ -174,8 +174,27 @@ const commonPrefixLength = (a, b) => {
   return i;
 };
 
+// Helper function to split word into phonetic and display versions
+const splitWord = (word) => {
+  const parts = word.split(';');
+  return {
+    phonetic: parts[0],
+    display: parts[1] || parts[0] // If no display version, use phonetic
+  };
+};
+
 // Function to normalize a word for sorting (remove dashes and underscores)
-const normalizeWord = (word) => word.replace(/-/g, '').replace(/_/g, ' ').toLowerCase();
+const normalizeWord = (word) => {
+  // If word contains a semicolon, use the phonetic part
+  const { phonetic } = splitWord(word);
+  return phonetic.replace(/-/g, '').replace(/_/g, ' ').toLowerCase();
+};
+
+// Function to get display version of a word
+const getDisplayWord = (word) => {
+  const { display } = splitWord(word);
+  return display.replace(/-/g, '').replace(/_/g, ' ');
+};
 
 // Function to get a list of words from a vocabulary
 export const generateWordList = async (options = {}) => {
@@ -214,8 +233,8 @@ export const generateWordList = async (options = {}) => {
     });
     
     sortedWords.forEach(rawWord => {
-      // Remove dashes and convert underscores to spaces
-      const word = rawWord.replace(/-/g, '').replace(/_/g, ' ');
+      // Get display version of word
+      const word = getDisplayWord(rawWord);
       const entry = {
         word,
         group
@@ -238,7 +257,7 @@ export const generateWordList = async (options = {}) => {
             ))
             .slice(0, remainingSlots)
             .map(rhyme => ({
-              word: rhyme.word.replace(/-/g, '').replace(/_/g, ' '),
+              word: getDisplayWord(rhyme.word),
               group: rhyme.group,
               isSlant: true
             }));
@@ -248,7 +267,7 @@ export const generateWordList = async (options = {}) => {
         const allThemedRhymes = [
           ...themedDirectRhymes.map(rhyme => ({
             ...rhyme,
-            word: rhyme.word.replace(/-/g, '').replace(/_/g, ' '),
+            word: getDisplayWord(rhyme.word),
             isSlant: false
           })),
           ...themedSlantRhymes
@@ -274,7 +293,7 @@ export const generateWordList = async (options = {}) => {
               )
             )
             .map(rhyme => ({
-              word: rhyme.word.replace(/-/g, '').replace(/_/g, ' '),
+              word: getDisplayWord(rhyme.word),
               group: rhyme.group,
               isSlant: false
             }));
@@ -299,7 +318,7 @@ export const generateWordList = async (options = {}) => {
               )
               .slice(0, remainingSlots)
               .map(rhyme => ({
-                word: rhyme.word.replace(/-/g, '').replace(/_/g, ' '),
+                word: getDisplayWord(rhyme.word),
                 group: rhyme.group,
                 isSlant: true
               }));

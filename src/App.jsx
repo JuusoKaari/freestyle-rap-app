@@ -511,6 +511,8 @@ function App() {
 
   return (
     <div className={`app ${isDebugMode ? 'debug-mode' : ''}`}>
+      <div className="version-number">v{process.env.APP_VERSION || ''}</div>
+
       {!isWebAudioSupported && (
         <div className="browser-warning">
           <h2>{translate('app.browser_warning.title')}</h2>
