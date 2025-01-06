@@ -1,3 +1,28 @@
+/**
+ * Recording Service (RecordingService.js)
+ * ====================================
+ * 
+ * Service that handles microphone input and audio recording functionality.
+ * Integrates with AudioService to share audio context and manage
+ * recording streams properly.
+ * 
+ * Key responsibilities:
+ * - Microphone permission handling
+ * - Audio recording using MediaRecorder API
+ * - Recording stream management
+ * - Audio blob creation and processing
+ * - Integration with Web Audio API
+ * 
+ * The service manages the complete recording lifecycle:
+ * 1. Request microphone permission
+ * 2. Set up MediaRecorder and audio nodes
+ * 3. Handle recording start/stop
+ * 4. Process recorded audio into playable format
+ * 
+ * Uses a singleton pattern to ensure consistent recording state
+ * across the application.
+ */
+
 import audioService from './AudioService';
 
 class RecordingService {

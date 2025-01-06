@@ -32,9 +32,9 @@ import CompactBeatSelector from './components/CompactBeatSelector'
 import VocabularySelector from './components/VocabularySelector'
 import LanguageToggle from './components/LanguageToggle'
 import { trainingModes } from './data/trainingModes'
-import { beats } from './data/beat_metadata/index'
 import { useTranslation } from './services/TranslationContext'
 import { DebugProvider, useDebug } from './services/DebugContext'
+import { useAudioController } from './services/useAudioController'
 import audioService from './services/AudioService'
 import RecordToggle from './components/RecordToggle'
 import RecordingsModal from './components/RecordingsModal'
@@ -43,64 +43,36 @@ import recordingService from './services/RecordingService'
 function App() {
   const { translate, language } = useTranslation();
   const { isDebugMode, SecretTapArea } = useDebug();
-  const [isWebAudioSupported, setIsWebAudioSupported] = useState(true);
+  const {
+    isWebAudioSupported,
+    bpm,
+    isPlaying,
+    isLoading,
+    selectedBeatId,
+    currentBeat,
+    currentBar,
+    handleBeatSelect,
+    handleBpmChange,
+    handlePlayPause,
+    stopPlayback
+  } = useAudioController();
   
-  // Add effect to update document title
-  useEffect(() => {
-    document.title = translate('app.title');
-  }, [translate]);
-
-  // Check Web Audio API support
-  useEffect(() => {
-    try {
-      const AudioContext = window.AudioContext || window.webkitAudioContext;
-      if (!AudioContext) {
-        setIsWebAudioSupported(false);
-      }
-    } catch (error) {
-      setIsWebAudioSupported(false);
-    }
-  }, []);
-
   const [isTraining, setIsTraining] = useState(false)
   const [selectedMode, setSelectedMode] = useState(null)
-  const [currentBar, setCurrentBar] = useState(0)
-  const [bpm, setBpm] = useState(75)
   const [isWordChanging, setIsWordChanging] = useState(false)
-  const [currentBeat, setCurrentBeat] = useState(0)
   const [wordCounter, setWordCounter] = useState(0)
   const [shuffledWords, setShuffledWords] = useState([])
-  const [selectedBeatId, setSelectedBeatId] = useState('night_ride')
   const [selectedVocabulary, setSelectedVocabulary] = useState('fi_generic_rap')
-  const [isPlaying, setIsPlaying] = useState(false)
-  const [isLoading, setIsLoading] = useState(false)
   const [barsPerRound, setBarsPerRound] = useState(2)
   const [isRecordingEnabled, setIsRecordingEnabled] = useState(false)
   const [recordings, setRecordings] = useState([])
   const [isRecordingsModalOpen, setIsRecordingsModalOpen] = useState(false)
   const currentRecordingRef = useRef(null)
 
-  const timerRef = useRef(null)
-  const nextNoteTimeRef = useRef(0)
-
-  // Initialize audio service
+  // Add effect to update document title
   useEffect(() => {
-    audioService.initialize();
-
-    // Load default beat
-    const defaultBeat = beats.find(beat => beat.id === 'night_ride');
-    if (defaultBeat) {
-      // Use the URL for the beat's default BPM from the files object
-      const beatUrl = defaultBeat.files[defaultBeat.bpm.toString()];
-      if (beatUrl) {
-        audioService.loadBeat(beatUrl);
-      }
-    }
-
-    return () => {
-      audioService.dispose();
-    };
-  }, []);
+    document.title = translate('app.title');
+  }, [translate]);
 
   const getTotalBars = () => {
     switch (selectedMode) {
@@ -122,89 +94,28 @@ function App() {
     setCurrentBar(0);
   };
 
-  const createTick = () => {
-    const beatInterval = 60.0 / bpm / 4
-    const totalBars = getTotalBars()
-
-    const tickFunction = () => {
-      const currentTime = Date.now() / 1000
-      
-      if (nextNoteTimeRef.current <= currentTime + 0.1) {
-        setCurrentBeat(prev => {
-          const nextBeat = ((prev + 1) % 4)
-          if (nextBeat === 0) {
-            setCurrentBar(prevBar => {
-              const nextBar = (prevBar + 1) % totalBars
-              if (nextBar === 0) {
-                setIsWordChanging(true)
-                if (wordCounter >= shuffledWords.length - 2) {
-                  // Load new words
-                  generateWordList({ 
-                    count: 100, 
-                    minWordsInGroup: 3,
-                    vocabulary: selectedVocabulary 
-                  }).then(words => {
-                    if (words.length > 0) {
-                      setShuffledWords(words);
-                      setWordCounter(0);
-                    }
-                  });
-                } else {
-                  setWordCounter(prev => prev + 1)
-                }
-                setTimeout(() => {
-                  setIsWordChanging(false)
-                }, 450)
-              }
-              return nextBar
-            })
+  // Handle bar change callback for audio controller
+  const handleBarChange = (nextBar) => {
+    if (nextBar === 0) {
+      setIsWordChanging(true);
+      if (wordCounter >= shuffledWords.length - 2) {
+        // Load new words
+        generateWordList({ 
+          count: 100, 
+          minWordsInGroup: 3,
+          vocabulary: selectedVocabulary 
+        }).then(words => {
+          if (words.length > 0) {
+            setShuffledWords(words);
+            setWordCounter(0);
           }
-          return nextBeat
-        })
-
-        nextNoteTimeRef.current += beatInterval
+        });
+      } else {
+        setWordCounter(prev => prev + 1);
       }
-
-      timerRef.current = setTimeout(tickFunction, 25)
-    }
-
-    return tickFunction
-  }
-
-  useEffect(() => {
-    if (!isPlaying && timerRef.current) {
-      clearTimeout(timerRef.current);
-    }
-  }, [isPlaying]);
-
-  const stopPlayback = async () => {
-    if (timerRef.current) {
-      clearTimeout(timerRef.current);
-    }
-    audioService.stopBeat();
-    setCurrentBeat(0);
-    setCurrentBar(0);
-    setIsWordChanging(false);
-    setIsPlaying(false);
-
-    // Stop recording if it was enabled
-    if (isRecordingEnabled) {
-      console.log('Recording enabled, stopping recording...');
-      const recording = await recordingService.stopRecording();
-      if (recording) {
-        console.log('Recording completed, saving...');
-        const newRecording = {
-          id: Date.now().toString(),
-          timestamp: Date.now(),
-          beatId: selectedBeatId,
-          mode: selectedMode,
-          vocabulary: selectedVocabulary,
-          bpm: bpm,
-          ...recording
-        };
-        setRecordings(prev => [...prev, newRecording]);
-        console.log('New recording saved:', newRecording);
-      }
+      setTimeout(() => {
+        setIsWordChanging(false);
+      }, 450);
     }
   };
 
@@ -287,94 +198,35 @@ function App() {
     setSelectedMode(null);
   };
 
-  const handleBeatSelect = async (beatId) => {
-    stopPlayback();
-    const selectedBeat = beats.find(beat => beat.id === beatId);
-    setSelectedBeatId(beatId);
-    
-    if (selectedBeat) {
-      setBpm(selectedBeat.bpm);
-      // Use the URL for the beat's default BPM from the files object
-      const beatUrl = selectedBeat.files[selectedBeat.bpm.toString()];
-      if (beatUrl) {
-        setIsLoading(true);
-        await audioService.loadBeat(beatUrl);
-        setIsLoading(false);
+  const handlePlayPauseWithRecording = async () => {
+    // If we're stopping, handle recording cleanup
+    if (isPlaying && isRecordingEnabled) {
+      console.log('Recording enabled, stopping recording...');
+      const recording = await recordingService.stopRecording();
+      if (recording) {
+        console.log('Recording completed, saving...');
+        const newRecording = {
+          id: Date.now().toString(),
+          timestamp: Date.now(),
+          beatId: selectedBeatId,
+          mode: selectedMode,
+          vocabulary: selectedVocabulary,
+          bpm: bpm,
+          ...recording
+        };
+        setRecordings(prev => [...prev, newRecording]);
+        console.log('New recording saved:', newRecording);
       }
     }
-  };
 
-  const handleBpmChange = async (newBpm) => {
-    if (isPlaying) {
-      stopPlayback();
-    }
-
-    const selectedBeat = beats.find(beat => beat.id === selectedBeatId);
-    if (selectedBeat) {
-      setBpm(newBpm);
-      const beatUrl = selectedBeat.files[newBpm.toString()];
-      if (beatUrl) {
-        setIsLoading(true);
-        await audioService.loadBeat(beatUrl);
-        setIsLoading(false);
-      }
-    }
-  };
-
-  const handlePlayPause = async () => {
-    if (isPlaying) {
-      stopPlayback();
-      return;
-    }
-
-    setIsLoading(true);
-
-    // Initialize audio context if needed
-    await audioService.initialize();
-
-    // Start everything from the beginning
-    const selectedBeat = beats.find(beat => beat.id === selectedBeatId);
-    if (!selectedBeat) {
-      setIsLoading(false);
-      return;
-    }
-
-    // Reset states
-    setCurrentBeat(0);
-    setCurrentBar(0);
-    setIsWordChanging(false);
-
-    // Start audio and visuals
-    audioService.playBeat();
-    setIsLoading(false);
-
-    // Start recording if enabled and in training mode
-    if (isRecordingEnabled && isTraining) {
+    // If we're starting, initialize recording
+    if (!isPlaying && isRecordingEnabled && isTraining) {
       console.log('Recording enabled and in training mode, starting recording...');
       recordingService.startRecording();
     }
 
-    // Only start visual timing if in training mode
-    if (isTraining) {
-      // Add 50ms delay before starting visuals for a more relaxed feel
-      setTimeout(() => {
-        const beatInterval = 60.0 / bpm / 4;
-        nextNoteTimeRef.current = (Date.now() / 1000) + beatInterval;
-        
-        const tick = createTick();
-        tick();
-      }, 50);
-    }
-    
-    setIsPlaying(true);
-  };
-
-  const handleNextWord = () => {
-    setWordCounter((prev) => (prev + 1) % shuffledWords.length);
-  };
-
-  const handlePreviousWord = () => {
-    setWordCounter((prev) => (prev - 1 + shuffledWords.length) % shuffledWords.length);
+    // Handle playback
+    await handlePlayPause(getTotalBars(), handleBarChange);
   };
 
   const handleRecordingToggle = async () => {
@@ -416,18 +268,21 @@ function App() {
 
   const renderTrainingMode = () => {
     const currentMode = trainingModes.find(mode => mode.id === selectedMode);
+    const commonProps = {
+      onReturnToMenu: handleReturnToMenu,
+      modeName: currentMode.translations[language].name,
+      helperText: currentMode.translations[language].helperText,
+      isPlaying,
+      onPlayPause: handlePlayPauseWithRecording,
+      isLoading,
+      bpm
+    };
     
     switch (selectedMode) {
       case 'rhyme-map':
         return (
           <RhymeMapMode
-            onReturnToMenu={handleReturnToMenu}
-            modeName={currentMode.translations[language].name}
-            helperText={currentMode.translations[language].helperText}
-            isPlaying={isPlaying}
-            onPlayPause={handlePlayPause}
-            isLoading={isLoading}
-            bpm={bpm}
+            {...commonProps}
             isRecordingEnabled={isRecordingEnabled}
             onRecordingToggle={handleRecordingToggle}
           />
@@ -435,81 +290,48 @@ function App() {
       case 'slot-machine':
         return (
           <SlotMachineMode
+            {...commonProps}
             shuffledWords={shuffledWords}
             wordCounter={wordCounter}
-            onReturnToMenu={handleReturnToMenu}
-            modeName={currentMode.translations[language].name}
-            helperText={currentMode.translations[language].helperText}
-            onNextWord={handleNextWord}
-            onPreviousWord={handlePreviousWord}
-            isPlaying={isPlaying}
-            onPlayPause={handlePlayPause}
-            isLoading={isLoading}
             onBarsPerRoundChange={handleBarsPerRoundChange}
           />
         );
       case 'rhyme-explorer':
         return (
           <RhymeExplorerMode
+            {...commonProps}
             shuffledWords={shuffledWords}
             wordCounter={wordCounter}
-            onReturnToMenu={handleReturnToMenu}
-            modeName={currentMode.translations[language].name}
-            helperText={currentMode.translations[language].helperText}
-            onNextWord={handleNextWord}
-            onPreviousWord={handlePreviousWord}
-            isPlaying={isPlaying}
-            onPlayPause={handlePlayPause}
-            isLoading={isLoading}
           />
         );
       case 'find-rhymes':
         return (
           <FindRhymesMode
+            {...commonProps}
             shuffledWords={shuffledWords}
             wordCounter={wordCounter}
-            onReturnToMenu={handleReturnToMenu}
-            modeName={currentMode.translations[language].name}
-            helperText={currentMode.translations[language].helperText}
-            onNextWord={handleNextWord}
-            isPlaying={isPlaying}
-            onPlayPause={handlePlayPause}
-            isLoading={isLoading}
-            bpm={bpm}
           />
         );
       case 'four-bar':
         return (
           <FourBarMode
+            {...commonProps}
             currentBar={currentBar}
             currentBeat={currentBeat}
-            bpm={bpm}
             isWordChanging={isWordChanging}
             shuffledWords={shuffledWords}
             wordCounter={wordCounter}
-            onReturnToMenu={handleReturnToMenu}
-            modeName={currentMode.translations[language].name}
-            helperText={currentMode.translations[language].helperText}
-            isPlaying={isPlaying}
-            onPlayPause={handlePlayPause}
-            isLoading={isLoading}
           />
         );
       case 'two-bar':
         return (
           <TwoBarMode
+            {...commonProps}
             currentBar={currentBar}
             currentBeat={currentBeat}
-            bpm={bpm}
             isWordChanging={isWordChanging}
             shuffledWords={shuffledWords}
             wordCounter={wordCounter}
-            onReturnToMenu={handleReturnToMenu}
-            modeName={currentMode.translations[language].name}
-            helperText={currentMode.translations[language].helperText}
-            isPlaying={isPlaying}
-            onPlayPause={handlePlayPause}
-            isLoading={isLoading}
           />
         );
       default:
@@ -569,7 +391,7 @@ function App() {
               selectedBeatId={selectedBeatId}
               onBeatSelect={handleBeatSelect}
               isPlaying={isPlaying}
-              onPlayPause={handlePlayPause}
+              onPlayPause={handlePlayPauseWithRecording}
               isLoading={isLoading}
               currentBpm={bpm}
               onBpmChange={handleBpmChange}
@@ -588,7 +410,7 @@ function App() {
               selectedBeatId={selectedBeatId}
               onBeatSelect={handleBeatSelect}
               isPlaying={isPlaying}
-              onPlayPause={handlePlayPause}
+              onPlayPause={handlePlayPauseWithRecording}
               isLoading={isLoading}
               currentBpm={bpm}
               onBpmChange={handleBpmChange}
@@ -607,4 +429,4 @@ function App() {
   );
 }
 
-export default App 
+export default App; 

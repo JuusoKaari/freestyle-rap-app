@@ -59,7 +59,6 @@ const FindRhymesMode = ({
       onPlayPause(); // Just stop if we're playing
     } else {
       setClickedWords([]); // Reset clicked words
-      onNextWord(); // Get a new word
       onPlayPause(); // Start playing
     }
   };

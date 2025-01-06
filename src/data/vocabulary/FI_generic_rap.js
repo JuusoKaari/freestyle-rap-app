@@ -260,8 +260,8 @@ export default {
         "bän-ge-rii"
     ],
     "ää-ee": [
-        "samplee;sämp-lee",
-        "MC;äm-see"
+        "MC;äm-see",
+        "samplee;sämp-lee"
     ],
     "ää-i": [
         "räp-pi"

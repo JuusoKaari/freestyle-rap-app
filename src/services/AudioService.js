@@ -1,3 +1,26 @@
+/**
+ * Audio Service (AudioService.js)
+ * ==============================
+ * 
+ * Core audio playback service that handles Web Audio API interactions.
+ * Manages the low-level audio operations including audio context,
+ * gain nodes, and beat playback.
+ * 
+ * Key responsibilities:
+ * - Audio context initialization and management
+ * - Audio node routing (master, beat, vocals)
+ * - Beat loading and playback control
+ * - Volume control for different audio channels
+ * 
+ * The service uses a singleton pattern to ensure only one audio context
+ * exists throughout the application. It handles buffer-based audio
+ * playback for high-quality sound output and proper timing.
+ * 
+ * Audio routing structure:
+ * Beat Source → Beat Gain → Master Gain → Destination
+ * Vocals Source → Vocals Gain → Master Gain → Destination
+ */
+
 class AudioService {
   constructor() {
     this.audioContext = null;

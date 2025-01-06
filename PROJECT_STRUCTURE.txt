@@ -62,8 +62,20 @@ Directory Structure:
     - RecordingsModal.css     : Styles for recordings modal
 
   /services
-    - AudioService.js         : Web Audio API based audio playback and mixing
-    - RecordingService.js     : Microphone recording and audio processing
+    - AudioService.js         : Core Web Audio API service for audio playback and routing
+                               Handles audio context, gain nodes, and beat buffer management
+                               Uses singleton pattern for consistent audio context
+
+    - useAudioController.js   : React hook for high-level audio control and musical timing
+                               Manages sixteenth notes and quarter notes progression
+                               Handles BPM changes and beat selection
+                               Provides precise timing using setTimeout
+
+    - RecordingService.js     : Handles microphone recording functionality
+                               Manages MediaRecorder API and recording streams
+                               Integrates with AudioService for context sharing
+                               Processes recordings into playable format
+
     - TranslationContext.jsx  : Handles multilingual support
     - DebugContext.jsx        : Debugging utilities and feature flags
 
