@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './RecordingsModal.css';
 import { useTranslation } from '../services/TranslationContext';
 import { trainingModes } from '../data/trainingModes';
-import { beats } from '../data/beats';
+import { beats } from '../data/beat_metadata/index';
 import audioService from '../services/AudioService';
 import { getVocabularies } from '../data/vocabulary/vocabularyConfig';
 
@@ -49,25 +49,28 @@ const RecordingsModal = ({ isOpen, onClose, recordings }) => {
     // Load and play the beat
     const beat = beats.find(b => b.id === recording.beatId);
     if (beat) {
-      const beatUrl = `/freestyle-rap-app/beats/${beat.file}`;
-      await audioService.loadBeat(beatUrl);
-      
-      // Create audio element for the vocals
-      const vocalsAudio = new Audio(recording.url);
-      vocalsAudio.addEventListener('ended', () => {
-        stopPlayback();
-      });
+      // Use the URL for the recording's BPM from the files object
+      const beatUrl = beat.files[recording.bpm.toString()];
+      if (beatUrl) {
+        await audioService.loadBeat(beatUrl);
+        
+        // Create audio element for the vocals
+        const vocalsAudio = new Audio(recording.url);
+        vocalsAudio.addEventListener('ended', () => {
+          stopPlayback();
+        });
 
-      // Start vocals first with a negative offset to compensate for recording latency
-      vocalsAudio.play();
-      setCurrentVocalsAudio(vocalsAudio);
-      
-      // Start beat after a delay to sync with vocals
-      setTimeout(() => {
-        audioService.playBeat();
-      }, 300); // 300ms compensation for recording latency
-      
-      setPlayingIndex(index);
+        // Start vocals first with a negative offset to compensate for recording latency
+        vocalsAudio.play();
+        setCurrentVocalsAudio(vocalsAudio);
+        
+        // Start beat after a delay to sync with vocals
+        setTimeout(() => {
+          audioService.playBeat();
+        }, 300); // 300ms compensation for recording latency
+        
+        setPlayingIndex(index);
+      }
     }
 
     setIsLoading(false);

@@ -59,6 +59,10 @@ export const en = {
       changeBeat: "Change Beat",
       beatLabel: "Beat",
       bpmSuffix: "BPM",
+      currentBeat: "Current Beat",
+      noBeat: "No beat selected",
+      select: "Select",
+      current: "Current"
     }
   },
   settings: {

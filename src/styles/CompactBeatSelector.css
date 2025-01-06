@@ -1,37 +1,88 @@
 .compact-beat-selector {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-}
-
-.compact-beat-selector .change-beat-button {
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.6);
-  padding: 0.4rem 0.8rem;
-  border-radius: 4px;
-  cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 0.4rem;
-  font-size: 0.9rem;
-  transition: all 0.2s ease;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
-.compact-beat-selector .change-beat-button:hover {
-  background: rgba(255, 255, 255, 0.05);
-  color: rgba(255, 255, 255, 0.9);
+.compact-beat-selector .current-beat {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.3rem 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.compact-beat-selector .current-beat:hover:not(:disabled) {
+  background-color: rgba(255, 255, 255, 0.15);
   border-color: rgba(255, 255, 255, 0.3);
 }
 
-.compact-beat-selector .change-beat-button svg {
-  width: 14px;
-  height: 14px;
-  opacity: 0.6;
-  transition: all 0.2s ease;
+.compact-beat-selector .current-beat:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
-.compact-beat-selector .change-beat-button:hover svg {
-  opacity: 0.9;
+.compact-beat-selector .current-beat .dropdown-icon {
+  width: 16px;
+  height: 16px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.compact-beat-selector .current-beat:hover:not(:disabled) .dropdown-icon {
+  opacity: 1;
+}
+
+.compact-beat-selector .bpm-selector {
+  margin: 0;
+}
+
+.compact-beat-selector .bpm-selector select {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.9rem;
+  padding: 0.3rem 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 1.2em;
+  padding-right: 2rem;
+}
+
+.compact-beat-selector .bpm-selector select:hover:not(:disabled) {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.compact-beat-selector .bpm-selector select:disabled {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.5);
+  cursor: not-allowed;
+}
+
+.compact-beat-selector .bpm-selector select:focus {
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+}
+
+/* Style the dropdown options */
+.compact-beat-selector .bpm-selector select option {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 0.5rem;
 } 

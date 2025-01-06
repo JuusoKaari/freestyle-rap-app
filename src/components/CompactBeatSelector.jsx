@@ -1,98 +1,41 @@
-import React, { useState, useEffect } from 'react';
-import { beats } from '../data/beats';
+import React, { useState } from 'react';
+import { beats } from '../data/beat_metadata/index';
 import BeatSelectModal from './BeatSelectModal';
-import audioService from '../services/AudioService';
+import BpmSelector from './BpmSelector';
 import '../styles/CompactBeatSelector.css';
 
-const CompactBeatSelector = ({ selectedBeatId, onBeatSelect, isPlaying, onPlayPause, isLoading }) => {
+const CompactBeatSelector = ({ selectedBeatId, onBeatSelect, isPlaying, isLoading, currentBpm, onBpmChange }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [previewingBeatId, setPreviewingBeatId] = useState(null);
-  const [isLoadingBeat, setIsLoadingBeat] = useState(false);
   const selectedBeat = beats.find(beat => beat.id === selectedBeatId);
-
-  useEffect(() => {
-    // Initialize audio service on mount
-    audioService.initialize();
-
-    // Cleanup on unmount
-    return () => {
-      audioService.dispose();
-    };
-  }, []);
-
-  useEffect(() => {
-    const loadBeat = async () => {
-      if (selectedBeat && selectedBeat.file) {
-        setIsLoadingBeat(true);
-        const beatUrl = `/freestyle-rap-app/beats/${selectedBeat.file}`;
-        await audioService.loadBeat(beatUrl);
-        setIsLoadingBeat(false);
-      }
-    };
-
-    loadBeat();
-  }, [selectedBeat]);
-
-  useEffect(() => {
-    if (isPlaying) {
-      audioService.playBeat();
-    } else {
-      audioService.stopBeat();
-    }
-  }, [isPlaying]);
-
-  const handlePreviewPlay = async (beatId) => {
-    if (previewingBeatId === beatId) {
-      setPreviewingBeatId(null);
-      audioService.stopBeat();
-    } else {
-      setPreviewingBeatId(beatId);
-      const beat = beats.find(b => b.id === beatId);
-      if (beat) {
-        setIsLoadingBeat(true);
-        const beatUrl = `/freestyle-rap-app/beats/${beat.file}`;
-        await audioService.loadBeat(beatUrl);
-        setIsLoadingBeat(false);
-        audioService.playBeat();
-      }
-    }
-  };
-
-  const handleBeatSelect = (beatId) => {
-    if (previewingBeatId) {
-      audioService.stopBeat();
-      setPreviewingBeatId(null);
-    }
-    onBeatSelect(beatId);
-    setIsModalOpen(false);
-  };
 
   return (
     <div className="compact-beat-selector">
       <button 
-        className="change-beat-button"
+        className="current-beat"
         onClick={() => setIsModalOpen(true)}
+        disabled={isLoading}
       >
-        {selectedBeat?.name} - {selectedBeat?.bpm} BPM
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <path d="M19 9l-7 7-7-7" />
+        {selectedBeat?.name || 'Select Beat'}
+        <svg viewBox="0 0 24 24" className="dropdown-icon">
+          <path
+            fill="currentColor"
+            d="M7 10l5 5 5-5z"
+          />
         </svg>
       </button>
 
+      <BpmSelector
+        selectedBeatId={selectedBeatId}
+        currentBpm={currentBpm}
+        onBpmChange={onBpmChange}
+        disabled={isLoading || isPlaying}
+      />
+
       <BeatSelectModal
         isOpen={isModalOpen}
-        onClose={() => {
-          setIsModalOpen(false);
-          if (previewingBeatId) {
-            audioService.stopBeat();
-            setPreviewingBeatId(null);
-          }
-        }}
-        onSelect={handleBeatSelect}
+        onClose={() => setIsModalOpen(false)}
+        onSelect={onBeatSelect}
         currentBeatId={selectedBeatId}
-        onPreviewPlay={handlePreviewPlay}
-        previewingBeatId={previewingBeatId}
-        isLoading={isLoadingBeat}
       />
     </div>
   );

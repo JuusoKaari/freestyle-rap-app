@@ -1,6 +1,6 @@
 .beat-selector-container {
   width: 100%;
-  position: relative;
+  margin-bottom: 0rem;
 }
 
 .beat-player {
@@ -16,22 +16,17 @@
 .play-button {
   width: 48px;
   height: 48px;
-  border-radius: 50%;
+  padding: 0;
   border: 2px solid rgba(255, 255, 255, 0.6);
   background: transparent;
-  color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.9);
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
+  position: relative;
   transition: all 0.2s ease;
-  flex-shrink: 0;
-}
-
-.play-button:hover:not(:disabled) {
-  border-color: rgba(255, 255, 255, 0.9);
-  color: rgba(255, 255, 255, 0.9);
 }
 
 .play-button svg {
@@ -39,27 +34,28 @@
   height: 24px;
 }
 
-.play-button.loading {
-  cursor: wait;
+.play-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.play-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .loading-spinner {
   width: 24px;
   height: 24px;
-  border: 3px solid rgba(255, 255, 255, 0.1);
-  border-top-color: rgba(255, 255, 255, 0.6);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-top: 2px solid rgba(255, 255, 255, 0.9);
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
 
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .beat-info {
   flex: 1;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
@@ -69,6 +65,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .beat-label {
@@ -80,12 +77,9 @@
   color: rgba(255, 255, 255, 0.9);
   font-size: 1rem;
   font-weight: 500;
-}
-
-.beat-bpm {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 0.9rem;
-  margin-left: 0.25rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .beat-details {
@@ -97,6 +91,15 @@
 
 .beat-description {
   font-style: italic;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.controls-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .change-beat-button {
@@ -117,28 +120,40 @@
   border-color: rgba(255, 255, 255, 0.4);
 }
 
-.beat-select {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  margin-top: 0.5rem;
-  background: rgba(30, 30, 30, 0.95);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+.controls-group select {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem 1rem;
   border-radius: 4px;
-  color: rgba(255, 255, 255, 0.8);
-  padding: 0.5rem;
-  font-size: 1rem;
   cursor: pointer;
-  z-index: 10;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 1em;
+  padding-right: 2.5rem;
 }
 
-.beat-select:hover {
-  background: rgba(255, 255, 255, 0.15);
+.controls-group select:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.4);
 }
 
-.beat-select option {
-  background: #1a1a1a;
+.controls-group select:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.controls-group select option {
+  background-color: #1a1a1a;
   color: rgba(255, 255, 255, 0.8);
-  padding: 0.5rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 } 

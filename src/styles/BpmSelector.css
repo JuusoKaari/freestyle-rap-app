@@ -1,0 +1,27 @@
+.bpm-selector {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.bpm-selector select {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  min-width: 100px;
+}
+
+.bpm-selector select:disabled {
+  cursor: not-allowed;
+  color: #7c7c7c;
+  opacity: 0.7;
+}
+
+.bpm-selector select:focus {
+  outline: none;
+  border-color: #666;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+} 

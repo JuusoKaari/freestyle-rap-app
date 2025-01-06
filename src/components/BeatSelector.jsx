@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { beats } from '../data/beats';
+import { beats } from '../data/beat_metadata/index';
 import BeatSelectModal from './BeatSelectModal';
+import BpmSelector from './BpmSelector';
 import { useTranslation } from '../services/TranslationContext';
 import audioService from '../services/AudioService';
 import '../styles/BeatSelector.css';
 
-const BeatSelector = ({ selectedBeatId, onBeatSelect, isPlaying, onPlayPause, isLoading }) => {
+const BeatSelector = ({ selectedBeatId, onBeatSelect, isPlaying, onPlayPause, isLoading, currentBpm, onBpmChange }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [previewingBeatId, setPreviewingBeatId] = useState(null);
   const [isLoadingBeat, setIsLoadingBeat] = useState(false);
@@ -24,16 +25,19 @@ const BeatSelector = ({ selectedBeatId, onBeatSelect, isPlaying, onPlayPause, is
 
   useEffect(() => {
     const loadBeat = async () => {
-      if (selectedBeat && selectedBeat.file) {
+      if (selectedBeat) {
         setIsLoadingBeat(true);
-        const beatUrl = `/freestyle-rap-app/beats/${selectedBeat.file}`;
-        await audioService.loadBeat(beatUrl);
+        // Use the URL for the current BPM from the files object
+        const beatUrl = selectedBeat.files[currentBpm.toString()];
+        if (beatUrl) {
+          await audioService.loadBeat(beatUrl);
+        }
         setIsLoadingBeat(false);
       }
     };
 
     loadBeat();
-  }, [selectedBeat]);
+  }, [selectedBeat, currentBpm]);
 
   useEffect(() => {
     if (isPlaying) {
@@ -52,10 +56,13 @@ const BeatSelector = ({ selectedBeatId, onBeatSelect, isPlaying, onPlayPause, is
       const beat = beats.find(b => b.id === beatId);
       if (beat) {
         setIsLoadingBeat(true);
-        const beatUrl = `/freestyle-rap-app/beats/${beat.file}`;
-        await audioService.loadBeat(beatUrl);
-        setIsLoadingBeat(false);
-        audioService.playBeat();
+        // Use the URL for the beat's default BPM
+        const beatUrl = beat.files[beat.bpm.toString()];
+        if (beatUrl) {
+          await audioService.loadBeat(beatUrl);
+          setIsLoadingBeat(false);
+          audioService.playBeat();
+        }
       }
     }
   };
@@ -72,42 +79,55 @@ const BeatSelector = ({ selectedBeatId, onBeatSelect, isPlaying, onPlayPause, is
   return (
     <div className="beat-selector-container">
       <div className="beat-player">
-        <button 
-          className={`play-button ${isPlaying ? 'playing' : ''} ${isLoadingBeat ? 'loading' : ''}`} 
+        <button
+          className={`play-button ${isLoading || isLoadingBeat ? 'loading' : ''}`}
           onClick={onPlayPause}
-          disabled={isLoadingBeat}
+          disabled={isLoading || isLoadingBeat || !selectedBeat}
         >
-          {isLoadingBeat ? (
-            <div className="loading-spinner"></div>
+          {isLoading || isLoadingBeat ? (
+            <div className="loading-spinner" />
           ) : isPlaying ? (
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <rect x="6" y="4" width="4" height="16"/>
-              <rect x="14" y="4" width="4" height="16"/>
+            <svg viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"
+              />
             </svg>
           ) : (
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M8 5v14l11-7z"/>
+            <svg viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M8 5v14l11-7z"
+              />
             </svg>
           )}
         </button>
 
         <div className="beat-info">
           <div className="beat-main-info">
-            <span className="beat-label">{translate('training.beats.beatLabel')}:</span>
-            <span className="beat-name">{selectedBeat?.name}</span>
-            <span className="beat-bpm">- {selectedBeat?.bpm} {translate('training.beats.bpmSuffix')}</span>
+            <span className="beat-label">{translate('training.beats.currentBeat')}:</span>
+            <span className="beat-name">
+              {selectedBeat ? selectedBeat.name : translate('training.beats.noBeat')}
+            </span>
           </div>
-          <div className="beat-details">
-            <span className="beat-description">{selectedBeat?.description}</span>
-          </div>
+          {selectedBeat && (
+            <div className="beat-details">
+              <span className="beat-description">{selectedBeat.description}</span>
+            </div>
+          )}
         </div>
 
-        <button 
-          className="change-beat-button"
-          onClick={() => setIsModalOpen(true)}
-        >
-          {translate('training.beats.changeBeat')}
-        </button>
+        <div className="controls-group">
+          <BpmSelector
+            selectedBeatId={selectedBeatId}
+            currentBpm={currentBpm}
+            onBpmChange={onBpmChange}
+            disabled={isLoading || isLoadingBeat || isPlaying}
+          />
+          <button className="change-beat-button" onClick={() => setIsModalOpen(true)}>
+            {translate('training.beats.changeBeat')}
+          </button>
+        </div>
       </div>
 
       <BeatSelectModal

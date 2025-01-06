@@ -32,7 +32,7 @@ import CompactBeatSelector from './components/CompactBeatSelector'
 import VocabularySelector from './components/VocabularySelector'
 import LanguageToggle from './components/LanguageToggle'
 import { trainingModes } from './data/trainingModes'
-import { beats } from './data/beats'
+import { beats } from './data/beat_metadata/index'
 import { useTranslation } from './services/TranslationContext'
 import { DebugProvider, useDebug } from './services/DebugContext'
 import audioService from './services/AudioService'
@@ -70,7 +70,7 @@ function App() {
   const [currentBeat, setCurrentBeat] = useState(0)
   const [wordCounter, setWordCounter] = useState(0)
   const [shuffledWords, setShuffledWords] = useState([])
-  const [selectedBeatId, setSelectedBeatId] = useState('night-ride')
+  const [selectedBeatId, setSelectedBeatId] = useState('going_strong')
   const [selectedVocabulary, setSelectedVocabulary] = useState('fi_generic_rap')
   const [isPlaying, setIsPlaying] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
@@ -88,10 +88,13 @@ function App() {
     audioService.initialize();
 
     // Load default beat
-    const defaultBeat = beats.find(beat => beat.id === 'night-ride');
+    const defaultBeat = beats.find(beat => beat.id === 'going_strong');
     if (defaultBeat) {
-      const beatUrl = `/freestyle-rap-app/beats/${defaultBeat.file}`;
-      audioService.loadBeat(beatUrl);
+      // Use the URL for the beat's default BPM from the files object
+      const beatUrl = defaultBeat.files[defaultBeat.bpm.toString()];
+      if (beatUrl) {
+        audioService.loadBeat(beatUrl);
+      }
     }
 
     return () => {
@@ -291,10 +294,30 @@ function App() {
     
     if (selectedBeat) {
       setBpm(selectedBeat.bpm);
-      const beatUrl = `/freestyle-rap-app/beats/${selectedBeat.file}`;
-      setIsLoading(true);
-      await audioService.loadBeat(beatUrl);
-      setIsLoading(false);
+      // Use the URL for the beat's default BPM from the files object
+      const beatUrl = selectedBeat.files[selectedBeat.bpm.toString()];
+      if (beatUrl) {
+        setIsLoading(true);
+        await audioService.loadBeat(beatUrl);
+        setIsLoading(false);
+      }
+    }
+  };
+
+  const handleBpmChange = async (newBpm) => {
+    if (isPlaying) {
+      stopPlayback();
+    }
+
+    const selectedBeat = beats.find(beat => beat.id === selectedBeatId);
+    if (selectedBeat) {
+      setBpm(newBpm);
+      const beatUrl = selectedBeat.files[newBpm.toString()];
+      if (beatUrl) {
+        setIsLoading(true);
+        await audioService.loadBeat(beatUrl);
+        setIsLoading(false);
+      }
     }
   };
 
@@ -535,7 +558,7 @@ function App() {
         </div>
       )}
 
-      <LanguageToggle />
+      {!isTraining && <LanguageToggle />}
       <h1>{translate('app.title')}</h1>
 
       {!isTraining ? (
@@ -547,6 +570,8 @@ function App() {
               isPlaying={isPlaying}
               onPlayPause={handlePlayPause}
               isLoading={isLoading}
+              currentBpm={bpm}
+              onBpmChange={handleBpmChange}
             />
             <VocabularySelector
               selectedVocabulary={selectedVocabulary}
@@ -564,6 +589,8 @@ function App() {
               isPlaying={isPlaying}
               onPlayPause={handlePlayPause}
               isLoading={isLoading}
+              currentBpm={bpm}
+              onBpmChange={handleBpmChange}
             />
           </div>
           {renderTrainingMode()}

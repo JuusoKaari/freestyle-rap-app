@@ -59,6 +59,10 @@ export const fi = {
       changeBeat: "Vaihda biitti",
       beatLabel: "Biitti",
       bpmSuffix: "BPM",
+      currentBeat: "Nykyinen biitti",
+      noBeat: "Ei valittua biittiä",
+      select: "Valitse",
+      current: "Nykyinen"
     }
   },
   settings: {
