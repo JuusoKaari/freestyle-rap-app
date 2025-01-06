@@ -174,12 +174,12 @@ const commonPrefixLength = (a, b) => {
   return i;
 };
 
-// Helper function to split word into phonetic and display versions
+// Helper function to split word into display and phonetic versions (display;phonetic format)
 const splitWord = (word) => {
   const parts = word.split(';');
   return {
-    phonetic: parts[0],
-    display: parts[1] || parts[0] // If no display version, use phonetic
+    display: parts[0],
+    phonetic: parts[1] || parts[0] // If no phonetic version, use display
   };
 };
 

@@ -309,7 +309,7 @@ def prosessoi_tiedosto(input_file, output_dir):
             vowel_patterns[pattern_key] = []
         
         # Create word string - only include display version if it's different from phonetic
-        word_string = hyphenated_word if display_word == phonetic_word else f"{hyphenated_word};{display_word}"
+        word_string = hyphenated_word if display_word == phonetic_word else f"{display_word};{hyphenated_word}"
         
         # Add word if it's not already in the list
         if word_string not in vowel_patterns[pattern_key]:

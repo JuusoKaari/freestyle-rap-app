@@ -157,7 +157,7 @@ def process_file(input_file, output_dir):
             vowel_patterns[rhyme_part] = []
 
         # Create word string - only include display version if it's different from phonetic
-        word_string = phonetic_word if display_word == phonetic_word else f"{phonetic_word};{display_word}"
+        word_string = phonetic_word if display_word == phonetic_word else f"{display_word};{phonetic_word}"
 
         # Add word if it's not already in the list
         if word_string not in vowel_patterns[rhyme_part]:

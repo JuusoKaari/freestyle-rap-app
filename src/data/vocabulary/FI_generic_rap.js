@@ -35,17 +35,17 @@ export default {
         "haas-taa"
     ],
     "aa-ai": [
-        "pant-slain;punchline"
+        "punchline;pant-slain"
     ],
     "aa-ai-ii": [
-        "pant-slai-nii;punchlinee"
+        "punchlinee;pant-slai-nii"
     ],
     "aa-i-a": [
         "tah-ti-a"
     ],
     "aa-ii": [
         "mat-sii",
-        "pant-sii;punchii",
+        "punchii;pant-sii",
         "tah-tii",
         "tans-sii",
         "tat-sii"
@@ -85,7 +85,7 @@ export default {
         "taus-taa"
     ],
     "au-ii": [
-        "bauns-sii;bouncee"
+        "bouncee;bauns-sii"
     ],
     "e-e": [
         "ske-ne"
@@ -109,7 +109,7 @@ export default {
         "ver-see"
     ],
     "ee-ee-ä": [
-        "bee_-pee-_äm;BPM",
+        "BPM;bee_-pee-_äm",
         "ver-ses-sä"
     ],
     "ee-o": [
@@ -181,7 +181,7 @@ export default {
         "ins-pis-tä"
     ],
     "ii-o-ii": [
-        "biit-bo-xii;beatboxii"
+        "beatboxii;biit-bo-xii"
     ],
     "ii-uu": [
         "is-kuu"
@@ -222,8 +222,8 @@ export default {
         "rus-taa"
     ],
     "uu-i": [
-        "gruu-vi;groovi",
-        "gruu-vi;groovii",
+        "groovi;gruu-vi",
+        "groovii;gruu-vi",
         "huuk-ki"
     ],
     "uu-ii": [
@@ -254,14 +254,14 @@ export default {
     ],
     "ää-e": [
         "bän-ger",
-        "sämp-le;sample"
+        "sample;sämp-le"
     ],
     "ää-e-ii": [
         "bän-ge-rii"
     ],
     "ää-ee": [
-        "sämp-lee;samplee",
-        "äm-see;MC"
+        "samplee;sämp-lee",
+        "MC;äm-see"
     ],
     "ää-i": [
         "räp-pi"

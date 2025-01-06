@@ -21,5 +21,5 @@ export default {
     "135": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1736114502/freestyle_beats/night_ride/135bpm.mp3",
     "140": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1736114503/freestyle_beats/night_ride/140bpm.mp3"
   },
-  "description": "Original 75 BPM beat with variations"
+  "description": "Moody slow beat with some fast hihats"
 };

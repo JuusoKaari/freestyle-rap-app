@@ -21,5 +21,5 @@ export default {
     "135": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1736114480/freestyle_beats/going_strong/135bpm.mp3",
     "140": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1736114481/freestyle_beats/going_strong/140bpm.mp3"
   },
-  "description": "Original 82 BPM beat with variations"
+  "description": "Old school beat with some piano and brass"
 };
