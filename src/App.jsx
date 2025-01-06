@@ -70,7 +70,7 @@ function App() {
   const [currentBeat, setCurrentBeat] = useState(0)
   const [wordCounter, setWordCounter] = useState(0)
   const [shuffledWords, setShuffledWords] = useState([])
-  const [selectedBeatId, setSelectedBeatId] = useState('going_strong')
+  const [selectedBeatId, setSelectedBeatId] = useState('night_ride')
   const [selectedVocabulary, setSelectedVocabulary] = useState('fi_generic_rap')
   const [isPlaying, setIsPlaying] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
@@ -88,7 +88,7 @@ function App() {
     audioService.initialize();
 
     // Load default beat
-    const defaultBeat = beats.find(beat => beat.id === 'going_strong');
+    const defaultBeat = beats.find(beat => beat.id === 'night_ride');
     if (defaultBeat) {
       // Use the URL for the beat's default BPM from the files object
       const beatUrl = defaultBeat.files[defaultBeat.bpm.toString()];

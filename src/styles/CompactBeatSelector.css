@@ -85,4 +85,46 @@
   background-color: #1a1a1a;
   color: #fff;
   padding: 0.5rem;
+}
+
+/* Mute button styles */
+.compact-beat-selector .mute-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 0;
+}
+
+.compact-beat-selector .mute-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.compact-beat-selector .mute-button:hover:not(:disabled) {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.compact-beat-selector .mute-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.compact-beat-selector .mute-button.muted {
+  background-color: rgba(23, 23, 23, 0.2);
+  border-color: rgba(134, 134, 134, 0.3);
+  color: rgba(114, 114, 114, 0.8);
+}
+
+.compact-beat-selector .mute-button.muted:hover:not(:disabled) {
+  background-color: rgba(81, 81, 81, 0.25);
+  border-color: rgba(150, 150, 150, 0.4);
 } 
