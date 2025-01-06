@@ -20,7 +20,8 @@ Directory Structure:
     
     - ModeSelector.jsx         : Component for selecting different training modes
     - BeatSelector.jsx         : Full-featured beat selection and control
-    - CompactBeatSelector.jsx  : Minimalistic version of beat controls
+    - CompactBeatSelector.jsx  : Minimalistic version of beat controls with mute option
+    - BpmSelector.jsx          : Component for BPM selection
     - VocabularySelector.jsx   : Component for choosing word sets
     - VocabularySelectModal.jsx: Modal for selecting vocabulary sets
     - LanguageToggle.jsx       : Language switching between FI/EN
@@ -40,7 +41,11 @@ Directory Structure:
       - FI__full_dict.js       : Complete Finnish dictionary
       - EN__full_dict.js       : Complete English dictionary
     
-    - beats.js                : Beat definitions and configurations
+    /beat_metadata/
+      - index.js              : Beat metadata exports and configuration
+      - going_strong.js       : Going Strong beat metadata and variations
+      - night_ride.js         : Night Ride beat metadata and variations
+    
     - trainingModes.js        : Training mode configurations
     - wordList.js             : Word list generation and processing
 
@@ -49,9 +54,10 @@ Directory Structure:
     - VocabularySelectModal.css: Styles for vocabulary selection modal
     - BeatSelector.css        : Styles for beat selection
     - BeatSelectModal.css     : Styles for beat selection modal
+    - BpmSelector.css         : Styles for BPM selector
     - ModeSelector.css        : Styles for mode selection
     - TrainingMode.css        : Common styles for training modes
-    - CompactBeatSelector.css : Styles for compact beat selector
+    - CompactBeatSelector.css : Styles for compact beat selector with mute
     - RecordToggle.css        : Styles for recording toggle button
     - RecordingsModal.css     : Styles for recordings modal
 
@@ -62,6 +68,14 @@ Directory Structure:
     - DebugContext.jsx        : Debugging utilities and feature flags
 
 /scripts
+  /audio_processing/
+    /beats/
+      /__raw_beat_files/     : Original unprocessed beat files
+      /__processed_beats/    : Processed beat files with BPM variations
+    - process_beats.py       : Script for generating BPM variations
+    - upload_beats.py        : Script for uploading beats to Cloudinary
+    - requirements.txt       : Python dependencies for audio processing
+
   /data_processing/
     - rhyme_generator-FI.py   : Finnish rhyme generation script
     - combine_vocabulary.py   : Script for combining vocabulary sets
@@ -84,10 +98,12 @@ Key Features:
 
 3. Beat System:
    - Web Audio API based playback
-   - Customizable BPM
+   - Customizable BPM with multiple variations
    - Multiple beat patterns
    - Synchronized word changes
    - Beat preview and selection
+   - Volume control with mute option
+   - Cloudinary-hosted beat files
 
 4. Recording System:
    - Microphone input recording
@@ -99,4 +115,10 @@ Key Features:
 5. Bilingual Support:
    - Full Finnish and English translations
    - Language-specific rhyme generation
-   - Separate vocabulary sets for each language 
+   - Separate vocabulary sets for each language
+
+6. Audio Processing:
+   - Automated BPM variation generation
+   - Two-step process: process then upload
+   - FFmpeg-based audio processing
+   - Cloudinary integration for hosting 
