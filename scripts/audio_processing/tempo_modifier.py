@@ -23,9 +23,10 @@ def modify_tempo(input_file, output_dir, target_bpm, original_bpm):
     
     # Create output filename with BPM info
     filename = os.path.basename(input_file)
-    name, ext = os.path.splitext(filename)
+    name, _ = os.path.splitext(filename)  # Ignore original extension
     clean_name = clean_filename(name)
-    output_file = os.path.join(output_dir, f"{clean_name}_{int(target_bpm)}bpm{ext}")
+    # Always use .mp3 extension for output
+    output_file = os.path.join(output_dir, f"{clean_name}_{int(target_bpm)}bpm.mp3")
     
     # Construct ffmpeg command
     # atempo can only handle 0.5 to 2.0, so we chain filters for larger changes
@@ -43,10 +44,12 @@ def modify_tempo(input_file, output_dir, target_bpm, original_bpm):
     
     filter_string = ','.join(atempo_filters)
     
-    # Run ffmpeg command
+    # Run ffmpeg command with MP3 encoding
     cmd = [
         'ffmpeg', '-i', input_file,
         '-filter:a', filter_string,
+        '-codec:a', 'libmp3lame',  # Use MP3 encoder
+        '-q:a', '2',  # High quality MP3 (0-9, lower is better)
         '-y',  # Overwrite output file if it exists
         output_file
     ]
@@ -76,13 +79,19 @@ def create_bpm_variations(input_file, output_dir, original_bpm, bpm_variations):
 
 def main():
     parser = argparse.ArgumentParser(description='Create BPM variations of an audio file')
-    parser.add_argument('input_file', help='Input audio file path')
+    parser.add_argument('input_file', help='Input audio file path (supports .mp3 and .wav)')
     parser.add_argument('original_bpm', type=float, help='Original BPM of the input file')
     parser.add_argument('--output-dir', default='output', help='Output directory for modified files')
     parser.add_argument('--bpm-list', type=float, nargs='+', 
                         help='List of target BPMs (e.g., 90 95 100 105)')
     
     args = parser.parse_args()
+    
+    # Check if input file is supported
+    _, ext = os.path.splitext(args.input_file)
+    if ext.lower() not in ['.mp3', '.wav']:
+        print(f"Error: Unsupported file format {ext}. Only .mp3 and .wav files are supported.")
+        return
     
     if not args.bpm_list:
         # Default BPM variations if none provided

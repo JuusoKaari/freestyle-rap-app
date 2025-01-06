@@ -16,6 +16,9 @@ const BeatSelectModal = ({
   
   if (!isOpen) return null;
 
+  // Determine if preview functionality is available
+  const hasPreviewFeature = typeof onPreviewPlay === 'function';
+
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={e => e.stopPropagation()}>
@@ -40,29 +43,31 @@ const BeatSelectModal = ({
               </div>
               
               <div className="beat-item-controls">
-                <button
-                  className={`preview-button ${previewingBeatId === beat.id ? 'playing' : ''} ${isLoading && previewingBeatId === beat.id ? 'loading' : ''}`}
-                  onClick={() => onPreviewPlay(beat.id)}
-                  disabled={isLoading && previewingBeatId !== beat.id}
-                >
-                  {isLoading && previewingBeatId === beat.id ? (
-                    <div className="loading-spinner" />
-                  ) : previewingBeatId === beat.id ? (
-                    <svg viewBox="0 0 24 24">
-                      <path
-                        fill="currentColor"
-                        d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"
-                      />
-                    </svg>
-                  ) : (
-                    <svg viewBox="0 0 24 24">
-                      <path
-                        fill="currentColor"
-                        d="M8 5v14l11-7z"
-                      />
-                    </svg>
-                  )}
-                </button>
+                {hasPreviewFeature && (
+                  <button
+                    className={`preview-button ${previewingBeatId === beat.id ? 'playing' : ''} ${isLoading && previewingBeatId === beat.id ? 'loading' : ''}`}
+                    onClick={() => onPreviewPlay(beat.id)}
+                    disabled={isLoading && previewingBeatId !== beat.id}
+                  >
+                    {isLoading && previewingBeatId === beat.id ? (
+                      <div className="loading-spinner" />
+                    ) : previewingBeatId === beat.id ? (
+                      <svg viewBox="0 0 24 24">
+                        <path
+                          fill="currentColor"
+                          d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"
+                        />
+                      </svg>
+                    ) : (
+                      <svg viewBox="0 0 24 24">
+                        <path
+                          fill="currentColor"
+                          d="M8 5v14l11-7z"
+                        />
+                      </svg>
+                    )}
+                  </button>
+                )}
                 <button
                   className="select-button"
                   onClick={() => onSelect(beat.id)}

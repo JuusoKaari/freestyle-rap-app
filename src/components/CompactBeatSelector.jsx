@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { beats } from '../data/beat_metadata/index';
 import BeatSelectModal from './BeatSelectModal';
 import BpmSelector from './BpmSelector';
@@ -8,7 +8,50 @@ import '../styles/CompactBeatSelector.css';
 const CompactBeatSelector = ({ selectedBeatId, onBeatSelect, isPlaying, isLoading, currentBpm, onBpmChange }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
+  const [previewingBeatId, setPreviewingBeatId] = useState(null);
+  const [isLoadingBeat, setIsLoadingBeat] = useState(false);
   const selectedBeat = beats.find(beat => beat.id === selectedBeatId);
+
+  useEffect(() => {
+    // Initialize audio service on mount
+    audioService.initialize();
+
+    // Cleanup on unmount
+    return () => {
+      if (previewingBeatId) {
+        audioService.stopBeat();
+      }
+    };
+  }, []);
+
+  const handlePreviewPlay = async (beatId) => {
+    if (previewingBeatId === beatId) {
+      setPreviewingBeatId(null);
+      audioService.stopBeat();
+    } else {
+      setPreviewingBeatId(beatId);
+      const beat = beats.find(b => b.id === beatId);
+      if (beat) {
+        setIsLoadingBeat(true);
+        // Use the URL for the beat's default BPM
+        const beatUrl = beat.files[beat.bpm.toString()];
+        if (beatUrl) {
+          await audioService.loadBeat(beatUrl);
+          setIsLoadingBeat(false);
+          audioService.playBeat();
+        }
+      }
+    }
+  };
+
+  const handleBeatSelect = (beatId) => {
+    if (previewingBeatId) {
+      audioService.stopBeat();
+      setPreviewingBeatId(null);
+    }
+    onBeatSelect(beatId);
+    setIsModalOpen(false);
+  };
 
   const handleMuteToggle = () => {
     const newMuteState = !isMuted;
@@ -63,9 +106,18 @@ const CompactBeatSelector = ({ selectedBeatId, onBeatSelect, isPlaying, isLoadin
 
       <BeatSelectModal
         isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        onSelect={onBeatSelect}
+        onClose={() => {
+          setIsModalOpen(false);
+          if (previewingBeatId) {
+            audioService.stopBeat();
+            setPreviewingBeatId(null);
+          }
+        }}
+        onSelect={handleBeatSelect}
         currentBeatId={selectedBeatId}
+        onPreviewPlay={handlePreviewPlay}
+        previewingBeatId={previewingBeatId}
+        isLoading={isLoadingBeat}
       />
     </div>
   );

@@ -11,131 +11,173 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).parent.parent.parent.absolute()
 SCRIPT_DIR = Path(__file__).parent.absolute()
 
-def extract_bpm_from_filename(filename):
-    """Extract BPM from filename with pattern '-bpm-XX'"""
-    match = re.search(r'-bpm-(\d+)', filename)
-    if match:
-        return int(match.group(1))
-    return None
-
-def get_base_name(filename):
-    """Get the base name of the beat (part before -bpm-)"""
-    return re.sub(r'-bpm-\d+', '', filename)
-
 def round_to_nearest_5(number):
     """Round a number to the nearest multiple of 5"""
     return round(number / 5) * 5
 
-def create_beat_metadata(beat_name, original_bpm, bpm_files):
+def create_beat_metadata(beat_info, bpm_files):
     """Create metadata dictionary for a beat"""
     return {
-        "id": beat_name.lower().replace(" ", "_"),
-        "name": beat_name.replace("_", " ").title(),
-        "bpm": round_to_nearest_5(original_bpm),
+        "id": beat_info["id"],
+        "name": beat_info["name"],
+        "bpm": round_to_nearest_5(beat_info["bpm"]),
         "files": bpm_files,
-        "description": f"Original {original_bpm} BPM beat with variations"
+        "description": beat_info["description"]
     }
 
-def process_beat_file(input_file, tempo_script):
+def process_beat_file(json_file, tempo_script):
     """Process a single beat file to create variations and metadata"""
-    file_path = Path(input_file)
-    original_bpm = extract_bpm_from_filename(file_path.name)
-    if not original_bpm:
-        print(f"Warning: Could not extract BPM from {file_path.name}")
-        return None
-
-    # Create output directory for processed files
-    beat_name = get_base_name(file_path.stem)
-    output_dir = SCRIPT_DIR / "beats" / "__processed_beats" / beat_name
-    output_dir.mkdir(parents=True, exist_ok=True)
-
-    # Generate BPM variations from 60 to 140 with step of 5
-    bpm_variations = list(range(60, 141, 5))
-    
-    # Run the tempo modifier script
-    cmd = [
-        "python", str(tempo_script),
-        str(file_path),
-        str(original_bpm),
-        "--output-dir", str(output_dir),
-        "--bpm-list"
-    ] + [str(bpm) for bpm in bpm_variations]
-
-    print(f"Running command: {' '.join(cmd)}")
     try:
-        subprocess.run(cmd, check=True, capture_output=True, text=True)
-    except subprocess.CalledProcessError as e:
-        print(f"Error processing {file_path.name}: {e.stderr}")
+        # Read beat info from JSON
+        with open(json_file, 'r') as f:
+            beat_info = json.load(f)
+
+        # Get the audio file path
+        raw_files_dir = SCRIPT_DIR / "beats" / "__raw_beat_files"
+        
+        # Try both .mp3 and .wav extensions
+        audio_file = None
+        for ext in ['.mp3', '.wav']:
+            test_file = raw_files_dir / f"{beat_info['file']}{ext}"
+            if test_file.exists():
+                audio_file = test_file
+                break
+            # Also try without extension if file has it already
+            test_file = raw_files_dir / beat_info['file']
+            if test_file.exists() and test_file.suffix.lower() in ['.mp3', '.wav']:
+                audio_file = test_file
+                break
+        
+        if not audio_file:
+            print(f"Error: Audio file not found for {beat_info['file']} (tried .mp3 and .wav)")
+            return None
+
+        # Create output directory for processed files
+        output_dir = SCRIPT_DIR / "beats" / "__processed_beats" / beat_info["id"]
+        output_dir.mkdir(parents=True, exist_ok=True)
+
+        # Generate BPM variations from 60 to 140 with step of 5
+        bpm_variations = list(range(60, 141, 5))
+        
+        # Run the tempo modifier script
+        cmd = [
+            "python", str(tempo_script),
+            str(audio_file),
+            str(beat_info["bpm"]),
+            "--output-dir", str(output_dir),
+            "--bpm-list"
+        ] + [str(bpm) for bpm in bpm_variations]
+
+        print(f"Running command: {' '.join(cmd)}")
+        try:
+            subprocess.run(cmd, check=True, capture_output=True, text=True)
+        except subprocess.CalledProcessError as e:
+            print(f"Error processing {audio_file.name}: {e.stderr}")
+            return None
+
+        # Create placeholder metadata with local file paths
+        local_files = {}
+        for bpm in bpm_variations:
+            # Output is always MP3 with format: {clean_name}_{target_bpm}bpm.mp3
+            # This matches the format in tempo_modifier.py
+            filename = f"{clean_filename(audio_file.stem)}_{bpm}bpm.mp3"
+            output_path = output_dir / filename
+            if output_path.exists():
+                local_files[str(bpm)] = str(output_path.relative_to(PROJECT_ROOT))
+                print(f"Created {filename}")
+
+        if not local_files:
+            print("No files were successfully created")
+            return None
+
+        # Create metadata
+        metadata = create_beat_metadata(beat_info, local_files)
+        
+        # Save metadata as JS file
+        metadata_dir = PROJECT_ROOT / "src" / "data" / "beat_metadata"
+        metadata_dir.mkdir(parents=True, exist_ok=True)
+        metadata_file = metadata_dir / f"{beat_info['id']}.js"
+        
+        with open(metadata_file, 'w', encoding='utf-8') as f:
+            f.write("export default ")
+            json.dump(metadata, f, indent=2)
+            f.write(";\n")
+
+        # Mark the JSON file as processed by adding SKIP_ prefix
+        new_json_path = json_file.parent / f"SKIP_{json_file.name}"
+        json_file.rename(new_json_path)
+        print(f"Marked {json_file.name} as processed")
+
+        print(f"Processed {beat_info['id']}: Created {len(local_files)} variations")
+        return metadata
+
+    except Exception as e:
+        print(f"Error processing {json_file}: {str(e)}")
         return None
 
-    # Create placeholder metadata with local file paths
-    local_files = {}
-    for bpm in bpm_variations:
-        filename = f"{beat_name}_{bpm}bpm{file_path.suffix}"
-        output_path = output_dir / filename
-        if output_path.exists():
-            local_files[bpm] = str(output_path.relative_to(PROJECT_ROOT))
-            print(f"Created {filename}")
+def clean_filename(filename):
+    """Remove the -bpm-XX part from filename"""
+    return re.sub(r'-bpm-\d+', '', filename)
 
-    if not local_files:
-        print("No files were successfully created")
-        return None
-
-    # Create metadata
-    metadata = create_beat_metadata(beat_name, original_bpm, local_files)
-    
-    # Save metadata as JS file
+def update_index_file():
+    """Update the index.js file with all beat metadata files"""
     metadata_dir = PROJECT_ROOT / "src" / "data" / "beat_metadata"
-    metadata_dir.mkdir(parents=True, exist_ok=True)
-    metadata_file = metadata_dir / f"{beat_name}.js"
     
-    with open(metadata_file, 'w', encoding='utf-8') as f:
-        f.write("export default ")
-        json.dump(metadata, f, indent=2)
-        f.write(";\n")
-
-    print(f"Processed {beat_name}: Created {len(local_files)} variations")
-    return metadata
+    # Get all JS files except index.js
+    beat_files = [f for f in metadata_dir.glob("*.js") if f.name != "index.js"]
+    beat_files.sort()  # Sort alphabetically
+    
+    # Create the index file
+    index_file = metadata_dir / "index.js"
+    with open(index_file, 'w', encoding='utf-8') as f:
+        f.write("// Import individual beat metadata files\n")
+        # Write imports
+        for beat_file in beat_files:
+            beat_name = beat_file.stem
+            f.write(f"import {beat_name} from './{beat_name}.js';\n")
+        
+        f.write("\n// Export the beats array built from the JS files\n")
+        f.write("export const beats = [\n")
+        # Write array entries
+        for beat_file in beat_files:
+            beat_name = beat_file.stem
+            f.write(f"  {beat_name},\n")
+        f.write("];\n")
+    
+    print(f"Updated index.js with {len(beat_files)} beats")
 
 def main():
-    # Get all audio files from raw_beat_files
+    # Get all JSON files from raw_beat_files that don't start with SKIP_
     raw_files_dir = SCRIPT_DIR / "beats" / "__raw_beat_files"
-    print(f"Looking for audio files in: {raw_files_dir}")
+    print(f"Looking for unprocessed JSON files in: {raw_files_dir}")
     
-    audio_files = []
-    for ext in ['.wav', '.mp3']:
-        audio_files.extend(raw_files_dir.glob(f"*{ext}"))
+    json_files = [f for f in raw_files_dir.glob("*.json") if not f.name.startswith("SKIP_")]
+    processed_count = 0
+    skipped_count = 0
 
-    if not audio_files:
-        print("No audio files found in __raw_beat_files directory")
-        return
+    if json_files:
+        print(f"Found {len(json_files)} unprocessed beat(s) to process")
 
-    # Path to the tempo modifier script
-    tempo_script = SCRIPT_DIR / "tempo_modifier.py"
+        # Path to the tempo modifier script
+        tempo_script = SCRIPT_DIR / "tempo_modifier.py"
 
-    # Process each file
-    all_metadata = []
-    for audio_file in audio_files:
-        print(f"Processing file: {audio_file}")
-        metadata = process_beat_file(audio_file, tempo_script)
-        if metadata:
-            all_metadata.append(metadata)
+        # Process new files
+        for json_file in json_files:
+            print(f"\nProcessing file: {json_file}")
+            metadata = process_beat_file(json_file, tempo_script)
+            if metadata:
+                processed_count += 1
+            else:
+                skipped_count += 1
 
-    # Create an index file with all beat metadata
-    if all_metadata:
-        index_file = PROJECT_ROOT / "src" / "data" / "beat_metadata" / "index.js"
-        with open(index_file, 'w', encoding='utf-8') as f:
-            f.write("// Import individual beat metadata files\n")
-            # Write imports
-            for metadata in all_metadata:
-                beat_name = metadata['id']
-                f.write(f"import {beat_name} from './{beat_name}.js';\n")
-            f.write("\n// Export the beats array built from the JS files\n")
-            f.write("export const beats = [\n")
-            # Write array entries
-            for metadata in all_metadata:
-                f.write(f"  {metadata['id']},\n")
-            f.write("];\n")
+        print(f"\nProcessing complete:")
+        print(f"- Successfully processed: {processed_count} beat(s)")
+        print(f"- Skipped/Failed: {skipped_count} beat(s)")
+    else:
+        print("No unprocessed JSON files found in __raw_beat_files directory")
+
+    # Always update the index file, even if no new beats were processed
+    update_index_file()
 
 if __name__ == "__main__":
     main() 

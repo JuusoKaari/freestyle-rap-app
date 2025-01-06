@@ -27,10 +27,10 @@ import { beats } from '../data/beat_metadata/index';
 
 export const useAudioController = () => {
   const [isWebAudioSupported, setIsWebAudioSupported] = useState(true);
-  const [bpm, setBpm] = useState(75);
+  const [bpm, setBpm] = useState(90);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  const [selectedBeatId, setSelectedBeatId] = useState('night_ride');
+  const [selectedBeatId, setSelectedBeatId] = useState('long_road');
   const [currentSixteenthNote, setCurrentSixteenthNote] = useState(0);
   const [currentQuarterNote, setCurrentQuarterNote] = useState(0);
   
@@ -65,7 +65,7 @@ export const useAudioController = () => {
     audioService.initialize();
 
     // Load default beat
-    const defaultBeat = beats.find(beat => beat.id === 'night_ride');
+    const defaultBeat = beats.find(beat => beat.id === selectedBeatId);
     if (defaultBeat) {
       const beatUrl = defaultBeat.files[defaultBeat.bpm.toString()];
       if (beatUrl) {
@@ -76,7 +76,7 @@ export const useAudioController = () => {
     return () => {
       audioService.dispose();
     };
-  }, []);
+  }, [selectedBeatId]);
 
   const stopPlayback = async () => {
     if (timerRef.current) {

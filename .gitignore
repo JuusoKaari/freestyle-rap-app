@@ -161,5 +161,7 @@ venv/
 src/data/vocabulary/raw_wordlists/
 
 # Beat files
-scripts/audio_processing/beats/
+scripts/audio_processing/beats/__raw_beat_files/
+scripts/audio_processing/beats/__processed_beats/
+scripts/audio_processing/beats/__uploaded_beats/
 scripts/audio_processing/.env
