@@ -73,7 +73,7 @@ body {
 }
 
 .bar.question {
-  background-color: #ff9933;
+  background-color: #3b4165;
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -607,8 +607,8 @@ body {
 }
 
 .bar.question.active {
-  background-color: #ffb366;
-  box-shadow: 0 0 20px rgba(255, 153, 51, 0.4);
+  background-color: #6571aa;
+  box-shadow: 0 0 20px rgba(128, 179, 255, 0.4);
   transform: scale(1.05);
 }
 

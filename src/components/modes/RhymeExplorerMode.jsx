@@ -18,15 +18,13 @@
  * - onReturnToMenu: Callback to return to main menu
  * - modeName: Name of the mode in current language
  * - helperText: Instructions in current language
- * - onNextWord/onPreviousWord: Word navigation callbacks
  * - isPlaying: Beat playback state
  * - onPlayPause: Beat control callback
  * - isLoading: Loading state indicator
  */
 
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import BaseTrainingMode from './BaseTrainingMode';
-import '../../styles/TrainingMode.css';
 import './RhymeExplorerMode.css';
 import { useTranslation } from '../../services/TranslationContext';
 import { useDebug } from '../../services/DebugContext';
@@ -38,8 +36,6 @@ const RhymeExplorerMode = ({
   onReturnToMenu,
   modeName,
   helperText,
-  onNextWord,
-  onPreviousWord,
   isPlaying,
   onPlayPause,
   isLoading
@@ -48,6 +44,12 @@ const RhymeExplorerMode = ({
   const { isDebugMode } = useDebug();
   const translations = trainingModes.find(mode => mode.id === 'rhyme-explorer').translations[language];
   const currentWord = shuffledWords[wordCounter];
+  const [targetWordIndex, setTargetWordIndex] = useState(wordCounter);
+
+  // Keep targetWordIndex in sync with wordCounter
+  useEffect(() => {
+    setTargetWordIndex(wordCounter);
+  }, [wordCounter]);
 
   // Add keyboard navigation
   useEffect(() => {
@@ -59,10 +61,10 @@ const RhymeExplorerMode = ({
 
       switch (event.key) {
         case 'ArrowLeft':
-          onPreviousWord();
+          handlePreviousWord();
           break;
         case 'ArrowRight':
-          onNextWord();
+          handleNextWord();
           break;
         case ' ': // Spacebar
           onPlayPause();
@@ -74,14 +76,22 @@ const RhymeExplorerMode = ({
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [onNextWord, onPreviousWord, onPlayPause]);
+  }, [onPlayPause, targetWordIndex, shuffledWords.length]);
+
+  const handleNextWord = () => {
+    setTargetWordIndex((prev) => (prev + 1) % shuffledWords.length);
+  };
+
+  const handlePreviousWord = () => {
+    setTargetWordIndex((prev) => (prev - 1 + shuffledWords.length) % shuffledWords.length);
+  };
 
   const handleWordClick = (index) => {
     // Only allow clicking words in debug mode
     if (!isDebugMode) return;
     
     // Calculate the shortest path to the target word
-    const currentPos = wordCounter;
+    const currentPos = targetWordIndex;
     const targetPos = index;
     const totalWords = shuffledWords.length;
     
@@ -96,10 +106,13 @@ const RhymeExplorerMode = ({
     // Execute the moves
     for (let i = 0; i < steps; i++) {
       setTimeout(() => {
-        moveForward ? onNextWord() : onPreviousWord();
+        moveForward ? handleNextWord() : handlePreviousWord();
       }, i * 100); // Add small delay between moves for visual feedback
     }
   };
+
+  // Get the word to display based on targetWordIndex
+  const displayWord = shuffledWords[targetWordIndex];
 
   return (
     <>
@@ -112,19 +125,19 @@ const RhymeExplorerMode = ({
         isLoading={isLoading}
       >
         <div className="rhyme-explorer">
-          {currentWord && (
+          {displayWord && (
             <div className="word-card">
               <div className="main-word">
-                <h3>{currentWord.word.toUpperCase()}</h3>
-                <span className="group-label">{currentWord.group}</span>
+                <h3>{displayWord.word.toUpperCase()}</h3>
+                <span className="group-label">{displayWord.group}</span>
               </div>
 
-              {currentWord.themed_rhymes && currentWord.themed_rhymes.length > 0 && (
+              {displayWord.themed_rhymes && displayWord.themed_rhymes.length > 0 && (
                 <div className="rhyme-section themed-rhymes">
                   <h4>{translations.themedRhymes}</h4>
                   <div className="rhyme-list">
                     {/* Direct rhymes first */}
-                    {currentWord.themed_rhymes
+                    {displayWord.themed_rhymes
                       .filter(rhyme => !rhyme.isSlant)
                       .map((rhyme, index) => (
                         <span key={`direct-${index}`} className="rhyme">
@@ -132,7 +145,7 @@ const RhymeExplorerMode = ({
                         </span>
                     ))}
                     {/* Then slant rhymes */}
-                    {currentWord.themed_rhymes
+                    {displayWord.themed_rhymes
                       .filter(rhyme => rhyme.isSlant)
                       .map((rhyme, index) => (
                         <span key={`slant-${index}`} className="rhyme slant-rhyme">
@@ -143,12 +156,12 @@ const RhymeExplorerMode = ({
                 </div>
               )}
 
-              {currentWord.rhymes && currentWord.rhymes.length > 0 && (
+              {displayWord.rhymes && displayWord.rhymes.length > 0 && (
                 <div className="rhyme-section other-rhymes">
                   <h4>{translations.otherRhymes}</h4>
                   <div className="rhyme-list">
                     {/* Direct rhymes first */}
-                    {currentWord.rhymes
+                    {displayWord.rhymes
                       .filter(rhyme => !rhyme.isSlant)
                       .map((rhyme, index) => (
                         <span key={`direct-${index}`} className="rhyme">
@@ -156,7 +169,7 @@ const RhymeExplorerMode = ({
                         </span>
                     ))}
                     {/* Then slant rhymes */}
-                    {currentWord.rhymes
+                    {displayWord.rhymes
                       .filter(rhyme => rhyme.isSlant)
                       .map((rhyme, index) => (
                         <span key={`slant-${index}`} className="rhyme slant-rhyme">
@@ -168,13 +181,13 @@ const RhymeExplorerMode = ({
               )}
 
               <div className="navigation-buttons">
-                <button className="nav-button prev-button" onClick={onPreviousWord}>
+                <button className="nav-button prev-button" onClick={handlePreviousWord}>
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M15 19l-7-7 7-7" />
                   </svg>
                   {translations.prevButton}
                 </button>
-                <button className="nav-button next-button" onClick={onNextWord}>
+                <button className="nav-button next-button" onClick={handleNextWord}>
                   {translations.nextButton}
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M9 5l7 7-7 7" />
@@ -188,12 +201,12 @@ const RhymeExplorerMode = ({
 
       {isDebugMode && (
         <div className="debug-word-list">
-          <h4>Debug: All Words ({wordCounter + 1}/{shuffledWords.length})</h4>
+          <h4>Debug: All Words ({targetWordIndex + 1}/{shuffledWords.length})</h4>
           <div className="word-list">
             {shuffledWords.map((word, index) => (
               <div 
                 key={index} 
-                className={`debug-word ${index === wordCounter ? 'current' : ''}`}
+                className={`debug-word ${index === targetWordIndex ? 'current' : ''}`}
                 onClick={() => handleWordClick(index)}
                 title={`Group: ${word.group}`}
               >

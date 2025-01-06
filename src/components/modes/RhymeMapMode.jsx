@@ -21,9 +21,8 @@
  * - bpm: Current beats per minute
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import BaseTrainingMode from './BaseTrainingMode';
-import '../../styles/TrainingMode.css';
 import './RhymeMapMode.css';
 import { useTranslation } from '../../services/TranslationContext';
 import { trainingModes } from '../../data/trainingModes';

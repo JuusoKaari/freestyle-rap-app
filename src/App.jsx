@@ -183,7 +183,7 @@ function App() {
     const words = await generateWordList({ 
       minWordsInGroup: 1,
       vocabulary: selectedVocabulary,
-      includeRhymes: modeId === 'rhyme-explorer' || modeId === 'find-rhymes'
+      includeRhymes: true // Always include rhymes for all modes
     });
     if (words.length > 0) {
       setShuffledWords(spreadOutWords(words));

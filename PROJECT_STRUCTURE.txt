@@ -10,13 +10,21 @@ Directory Structure:
 
 /src
   /components
-    /modes/
-      - TwoBarMode.jsx         : Training mode for practicing 2-bar rap patterns
-      - FourBarMode.jsx        : Training mode for practicing 4-bar rap patterns
-      - RhymeExplorerMode.jsx  : Mode for exploring words and their rhyming pairs
-      - FindRhymesMode.jsx     : Interactive game mode for finding rhyming words
-      - RhymeMapMode.jsx       : Visual map of rhyming patterns and word groups
-      - SlotMachineMode.jsx    : Customizable bar length practice mode
+    /modes
+      - BaseTrainingMode.jsx   : Base component for all training modes
+      - BaseTrainingMode.css   : Common styles for all training modes
+      - TwoBarMode.jsx        : Two-bar training mode component
+      - TwoBarMode.css        : Styles for two-bar mode
+      - FourBarMode.jsx       : Four-bar training mode component
+      - FourBarMode.css       : Styles for four-bar mode
+      - RhymeMapMode.jsx      : Rhyme map training mode component
+      - RhymeMapMode.css      : Styles for rhyme map mode
+      - RhymeExplorerMode.jsx : Rhyme explorer mode component
+      - RhymeExplorerMode.css : Styles for rhyme explorer mode
+      - FindRhymesMode.jsx    : Find rhymes mode component
+      - FindRhymesMode.css    : Styles for find rhymes mode
+      - SlotMachineMode.jsx   : Slot machine mode component
+      - SlotMachineMode.css   : Styles for slot machine mode
     
     - ModeSelector.jsx         : Component for selecting different training modes
     - BeatSelector.jsx         : Full-featured beat selection and control

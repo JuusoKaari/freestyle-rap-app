@@ -26,9 +26,11 @@
  * with one freestyle rhyme followed by a target word.
  */
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import BaseTrainingMode from './BaseTrainingMode';
-import '../../styles/TrainingMode.css';
+import './TwoBarMode.css';
+import { useTranslation } from '../../services/TranslationContext';
+import { trainingModes } from '../../data/trainingModes';
 
 const TwoBarMode = ({ 
   currentBar,
@@ -44,7 +46,31 @@ const TwoBarMode = ({
   onPlayPause,
   isLoading
 }) => {
+  const { language } = useTranslation();
+  const translations = trainingModes.find(mode => mode.id === 'two-bar').translations[language];
   const BARS_PER_LINE = 4;
+  const [selectedRhyme, setSelectedRhyme] = useState(null);
+  const [showHints, setShowHints] = useState(() => {
+    const saved = localStorage.getItem('showRhymeHints');
+    return saved !== null ? JSON.parse(saved) : false;
+  });
+
+  // Save hint preference to localStorage
+  useEffect(() => {
+    localStorage.setItem('showRhymeHints', JSON.stringify(showHints));
+  }, [showHints]);
+
+  // Update selected rhyme when target word changes
+  useEffect(() => {
+    const currentWord = shuffledWords[wordCounter];
+    const rhymeHints = currentWord?.rhymes?.filter(rhyme => !rhyme.isSlant) || [];
+    if (rhymeHints.length > 0) {
+      const randomIndex = Math.floor(Math.random() * rhymeHints.length);
+      setSelectedRhyme(rhymeHints[randomIndex]);
+    } else {
+      setSelectedRhyme(null);
+    }
+  }, [wordCounter, shuffledWords]);
 
   const renderBar = (barIndex, line) => {
     const isActive = barIndex + (line - 1) * BARS_PER_LINE === currentBar;
@@ -52,6 +78,8 @@ const TwoBarMode = ({
     const isQuestionBlock = line === 1 && barIndex === 3;
 
     if (isTarget) {
+      const currentWord = shuffledWords[wordCounter];
+      
       return (
         <div 
           key={`bar-${barIndex}-${line}`}
@@ -60,7 +88,7 @@ const TwoBarMode = ({
           <span 
             className={`bar target ${isActive ? 'active' : ''} ${isWordChanging ? 'changing' : ''}`}
           >
-            {shuffledWords[wordCounter]?.word}
+            {currentWord?.word}
           </span>
           <span className="next-word">
             Next: {shuffledWords[wordCounter + 1]?.word}
@@ -75,10 +103,16 @@ const TwoBarMode = ({
           key={`bar-${barIndex}-${line}`} 
           className={`bar question ${isActive ? 'active' : ''} ${isWordChanging ? 'changing' : ''}`}
         >
-          <span className="floating-mark">?</span>
-          <span className="floating-mark">?</span>
-          <span className="floating-mark">?</span>
-          <span className="floating-mark">?</span>
+          {showHints && selectedRhyme ? (
+            <span className="rhyme-suggestion">{selectedRhyme.word}</span>
+          ) : (
+            <>
+              <span className="floating-mark">?</span>
+              <span className="floating-mark">?</span>
+              <span className="floating-mark">?</span>
+              <span className="floating-mark">?</span>
+            </>
+          )}
         </span>
       );
     }
@@ -102,6 +136,16 @@ const TwoBarMode = ({
       onPlayPause={onPlayPause}
       isLoading={isLoading}
     >
+      <div className="hint-toggle">
+        <label>
+          <input
+            type="checkbox"
+            checked={showHints}
+            onChange={(e) => setShowHints(e.target.checked)}
+          />
+          {translations.showHints}
+        </label>
+      </div>
       <div className="rhyme-pattern">
         <div className="line">
           {[0, 1, 2, 3].map((barIndex) => renderBar(barIndex, 1))}
