@@ -587,6 +587,11 @@ body {
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.3);
   z-index: 1000;
+  padding: 0.5rem;
+  cursor: default;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .bar.active {

@@ -42,7 +42,7 @@ import recordingService from './services/RecordingService'
 
 function App() {
   const { translate, language } = useTranslation();
-  const { isDebugMode } = useDebug();
+  const { isDebugMode, SecretTapArea } = useDebug();
   const [isWebAudioSupported, setIsWebAudioSupported] = useState(true);
   
   // Add effect to update document title
@@ -535,6 +535,7 @@ function App() {
   return (
     <div className={`app ${isDebugMode ? 'debug-mode' : ''}`}>
       <div className="version-number">v{process.env.APP_VERSION || ''}</div>
+      <SecretTapArea />
 
       {!isWebAudioSupported && (
         <div className="browser-warning">
