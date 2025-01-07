@@ -4,11 +4,29 @@ import { trainingModes } from '../../data/trainingModes';
 import { useTranslation } from '../../services/TranslationContext';
 import './SlotMachineMode.css';
 
+// Number of words in each slot's list (total height of scrolling content)
 const SLOT_SIZE = 30;
+
+// Main spinning animation duration in milliseconds
 const ANIMATION_DURATION = 1000;
+
+// Delay between starting each slot's animation
+// Makes slots start spinning one after another (150ms between each)
 const SLOT_DELAY = 150;
-const RESET_DELAY = 800;
+
+// Additional delay before resetting everything
+// Gives time for the animation to settle
+const RESET_DELAY = 100;
+
+// When to start the ending animation (slowing down)
+// Starts 300ms before the main animation ends
 const ENDING_ANIMATION_START = ANIMATION_DURATION - 300;
+
+// Total time to wait before updating the word lists:
+// - ANIMATION_DURATION (1000ms) for main spin
+// - 2 * SLOT_DELAY (300ms) for all slots to start
+// - RESET_DELAY (800ms) extra time
+// = 2100ms total
 const TOTAL_DELAY = ANIMATION_DURATION + (2 * SLOT_DELAY) + RESET_DELAY;
 
 const SlotMachine = ({ 
@@ -22,7 +40,8 @@ const SlotMachine = ({
   isPlaying,
   onPlayPause,
   isLoading,
-  onBarsPerRoundChange = () => {}
+  onBarsPerRoundChange = () => {},
+  isDebugMode = false
 }) => {
   const { language } = useTranslation();
   const translations = trainingModes.find(mode => mode.id === 'slot-machine').translations[language];
@@ -33,18 +52,24 @@ const SlotMachine = ({
 
   // Handle bar length changes
   const handleBarsChange = (value) => {
+    console.debug('[SlotMachine] Bars per round changed:', { to: value });
     setBarsPerRound(value);
     onBarsPerRoundChange(value);
   };
 
   // Generate a list of words for the slot machine
-  const generateSlotList = (currentWord, nextWord, previousList = null) => {
+  const generateSlotList = (currentWord, nextWord, previousList = null, isNextList = false) => {
     const list = [];
     for (let i = 0; i < SLOT_SIZE; i++) {
       if (i === 1) {
-        // Current word at position 2
-        list.push(currentWord);
-      } else if (i === SLOT_SIZE - 2) {
+        // Current word at position 1
+        // If this is a next list and we have a previous list, use word from position 28
+        if (isNextList && previousList) {
+          list.push(previousList[SLOT_SIZE - 2]);  // Use word from position 28
+        } else {
+          list.push(currentWord);
+        }
+      } else if (i === SLOT_SIZE - 2) {  // position 28
         // Next word at second to last position
         list.push(nextWord);
       } else if (previousList && i === 0) {
@@ -99,6 +124,7 @@ const SlotMachine = ({
   // Handle word changes
   useEffect(() => {
     if (wordCounter !== lastWordCounter) {
+      console.debug('[SlotMachine] Word counter changed:', { from: lastWordCounter, to: wordCounter });
       // Start spinning each slot machine with a delay
       [0, 1, 2].forEach((index) => {
         setTimeout(() => {
@@ -126,14 +152,15 @@ const SlotMachine = ({
 
       // After all animations complete, update everything at once
       setTimeout(() => {
+        console.debug('[SlotMachine] Updating lists after animation');
         // Update lists first
         setCurrentLists(nextLists);
         const [word1, word2, word3] = getThreeWords(wordCounter + 1);
         const [nextWord1, nextWord2, nextWord3] = getThreeWords(wordCounter + 2);
         setNextLists([
-          generateSlotList(word1, nextWord1, nextLists[0]),
-          generateSlotList(word2, nextWord2, nextLists[1]),
-          generateSlotList(word3, nextWord3, nextLists[2])
+          generateSlotList(word1, nextWord1, nextLists[0], true),
+          generateSlotList(word2, nextWord2, nextLists[1], true),
+          generateSlotList(word3, nextWord3, nextLists[2], true)
         ]);
 
         // Then reset animation states
@@ -143,7 +170,7 @@ const SlotMachine = ({
       
       setLastWordCounter(wordCounter);
     }
-  }, [wordCounter, lastWordCounter, shuffledWords, nextLists]);
+  }, [wordCounter, lastWordCounter, shuffledWords]);
 
   return (
     <BaseTrainingMode
@@ -173,6 +200,62 @@ const SlotMachine = ({
           </div>
         ))}
       </div>
+      {/* Debug information */}
+      {isDebugMode && (
+        <div style={{ 
+          marginTop: '2rem', 
+          padding: '1rem', 
+          background: 'rgba(0,0,0,0.5)', 
+          borderRadius: '8px',
+          fontFamily: 'monospace',
+          fontSize: '0.9rem',
+          textAlign: 'left'
+        }}>
+          <div>Current lists:</div>
+          <div style={{ display: 'flex', gap: '1rem', marginTop: '0.5rem' }}>
+            {[0, 1, 2].map((index) => (
+              <div key={index} style={{ flex: 1 }}>
+                <div>Slot {index + 1}</div>
+              </div>
+            ))}
+          </div>
+          <div style={{ display: 'flex', gap: '1rem' }}>
+            {[0, 1, 2].map((index) => (
+              <div key={index} style={{ flex: 1 }}>
+                {currentLists[index].map((word, wordIndex) => (
+                  <div key={wordIndex} style={{ 
+                    color: wordIndex === 1 ? '#7c82ff' : 'inherit'
+                  }}>
+                    [{wordIndex}]: {word.word}
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+
+          <div style={{ marginTop: '1rem' }}>Next lists:</div>
+          <div style={{ display: 'flex', gap: '1rem', marginTop: '0.5rem' }}>
+            {[0, 1, 2].map((index) => (
+              <div key={index} style={{ flex: 1 }}>
+                <div>Slot {index + 1}</div>
+              </div>
+            ))}
+          </div>
+          <div style={{ display: 'flex', gap: '1rem' }}>
+            {[0, 1, 2].map((index) => (
+              <div key={index} style={{ flex: 1 }}>
+                {nextLists[index].map((word, wordIndex) => (
+                  <div key={wordIndex} style={{ 
+                    color: wordIndex === 1 ? '#7c82ff' : 'inherit'
+                  }}>
+                    [{wordIndex}]: {word.word}
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
       <div className="slot-machine-settings">
         <label>
           {translations.barLengthLabel}

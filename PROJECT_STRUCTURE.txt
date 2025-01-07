@@ -9,14 +9,21 @@ Directory Structure:
 ------------------
 
 /src
+  - App.css                  : Global application styles
+  - App.jsx                  : Main application component and routing
+  - main.jsx                 : Application entry point
+  - styles.css               : Additional global styles
+  - index.css                : Root styles
   /components
+    - TrainingModeRenderer.jsx : Component for rendering different training modes
+    - RecordButton.jsx        : Recording button component
+    - RecordButton.css        : Styles for recording button
+    - BeatSelectModal.jsx     : Modal for beat selection
     /modes
       - BaseTrainingMode.jsx   : Base component for all training modes
-      - BaseTrainingMode.css   : Common styles for all training modes
+      - BaseTrainingMode.css   : Common styles for all training modes, including shared styles for bars and rhyme patterns
       - TwoBarMode.jsx        : Two-bar training mode component
-      - TwoBarMode.css        : Styles for two-bar mode
       - FourBarMode.jsx       : Four-bar training mode component
-      - FourBarMode.css       : Styles for four-bar mode
       - RhymeMapMode.jsx      : Rhyme map training mode component
       - RhymeMapMode.css      : Styles for rhyme map mode
       - RhymeExplorerMode.jsx : Rhyme explorer mode component
@@ -35,6 +42,40 @@ Directory Structure:
     - LanguageToggle.jsx       : Language switching between FI/EN
     - RecordToggle.jsx         : Toggle for enabling/disabling recording
     - RecordingsModal.jsx      : Modal for managing and playing recordings
+
+  /styles
+    - VocabularySelector.css  : Styles for vocabulary selection
+    - VocabularySelectModal.css: Styles for vocabulary selection modal
+    - BeatSelector.css        : Styles for beat selection
+    - BeatSelectModal.css     : Styles for beat selection modal
+    - BpmSelector.css         : Styles for BPM selector
+    - ModeSelector.css        : Styles for mode selection
+    - CompactBeatSelector.css : Styles for compact beat selector with mute
+    - RecordToggle.css        : Styles for recording toggle button
+    - RecordingsModal.css     : Styles for recordings modal
+    - LanguageToggle.css      : Styles for language toggle
+
+  /services
+    - WordListService.js      : Service for word list generation and rhyme management
+    - RhythmService.js        : Service for rhythm and timing management
+    - AudioService.js         : Core Web Audio API service for audio playback and routing
+                               Handles audio context, gain nodes, and beat buffer management
+                               Uses singleton pattern for consistent audio context
+
+    - RecordingService.js     : Handles microphone recording functionality
+                               Manages MediaRecorder API and recording streams
+                               Integrates with AudioService for context sharing
+                               Processes recordings into playable format
+
+    - TranslationContext.jsx  : Handles multilingual support
+    - DebugContext.jsx        : Debugging utilities and feature flags
+
+  /hooks
+    - useAudioController.js   : Hook for high-level audio control and musical timing
+                               Manages sixteenth notes and quarter notes progression
+                               Handles BPM changes and beat selection
+                               Provides precise timing using setTimeout
+    - useRecordingController.js : Hook for managing recording state and controls
 
   /data
     /vocabulary/
@@ -57,36 +98,6 @@ Directory Structure:
     - trainingModes.js        : Training mode configurations
     - wordList.js             : Word list generation and processing
 
-  /styles
-    - VocabularySelector.css  : Styles for vocabulary selection
-    - VocabularySelectModal.css: Styles for vocabulary selection modal
-    - BeatSelector.css        : Styles for beat selection
-    - BeatSelectModal.css     : Styles for beat selection modal
-    - BpmSelector.css         : Styles for BPM selector
-    - ModeSelector.css        : Styles for mode selection
-    - TrainingMode.css        : Common styles for training modes
-    - CompactBeatSelector.css : Styles for compact beat selector with mute
-    - RecordToggle.css        : Styles for recording toggle button
-    - RecordingsModal.css     : Styles for recordings modal
-
-  /services
-    - AudioService.js         : Core Web Audio API service for audio playback and routing
-                               Handles audio context, gain nodes, and beat buffer management
-                               Uses singleton pattern for consistent audio context
-
-    - useAudioController.js   : React hook for high-level audio control and musical timing
-                               Manages sixteenth notes and quarter notes progression
-                               Handles BPM changes and beat selection
-                               Provides precise timing using setTimeout
-
-    - RecordingService.js     : Handles microphone recording functionality
-                               Manages MediaRecorder API and recording streams
-                               Integrates with AudioService for context sharing
-                               Processes recordings into playable format
-
-    - TranslationContext.jsx  : Handles multilingual support
-    - DebugContext.jsx        : Debugging utilities and feature flags
-
 /scripts
   /audio_processing/
     /beats/
@@ -104,17 +115,18 @@ Directory Structure:
 Key Features:
 ------------
 1. Multiple Training Modes:
-   - Two-bar and Four-bar practice
+   - Two-bar and Four-bar practice with shared base styles
    - Rhyme Explorer for vocabulary building
    - Interactive Find Rhymes game
    - Visual Rhyme Map for pattern exploration
-   - Slot Machine mode with adjustable bar length
+   - Slot Machine mode with adjustable bar length and continuous word flow
 
 2. Vocabulary Management:
    - Multiple predefined word sets
    - Support for both Finnish and English
    - Themed collections (animals, science, cars, etc.)
    - Full dictionary support
+   - Improved rhyme group organization
 
 3. Beat System:
    - Web Audio API based playback
@@ -142,3 +154,9 @@ Key Features:
    - Two-step process: process then upload
    - FFmpeg-based audio processing
    - Cloudinary integration for hosting 
+
+7. Development Features:
+   - Debug mode for testing and development
+   - Centralized rhythm management through RhythmService
+   - Shared styling through BaseTrainingMode.css
+   - Improved code organization and reusability 

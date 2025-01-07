@@ -28,7 +28,6 @@
 
 import React, { useState, useEffect } from 'react';
 import BaseTrainingMode from './BaseTrainingMode';
-import './TwoBarMode.css';
 import { useTranslation } from '../../services/TranslationContext';
 import { trainingModes } from '../../data/trainingModes';
 

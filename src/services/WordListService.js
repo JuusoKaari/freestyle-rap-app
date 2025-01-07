@@ -1,18 +1,18 @@
 /**
- * Word List Generation Module
- * =========================
+ * Word List Service
+ * ================
  * 
- * Core module for generating and managing word lists used in the training modes.
+ * Service responsible for word list generation and management.
  * Handles word selection, rhyme grouping, and vocabulary management.
  * 
- * Key functionalities:
+ * Key responsibilities:
  * - Dynamic word list generation based on selected vocabulary
  * - Rhyme group management and filtering
  * - Support for different vocabulary sets (rap, animals, full dictionary)
  * - Word shuffling and randomization
  * - Minimum word group size enforcement
  * 
- * The module ensures that generated word lists:
+ * The service ensures that generated word lists:
  * - Contain sufficient rhyming pairs
  * - Are properly shuffled for training
  * - Match the selected language and vocabulary set
@@ -20,16 +20,16 @@
  */
 
 // Import vocabularies
-import FI_genericVocab from './vocabulary/FI_generic_rap.js';
-import FI_animalVocab from './vocabulary/FI_elaimet.js';
-import EN_genericVocab from './vocabulary/EN_generic_rap.js';
-import EN_animalVocab from './vocabulary/EN_animals.js';
-import EN_fullDict from './vocabulary/EN__full_dict.js';
-import FI_fullDict from './vocabulary/FI__full_dict.js';
-import FI_tiedeVocab from './vocabulary/FI_tiede.js';
-import FI_ostoslistaVocab from './vocabulary/FI_ostoslista.js';
-import FI_autotVocab from './vocabulary/FI_autot.js';
-import FI_numerotVocab from './vocabulary/FI_numerot.js';
+import FI_genericVocab from '../data/vocabulary/FI_generic_rap.js';
+import FI_animalVocab from '../data/vocabulary/FI_elaimet.js';
+import EN_genericVocab from '../data/vocabulary/EN_generic_rap.js';
+import EN_animalVocab from '../data/vocabulary/EN_animals.js';
+import EN_fullDict from '../data/vocabulary/EN__full_dict.js';
+import FI_fullDict from '../data/vocabulary/FI__full_dict.js';
+import FI_tiedeVocab from '../data/vocabulary/FI_tiede.js';
+import FI_ostoslistaVocab from '../data/vocabulary/FI_ostoslista.js';
+import FI_autotVocab from '../data/vocabulary/FI_autot.js';
+import FI_numerotVocab from '../data/vocabulary/FI_numerot.js';
 
 // Helper function to count total words in a vowel group
 const getGroupWordCount = (group, words) => {
@@ -196,6 +196,44 @@ const getDisplayWord = (word) => {
   return display.replace(/-/g, '').replace(/_/g, ' ');
 };
 
+// Helper function to spread out words from same groups with randomization
+const spreadOutWords = (words) => {
+  // Group words by their rhyming group
+  const groupedWords = words.reduce((acc, word) => {
+    if (!acc[word.group]) {
+      acc[word.group] = [];
+    }
+    acc[word.group].push(word);
+    return acc;
+  }, {});
+
+  // Get all groups and randomize their order
+  const groups = Object.keys(groupedWords).sort(() => Math.random() - 0.5);
+  
+  // Randomize words within each group
+  groups.forEach(group => {
+    groupedWords[group].sort(() => Math.random() - 0.5);
+  });
+
+  const result = [];
+  let currentIndex = 0;
+
+  // Keep going until all words are used
+  while (result.length < words.length) {
+    const currentGroup = groups[currentIndex % groups.length];
+    const wordsInGroup = groupedWords[currentGroup];
+    
+    // If group still has words, take one
+    if (wordsInGroup && wordsInGroup.length > 0) {
+      result.push(wordsInGroup.shift());
+    }
+    
+    currentIndex++;
+  }
+
+  return result;
+};
+
 // Function to get a list of words from a vocabulary
 export const generateWordList = async (options = {}) => {
   const {
@@ -203,7 +241,8 @@ export const generateWordList = async (options = {}) => {
     vocabulary = 'fi_generic_rap',
     includeRhymes = false,
     rhymesPerWord = 5,
-    themedRhymesPerWord = 5
+    themedRhymesPerWord = 5,
+    shouldSpreadOut = true // New option to control word spreading
   } = options;
 
   const words = getVocabulary(vocabulary);
@@ -334,5 +373,6 @@ export const generateWordList = async (options = {}) => {
     });
   });
 
-  return result;
+  // Spread out words if requested
+  return shouldSpreadOut ? spreadOutWords(result) : result;
 }; 

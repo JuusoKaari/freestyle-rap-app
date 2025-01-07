@@ -19,13 +19,8 @@
 
 import React, { useState, useEffect, useRef } from 'react'
 import './App.css'
-import { generateWordList } from './data/wordList'
-import TwoBarMode from './components/modes/TwoBarMode'
-import FourBarMode from './components/modes/FourBarMode'
-import RhymeExplorerMode from './components/modes/RhymeExplorerMode'
-import FindRhymesMode from './components/modes/FindRhymesMode'
-import RhymeMapMode from './components/modes/RhymeMapMode'
-import SlotMachineMode from './components/modes/SlotMachineMode'
+import { generateWordList } from './services/WordListService'
+import TrainingModeRenderer from './components/TrainingModeRenderer'
 import ModeSelector from './components/ModeSelector'
 import BeatSelector from './components/BeatSelector'
 import CompactBeatSelector from './components/CompactBeatSelector'
@@ -34,11 +29,10 @@ import LanguageToggle from './components/LanguageToggle'
 import { trainingModes } from './data/trainingModes'
 import { useTranslation } from './services/TranslationContext'
 import { DebugProvider, useDebug } from './services/DebugContext'
-import { useAudioController } from './services/useAudioController'
-import audioService from './services/AudioService'
+import { useAudioController } from './hooks/useAudioController'
+import { useRecordingController } from './hooks/useRecordingController'
 import RecordToggle from './components/RecordToggle'
 import RecordingsModal from './components/RecordingsModal'
-import recordingService from './services/RecordingService'
 
 function App() {
   const { translate, language } = useTranslation();
@@ -56,45 +50,72 @@ function App() {
     handlePlayPause,
     stopPlayback
   } = useAudioController();
-  
-  const [isTraining, setIsTraining] = useState(false)
-  const [selectedMode, setSelectedMode] = useState(null)
-  const [isWordChanging, setIsWordChanging] = useState(false)
-  const [wordCounter, setWordCounter] = useState(0)
-  const [shuffledWords, setShuffledWords] = useState([])
-  const [selectedVocabulary, setSelectedVocabulary] = useState('fi_generic_rap')
-  const [barsPerRound, setBarsPerRound] = useState(2)
-  const [isRecordingEnabled, setIsRecordingEnabled] = useState(false)
-  const [recordings, setRecordings] = useState([])
-  const [isRecordingsModalOpen, setIsRecordingsModalOpen] = useState(false)
-  const currentRecordingRef = useRef(null)
 
-  // Add effect to update document title
+  const {
+    isRecordingEnabled,
+    recordings,
+    isRecordingsModalOpen,
+    setIsRecordingsModalOpen,
+    handleRecordingToggle,
+    handlePlayPauseWithRecording
+  } = useRecordingController();
+
+  const [selectedMode, setSelectedMode] = useState(null);
+  const [selectedVocabulary, setSelectedVocabulary] = useState('all');
+  const [isTraining, setIsTraining] = useState(false);
+  const [shuffledWords, setShuffledWords] = useState([]);
+  const [wordCounter, setWordCounter] = useState(0);
+  const [isWordChanging, setIsWordChanging] = useState(false);
+  const [barsPerRound, setBarsPerRound] = useState(2);
+
+  // Update document title
   useEffect(() => {
     document.title = translate('app.title');
   }, [translate]);
 
-  const getTotalBars = () => {
-    switch (selectedMode) {
-      case 'four-bar':
-        return 16; // 4 lines * 4 bars
-      case 'two-bar':
-        return 8; // 2 lines * 4 bars
-      case 'slot-machine':
-        return barsPerRound * 4; // Convert bars to beats
-      default:
-        return 8; // 2 lines * 4 bars
+  // Load initial words when vocabulary changes
+  useEffect(() => {
+    generateWordList({ 
+      minWordsInGroup: 3,
+      vocabulary: selectedVocabulary 
+    }).then(words => {
+      if (words.length > 0) {
+        setShuffledWords(words);
+      }
+    });
+  }, [selectedVocabulary]);
+
+  // Handle mode selection
+  const handleModeSelect = async (modeId) => {
+    stopPlayback();
+    setSelectedMode(modeId);
+
+    // Rhyme Map mode doesn't need word generation
+    if (modeId === 'rhyme-map') {
+      setIsTraining(true);
+      return;
+    }
+
+    const words = await generateWordList({ 
+      minWordsInGroup: 1,
+      vocabulary: selectedVocabulary,
+      includeRhymes: true // Always include rhymes for all modes
+    });
+    if (words.length > 0) {
+      setShuffledWords(words);
+      setWordCounter(0);
+      setIsTraining(true);
     }
   };
 
-  // Handle bars per round change
-  const handleBarsPerRoundChange = (value) => {
-    setBarsPerRound(value);
-    // Reset current bar to avoid issues with different total lengths
-    setCurrentBar(0);
+  // Handle return to menu
+  const handleReturnToMenu = () => {
+    stopPlayback();
+    setIsTraining(false);
+    setSelectedMode(null);
   };
 
-  // Handle bar change callback for audio controller
+  // Handle bar change
   const handleBarChange = (nextBar) => {
     if (nextBar === 0) {
       setIsWordChanging(true);
@@ -119,240 +140,38 @@ function App() {
     }
   };
 
-  // Spread out words from same groups with randomization
-  const spreadOutWords = (words) => {
-    // Group words by their rhyming group
-    const groupedWords = words.reduce((acc, word) => {
-      if (!acc[word.group]) {
-        acc[word.group] = [];
-      }
-      acc[word.group].push(word);
-      return acc;
-    }, {});
-
-    // Get all groups and randomize their order
-    const groups = Object.keys(groupedWords).sort(() => Math.random() - 0.5);
-    
-    // Randomize words within each group
-    groups.forEach(group => {
-      groupedWords[group].sort(() => Math.random() - 0.5);
-    });
-
-    const result = [];
-    let currentIndex = 0;
-
-    // Keep going until all words are used
-    while (result.length < words.length) {
-      const currentGroup = groups[currentIndex % groups.length];
-      const wordsInGroup = groupedWords[currentGroup];
-      
-      // If group still has words, take one
-      if (wordsInGroup && wordsInGroup.length > 0) {
-        result.push(wordsInGroup.shift());
-      }
-      
-      currentIndex++;
-    }
-
-    return result;
+  // Handle bars per round change
+  const handleBarsPerRoundChange = (value) => {
+    setBarsPerRound(value);
   };
 
-  // Load initial words when vocabulary changes
-  useEffect(() => {
-    generateWordList({ 
-      minWordsInGroup: 3,
-      vocabulary: selectedVocabulary 
-    }).then(words => {
-      if (words.length > 0) {
-        setShuffledWords(spreadOutWords(words));
-      }
-    });
-  }, [selectedVocabulary]);
-
-  // Update handleModeSelect to use spreadOutWords
-  const handleModeSelect = async (modeId) => {
-    stopPlayback();
-    setSelectedMode(modeId);
-
-    // Rhyme Map mode doesn't need word generation
-    if (modeId === 'rhyme-map') {
-      setIsTraining(true);
-      return;
-    }
-
-    const words = await generateWordList({ 
-      minWordsInGroup: 1,
-      vocabulary: selectedVocabulary,
-      includeRhymes: true // Always include rhymes for all modes
-    });
-    if (words.length > 0) {
-      setShuffledWords(spreadOutWords(words));
-      setWordCounter(0);
-      setIsTraining(true);
-    }
-  };
-
-  const handleReturnToMenu = () => {
-    stopPlayback();
-    setIsTraining(false);
-    setSelectedMode(null);
-  };
-
-  const handlePlayPauseWithRecording = async () => {
-    // If we're stopping, handle recording cleanup
-    if (isPlaying && isRecordingEnabled) {
-      console.log('Recording enabled, stopping recording...');
-      const recording = await recordingService.stopRecording();
-      if (recording) {
-        console.log('Recording completed, saving...');
-        const newRecording = {
-          id: Date.now().toString(),
-          timestamp: Date.now(),
-          beatId: selectedBeatId,
-          mode: selectedMode,
-          vocabulary: selectedVocabulary,
-          bpm: bpm,
-          ...recording
-        };
-        setRecordings(prev => [...prev, newRecording]);
-        console.log('New recording saved:', newRecording);
-      }
-    }
-
-    // If we're starting, initialize recording
-    if (!isPlaying && isRecordingEnabled && isTraining) {
-      console.log('Recording enabled and in training mode, starting recording...');
-      recordingService.startRecording();
-    }
-
-    // Handle playback
-    await handlePlayPause(getTotalBars(), handleBarChange);
-  };
-
-  const handleRecordingToggle = async () => {
-    const newState = !isRecordingEnabled;
-    
-    if (newState) {
-      // Initialize audio context if needed
-      await audioService.initialize();
-      
-      // Request microphone permission
-      const hasPermission = await recordingService.requestMicrophonePermission();
-      if (!hasPermission) {
-        console.error('Microphone permission denied');
-        return;
-      }
-    } else {
-      // Stop recording if it's active
-      if (recordingService.isRecording) {
-        const recording = await recordingService.stopRecording();
-        if (recording) {
-          console.log('Recording completed, saving...');
-          const newRecording = {
-            id: Date.now().toString(),
-            timestamp: Date.now(),
-            beatId: selectedBeatId,
-            mode: selectedMode,
-            vocabulary: selectedVocabulary,
-            bpm: bpm,
-            ...recording
-          };
-          setRecordings(prev => [...prev, newRecording]);
-          console.log('New recording saved:', newRecording);
-        }
-      }
-    }
-    
-    setIsRecordingEnabled(newState);
-  };
-
-  const renderTrainingMode = () => {
-    const currentMode = trainingModes.find(mode => mode.id === selectedMode);
-    const commonProps = {
-      onReturnToMenu: handleReturnToMenu,
-      modeName: currentMode.translations[language].name,
-      helperText: currentMode.translations[language].helperText,
-      isPlaying,
-      onPlayPause: handlePlayPauseWithRecording,
-      isLoading,
-      bpm
-    };
-    
+  // Get total bars based on mode
+  const getTotalBars = () => {
     switch (selectedMode) {
-      case 'rhyme-map':
-        return (
-          <RhymeMapMode
-            {...commonProps}
-            isRecordingEnabled={isRecordingEnabled}
-            onRecordingToggle={handleRecordingToggle}
-          />
-        );
-      case 'slot-machine':
-        return (
-          <SlotMachineMode
-            {...commonProps}
-            shuffledWords={shuffledWords}
-            wordCounter={wordCounter}
-            onBarsPerRoundChange={handleBarsPerRoundChange}
-          />
-        );
-      case 'rhyme-explorer':
-        return (
-          <RhymeExplorerMode
-            {...commonProps}
-            shuffledWords={shuffledWords}
-            wordCounter={wordCounter}
-          />
-        );
-      case 'find-rhymes':
-        return (
-          <FindRhymesMode
-            {...commonProps}
-            shuffledWords={shuffledWords}
-            wordCounter={wordCounter}
-          />
-        );
-      case 'four-bar':
-        return (
-          <FourBarMode
-            {...commonProps}
-            currentBar={currentBar}
-            currentBeat={currentBeat}
-            isWordChanging={isWordChanging}
-            shuffledWords={shuffledWords}
-            wordCounter={wordCounter}
-          />
-        );
       case 'two-bar':
-        return (
-          <TwoBarMode
-            {...commonProps}
-            currentBar={currentBar}
-            currentBeat={currentBeat}
-            isWordChanging={isWordChanging}
-            shuffledWords={shuffledWords}
-            wordCounter={wordCounter}
-          />
-        );
+        return 8; // 2 lines * 4 bars
+      case 'four-bar':
+        return 16; // 4 lines * 4 bars
+      case 'slot-machine':
+        return barsPerRound * 4; // Convert bars to beats
       default:
-        return null;
+        return 8; // 2 lines * 4 bars
     }
   };
 
-  // Load saved recordings from localStorage on mount
-  useEffect(() => {
-    const savedRecordings = localStorage.getItem('recordings');
-    if (savedRecordings) {
-      console.log('Loading saved recordings from localStorage');
-      setRecordings(JSON.parse(savedRecordings));
-    }
-  }, []);
-
-  // Save recordings to localStorage when updated
-  useEffect(() => {
-    console.log('Saving recordings to localStorage:', recordings);
-    localStorage.setItem('recordings', JSON.stringify(recordings));
-  }, [recordings]);
+  const wrappedHandlePlayPause = async () => {
+    await handlePlayPauseWithRecording(
+      isPlaying,
+      isTraining,
+      {
+        beatId: selectedBeatId,
+        mode: selectedMode,
+        vocabulary: selectedVocabulary,
+        bpm: bpm
+      },
+      () => handlePlayPause(getTotalBars(), handleBarChange)
+    );
+  };
 
   return (
     <div className={`app ${isDebugMode ? 'debug-mode' : ''}`}>
@@ -391,7 +210,7 @@ function App() {
               selectedBeatId={selectedBeatId}
               onBeatSelect={handleBeatSelect}
               isPlaying={isPlaying}
-              onPlayPause={handlePlayPauseWithRecording}
+              onPlayPause={wrappedHandlePlayPause}
               isLoading={isLoading}
               currentBpm={bpm}
               onBpmChange={handleBpmChange}
@@ -410,13 +229,29 @@ function App() {
               selectedBeatId={selectedBeatId}
               onBeatSelect={handleBeatSelect}
               isPlaying={isPlaying}
-              onPlayPause={handlePlayPauseWithRecording}
+              onPlayPause={wrappedHandlePlayPause}
               isLoading={isLoading}
               currentBpm={bpm}
               onBpmChange={handleBpmChange}
             />
           </div>
-          {renderTrainingMode()}
+          <TrainingModeRenderer
+            selectedMode={selectedMode}
+            onReturnToMenu={handleReturnToMenu}
+            isPlaying={isPlaying}
+            onPlayPause={wrappedHandlePlayPause}
+            isLoading={isLoading}
+            bpm={bpm}
+            currentBar={currentBar}
+            currentBeat={currentBeat}
+            isWordChanging={isWordChanging}
+            shuffledWords={shuffledWords}
+            wordCounter={wordCounter}
+            onBarsPerRoundChange={handleBarsPerRoundChange}
+            isRecordingEnabled={isRecordingEnabled}
+            onRecordingToggle={handleRecordingToggle}
+            isDebugMode={isDebugMode}
+          />
         </>
       )}
 
