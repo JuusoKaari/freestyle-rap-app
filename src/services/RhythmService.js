@@ -45,11 +45,14 @@ export class RhythmService {
     setTimerRef
   }) {
     const beatInterval = this.calculateBeatInterval(bpm);
+    let lastProcessedTime = 0;
 
     const tickFunction = () => {
       const currentTime = Date.now() / 1000;
       
-      if (nextNoteTimeRef.current <= currentTime + 0.1) {
+      // Only process if we haven't already processed this time window
+      if (nextNoteTimeRef.current <= currentTime + 0.1 && currentTime > lastProcessedTime) {
+        lastProcessedTime = currentTime;
         onTick(prev => {
           const nextBeat = this.getNextSixteenthNote(prev.beat);
           

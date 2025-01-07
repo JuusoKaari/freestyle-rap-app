@@ -198,40 +198,16 @@ const getDisplayWord = (word) => {
 
 // Helper function to spread out words from same groups with randomization
 const spreadOutWords = (words) => {
-  // Group words by their rhyming group
-  const groupedWords = words.reduce((acc, word) => {
-    if (!acc[word.group]) {
-      acc[word.group] = [];
-    }
-    acc[word.group].push(word);
-    return acc;
-  }, {});
-
-  // Get all groups and randomize their order
-  const groups = Object.keys(groupedWords).sort(() => Math.random() - 0.5);
+  // Create a copy of the array to avoid modifying the original
+  const shuffled = [...words];
   
-  // Randomize words within each group
-  groups.forEach(group => {
-    groupedWords[group].sort(() => Math.random() - 0.5);
-  });
-
-  const result = [];
-  let currentIndex = 0;
-
-  // Keep going until all words are used
-  while (result.length < words.length) {
-    const currentGroup = groups[currentIndex % groups.length];
-    const wordsInGroup = groupedWords[currentGroup];
-    
-    // If group still has words, take one
-    if (wordsInGroup && wordsInGroup.length > 0) {
-      result.push(wordsInGroup.shift());
-    }
-    
-    currentIndex++;
+  // Fisher-Yates shuffle
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
   }
-
-  return result;
+  
+  return shuffled;
 };
 
 // Function to get a list of words from a vocabulary

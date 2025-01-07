@@ -67,6 +67,7 @@ function App() {
   const [wordCounter, setWordCounter] = useState(0);
   const [isWordChanging, setIsWordChanging] = useState(false);
   const [barsPerRound, setBarsPerRound] = useState(2);
+  const lastProcessedBarRef = useRef(-1);
 
   // Update document title
   useEffect(() => {
@@ -117,7 +118,8 @@ function App() {
 
   // Handle bar change
   const handleBarChange = (nextBar) => {
-    if (nextBar === 0) {
+    if (nextBar === 0 && lastProcessedBarRef.current !== 0) {
+      lastProcessedBarRef.current = 0;
       setIsWordChanging(true);
       if (wordCounter >= shuffledWords.length - 2) {
         // Load new words
@@ -132,11 +134,14 @@ function App() {
           }
         });
       } else {
+        console.log(`Word change at ${new Date().toISOString()}`);
         setWordCounter(prev => prev + 1);
       }
       setTimeout(() => {
         setIsWordChanging(false);
       }, 450);
+    } else if (nextBar !== 0) {
+      lastProcessedBarRef.current = nextBar;
     }
   };
 
