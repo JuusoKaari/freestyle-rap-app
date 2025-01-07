@@ -210,7 +210,7 @@ def is_appropriate_word(word):
         "runkkari", "runkata", "runkkaa", "runkku", "runkkaaja",
         "pillu", "pillua", "pilluun", "pillut", "pillunnuolija",
         "kulli", "kullin", "kullia", "kullit",
-        "nussia", "nussii", "nussittu", "nussiminen",
+        "nussi", "nussia", "nussii", "nussittu", "nussiminen",
         "panna", "panee", "panoja", "paneminen", "paneskella",
         "dildo", "dildot", "dildoja",
         

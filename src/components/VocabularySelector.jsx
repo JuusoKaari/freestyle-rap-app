@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { getVocabularies } from '../data/vocabulary/vocabularyConfig';
 import { useTranslation } from '../services/TranslationContext';
 import VocabularySelectModal from './VocabularySelectModal';
+import { FaDice } from 'react-icons/fa';
 import '../styles/VocabularySelector.css';
 
 const VocabularySelector = ({ selectedVocabulary, onVocabularySelect }) => {
@@ -24,6 +25,14 @@ const VocabularySelector = ({ selectedVocabulary, onVocabularySelect }) => {
   const handleVocabularySelect = (vocabId) => {
     onVocabularySelect(vocabId);
     setIsModalOpen(false);
+  };
+
+  const handleRandomize = () => {
+    const availableVocabs = vocabularies.filter(vocab => vocab.id !== selectedVocabulary);
+    if (availableVocabs.length > 0) {
+      const randomIndex = Math.floor(Math.random() * availableVocabs.length);
+      onVocabularySelect(availableVocabs[randomIndex].id);
+    }
   };
 
   // If no vocabularies are available for the current language, show a message
@@ -56,13 +65,22 @@ const VocabularySelector = ({ selectedVocabulary, onVocabularySelect }) => {
           </div>
         </div>
 
-        <button 
-          className="change-vocabulary-button"
-          onClick={() => setIsModalOpen(true)}
-          aria-label={translate('vocabulary.selector.change')}
-        >
-          {translate('vocabulary.selector.change')}
-        </button>
+        <div className="vocabulary-controls">
+          <button 
+            className="change-vocabulary-button"
+            onClick={() => setIsModalOpen(true)}
+            aria-label={translate('vocabulary.selector.change')}
+          >
+            {translate('vocabulary.selector.change')}
+          </button>
+          <button 
+            className="randomize-vocabulary-button"
+            onClick={handleRandomize}
+            aria-label="Randomize vocabulary"
+          >
+            <FaDice />
+          </button>
+        </div>
       </div>
 
       <VocabularySelectModal

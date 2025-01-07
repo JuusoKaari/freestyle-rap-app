@@ -37371,8 +37371,6 @@ export default {
         "kum-pi-kaan",
         "num-mi-maa",
         "nurk-ki-aan",
-        "nus-si-maa",
-        "nus-si-taan",
         "uk-ki-kaan"
     ],
     "uu-i-e": [

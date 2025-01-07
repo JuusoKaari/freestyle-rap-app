@@ -92,7 +92,14 @@
   color: rgb(255, 71, 87);
 }
 
-.change-vocabulary-button {
+.vocabulary-controls {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.change-vocabulary-button,
+.randomize-vocabulary-button {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: rgba(255, 255, 255, 0.8);
@@ -103,9 +110,22 @@
   transition: all 0.2s ease;
   white-space: nowrap;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.change-vocabulary-button:hover {
+.randomize-vocabulary-button {
+  padding: 0.5rem;
+}
+
+.randomize-vocabulary-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.change-vocabulary-button:hover,
+.randomize-vocabulary-button:hover {
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.4);
 }
