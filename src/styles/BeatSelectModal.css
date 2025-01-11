@@ -172,4 +172,42 @@
 .select-button:hover {
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 768px) {
+  .modal-overlay {
+    padding: 0;
+  }
+
+  .modal-overlay .modal-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100vh;
+    max-height: 100vh;
+    border-radius: 0;
+    padding: 0.5rem !important;
+    margin: 0;
+  }
+
+  .modal-overlay .modal-content > * {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .modal-header {
+    padding: 1rem;
+  }
+
+  .beats-list {
+    padding: 1rem;
+  }
+
+  .beat-item {
+    padding: 0.75rem;
+  }
+
+  .beat-item-controls {
+    gap: 0.5rem;
+  }
 } 

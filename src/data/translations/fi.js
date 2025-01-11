@@ -1,6 +1,7 @@
 export const fi = {
   app: {
     title: "FREESTYLE RÄP-ÄPP",
+    tagline: "sun freestyle räp koutsi",
     browser_warning: {
       title: "Selain ei ole tuettu",
       message: "Selaimesi ei tue Web Audio API:a, jota tarvitaan äänen toistoon ja nauhoitukseen. Käytä modernia selainta kuten Chrome, Firefox, Safari tai Edge."

@@ -66,7 +66,7 @@ const CompactBeatSelector = ({ selectedBeatId, onBeatSelect, isPlaying, isLoadin
         onClick={() => setIsModalOpen(true)}
         disabled={isLoading}
       >
-        {selectedBeat?.name || 'Select Beat'}
+        <span>{selectedBeat?.name || 'Select Beat'}</span>
         <svg viewBox="0 0 24 24" className="dropdown-icon">
           <path
             fill="currentColor"

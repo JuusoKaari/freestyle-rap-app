@@ -206,7 +206,12 @@ function App() {
       )}
 
       {!isTraining && <LanguageToggle />}
-      <h1>{translate('app.title')}</h1>
+      <img 
+        src="/rheemy_logo_01_470px_ALPHA.png" 
+        alt="Rheemy" 
+        className="app-logo"
+      />
+      {!isTraining && <div className="app-tagline">{translate('app.tagline')}</div>}
 
       {!isTraining ? (
         <div className="setup-container">

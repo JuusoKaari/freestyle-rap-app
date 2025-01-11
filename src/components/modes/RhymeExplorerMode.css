@@ -163,4 +163,26 @@
 
 .debug-word.current:hover {
   background: rgba(76, 175, 80, 0.4);
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .nav-button {
+    padding: 0.5rem;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    justify-content: center;
+  }
+
+  .nav-button span {
+    display: none;
+  }
+
+  .nav-button svg {
+    width: 24px;
+    height: 24px;
+    opacity: 1;
+    margin: 0;
+  }
 } 

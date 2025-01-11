@@ -79,54 +79,56 @@ const BeatSelector = ({ selectedBeatId, onBeatSelect, isPlaying, onPlayPause, is
   return (
     <div className="beat-selector-container">
       <div className="beat-player">
-        <button
-          className={`play-button ${isLoading || isLoadingBeat ? 'loading' : ''}`}
-          onClick={onPlayPause}
-          disabled={isLoading || isLoadingBeat || !selectedBeat}
-        >
-          {isLoading || isLoadingBeat ? (
-            <div className="loading-spinner" />
-          ) : isPlaying ? (
-            <svg viewBox="0 0 24 24">
-              <path
-                fill="currentColor"
-                d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"
-              />
-            </svg>
-          ) : (
-            <svg viewBox="0 0 24 24">
-              <path
-                fill="currentColor"
-                d="M8 5v14l11-7z"
-              />
-            </svg>
-          )}
-        </button>
-
-        <div className="beat-info">
-          <div className="beat-main-info">
-            <span className="beat-label">{translate('training.beats.currentBeat')}:</span>
-            <span className="beat-name">
-              {selectedBeat ? selectedBeat.name : translate('training.beats.noBeat')}
-            </span>
-          </div>
-          {selectedBeat && (
-            <div className="beat-details">
-              <span className="beat-description">{selectedBeat.description}</span>
-            </div>
-          )}
-        </div>
-
-        <div className="controls-group">
-          <BpmSelector
-            selectedBeatId={selectedBeatId}
-            currentBpm={currentBpm}
-            onBpmChange={onBpmChange}
-            disabled={isLoading || isLoadingBeat || isPlaying}
-          />
-          <button className="change-beat-button" onClick={() => setIsModalOpen(true)}>
-            {translate('training.beats.changeBeat')}
+        <div className="player-main-section">
+          <button
+            className={`play-button ${isLoading || isLoadingBeat ? 'loading' : ''}`}
+            onClick={onPlayPause}
+            disabled={isLoading || isLoadingBeat || !selectedBeat}
+          >
+            {isLoading || isLoadingBeat ? (
+              <div className="loading-spinner" />
+            ) : isPlaying ? (
+              <svg viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"
+                />
+              </svg>
+            ) : (
+              <svg viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M8 5v14l11-7z"
+                />
+              </svg>
+            )}
           </button>
+
+          <div className="beat-info">
+            <div className="beat-main-info">
+              <span className="beat-label">{translate('training.beats.currentBeat')}:</span>
+              <span className="beat-name">
+                {selectedBeat ? selectedBeat.name : translate('training.beats.noBeat')}
+              </span>
+            </div>
+            {selectedBeat && (
+              <div className="beat-details">
+                <span className="beat-description">{selectedBeat.description}</span>
+              </div>
+            )}
+          </div>
+
+          <div className="controls-group">
+            <BpmSelector
+              selectedBeatId={selectedBeatId}
+              currentBpm={currentBpm}
+              onBpmChange={onBpmChange}
+              disabled={isLoading || isLoadingBeat || isPlaying}
+            />
+            <button className="change-beat-button" onClick={() => setIsModalOpen(true)}>
+              {translate('training.beats.changeBeat')}
+            </button>
+          </div>
         </div>
       </div>
 

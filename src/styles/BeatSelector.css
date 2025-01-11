@@ -156,4 +156,57 @@
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+.player-main-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .beat-label {
+    display: none;
+  }
+
+  .beat-description {
+    display: none;
+  }
+
+  .beat-player {
+    padding: 0.75rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .player-main-section {
+    flex-basis: 100%;
+    justify-content: center;
+  }
+
+  .play-button {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+
+  .play-button svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .beat-info {
+    flex: 0 1 auto;
+    min-width: 100px;
+    max-width: calc(100% - 60px);
+  }
+
+  .controls-group {
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+  }
 } 

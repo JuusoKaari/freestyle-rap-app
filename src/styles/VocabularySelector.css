@@ -219,4 +219,29 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .vocabulary-label {
+    display: none;
+  }
+
+  .vocabulary-details {
+    display: none;
+  }
+
+  .vocabulary-player {
+    padding: 0.75rem;
+  }
+
+  .vocabulary-controls {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  .randomize-vocabulary-button {
+    display: none;
+  }
 } 

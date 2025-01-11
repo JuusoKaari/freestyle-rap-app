@@ -127,4 +127,52 @@
 .compact-beat-selector .mute-button.muted:hover:not(:disabled) {
   background-color: rgba(81, 81, 81, 0.25);
   border-color: rgba(150, 150, 150, 0.4);
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .compact-beat-selector {
+    padding: 0;
+    background-color: transparent;
+    gap: 0;
+    width: 40px;
+    min-width: 40px;
+  }
+
+  .compact-beat-selector .current-beat {
+    padding: 0.5rem;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    line-height: 1;
+    margin: 0;
+  }
+
+  .compact-beat-selector .current-beat span {
+    display: none;
+  }
+
+  .compact-beat-selector .current-beat .dropdown-icon {
+    display: none;
+  }
+
+  .compact-beat-selector .current-beat::before {
+    content: "♪";
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .compact-beat-selector .bpm-selector {
+    display: none;
+  }
+
+  .compact-beat-selector .mute-button {
+    display: none;
+  }
 } 
