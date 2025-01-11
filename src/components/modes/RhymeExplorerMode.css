@@ -12,18 +12,38 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  min-height: 500px;
 }
 
 .main-word {
   text-align: center;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .main-word h3 {
   font-size: 2rem;
   margin: 0 0 0.5rem 0;
   color: #fff;
+}
+
+.main-word h3, .main-word .group-label {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .group-label {
@@ -35,6 +55,9 @@
 .rhyme-section {
   padding: 1rem;
   border-radius: 8px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
 }
 
 .rhyme-section h4 {
@@ -42,6 +65,9 @@
   color: rgba(255, 255, 255, 0.9);
   font-size: 1rem;
   text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .themed-rhymes {
@@ -57,6 +83,21 @@
   flex-wrap: wrap;
   gap: 0.5rem;
   justify-content: center;
+  flex: 1;
+  align-content: flex-start;
+  min-height: 50px;
+}
+
+.rhyme-list:empty::after {
+  content: attr(data-empty-text);
+  color: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 .rhyme {
@@ -67,7 +108,20 @@
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.9);
   text-align: center;
+  animation: fadeIn 0.3s ease-in backwards;
 }
+
+/* Add staggered delays for each rhyme word */
+.rhyme:nth-child(1) { animation-delay: 0.1s; }
+.rhyme:nth-child(2) { animation-delay: 0.15s; }
+.rhyme:nth-child(3) { animation-delay: 0.2s; }
+.rhyme:nth-child(4) { animation-delay: 0.25s; }
+.rhyme:nth-child(5) { animation-delay: 0.3s; }
+.rhyme:nth-child(6) { animation-delay: 0.35s; }
+.rhyme:nth-child(7) { animation-delay: 0.4s; }
+.rhyme:nth-child(8) { animation-delay: 0.45s; }
+.rhyme:nth-child(9) { animation-delay: 0.5s; }
+.rhyme:nth-child(10) { animation-delay: 0.55s; }
 
 .slant-rhyme {
   background: rgba(255, 255, 255, 0.05);
@@ -85,7 +139,7 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.2);
   color: rgba(255, 255, 255, 0.9);
   padding: 0.75rem 1.5rem;
@@ -167,6 +221,29 @@
 
 /* Mobile responsiveness */
 @media screen and (max-width: 768px) {
+  .word-card {
+    padding: 1.5rem;
+    min-height: 450px;
+    gap: 1rem;
+  }
+
+  .main-word {
+    min-height: 80px;
+    padding-bottom: 1rem;
+  }
+
+  .main-word h3 {
+    font-size: 1.8rem;
+  }
+
+  .rhyme-section {
+    min-height: 100px;
+  }
+
+  .rhyme-list {
+    min-height: 50px;
+  }
+
   .nav-button {
     padding: 0.5rem;
     width: 40px;
@@ -184,5 +261,73 @@
     height: 24px;
     opacity: 1;
     margin: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .word-card {
+    padding: 1rem;
+    min-height: 400px;
+    gap: 0.75rem;
+  }
+
+  .main-word {
+    min-height: 70px;
+    padding-bottom: 0.75rem;
+  }
+
+  .main-word h3 {
+    font-size: 1.6rem;
+  }
+
+  .rhyme-section {
+    min-height: 120px;
+    padding: 0.75rem;
+  }
+
+  .rhyme-list {
+    min-height: 70px;
+    gap: 0.4rem;
+  }
+
+  .rhyme {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.85rem;
+  }
+
+  /* Hide rhymes after the first 3 */
+  .rhyme-list .rhyme:nth-child(n+5) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .word-card {
+    padding: 0.75rem;
+    min-height: 380px;
+    gap: 0.5rem;
+  }
+
+  .main-word {
+    min-height: 60px;
+    padding-bottom: 0.5rem;
+  }
+
+  .main-word h3 {
+    font-size: 1.4rem;
+  }
+
+  .rhyme-section {
+    min-height: 110px;
+    padding: 0.5rem;
+  }
+
+  .rhyme-list {
+    min-height: 60px;
+  }
+
+  .rhyme {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
   }
 } 

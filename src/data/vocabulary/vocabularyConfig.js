@@ -31,7 +31,7 @@ const vocabularyConfigs = {
   fi: [
     {
       id: 'fi_generic_rap',
-      name: 'RAP - sanasto',
+      name: 'RAP',
       description: 'Yleissanasto räppäämiseen',
       difficulty: 'medium',
       icon: '🎤',

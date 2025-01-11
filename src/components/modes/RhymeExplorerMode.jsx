@@ -21,6 +21,7 @@
  * - isPlaying: Beat playback state
  * - onPlayPause: Beat control callback
  * - isLoading: Loading state indicator
+ * - selectedVocabulary: Name of the vocabulary
  */
 
 import React, { useState, useEffect } from 'react';
@@ -29,6 +30,7 @@ import './RhymeExplorerMode.css';
 import { useTranslation } from '../../services/TranslationContext';
 import { useDebug } from '../../services/DebugContext';
 import { trainingModes } from '../../data/trainingModes';
+import { getVocabularies } from '../../data/vocabulary/vocabularyConfig';
 
 const RhymeExplorerMode = ({ 
   shuffledWords,
@@ -38,11 +40,14 @@ const RhymeExplorerMode = ({
   helperText,
   isPlaying,
   onPlayPause,
-  isLoading
+  isLoading,
+  selectedVocabulary
 }) => {
   const { language } = useTranslation();
   const { isDebugMode } = useDebug();
   const translations = trainingModes.find(mode => mode.id === 'rhyme-explorer').translations[language];
+  const vocabularies = getVocabularies(language);
+  const selectedVocabInfo = vocabularies.find(vocab => vocab.id === selectedVocabulary);
   const currentWord = shuffledWords[wordCounter];
   const [targetWordIndex, setTargetWordIndex] = useState(wordCounter);
 
@@ -111,7 +116,6 @@ const RhymeExplorerMode = ({
     }
   };
 
-  // Get the word to display based on targetWordIndex
   const displayWord = shuffledWords[targetWordIndex];
 
   return (
@@ -128,57 +132,63 @@ const RhymeExplorerMode = ({
           {displayWord && (
             <div className="word-card">
               <div className="main-word">
-                <h3>{displayWord.word.toUpperCase()}</h3>
-                <span className="group-label">{displayWord.group}</span>
+                <h3 key={displayWord.word}>{displayWord.word.toUpperCase()}</h3>
+                <span className="group-label" key={displayWord.group}>{displayWord.group}</span>
               </div>
 
-              {displayWord.themed_rhymes && displayWord.themed_rhymes.length > 0 && (
-                <div className="rhyme-section themed-rhymes">
-                  <h4>{translations.themedRhymes}</h4>
-                  <div className="rhyme-list">
-                    {/* Direct rhymes first */}
-                    {displayWord.themed_rhymes
-                      .filter(rhyme => !rhyme.isSlant)
-                      .map((rhyme, index) => (
-                        <span key={`direct-${index}`} className="rhyme">
-                          {rhyme.word}
-                        </span>
-                    ))}
-                    {/* Then slant rhymes */}
-                    {displayWord.themed_rhymes
-                      .filter(rhyme => rhyme.isSlant)
-                      .map((rhyme, index) => (
-                        <span key={`slant-${index}`} className="rhyme slant-rhyme">
-                          {rhyme.word}
-                        </span>
-                    ))}
-                  </div>
+              <div className="rhyme-section themed-rhymes">
+                <h4>
+                  {selectedVocabInfo && `${selectedVocabInfo.name} `}{translations.themedRhymes}
+                </h4>
+                <div className="rhyme-list" data-empty-text={translations.noRhymesFound}>
+                  {displayWord.themed_rhymes && displayWord.themed_rhymes.length > 0 && (
+                    <>
+                      {/* Direct rhymes first */}
+                      {displayWord.themed_rhymes
+                        .filter(rhyme => !rhyme.isSlant)
+                        .map((rhyme, index) => (
+                          <span key={`themed-direct-${displayWord.word}-${rhyme.word}-${index}`} className="rhyme">
+                            {rhyme.word}
+                          </span>
+                      ))}
+                      {/* Then slant rhymes */}
+                      {displayWord.themed_rhymes
+                        .filter(rhyme => rhyme.isSlant)
+                        .map((rhyme, index) => (
+                          <span key={`themed-slant-${displayWord.word}-${rhyme.word}-${index}`} className="rhyme slant-rhyme">
+                            {rhyme.word}
+                          </span>
+                      ))}
+                    </>
+                  )}
                 </div>
-              )}
+              </div>
 
-              {displayWord.rhymes && displayWord.rhymes.length > 0 && (
-                <div className="rhyme-section other-rhymes">
-                  <h4>{translations.otherRhymes}</h4>
-                  <div className="rhyme-list">
-                    {/* Direct rhymes first */}
-                    {displayWord.rhymes
-                      .filter(rhyme => !rhyme.isSlant)
-                      .map((rhyme, index) => (
-                        <span key={`direct-${index}`} className="rhyme">
-                          {rhyme.word}
-                        </span>
-                    ))}
-                    {/* Then slant rhymes */}
-                    {displayWord.rhymes
-                      .filter(rhyme => rhyme.isSlant)
-                      .map((rhyme, index) => (
-                        <span key={`slant-${index}`} className="rhyme slant-rhyme">
-                          {rhyme.word}
-                        </span>
-                    ))}
-                  </div>
+              <div className="rhyme-section other-rhymes">
+                <h4>{translations.otherRhymes}</h4>
+                <div className="rhyme-list" data-empty-text={translations.noRhymesFound}>
+                  {displayWord.rhymes && displayWord.rhymes.length > 0 && (
+                    <>
+                      {/* Direct rhymes first */}
+                      {displayWord.rhymes
+                        .filter(rhyme => !rhyme.isSlant)
+                        .map((rhyme, index) => (
+                          <span key={`other-direct-${displayWord.word}-${rhyme.word}-${index}`} className="rhyme">
+                            {rhyme.word}
+                          </span>
+                      ))}
+                      {/* Then slant rhymes */}
+                      {displayWord.rhymes
+                        .filter(rhyme => rhyme.isSlant)
+                        .map((rhyme, index) => (
+                          <span key={`other-slant-${displayWord.word}-${rhyme.word}-${index}`} className="rhyme slant-rhyme">
+                            {rhyme.word}
+                          </span>
+                      ))}
+                    </>
+                  )}
                 </div>
-              )}
+              </div>
 
               <div className="navigation-buttons">
                 <button className="nav-button prev-button" onClick={handlePreviousWord}>

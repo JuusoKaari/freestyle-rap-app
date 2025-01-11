@@ -113,6 +113,7 @@
   transition: all 0.2s ease;
   white-space: nowrap;
   flex-shrink: 0;
+  min-width: 120px;
 }
 
 .change-beat-button:hover {
@@ -206,7 +207,7 @@
   .controls-group {
     flex-basis: 100%;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: right;
     gap: 0.75rem;
   }
 } 

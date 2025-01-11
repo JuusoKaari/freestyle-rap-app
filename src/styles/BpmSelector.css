@@ -11,7 +11,7 @@
   background-color: #fff;
   font-size: 1rem;
   cursor: pointer;
-  min-width: 100px;
+  min-width: 120px;
 }
 
 .bpm-selector select:disabled {

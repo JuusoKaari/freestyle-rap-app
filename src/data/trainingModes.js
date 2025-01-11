@@ -32,19 +32,21 @@ export const trainingModes = [
         name: 'Single Rhymes',
         description: 'Browse through words and their rhyming pairs to expand your vocabulary',
         helperText: 'Click NEXT to see the next word and its rhyming pairs.\n If you press START, beat will play and words will change automatically.',
-        themedRhymes: 'Themed Rhymes',
+        themedRhymes: '-themed Rhymes',
         otherRhymes: 'Other Rhymes',
         prevButton: 'PREV',
-        nextButton: 'NEXT'
+        nextButton: 'NEXT',
+        noRhymesFound: 'No rhymes found'
       },
       fi: {
         name: 'Yksittäiset Riimit',
         description: 'Selaa sanoja ja niiden riimejä laajentaaksesi sanavarastoasi',
         helperText: 'Klikkaa SEURAAVA nähdäksesi seuraavan sanan ja sen riimit. Kun painat START, biitti alkaa soida ja sanat vaihtuu automaattisesti.',
-        themedRhymes: 'Teeman Riimit',
+        themedRhymes: '-teeman Riimit',
         otherRhymes: 'Muut Riimit',
         prevButton: 'EDELLINEN',
-        nextButton: 'SEURAAVA'
+        nextButton: 'SEURAAVA',
+        noRhymesFound: 'Ei riimejä'
       }
     }
   },

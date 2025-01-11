@@ -261,6 +261,7 @@ function App() {
             isRecordingEnabled={isRecordingEnabled}
             onRecordingToggle={handleRecordingToggle}
             isDebugMode={isDebugMode}
+            selectedVocabulary={selectedVocabulary}
           />
         </>
       )}

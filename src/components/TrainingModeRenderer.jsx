@@ -36,7 +36,8 @@ const TrainingModeRenderer = ({
   onBarsPerRoundChange,
   isRecordingEnabled,
   onRecordingToggle,
-  isDebugMode
+  isDebugMode,
+  selectedVocabulary
 }) => {
   const { language } = useTranslation();
   const currentMode = trainingModes.find(mode => mode.id === selectedMode);
@@ -78,6 +79,7 @@ const TrainingModeRenderer = ({
           {...commonProps}
           shuffledWords={shuffledWords}
           wordCounter={wordCounter}
+          selectedVocabulary={selectedVocabulary}
         />
       );
     case 'find-rhymes':
