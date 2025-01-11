@@ -5,7 +5,7 @@ import { version } from './package.json';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/freestyle-rap-app/',
+  base: '/',
   assetsInclude: ['**/*.json'],
   define: {
     'process.env.APP_VERSION': JSON.stringify(version)

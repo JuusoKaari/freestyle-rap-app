@@ -118,7 +118,7 @@ export const trainingModes = [
         backButton: 'BACK'
       },
       fi: {
-        name: 'Riimi Kartta',
+        name: 'Riimikartta',
         description: 'Visuaalinen ruudukko suomen kielen vokaalikaavoja',
         helperText: 'Klikkaa vokaalikaavaa nähdäksesi kaikki sanat jotka noudattavat sitä kaavaa.\nKaavat on järjestetty vokaalirakenteen mukaan (esim. "AA-AA", "AA-EE").',
         patternTitle: 'Vokaalikaava',
