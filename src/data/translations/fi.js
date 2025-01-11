@@ -1,6 +1,6 @@
 export const fi = {
   app: {
-    title: "FREESTYLE RÄP-ÄPP",
+    title: "RHEEMY",
     tagline: "sun freestyle räp koutsi",
     browser_warning: {
       title: "Selain ei ole tuettu",

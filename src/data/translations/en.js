@@ -1,6 +1,6 @@
 export const en = {
   app: {
-    title: "Freestyle Rap Trainer",
+    title: "RHEEMY",
     tagline: "your freestyle rap coach",
     browser_warning: {
       title: "Browser Not Supported",
