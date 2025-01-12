@@ -62,7 +62,13 @@ const TwoBarMode = ({
   // Update selected rhyme when target word changes
   useEffect(() => {
     const currentWord = shuffledWords[wordCounter];
-    const rhymeHints = currentWord?.rhymes?.filter(rhyme => !rhyme.isSlant) || [];
+    // First try to get perfect rhymes
+    const perfectRhymes = currentWord?.rhymes?.filter(rhyme => !rhyme.isSlant) || [];
+    // If no perfect rhymes, fall back to slant rhymes
+    const rhymeHints = perfectRhymes.length > 0 
+      ? perfectRhymes 
+      : (currentWord?.rhymes || []);
+    
     if (rhymeHints.length > 0) {
       const randomIndex = Math.floor(Math.random() * rhymeHints.length);
       setSelectedRhyme(rhymeHints[randomIndex]);

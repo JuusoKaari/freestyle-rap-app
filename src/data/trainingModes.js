@@ -82,7 +82,7 @@ export const trainingModes = [
         name: '2-tahdin Setup & Punchline',
         description: 'Harjoitus yhdellä setup-riimillä ja satunnaisella kohdesanalla',
         helperText: 'Keksi kohdesanaan sopiva riimi, räppää se ja siirry punchlinen pariin!',
-        showHints: 'Näytä Riimien Vihjeet'
+        showHints: 'Näytä riimien vihjeet'
       }
     }
   },
@@ -101,7 +101,7 @@ export const trainingModes = [
         name: '4-tahdin Setup & Punchline',
         description: 'Harjoitus kolmella setup-riimillä ja satunnaisella kohdesanalla',
         helperText: 'Keksi kohdesanaan sopivat 3 riimiä, räppää ne ja finalisoi homma punchline riimillä!',
-        showHints: 'Näytä Riimien Vihjeet'
+        showHints: 'Näytä riimien vihjeet'
       }
     }
   },
