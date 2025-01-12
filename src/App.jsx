@@ -253,7 +253,7 @@ function AppContent() {
       )}
 
       <img 
-        src="/freestyle-rap-app/rheemy_logo_01_470px_ALPHA.png" 
+        src="/rheemy_logo_01_470px_ALPHA.png" 
         alt="Rheemy" 
         className="app-logo"
       />
