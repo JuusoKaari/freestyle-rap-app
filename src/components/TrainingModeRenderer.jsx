@@ -40,9 +40,13 @@ const TrainingModeRenderer = ({
   selectedVocabulary
 }) => {
   const { language } = useTranslation();
+  console.log('TrainingModeRenderer:', { selectedMode, currentMode: trainingModes.find(mode => mode.id === selectedMode) });
   const currentMode = trainingModes.find(mode => mode.id === selectedMode);
   
-  if (!currentMode) return null;
+  if (!currentMode) {
+    console.log('No current mode found for:', selectedMode);
+    return null;
+  }
 
   const commonProps = {
     onReturnToMenu,

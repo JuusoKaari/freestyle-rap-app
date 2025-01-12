@@ -33,8 +33,13 @@ import { useAudioController } from './hooks/useAudioController'
 import { useRecordingController } from './hooks/useRecordingController'
 import RecordToggle from './components/RecordToggle'
 import RecordingsModal from './components/RecordingsModal'
+import { HashRouter as Router, Routes, Route, useNavigate, useMatch, useLocation } from 'react-router-dom'
 
-function App() {
+function AppContent() {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const match = useMatch('/mode/:modeId');
+  const currentModeId = match?.params?.modeId;
   const { translate, language } = useTranslation();
   const { isDebugMode, SecretTapArea } = useDebug();
   const {
@@ -74,6 +79,38 @@ function App() {
     document.title = translate('app.title');
   }, [translate]);
 
+  // Handle direct URL access to modes
+  useEffect(() => {
+    const initializeMode = async () => {
+      if (currentModeId && !isTraining) {
+        console.log('Initializing mode from URL:', currentModeId);
+        setSelectedMode(currentModeId);
+        setIsTraining(true);
+        
+        // Initialize audio without starting playback
+        try {
+          await handleBeatSelect(selectedBeatId); // This will initialize audio and load the beat
+        } catch (error) {
+          console.error('Failed to initialize audio:', error);
+        }
+        
+        if (currentModeId !== 'rhyme-map') {
+          const words = await generateWordList({ 
+            minWordsInGroup: 1,
+            vocabulary: selectedVocabulary,
+            includeRhymes: true
+          });
+          if (words.length > 0) {
+            setShuffledWords(words);
+            setWordCounter(0);
+          }
+        }
+      }
+    };
+
+    initializeMode();
+  }, [currentModeId, selectedVocabulary, isTraining]);
+
   // Load initial words when vocabulary changes
   useEffect(() => {
     generateWordList({ 
@@ -88,6 +125,7 @@ function App() {
 
   // Handle mode selection
   const handleModeSelect = async (modeId) => {
+    navigate(`/mode/${modeId}`);
     stopPlayback();
     setSelectedMode(modeId);
 
@@ -100,7 +138,7 @@ function App() {
     const words = await generateWordList({ 
       minWordsInGroup: 1,
       vocabulary: selectedVocabulary,
-      includeRhymes: true // Always include rhymes for all modes
+      includeRhymes: true
     });
     if (words.length > 0) {
       setShuffledWords(words);
@@ -111,6 +149,7 @@ function App() {
 
   // Handle return to menu
   const handleReturnToMenu = () => {
+    navigate('/');
     stopPlayback();
     setIsTraining(false);
     setSelectedMode(null);
@@ -178,6 +217,14 @@ function App() {
     );
   };
 
+  // Reset isTraining state based on current route
+  useEffect(() => {
+    if (location.pathname === '/') {
+      setIsTraining(false);
+      setSelectedMode(null);
+    }
+  }, [location]);
+
   return (
     <div className={`app ${isDebugMode ? 'debug-mode' : ''}`}>
       <div className="version-number">v{process.env.APP_VERSION || ''}</div>
@@ -205,73 +252,99 @@ function App() {
         </div>
       )}
 
-      {!isTraining && <LanguageToggle />}
       <img 
-        src="/rheemy_logo_01_470px_ALPHA.png" 
+        src="/freestyle-rap-app/rheemy_logo_01_470px_ALPHA.png" 
         alt="Rheemy" 
         className="app-logo"
       />
       {!isTraining && <div className="app-tagline">{translate('app.tagline')}</div>}
 
-      {!isTraining ? (
-        <div className="setup-container">
-          <div className="controls">
-            <BeatSelector
-              selectedBeatId={selectedBeatId}
-              onBeatSelect={handleBeatSelect}
-              isPlaying={isPlaying}
-              onPlayPause={wrappedHandlePlayPause}
-              isLoading={isLoading}
-              currentBpm={bpm}
-              onBpmChange={handleBpmChange}
-            />
-            <VocabularySelector
-              selectedVocabulary={selectedVocabulary}
-              onVocabularySelect={setSelectedVocabulary}
-            />
-          </div>
-          <ModeSelector onSelectMode={handleModeSelect} />
-        </div>
-      ) : (
-        <>
-          <div className="training-header">
-            <CompactBeatSelector
-              selectedBeatId={selectedBeatId}
-              onBeatSelect={handleBeatSelect}
-              isPlaying={isPlaying}
-              onPlayPause={wrappedHandlePlayPause}
-              isLoading={isLoading}
-              currentBpm={bpm}
-              onBpmChange={handleBpmChange}
-            />
-          </div>
-          <TrainingModeRenderer
-            selectedMode={selectedMode}
-            onReturnToMenu={handleReturnToMenu}
-            isPlaying={isPlaying}
-            onPlayPause={wrappedHandlePlayPause}
-            isLoading={isLoading}
-            bpm={bpm}
-            currentBar={currentBar}
-            currentBeat={currentBeat}
-            isWordChanging={isWordChanging}
-            shuffledWords={shuffledWords}
-            wordCounter={wordCounter}
-            onBarsPerRoundChange={handleBarsPerRoundChange}
-            isRecordingEnabled={isRecordingEnabled}
-            onRecordingToggle={handleRecordingToggle}
-            isDebugMode={isDebugMode}
-            selectedVocabulary={selectedVocabulary}
-          />
-        </>
-      )}
+      <Routes>
+        <Route path="/" element={
+          <>
+            {!isTraining && <LanguageToggle />}
+            <div className="setup-container">
+              <div className="controls">
+                <BeatSelector
+                  selectedBeatId={selectedBeatId}
+                  onBeatSelect={handleBeatSelect}
+                  isPlaying={isPlaying}
+                  onPlayPause={wrappedHandlePlayPause}
+                  isLoading={isLoading}
+                  currentBpm={bpm}
+                  onBpmChange={handleBpmChange}
+                />
+                <VocabularySelector
+                  selectedVocabulary={selectedVocabulary}
+                  onVocabularySelect={setSelectedVocabulary}
+                />
+              </div>
+              <ModeSelector onSelectMode={handleModeSelect} />
+            </div>
+          </>
+        } />
+        <Route path="/mode/:modeId" element={
+          <>
+            {console.log('Mode route render:', { 
+              currentModeId,
+              isTraining, 
+              selectedMode, 
+              wordsCount: shuffledWords.length,
+              cause: isTraining ? 'training mode active' : 'initial/transition',
+              isLoading,
+              isPlaying
+            })}
+            <div className="training-header">
+              <CompactBeatSelector
+                selectedBeatId={selectedBeatId}
+                onBeatSelect={handleBeatSelect}
+                isPlaying={isPlaying}
+                onPlayPause={wrappedHandlePlayPause}
+                isLoading={isLoading}
+                currentBpm={bpm}
+                onBpmChange={handleBpmChange}
+              />
+            </div>
+            {currentModeId && (
+              <TrainingModeRenderer
+                selectedMode={selectedMode || currentModeId}
+                onReturnToMenu={handleReturnToMenu}
+                currentBeat={currentBeat}
+                currentBar={currentBar}
+                isPlaying={isPlaying}
+                onPlayPause={wrappedHandlePlayPause}
+                isLoading={isLoading}
+                bpm={bpm}
+                isWordChanging={isWordChanging}
+                shuffledWords={shuffledWords}
+                wordCounter={wordCounter}
+                barsPerRound={barsPerRound}
+                onBarsPerRoundChange={handleBarsPerRoundChange}
+                isRecordingEnabled={isRecordingEnabled}
+                onRecordingToggle={handleRecordingToggle}
+                isDebugMode={isDebugMode}
+                selectedVocabulary={selectedVocabulary}
+              />
+            )}
+          </>
+        } />
+      </Routes>
 
-      <RecordingsModal
-        isOpen={isRecordingsModalOpen}
-        onClose={() => setIsRecordingsModalOpen(false)}
-        recordings={recordings}
-      />
+      {isRecordingsModalOpen && (
+        <RecordingsModal
+          recordings={recordings}
+          onClose={() => setIsRecordingsModalOpen(false)}
+        />
+      )}
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <AppContent />
+    </Router>
   );
 }
 

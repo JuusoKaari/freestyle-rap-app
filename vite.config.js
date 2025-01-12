@@ -5,9 +5,12 @@ import { version } from './package.json';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/',
-  assetsInclude: ['**/*.json'],
+  base: '/freestyle-rap-app/',
+  assetsInclude: ['**/*.json', '**/*.webmanifest'],
   define: {
     'process.env.APP_VERSION': JSON.stringify(version)
+  },
+  server: {
+    historyApiFallback: true
   }
 });
