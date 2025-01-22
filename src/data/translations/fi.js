@@ -18,6 +18,9 @@ export const fi = {
     select: "Valitse",
     close: "×",
     play: "Toista",
+    processing: "Käsitellään...",
+    edit: "Muokkaa",
+    delete: "Poista"
   },
   recording: {
     start: "Aloita nauhoitus",
@@ -46,7 +49,20 @@ export const fi = {
     },
     modal: {
       title: "Valitse sanasto",
-      word_count: "{{count}} sanaa"
+      word_count: "{{count}} sanaa",
+      create_custom: "Luo oma sanasto",
+      confirm_delete: "Haluatko varmasti poistaa tämän sanaston?",
+      delete_error: "Virhe sanaston poistamisessa. Yritä uudelleen."
+    },
+    editor: {
+      title_create: "Luo oma sanasto",
+      title_edit: "Muokkaa sanastoa",
+      name_label: "Sanaston nimi",
+      name_placeholder: "Anna sanastolle nimi",
+      instructions: "Kirjoita sanat (yksi per rivi)",
+      placeholder: "Kirjoita sanat tähän...\nEsimerkki:\nkissa\nkoira\ntalo",
+      no_words: "Syötä vähintään yksi sana",
+      error: "Virhe sanalistan käsittelyssä. Tarkista syöte ja yritä uudelleen."
     }
   },
   training: {

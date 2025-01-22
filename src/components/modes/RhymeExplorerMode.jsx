@@ -132,8 +132,8 @@ const RhymeExplorerMode = ({
           {displayWord && (
             <div className="word-card">
               <div className="main-word">
-                <h3 key={displayWord.word}>{displayWord.word.toUpperCase()}</h3>
-                <span className="group-label" key={displayWord.group}>{displayWord.group}</span>
+                <h3 key={`main-${displayWord.word}-${targetWordIndex}`}>{displayWord.word.toUpperCase()}</h3>
+                <span className="group-label" key={`group-${displayWord.group}-${targetWordIndex}`}>{displayWord.group}</span>
               </div>
 
               <div className="rhyme-section themed-rhymes">
@@ -147,7 +147,10 @@ const RhymeExplorerMode = ({
                       {displayWord.themed_rhymes
                         .filter(rhyme => !rhyme.isSlant)
                         .map((rhyme, index) => (
-                          <span key={`themed-direct-${displayWord.word}-${rhyme.word}-${index}`} className="rhyme">
+                          <span 
+                            key={`themed-direct-${targetWordIndex}-${rhyme.word}-${index}`} 
+                            className="rhyme"
+                          >
                             {rhyme.word}
                           </span>
                       ))}
@@ -155,7 +158,10 @@ const RhymeExplorerMode = ({
                       {displayWord.themed_rhymes
                         .filter(rhyme => rhyme.isSlant)
                         .map((rhyme, index) => (
-                          <span key={`themed-slant-${displayWord.word}-${rhyme.word}-${index}`} className="rhyme slant-rhyme">
+                          <span 
+                            key={`themed-slant-${targetWordIndex}-${rhyme.word}-${index}`} 
+                            className="rhyme slant-rhyme"
+                          >
                             {rhyme.word}
                           </span>
                       ))}
@@ -173,7 +179,10 @@ const RhymeExplorerMode = ({
                       {displayWord.rhymes
                         .filter(rhyme => !rhyme.isSlant)
                         .map((rhyme, index) => (
-                          <span key={`other-direct-${displayWord.word}-${rhyme.word}-${index}`} className="rhyme">
+                          <span 
+                            key={`other-direct-${targetWordIndex}-${rhyme.word}-${index}`} 
+                            className="rhyme"
+                          >
                             {rhyme.word}
                           </span>
                       ))}
@@ -181,7 +190,10 @@ const RhymeExplorerMode = ({
                       {displayWord.rhymes
                         .filter(rhyme => rhyme.isSlant)
                         .map((rhyme, index) => (
-                          <span key={`other-slant-${displayWord.word}-${rhyme.word}-${index}`} className="rhyme slant-rhyme">
+                          <span 
+                            key={`other-slant-${targetWordIndex}-${rhyme.word}-${index}`} 
+                            className="rhyme slant-rhyme"
+                          >
                             {rhyme.word}
                           </span>
                       ))}

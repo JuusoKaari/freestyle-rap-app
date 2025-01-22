@@ -1,0 +1,78 @@
+.custom-vocabulary-editor {
+  max-width: 600px !important;
+}
+
+.editor-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.name-input-container,
+.word-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.name-input-container label,
+.word-list-container label {
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.name-input-container input {
+  padding: 8px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 14px;
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+.word-list-container textarea {
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 14px;
+  resize: vertical;
+  min-height: 200px;
+  background: var(--background-color);
+  color: var(--text-color);
+  font-family: monospace;
+}
+
+.editor-controls {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+
+.save-button {
+  padding: 8px 16px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.save-button:hover:not(:disabled) {
+  background-color: var(--primary-color-dark);
+}
+
+.save-button:disabled {
+  background-color: var(--disabled-color);
+  cursor: not-allowed;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .name-input-container input,
+  .word-list-container textarea {
+    border-color: var(--border-color-dark);
+  }
+} 

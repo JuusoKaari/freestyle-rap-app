@@ -160,22 +160,8 @@ function AppContent() {
     if (nextBar === 0 && lastProcessedBarRef.current !== 0) {
       lastProcessedBarRef.current = 0;
       setIsWordChanging(true);
-      if (wordCounter >= shuffledWords.length - 2) {
-        // Load new words
-        generateWordList({ 
-          count: 100, 
-          minWordsInGroup: 3,
-          vocabulary: selectedVocabulary 
-        }).then(words => {
-          if (words.length > 0) {
-            setShuffledWords(words);
-            setWordCounter(0);
-          }
-        });
-      } else {
-        console.log(`Word change at ${new Date().toISOString()}`);
-        setWordCounter(prev => prev + 1);
-      }
+      // Use modulo to loop through the word list
+      setWordCounter(prev => (prev + 1) % shuffledWords.length);
       setTimeout(() => {
         setIsWordChanging(false);
       }, 450);

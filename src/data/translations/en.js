@@ -18,6 +18,9 @@ export const en = {
     select: "Select",
     close: "×",
     play: "Play",
+    processing: "Processing...",
+    edit: "Edit",
+    delete: "Delete"
   },
   recording: {
     start: "Start Recording",
@@ -46,7 +49,20 @@ export const en = {
     },
     modal: {
       title: "Select Vocabulary",
-      word_count: "{{count}} words"
+      word_count: "{{count}} words",
+      create_custom: "Create Custom Vocabulary",
+      confirm_delete: "Are you sure you want to delete this vocabulary?",
+      delete_error: "Error deleting vocabulary. Please try again."
+    },
+    editor: {
+      title_create: "Create Custom Vocabulary",
+      title_edit: "Edit Custom Vocabulary",
+      name_label: "Vocabulary Name",
+      name_placeholder: "Enter a name for your vocabulary",
+      instructions: "Enter your words (one per line)",
+      placeholder: "Enter your words here...\nExample:\nkissa\nkoira\ntalo",
+      no_words: "Please enter at least one word",
+      error: "Error processing word list. Please check your input and try again."
     }
   },
   training: {

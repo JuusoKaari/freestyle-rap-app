@@ -19,17 +19,7 @@
  * - Meet minimum group size requirements for training modes
  */
 
-// Import vocabularies
-import FI_genericVocab from '../data/vocabulary/FI_generic_rap.js';
-import FI_animalVocab from '../data/vocabulary/FI_elaimet.js';
-import EN_genericVocab from '../data/vocabulary/EN_generic_rap.js';
-import EN_animalVocab from '../data/vocabulary/EN_animals.js';
-import EN_fullDict from '../data/vocabulary/EN__full_dict.js';
-import FI_fullDict from '../data/vocabulary/FI__full_dict.js';
-import FI_tiedeVocab from '../data/vocabulary/FI_tiede.js';
-import FI_ostoslistaVocab from '../data/vocabulary/FI_ostoslista.js';
-import FI_autotVocab from '../data/vocabulary/FI_autot.js';
-import FI_numerotVocab from '../data/vocabulary/FI_numerot.js';
+import { getVocabularyData } from '../data/vocabulary/vocabularyConfig';
 
 // Helper function to count total words in a vowel group
 const getGroupWordCount = (group, words) => {
@@ -38,33 +28,31 @@ const getGroupWordCount = (group, words) => {
 
 // Function to get vocabulary based on selection
 const getVocabulary = (vocabulary) => {
-  switch (vocabulary) {
-    case 'fi_generic_rap':
-      return FI_genericVocab;
-    case 'fi_elaimet':
-      return FI_animalVocab;
-    case 'fi_tiede':
-      return FI_tiedeVocab;
-    case 'fi_ostoslista':
-      return FI_ostoslistaVocab;
-    case 'fi_autot':
-      return FI_autotVocab;
-    case 'fi_numerot':
-      return FI_numerotVocab;
-    case 'en_generic_rap':
-      return EN_genericVocab;
-    case 'en_animals':
-      return EN_animalVocab;
-    default:
-      console.warn('Unknown vocabulary:', vocabulary);
-      return FI_genericVocab;
+  const vocabData = getVocabularyData(vocabulary);
+  if (!vocabData) {
+    console.warn('Unknown vocabulary:', vocabulary);
+    return getVocabularyData('fi_generic_rap');
   }
+  
+  // Convert the new vocabulary format to the old format
+  if (Array.isArray(vocabData)) {
+    // New format (custom vocabularies)
+    const result = {};
+    vocabData.forEach(({ pattern, words }) => {
+      const patternKey = pattern.join('-');
+      result[patternKey] = words.map(w => w.word);
+    });
+    return result;
+  }
+  
+  // Old format (built-in vocabularies)
+  return vocabData;
 };
 
 // Function to get the full dictionary based on language
 const getFullDictionary = (vocabulary) => {
   const isEnglish = vocabulary.startsWith('en_');
-  return isEnglish ? EN_fullDict : FI_fullDict;
+  return getVocabularyData(isEnglish ? 'en_full_dict' : 'fi_full_dict');
 };
 
 // Function to find slant rhymes by looking at groups with matching end patterns
@@ -213,7 +201,7 @@ const spreadOutWords = (words) => {
 // Function to get a list of words from a vocabulary
 export const generateWordList = async (options = {}) => {
   const {
-    minWordsInGroup = 3,
+    minWordsInGroup = 1,
     vocabulary = 'fi_generic_rap',
     includeRhymes = false,
     rhymesPerWord = 5,
