@@ -11,7 +11,7 @@
  * - Handling mode-specific prop requirements
  */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import TwoBarMode from './modes/TwoBarMode';
 import FourBarMode from './modes/FourBarMode';
 import RhymeExplorerMode from './modes/RhymeExplorerMode';
@@ -20,6 +20,8 @@ import RhymeMapMode from './modes/RhymeMapMode';
 import SlotMachineMode from './modes/SlotMachineMode';
 import { trainingModes } from '../data/trainingModes';
 import { useTranslation } from '../services/TranslationContext';
+import { trackTrainingStart } from '../services/AnalyticsService';
+import { getVocabularies } from '../data/vocabulary/vocabularyConfig';
 
 const TrainingModeRenderer = ({
   selectedMode,
@@ -43,6 +45,17 @@ const TrainingModeRenderer = ({
   console.log('TrainingModeRenderer:', { selectedMode, currentMode: trainingModes.find(mode => mode.id === selectedMode) });
   const currentMode = trainingModes.find(mode => mode.id === selectedMode);
   
+  // Track when training mode starts
+  useEffect(() => {
+    if (isPlaying && selectedMode && selectedVocabulary) {
+      const vocabularies = getVocabularies(language);
+      const selectedVocabInfo = vocabularies.find(vocab => vocab.id === selectedVocabulary);
+      if (selectedVocabInfo) {
+        trackTrainingStart(selectedMode, selectedVocabInfo.name);
+      }
+    }
+  }, [isPlaying, selectedMode, selectedVocabulary, language]);
+
   if (!currentMode) {
     console.log('No current mode found for:', selectedMode);
     return null;

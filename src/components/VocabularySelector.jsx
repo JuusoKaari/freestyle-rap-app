@@ -3,6 +3,7 @@ import { getVocabularies } from '../data/vocabulary/vocabularyConfig';
 import { useTranslation } from '../services/TranslationContext';
 import VocabularySelectModal from './VocabularySelectModal';
 import { FaDice } from 'react-icons/fa';
+import { trackVocabularySelection } from '../services/AnalyticsService';
 import '../styles/VocabularySelector.css';
 
 const VocabularySelector = ({ selectedVocabulary, onVocabularySelect }) => {
@@ -18,11 +19,15 @@ const VocabularySelector = ({ selectedVocabulary, onVocabularySelect }) => {
   useEffect(() => {
     if (!selectedVocabInfo && vocabularies.length > 0) {
       const defaultVocab = vocabularies[0];
-      onVocabularySelect(defaultVocab.id);
+      handleVocabularySelect(defaultVocab.id);
     }
-  }, [language, selectedVocabInfo, vocabularies, onVocabularySelect]);
+  }, [language, selectedVocabInfo, vocabularies]);
 
   const handleVocabularySelect = (vocabId) => {
+    const selectedVocab = vocabularies.find(vocab => vocab.id === vocabId);
+    if (selectedVocab) {
+      trackVocabularySelection(selectedVocab.name);
+    }
     onVocabularySelect(vocabId);
     setIsModalOpen(false);
   };
@@ -31,7 +36,9 @@ const VocabularySelector = ({ selectedVocabulary, onVocabularySelect }) => {
     const availableVocabs = vocabularies.filter(vocab => vocab.id !== selectedVocabulary);
     if (availableVocabs.length > 0) {
       const randomIndex = Math.floor(Math.random() * availableVocabs.length);
-      onVocabularySelect(availableVocabs[randomIndex].id);
+      const randomVocab = availableVocabs[randomIndex];
+      trackVocabularySelection(randomVocab.name);
+      onVocabularySelect(randomVocab.id);
     }
   };
 

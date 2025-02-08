@@ -2,7 +2,7 @@
 
 A React-based application for practicing freestyle rap in Finnish and English. The app helps users improve their rap and rhyming skills through various interactive training modes.
 
-🎤 **[Try it out here!](https://juusokaari.github.io/freestyle-rap-app/)** 🎵
+🎤 **[Try it out here!](https://rheemy.com)** 🎵
 
 ## Features
 
