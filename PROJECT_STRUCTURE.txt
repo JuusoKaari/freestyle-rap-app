@@ -90,6 +90,12 @@ Directory Structure:
       - FI__full_dict.js       : Complete Finnish dictionary
       - EN__full_dict.js       : Complete English dictionary
     
+    /vocabulary_audio_metadata/  : Generated metadata for word audio files
+      - FI_generic_rap_audio_metadata.js  : Audio URLs for Finnish rap vocabulary
+      - EN_generic_rap_audio_metadata.js  : Audio URLs for English rap vocabulary
+      - FI_elaimet_audio_metadata.js      : Audio URLs for Finnish animal vocabulary
+      // ... other vocabulary audio metadata files
+    
     /beat_metadata/
       - index.js              : Beat metadata exports and configuration
       - going_strong.js       : Going Strong beat metadata and variations
@@ -111,6 +117,21 @@ Directory Structure:
     - rhyme_generator-FI.py   : Finnish rhyme generation script
     - combine_vocabulary.py   : Script for combining vocabulary sets
     - process_rhymes-FI.bat   : Batch processing for Finnish rhymes
+
+  /words_tts/             : Word audio generation and management
+    /__generated_audio/   : Generated MP3 files for words
+      /FI_elaimet/       : Audio files for Finnish animal vocabulary
+      /EN_animals/       : Audio files for English animal vocabulary
+      // ... other vocabulary-specific folders
+    
+    /__audio_status/     : Status tracking for audio generation and uploads
+      - FI_elaimet.json  : Status for Finnish animal vocabulary
+      - EN_animals.json  : Status for English animal vocabulary
+      // ... other vocabulary status files
+    
+    - generate_word_audio_speechgen.py  : Script for generating word audio using SpeechGen API
+    - upload_word_audio.py              : Script for uploading word audio to Cloudinary
+    - generate_metadata.py              : Script for generating app metadata from status files
 
 Key Features:
 ------------
@@ -155,7 +176,20 @@ Key Features:
    - FFmpeg-based audio processing
    - Cloudinary integration for hosting 
 
-7. Development Features:
+7. Word Audio System:
+   - Text-to-speech generation for vocabulary words
+   - Language-specific voice selection (Harri for Finnish, Hunter for English)
+   - Three-step process:
+     1. Generate audio files using SpeechGen API
+     2. Upload files to Cloudinary
+     3. Generate app metadata
+   - Status tracking for generation and uploads
+   - Vocabulary-specific organization
+   - Command-line and interactive interfaces
+   - SSML support for better audio quality
+   - Automatic phonetic version handling
+
+8. Development Features:
    - Debug mode for testing and development
    - Centralized rhythm management through RhythmService
    - Shared styling through BaseTrainingMode.css
