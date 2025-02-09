@@ -41,7 +41,11 @@ const SlotMachine = ({
   onPlayPause,
   isLoading,
   onBarsPerRoundChange = () => {},
-  isDebugMode = false
+  isDebugMode = false,
+  currentBeat,
+  currentBar,
+  setWordCounter,
+  setIsWordChanging
 }) => {
   const { language } = useTranslation();
   const translations = trainingModes.find(mode => mode.id === 'slot-machine').translations[language];
@@ -56,6 +60,15 @@ const SlotMachine = ({
     setBarsPerRound(value);
     onBarsPerRoundChange(value);
   };
+
+  // Handle word changes based on bar position and barsPerRound setting
+  useEffect(() => {
+    if (isPlaying && currentBar % barsPerRound === 0 && currentBeat === 0) {
+      setIsWordChanging(true);
+      setWordCounter(prev => (prev + 1) % shuffledWords.length);
+      setTimeout(() => setIsWordChanging(false), 450);
+    }
+  }, [currentBar, currentBeat, isPlaying, barsPerRound, setWordCounter, setIsWordChanging, shuffledWords.length]);
 
   // Generate a list of words for the slot machine
   const generateSlotList = (currentWord, nextWord, previousList = null, isNextList = false) => {

@@ -10,6 +10,10 @@
  * - Handling beat selection and BPM changes
  * - Coordinating audio initialization and cleanup
  * - Managing playback timing and synchronization
+ * 
+ * Terminology:
+ * - beat: One quarter note
+ * - bar: One measure (4 beats/quarter notes)
  */
 
 import { useState, useEffect, useRef } from 'react';
@@ -29,7 +33,10 @@ export const useAudioController = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [selectedBeatId, setSelectedBeatId] = useState(DEFAULT_BEAT.id);
-  const [timing, setTiming] = useState({ beat: 0, bar: 0 });
+  const [timing, setTiming] = useState({ 
+    currentBeat: 0,  // Current beat within the bar (0-3)
+    currentBar: 0    // Current bar number
+  });
   
   const timerRef = useRef(null);
   const nextNoteTimeRef = useRef(0);
@@ -73,7 +80,7 @@ export const useAudioController = () => {
       clearTimeout(timerRef.current);
     }
     audioService.stopBeat();
-    setTiming({ beat: 0, bar: 0 });
+    setTiming({ currentBeat: 0, currentBar: 0 });
     setIsPlaying(false);
   };
 
@@ -116,7 +123,7 @@ export const useAudioController = () => {
     }
   };
 
-  const handlePlayPause = async (totalQuarterNotes, onQuarterNoteChange) => {
+  const handlePlayPause = async (totalBars, onBarChange) => {
     if (isPlaying) {
       stopPlayback();
       return;
@@ -135,7 +142,7 @@ export const useAudioController = () => {
     }
 
     // Reset states
-    setTiming({ beat: 0, bar: 0 });
+    setTiming({ currentBeat: 0, currentBar: 0 });
 
     // Start audio
     audioService.playBeat();
@@ -147,11 +154,32 @@ export const useAudioController = () => {
       const beatInterval = RhythmService.calculateBeatInterval(bpm);
       nextNoteTimeRef.current = (Date.now() / 1000) + beatInterval;
       
+      // Convert total bars to total beats for RhythmService
+      const totalBeats = totalBars * RhythmService.BEATS_PER_BAR;
+      
+      console.debug('[AudioController] Starting playback:', {
+        bpm,
+        totalBars,
+        totalBeats,
+        beatInterval
+      });
+
       const tick = RhythmService.createTick({
         bpm,
-        totalQuarterNotes,
-        onTick: setTiming,
-        onQuarterNoteChange,
+        totalBeats,
+        onTick: (newTiming) => {
+          // Convert absolute beat number to bar and beat within bar
+          const absoluteBeat = newTiming.beat;
+          const currentBar = Math.floor(absoluteBeat / RhythmService.BEATS_PER_BAR);
+          const currentBeat = absoluteBeat % RhythmService.BEATS_PER_BAR;
+          
+          setTiming({ currentBeat, currentBar });
+          
+          // Only call onBarChange when we start a new bar (beat 0)
+          if (currentBeat === 0 && absoluteBeat > 0) {
+            onBarChange(currentBar);
+          }
+        },
         nextNoteTimeRef,
         setTimerRef: (timer) => { timerRef.current = timer; }
       });
@@ -165,8 +193,8 @@ export const useAudioController = () => {
     isPlaying,
     isLoading,
     selectedBeatId,
-    currentBeat: timing.beat,
-    currentBar: timing.bar,
+    currentBeat: timing.currentBeat,  // Beat within the current bar (0-3)
+    currentBar: timing.currentBar,    // Current bar number
     handleBeatSelect,
     handleBpmChange,
     handlePlayPause,

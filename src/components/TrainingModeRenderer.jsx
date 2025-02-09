@@ -39,7 +39,9 @@ const TrainingModeRenderer = ({
   isRecordingEnabled,
   onRecordingToggle,
   isDebugMode,
-  selectedVocabulary
+  selectedVocabulary,
+  setWordCounter,
+  setIsWordChanging
 }) => {
   const { language } = useTranslation();
   // console.log('TrainingModeRenderer:', { selectedMode, currentMode: trainingModes.find(mode => mode.id === selectedMode) });
@@ -88,6 +90,10 @@ const TrainingModeRenderer = ({
           shuffledWords={shuffledWords}
           wordCounter={wordCounter}
           onBarsPerRoundChange={onBarsPerRoundChange}
+          currentBeat={currentBeat}
+          currentBar={currentBar}
+          setWordCounter={setWordCounter}
+          setIsWordChanging={setIsWordChanging}
         />
       );
     case 'rhyme-explorer':
@@ -97,6 +103,11 @@ const TrainingModeRenderer = ({
           shuffledWords={shuffledWords}
           wordCounter={wordCounter}
           selectedVocabulary={selectedVocabulary}
+          currentBeat={currentBeat}
+          currentBar={currentBar}
+          setWordCounter={setWordCounter}
+          setIsWordChanging={setIsWordChanging}
+          onBarsPerRoundChange={onBarsPerRoundChange}
         />
       );
     case 'find-rhymes':
@@ -105,6 +116,10 @@ const TrainingModeRenderer = ({
           {...commonProps}
           shuffledWords={shuffledWords}
           wordCounter={wordCounter}
+          currentBeat={currentBeat}
+          currentBar={currentBar}
+          setWordCounter={setWordCounter}
+          setIsWordChanging={setIsWordChanging}
         />
       );
     case 'four-bar':
@@ -116,6 +131,8 @@ const TrainingModeRenderer = ({
           isWordChanging={isWordChanging}
           shuffledWords={shuffledWords}
           wordCounter={wordCounter}
+          setWordCounter={setWordCounter}
+          setIsWordChanging={setIsWordChanging}
         />
       );
     case 'two-bar':
@@ -127,6 +144,8 @@ const TrainingModeRenderer = ({
           isWordChanging={isWordChanging}
           shuffledWords={shuffledWords}
           wordCounter={wordCounter}
+          setWordCounter={setWordCounter}
+          setIsWordChanging={setIsWordChanging}
         />
       );
     default:

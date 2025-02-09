@@ -330,4 +330,72 @@
     padding: 0.25rem 0.5rem;
     font-size: 0.8rem;
   }
+}
+
+.settings-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: var(--text-color, #fff);
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  gap: 2rem;
+}
+
+.bars-per-round-setting {
+  display: flex;
+  align-items: center;
+}
+
+.bars-per-round-setting label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.bars-per-round-setting select {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-color, #fff);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+  min-width: 120px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 1.2rem auto;
+  padding-right: 2.5rem;
+}
+
+.bars-per-round-setting select option {
+  background-color: #2a2a2a;
+  color: var(--text-color, #fff);
+  padding: 0.5rem;
+  border: none;
+}
+
+.bars-per-round-setting select:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+}
+
+.bars-per-round-setting select:hover:not(:disabled) {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.bars-per-round-setting select:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 } 

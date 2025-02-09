@@ -20,6 +20,8 @@
  * - isWordChanging: Word transition animation state
  * - shuffledWords: Array of words to use as targets
  * - wordCounter: Current word index
+ * - setWordCounter: Function to set the current word index
+ * - setIsWordChanging: Function to set the word transition animation state
  * - Standard BaseTrainingMode props
  * 
  * The mode helps users practice basic setup-punchline patterns
@@ -38,6 +40,8 @@ const TwoBarMode = ({
   isWordChanging,
   shuffledWords,
   wordCounter,
+  setWordCounter,
+  setIsWordChanging,
   onReturnToMenu,
   modeName,
   helperText,
@@ -47,7 +51,7 @@ const TwoBarMode = ({
 }) => {
   const { language } = useTranslation();
   const translations = trainingModes.find(mode => mode.id === 'two-bar').translations[language];
-  const BARS_PER_LINE = 4;
+  const BLOCKS_PER_BAR = 4;
   const [selectedRhyme, setSelectedRhyme] = useState(null);
   const [showHints, setShowHints] = useState(() => {
     const saved = localStorage.getItem('showRhymeHints');
@@ -77,21 +81,35 @@ const TwoBarMode = ({
     }
   }, [wordCounter, shuffledWords]);
 
-  const renderBar = (barIndex, line) => {
-    const isActive = barIndex + (line - 1) * BARS_PER_LINE === currentBar;
-    const isTarget = line === 2 && barIndex === 3;
-    const isQuestionBlock = line === 1 && barIndex === 3;
+  // Handle word changes based on bar position
+  useEffect(() => {
+    // Change word every 2 bars (one complete pattern)
+    if (currentBar % 2 === 0 && currentBeat === 0) {
+      setIsWordChanging(true);
+      setWordCounter(prev => (prev + 1) % shuffledWords.length);
+      setTimeout(() => setIsWordChanging(false), 450);
+    }
+  }, [currentBar, currentBeat, setIsWordChanging, setWordCounter, shuffledWords.length]);
+
+  const renderBlock = (blockIndex, line) => {
+    // Calculate current position in beats (0-7 for two bars)
+    const totalBeats = (currentBar * 4) + currentBeat;
+    const blockPosition = blockIndex + (line - 1) * BLOCKS_PER_BAR;
+    // Wrap around every 8 beats (2 bars × 4 beats)
+    const isActive = blockPosition === totalBeats % 8;
+    const isTarget = line === 2 && blockIndex === 3;
+    const isQuestionBlock = line === 1 && blockIndex === 3;
 
     if (isTarget) {
       const currentWord = shuffledWords[wordCounter];
       
       return (
         <div 
-          key={`bar-${barIndex}-${line}`}
+          key={`block-${blockIndex}-${line}`}
           className="target-container"
         >
           <span 
-            className={`bar target ${isActive ? 'active' : ''} ${isWordChanging ? 'changing' : ''}`}
+            className={`block target ${isActive ? 'active' : ''} ${isWordChanging ? 'changing' : ''}`}
           >
             {currentWord?.word}
           </span>
@@ -105,8 +123,8 @@ const TwoBarMode = ({
     if (isQuestionBlock) {
       return (
         <span 
-          key={`bar-${barIndex}-${line}`} 
-          className={`bar question ${isActive ? 'active' : ''} ${isWordChanging ? 'changing' : ''}`}
+          key={`block-${blockIndex}-${line}`} 
+          className={`block question ${isActive ? 'active' : ''} ${isWordChanging ? 'changing' : ''}`}
         >
           {showHints && selectedRhyme ? (
             <span className="rhyme-suggestion">{selectedRhyme.word}</span>
@@ -124,8 +142,8 @@ const TwoBarMode = ({
 
     return (
       <span 
-        key={`bar-${barIndex}-${line}`} 
-        className={`bar ${isActive ? 'active' : ''}`}
+        key={`block-${blockIndex}-${line}`} 
+        className={`block ${isActive ? 'active' : ''}`}
       >
         - - - -
       </span>
@@ -153,10 +171,10 @@ const TwoBarMode = ({
       </div>
       <div className="rhyme-pattern">
         <div className="line">
-          {[0, 1, 2, 3].map((barIndex) => renderBar(barIndex, 1))}
+          {[0, 1, 2, 3].map((blockIndex) => renderBlock(blockIndex, 1))}
         </div>
         <div className="line">
-          {[0, 1, 2, 3].map((barIndex) => renderBar(barIndex, 2))}
+          {[0, 1, 2, 3].map((blockIndex) => renderBlock(blockIndex, 2))}
         </div>
       </div>
     </BaseTrainingMode>

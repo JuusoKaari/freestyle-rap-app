@@ -157,15 +157,19 @@ function AppContent() {
 
   // Handle bar change
   const handleBarChange = (nextBar) => {
-    if (nextBar === 0 && lastProcessedBarRef.current !== 0) {
-      lastProcessedBarRef.current = 0;
-      setIsWordChanging(true);
-      // Use modulo to loop through the word list
-      setWordCounter(prev => (prev + 1) % shuffledWords.length);
-      setTimeout(() => {
-        setIsWordChanging(false);
-      }, 450);
-    } else if (nextBar !== 0) {
+    // Only log and process if the bar has actually changed
+    if (nextBar !== lastProcessedBarRef.current) {
+      console.debug('[App] Bar changed:', { 
+        from: lastProcessedBarRef.current, 
+        to: nextBar,
+        currentBeat,
+        wordCounter,
+        isWordChanging,
+        timestamp: new Date().toISOString()
+      });
+
+      // Let the training modes handle their own word change logic
+      // Just update the bar reference
       lastProcessedBarRef.current = nextBar;
     }
   };
@@ -173,20 +177,6 @@ function AppContent() {
   // Handle bars per round change
   const handleBarsPerRoundChange = (value) => {
     setBarsPerRound(value);
-  };
-
-  // Get total bars based on mode
-  const getTotalBars = () => {
-    switch (selectedMode) {
-      case 'two-bar':
-        return 8; // 2 lines * 4 bars
-      case 'four-bar':
-        return 16; // 4 lines * 4 bars
-      case 'slot-machine':
-        return barsPerRound * 4; // Convert bars to beats
-      default:
-        return 8; // 2 lines * 4 bars
-    }
   };
 
   const wrappedHandlePlayPause = async () => {
@@ -199,7 +189,7 @@ function AppContent() {
         vocabulary: selectedVocabulary,
         bpm: bpm
       },
-      () => handlePlayPause(getTotalBars(), handleBarChange)
+      () => handlePlayPause(8, handleBarChange) // Use 8 bars as the base unit to support all bar lengths
     );
   };
 
@@ -210,6 +200,17 @@ function AppContent() {
       setSelectedMode(null);
     }
   }, [location]);
+
+  // Track beat changes
+  useEffect(() => {
+    console.debug('[App] Beat changed:', {
+      beat: currentBeat,
+      bar: currentBar,
+      wordCounter,
+      isWordChanging,
+      timestamp: new Date().toISOString()
+    });
+  }, [currentBeat]);
 
   return (
     <div className={`app ${isDebugMode ? 'debug-mode' : ''}`}>
@@ -310,6 +311,8 @@ function AppContent() {
                 onRecordingToggle={handleRecordingToggle}
                 isDebugMode={isDebugMode}
                 selectedVocabulary={selectedVocabulary}
+                setWordCounter={setWordCounter}
+                setIsWordChanging={setIsWordChanging}
               />
             )}
           </>

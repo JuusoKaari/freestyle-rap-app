@@ -20,6 +20,8 @@
  * - isWordChanging: Word transition animation state
  * - shuffledWords: Array of words to use as targets
  * - wordCounter: Current word index
+ * - setWordCounter: Function to set the current word index
+ * - setIsWordChanging: Function to set the word transition animation state
  * - Standard BaseTrainingMode props
  * 
  * This mode is designed for more advanced practice, allowing users
@@ -38,6 +40,8 @@ const FourBarMode = ({
   isWordChanging,
   shuffledWords,
   wordCounter,
+  setWordCounter,
+  setIsWordChanging,
   onReturnToMenu,
   modeName,
   helperText,
@@ -47,7 +51,7 @@ const FourBarMode = ({
 }) => {
   const { language } = useTranslation();
   const translations = trainingModes.find(mode => mode.id === 'four-bar').translations[language];
-  const BARS_PER_LINE = 4;
+  const BLOCKS_PER_BAR = 4;
   const [selectedRhymes, setSelectedRhymes] = useState([]);
   const [showHints, setShowHints] = useState(() => {
     const saved = localStorage.getItem('showRhymeHints');
@@ -78,21 +82,35 @@ const FourBarMode = ({
     }
   }, [wordCounter, shuffledWords]);
 
-  const renderBar = (barIndex, line) => {
-    const isActive = barIndex + (line - 1) * BARS_PER_LINE === currentBar;
-    const isTarget = line === 4 && barIndex === 3;
-    const isQuestionBlock = barIndex === 3 && line < 4;
+  // Handle word changes based on bar position
+  useEffect(() => {
+    // Change word every 4 bars (one complete pattern)
+    if (currentBar % 4 === 0 && currentBeat === 0) {
+      setIsWordChanging(true);
+      setWordCounter(prev => (prev + 1) % shuffledWords.length);
+      setTimeout(() => setIsWordChanging(false), 450);
+    }
+  }, [currentBar, currentBeat, setIsWordChanging, setWordCounter, shuffledWords.length]);
+
+  const renderBlock = (blockIndex, line) => {
+    // Calculate current position in beats (0-15 for four bars)
+    const totalBeats = (currentBar * 4) + currentBeat;
+    const blockPosition = blockIndex + (line - 1) * BLOCKS_PER_BAR;
+    // Wrap around every 16 beats (4 bars × 4 beats)
+    const isActive = blockPosition === totalBeats % 16;
+    const isTarget = line === 4 && blockIndex === 3;
+    const isQuestionBlock = blockIndex === 3 && line < 4;
 
     if (isTarget) {
       const currentWord = shuffledWords[wordCounter];
       
       return (
         <div 
-          key={`bar-${barIndex}-${line}`}
+          key={`block-${blockIndex}-${line}`}
           className="target-container"
         >
           <span 
-            className={`bar target ${isActive ? 'active' : ''} ${isWordChanging ? 'changing' : ''}`}
+            className={`block target ${isActive ? 'active' : ''} ${isWordChanging ? 'changing' : ''}`}
           >
             {currentWord?.word}
           </span>
@@ -109,8 +127,8 @@ const FourBarMode = ({
       
       return (
         <span 
-          key={`bar-${barIndex}-${line}`} 
-          className={`bar question ${isActive ? 'active' : ''} ${isWordChanging ? 'changing' : ''}`}
+          key={`block-${blockIndex}-${line}`} 
+          className={`block question ${isActive ? 'active' : ''} ${isWordChanging ? 'changing' : ''}`}
         >
           {showHints && rhymeForLine ? (
             <span className="rhyme-suggestion">{rhymeForLine.word}</span>
@@ -128,8 +146,8 @@ const FourBarMode = ({
 
     return (
       <span 
-        key={`bar-${barIndex}-${line}`} 
-        className={`bar ${isActive ? 'active' : ''}`}
+        key={`block-${blockIndex}-${line}`} 
+        className={`block ${isActive ? 'active' : ''}`}
       >
         - - - -
       </span>
@@ -158,7 +176,7 @@ const FourBarMode = ({
       <div className="rhyme-pattern">
         {[1, 2, 3, 4].map((line) => (
           <div key={`line-${line}`} className="line">
-            {[0, 1, 2, 3].map((barIndex) => renderBar(barIndex, line))}
+            {[0, 1, 2, 3].map((blockIndex) => renderBlock(blockIndex, line))}
           </div>
         ))}
       </div>

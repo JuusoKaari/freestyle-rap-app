@@ -22,6 +22,11 @@
  * - onPlayPause: Beat control callback
  * - isLoading: Loading state indicator
  * - selectedVocabulary: Name of the vocabulary
+ * - currentBeat: Current beat position
+ * - currentBar: Current bar position
+ * - setWordCounter: Callback to set the current word index
+ * - setIsWordChanging: Callback to set the word changing state
+ * - onBarsPerRoundChange: Callback to handle bar length changes
  */
 
 import React, { useState, useEffect } from 'react';
@@ -43,7 +48,12 @@ const RhymeExplorerMode = ({
   isPlaying: isBeatPlaying,
   onPlayPause,
   isLoading,
-  selectedVocabulary
+  selectedVocabulary,
+  currentBeat,
+  currentBar,
+  setWordCounter,
+  setIsWordChanging,
+  onBarsPerRoundChange = () => {}
 }) => {
   const { language } = useTranslation();
   const { isDebugMode } = useDebug();
@@ -52,12 +62,29 @@ const RhymeExplorerMode = ({
   const selectedVocabInfo = vocabularies.find(vocab => vocab.id === selectedVocabulary);
   const currentWord = shuffledWords[wordCounter];
   const [targetWordIndex, setTargetWordIndex] = useState(wordCounter);
+  const [barsPerRound, setBarsPerRound] = useState(2);
   const { isAudioEnabled, isAudioAvailable, toggleAudio, playWordAudio, preloadWordAudio } = useWordAudio(selectedVocabulary);
+
+  // Handle bar length changes
+  const handleBarsChange = (value) => {
+    console.debug('[RhymeExplorer] Bars per round changed:', { to: value });
+    setBarsPerRound(value);
+    onBarsPerRoundChange(value);
+  };
 
   // Keep targetWordIndex in sync with wordCounter
   useEffect(() => {
     setTargetWordIndex(wordCounter);
   }, [wordCounter]);
+
+  // Handle automatic word changes based on beat position and barsPerRound
+  useEffect(() => {
+    if (isBeatPlaying && currentBar % barsPerRound === 0 && currentBeat === 0) {
+      setIsWordChanging?.(true);
+      handleNextWord();
+      setTimeout(() => setIsWordChanging?.(false), 450);
+    }
+  }, [currentBeat, currentBar, isBeatPlaying, barsPerRound]);
 
   // Add keyboard navigation
   useEffect(() => {
@@ -162,11 +189,27 @@ const RhymeExplorerMode = ({
         isLoading={isLoading}
       >
         <div className="rhyme-explorer">
-          <AudioToggle
-            isEnabled={isAudioEnabled}
-            isAvailable={isAudioAvailable}
-            onToggle={toggleAudio}
-          />
+          <div className="settings-row">
+            <div className="bars-per-round-setting">
+              <label>
+                {translations.barCountLabel}
+                <select 
+                  value={barsPerRound} 
+                  onChange={(e) => handleBarsChange(Number(e.target.value))}
+                  disabled={isBeatPlaying}
+                >
+                  {Object.entries(translations.barLengthOptions).map(([value, label]) => (
+                    <option key={value} value={value}>{label}</option>
+                  ))}
+                </select>
+              </label>
+            </div>
+            <AudioToggle
+              isEnabled={isAudioEnabled}
+              isAvailable={isAudioAvailable}
+              onToggle={toggleAudio}
+            />
+          </div>
           {displayWord && (
             <div className="word-card">
               <div className="main-word">

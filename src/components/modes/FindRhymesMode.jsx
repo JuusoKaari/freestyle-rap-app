@@ -19,10 +19,14 @@
  * - onReturnToMenu: Menu return callback
  * - modeName: Mode name in current language
  * - helperText: Instructions text
- * - onNextWord: Word progression callback
  * - isPlaying/onPlayPause: Beat control
  * - isLoading: Loading state
  * - bpm: Beats per minute for timing
+ * - currentBeat: Current beat position
+ * - currentBar: Current bar position
+ * - setWordCounter: Function to update word index
+ * - setIsWordChanging: Function to handle word change animation
+ * - onBarsPerRoundChange: Function to handle bar length change
  */
 
 import React, { useState, useEffect } from 'react';
@@ -37,21 +41,42 @@ const FindRhymesMode = ({
   onReturnToMenu,
   modeName,
   helperText,
-  onNextWord,
   isPlaying,
   onPlayPause,
   isLoading,
-  bpm
+  bpm,
+  currentBeat,
+  currentBar,
+  setWordCounter,
+  setIsWordChanging,
+  onBarsPerRoundChange = () => {}
 }) => {
   const { language } = useTranslation();
-  const translations = trainingModes.find(mode => mode.id === 'find-rhymes').translations[language];
+  const mode = trainingModes.find(mode => mode.id === 'find-rhymes');
+  const translations = mode?.translations?.[language] || {
+    barCountLabel: 'Bars per round:',
+    barLengthOptions: {
+      '1': '1 bar',
+      '2': '2 bars',
+      '4': '4 bars',
+      '8': '8 bars'
+    }
+  };
   
   const [surroundingWords, setSurroundingWords] = useState([]);
   const [clickedWords, setClickedWords] = useState([]);
   const [progress, setProgress] = useState(100);
+  const [barsPerRound, setBarsPerRound] = useState(2);
   
   const currentWord = shuffledWords[wordCounter];
   const NUM_SURROUNDING_WORDS = 8; // 3x3 grid = 9 spots, minus 1 for target word
+  
+  // Handle bar length changes
+  const handleBarsChange = (value) => {
+    console.debug('[FindRhymes] Bars per round changed:', { to: value });
+    setBarsPerRound(value);
+    onBarsPerRoundChange(value);
+  };
   
   // Handle play/pause with reset
   const handlePlayPause = () => {
@@ -127,8 +152,7 @@ const FindRhymesMode = ({
 
     const interval = 50; // Update more frequently for smoother animation
     const beatsPerBar = 4;
-    const barsPerWord = 2; // Each word lasts 2 bars (8 beats)
-    const totalTime = (60 / bpm) * beatsPerBar * barsPerWord * 1000; // Total time in ms
+    const totalTime = (60 / bpm) * beatsPerBar * barsPerRound * 1000; // Total time in ms
     const adjustedTime = totalTime * 0.75; // Complete slightly before word change
     const decrementAmount = (interval / adjustedTime) * 100;
 
@@ -140,12 +164,22 @@ const FindRhymesMode = ({
     }, interval);
 
     return () => clearInterval(timer);
-  }, [isPlaying, wordCounter, bpm]);
+  }, [isPlaying, wordCounter, bpm, barsPerRound]);
 
   // Reset progress when word changes
   useEffect(() => {
     setProgress(100);
   }, [wordCounter]);
+
+  // Handle word changes based on bar position and barsPerRound setting
+  useEffect(() => {
+    if (isPlaying && currentBar % barsPerRound === 0 && currentBeat === 0) {
+      setIsWordChanging(true);
+      setWordCounter(prev => (prev + 1) % shuffledWords.length);
+      setClickedWords([]); // Reset clicked words for the new round
+      setTimeout(() => setIsWordChanging(false), 450);
+    }
+  }, [currentBar, currentBeat, isPlaying, barsPerRound, setWordCounter, setIsWordChanging, shuffledWords.length]);
 
   const renderGrid = () => {
     const cells = [];
@@ -204,6 +238,22 @@ const FindRhymesMode = ({
       isLoading={isLoading}
     >
       <div className="find-rhymes-container">
+        <div className="settings-row">
+          <div className="bars-per-round-setting">
+            <label>
+              {translations.barCountLabel}
+              <select 
+                value={barsPerRound} 
+                onChange={(e) => handleBarsChange(Number(e.target.value))}
+                disabled={isPlaying}
+              >
+                {Object.entries(translations.barLengthOptions).map(([value, label]) => (
+                  <option key={value} value={value}>{label}</option>
+                ))}
+              </select>
+            </label>
+          </div>
+        </div>
         {currentWord && (
           <div className="word-grid">
             {renderGrid()}
