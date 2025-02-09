@@ -52,7 +52,7 @@ const RhymeExplorerMode = ({
   const selectedVocabInfo = vocabularies.find(vocab => vocab.id === selectedVocabulary);
   const currentWord = shuffledWords[wordCounter];
   const [targetWordIndex, setTargetWordIndex] = useState(wordCounter);
-  const { isAudioEnabled, isAudioAvailable, toggleAudio, playWordAudio } = useWordAudio(selectedVocabulary);
+  const { isAudioEnabled, isAudioAvailable, toggleAudio, playWordAudio, preloadWordAudio } = useWordAudio(selectedVocabulary);
 
   // Keep targetWordIndex in sync with wordCounter
   useEffect(() => {
@@ -120,6 +120,21 @@ const RhymeExplorerMode = ({
   };
 
   const displayWord = shuffledWords[targetWordIndex];
+
+  // Preload next word's audio
+  useEffect(() => {
+    if (!displayWord || !isAudioEnabled) return;
+    
+    // Calculate next word index
+    const nextIndex = (targetWordIndex + 1) % shuffledWords.length;
+    const nextWord = shuffledWords[nextIndex];
+    
+    if (nextWord) {
+      // Use phonetic version if available, otherwise use display word
+      const word = nextWord.phonetic || nextWord.word.toLowerCase();
+      preloadWordAudio(word, language);
+    }
+  }, [targetWordIndex, shuffledWords, language, isAudioEnabled, preloadWordAudio]);
 
   // Play audio when word changes
   useEffect(() => {

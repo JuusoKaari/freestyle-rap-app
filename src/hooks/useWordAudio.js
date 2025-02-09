@@ -44,11 +44,35 @@ export const useWordAudio = (vocabularyId) => {
 
   // Get the phonetic version of a word if available
   const getPhoneticVersion = useCallback((word) => {
-    // Convert word to lowercase for consistent handling
-    const lowercaseWord = word.toLowerCase();
     // Remove any hyphens, underscores, and spaces
-    return lowercaseWord.replace(/-/g, '').replace(/_/g, '').replace(/\s+/g, '');
+    return word.replace(/-/g, '').replace(/_/g, '').replace(/\s+/g, '');
   }, []);
+
+  // Preload audio for a word without playing it
+  const preloadWordAudio = useCallback(async (word, language = 'fi') => {
+    if (!isAudioAvailable || !audioMetadata) return;
+
+    // Get the phonetic version if available
+    const phoneticWord = getPhoneticVersion(word);
+
+    // Convert language to lowercase for metadata lookup
+    const normalizedLanguage = language.toLowerCase();
+    const audioUrl = audioMetadata[normalizedLanguage]?.[phoneticWord];
+    if (!audioUrl) {
+      return;
+    }
+
+    try {
+      // Create a temporary audio element for preloading
+      const tempAudio = new Audio();
+      tempAudio.src = audioUrl;
+      // Start loading the audio file
+      await tempAudio.load();
+    } catch (error) {
+      // Silently fail on preload errors
+      console.log(`Failed to preload audio for word: ${word}`);
+    }
+  }, [isAudioAvailable, audioMetadata, getPhoneticVersion]);
 
   // Play audio for a specific word
   const playWordAudio = useCallback(async (word, language = 'fi') => {
@@ -93,6 +117,7 @@ export const useWordAudio = (vocabularyId) => {
     isAudioEnabled,
     isAudioAvailable,
     toggleAudio,
-    playWordAudio
+    playWordAudio,
+    preloadWordAudio
   };
 }; 
