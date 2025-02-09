@@ -31,6 +31,8 @@ import { useTranslation } from '../../services/TranslationContext';
 import { useDebug } from '../../services/DebugContext';
 import { trainingModes } from '../../data/trainingModes';
 import { getVocabularies } from '../../data/vocabulary/vocabularyConfig';
+import { useWordAudio } from '../../hooks/useWordAudio';
+import { AudioToggle } from '../AudioToggle';
 
 const RhymeExplorerMode = ({ 
   shuffledWords,
@@ -38,7 +40,7 @@ const RhymeExplorerMode = ({
   onReturnToMenu,
   modeName,
   helperText,
-  isPlaying,
+  isPlaying: isBeatPlaying,
   onPlayPause,
   isLoading,
   selectedVocabulary
@@ -50,6 +52,7 @@ const RhymeExplorerMode = ({
   const selectedVocabInfo = vocabularies.find(vocab => vocab.id === selectedVocabulary);
   const currentWord = shuffledWords[wordCounter];
   const [targetWordIndex, setTargetWordIndex] = useState(wordCounter);
+  const { isAudioEnabled, isAudioAvailable, toggleAudio, playWordAudio } = useWordAudio(selectedVocabulary);
 
   // Keep targetWordIndex in sync with wordCounter
   useEffect(() => {
@@ -118,17 +121,37 @@ const RhymeExplorerMode = ({
 
   const displayWord = shuffledWords[targetWordIndex];
 
+  // Play audio when word changes
+  useEffect(() => {
+    if (displayWord) {
+      // Use phonetic version if available, otherwise use display word
+      const word = displayWord.phonetic || displayWord.word.toLowerCase();
+      
+      // Add a small delay to prevent rapid playback
+      const timeoutId = setTimeout(() => {
+        playWordAudio(word, language);
+      }, 100);
+      
+      return () => clearTimeout(timeoutId);
+    }
+  }, [displayWord, playWordAudio, language]);
+
   return (
     <>
       <BaseTrainingMode
         modeName={modeName}
         helperText={helperText}
         onReturnToMenu={onReturnToMenu}
-        isPlaying={isPlaying}
+        isPlaying={isBeatPlaying}
         onPlayPause={onPlayPause}
         isLoading={isLoading}
       >
         <div className="rhyme-explorer">
+          <AudioToggle
+            isEnabled={isAudioEnabled}
+            isAvailable={isAudioAvailable}
+            onToggle={toggleAudio}
+          />
           {displayWord && (
             <div className="word-card">
               <div className="main-word">

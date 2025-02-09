@@ -42,7 +42,7 @@ const TrainingModeRenderer = ({
   selectedVocabulary
 }) => {
   const { language } = useTranslation();
-  console.log('TrainingModeRenderer:', { selectedMode, currentMode: trainingModes.find(mode => mode.id === selectedMode) });
+  // console.log('TrainingModeRenderer:', { selectedMode, currentMode: trainingModes.find(mode => mode.id === selectedMode) });
   const currentMode = trainingModes.find(mode => mode.id === selectedMode);
   
   // Track when training mode starts

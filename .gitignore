@@ -165,3 +165,8 @@ scripts/audio_processing/beats/__raw_beat_files/
 scripts/audio_processing/beats/__processed_beats/
 scripts/audio_processing/beats/__uploaded_beats/
 scripts/audio_processing/.env
+
+# Audio processing temporary files
+scripts/audio_processing/words_tts/__generated_audio/
+scripts/audio_processing/words_tts/__processed_words/
+scripts/audio_processing/words_tts/__uploaded_audio/

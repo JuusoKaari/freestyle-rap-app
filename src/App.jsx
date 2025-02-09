@@ -271,7 +271,7 @@ function AppContent() {
         } />
         <Route path="/mode/:modeId" element={
           <>
-            {console.log('Mode route render:', { 
+{/*             {console.log('Mode route render:', { 
               currentModeId,
               isTraining, 
               selectedMode, 
@@ -279,7 +279,7 @@ function AppContent() {
               cause: isTraining ? 'training mode active' : 'initial/transition',
               isLoading,
               isPlaying
-            })}
+            })} */}
             <div className="training-header">
               <CompactBeatSelector
                 selectedBeatId={selectedBeatId}

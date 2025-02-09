@@ -236,10 +236,11 @@ export const generateWordList = async (options = {}) => {
     });
     
     sortedWords.forEach(rawWord => {
-      // Get display version of word
-      const word = getDisplayWord(rawWord);
+      // Get display and phonetic versions of word
+      const { display, phonetic } = splitWord(rawWord);
       const entry = {
-        word,
+        word: display.replace(/-/g, '').replace(/_/g, ' '),  // Clean display version
+        phonetic: phonetic.replace(/-/g, '').replace(/_/g, '').replace(/\s+/g, ''),  // Clean phonetic version
         group
       };
 
