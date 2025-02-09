@@ -6,16 +6,17 @@ import os
 from datetime import datetime
 from pathlib import Path
 from dotenv import load_dotenv
+import sys
 
 # Get the project root directory (3 levels up from this script)
 PROJECT_ROOT = Path(__file__).parent.parent.parent.parent.absolute()
 SCRIPT_DIR = Path(__file__).parent.absolute()
 
 # Create necessary directories
-TEMP_AUDIO_DIR = SCRIPT_DIR / "__generated_audio"
-PROCESSED_DIR = SCRIPT_DIR / "__processed_words"
-TEMP_AUDIO_DIR.mkdir(exist_ok=True)
-PROCESSED_DIR.mkdir(exist_ok=True)
+GENERATED_AUDIO_DIR = SCRIPT_DIR / "__generated_audio"
+AUDIO_STATUS_DIR = SCRIPT_DIR / "__audio_status"
+GENERATED_AUDIO_DIR.mkdir(exist_ok=True)
+AUDIO_STATUS_DIR.mkdir(exist_ok=True)
 
 # Load environment variables from .env file
 load_dotenv(Path(__file__).parent.parent / '.env')
@@ -69,10 +70,10 @@ def extract_words_from_vocabulary(vocab_file):
                         # Use the phonetic version (after semicolon)
                         display_word, phonetic = word.split(';')
                         # Remove hyphens and underscores from phonetic version
-                        clean_word = phonetic.replace('-', '').replace('_', '')
+                        clean_word = phonetic.replace('-', '').replace('_', '').replace(' ', '')
                     else:
                         # Remove hyphens and underscores if present
-                        clean_word = word.replace('-', '').replace('_', '')
+                        clean_word = word.replace('-', '').replace('_', '').replace(' ', '')
                     words.add(clean_word)
             return list(words)
         
@@ -89,22 +90,49 @@ def get_voice_for_language(language, available_voices):
     # Fallback to Hunter for other languages
     return 'Hunter'
 
-def generate_audio_for_word(word, voice, output_dir):
+def update_status_file(vocab_name, word, success=True):
+    """Update the vocabulary status file with newly generated audio"""
+    status_file = AUDIO_STATUS_DIR / f"{vocab_name}.json"
+    
+    # Load existing status or create new
+    if status_file.exists():
+        with open(status_file, 'r', encoding='utf-8') as f:
+            status = json.load(f)
+    else:
+        status = {
+            "language": vocab_name.split('_')[0].lower(),
+            "generated_audio": [],
+            "audio_urls": {},
+            "failed_uploads": []
+        }
+    
+    # Add word to generated_audio if successful
+    if success and word not in status["generated_audio"]:
+        status["generated_audio"].append(word)
+    
+    # Write updated status
+    with open(status_file, 'w', encoding='utf-8') as f:
+        json.dump(status, f, indent=2, ensure_ascii=False)
+
+def generate_audio_for_word(word, voice, vocab_dir):
     """Generate audio file for a single word using SpeechGen API"""
     try:
         # Check if audio file already exists
-        output_path = output_dir / f"{word}.mp3"
+        output_path = vocab_dir / f"{word}.mp3"
         if output_path.exists():
             print(f"Audio file already exists for word: {word}, skipping...")
             return True
 
         url = "https://speechgen.io/index.php?r=api/text"
         
+        # Add SSML break after the word to prevent cutoff
+        ssml_text = f"{word} <break time=\"100ms\"/>"
+        
         data = {
             'token': SPEECHGEN_TOKEN,
             'email': SPEECHGEN_EMAIL,
             'voice': voice,
-            'text': word,
+            'text': ssml_text,
             'speed': 1.0,  # Normal speed
             'pitch': 1.0,  # Normal pitch
             'format': 'mp3'  # Output format
@@ -135,31 +163,20 @@ def generate_audio_for_word(word, voice, output_dir):
 def process_vocabulary_file(vocab_file):
     """Process a single vocabulary file"""
     vocab_path = Path(vocab_file)
+    vocab_name = vocab_path.stem
+    
+    # Create vocabulary-specific directory for audio files
+    vocab_dir = GENERATED_AUDIO_DIR / vocab_name
+    vocab_dir.mkdir(exist_ok=True)
     
     # Determine language from filename (e.g., FI_elaimet.js -> fi)
-    language = vocab_path.stem.split('_')[0].lower()
-    
-    # Check if we have a results file for this vocabulary
-    results_file = PROCESSED_DIR / f'{vocab_path.stem}_results.json'
-    previously_processed = set()
-    if results_file.exists():
-        try:
-            with open(results_file, 'r', encoding='utf-8') as f:
-                previous_results = json.load(f)
-                previously_processed = set(previous_results.get('processed', []))
-                print(f"Found {len(previously_processed)} previously processed words")
-        except Exception as e:
-            print(f"Error reading previous results: {e}")
+    language = vocab_name.split('_')[0].lower()
     
     # Get available voices
     available_voices = get_voices()
     if not available_voices:
         print("No voices available, cannot proceed")
-        return {
-            'processed': list(previously_processed),
-            'failed': [],
-            'language': language
-        }
+        return False
     
     # Get appropriate voice for the language
     voice = get_voice_for_language(language, available_voices)
@@ -169,38 +186,41 @@ def process_vocabulary_file(vocab_file):
     words = extract_words_from_vocabulary(vocab_path)
     print(f"Found {len(words)} words to process")
     
-    # Filter out already processed words
-    words_to_process = [word for word in words if word not in previously_processed]
-    print(f"After filtering previously processed words: {len(words_to_process)} words to process")
+    # Load status file to check already generated words
+    status_file = AUDIO_STATUS_DIR / f"{vocab_name}.json"
+    if status_file.exists():
+        with open(status_file, 'r', encoding='utf-8') as f:
+            status = json.load(f)
+            already_generated = set(status.get('generated_audio', []))
+    else:
+        already_generated = set()
     
-    # Create language-specific directory
-    lang_dir = TEMP_AUDIO_DIR / language
-    lang_dir.mkdir(exist_ok=True)
+    # Filter out already generated words
+    words_to_process = [word for word in words if word not in already_generated]
+    print(f"After filtering already generated words: {len(words_to_process)} words to process")
     
     # Process each word
-    processed_words = list(previously_processed)  # Start with previously processed words
-    failed_words = []
-    
+    success_count = 0
     for i, word in enumerate(words_to_process, 1):
         try:
             print(f"\nProcessing word {i}/{len(words_to_process)}: {word}")
             # Add a small delay between API calls to avoid rate limits
             time.sleep(1)
             
-            if generate_audio_for_word(word, voice, lang_dir):
-                processed_words.append(word)
+            if generate_audio_for_word(word, voice, vocab_dir):
+                update_status_file(vocab_name, word, success=True)
+                success_count += 1
             else:
-                failed_words.append(word)
+                print(f"Failed to generate audio for word: {word}")
         except Exception as e:
             print(f"Failed to process word '{word}': {str(e)}")
-            failed_words.append(word)
             time.sleep(2)  # Longer delay after failure
     
-    return {
-        'processed': processed_words,
-        'failed': failed_words,
-        'language': language
-    }
+    print(f"\nResults for {vocab_name}:")
+    print(f"- Successfully generated: {success_count} word(s)")
+    print(f"- Failed: {len(words_to_process) - success_count} word(s)")
+    
+    return success_count > 0
 
 def get_available_vocabularies():
     """Get list of available vocabulary files"""
@@ -217,26 +237,49 @@ def main():
         print('No vocabulary files found')
         return
     
-    # Print available vocabularies
-    print("\nAvailable vocabularies:")
-    print("0. ALL (Process all vocabularies)")
-    for i, vocab_file in enumerate(vocab_files, 1):
-        print(f"{i}. {vocab_file.stem}")
+    # Check if vocabulary name was provided as command line argument
+    if len(sys.argv) > 1:
+        vocab_arg = sys.argv[1]
+        
+        if vocab_arg.lower() == 'all':
+            # Process all vocabularies
+            files_to_process = vocab_files
+        else:
+            # Find matching vocabulary file
+            matching_file = next(
+                (f for f in vocab_files if f.stem.lower() == vocab_arg.lower()),
+                None
+            )
+            if matching_file:
+                files_to_process = [matching_file]
+            else:
+                print(f"Error: Vocabulary '{vocab_arg}' not found")
+                print("\nAvailable vocabularies:")
+                for vocab_file in vocab_files:
+                    print(f"- {vocab_file.stem}")
+                return
+    else:
+        # No argument provided, show interactive menu
+        print("\nAvailable vocabularies:")
+        print("0. ALL (Process all vocabularies)")
+        for i, vocab_file in enumerate(vocab_files, 1):
+            print(f"{i}. {vocab_file.stem}")
+        
+        # Get user selection
+        while True:
+            try:
+                selection = input("\nSelect vocabulary to process (0-{0}): ".format(len(vocab_files)))
+                selection_idx = int(selection)
+                if 0 <= selection_idx <= len(vocab_files):
+                    break
+                print(f"Please enter a number between 0 and {len(vocab_files)}")
+            except ValueError:
+                print("Please enter a valid number")
+        
+        # Process selected vocabularies
+        files_to_process = vocab_files if selection_idx == 0 else [vocab_files[selection_idx - 1]]
     
-    # Get user selection
-    while True:
-        try:
-            selection = input("\nSelect vocabulary to process (0-{0}): ".format(len(vocab_files)))
-            selection_idx = int(selection)
-            if 0 <= selection_idx <= len(vocab_files):
-                break
-            print(f"Please enter a number between 0 and {len(vocab_files)}")
-        except ValueError:
-            print("Please enter a valid number")
-    
-    # Process selected vocabularies
-    files_to_process = vocab_files if selection_idx == 0 else [vocab_files[selection_idx - 1]]
-    
+    success_count = 0
     for vocab_file in files_to_process:
         print(f'\nProcessing {vocab_file.stem}...')
         
@@ -245,17 +288,10 @@ def main():
             continue
         
         # Process the vocabulary file
-        result = process_vocabulary_file(vocab_file)
-        
-        # Save processing results
-        results_file = PROCESSED_DIR / f'{vocab_file.stem}_results.json'
-        with open(results_file, 'w', encoding='utf-8') as f:
-            json.dump(result, f, indent=2, ensure_ascii=False)
-        
-        print(f"\nResults for {vocab_file.stem}:")
-        print(f"- Successfully processed: {len(result['processed'])} word(s)")
-        print(f"- Failed: {len(result['failed'])} word(s)")
-        print(f"- Results saved to: {results_file}")
+        if process_vocabulary_file(vocab_file):
+            success_count += 1
+    
+    print(f"\nSuccessfully processed {success_count}/{len(files_to_process)} vocabularies")
 
 if __name__ == "__main__":
     main()

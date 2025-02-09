@@ -5,7 +5,7 @@ from pathlib import Path
 import cloudinary
 import cloudinary.uploader
 from dotenv import load_dotenv
-import shutil
+import sys
 
 # Get the project root directory (3 levels up from this script)
 PROJECT_ROOT = Path(__file__).parent.parent.parent.parent.absolute()
@@ -13,11 +13,10 @@ SCRIPT_DIR = Path(__file__).parent.absolute()
 
 # Directory paths
 GENERATED_AUDIO_DIR = SCRIPT_DIR / "__generated_audio"
-UPLOADED_AUDIO_DIR = SCRIPT_DIR / "__uploaded_audio"
-PROCESSED_DIR = SCRIPT_DIR / "__processed_words"
+AUDIO_STATUS_DIR = SCRIPT_DIR / "__audio_status"
 
 # Create necessary directories
-UPLOADED_AUDIO_DIR.mkdir(exist_ok=True)
+AUDIO_STATUS_DIR.mkdir(exist_ok=True)
 
 # Load environment variables from .env file
 load_dotenv(Path(__file__).parent.parent / '.env')
@@ -44,148 +43,145 @@ def upload_to_cloudinary(file_path, public_id):
         print(f"Error uploading {file_path}: {str(e)}")
         return None
 
-def update_metadata_file(metadata, vocab_name):
-    """Update the word audio metadata file for a specific vocabulary"""
-    # Create vocabulary_audio_metadata directory if it doesn't exist
-    audio_metadata_dir = PROJECT_ROOT / "src" / "data" / "vocabulary_audio_metadata"
-    audio_metadata_dir.mkdir(exist_ok=True)
+def update_status_file(vocab_name, word, url=None, failed=False):
+    """Update the vocabulary status file with new upload information"""
+    status_file = AUDIO_STATUS_DIR / f"{vocab_name}.json"
     
-    # Create metadata file path for this vocabulary
-    metadata_file = audio_metadata_dir / f"{vocab_name}_audio_metadata.js"
+    # Load existing status
+    if status_file.exists():
+        with open(status_file, 'r', encoding='utf-8') as f:
+            status = json.load(f)
+    else:
+        # Initialize new status file
+        status = {
+            "language": vocab_name.split('_')[0].lower(),
+            "generated_audio": [],
+            "audio_urls": {},
+            "failed_uploads": []
+        }
     
-    # Load existing metadata if it exists
-    existing_metadata = {}
-    if metadata_file.exists():
-        try:
-            with open(metadata_file, 'r', encoding='utf-8') as f:
-                content = f.read()
-                # Extract just the JSON object part
-                start = content.find('{')
-                end = content.rfind('}')
-                if start != -1 and end != -1:
-                    json_str = content[start:end+1]
-                    existing_metadata = json.loads(json_str)
-                else:
-                    print("Warning: Could not find JSON object in metadata file")
-        except Exception as e:
-            print(f"Warning: Could not load existing metadata file: {e}")
+    if url:
+        # Add successful upload
+        status["audio_urls"][word] = url
+        # Remove from failed uploads if it was there
+        if word in status["failed_uploads"]:
+            status["failed_uploads"].remove(word)
+    elif failed:
+        # Add to failed uploads if not already there
+        if word not in status["failed_uploads"]:
+            status["failed_uploads"].append(word)
     
-    # Merge new metadata with existing metadata
-    for lang, urls in metadata.items():
-        if lang in existing_metadata:
-            # Update existing language dictionary with new URLs
-            existing_metadata[lang].update(urls)
-        else:
-            # Add new language dictionary
-            existing_metadata[lang] = urls
-    
-    # Write the updated metadata file
-    with open(metadata_file, 'w', encoding='utf-8') as f:
-        f.write("// This file is auto-generated. Do not edit manually.\n")
-        f.write("export default ")
-        json.dump(existing_metadata, f, indent=2, ensure_ascii=False)
-        f.write(";\n")
-    
-    print(f"Updated metadata file: {metadata_file}")
+    # Write updated status
+    with open(status_file, 'w', encoding='utf-8') as f:
+        json.dump(status, f, indent=2, ensure_ascii=False)
 
-def process_language_directory(lang_dir):
-    """Process all audio files in a language directory"""
-    language = lang_dir.name
-    audio_files = list(lang_dir.glob("*.mp3"))
+def process_vocabulary(vocab_name):
+    """Process audio files for a specific vocabulary"""
+    vocab_dir = GENERATED_AUDIO_DIR / vocab_name
+    if not vocab_dir.exists():
+        print(f"No audio directory found for vocabulary: {vocab_name}")
+        return False
     
-    if not audio_files:
-        print(f"No audio files found in {lang_dir}")
-        return None
+    # Load status file
+    status_file = AUDIO_STATUS_DIR / f"{vocab_name}.json"
+    if not status_file.exists():
+        print(f"No status file found for vocabulary: {vocab_name}")
+        return False
     
-    # Upload files and collect URLs
-    cloudinary_urls = {}
-    upload_success = True
+    with open(status_file, 'r', encoding='utf-8') as f:
+        status = json.load(f)
     
-    for audio_file in audio_files:
-        word = audio_file.stem
-        public_id = f"{language}/{word}"
+    # Get list of words to upload (generated but not uploaded)
+    to_upload = [
+        word for word in status["generated_audio"] 
+        if word not in status["audio_urls"] and word not in status["failed_uploads"]
+    ]
+    
+    if not to_upload:
+        print(f"No new words to upload for {vocab_name}")
+        return True
+    
+    print(f"Found {len(to_upload)} words to upload for {vocab_name}")
+    
+    # Process each word
+    success = True
+    for word in to_upload:
+        audio_file = vocab_dir / f"{word}.mp3"
+        if not audio_file.exists():
+            print(f"Warning: Audio file not found for word: {word}")
+            update_status_file(vocab_name, word, failed=True)
+            success = False
+            continue
+        
+        # Upload to Cloudinary
+        public_id = f"{status['language']}/{word}"
         url = upload_to_cloudinary(str(audio_file), public_id)
         
         if url:
-            cloudinary_urls[word] = url
-            print(f"Uploaded {audio_file.name} to Cloudinary")
+            print(f"Uploaded {word}")
+            update_status_file(vocab_name, word, url=url)
         else:
-            upload_success = False
-            print(f"Failed to upload {audio_file.name}")
+            print(f"Failed to upload {word}")
+            update_status_file(vocab_name, word, failed=True)
+            success = False
     
-    if upload_success and cloudinary_urls:
-        # Move processed files to uploaded directory
-        uploaded_lang_dir = UPLOADED_AUDIO_DIR / language
-        uploaded_lang_dir.mkdir(parents=True, exist_ok=True)
-        
-        for audio_file in audio_files:
-            target_path = uploaded_lang_dir / audio_file.name
-            shutil.move(str(audio_file), str(target_path))
-        
-        return cloudinary_urls
-    
-    return None
+    return success
 
 def main():
-    if not GENERATED_AUDIO_DIR.exists():
-        print(f"Generated audio directory not found: {GENERATED_AUDIO_DIR}")
+    # Find all status files
+    status_files = list(AUDIO_STATUS_DIR.glob("*.json"))
+    if not status_files:
+        print("No status files found")
         return
     
-    # Process each language directory
-    lang_dirs = [d for d in GENERATED_AUDIO_DIR.iterdir() if d.is_dir()]
-    
-    if not lang_dirs:
-        print("No language directories found")
-        return
-    
-    print(f"Found {len(lang_dirs)} language directory/ies")
-    
-    # Find all results files
-    results_files = list(PROCESSED_DIR.glob("*_results.json"))
-    if not results_files:
-        print("No results files found in processed directory")
-        return
-    
-    # Print available results files
-    print("\nAvailable vocabulary results:")
-    print("0. ALL (Process all vocabularies)")
-    for i, results_file in enumerate(results_files, 1):
-        print(f"{i}. {results_file.stem}")
-    
-    # Get user selection
-    while True:
-        try:
-            selection = input("\nSelect vocabulary results to process (0-{0}): ".format(len(results_files)))
-            selection_idx = int(selection)
-            if 0 <= selection_idx <= len(results_files):
-                break
-            print(f"Please enter a number between 0 and {len(results_files)}")
-        except ValueError:
-            print("Please enter a valid number")
-    
-    # Get selected results files
-    results_to_process = results_files if selection_idx == 0 else [results_files[selection_idx - 1]]
-    
-    for selected_results_file in results_to_process:
-        vocab_name = selected_results_file.stem.replace('_results', '')
-        print(f"\nProcessing vocabulary: {vocab_name}")
+    # Check if vocabulary name was provided as command line argument
+    if len(sys.argv) > 1:
+        vocab_arg = sys.argv[1]
         
-        # Process each language directory
-        for lang_dir in lang_dirs:
-            print(f"\nProcessing language directory: {lang_dir.name}")
-            urls = process_language_directory(lang_dir)
-            
-            if urls:
-                # Create metadata structure
-                metadata = {
-                    lang_dir.name: urls
-                }
-                
-                # Update metadata file for this vocabulary
-                update_metadata_file(metadata, vocab_name)
-                print(f"Successfully processed {len(urls)} audio file(s) for {lang_dir.name}")
+        if vocab_arg.lower() == 'all':
+            # Process all vocabularies
+            vocabs_to_process = [f.stem for f in status_files]
+        else:
+            # Find matching status file
+            matching_file = next(
+                (f for f in status_files if f.stem.lower() == vocab_arg.lower()),
+                None
+            )
+            if matching_file:
+                vocabs_to_process = [matching_file.stem]
             else:
-                print(f"No audio files were successfully processed for {lang_dir.name}")
+                print(f"Error: Vocabulary '{vocab_arg}' not found")
+                print("\nAvailable vocabularies:")
+                for status_file in status_files:
+                    print(f"- {status_file.stem}")
+                return
+    else:
+        # No argument provided, show interactive menu
+        print("\nAvailable vocabularies:")
+        print("0. ALL (Process all vocabularies)")
+        for i, status_file in enumerate(status_files, 1):
+            print(f"{i}. {status_file.stem}")
+        
+        # Get user selection
+        while True:
+            try:
+                selection = input("\nSelect vocabulary to process (0-{0}): ".format(len(status_files)))
+                selection_idx = int(selection)
+                if 0 <= selection_idx <= len(status_files):
+                    break
+                print(f"Please enter a number between 0 and {len(status_files)}")
+            except ValueError:
+                print("Please enter a valid number")
+        
+        # Process selected vocabularies
+        vocabs_to_process = [f.stem for f in status_files] if selection_idx == 0 else [status_files[selection_idx - 1].stem]
+    
+    for vocab_name in vocabs_to_process:
+        print(f"\nProcessing vocabulary: {vocab_name}")
+        if process_vocabulary(vocab_name):
+            print(f"Successfully processed {vocab_name}")
+        else:
+            print(f"Some files failed to process for {vocab_name}")
 
 if __name__ == "__main__":
     main() 
