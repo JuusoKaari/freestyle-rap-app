@@ -54,6 +54,9 @@
   color: rgba(255, 255, 255, 0.9);
   font-size: 1rem;
   font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .vocabulary-details {
@@ -240,8 +243,20 @@
     justify-content: center;
     gap: 0.75rem;
   }
+}
+@media screen and (max-width: 480px) {
+  .vocabulary-name {
+    max-width: 100px;
+  } 
+  
 
   .randomize-vocabulary-button {
     display: none;
   }
+} 
+
+@media screen and (max-width: 400px) {
+  .vocabulary-name {
+    max-width: 60px;
+  } 
 } 

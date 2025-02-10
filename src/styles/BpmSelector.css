@@ -24,4 +24,10 @@
   outline: none;
   border-color: #666;
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
-} 
+}
+
+@media screen and (max-width: 400px) {
+  .bpm-selector select {
+    min-width: 120px;
+  }
+}

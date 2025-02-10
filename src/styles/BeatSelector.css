@@ -201,7 +201,6 @@
   .beat-info {
     flex: 0 1 auto;
     min-width: 100px;
-    max-width: calc(100% - 60px);
   }
 
   .controls-group {
@@ -211,3 +210,14 @@
     gap: 0.75rem;
   }
 } 
+
+@media screen and (max-width: 400px) {
+  .bpm-selector {
+    margin-left: 0.0rem;
+    min-width: 120px;
+  }
+  .beat-name, .beat-info {
+    min-width: 50px;
+  }
+
+}
