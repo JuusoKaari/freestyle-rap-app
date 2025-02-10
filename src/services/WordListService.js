@@ -184,15 +184,40 @@ const getDisplayWord = (word) => {
   return display.replace(/-/g, '').replace(/_/g, ' ');
 };
 
-// Helper function to spread out words from same groups with randomization
-const spreadOutWords = (words) => {
-  // Create a copy of the array to avoid modifying the original
-  const shuffled = [...words];
-  
-  // Fisher-Yates shuffle
-  for (let i = shuffled.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+// Helper function to spread out words considering alphabetical distance
+const spreadOutWords = (words, lookbackWindow = 5) => {
+  const wordsCopy = [...words];
+  let shuffled = [];
+  let remainingWords = new Set(wordsCopy);
+
+  // Start with a random word
+  let currentWord = wordsCopy[Math.floor(Math.random() * wordsCopy.length)];
+  shuffled.push(currentWord);
+  remainingWords.delete(currentWord);
+
+  while (remainingWords.size > 0) {
+    let possibleWords = Array.from(remainingWords);
+    // Shuffle the order randomly first
+    possibleWords.sort(() => Math.random() - 0.5);
+    
+    let selectedWord = null;
+    
+    for (let candidate of possibleWords) {
+      // Check if this candidate maintains enough distance from recent words
+      if (shuffled.slice(-lookbackWindow).every(prev => 
+        Math.abs(wordsCopy.indexOf(candidate) - wordsCopy.indexOf(prev)) > lookbackWindow)) {
+        selectedWord = candidate;
+        break;
+      }
+    }
+
+    // If no valid candidate is found, relax the constraint and pick any remaining word
+    if (!selectedWord) {
+      selectedWord = possibleWords[0];
+    }
+
+    shuffled.push(selectedWord);
+    remainingWords.delete(selectedWord);
   }
   
   return shuffled;
