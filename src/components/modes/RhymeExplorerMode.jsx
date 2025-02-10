@@ -26,6 +26,7 @@
  * - currentBar: Current bar position
  * - setWordCounter: Callback to set the current word index
  * - setIsWordChanging: Callback to set the word changing state
+ * - bpm: Beats per minute
  * - onBarsPerRoundChange: Callback to handle bar length changes
  */
 
@@ -53,6 +54,7 @@ const RhymeExplorerMode = ({
   currentBar,
   setWordCounter,
   setIsWordChanging,
+  bpm,
   onBarsPerRoundChange = () => {}
 }) => {
   const { language } = useTranslation();
@@ -63,6 +65,7 @@ const RhymeExplorerMode = ({
   const currentWord = shuffledWords[wordCounter];
   const [targetWordIndex, setTargetWordIndex] = useState(wordCounter);
   const [barsPerRound, setBarsPerRound] = useState(2);
+  const [progress, setProgress] = useState(100);
   const { isAudioEnabled, isAudioAvailable, toggleAudio, playWordAudio, preloadWordAudio } = useWordAudio(selectedVocabulary);
 
   // Handle bar length changes
@@ -178,6 +181,34 @@ const RhymeExplorerMode = ({
     }
   }, [displayWord, playWordAudio, language]);
 
+  // Update progress bar based on beat timing
+  useEffect(() => {
+    if (!isBeatPlaying) {
+      setProgress(100);
+      return;
+    }
+
+    const interval = 50; // Update more frequently for smoother animation
+    const beatsPerBar = 4;
+    const totalTime = (60 / bpm) * beatsPerBar * barsPerRound * 1000; // Total time in ms
+    const adjustedTime = totalTime * 0.75; // Complete slightly before word change
+    const decrementAmount = (interval / adjustedTime) * 100;
+
+    const timer = setInterval(() => {
+      setProgress(prev => {
+        const newProgress = Math.max(0, prev - decrementAmount);
+        return newProgress;
+      });
+    }, interval);
+
+    return () => clearInterval(timer);
+  }, [isBeatPlaying, targetWordIndex, bpm, barsPerRound]);
+
+  // Reset progress when word changes
+  useEffect(() => {
+    setProgress(100);
+  }, [targetWordIndex]);
+
   return (
     <>
       <BaseTrainingMode
@@ -215,6 +246,7 @@ const RhymeExplorerMode = ({
               <div className="main-word">
                 <h3 key={`main-${displayWord.word}-${targetWordIndex}`}>{displayWord.word.toUpperCase()}</h3>
                 <span className="group-label" key={`group-${displayWord.group}-${targetWordIndex}`}>{displayWord.group}</span>
+                <div className="progress-bar" style={{ width: `${progress}%` }} />
               </div>
 
               <div className="rhyme-section themed-rhymes">
