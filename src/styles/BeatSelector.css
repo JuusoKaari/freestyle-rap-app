@@ -137,6 +137,7 @@
   background-position: right 0.5rem center;
   background-size: 1em;
   padding-right: 2.5rem;
+  box-sizing: border-box;
 }
 
 .controls-group select:hover {
@@ -178,13 +179,16 @@
 
   .beat-player {
     padding: 0.75rem;
-    flex-wrap: wrap;
     gap: 1rem;
+    align-items: center;
   }
 
   .player-main-section {
-    flex-basis: 100%;
-    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+    min-width: 0; /* Prevent flex item from growing beyond container */
   }
 
   .play-button {
@@ -200,24 +204,48 @@
 
   .beat-info {
     flex: 0 1 auto;
-    min-width: 100px;
+    min-width: 0;
+    max-width: 120px; /* Fixed width to match screenshot */
+  }
+
+  .beat-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .controls-group {
-    flex-basis: 100%;
-    flex-wrap: wrap;
-    justify-content: right;
-    gap: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-left: auto;
+    flex-shrink: 0;
   }
-} 
+
+  .change-beat-button {
+    width: 120px;
+    height: 35px;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 35px;
+  }
+
+  .controls-group select {
+    width: 120px !important;
+    height: 35px;
+    box-sizing: border-box;
+    padding: 0 2.5rem 0 1rem;
+    line-height: 35px;
+    margin: 0;
+  }
+}
 
 @media screen and (max-width: 400px) {
-  .bpm-selector {
-    margin-left: 0.0rem;
-    min-width: 120px;
-  }
-  .beat-name, .beat-info {
-    min-width: 50px;
+  .beat-info {
+    max-width: 100px;
   }
 
+  .change-beat-button, .controls-group select {
+    width: 100px !important;
+  }
 }

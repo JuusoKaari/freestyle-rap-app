@@ -1,7 +1,6 @@
 .bpm-selector {
   display: inline-flex;
   align-items: center;
-  margin-left: 1rem;
 }
 
 .bpm-selector select {

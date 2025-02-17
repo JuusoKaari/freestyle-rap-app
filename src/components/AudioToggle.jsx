@@ -17,6 +17,7 @@ export const AudioToggle = ({ isEnabled, isAvailable, onToggle }) => {
 
   return (
     <div className="audio-toggle">
+      <span className="toggle-label">{label}</span>
       <label className="toggle-switch">
         <input
           type="checkbox"
@@ -25,7 +26,6 @@ export const AudioToggle = ({ isEnabled, isAvailable, onToggle }) => {
         />
         <span className="toggle-slider"></span>
       </label>
-      <span className="toggle-label">{label}</span>
     </div>
   );
 }; 
