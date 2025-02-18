@@ -1,6 +1,6 @@
 .slot-machine-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   gap: 1rem;
   width: 100%;
@@ -16,15 +16,22 @@
   transform: translateX(-50%);
 }
 
+.slot-machines-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
 /* Base sizes for large screens */
 .slot-machine {
+  position: relative;
   flex: 1;
-  min-width: 250px;
-  max-width: 350px;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .slot-window {
@@ -86,7 +93,6 @@
     min-height: 200px;
     width: 200%;
     margin-top: -1rem;
-    gap: 0.5rem;
   }
 
   .slot-machine {
@@ -115,7 +121,6 @@
   .slot-machine-container {
     transform: translateX(-50%) scale(0.45);
     width: 220%;
-    gap: 0.3rem;
   }
 
   .slot-machine {
@@ -316,4 +321,24 @@
 .slot-machine-settings select:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(to right, #7c82ff, #4f56ff);
+  border-radius: 2px;
+  transition: width 50ms linear;
 } 

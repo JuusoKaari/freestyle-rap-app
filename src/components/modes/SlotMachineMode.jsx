@@ -45,14 +45,16 @@ const SlotMachine = ({
   currentBeat,
   currentBar,
   setWordCounter,
-  setIsWordChanging
+  setIsWordChanging,
+  bpm
 }) => {
   const { language } = useTranslation();
   const translations = trainingModes.find(mode => mode.id === 'slot-machine').translations[language];
   const [isSpinning, setIsSpinning] = useState([false, false, false]);
   const [isEndingAnimation, setIsEndingAnimation] = useState([false, false, false]);
   const [lastWordCounter, setLastWordCounter] = useState(wordCounter);
-  const [barsPerRound, setBarsPerRound] = useState(2);
+  const [barsPerRound, setBarsPerRound] = useState(4);
+  const [progress, setProgress] = useState(100);
 
   // Handle bar length changes
   const handleBarsChange = (value) => {
@@ -185,6 +187,34 @@ const SlotMachine = ({
     }
   }, [wordCounter, lastWordCounter, shuffledWords]);
 
+  // Update progress bar based on beat timing
+  useEffect(() => {
+    if (!isPlaying) {
+      setProgress(100);
+      return;
+    }
+
+    const interval = 50; // Update more frequently for smoother animation
+    const beatsPerBar = 4;
+    const totalTime = (60 / bpm) * beatsPerBar * barsPerRound * 1000; // Total time in ms
+    const adjustedTime = totalTime * 0.75; // Complete slightly before word change
+    const decrementAmount = (interval / adjustedTime) * 100;
+
+    const timer = setInterval(() => {
+      setProgress(prev => {
+        const newProgress = Math.max(0, prev - decrementAmount);
+        return newProgress;
+      });
+    }, interval);
+
+    return () => clearInterval(timer);
+  }, [isPlaying, wordCounter, bpm, barsPerRound]);
+
+  // Reset progress when word changes
+  useEffect(() => {
+    setProgress(100);
+  }, [wordCounter]);
+
   return (
     <BaseTrainingMode
       modeName={modeName}
@@ -195,23 +225,28 @@ const SlotMachine = ({
       isLoading={isLoading}
     >
       <div className="slot-machine-container">
-        {[0, 1, 2].map((index) => (
-          <div key={index} className="slot-machine">
-            <div className={`slot-window ${isSpinning[index] ? 'spinning' : ''} ${isEndingAnimation[index] ? 'ending-spin' : ''}`}>
-              <div className="slot-list">
-                {currentLists[index].map((word, wordIndex) => (
-                  <div 
-                    key={`${word.word}-${wordIndex}`}
-                    className={`slot-item ${wordIndex === 1 ? 'current' : ''}`}
-                    data-length={word.word.length > 12 ? 'very-long' : word.word.length > 8 ? 'long' : 'normal'}
-                  >
-                    {word.word}
-                  </div>
-                ))}
+        <div className="slot-machines-wrapper">
+          {[0, 1, 2].map((index) => (
+            <div key={index} className="slot-machine">
+              <div className={`slot-window ${isSpinning[index] ? 'spinning' : ''} ${isEndingAnimation[index] ? 'ending-spin' : ''}`}>
+                <div className="slot-list">
+                  {currentLists[index].map((word, wordIndex) => (
+                    <div 
+                      key={`${word.word}-${wordIndex}`}
+                      className={`slot-item ${wordIndex === 1 ? 'current' : ''}`}
+                      data-length={word.word.length > 12 ? 'very-long' : word.word.length > 8 ? 'long' : 'normal'}
+                    >
+                      {word.word}
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+        <div className="progress-bar-container">
+          <div className="progress-bar" style={{ width: `${progress}%` }} />
+        </div>
       </div>
       {/* Debug information */}
       {isDebugMode && (
