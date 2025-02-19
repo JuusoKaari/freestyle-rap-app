@@ -18,19 +18,19 @@
 }
 
 .target-word {
+  position: relative;
   grid-column: 2;
   grid-row: 2;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   background: var(--primary-color);
   padding: 8px 6px;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   z-index: 10;
   min-height: 45px;
-  position: relative;
   overflow: hidden;
   width: 100%;
   box-sizing: border-box;
@@ -130,13 +130,14 @@
   box-shadow: none;
 }
 
-.progress-bar {
+.find-rhymes-progress-bar {
   position: absolute;
   bottom: 0;
-  left: 0;
-  height: 3px;
-  background: rgba(255, 255, 255, 0.5);
-  transition: width 0.1s linear;
+  left: 50% !important;
+  transform: translateX(-50%);
+  height: 2px;
+  background: linear-gradient(to right, #7c82ff, #4f56ff);
+  transition: width 50ms linear;
 }
 
 .settings-row {
@@ -155,11 +156,14 @@
 .bars-per-round-setting {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .bars-per-round-setting label {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
   font-size: 1.1rem;
   font-weight: 500;

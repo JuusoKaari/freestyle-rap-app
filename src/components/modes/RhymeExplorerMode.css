@@ -422,13 +422,12 @@
   cursor: not-allowed;
 }
 
-.progress-bar {
+.rhyme-explorer-progress-bar {
   position: absolute;
   bottom: 0;
   left: 50% !important;
   transform: translateX(-50%);
   height: 2px;
-  background: rgba(76, 175, 80, 0.5);
+  background: linear-gradient(to right, #7c82ff, #4f56ff);
   transition: width 0.05s linear;
-
 } 

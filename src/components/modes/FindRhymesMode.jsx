@@ -192,7 +192,7 @@ const FindRhymesMode = ({
         cells.push(
           <div key="target" className="target-word">
             <h2>{isPlaying ? currentWord?.word.toUpperCase() : '?'}</h2>
-            {isPlaying && <div className="progress-bar" style={{ width: `${progress}%` }} />}
+            {isPlaying && <div className="find-rhymes-progress-bar" style={{ width: `${progress}%` }} />}
           </div>
         );
       } else {

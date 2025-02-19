@@ -246,7 +246,7 @@ const RhymeExplorerMode = ({
               <div className="main-word">
                 <h3 key={`main-${displayWord.word}-${targetWordIndex}`}>{displayWord.word.toUpperCase()}</h3>
                 <span className="group-label" key={`group-${displayWord.group}-${targetWordIndex}`}>{displayWord.group}</span>
-                <div className="progress-bar" style={{ width: `${progress}%` }} />
+                <div className="rhyme-explorer-progress-bar" style={{ width: `${progress}%` }} />
               </div>
 
               <div className="rhyme-section themed-rhymes">

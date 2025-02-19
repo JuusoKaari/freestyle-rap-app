@@ -244,8 +244,8 @@ const SlotMachine = ({
             </div>
           ))}
         </div>
-        <div className="progress-bar-container">
-          <div className="progress-bar" style={{ width: `${progress}%` }} />
+        <div className="slot-machine-progress-container">
+          <div className="slot-machine-progress-bar" style={{ width: `${progress}%` }} />
         </div>
       </div>
       {/* Debug information */}
