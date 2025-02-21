@@ -99,7 +99,7 @@ const VocabularySelectModal = ({
                 <span className="vocabulary-icon">{vocab.icon}</span>
               </div>
               <div className="vocabulary-info">
-                <span className="vocabulary-name">{vocab.name}</span>
+                <span className="vocabulary-modal-name">{vocab.name}</span>
                 <span className="vocabulary-description">{vocab.description}</span>
               </div>
               {isCustomVocabulary(vocab) && (
