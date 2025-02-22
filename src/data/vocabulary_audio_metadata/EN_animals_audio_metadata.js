@@ -117,6 +117,8 @@ export default {
     "deer": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1739121125/freestyle_words/en/deer.mp3",
     "lizard": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1739121126/freestyle_words/en/lizard.mp3",
     "antelope": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1739121127/freestyle_words/en/antelope.mp3",
-    "snake": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1739121128/freestyle_words/en/snake.mp3"
+    "snake": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1739121128/freestyle_words/en/snake.mp3",
+    "geese": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1740243768/freestyle_words/en/geese.mp3",
+    "cheese": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1740243769/freestyle_words/en/cheese.mp3"
   }
 };
