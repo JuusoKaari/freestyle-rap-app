@@ -103,13 +103,9 @@
   text-overflow: ellipsis;
 }
 
-.pattern-count {
+.pattern-count, .word-count {
   font-size: 0.8rem;
   color: var(--text-color);
-}
-
-.word-count {
-  display: none;
 }
 
 .pattern-details {

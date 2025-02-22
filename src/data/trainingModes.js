@@ -139,22 +139,24 @@ export const trainingModes = [
     difficulty: 'easy',
     translations: {
       en: {
-        name: 'Rhyme Map',
-        description: 'Visual grid of vowel rhyme patterns found in the Finnish dictionary',
-        helperText: 'Click on a vowel pattern to see all words that follow that pattern.\nPatterns are organized by their vowel structure (e.g. "AA-AA", "AA-EE").',
-        patternTitle: 'Vowel Pattern',
+        name: 'English Rhyme Map',
+        description: 'Visual grid of English phoneme patterns found in the dictionary',
+        helperText: 'Click on a phoneme pattern to see all words that follow that pattern.\nPatterns are organized by their phonetic structure.',
+        patternTitle: 'Phoneme Pattern',
         wordCount: 'Words',
         searchPlaceholder: 'Search patterns...',
-        backButton: 'BACK'
+        backButton: 'BACK',
+        patterns: 'patterns'
       },
       fi: {
-        name: 'Riimikartta',
+        name: 'Suomen Riimikartta',
         description: 'Visuaalinen ruudukko suomen kielen vokaalikaavoja',
         helperText: 'Klikkaa vokaalikaavaa nähdäksesi kaikki sanat jotka noudattavat sitä kaavaa.\nKaavat on järjestetty vokaalirakenteen mukaan (esim. "AA-AA", "AA-EE").',
         patternTitle: 'Vokaalikaava',
-        wordCount: 'Sanat',
+        wordCount: 'sanaa',
         searchPlaceholder: 'Etsi kaavoja...',
-        backButton: 'TAKAISIN'
+        backButton: 'TAKAISIN',
+        patterns: 'kaavaa'
       }
     }
   },
