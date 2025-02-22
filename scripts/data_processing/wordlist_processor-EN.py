@@ -87,7 +87,7 @@ def get_syllable_count(word):
 
 
 def simplify_cmu_pattern(pattern):
-    """Convert CMU pattern to simple phonetic pattern with dashes, keeping vowels with stress and final consonants."""
+    """Convert CMU pattern to simple phonetic pattern with dashes, keeping only vowel sounds with stress."""
     # Define vowel phonemes (CMU notation)
     vowel_phones = {
         'AA', 'AE', 'AH', 'AO', 'AW', 'AY',
@@ -99,27 +99,10 @@ def simplify_cmu_pattern(pattern):
     
     # Split into individual phonemes
     phonemes = pattern.split()
-    
-    # Find the last vowel position
-    last_vowel_pos = -1
-    for i, p in enumerate(phonemes):
-        if any(p.startswith(v) for v in vowel_phones):
-            last_vowel_pos = i
-            
-    # Get vowels and their positions
-    result = []
-    for i, p in enumerate(phonemes):
-        if any(p.startswith(v) for v in vowel_phones):
-            result.append(p)
-        elif i > last_vowel_pos:  # If it's a consonant after the last vowel
-            # If we already have a final consonant group, append to it
-            if result and not any(result[-1].startswith(v) for v in vowel_phones):
-                result[-1] += p
-            else:
-                result.append(p)
-    
-    # Join everything with dashes
-    simple_pattern = "-".join(result)
+    # Keep only vowel phonemes with their stress numbers
+    vowels = [p for p in phonemes if any(p.startswith(v) for v in vowel_phones)]
+    # Join vowels with dashes
+    simple_pattern = "-".join(vowels)
     return simple_pattern
 
 

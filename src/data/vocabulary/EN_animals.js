@@ -1,117 +1,91 @@
 export default {
-    "AA1-RK": [
-        "shark"
-    ],
-    "AA1-SP": [
+    "AA1": [
+        "shark",
         "wasp"
     ],
-    "EH1-AA2-G": [
+    "EH1-AA2": [
         "hedgehog"
     ],
-    "AE1-M": [
-        "clam"
-    ],
-    "AE1-B": [
-        "crab"
-    ],
-    "AE1-K": [
-        "back"
-    ],
-    "AE1-NS": [
+    "AE1": [
+        "back",
+        "branch",
+        "clam",
+        "crab",
         "dance"
     ],
-    "AE1-NCH": [
-        "branch"
-    ],
-    "AA1-AH0-N": [
-        "dolphin"
-    ],
-    "AA1-AH0-S": [
+    "AA1-AH0": [
+        "dolphin",
         "harness"
     ],
-    "AE1-AH0-T": [
-        "rabbit"
-    ],
-    "AE1-AH0-L": [
+    "AE1-AH0": [
         "mammal",
+        "rabbit",
         "saddle"
     ],
-    "AE1-AH0-AH0-L": [
+    "AE1-AH0-AH0": [
         "animal"
     ],
-    "EH1-AH0-AH0-NT": [
+    "EH1-AH0-AH0": [
         "elephant"
     ],
-    "AO1-AH0-L": [
+    "AO1-AH0": [
         "coral"
     ],
-    "AY1-AH0-N": [
+    "AY1-AH0": [
         "lion"
     ],
-    "EH1-AH0-N": [
+    "EH1-AH0": [
+        "parrot",
         "penguin"
     ],
-    "EH1-AH0-T": [
-        "parrot"
-    ],
-    "ER1-AH0-L": [
+    "ER1-AH0": [
         "squirrel",
         "turtle"
     ],
-    "AH0-EY1-AH0-N": [
+    "AH0-EY1-AH0": [
         "predation"
     ],
-    "IH1-AH0-N": [
+    "IH1-AH0": [
         "chicken"
     ],
-    "IY1-AH0-L": [
+    "IY1-AH0": [
         "beetle",
+        "cheetah",
         "eagle"
     ],
-    "IY1-AH0": [
-        "cheetah"
-    ],
-    "AH1-K": [
+    "AH1": [
         "duck"
     ],
-    "AO1-RS": [
+    "AO1": [
+        "claw",
         "horse"
     ],
-    "AO1": [
-        "claw"
-    ],
-    "AW1-S": [
-        "mouse"
-    ],
-    "AW1-T": [
+    "AW1": [
+        "mouse",
         "snout"
     ],
-    "EH1-AY0-L": [
+    "EH1-AY0": [
         "reptile"
     ],
-    "AY1-LD": [
+    "AY1": [
         "wild"
     ],
-    "AA1-AH0-AY2-L": [
+    "AA1-AH0-AY2": [
         "crocodile"
     ],
     "AH1-ER0-AY2": [
         "butterfly"
     ],
-    "EH1-R": [
+    "EH1": [
         "bear",
-        "care"
-    ],
-    "EH1-ST": [
-        "nest"
-    ],
-    "EH1-BD": [
+        "care",
+        "nest",
         "webbed"
     ],
-    "AH0-EH1-L": [
+    "AH0-EH1": [
         "gazelle"
     ],
-    "IH1-EH2-KT": [
+    "IH1-EH2": [
         "insect"
     ],
     "AA1-ER0": [
@@ -136,17 +110,13 @@ export default {
     "AY1-ER0": [
         "tiger"
     ],
-    "EH1-ER0-D": [
+    "EH1-ER0": [
+        "feathers",
         "leopard"
     ],
-    "EH1-ER0-Z": [
-        "feathers"
-    ],
-    "IH1-ER0-D": [
+    "IH1-ER0": [
+        "clippers",
         "lizard"
-    ],
-    "IH1-ER0-Z": [
-        "clippers"
     ],
     "IY1-ER0": [
         "beaver"
@@ -154,122 +124,88 @@ export default {
     "OY1-ER0": [
         "oyster"
     ],
-    "ER1-D": [
+    "ER1": [
         "bird",
         "herd"
     ],
-    "EY1-K": [
-        "snake"
-    ],
     "EY1": [
-        "prey"
-    ],
-    "EY1-LZ": [
-        "scales"
-    ],
-    "EY1-L": [
+        "cage",
+        "mane",
         "nail",
+        "prey",
+        "scales",
+        "snake",
         "tail"
     ],
-    "EY1-N": [
-        "mane"
-    ],
-    "EY1-JH": [
-        "cage"
-    ],
-    "AA1-IH0-L": [
+    "AA1-IH0": [
+        "barking",
         "nostril"
     ],
-    "AA1-IH0-NG": [
-        "barking"
-    ],
-    "AH1-IH0-NG": [
+    "AH1-IH0": [
         "hunting"
     ],
-    "AO1-IH0-CH": [
+    "AO1-IH0": [
+        "gnawing",
         "ostrich"
     ],
-    "AO1-IH0-NG": [
-        "gnawing"
-    ],
-    "AW1-IH0-NG": [
+    "AW1-IH0": [
         "howling"
     ],
-    "AY1-IH0-NG": [
+    "AY1-IH0": [
         "climbing",
         "hiding"
     ],
-    "EH1-IH0-NG": [
+    "EH1-IH0": [
         "nesting",
         "yelping"
     ],
-    "ER1-IH0-NG": [
+    "ER1-IH0": [
         "purring"
     ],
-    "EY1-IH0-NG": [
+    "EY1-IH0": [
         "mating",
         "playing"
     ],
-    "IH1-IH0-NG": [
+    "IH1-IH0": [
         "sniffing"
     ],
-    "IY1-IH0-NG": [
+    "IY1-IH0": [
         "feeding"
     ],
-    "OW1-IH0-NG": [
+    "OW1-IH0": [
         "growling"
     ],
-    "IH1-MP": [
-        "shrimp"
-    ],
-    "IH1-R": [
-        "deer"
-    ],
-    "IH1-SH": [
+    "IH1": [
+        "deer",
         "dish",
-        "fish"
-    ],
-    "IH1-NGZ": [
+        "fish",
+        "shrimp",
         "wings"
     ],
-    "AO1-IH2-NG": [
+    "AO1-IH2": [
         "offspring"
     ],
-    "EY1-IH2-R": [
+    "EY1-IH2": [
         "reindeer"
     ],
-    "EH1-IY0-IH2-SH": [
+    "EH1-IY0-IH2": [
         "jellyfish"
     ],
     "EH1-IY0": [
         "belly"
     ],
-    "IY1-IY0-Z": [
+    "IY1-IY0": [
         "species"
     ],
-    "IY1-P": [
-        "sheep"
-    ],
-    "IY1-L": [
-        "seal"
-    ],
-    "IY1-K": [
-        "beak"
-    ],
-    "IY1-T": [
-        "feet"
-    ],
-    "IY1-SH": [
-        "leash"
-    ],
     "IY1": [
+        "beak",
+        "cheese",
+        "feet",
+        "geese",
+        "leash",
+        "seal",
+        "sheep",
         "tree"
-    ],
-    "IY1-Z": [
-        "cheese"
-    ],
-    "IY1-S": [
-        "geese"
     ],
     "AA1-OW0": [
         "hollow"
@@ -280,31 +216,23 @@ export default {
     "AH0-IH1-OW0": [
         "flamingo"
     ],
-    "OW1-T": [
-        "coat",
-        "goat"
-    ],
     "OW1": [
-        "crow"
-    ],
-    "OW1-L": [
         "bowl",
+        "coat",
+        "crow",
+        "goat",
         "mole"
     ],
-    "AE1-AH0-OW2-P": [
+    "AE1-AH0-OW2": [
         "antelope"
     ],
-    "UH1-LF": [
+    "UH1": [
         "wolf"
     ],
-    "UW1-S": [
+    "UW1": [
+        "food",
         "goose",
+        "hoof",
         "moose"
-    ],
-    "UW1-F": [
-        "hoof"
-    ],
-    "UW1-D": [
-        "food"
     ]
 };

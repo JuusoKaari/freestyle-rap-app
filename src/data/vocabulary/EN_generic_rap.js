@@ -1,121 +1,103 @@
 export default {
-    "AA1-RZ": [
-        "bars"
-    ],
-    "AA1-D": [
+    "AA1": [
+        "bars",
+        "block",
         "squad"
     ],
-    "AA1-K": [
-        "block"
-    ],
-    "UH1-AA2-KS": [
+    "UH1-AA2": [
         "boombox"
     ],
-    "AE1-P": [
+    "AE1": [
+        "scratch",
+        "slang",
         "trap"
     ],
-    "AE1-NG": [
-        "slang"
-    ],
-    "AE1-CH": [
-        "scratch"
-    ],
-    "AE1-AH0-NT": [
-        "rampant"
-    ],
-    "AE1-AH0-L": [
+    "AE1-AH0": [
+        "anthem",
         "battle",
+        "rampant",
         "sample"
     ],
-    "AE1-AH0-M": [
-        "anthem"
-    ],
-    "AA1-AH0-AH0-NS": [
+    "AA1-AH0-AH0": [
         "dominance"
     ],
-    "EH1-AH0-AH0-S": [
+    "EH1-AH0-AH0": [
+        "eminent",
         "genesis",
         "venomous"
     ],
-    "EH1-AH0-AH0-NT": [
-        "eminent"
-    ],
-    "IH1-AH0-AH0-T": [
+    "IH1-AH0-AH0": [
         "infinite"
     ],
-    "AH1-AH0-L": [
+    "AH1-AH0": [
         "hustle"
     ],
-    "IH2-AO1-AH0-L": [
+    "IH2-AO1-AH0": [
         "immortal"
     ],
-    "EH1-AH0-N": [
+    "EH1-AH0": [
         "session"
     ],
-    "AE0-EH1-AH0-NT": [
+    "AE0-EH1-AH0": [
         "transcendent"
     ],
-    "AH0-EH1-AH0-NT": [
+    "AH0-EH1-AH0": [
         "ascendant"
     ],
-    "AH1-ER0-AH0-S": [
+    "AH1-ER0-AH0": [
         "thunderous"
     ],
-    "ER1-AH0-N": [
+    "ER1-AH0": [
         "urban"
     ],
-    "EY1-AH0-NS": [
+    "EY1-AH0": [
         "cadence"
     ],
-    "ER1-EY2-AH0-L": [
+    "ER1-EY2-AH0": [
         "turntable"
     ],
-    "IH1-IH0-AH0-L": [
+    "IH1-IH0-AH0": [
         "lyrical"
     ],
-    "OW1-AH0-L": [
+    "OW1-AH0": [
         "vocal"
     ],
-    "ER0-OW1-AH0-S": [
+    "ER0-OW1-AH0": [
         "ferocious"
     ],
-    "UW1-AH0-S": [
+    "UW1-AH0": [
         "ruthless"
     ],
-    "AH1-NGK": [
+    "AH1": [
         "crunk"
     ],
-    "EH1-AH0-AO0-R": [
+    "EH1-AH0-AO0": [
         "metaphor"
     ],
-    "AH1-ER0-AW2-ND": [
+    "AH1-ER0-AW2": [
         "underground"
     ],
-    "AY1-P": [
-        "hype"
-    ],
-    "AY1-B": [
+    "AY1": [
+        "grind",
+        "hype",
         "vibe"
-    ],
-    "AY1-ND": [
-        "grind"
     ],
     "AE1-AH0-AY2": [
         "magnify"
     ],
-    "AH1-AY2-N": [
+    "AH1-AY2": [
         "punchline"
     ],
-    "IY1-AY2-L": [
+    "IY1-AY2": [
         "freestyle"
     ],
-    "EH2-IH0-EH1-NT": [
+    "EH2-IH0-EH1": [
         "represent"
     ],
-    "EH1-EH2-T": [
+    "EH1-EH2": [
         "headset"
     ],
-    "EY1-EH2-KS": [
+    "EY1-EH2": [
         "apex"
     ],
     "AE1-ER0": [
@@ -127,53 +109,45 @@ export default {
         "cypher",
         "fire"
     ],
-    "ER1-S": [
+    "ER1": [
         "verse"
     ],
-    "IY0-ER1-B": [
+    "IY0-ER1": [
         "reverb"
     ],
-    "EY1-N": [
+    "EY1": [
+        "great",
         "reign"
     ],
-    "EY1-T": [
-        "great"
-    ],
-    "AA1-IH0-NG": [
+    "AA1-IH0": [
         "dropping"
     ],
-    "AY1-IH0-NG": [
+    "AY1-IH0": [
         "rhyming"
     ],
-    "EH1-IH0-K": [
+    "EH1-IH0": [
         "epic"
     ],
-    "AH0-EH1-IH0-K": [
+    "AH0-EH1-IH0": [
         "majestic"
     ],
-    "IH0-EH1-IH0-S": [
+    "IH0-EH1-IH0": [
         "relentless"
     ],
-    "EY1-IH0-NG": [
+    "EY1-IH0": [
         "spraying"
     ],
-    "IH1-IH0-NG": [
+    "IH1-IH0": [
         "spinning"
     ],
-    "OW1-IH0-NG": [
+    "OW1-IH0": [
         "flowing"
     ],
-    "IH1-T": [
+    "IH1": [
+        "drip",
+        "skill",
+        "spin",
         "spit"
-    ],
-    "IH1-N": [
-        "spin"
-    ],
-    "IH1-P": [
-        "drip"
-    ],
-    "IH1-L": [
-        "skill"
     ],
     "AA1-AH0-IY0": [
         "prodigy"
@@ -193,14 +167,12 @@ export default {
     "AH0-IY1-IY0": [
         "graffiti"
     ],
-    "IY1-T": [
+    "IY1": [
         "beat",
+        "clique",
         "street"
     ],
-    "IY1-K": [
-        "clique"
-    ],
-    "AH0-IY1-SHT": [
+    "AH0-IY1": [
         "unleashed"
     ],
     "EH1-IY1": [
@@ -210,39 +182,29 @@ export default {
         "bravado"
     ],
     "OW1": [
-        "flow"
-    ],
-    "OW1-P": [
-        "dope"
-    ],
-    "OW1-T": [
+        "dope",
+        "flow",
         "goat"
     ],
-    "AE2-IY0-OW1-S": [
+    "AE2-IY0-OW1": [
         "grandiose"
     ],
-    "AY1-AH0-OW2-N": [
+    "AY1-AH0-OW2": [
         "microphone"
     ],
     "UW1-IY0-OW2": [
         "studio"
     ],
-    "UH1-K": [
+    "UH1": [
+        "hood",
         "hook"
     ],
-    "UH1-D": [
-        "hood"
-    ],
     "UW1": [
+        "boom",
+        "booth",
         "crew"
     ],
-    "UW1-M": [
-        "boom"
-    ],
-    "UW1-TH": [
-        "booth"
-    ],
-    "UH1-AH0-UW2-F": [
+    "UH1-AH0-UW2": [
         "bulletproof"
     ]
 };
