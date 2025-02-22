@@ -103,6 +103,11 @@
   text-overflow: ellipsis;
 }
 
+/* Make pattern text smaller in second level */
+.pattern-grid:not(.root-view) .pattern-card h3 {
+  font-size: 0.9rem;
+}
+
 .pattern-count, .word-count {
   font-size: 0.8rem;
   color: var(--text-color);

@@ -247,7 +247,7 @@ const RhymeMapMode = ({
                     setModalPattern(pattern);
                   }}
                 >
-                  <h3>{pattern}</h3>
+                  <h3>{pattern.toUpperCase()}</h3>
                   <span className="word-count">{wordCount} {translations.wordCount.toLowerCase()}</span>
                 </div>
               );
