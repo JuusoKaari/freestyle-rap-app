@@ -16,7 +16,30 @@ echo Processing all wordlists from: %WORDLISTS_DIR%
 echo Output directory: %OUTPUT_DIR%
 echo.
 
-rem Process each .txt file in the wordlists directory
+rem Preprocessing step: Combine full dictionary files from their respective folders
+echo Preprocessing: Combining full dictionary files...
+
+rem Create combined Finnish full dictionary from parts
+echo. > "%WORDLISTS_DIR%\FI__full_dict.txt"
+for %%F in ("%WORDLISTS_DIR%\FI__full_dict_parts\*.txt") do (
+    echo Adding %%~nxF to Finnish dictionary...
+    type "%%F" >> "%WORDLISTS_DIR%\FI__full_dict.txt"
+    echo. >> "%WORDLISTS_DIR%\FI__full_dict.txt"
+)
+
+rem Create combined English full dictionary from parts
+echo. > "%WORDLISTS_DIR%\EN__full_dict.txt"
+for %%F in ("%WORDLISTS_DIR%\EN__full_dict_parts\*.txt") do (
+    echo Adding %%~nxF to English dictionary...
+    type "%%F" >> "%WORDLISTS_DIR%\EN__full_dict.txt"
+    echo. >> "%WORDLISTS_DIR%\EN__full_dict.txt"
+)
+
+echo Preprocessing complete!
+echo.
+
+rem Process each .txt file in the main wordlists directory
+echo Processing all files in raw_wordlists folder...
 for %%F in ("%WORDLISTS_DIR%\*.txt") do (
     set "FILENAME=%%~nxF"
     echo Processing: !FILENAME!
@@ -33,6 +56,10 @@ for %%F in ("%WORDLISTS_DIR%\*.txt") do (
     )
     echo.
 )
+
+rem Clean up temporary combined files
+del "%WORDLISTS_DIR%\FI__full_dict.txt"
+del "%WORDLISTS_DIR%\EN__full_dict.txt"
 
 echo All files processed!
 pause 

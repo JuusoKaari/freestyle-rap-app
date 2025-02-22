@@ -2,157 +2,148 @@ export default {
     "a-a": [
         "da-ta"
     ],
-    "a-aa": [
-        "da-taa"
+    "aa-a": [
+        "kaa-va"
     ],
-    "a-aa-i": [
-        "ga-lak-si"
-    ],
-    "a-aa-ii": [
-        "ga-lak-sii"
-    ],
-    "a-ai-o": [
-        "ha-vain-to"
-    ],
-    "a-ai-oo": [
-        "ha-vain-too"
-    ],
-    "a-e": [
-        "la-ser"
-    ],
-    "a-e-ii": [
-        "la-se-rii"
+    "ii-au-a": [
+        "mit-taus-ta"
     ],
     "a-ee-a": [
         "pla-neet-ta"
     ],
-    "a-ee-aa": [
-        "pla-neet-taa"
-    ],
-    "a-ii-aa": [
-        "ma-tik-kaa"
-    ],
-    "a-o-i": [
-        "a-to-mi"
-    ],
-    "a-o-ii": [
-        "a-to-mii"
-    ],
-    "aa-a": [
-        "kaa-va"
-    ],
-    "aa-aa": [
-        "kaa-vaa"
-    ],
-    "aa-i": [
-        "kvant-ti"
-    ],
-    "aa-ii": [
-        "kvant-tii"
+    "o-ee-a": [
+        "ko-et-ta"
     ],
     "e-i-a": [
         "ke-mi-a"
     ],
+    "uu-i-a": [
+        "tut-ki-ja"
+    ],
+    "y-ii-a": [
+        "fy-siik-ka"
+    ],
+    "u-oo-a": [
+        "tu-los-ta"
+    ],
+    "o-u-a": [
+        "so-lu-ja"
+    ],
+    "a-aa": [
+        "da-taa"
+    ],
+    "aa-aa": [
+        "kaa-vaa"
+    ],
+    "a-ee-aa": [
+        "pla-neet-taa"
+    ],
     "e-i-aa": [
         "ke-mi-aa"
     ],
-    "e-o-i": [
-        "me-to-di"
+    "uu-i-aa": [
+        "tut-ki-jaa"
     ],
-    "e-o-ii": [
-        "me-to-dii"
+    "a-ii-aa": [
+        "ma-tik-kaa"
+    ],
+    "y-ii-aa": [
+        "fy-siik-kaa"
+    ],
+    "ii-au": [
+        "mit-taus"
+    ],
+    "a-e": [
+        "la-ser"
+    ],
+    "iu-a-e": [
+        "hiuk-ka-nen"
+    ],
+    "äy-e": [
+        "näy-te"
+    ],
+    "aa-i": [
+        "kvant-ti"
+    ],
+    "a-aa-i": [
+        "ga-lak-si"
     ],
     "ee-i": [
         "gee-ni",
         "tes-ti"
     ],
-    "ee-ii": [
-        "gee-nii",
-        "tes-tii"
-    ],
     "i-ee-i": [
         "pi-pet-ti"
-    ],
-    "i-ee-ii": [
-        "pi-pet-tii"
-    ],
-    "ie-e-ie": [
-        "tie-de-mies"
-    ],
-    "ii-au": [
-        "mit-taus"
-    ],
-    "ii-au-a": [
-        "mit-taus-ta"
-    ],
-    "ii-i-ö": [
-        "il-mi-ö"
-    ],
-    "ii-i-öö": [
-        "il-mi-öö"
-    ],
-    "iu-a-e": [
-        "hiuk-ka-nen"
-    ],
-    "iu-a-ii": [
-        "hiuk-ka-sii"
-    ],
-    "o-ee-a": [
-        "ko-et-ta"
     ],
     "o-ee-i": [
         "pro-ses-si"
     ],
-    "o-ee-ii": [
-        "pro-ses-sii"
+    "a-o-i": [
+        "a-to-mi"
     ],
-    "o-ei-u": [
-        "ko-kei-lu"
-    ],
-    "o-ei-uu": [
-        "ko-kei-luu"
+    "e-o-i": [
+        "me-to-di"
     ],
     "o-oo-i": [
         "ro-bot-ti"
     ],
+    "ie-e-ie": [
+        "tie-de-mies"
+    ],
+    "iu-a-ii": [
+        "hiuk-ka-sii"
+    ],
+    "aa-ii": [
+        "kvant-tii"
+    ],
+    "a-aa-ii": [
+        "ga-lak-sii"
+    ],
+    "a-e-ii": [
+        "la-se-rii"
+    ],
+    "ee-ii": [
+        "gee-nii",
+        "tes-tii"
+    ],
+    "i-ee-ii": [
+        "pi-pet-tii"
+    ],
+    "o-ee-ii": [
+        "pro-ses-sii"
+    ],
+    "a-o-ii": [
+        "a-to-mii"
+    ],
+    "e-o-ii": [
+        "me-to-dii"
+    ],
     "o-oo-ii": [
         "ro-bot-tii"
     ],
-    "o-u": [
-        "so-lu"
-    ],
-    "o-u-a": [
-        "so-lu-ja"
-    ],
-    "o-uu": [
-        "so-luu"
+    "a-ai-o": [
+        "ha-vain-to"
     ],
     "u-o": [
         "tu-los"
     ],
-    "u-oo-a": [
-        "tu-los-ta"
+    "a-ai-oo": [
+        "ha-vain-too"
     ],
-    "uu-i-a": [
-        "tut-ki-ja"
-    ],
-    "uu-i-aa": [
-        "tut-ki-jaa"
+    "o-ei-u": [
+        "ko-kei-lu"
     ],
     "uu-i-u": [
         "tut-ki-mus"
     ],
-    "y-ii-a": [
-        "fy-siik-ka"
+    "o-u": [
+        "so-lu"
     ],
-    "y-ii-aa": [
-        "fy-siik-kaa"
+    "o-ei-uu": [
+        "ko-kei-luu"
     ],
-    "yy-ä-ö": [
-        "yh-tä-lö"
-    ],
-    "yy-ä-öö": [
-        "yh-tä-löö"
+    "o-uu": [
+        "so-luu"
     ],
     "ä-ei-y": [
         "sä-tei-ly"
@@ -160,14 +151,23 @@ export default {
     "ä-ei-yy": [
         "sä-tei-lyy"
     ],
-    "äy-e": [
-        "näy-te"
-    ],
     "äy-ee-ä": [
         "näy-tet-tä"
     ],
+    "ii-i-ö": [
+        "il-mi-ö"
+    ],
+    "yy-ä-ö": [
+        "yh-tä-lö"
+    ],
     "öy-ö": [
         "löy-tö"
+    ],
+    "ii-i-öö": [
+        "il-mi-öö"
+    ],
+    "yy-ä-öö": [
+        "yh-tä-löö"
     ],
     "öy-öö": [
         "löy-töö"

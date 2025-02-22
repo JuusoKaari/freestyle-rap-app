@@ -1,248 +1,248 @@
 export default {
-    "AA-AH-AH": [
-        "dominance",
-        "prominence"
+    "AA1-RZ": [
+        "bars"
     ],
-    "AA-AH-IY": [
-        "prodigy"
+    "AA1-D": [
+        "squad"
     ],
-    "AA-IH": [
-        "dropping",
-        "shopping",
-        "stopping"
+    "AA1-K": [
+        "block"
     ],
-    "AE-AH": [
-        "ample",
-        "anthem",
+    "UH1-AA2-KS": [
+        "boombox"
+    ],
+    "AE1-P": [
+        "trap"
+    ],
+    "AE1-NG": [
+        "slang"
+    ],
+    "AE1-CH": [
+        "scratch"
+    ],
+    "AE1-AH0-NT": [
+        "rampant"
+    ],
+    "AE1-AH0-L": [
         "battle",
-        "cattle",
-        "rampant",
         "sample"
     ],
-    "AE-AH-AY": [
-        "alibi",
-        "amplify",
-        "magnify",
-        "satisfy"
+    "AE1-AH0-M": [
+        "anthem"
     ],
-    "AE-EH-AH": [
-        "transcendent"
+    "AA1-AH0-AH0-NS": [
+        "dominance"
     ],
-    "AE-ER": [
-        "rapper",
-        "swagger"
-    ],
-    "AE-IY-OW": [
-        "grandiose"
-    ],
-    "AH-AA-OW": [
-        "bravado",
-        "machado"
-    ],
-    "AH-AH": [
-        "hustle",
-        "muscle",
-        "russell"
-    ],
-    "AH-AH-IH": [
-        "bustling",
-        "hustling"
-    ],
-    "AH-AY": [
-        "frontline",
-        "punchline",
-        "sunshine"
-    ],
-    "AH-EH-AH": [
-        "ascendant"
-    ],
-    "AH-EH-IH": [
-        "authentic",
-        "domestic",
-        "majestic"
-    ],
-    "AH-ER-AH": [
-        "thunderous"
-    ],
-    "AH-ER-AW": [
-        "underground"
-    ],
-    "AH-IY": [
-        "unleashed"
-    ],
-    "AH-IY-IY": [
-        "graffiti",
-        "tahiti"
-    ],
-    "AO-EH": [
-        "cortex",
-        "vortex"
-    ],
-    "AY-AH": [
-        "righteous"
-    ],
-    "AY-AH-OW": [
-        "microphone"
-    ],
-    "AY-ER": [
-        "buyer",
-        "choir",
-        "cipher",
-        "cypher",
-        "drier",
-        "dryer",
-        "dwyer",
-        "dyer",
-        "fire",
-        "flyer",
-        "friar",
-        "higher",
-        "hire",
-        "liar",
-        "meyer",
-        "prior",
-        "pryor",
-        "sire",
-        "tire",
-        "wire"
-    ],
-    "AY-IH": [
-        "climbing",
-        "rhyming",
-        "timing"
-    ],
-    "EH-AH": [
-        "question",
-        "session"
-    ],
-    "EH-AH-AH": [
-        "eminent",
+    "EH1-AH0-AH0-S": [
         "genesis",
         "venomous"
     ],
-    "EH-AH-AO": [
-        "metaphor"
+    "EH1-AH0-AH0-NT": [
+        "eminent"
     ],
-    "EH-EH": [
-        "headset"
-    ],
-    "EH-IH": [
-        "epic"
-    ],
-    "EH-IH-EH": [
-        "represent"
-    ],
-    "EH-IY": [
-        "emcee",
-        "frenzy",
-        "henry"
-    ],
-    "ER-AH": [
-        "bourbon",
-        "durban",
-        "urban"
-    ],
-    "ER-EY-AH": [
-        "turntable"
-    ],
-    "ER-OW-AH": [
-        "ferocious"
-    ],
-    "EY-AH": [
-        "cadence"
-    ],
-    "EY-EH": [
-        "apex",
-        "latex"
-    ],
-    "EY-IH": [
-        "laying",
-        "paying",
-        "playing",
-        "praying",
-        "saying",
-        "slaying",
-        "spraying",
-        "staying",
-        "swaying",
-        "weighing"
-    ],
-    "EY-IY-AH": [
-        "radiant"
-    ],
-    "IH-AH-AH": [
+    "IH1-AH0-AH0-T": [
         "infinite"
     ],
-    "IH-AO-AH": [
+    "AH1-AH0-L": [
+        "hustle"
+    ],
+    "IH2-AO1-AH0-L": [
         "immortal"
     ],
-    "IH-EH-IH": [
-        "relentless"
+    "EH1-AH0-N": [
+        "session"
     ],
-    "IH-IH": [
-        "eclipse",
-        "printing",
-        "spinning",
-        "winning"
+    "AE0-EH1-AH0-NT": [
+        "transcendent"
     ],
-    "IH-IH-AH": [
+    "AH0-EH1-AH0-NT": [
+        "ascendant"
+    ],
+    "AH1-ER0-AH0-S": [
+        "thunderous"
+    ],
+    "ER1-AH0-N": [
+        "urban"
+    ],
+    "EY1-AH0-NS": [
+        "cadence"
+    ],
+    "ER1-EY2-AH0-L": [
+        "turntable"
+    ],
+    "IH1-IH0-AH0-L": [
         "lyrical"
     ],
-    "IH-IY": [
-        "citi",
-        "city",
-        "gritty",
-        "pity",
-        "pretty"
-    ],
-    "IY-AY": [
-        "freestyle",
-        "meanwhile"
-    ],
-    "IY-ER": [
-        "reverb"
-    ],
-    "OW-AH": [
-        "focal",
-        "local",
+    "OW1-AH0-L": [
         "vocal"
     ],
-    "OW-IH": [
-        "blowing",
-        "boeing",
-        "bowing",
-        "flowing",
-        "glowing",
-        "going",
-        "growing",
-        "knowing",
-        "owing",
-        "rowing",
-        "sewing",
-        "showing",
-        "slowing",
-        "snowing",
-        "sowing",
-        "throwing",
-        "towing"
+    "ER0-OW1-AH0-S": [
+        "ferocious"
     ],
-    "OW-UW": [
-        "old-school"
-    ],
-    "OY-AH-IY": [
-        "loyalty",
-        "royalty"
-    ],
-    "UH-AA": [
-        "boombox"
-    ],
-    "UH-AH-UW": [
-        "bulletproof"
-    ],
-    "UW-AH": [
+    "UW1-AH0-S": [
         "ruthless"
     ],
-    "UW-IY-OW": [
+    "AH1-NGK": [
+        "crunk"
+    ],
+    "EH1-AH0-AO0-R": [
+        "metaphor"
+    ],
+    "AH1-ER0-AW2-ND": [
+        "underground"
+    ],
+    "AY1-P": [
+        "hype"
+    ],
+    "AY1-B": [
+        "vibe"
+    ],
+    "AY1-ND": [
+        "grind"
+    ],
+    "AE1-AH0-AY2": [
+        "magnify"
+    ],
+    "AH1-AY2-N": [
+        "punchline"
+    ],
+    "IY1-AY2-L": [
+        "freestyle"
+    ],
+    "EH2-IH0-EH1-NT": [
+        "represent"
+    ],
+    "EH1-EH2-T": [
+        "headset"
+    ],
+    "EY1-EH2-KS": [
+        "apex"
+    ],
+    "AE1-ER0": [
+        "rapper",
+        "swagger"
+    ],
+    "AY1-ER0": [
+        "cipher",
+        "cypher",
+        "fire"
+    ],
+    "ER1-S": [
+        "verse"
+    ],
+    "IY0-ER1-B": [
+        "reverb"
+    ],
+    "EY1-N": [
+        "reign"
+    ],
+    "EY1-T": [
+        "great"
+    ],
+    "AA1-IH0-NG": [
+        "dropping"
+    ],
+    "AY1-IH0-NG": [
+        "rhyming"
+    ],
+    "EH1-IH0-K": [
+        "epic"
+    ],
+    "AH0-EH1-IH0-K": [
+        "majestic"
+    ],
+    "IH0-EH1-IH0-S": [
+        "relentless"
+    ],
+    "EY1-IH0-NG": [
+        "spraying"
+    ],
+    "IH1-IH0-NG": [
+        "spinning"
+    ],
+    "OW1-IH0-NG": [
+        "flowing"
+    ],
+    "IH1-T": [
+        "spit"
+    ],
+    "IH1-N": [
+        "spin"
+    ],
+    "IH1-P": [
+        "drip"
+    ],
+    "IH1-L": [
+        "skill"
+    ],
+    "AA1-AH0-IY0": [
+        "prodigy"
+    ],
+    "OY1-AH0-IY0": [
+        "royalty"
+    ],
+    "EH1-IY0": [
+        "frenzy"
+    ],
+    "IH1-ER0-IY0": [
+        "victory"
+    ],
+    "IH1-IY0": [
+        "gritty"
+    ],
+    "AH0-IY1-IY0": [
+        "graffiti"
+    ],
+    "IY1-T": [
+        "beat",
+        "street"
+    ],
+    "IY1-K": [
+        "clique"
+    ],
+    "AH0-IY1-SHT": [
+        "unleashed"
+    ],
+    "EH1-IY1": [
+        "emcee"
+    ],
+    "AH0-AA1-OW0": [
+        "bravado"
+    ],
+    "OW1": [
+        "flow"
+    ],
+    "OW1-P": [
+        "dope"
+    ],
+    "OW1-T": [
+        "goat"
+    ],
+    "AE2-IY0-OW1-S": [
+        "grandiose"
+    ],
+    "AY1-AH0-OW2-N": [
+        "microphone"
+    ],
+    "UW1-IY0-OW2": [
         "studio"
+    ],
+    "UH1-K": [
+        "hook"
+    ],
+    "UH1-D": [
+        "hood"
+    ],
+    "UW1": [
+        "crew"
+    ],
+    "UW1-M": [
+        "boom"
+    ],
+    "UW1-TH": [
+        "booth"
+    ],
+    "UH1-AH0-UW2-F": [
+        "bulletproof"
     ]
 };

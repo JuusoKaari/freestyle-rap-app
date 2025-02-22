@@ -245,7 +245,9 @@ const RhymeExplorerMode = ({
             <div className="word-card">
               <div className="main-word">
                 <h3 key={`main-${displayWord.word}-${targetWordIndex}`}>{displayWord.word.toUpperCase()}</h3>
-                <span className="group-label" key={`group-${displayWord.group}-${targetWordIndex}`}>{displayWord.group}</span>
+                <span className="group-label" key={`group-${displayWord.group}-${targetWordIndex}`}>
+                  {displayWord.group.replace(/[0-9]/g, '')}
+                </span>
                 <div className="rhyme-explorer-progress-bar" style={{ width: `${progress}%` }} />
               </div>
 

@@ -3,24 +3,114 @@ export default {
         "sa-das",
         "sa-ta"
     ],
-    "a-aa": [
-        "sa-taa"
+    "aa-a": [
+        "kah-ta"
     ],
     "a-aa-a": [
         "sa-dat-ta"
     ],
-    "a-ii": [
-        "ka-sii"
+    "oo-aa-a": [
+        "kol-mat-ta"
     ],
-    "aa-a": [
-        "kah-ta"
+    "u-aa-a": [
+        "tu-hat-ta"
     ],
     "aa-ee-a": [
         "kah-dek-san",
         "kah-dek-sas"
     ],
+    "uu-ee-a": [
+        "kuu-det-ta"
+    ],
+    "oi-a": [
+        "tois-ta"
+    ],
+    "oo-a": [
+        "kol-mas",
+        "nol-la"
+    ],
+    "ii-oo-a": [
+        "mil-joo-na",
+        "mil-joo-nas"
+    ],
+    "u-a": [
+        "tu-hat"
+    ],
+    "uu-a": [
+        "kuut-ta"
+    ],
+    "a-aa": [
+        "sa-taa"
+    ],
+    "ei-aa": [
+        "seis-kaa"
+    ],
+    "oo-aa": [
+        "nol-laa"
+    ],
+    "ii-oo-aa": [
+        "mil-joo-naa"
+    ],
+    "u-aa-e": [
+        "tu-han-nes"
+    ],
+    "yy-e-e": [
+        "kym-me-nen",
+        "kym-me-nes"
+    ],
+    "ii-e": [
+        "vii-des"
+    ],
+    "oi-e": [
+        "toi-nen"
+    ],
+    "oo-e": [
+        "kol-me"
+    ],
+    "uu-e": [
+        "kuu-des"
+    ],
+    "oo-ee": [
+        "kol-mee"
+    ],
     "aa-i": [
         "kak-si"
+    ],
+    "ii-aa-i": [
+        "mil-jar-di"
+    ],
+    "ii-i": [
+        "mil-li",
+        "vii-si"
+    ],
+    "oo-i": [
+        "ton-ni"
+    ],
+    "uu-i": [
+        "kuu-si"
+    ],
+    "yy-i": [
+        "kymp-pi",
+        "yk-si"
+    ],
+    "a-ii": [
+        "ka-sii"
+    ],
+    "ii-aa-ii": [
+        "mil-jar-dii"
+    ],
+    "ii-ii": [
+        "mil-lii",
+        "vii-sii"
+    ],
+    "oo-ii": [
+        "ton-nii"
+    ],
+    "y-ii": [
+        "y-sii"
+    ],
+    "yy-ii": [
+        "kymp-pii"
     ],
     "aa-y": [
         "kaks-kyt"
@@ -28,137 +118,47 @@ export default {
     "ee-y": [
         "nel-kyt"
     ],
-    "ee-ä": [
-        "nel-jä",
-        "nel-jäs"
+    "ei-y": [
+        "seit-kyt"
     ],
-    "ee-ää": [
-        "nel-jää"
+    "ii-y": [
+        "viis-kyt"
     ],
-    "ee-ää-ä": [
-        "nel-jät-tä"
+    "oo-y": [
+        "kol-kyt"
     ],
-    "ei-aa": [
-        "seis-kaa"
+    "uu-y": [
+        "kuus-kyt"
     ],
     "ei-e-ä": [
         "seit-se-män",
         "seit-se-mäs",
         "seit-te-män"
     ],
-    "ei-y": [
-        "seit-kyt"
-    ],
-    "ii-aa-i": [
-        "mil-jar-di"
-    ],
-    "ii-aa-ii": [
-        "mil-jar-dii"
-    ],
-    "ii-e": [
-        "vii-des"
+    "ee-ä": [
+        "nel-jä",
+        "nel-jäs"
     ],
     "ii-ee-ä": [
         "vii-det-tä"
     ],
-    "ii-i": [
-        "mil-li",
-        "vii-si"
-    ],
-    "ii-ii": [
-        "mil-lii",
-        "vii-sii"
-    ],
-    "ii-oo-a": [
-        "mil-joo-na",
-        "mil-joo-nas"
-    ],
-    "ii-oo-aa": [
-        "mil-joo-naa"
-    ],
-    "ii-y": [
-        "viis-kyt"
-    ],
-    "oi-a": [
-        "tois-ta"
-    ],
-    "oi-e": [
-        "toi-nen"
-    ],
-    "oo-a": [
-        "kol-mas",
-        "nol-la"
-    ],
-    "oo-aa": [
-        "nol-laa"
-    ],
-    "oo-aa-a": [
-        "kol-mat-ta"
-    ],
-    "oo-e": [
-        "kol-me"
-    ],
-    "oo-ee": [
-        "kol-mee"
-    ],
-    "oo-i": [
-        "ton-ni"
-    ],
-    "oo-ii": [
-        "ton-nii"
-    ],
-    "oo-y": [
-        "kol-kyt"
-    ],
-    "u-a": [
-        "tu-hat"
-    ],
-    "u-aa-a": [
-        "tu-hat-ta"
-    ],
-    "u-aa-e": [
-        "tu-han-nes"
-    ],
-    "uu-a": [
-        "kuut-ta"
-    ],
-    "uu-e": [
-        "kuu-des"
-    ],
-    "uu-ee-a": [
-        "kuu-det-ta"
-    ],
-    "uu-i": [
-        "kuu-si"
-    ],
-    "uu-y": [
-        "kuus-kyt"
-    ],
     "y-ee-ä": [
         "y-hek-sän"
-    ],
-    "y-ii": [
-        "y-sii"
-    ],
-    "yy-e-e": [
-        "kym-me-nen",
-        "kym-me-nes"
     ],
     "yy-ee-ä": [
         "yh-dek-sän",
         "yh-dek-säs"
-    ],
-    "yy-i": [
-        "kymp-pi",
-        "yk-si"
-    ],
-    "yy-ii": [
-        "kymp-pii"
     ],
     "yy-ii-ä": [
         "kym-pil-lä"
     ],
     "yy-ä": [
         "yh-tä"
+    ],
+    "ee-ää-ä": [
+        "nel-jät-tä"
+    ],
+    "ee-ää": [
+        "nel-jää"
     ]
 };

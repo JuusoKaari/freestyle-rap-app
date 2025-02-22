@@ -87,26 +87,110 @@ def get_syllable_count(word):
 
 
 def simplify_cmu_pattern(pattern):
-    """Convert CMU pattern to simple vowel pattern with dashes."""
-    # Extract only vowel sounds (AA, AE, AH, etc.) with their stress numbers
-    vowels = [part for part in pattern.split() if any(c.isdigit() for c in part)]
-    # Remove stress numbers and join with dashes
-    simple_pattern = "-".join(v.rstrip("012") for v in vowels)
+    """Convert CMU pattern to simple phonetic pattern with dashes, keeping vowels with stress and final consonants."""
+    # Define vowel phonemes (CMU notation)
+    vowel_phones = {
+        'AA', 'AE', 'AH', 'AO', 'AW', 'AY',
+        'EH', 'ER', 'EY',
+        'IH', 'IY',
+        'OW', 'OY',
+        'UH', 'UW'
+    }
+    
+    # Split into individual phonemes
+    phonemes = pattern.split()
+    
+    # Find the last vowel position
+    last_vowel_pos = -1
+    for i, p in enumerate(phonemes):
+        if any(p.startswith(v) for v in vowel_phones):
+            last_vowel_pos = i
+            
+    # Get vowels and their positions
+    result = []
+    for i, p in enumerate(phonemes):
+        if any(p.startswith(v) for v in vowel_phones):
+            result.append(p)
+        elif i > last_vowel_pos:  # If it's a consonant after the last vowel
+            # If we already have a final consonant group, append to it
+            if result and not any(result[-1].startswith(v) for v in vowel_phones):
+                result[-1] += p
+            else:
+                result.append(p)
+    
+    # Join everything with dashes
+    simple_pattern = "-".join(result)
     return simple_pattern
 
 
+def are_pronunciations_similar(pron1, pron2):
+    """Check if two pronunciations are similar enough (ignoring stress and minor variations)."""
+    # Split into phonemes
+    phones1 = pron1.split()
+    phones2 = pron2.split()
+    
+    # Must have same number of phonemes
+    if len(phones1) != len(phones2):
+        return False
+        
+    # Compare each phoneme, ignoring stress numbers
+    for p1, p2 in zip(phones1, phones2):
+        # Remove stress numbers
+        p1_base = p1.rstrip('012')
+        p2_base = p2.rstrip('012')
+        
+        # If the base phonemes are different
+        if p1_base != p2_base:
+            # Check for common similar-sounding pairs
+            similar_pairs = {
+                ('AH', 'AX'),  # schwa variations
+                ('ER', 'R'),   # r-colored variations
+                ('AH', 'IH'),  # similar short vowels
+            }
+            if (p1_base, p2_base) not in similar_pairs and (p2_base, p1_base) not in similar_pairs:
+                return False
+    
+    return True
+
+
 def process_word(word):
-    syllable_count = get_syllable_count(word)
-    if syllable_count < MIN_SYLLABLES or syllable_count > MAX_SYLLABLES:
+    pronunciations = pronouncing.phones_for_word(word)
+    if not pronunciations:
         return None, None
 
-    pronunciations = pronouncing.phones_for_word(word)
-    if pronunciations:
-        # Use full pronunciation pattern instead of just rhyming part
-        full_pattern = pronunciations[0]
-        simple_pattern = simplify_cmu_pattern(full_pattern)
-        return simple_pattern, syllable_count
-    return None, None
+    # If multiple pronunciations, check if they're similar
+    if len(pronunciations) > 1:
+        # Check if all pronunciations are similar to the first one
+        first_pron = pronunciations[0]
+        for other_pron in pronunciations[1:]:
+            if not are_pronunciations_similar(first_pron, other_pron):
+                return None, None  # Skip only if pronunciations are significantly different
+    
+    # Use the first pronunciation (they're either all similar or there's only one)
+    pronunciation = pronunciations[0]
+    syllable_count = pronouncing.syllable_count(pronunciation)
+    if syllable_count < MIN_SYLLABLES or syllable_count > MAX_SYLLABLES:
+        return None, None
+        
+    simple_pattern = simplify_cmu_pattern(pronunciation)
+    return simple_pattern, syllable_count
+
+
+def get_sort_key(pattern):
+    """Helper function to create a sort key from a vowel pattern.
+    Only uses vowel phones for sorting, ignoring consonants."""
+    vowel_phones = {
+        'AA', 'AE', 'AH', 'AO', 'AW', 'AY',
+        'EH', 'ER', 'EY',
+        'IH', 'IY',
+        'OW', 'OY',
+        'UH', 'UW'
+    }
+    # Split into phones and filter only vowel phones
+    phones = pattern.split('-')
+    vowels_only = [p for p in phones if any(v in p for v in vowel_phones)]
+    # Reverse for end-first sorting
+    return "-".join(vowels_only[::-1])
 
 
 def process_file(input_file, output_dir):
@@ -116,6 +200,7 @@ def process_file(input_file, output_dir):
     text = re.sub(r'[-.,!?:*"/\'\(\)\[\]{}]', '', text)
     # Split by whitespace and handle underscore-separated words
     words = []
+    heteronyms = set()  # Track heteronyms
     for word in text.split():
         word = word.strip()
         # Skip empty words
@@ -129,6 +214,22 @@ def process_file(input_file, output_dir):
         # Skip if phonetic word is too short or too long
         if len(phonetic_word) < 4 or len(phonetic_word) > 15:
             continue
+            
+        # Check for multiple pronunciations and if they're significantly different
+        pronunciations = pronouncing.phones_for_word(phonetic_word)
+        if pronunciations and len(pronunciations) > 1:
+            # Check if pronunciations are similar
+            first_pron = pronunciations[0]
+            has_different_prons = False
+            for other_pron in pronunciations[1:]:
+                if not are_pronunciations_similar(first_pron, other_pron):
+                    has_different_prons = True
+                    break
+            
+            if has_different_prons:
+                heteronyms.add(phonetic_word)
+                continue
+
         # If word contains underscore, keep it as is
         if '_' in phonetic_word:
             words.append((phonetic_word, display_word))
@@ -136,6 +237,10 @@ def process_file(input_file, output_dir):
         else:
             words.append((phonetic_word, display_word))
     
+    # Print skipped heteronyms
+    if heteronyms:
+        print("SKIPPED HETERONYM WORDS:", " ".join(sorted(heteronyms)))
+
     input_basename = os.path.splitext(os.path.basename(input_file))[0]
     output_file = os.path.join(output_dir, f"{input_basename}.js")
 
@@ -148,16 +253,19 @@ def process_file(input_file, output_dir):
         if not phonetic_word:
             continue
 
-        rhyme_part, syllable_count = process_word(phonetic_word)
-
-        if not rhyme_part:
+        result = process_word(phonetic_word)
+        
+        # Skip if no valid pattern found
+        if result == (None, None):
             continue
 
-        if rhyme_part not in vowel_patterns:
-            vowel_patterns[rhyme_part] = []
+        rhyme_part, syllable_count = result
 
         # Create word string - only include display version if it's different from phonetic
         word_string = phonetic_word if display_word == phonetic_word else f"{display_word};{phonetic_word}"
+
+        if rhyme_part not in vowel_patterns:
+            vowel_patterns[rhyme_part] = []
 
         # Add word if it's not already in the list
         if word_string not in vowel_patterns[rhyme_part]:
@@ -165,7 +273,7 @@ def process_file(input_file, output_dir):
             new_words_count += 1
 
     output_data = {}
-    for pattern, words in sorted(vowel_patterns.items()):
+    for pattern, words in sorted(vowel_patterns.items(), key=lambda item: get_sort_key(item[0])):
         if words:
             output_data[pattern] = sorted(words)
             # Store first 5 words of each pattern for preview - use display version if present
@@ -188,7 +296,7 @@ def process_and_show_preview(input_file, output_dir, status_text=None):
         preview_msg += "\nPreviews of each rhyme pattern:\n"
         preview_msg += "-" * 40 + "\n"
 
-        for pattern, words in sorted(previews.items()):
+        for pattern, words in sorted(previews.items(), key=lambda item: get_sort_key(item[0])):
             preview_msg += f"Pattern {pattern}: {', '.join(words)}\n"
 
         status_text.delete(1.0, tk.END)

@@ -193,6 +193,11 @@ def get_syllable_vowel_pattern(word):
     
     return vowel_patterns, syllable_count
 
+def get_sort_key(pattern):
+    """Helper function to create a sort key from a vowel pattern.
+    Reverses the syllables for sorting from the end."""
+    return "-".join(pattern.split("-")[::-1])
+
 def is_appropriate_word(word):
     """Check if the word is appropriate (not a curse word or offensive term)."""
     # Add Finnish inappropriate words here
@@ -228,7 +233,10 @@ def is_appropriate_word(word):
         # Compound insults
         "kusipää", "kusipään", "kusipäät", "kusiainen",
         "vittupää", "mulkkupää", "paskapää", "paskiainen",
-        "persreikä", "persnussija"
+        "persreikä", "persnussija",
+
+        # sexual violence terms
+        "raiskata", "raiskaaja", "raiskari", "raiskaus"
     }
     
     # Convert to lowercase for comparison
@@ -318,7 +326,7 @@ def prosessoi_tiedosto(input_file, output_dir):
 
     # Sort patterns and prepare output data
     output_data = {}
-    for pattern, words in sorted(vowel_patterns.items()):
+    for pattern, words in sorted(vowel_patterns.items(), key=lambda item: get_sort_key(item[0])):
         if words:  # Only include patterns that have words
             output_data[pattern] = sorted(words)
             # Store first 5 words of each pattern for preview - use display version if present
@@ -341,7 +349,7 @@ def process_and_show_preview(input_file, output_dir, status_text=None):
         preview_msg += "\nPreviews of each vowel pattern:\n"
         preview_msg += "-" * 40 + "\n"
         
-        for pattern, words in sorted(previews.items()):
+        for pattern, words in sorted(previews.items(), key=lambda item: get_sort_key(item[0])):
             syllable_count = len(pattern.split("-"))
             preview_msg += f"{syllable_count}-syllable pattern {pattern}: {', '.join(words)}\n"
         

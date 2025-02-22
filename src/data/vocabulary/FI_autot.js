@@ -2,212 +2,98 @@ export default {
     "a-a": [
         "la-da"
     ],
-    "a-aa": [
-        "la-daa"
-    ],
     "aa-a": [
         "maz-da"
     ],
-    "aa-aa": [
-        "maz-daa"
-    ],
-    "aa-aa-u": [
-        "kat-sas-tus"
-    ],
-    "aa-au": [
-        "tank-kaus"
+    "ee-aa-a": [
+        "ren-gas-ta"
     ],
     "aa-au-a": [
         "tank-kaus-ta"
     ],
-    "aa-e": [
-        "van-ne"
-    ],
-    "aa-ee-a": [
-        "van-net-ta"
-    ],
-    "aa-i": [
-        "park-kis",
-        "rat-ti",
-        "saa-bi"
-    ],
-    "aa-ii": [
-        "rat-tii",
-        "saa-bii"
-    ],
-    "aa-ii-a": [
-        "park-kis-ta"
-    ],
-    "aa-u": [
-        "ak-ku",
-        "jar-ru",
-        "kaa-su"
-    ],
-    "aa-uu": [
-        "ak-kuu",
-        "jar-ruu",
-        "kaa-suu"
-    ],
-    "ai-e": [
-        "vaih-de"
-    ],
-    "ai-ee-a": [
-        "vaih-det-ta"
-    ],
-    "au-i": [
-        "au-di",
-        "vauh-ti"
-    ],
-    "au-ii": [
-        "au-dii",
-        "vauh-tii"
-    ],
-    "au-o": [
-        "au-to"
-    ],
-    "au-o-a": [
-        "au-to-ja"
-    ],
-    "au-oo": [
-        "au-too"
-    ],
-    "e-a-i": [
-        "be-ma-ri"
-    ],
-    "e-a-ii": [
-        "be-ma-rii"
-    ],
-    "e-au": [
-        "re-nault"
-    ],
-    "e-oo": [
-        "re-noo"
-    ],
-    "e-u": [
-        "pe-su"
-    ],
-    "e-uu": [
-        "pe-suu"
+    "oo-au-a": [
+        "kor-jaus-ta"
     ],
     "ee-a": [
         "ben-sa",
         "ren-gas",
         "tes-la"
     ],
-    "ee-a-i": [
-        "fer-ra-ri"
+    "aa-ee-a": [
+        "van-net-ta"
     ],
-    "ee-a-ii": [
-        "fer-ra-rii"
+    "ai-ee-a": [
+        "vaih-det-ta"
+    ],
+    "o-eu-a": [
+        "no-peut-ta"
+    ],
+    "i-a": [
+        "fi-at"
+    ],
+    "ii-a": [
+        "nis-san"
+    ],
+    "aa-ii-a": [
+        "park-kis-ta"
+    ],
+    "uo-ii-a": [
+        "huol-tis-ta"
+    ],
+    "o-a": [
+        "sko-da"
+    ],
+    "au-o-a": [
+        "au-to-ja"
+    ],
+    "oo-a": [
+        "hon-da"
+    ],
+    "a-aa": [
+        "la-daa"
+    ],
+    "aa-aa": [
+        "maz-daa"
     ],
     "ee-aa": [
         "ben-saa",
         "tes-laa"
     ],
-    "ee-aa-a": [
-        "ren-gas-ta"
-    ],
-    "ee-i": [
-        "jeep-pi",
-        "pen-kit"
-    ],
-    "ee-ii": [
-        "jeep-pii",
-        "penk-kii"
-    ],
-    "ee-u": [
-        "mer-su"
-    ],
-    "ee-uu": [
-        "mer-suu"
-    ],
-    "i-a": [
-        "fi-at"
-    ],
     "i-aa": [
         "ki-aa"
-    ],
-    "i-aa-ii": [
-        "fi-at-tii"
-    ],
-    "ie-e": [
-        "die-sel"
-    ],
-    "ie-e-ii": [
-        "die-se-lii"
-    ],
-    "ie-i": [
-        "kie-si"
-    ],
-    "ie-ii": [
-        "kie-siin"
-    ],
-    "ie-ä": [
-        "tie-tä"
-    ],
-    "ii-a": [
-        "nis-san"
-    ],
-    "ii-a-i": [
-        "mit-ta-ri"
-    ],
-    "ii-a-ii": [
-        "mit-ta-rii",
-        "nis-sa-nii"
-    ],
-    "ii-ey": [
-        "ris-teys"
-    ],
-    "ii-ey-ä": [
-        "ris-teys-tä"
-    ],
-    "ii-y-y": [
-        "kiih-dy-tys"
-    ],
-    "o-a": [
-        "sko-da"
     ],
     "o-aa": [
         "sko-daa"
     ],
-    "o-e": [
-        "o-pel"
-    ],
-    "o-e-ii": [
-        "o-pe-lii"
-    ],
-    "o-eu": [
-        "no-peus"
-    ],
-    "o-eu-a": [
-        "no-peut-ta"
-    ],
-    "oo-a": [
-        "hon-da"
-    ],
-    "oo-a-e": [
-        "volk-swa-gen"
-    ],
-    "oo-a-i": [
-        "volk-ka-rit"
-    ],
-    "oo-a-ii": [
-        "volk-ka-rii"
-    ],
     "oo-aa": [
         "hon-daa"
     ],
-    "oo-aa-o": [
-        "kor-jaa-mo"
+    "y-uu-ai": [
+        "hy-un-dai"
     ],
-    "oo-aa-oo": [
-        "kor-jaa-moo"
+    "aa-au": [
+        "tank-kaus"
+    ],
+    "e-au": [
+        "re-nault"
     ],
     "oo-au": [
         "kor-jaus"
     ],
-    "oo-au-a": [
-        "kor-jaus-ta"
+    "oo-a-e": [
+        "volk-swa-gen"
+    ],
+    "aa-e": [
+        "van-ne"
+    ],
+    "ai-e": [
+        "vaih-de"
+    ],
+    "ie-e": [
+        "die-sel"
+    ],
+    "o-e": [
+        "o-pel"
     ],
     "oo-e": [
         "pors-che"
@@ -215,49 +101,163 @@ export default {
     "oo-ee": [
         "pors-chee"
     ],
-    "oo-o": [
-        "vol-vo"
+    "o-eu": [
+        "no-peus"
+    ],
+    "ii-ey": [
+        "ris-teys"
+    ],
+    "e-a-i": [
+        "be-ma-ri"
+    ],
+    "ee-a-i": [
+        "fer-ra-ri"
+    ],
+    "ii-a-i": [
+        "mit-ta-ri"
+    ],
+    "oo-a-i": [
+        "volk-ka-rit"
+    ],
+    "aa-i": [
+        "park-kis",
+        "rat-ti",
+        "saa-bi"
+    ],
+    "au-i": [
+        "au-di",
+        "vauh-ti"
+    ],
+    "ee-i": [
+        "jeep-pi",
+        "pen-kit"
+    ],
+    "ie-i": [
+        "kie-si"
     ],
     "oo-o-i": [
         "moot-to-ri"
     ],
-    "oo-o-ii": [
-        "moot-to-rii"
-    ],
-    "oo-oo": [
-        "vol-voo"
+    "uu-u-i": [
+        "pus-ku-ri"
     ],
     "uo-i": [
         "huol-tis"
     ],
-    "uo-ii-a": [
-        "huol-tis-ta"
+    "yy-i": [
+        "kyt-kin"
     ],
-    "uo-o": [
-        "huol-to"
+    "e-a-ii": [
+        "be-ma-rii"
     ],
-    "uo-oo": [
-        "huol-too"
+    "ee-a-ii": [
+        "fer-ra-rii"
     ],
-    "uu-u-i": [
-        "pus-ku-ri"
+    "ii-a-ii": [
+        "mit-ta-rii",
+        "nis-sa-nii"
+    ],
+    "oo-a-ii": [
+        "volk-ka-rii"
+    ],
+    "aa-ii": [
+        "rat-tii",
+        "saa-bii"
+    ],
+    "i-aa-ii": [
+        "fi-at-tii"
+    ],
+    "au-ii": [
+        "au-dii",
+        "vauh-tii"
+    ],
+    "ie-e-ii": [
+        "die-se-lii"
+    ],
+    "o-e-ii": [
+        "o-pe-lii"
+    ],
+    "ee-ii": [
+        "jeep-pii",
+        "penk-kii"
+    ],
+    "ie-ii": [
+        "kie-siin"
+    ],
+    "oo-o-ii": [
+        "moot-to-rii"
     ],
     "uu-u-ii": [
         "pus-ku-rii"
     ],
-    "y-uu-ai": [
-        "hy-un-dai"
+    "oo-aa-o": [
+        "kor-jaa-mo"
     ],
-    "yy-i": [
-        "kyt-kin"
+    "au-o": [
+        "au-to"
     ],
-    "yy-ii-ä": [
-        "kyt-kin-tä"
+    "oo-o": [
+        "vol-vo"
+    ],
+    "uo-o": [
+        "huol-to"
+    ],
+    "oo-aa-oo": [
+        "kor-jaa-moo"
+    ],
+    "au-oo": [
+        "au-too"
+    ],
+    "e-oo": [
+        "re-noo"
+    ],
+    "oo-oo": [
+        "vol-voo"
+    ],
+    "uo-oo": [
+        "huol-too"
+    ],
+    "aa-u": [
+        "ak-ku",
+        "jar-ru",
+        "kaa-su"
+    ],
+    "aa-aa-u": [
+        "kat-sas-tus"
+    ],
+    "e-u": [
+        "pe-su"
+    ],
+    "ee-u": [
+        "mer-su"
+    ],
+    "aa-uu": [
+        "ak-kuu",
+        "jar-ruu",
+        "kaa-suu"
+    ],
+    "e-uu": [
+        "pe-suu"
+    ],
+    "ee-uu": [
+        "mer-suu"
+    ],
+    "ii-y-y": [
+        "kiih-dy-tys"
     ],
     "öö-y": [
         "öl-jy"
     ],
     "öö-yy": [
         "öl-jyy"
+    ],
+    "ii-ey-ä": [
+        "ris-teys-tä"
+    ],
+    "ie-ä": [
+        "tie-tä"
+    ],
+    "yy-ii-ä": [
+        "kyt-kin-tä"
     ]
 };
