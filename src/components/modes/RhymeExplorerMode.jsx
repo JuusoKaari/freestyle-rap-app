@@ -191,7 +191,8 @@ const RhymeExplorerMode = ({
     const interval = 50; // Update more frequently for smoother animation
     const beatsPerBar = 4;
     const totalTime = (60 / bpm) * beatsPerBar * barsPerRound * 1000; // Total time in ms
-    const adjustedTime = totalTime * 0.75; // Complete slightly before word change
+    const isFirefox = navigator.userAgent.toLowerCase().includes('firefox');
+    const adjustedTime = totalTime * (isFirefox ? 0.75 : 0.95); // Apply adjustment only for Firefox
     const decrementAmount = (interval / adjustedTime) * 100;
 
     const timer = setInterval(() => {
