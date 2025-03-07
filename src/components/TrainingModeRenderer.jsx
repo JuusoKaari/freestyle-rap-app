@@ -17,6 +17,7 @@ import FourBarMode from './modes/FourBarMode';
 import RhymeExplorerMode from './modes/RhymeExplorerMode';
 import FindRhymesMode from './modes/FindRhymesMode';
 import RhymeMapMode from './modes/RhymeMapMode';
+import RhymeSearchMode from './modes/RhymeSearchMode_FI';
 import SlotMachineMode from './modes/SlotMachineMode';
 import { trainingModes } from '../data/trainingModes';
 import { useTranslation } from '../services/TranslationContext';
@@ -81,6 +82,12 @@ const TrainingModeRenderer = ({
           {...commonProps}
           isRecordingEnabled={isRecordingEnabled}
           onRecordingToggle={onRecordingToggle}
+        />
+      );
+    case 'rhyme-search':
+      return (
+        <RhymeSearchMode
+          {...commonProps}
         />
       );
     case 'slot-machine':

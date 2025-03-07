@@ -11,6 +11,7 @@
  * - Two-bar Mode: Practice with setup and punchline (2 bars)
  * - Four-bar Mode: Extended practice with longer patterns (4 bars)
  * - Rhyme Map: Visual grid of vowel rhyme patterns
+ * - Rhyme Search: Search for rhyming words
  * 
  * Each mode configuration includes:
  * - Unique identifier
@@ -188,6 +189,47 @@ export const trainingModes = [
           '4': '4 tahtia',
           '8': '8 tahtia'
         }
+      }
+    }
+  },
+  {
+    id: 'rhyme-search',
+    icon: '🔎',
+    difficulty: 'easy',
+    translations: {
+      en: {
+        name: 'Rhyme Search',
+        description: 'Search for words that rhyme with your input',
+        helperText: 'Type a word to find all matching rhymes. Results include exact matches and extended matches with the same ending pattern.',
+        searchPlaceholder: 'Enter a word to find rhymes...',
+        exactMatches: 'Exact matches',
+        extendedMatches: 'Extended matches',
+        invalidWordError: 'Invalid word structure',
+        invalidPatternError: 'Could not determine vowel pattern',
+        noMatchesFound: 'No rhyming words found',
+        more: 'more',
+        randomize: 'Randomize',
+        words: 'words',
+        sortAlphabetical: 'Alphabetical',
+        sortSimilarity: 'By Similarity',
+        sortRandom: 'Random'
+      },
+      fi: {
+        name: 'Riimihaku',
+        description: 'Etsi sanoja jotka riimittyvät antamasi sanan kanssa',
+        helperText: 'Kirjoita sana löytääksesi kaikki sen kanssa riimittyvät sanat. Tulokset sisältävät tarkat osumat ja laajennetut osumat samalla loppukaavalla.',
+        searchPlaceholder: 'Kirjoita sana löytääksesi riimejä...',
+        exactMatches: 'Tarkat osumat',
+        extendedMatches: 'Laajennetut osumat',
+        invalidWordError: 'Virheellinen sanarakenne',
+        invalidPatternError: 'Vokaalikaavaa ei voitu määrittää',
+        noMatchesFound: 'Riimiviä sanoja ei löytynyt',
+        more: 'lisää',
+        randomize: 'Sekoita',
+        words: 'sanaa',
+        sortAlphabetical: 'Aakkosjärjestys',
+        sortSimilarity: 'Samankaltaisuus',
+        sortRandom: 'Satunnainen'
       }
     }
   }

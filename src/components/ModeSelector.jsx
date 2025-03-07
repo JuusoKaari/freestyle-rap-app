@@ -2,9 +2,11 @@ import React from 'react';
 import '../styles/ModeSelector.css';
 import { trainingModes } from '../data/trainingModes';
 import { useTranslation } from '../services/TranslationContext';
+import { useDebug } from '../services/DebugContext';
 
 const ModeSelector = ({ onSelectMode }) => {
   const { translate, language } = useTranslation();
+  const { isDebugMode } = useDebug();
 
   const getDifficultyLabel = (difficulty) => {
     switch (difficulty) {
@@ -28,7 +30,12 @@ const ModeSelector = ({ onSelectMode }) => {
     }
   };
 
-  const sortedModes = [...trainingModes].sort((a, b) => 
+  // Filter out RhymeSearch mode unless in debug mode
+  const visibleModes = trainingModes.filter(mode => 
+    isDebugMode || mode.id !== 'rhyme-search'
+  );
+
+  const sortedModes = [...visibleModes].sort((a, b) => 
     getDifficultyOrder(a.difficulty) - getDifficultyOrder(b.difficulty)
   );
 

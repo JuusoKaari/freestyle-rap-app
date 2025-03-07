@@ -1,0 +1,134 @@
+.rhyme-search {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.search-container {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 20px;
+  font-size: 18px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.error-message {
+  color: var(--error-color, #ff4444);
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.search-results {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.sort-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.sort-button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background: var(--surface-color, #2a2a2a);
+  border: 2px solid var(--accent-color);
+  border-radius: 6px;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  opacity: 0.7;
+  position: relative;
+}
+
+.sort-button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.sort-button.active {
+  background: var(--accent-color);
+  opacity: 1;
+  transform: translateY(-1px);
+  box-shadow: 0 0 0 2px white;
+}
+
+.sort-button.active:hover {
+  transform: translateY(-2px);
+}
+
+.result-group {
+  background: var(--surface-color, #2a2a2a);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pattern-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+.pattern-label {
+  font-family: monospace;
+  background: var(--accent-color);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.word-count {
+  color: var(--text-secondary-color, #888);
+  font-size: 14px;
+}
+
+.word-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.word {
+  background: var(--background-color);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.word:hover {
+  background: var(--hover-color, #3a3a3a);
+}
+
+.more-words {
+  color: var(--text-secondary-color, #888);
+  font-size: 14px;
+  padding: 6px 0;
+} 
