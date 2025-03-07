@@ -18,6 +18,7 @@
  */
 
 import React, { useState, useEffect, useRef } from 'react'
+import { Helmet } from 'react-helmet-async'
 import './App.css'
 import { generateWordList } from './services/WordListService'
 import TrainingModeRenderer from './components/TrainingModeRenderer'
@@ -214,6 +215,55 @@ function AppContent() {
 
   return (
     <div className={`app ${isDebugMode ? 'debug-mode' : ''}`}>
+      <Helmet>
+        <title>Rheemy - Freestyle Rap Training App</title>
+        <meta name="description" content="Train your freestyle rap skills with Rheemy. Practice rhyming, flow, and wordplay with our interactive beat-based training modes." />
+        <meta name="keywords" content="freestyle rap, rap training, rhyme practice, flow training, hip hop, rap app" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://rheemy.com/" />
+        <meta property="og:title" content="Rheemy - Freestyle Rap Training App" />
+        <meta property="og:description" content="Train your freestyle rap skills with Rheemy. Practice rhyming, flow, and wordplay with our interactive beat-based training modes." />
+        <meta property="og:image" content="https://rheemy.com/rheemy_somelogo_01_1200px.jpg" />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://rheemy.com/" />
+        <meta property="twitter:title" content="Rheemy - Freestyle Rap Training App" />
+        <meta property="twitter:description" content="Train your freestyle rap skills with Rheemy. Practice rhyming, flow, and wordplay with our interactive beat-based training modes." />
+        <meta property="twitter:image" content="https://rheemy.com/rheemy_somelogo_01_1200px.jpg" />
+
+        {/* JSON-LD structured data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "Rheemy",
+            "description": "Train your freestyle rap skills with different exercises. Practice rhyming, rhythm, and wordplay in Finnish and English.",
+            "url": "https://rheemy.com",
+            "applicationCategory": "Education, Music",
+            "operatingSystem": "Web",
+            "browserRequirements": "Requires JavaScript",
+            "image": "https://rheemy.com/rheemy_somelogo_01_1200px.jpg",
+            "inLanguage": ["en", "fi"],
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "featureList": [
+              "Freestyle rap training",
+              "Rhyme practice",
+              "Flow training",
+              "Beat-based exercises",
+              "Bilingual support (Finnish and English)",
+              "Interactive training modes"
+            ]
+          })}
+        </script>
+      </Helmet>
+
       <div className="version-number">v{process.env.APP_VERSION || ''}</div>
       <SecretTapArea />
 
