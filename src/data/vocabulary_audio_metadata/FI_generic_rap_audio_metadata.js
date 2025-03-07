@@ -116,6 +116,15 @@ export default {
     "feimii": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1739121474/freestyle_words/fi/feimii.mp3",
     "versee": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1739121475/freestyle_words/fi/versee.mp3",
     "friistailii": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1739121476/freestyle_words/fi/friistailii.mp3",
-    "dissata": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1739121477/freestyle_words/fi/dissata.mp3"
+    "dissata": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1739121477/freestyle_words/fi/dissata.mp3",
+    "biitboxia": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1741387957/freestyle_words/fi/biitboxia.mp3",
+    "fiilistelyy": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1741387957/freestyle_words/fi/fiilistelyy.mp3",
+    "flou": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1741387958/freestyle_words/fi/flou.mp3",
+    "timanttia": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1741387959/freestyle_words/fi/timanttia.mp3",
+    "mikrofonii": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1741387960/freestyle_words/fi/mikrofonii.mp3",
+    "studiolla": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1741387961/freestyle_words/fi/studiolla.mp3",
+    "bauns": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1741387962/freestyle_words/fi/bauns.mp3",
+    "sanotusta": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1741387963/freestyle_words/fi/sanotusta.mp3",
+    "mikrofoni": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1741387963/freestyle_words/fi/mikrofoni.mp3"
   }
 };

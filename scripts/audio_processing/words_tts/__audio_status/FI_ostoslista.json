@@ -100,7 +100,20 @@
     "hintaa",
     "juustoo",
     "sinappi",
-    "mysli"
+    "mysli",
+    "vihanneksii",
+    "alennusta",
+    "perunoita",
+    "ostoskorii",
+    "tee",
+    "appelsiinii",
+    "kastiketta",
+    "pakastetta",
+    "ostoskärry",
+    "ostoskori",
+    "ostoskärryy",
+    "appelsiini",
+    "säilykettä"
   ],
   "audio_urls": {
     "pakettii": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1739121525/freestyle_words/fi/pakettii.mp3",
@@ -202,7 +215,20 @@
     "hintaa": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1739121605/freestyle_words/fi/hintaa.mp3",
     "juustoo": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1739121607/freestyle_words/fi/juustoo.mp3",
     "sinappi": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1739121607/freestyle_words/fi/sinappi.mp3",
-    "mysli": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1739121608/freestyle_words/fi/mysli.mp3"
+    "mysli": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1739121608/freestyle_words/fi/mysli.mp3",
+    "vihanneksii": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1741387988/freestyle_words/fi/vihanneksii.mp3",
+    "alennusta": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1741387989/freestyle_words/fi/alennusta.mp3",
+    "perunoita": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1741387990/freestyle_words/fi/perunoita.mp3",
+    "ostoskorii": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1741387991/freestyle_words/fi/ostoskorii.mp3",
+    "tee": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1741387992/freestyle_words/fi/tee.mp3",
+    "appelsiinii": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1741387993/freestyle_words/fi/appelsiinii.mp3",
+    "kastiketta": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1741387994/freestyle_words/fi/kastiketta.mp3",
+    "pakastetta": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1741387995/freestyle_words/fi/pakastetta.mp3",
+    "ostoskärry": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1741387996/freestyle_words/fi/ostosk%C3%A4rry.mp3",
+    "ostoskori": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1741387997/freestyle_words/fi/ostoskori.mp3",
+    "ostoskärryy": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1741387998/freestyle_words/fi/ostosk%C3%A4rryy.mp3",
+    "appelsiini": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1741387999/freestyle_words/fi/appelsiini.mp3",
+    "säilykettä": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1741388000/freestyle_words/fi/s%C3%A4ilykett%C3%A4.mp3"
   },
   "failed_uploads": []
 }
