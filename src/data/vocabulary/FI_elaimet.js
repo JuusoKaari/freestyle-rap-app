@@ -6,6 +6,9 @@ export default {
     "a-a-a": [
         "ma-ja-va"
     ],
+    "aa-ii-a-a": [
+        "saa-lis-ta-ja"
+    ],
     "o-a-a": [
         "o-ra-va"
     ],
@@ -15,6 +18,9 @@ export default {
         "lam-mas",
         "tar-ha",
         "vat-sa"
+    ],
+    "au-a-aa-a": [
+        "kau-la-pan-ta"
     ],
     "aa-aa-a": [
         "lam-paal-la",
@@ -28,8 +34,18 @@ export default {
         "koi-ral-la",
         "koi-ras-ta"
     ],
+    "a-u-ai-a": [
+        "pa-pu-kai-ja"
+    ],
     "au-a": [
         "lau-ma"
+    ],
+    "a-ee-ee-a": [
+        "ra-ken-nel-ma"
+    ],
+    "e-o-ee-a": [
+        "he-vo-sel-la",
+        "he-vo-ses-ta"
     ],
     "uo-ee-a": [
         "vuo-hel-la",
@@ -41,6 +57,12 @@ export default {
     "i-a": [
         "si-ka"
     ],
+    "uo-aa-i-a": [
+        "ruo-kaas-ti-a"
+    ],
+    "a-e-i-a": [
+        "ma-te-li-ja"
+    ],
     "u-i-a": [
         "mu-ri-na"
     ],
@@ -50,6 +72,9 @@ export default {
     ],
     "uo-ii-a": [
         "ruo-kin-ta"
+    ],
+    "ei-ä-ii-a": [
+        "hei-nä-sirk-ka"
     ],
     "ei-o-a": [
         "lei-jo-na"
@@ -63,6 +88,9 @@ export default {
         "nok-ka",
         "rot-ta",
         "sork-ka"
+    ],
+    "ii-i-oo-a": [
+        "kil-pi-kon-na"
     ],
     "uu-oo-a": [
         "puu-nok-sa"
@@ -83,6 +111,9 @@ export default {
         "lam-paan",
         "val-jaat"
     ],
+    "ai": [
+        "hai"
+    ],
     "ie-ai": [
         "sie-rain"
     ],
@@ -92,14 +123,42 @@ export default {
     "aa-aa-e": [
         "lam-paal-le"
     ],
+    "yy-i-aa-e": [
+        "kyn-si-sak-set"
+    ],
     "ii-aa-e": [
         "kis-sal-le"
     ],
     "oi-aa-e": [
         "koi-ral-le"
     ],
+    "uu-a-ai-e": [
+        "muu-ra-hai-nen"
+    ],
+    "aa-i-ai-e": [
+        "am-pi-ai-nen"
+    ],
+    "e-o-ee-e": [
+        "he-vo-sel-le"
+    ],
     "yö-ei-e": [
         "hyön-tei-nen"
+    ],
+    "ei-i-i-e": [
+        "leik-ki-mi-nen"
+    ],
+    "u-i-i-e": [
+        "mu-ni-mi-nen"
+    ],
+    "uu-i-i-e": [
+        "nuus-ki-mi-nen"
+    ],
+    "uu-o-i-e": [
+        "ul-vo-mi-nen"
+    ],
+    "au-u-i-e": [
+        "hauk-ku-mi-nen",
+        "mau-ku-mi-nen"
     ],
     "ii-e": [
         "sii-vet",
@@ -115,6 +174,9 @@ export default {
     "yy-e": [
         "hyl-je"
     ],
+    "e-i-äi-e": [
+        "me-hi-läi-nen"
+    ],
     "ää-e": [
         "käär-me"
     ],
@@ -126,6 +188,9 @@ export default {
     ],
     "a-i": [
         "va-ris"
+    ],
+    "a-a-a-i": [
+        "ka-la-la-ji"
     ],
     "aa-i": [
         "han-hi"
@@ -139,8 +204,14 @@ export default {
     "ii-aa-i": [
         "kis-sak-si"
     ],
+    "oi-ii-aa-i": [
+        "soi-din-tans-si"
+    ],
     "o-aa-i": [
         "ko-ral-li"
+    ],
+    "e-o-aa-i": [
+        "le-o-par-di"
     ],
     "oi-aa-i": [
         "koi-rak-si"
@@ -156,6 +227,9 @@ export default {
     ],
     "a-ee-i": [
         "ga-sel-li"
+    ],
+    "e-o-ee-i": [
+        "he-vo-sek-si"
     ],
     "uo-ee-i": [
         "vuo-hek-si"
@@ -175,6 +249,12 @@ export default {
     "ii-ii-i": [
         "ping-vii-ni"
     ],
+    "o-o-ii-i": [
+        "kro-ko-tii-li"
+    ],
+    "aa-i-oo-i": [
+        "an-ti-loop-pi"
+    ],
     "u-i": [
         "su-si"
     ],
@@ -184,6 +264,9 @@ export default {
     "uu-i": [
         "strut-si",
         "turk-ki"
+    ],
+    "e-i-uu-i": [
+        "ve-si-kup-pi"
     ],
     "yy-i": [
         "kyn-si"
@@ -200,6 +283,15 @@ export default {
     "au-o": [
         "sauk-ko"
     ],
+    "e-o": [
+        "e-mo"
+    ],
+    "aa-aa-i-o": [
+        "ak-vaa-ri-o"
+    ],
+    "ee-aa-i-o": [
+        "ter-raa-ri-o"
+    ],
     "ii-o": [
         "lis-ko"
     ],
@@ -210,11 +302,20 @@ export default {
         "ko-lo",
         "po-ro"
     ],
+    "uu-ii-oi-o": [
+        "tur-kin-hoi-to"
+    ],
     "uo-o": [
         "kuo-no"
     ],
+    "aa-i-uo-o": [
+        "sar-vi-kuo-no"
+    ],
     "a-u": [
         "ra-pu"
+    ],
+    "aa-a-a-u": [
+        "kat-ka-ra-pu"
     ],
     "aa-u": [
         "kar-hu",
@@ -246,10 +347,14 @@ export default {
     "ii-ei-y": [
         "kii-pei-ly"
     ],
+    "a-i-i-y": [
+        "a-gi-li-ty"
+    ],
     "ee-ää-y": [
         "met-säs-tys"
     ],
     "e-ä": [
+        "e-vä",
         "pe-sä"
     ],
     "ee-ä": [
@@ -278,6 +383,9 @@ export default {
     "ee-ää-ä": [
         "leh-mäl-lä",
         "leh-mäs-tä"
+    ],
+    "aa-i-e-äi": [
+        "saa-li-se-läin"
     ],
     "ii-ie-äi": [
         "hir-vie-läin",

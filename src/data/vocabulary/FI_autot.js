@@ -8,6 +8,12 @@ export default {
     "ee-aa-a": [
         "ren-gas-ta"
     ],
+    "aa-i-ai-a": [
+        "park-ki-paik-ka"
+    ],
+    "y-uu-ai-a": [
+        "hy-un-dai-ta"
+    ],
     "aa-au-a": [
         "tank-kaus-ta"
     ],
@@ -29,7 +35,8 @@ export default {
         "no-peut-ta"
     ],
     "i-a": [
-        "fi-at"
+        "fi-at",
+        "ki-a"
     ],
     "ii-a": [
         "nis-san"
@@ -46,14 +53,23 @@ export default {
     "au-o-a": [
         "au-to-ja"
     ],
+    "o-y-o-a": [
+        "to-y-o-ta"
+    ],
     "oo-a": [
         "hon-da"
+    ],
+    "aa-aa-uu-a": [
+        "kat-sas-tus-ta"
     ],
     "a-aa": [
         "la-daa"
     ],
     "aa-aa": [
         "maz-daa"
+    ],
+    "aa-i-ai-aa": [
+        "park-ki-paik-kaa"
     ],
     "ee-aa": [
         "ben-saa",
@@ -64,6 +80,9 @@ export default {
     ],
     "o-aa": [
         "sko-daa"
+    ],
+    "o-y-o-aa": [
+        "to-y-o-taa"
     ],
     "oo-aa": [
         "hon-daa"
@@ -101,6 +120,9 @@ export default {
     "oo-ee": [
         "pors-chee"
     ],
+    "a-o-uu-ee": [
+        "pa-ko-put-kee"
+    ],
     "o-eu": [
         "no-peus"
     ],
@@ -112,6 +134,9 @@ export default {
     ],
     "ee-a-i": [
         "fer-ra-ri"
+    ],
+    "uu-i-a-i": [
+        "tuu-li-la-si"
     ],
     "ii-a-i": [
         "mit-ta-ri"
@@ -132,11 +157,17 @@ export default {
         "jeep-pi",
         "pen-kit"
     ],
+    "o-e-ee-i": [
+        "ko-ne-pel-ti"
+    ],
     "ie-i": [
         "kie-si"
     ],
     "oo-o-i": [
         "moot-to-ri"
+    ],
+    "a-o-oo-i": [
+        "a-jo-kort-ti"
     ],
     "uu-u-i": [
         "pus-ku-ri"
@@ -144,14 +175,26 @@ export default {
     "uo-i": [
         "huol-tis"
     ],
+    "a-o-uu-i": [
+        "pa-ko-put-ki"
+    ],
     "yy-i": [
         "kyt-kin"
+    ],
+    "ie": [
+        "tie"
+    ],
+    "oo-o-i-ie": [
+        "moot-to-ri-tie"
     ],
     "e-a-ii": [
         "be-ma-rii"
     ],
     "ee-a-ii": [
         "fer-ra-rii"
+    ],
+    "uu-i-a-ii": [
+        "tuu-li-la-sii"
     ],
     "ii-a-ii": [
         "mit-ta-rii",
@@ -181,11 +224,17 @@ export default {
         "jeep-pii",
         "penk-kii"
     ],
+    "o-e-ee-ii": [
+        "ko-ne-pel-tii"
+    ],
     "ie-ii": [
         "kie-siin"
     ],
     "oo-o-ii": [
         "moot-to-rii"
+    ],
+    "a-o-oo-ii": [
+        "a-jo-kort-tii"
     ],
     "uu-u-ii": [
         "pus-ku-rii"
@@ -231,6 +280,9 @@ export default {
     "ee-u": [
         "mer-su"
     ],
+    "a-a-uu-u": [
+        "ta-ka-luuk-ku"
+    ],
     "aa-uu": [
         "ak-kuu",
         "jar-ruu",
@@ -241,6 +293,9 @@ export default {
     ],
     "ee-uu": [
         "mer-suu"
+    ],
+    "a-a-uu-uu": [
+        "ta-ka-luuk-kuu"
     ],
     "ii-y-y": [
         "kiih-dy-tys"
@@ -259,5 +314,8 @@ export default {
     ],
     "yy-ii-ä": [
         "kyt-kin-tä"
+    ],
+    "ii-y-yy-ä": [
+        "kiih-dy-tys-tä"
     ]
 };

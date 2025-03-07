@@ -19,8 +19,14 @@ export default {
     "o-e-a": [
         "o-me-na"
     ],
+    "a-aa-ee-a": [
+        "pa-kas-tet-ta"
+    ],
     "au-ee-a": [
         "maus-tet-ta"
+    ],
+    "aa-i-ee-a": [
+        "kas-ti-ket-ta"
     ],
     "i-a": [
         "li-ha"
@@ -36,6 +42,9 @@ export default {
     "u-o-a": [
         "mu-ro-ja"
     ],
+    "e-u-oi-a": [
+        "pe-ru-noi-ta"
+    ],
     "aa-ou-a": [
         "tar-jous-ta"
     ],
@@ -45,6 +54,9 @@ export default {
     "uo-a": [
         "ruo-ka",
         "suo-la"
+    ],
+    "a-ee-uu-a": [
+        "a-len-nus-ta"
     ],
     "o-uu-a": [
         "o-lut-ta"
@@ -98,6 +110,9 @@ export default {
     "äi-y-e": [
         "säi-ly-ke"
     ],
+    "ee": [
+        "tee"
+    ],
     "aa-i": [
         "kah-vi",
         "kark-ki"
@@ -120,6 +135,12 @@ export default {
     "ii-i": [
         "rii-si",
         "sip-si"
+    ],
+    "aa-ee-ii-i": [
+        "ap-pel-sii-ni"
+    ],
+    "oo-oo-o-i": [
+        "os-tos-ko-ri"
     ],
     "i-u-i": [
         "si-pu-li"
@@ -162,9 +183,18 @@ export default {
     "a-ee-ii": [
         "pa-ket-tii"
     ],
+    "i-aa-ee-ii": [
+        "vi-han-nek-sii"
+    ],
     "ii-ii": [
         "rii-sii",
         "sip-sii"
+    ],
+    "aa-ee-ii-ii": [
+        "ap-pel-sii-nii"
+    ],
+    "oo-oo-o-ii": [
+        "os-tos-ko-rii"
     ],
     "i-u-ii": [
         "si-pu-lii"
@@ -236,11 +266,20 @@ export default {
     "uu-uu": [
         "kurk-kuu"
     ],
+    "oo-oo-ää-y": [
+        "os-tos-kär-ry"
+    ],
+    "oo-oo-ää-yy": [
+        "os-tos-kär-ryy"
+    ],
     "ee-ä": [
         "tee-tä"
     ],
     "e-ee-ä": [
         "he-del-mä"
+    ],
+    "äi-y-ee-ä": [
+        "säi-ly-ket-tä"
     ],
     "ei-ä": [
         "lei-pä"

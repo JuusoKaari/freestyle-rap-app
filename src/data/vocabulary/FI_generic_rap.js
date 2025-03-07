@@ -24,6 +24,12 @@ export default {
     "aa-i-a": [
         "tah-ti-a"
     ],
+    "i-aa-i-a": [
+        "ti-mant-ti-a"
+    ],
+    "ii-o-i-a": [
+        "beatboxia;biit-bo-xi-a"
+    ],
     "aa-ii-a": [
         "tat-sil-la"
     ],
@@ -34,11 +40,17 @@ export default {
     "u-o-a": [
         "ku-mo-ta"
     ],
+    "u-i-oo-a": [
+        "stu-di-ol-la"
+    ],
     "e-u-a": [
         "ke-hu-a"
     ],
     "uu-a": [
         "un-ta"
+    ],
+    "a-o-uu-a": [
+        "sa-no-tus-ta"
     ],
     "aa-aa": [
         "draa-maa",
@@ -72,6 +84,9 @@ export default {
     ],
     "ii-ai": [
         "friis-tail"
+    ],
+    "au": [
+        "bounce;bauns"
     ],
     "ii-au": [
         "dis-saus"
@@ -124,6 +139,9 @@ export default {
         "fii-lis",
         "mik-ki",
         "rii-mi"
+    ],
+    "ii-o-o-i": [
+        "mik-ro-fo-ni"
     ],
     "oo-i": [
         "drop-pi"
@@ -180,6 +198,9 @@ export default {
     "ii-o-ii": [
         "beatboxii;biit-bo-xii"
     ],
+    "ii-o-o-ii": [
+        "mik-ro-fo-nii"
+    ],
     "oo-ii": [
         "drop-pii"
     ],
@@ -216,6 +237,9 @@ export default {
     "u-i-oo": [
         "stu-di-oon"
     ],
+    "ou": [
+        "flou"
+    ],
     "a-o-u": [
         "sa-no-tus"
     ],
@@ -228,6 +252,9 @@ export default {
     ],
     "oo-uu": [
         "pot-kuu"
+    ],
+    "ii-ii-e-yy": [
+        "fii-lis-te-lyy"
     ],
     "e-ee-ä": [
         "ske-nes-sä"

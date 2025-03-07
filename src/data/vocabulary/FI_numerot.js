@@ -1,4 +1,7 @@
 export default {
+    "a": [
+        "kaks"
+    ],
     "a-a": [
         "sa-das",
         "sa-ta"
@@ -9,8 +12,14 @@ export default {
     "a-aa-a": [
         "sa-dat-ta"
     ],
+    "aa-ee-aa-a": [
+        "kah-dek-sat-ta"
+    ],
     "oo-aa-a": [
         "kol-mat-ta"
+    ],
+    "ii-oo-aa-a": [
+        "mil-joo-nat-ta"
     ],
     "u-aa-a": [
         "tu-hat-ta"
@@ -19,11 +28,44 @@ export default {
         "kah-dek-san",
         "kah-dek-sas"
     ],
+    "u-aa-ee-a": [
+        "tu-han-net-ta"
+    ],
     "uu-ee-a": [
         "kuu-det-ta"
     ],
     "oi-a": [
         "tois-ta"
+    ],
+    "oo-e-oi-a": [
+        "kol-me-tois-ta"
+    ],
+    "aa-ee-oi-a": [
+        "kah-teen-tois-ta"
+    ],
+    "ii-ee-oi-a": [
+        "vii-teen-tois-ta"
+    ],
+    "oo-ee-oi-a": [
+        "kol-meen-tois-ta"
+    ],
+    "yy-ee-oi-a": [
+        "yh-teen-tois-ta"
+    ],
+    "aa-i-oi-a": [
+        "kak-si-tois-ta"
+    ],
+    "ii-i-oi-a": [
+        "vii-si-tois-ta"
+    ],
+    "yy-i-oi-a": [
+        "yk-si-tois-ta"
+    ],
+    "ee-ä-oi-a": [
+        "nel-jä-tois-ta"
+    ],
+    "ee-ää-oi-a": [
+        "nel-jään-tois-ta"
     ],
     "oo-a": [
         "kol-mas",
@@ -41,6 +83,12 @@ export default {
     ],
     "a-aa": [
         "sa-taa"
+    ],
+    "oo-e-a-aa": [
+        "kol-me-sa-taa"
+    ],
+    "aa-i-a-aa": [
+        "kak-si-sa-taa"
     ],
     "ei-aa": [
         "seis-kaa"
@@ -70,6 +118,9 @@ export default {
     "uu-e": [
         "kuu-des"
     ],
+    "ee-ii-äi-e": [
+        "en-sim-mäi-nen"
+    ],
     "oo-ee": [
         "kol-mee"
     ],
@@ -93,6 +144,9 @@ export default {
         "kymp-pi",
         "yk-si"
     ],
+    "ii": [
+        "viis"
+    ],
     "a-ii": [
         "ka-sii"
     ],
@@ -112,8 +166,14 @@ export default {
     "yy-ii": [
         "kymp-pii"
     ],
+    "uu": [
+        "kuus"
+    ],
     "aa-y": [
         "kaks-kyt"
+    ],
+    "a-ee-aa-y": [
+        "ka-hek-san-kyt"
     ],
     "ee-y": [
         "nel-kyt"
@@ -130,6 +190,9 @@ export default {
     "uu-y": [
         "kuus-kyt"
     ],
+    "y-ee-ää-y": [
+        "y-hek-sän-kyt"
+    ],
     "ei-e-ä": [
         "seit-se-män",
         "seit-se-mäs",
@@ -138,6 +201,9 @@ export default {
     "ee-ä": [
         "nel-jä",
         "nel-jäs"
+    ],
+    "yy-e-ee-ä": [
+        "kym-me-net-tä"
     ],
     "ii-ee-ä": [
         "vii-det-tä"
@@ -155,8 +221,17 @@ export default {
     "yy-ä": [
         "yh-tä"
     ],
+    "ee-ii-äi-ä": [
+        "en-sim-mäis-tä"
+    ],
+    "ei-e-ää-ä": [
+        "seit-se-mät-tä"
+    ],
     "ee-ää-ä": [
         "nel-jät-tä"
+    ],
+    "yy-ee-ää-ä": [
+        "yh-dek-sät-tä"
     ],
     "ee-ää": [
         "nel-jää"

@@ -7,8 +7,8 @@ import os
 import sys
 
 # Configuration constants
-MIN_SYLLABLES = 2
-MAX_SYLLABLES = 5
+MIN_SYLLABLES = 1
+MAX_SYLLABLES = 4
 
 class RhymeGeneratorGUI:
     def __init__(self, root):
@@ -272,7 +272,7 @@ def prosessoi_tiedosto(input_file, output_dir):
         display_word = parts[1].strip() if len(parts) > 1 else phonetic_word
         
         # Skip if phonetic word is too short or too long
-        if len(phonetic_word) < 4 or len(phonetic_word) > 15:
+        if len(phonetic_word) < 2 or len(phonetic_word) > 20:  # Adjusted length limits for longer words
             continue
         # If word contains underscore, keep it as is
         if '_' in phonetic_word:
@@ -301,8 +301,8 @@ def prosessoi_tiedosto(input_file, output_dir):
             
         vowel_pattern, syllable_count = get_syllable_vowel_pattern(hyphenated_word)
         
-        # Skip if no valid vowel pattern or not 2-3 syllables
-        if not vowel_pattern or syllable_count not in [2, 3]:
+        # Skip if no valid vowel pattern or outside syllable range
+        if not vowel_pattern:
             continue
 
         # Skip inappropriate words
