@@ -8,8 +8,7 @@
  * Available Modes:
  * - Rhyme Explorer: Browse and learn rhyming words
  * - Find Rhymes: Interactive rhyme identification game
- * - Two-bar Mode: Practice with setup and punchline (2 bars)
- * - Four-bar Mode: Extended practice with longer patterns (4 bars)
+ * - Setup & Punchline: Configurable setup and punchline practice
  * - Rhyme Map: Visual grid of vowel rhyme patterns
  * - Rhyme Search: Search for rhyming words
  * 
@@ -68,7 +67,7 @@ export const trainingModes = [
   {
     id: 'find-rhymes',
     icon: '🎯',
-    difficulty: 'medium',
+    difficulty: 'easy',
     translations: {
       en: {
         name: 'Find Rhymes',
@@ -97,39 +96,30 @@ export const trainingModes = [
     }
   },
   {
-    id: 'two-bar',
+    id: 'setup-punchline',
     icon: '🎤',
     difficulty: 'medium',
     translations: {
       en: {
-        name: '2-bar Setup & Punchline',
-        description: 'Classic training with one missing setup rhyme and random target word',
-        helperText: 'Come up with the rhyming word matching the target word, spit that out and then proceed to the punchline!',
+        name: 'Setup & Punchline',
+        description: 'Setup & Punchline training with configurable length',
+        helperText: 'Choose preferred length (2-4 bars), freestyle the setup rhymes, and finish with the punchline!',
+        barCountLabel: 'Bars per round:',
+        barLengthOptions: {
+          '2': '2 bars',
+          '4': '4 bars'
+        },
         showHints: 'Show Rhyme Hints'
       },
       fi: {
-        name: '2-tahdin Setup & Punchline',
-        description: 'Harjoitus yhdellä setup-riimillä ja satunnaisella kohdesanalla',
-        helperText: 'Keksi kohdesanaan sopiva riimi, räppää se ja siirry punchlinen pariin!',
-        showHints: 'Näytä riimien vihjeet'
-      }
-    }
-  },
-  {
-    id: 'four-bar',
-    icon: '🎤',
-    difficulty: 'hard',
-    translations: {
-      en: {
-        name: '4-bar Setup & Punchline',
-        description: 'Classic training with three setup words and a random target word',
-        helperText: 'Come up with the 3 matching rhymes for the target word, spit those out and then proceed to the punchline for maximal impact!',
-        showHints: 'Show Rhyme Hints'
-      },
-      fi: {
-        name: '4-tahdin Setup & Punchline',
-        description: 'Harjoitus kolmella setup-riimillä ja satunnaisella kohdesanalla',
-        helperText: 'Keksi kohdesanaan sopivat 3 riimiä, räppää ne ja finalisoi homma punchline riimillä!',
+        name: 'Setup & Punchline',
+        description: 'Setup & Punchline harjoitus säädettävällä pituudella',
+        helperText: 'Valitse haluamasi pituus (2-4 tahtia), freestylaa setup-riimit ja lopuksi tiputa punchline!',
+        barCountLabel: 'Tahteja per kierros:',
+        barLengthOptions: {
+          '2': '2 tahtia',
+          '4': '4 tahtia'
+        },
         showHints: 'Näytä riimien vihjeet'
       }
     }
@@ -200,10 +190,11 @@ export const trainingModes = [
       en: {
         name: 'Rhyme Search',
         description: 'Search for words that rhyme with your input',
-        helperText: 'Type a word to find all matching rhymes. Results include exact matches and extended matches with the same ending pattern.',
+        helperText: 'Type a word to find all matching rhymes. Click words to collect them for copying. Results include exact matches, extended matches with the same ending pattern, and partial matches for longer words.',
         searchPlaceholder: 'Enter a word to find rhymes...',
         exactMatches: 'Exact matches',
         extendedMatches: 'Extended matches',
+        partialMatches: 'Partial matches',
         invalidWordError: 'Invalid word structure',
         invalidPatternError: 'Could not determine vowel pattern',
         noMatchesFound: 'No rhyming words found',
@@ -212,24 +203,37 @@ export const trainingModes = [
         words: 'words',
         sortAlphabetical: 'Alphabetical',
         sortSimilarity: 'By Similarity',
-        sortRandom: 'Random'
+        sortRandom: 'Random',
+        copy: 'Copy',
+        clear: 'Clear',
+        clickToRemove: 'Click to remove',
+        copyToClipboard: 'Copy to clipboard',
+        clearAll: 'Clear all collected words',
+        baseWord: 'Search word'
       },
       fi: {
         name: 'Riimihaku',
         description: 'Etsi sanoja jotka riimittyvät antamasi sanan kanssa',
-        helperText: 'Kirjoita sana löytääksesi kaikki sen kanssa riimittyvät sanat. Tulokset sisältävät tarkat osumat ja laajennetut osumat samalla loppukaavalla.',
+        helperText: 'Kirjoita sana löytääksesi kaikki sen kanssa riimittyvät sanat. Klikkaa sanoja kerätäksesi ne kopiointia varten. Tulokset sisältävät tarkat osumat, laajennetut osumat samalla loppukaavalla, ja lyhennetyt osumat pidemmille sanoille.',
         searchPlaceholder: 'Kirjoita sana löytääksesi riimejä...',
         exactMatches: 'Tarkat osumat',
         extendedMatches: 'Laajennetut osumat',
+        partialMatches: 'Lyhennetyt osumat',
         invalidWordError: 'Virheellinen sanarakenne',
         invalidPatternError: 'Vokaalikaavaa ei voitu määrittää',
-        noMatchesFound: 'Riimiviä sanoja ei löytynyt',
+        noMatchesFound: 'Rimmaavia sanoja ei löytynyt',
         more: 'lisää',
         randomize: 'Sekoita',
         words: 'sanaa',
         sortAlphabetical: 'Aakkosjärjestys',
         sortSimilarity: 'Samankaltaisuus',
-        sortRandom: 'Satunnainen'
+        sortRandom: 'Satunnainen',
+        copy: 'Kopioi',
+        clear: 'Tyhjennä',
+        clickToRemove: 'Poista klikkaamalla',
+        copyToClipboard: 'Kopioi leikepöydälle',
+        clearAll: 'Tyhjennä kaikki kerätyt sanat',
+        baseWord: 'Hakusana'
       }
     }
   }

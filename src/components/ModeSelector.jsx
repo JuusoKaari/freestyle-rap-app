@@ -30,36 +30,49 @@ const ModeSelector = ({ onSelectMode }) => {
     }
   };
 
-  // Filter out RhymeSearch mode unless in debug mode
-  const visibleModes = trainingModes.filter(mode => 
-    isDebugMode || mode.id !== 'rhyme-search'
-  );
+  // Categorize modes
+  const tools = trainingModes.filter(mode => 
+    mode.id === 'rhyme-map' || mode.id === 'rhyme-search'
+  ).sort((a, b) => getDifficultyOrder(a.difficulty) - getDifficultyOrder(b.difficulty));
 
-  const sortedModes = [...visibleModes].sort((a, b) => 
-    getDifficultyOrder(a.difficulty) - getDifficultyOrder(b.difficulty)
+  const practiceGames = trainingModes.filter(mode => 
+    mode.id !== 'rhyme-map' && mode.id !== 'rhyme-search'
+  ).sort((a, b) => getDifficultyOrder(a.difficulty) - getDifficultyOrder(b.difficulty));
+
+  const renderModeCards = (modes, showDifficulty = true) => (
+    <div className="mode-grid">
+      {modes.map((mode) => (
+        <div 
+          key={mode.id}
+          className="mode-card"
+          onClick={() => onSelectMode(mode.id)}
+        >
+          <div className="mode-header">
+            <span className="mode-icon">{mode.icon}</span>
+            {showDifficulty && (
+              <div className={`difficulty-badge ${mode.difficulty}`}>
+                {getDifficultyLabel(mode.difficulty)}
+              </div>
+            )}
+          </div>
+          <h3>{mode.translations[language].name}</h3>
+          <p>{mode.translations[language].description}</p>
+        </div>
+      ))}
+    </div>
   );
 
   return (
     <div className="mode-selector">
-      <h2>{translate('training.modes.title')}</h2>
-      <div className="mode-grid">
-        {sortedModes.map((mode) => (
-          <div 
-            key={mode.id}
-            className="mode-card"
-            onClick={() => onSelectMode(mode.id)}
-          >
-            <div className="mode-header">
-              <span className="mode-icon">{mode.icon}</span>
-              <div className={`difficulty-badge ${mode.difficulty}`}>
-                {getDifficultyLabel(mode.difficulty)}
-              </div>
-            </div>
-            <h3>{mode.translations[language].name}</h3>
-            <p>{mode.translations[language].description}</p>
-          </div>
-        ))}
-      </div>
+      <section className="mode-section">
+        <h2>{language === 'fi' ? 'Harjoitukset' : 'Training Modes'}</h2>
+        {renderModeCards(practiceGames, true)}
+      </section>
+
+      <section className="mode-section">
+        <h2>{language === 'fi' ? 'Työkalut' : 'Tools'}</h2>
+        {renderModeCards(tools, false)}
+      </section>
     </div>
   );
 };

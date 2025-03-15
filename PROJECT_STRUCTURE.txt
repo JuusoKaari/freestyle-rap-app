@@ -22,16 +22,16 @@ Directory Structure:
     /modes
       - BaseTrainingMode.jsx   : Base component for all training modes
       - BaseTrainingMode.css   : Common styles for all training modes, including shared styles for bars and rhyme patterns
-      - TwoBarMode.jsx        : Two-bar training mode component
-      - FourBarMode.jsx       : Four-bar training mode component
-      - RhymeMapMode.jsx      : Rhyme map training mode component
-      - RhymeMapMode.css      : Styles for rhyme map mode
-      - RhymeExplorerMode.jsx : Rhyme explorer mode component
-      - RhymeExplorerMode.css : Styles for rhyme explorer mode
-      - FindRhymesMode.jsx    : Find rhymes mode component
-      - FindRhymesMode.css    : Styles for find rhymes mode
-      - SlotMachineMode.jsx   : Slot machine mode component
-      - SlotMachineMode.css   : Styles for slot machine mode
+      - SetupPunchlineMode.jsx : Setup & Punchline training mode component
+      - SetupPunchlineMode.css : Styles for Setup & Punchline mode
+      - RhymeMapMode.jsx       : Rhyme map training mode component
+      - RhymeMapMode.css       : Styles for rhyme map mode
+      - RhymeExplorerMode.jsx  : Rhyme explorer mode component
+      - RhymeExplorerMode.css  : Styles for rhyme explorer mode
+      - FindRhymesMode.jsx     : Find rhymes mode component
+      - FindRhymesMode.css     : Styles for find rhymes mode
+      - SlotMachineMode.jsx    : Slot machine mode component
+      - SlotMachineMode.css    : Styles for slot machine mode
     
     - ModeSelector.jsx         : Component for selecting different training modes
     - BeatSelector.jsx         : Full-featured beat selection and control
@@ -136,7 +136,7 @@ Directory Structure:
 Key Features:
 ------------
 1. Multiple Training Modes:
-   - Two-bar and Four-bar practice with shared base styles
+   - Setup & Punchline practice with
    - Rhyme Explorer for vocabulary building
    - Interactive Find Rhymes game
    - Visual Rhyme Map for pattern exploration

@@ -1,17 +1,18 @@
 /**
- * Four-Bar Training Mode Component
- * ============================
+ * Setup & Punchline Training Mode Component
+ * ====================================
  * 
- * Advanced training mode for practicing four-bar rap patterns with extended
- * setup and punchline structure. Provides a larger canvas for complex rhyme schemes.
+ * Training mode for practicing rap patterns with setup and punchline structure.
+ * Displays a dynamic grid of bars with configurable length (2, 4, or 8 bars).
  * 
  * Features:
- * - 4x4 bar grid visualization
+ * - Configurable bar length (2, 4, 8 bars)
  * - Beat-synchronized progression
- * - Three setup bars with question marks for freestyle
+ * - Setup bars with question marks for freestyle
  * - Target word display with preview
  * - Active bar highlighting
  * - Word change animations
+ * - Rhyme hints for setup bars
  * 
  * Props:
  * - currentBar: Currently active bar index
@@ -22,18 +23,17 @@
  * - wordCounter: Current word index
  * - setWordCounter: Function to set the current word index
  * - setIsWordChanging: Function to set the word transition animation state
+ * - onBarsPerRoundChange: Function to handle bar length changes
  * - Standard BaseTrainingMode props
- * 
- * This mode is designed for more advanced practice, allowing users
- * to build longer rhyme patterns before hitting the target word.
  */
 
 import React, { useState, useEffect } from 'react';
 import BaseTrainingMode from './BaseTrainingMode';
 import { useTranslation } from '../../services/TranslationContext';
 import { trainingModes } from '../../data/trainingModes';
+import './SetupPunchlineMode.css';
 
-const FourBarMode = ({ 
+const SetupPunchlineMode = ({ 
   currentBar,
   currentBeat,
   bpm,
@@ -47,21 +47,31 @@ const FourBarMode = ({
   helperText,
   isPlaying,
   onPlayPause,
-  isLoading
+  isLoading,
+  onBarsPerRoundChange = () => {}
 }) => {
   const { language } = useTranslation();
-  const translations = trainingModes.find(mode => mode.id === 'four-bar').translations[language];
+  const translations = trainingModes.find(mode => mode.id === 'setup-punchline').translations[language];
   const BLOCKS_PER_BAR = 4;
   const [selectedRhymes, setSelectedRhymes] = useState([]);
   const [showHints, setShowHints] = useState(() => {
     const saved = localStorage.getItem('showRhymeHints');
     return saved !== null ? JSON.parse(saved) : false;
   });
+  const [barsPerRound, setBarsPerRound] = useState(2);
+  const [isNextWordChanging, setIsNextWordChanging] = useState(false);
 
   // Save hint preference to localStorage
   useEffect(() => {
     localStorage.setItem('showRhymeHints', JSON.stringify(showHints));
   }, [showHints]);
+
+  // Handle bar length changes
+  const handleBarsChange = (value) => {
+    console.debug('[SetupPunchline] Bars per round changed:', { to: value });
+    setBarsPerRound(value);
+    onBarsPerRoundChange(value);
+  };
 
   // Update selected rhymes when target word changes
   useEffect(() => {
@@ -74,32 +84,39 @@ const FourBarMode = ({
       : (currentWord?.rhymes || []);
     
     if (rhymeHints.length > 0) {
-      // Select three different rhymes if possible
+      // Select rhymes based on bars per round (need one less than total bars)
+      const numRhymes = barsPerRound - 1;
       const shuffledRhymes = [...rhymeHints].sort(() => Math.random() - 0.5);
-      setSelectedRhymes(shuffledRhymes.slice(0, 3));
+      setSelectedRhymes(shuffledRhymes.slice(0, numRhymes));
     } else {
       setSelectedRhymes([]);
     }
-  }, [wordCounter, shuffledWords]);
+  }, [wordCounter, shuffledWords, barsPerRound]);
 
   // Handle word changes based on bar position
   useEffect(() => {
-    // Change word every 4 bars (one complete pattern)
-    if (currentBar % 4 === 0 && currentBeat === 0) {
+    // Change word based on selected bar length
+    if (currentBar % barsPerRound === 0 && currentBeat === 0) {
       setIsWordChanging(true);
+      setIsNextWordChanging(true);
       setWordCounter(prev => (prev + 1) % shuffledWords.length);
+      
+      // Target word animation
       setTimeout(() => setIsWordChanging(false), 450);
+      
+      // Next word animation (matches CSS animation duration)
+      setTimeout(() => setIsNextWordChanging(false), 2000);
     }
-  }, [currentBar, currentBeat, setIsWordChanging, setWordCounter, shuffledWords.length]);
+  }, [currentBar, currentBeat, setIsWordChanging, setWordCounter, shuffledWords.length, barsPerRound]);
 
   const renderBlock = (blockIndex, line) => {
-    // Calculate current position in beats (0-15 for four bars)
+    // Calculate current position in beats
     const totalBeats = (currentBar * 4) + currentBeat;
     const blockPosition = blockIndex + (line - 1) * BLOCKS_PER_BAR;
-    // Wrap around every 16 beats (4 bars × 4 beats)
-    const isActive = blockPosition === totalBeats % 16;
-    const isTarget = line === 4 && blockIndex === 3;
-    const isQuestionBlock = blockIndex === 3 && line < 4;
+    // Wrap around based on total bars
+    const isActive = blockPosition === totalBeats % (barsPerRound * 4);
+    const isTarget = line === barsPerRound && blockIndex === 3;
+    const isQuestionBlock = line < barsPerRound && blockIndex === 3;
 
     if (isTarget) {
       const currentWord = shuffledWords[wordCounter];
@@ -114,24 +131,23 @@ const FourBarMode = ({
           >
             {currentWord?.word}
           </span>
-          <span className="next-word">
-            Next: {shuffledWords[wordCounter + 1]?.word}
-          </span>
         </div>
       );
     }
 
     if (isQuestionBlock) {
-      // Use a different rhyme for each question block
-      const rhymeForLine = selectedRhymes[line - 1];
-      
+      const rhymeIndex = line - 1;
+      const rhymeHint = showHints && selectedRhymes[rhymeIndex];
+      // Calculate delay based on position from bottom
+      const delayIndex = barsPerRound - line;
+
       return (
         <span 
           key={`block-${blockIndex}-${line}`} 
-          className={`block question ${isActive ? 'active' : ''} ${isWordChanging ? 'changing' : ''}`}
+          className={`block question ${isActive ? 'active' : ''} ${isWordChanging ? `changing delay-${delayIndex}` : ''}`}
         >
-          {showHints && rhymeForLine ? (
-            <span className="rhyme-suggestion">{rhymeForLine.word}</span>
+          {rhymeHint ? (
+            <span className="rhyme-suggestion">{rhymeHint.word}</span>
           ) : (
             <>
               <span className="floating-mark">?</span>
@@ -163,25 +179,51 @@ const FourBarMode = ({
       onPlayPause={onPlayPause}
       isLoading={isLoading}
     >
-      <div className="hint-toggle">
-        <label>
-          <input
-            type="checkbox"
-            checked={showHints}
-            onChange={(e) => setShowHints(e.target.checked)}
-          />
-          {translations.showHints}
-        </label>
+      <div className="settings-row">
+        <div className="bars-per-round-setting">
+          <label>
+            {translations.barCountLabel}
+            <select 
+              value={barsPerRound} 
+              onChange={(e) => handleBarsChange(Number(e.target.value))}
+              disabled={isPlaying}
+            >
+              <option value="2">2 bars</option>
+              <option value="4">4 bars</option>
+            </select>
+          </label>
+        </div>
+        <div className="hint-toggle">
+          <label>
+            <input
+              type="checkbox"
+              checked={showHints}
+              onChange={(e) => setShowHints(e.target.checked)}
+            />
+            {translations.showHints}
+          </label>
+        </div>
       </div>
       <div className="rhyme-pattern">
-        {[1, 2, 3, 4].map((line) => (
-          <div key={`line-${line}`} className="line">
-            {[0, 1, 2, 3].map((blockIndex) => renderBlock(blockIndex, line))}
+        {Array.from({ length: barsPerRound }, (_, i) => (
+          <div key={`line-${i + 1}`} className="line">
+            {[0, 1, 2, 3].map((blockIndex) => renderBlock(blockIndex, i + 1))}
           </div>
         ))}
+        <div className="line next-word-row">
+          <div className="block"></div>
+          <div className="block"></div>
+          <div className="block"></div>
+          <div className={`next-word-container ${isNextWordChanging ? 'entering' : ''}`}>
+            <span className="next-word-label">NEXT</span>
+            <div className="block next-word">
+              {shuffledWords[(wordCounter + 1) % shuffledWords.length]?.word}
+            </div>
+          </div>
+        </div>
       </div>
     </BaseTrainingMode>
   );
 };
 
-export default FourBarMode; 
+export default SetupPunchlineMode; 

@@ -19,13 +19,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rheemy.com/#/mode/two-bar</loc>
-    <lastmod>2024-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://rheemy.com/#/mode/four-bar</loc>
+    <loc>https://rheemy.com/#/mode/setup-punchline</loc>
     <lastmod>2024-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -38,6 +32,12 @@
   </url>
   <url>
     <loc>https://rheemy.com/#/mode/slot-machine</loc>
+    <lastmod>2024-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rheemy.com/#/mode/rhyme-search</loc>
     <lastmod>2024-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
