@@ -5,6 +5,98 @@
   padding: 20px;
 }
 
+.collected-words-container {
+  background: var(--surface-color, #2a2a2a);
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.collected-words {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.collected-words-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  padding: 4px;
+  border-radius: 8px;
+  background: var(--background-color);
+}
+
+.collected-word {
+  background: var(--background-color);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--text-color);
+  border: 1px solid var(--accent-color);
+  opacity: 0.85;
+}
+
+.collected-word.base-word {
+  background: var(--accent-color);
+  opacity: 1;
+  cursor: default;
+  font-weight: 600;
+  border: 2px solid var(--accent-color);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  padding: 8px 16px;
+  font-size: 17px;
+  letter-spacing: 0.3px;
+}
+
+.collected-word:not(.base-word) {
+  opacity: 0.75;
+}
+
+.collected-word:not(.base-word):hover {
+  background: var(--hover-color, #3a3a3a);
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
+.collected-words-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.action-button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--background-color);
+  color: var(--text-color);
+  border: 1px solid var(--accent-color);
+}
+
+.action-button:hover {
+  background: var(--hover-color, #3a3a3a);
+  transform: translateY(-1px);
+}
+
+.copy-button {
+  background: var(--accent-color);
+}
+
+.clear-button {
+  opacity: 0.8;
+}
+
 .search-container {
   margin-bottom: 30px;
   text-align: center;
@@ -61,6 +153,8 @@
   gap: 8px;
   opacity: 0.7;
   position: relative;
+  min-width: 160px;
+  justify-content: center;
 }
 
 .sort-button:hover {
@@ -77,6 +171,36 @@
 
 .sort-button.active:hover {
   transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .sort-controls {
+    flex-direction: column;
+    width: 100%;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sort-button {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 20px;
+  }
+
+  .word-count {
+    display: none;
+  }
+
+  .pattern-header {
+    gap: 8px;
+    font-size: 16px;
+  }
+
+  .pattern-label {
+    padding: 3px 6px;
+    font-size: 13px;
+  }
 }
 
 .result-group {
@@ -119,12 +243,22 @@
   padding: 6px 12px;
   border-radius: 6px;
   font-size: 16px;
-  transition: background-color 0.2s ease;
+  transition: all 0.2s ease;
   cursor: pointer;
 }
 
 .word:hover {
   background: var(--hover-color, #3a3a3a);
+  transform: translateY(-1px);
+}
+
+.word.collected {
+  background: var(--accent-color);
+  opacity: 0.8;
+}
+
+.word.collected:hover {
+  opacity: 1;
 }
 
 .more-words {

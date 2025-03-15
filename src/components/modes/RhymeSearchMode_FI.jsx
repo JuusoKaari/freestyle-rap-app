@@ -51,6 +51,7 @@ const RhymeSearchMode = ({
   const [error, setError] = useState('');
   const [randomSeed, setRandomSeed] = useState(Date.now());
   const [sortMethod, setSortMethod] = useState(SORT_METHODS.SIMILARITY);
+  const [collectedGroups, setCollectedGroups] = useState({});
 
   // Distinctive consonants that heavily influence the word's sound
   const DISTINCTIVE_CONSONANTS = {
@@ -142,6 +143,7 @@ const RhymeSearchMode = ({
     }
 
     const syllabified = splitIntoSyllables(cleanWord);
+    console.log('Syllabified word:', syllabified);
 
     if (!syllabified) {
       setError(translations.invalidWordError || 'Invalid word structure');
@@ -150,6 +152,8 @@ const RhymeSearchMode = ({
     }
 
     const [vowelPattern, syllableCount] = getSyllableVowelPattern(syllabified);
+    console.log('Vowel pattern:', vowelPattern);
+    console.log('Syllable count:', syllableCount);
     
     if (!vowelPattern || !syllableCount) {
       setError(translations.invalidPatternError || 'Could not determine vowel pattern');
@@ -169,6 +173,7 @@ const RhymeSearchMode = ({
         .filter(w => w !== searchWordNoDashes && w !== cleanWord); // Exclude search word in both forms
 
       if (exactWords.length > 0) {
+        console.log('Found exact matches:', exactWords.length);
         results.push(['exact', { pattern: exactPattern, words: exactWords }]);
       }
     }
@@ -192,16 +197,54 @@ const RhymeSearchMode = ({
 
     // Add extended matches if any were found
     if (extendedWords.size > 0) {
+      console.log('Found extended matches:', extendedWords.size);
       results.push(['extended', { 
         pattern: `*-${exactPattern}`, 
         words: Array.from(extendedWords)
       }]);
     }
 
+    // If no matches found, try partial matches from the end
+    if (results.length === 0) {
+      console.log('No exact or extended matches found, trying partial matches');
+      // Try progressively shorter patterns from the end
+      for (let i = vowelPattern.length - 1; i >= 1; i--) {
+        const partialPattern = vowelPattern.slice(-i).join('-');
+        console.log('Trying partial pattern:', partialPattern);
+        const partialWords = new Set();
+        
+        Object.entries(FI__full_dict).forEach(([pattern, words]) => {
+          // Check if this pattern ends with our partial pattern
+          if (pattern.endsWith(partialPattern)) {
+            console.log('Found matching pattern:', pattern);
+            words.forEach(word => {
+              const cleanWord = word.replace(/-/g, '');
+              if (cleanWord !== searchWordNoDashes) {
+                partialWords.add(cleanWord);
+              }
+            });
+          }
+        });
+
+        if (partialWords.size > 0) {
+          console.log('Found partial matches:', partialWords.size, 'with pattern:', partialPattern);
+          results.push(['partial', {
+            pattern: `*-${partialPattern}`,
+            words: Array.from(partialWords)
+          }]);
+          break; // Stop after finding first set of partial matches
+        } else {
+          console.log('No matches found for pattern:', partialPattern);
+        }
+      }
+    }
+
     if (results.length > 0) {
+      console.log('Final results:', results.map(([type, data]) => `${type}: ${data.words.length} words`));
       setError('');
       setSearchResults(results);
     } else {
+      console.log('No matches found at all');
       setError(translations.noMatchesFound || 'No rhyming words found');
       setSearchResults(null);
     }
@@ -283,6 +326,104 @@ const RhymeSearchMode = ({
     </div>
   );
 
+  // Handle word click to add/remove from collection
+  const handleWordClick = (word) => {
+    const cleanSearchWord = searchWord.trim().toLowerCase();
+    if (!cleanSearchWord) return;
+
+    setCollectedGroups(prev => {
+      const newGroups = { ...prev };
+      
+      // If this word exists in any group, remove it
+      let wordFound = false;
+      Object.entries(newGroups).forEach(([searchTerm, words]) => {
+        if (words.includes(word)) {
+          newGroups[searchTerm] = words.filter(w => w !== word);
+          if (newGroups[searchTerm].length === 0) {
+            delete newGroups[searchTerm];
+          }
+          wordFound = true;
+        }
+      });
+
+      // If word wasn't found in any group, add it to current search term's group
+      if (!wordFound) {
+        if (!newGroups[cleanSearchWord]) {
+          newGroups[cleanSearchWord] = [];
+        }
+        newGroups[cleanSearchWord] = [...newGroups[cleanSearchWord], word];
+      }
+
+      return newGroups;
+    });
+  };
+
+  // Handle copy to clipboard
+  const handleCopy = () => {
+    const text = Object.entries(collectedGroups)
+      .map(([searchTerm, words]) => `${searchTerm} ${words.join(' ')}`)
+      .join('\n');
+    navigator.clipboard.writeText(text).then(() => {
+      console.log('Copied to clipboard:', text);
+    });
+  };
+
+  // Clear collected words
+  const handleClear = () => {
+    setCollectedGroups({});
+  };
+
+  // Check if any words are collected
+  const hasCollectedWords = Object.keys(collectedGroups).length > 0;
+
+  // Render collected words container
+  const renderCollectedWords = () => {
+    if (!hasCollectedWords) return null;
+
+    return (
+      <div className="collected-words-container">
+        <div className="collected-words">
+          {Object.entries(collectedGroups).map(([searchTerm, words]) => (
+            <div key={searchTerm} className="collected-words-row">
+              <span 
+                className="collected-word base-word"
+                title={translations.baseWord || "Search word"}
+              >
+                {searchTerm}
+              </span>
+              {words.map((word, index) => (
+                <span 
+                  key={`${word}-${index}`} 
+                  className="collected-word"
+                  onClick={() => handleWordClick(word)}
+                  title={translations.clickToRemove || "Click to remove"}
+                >
+                  {word}
+                </span>
+              ))}
+            </div>
+          ))}
+        </div>
+        <div className="collected-words-actions">
+          <button 
+            className="action-button copy-button"
+            onClick={handleCopy}
+            title={translations.copyToClipboard || "Copy to clipboard"}
+          >
+            📋 {translations.copy || "Copy"}
+          </button>
+          <button 
+            className="action-button clear-button"
+            onClick={handleClear}
+            title={translations.clearAll || "Clear all"}
+          >
+            🗑️ {translations.clear || "Clear"}
+          </button>
+        </div>
+      </div>
+    );
+  };
+
   const renderResults = () => {
     if (!searchResults) return null;
 
@@ -291,14 +432,17 @@ const RhymeSearchMode = ({
         {renderSortControls()}
         {searchResults.map(([matchType, { pattern, words }]) => {
           const sortedWords = sortWords(words, sortMethod, searchWord);
+          
           return (
             <div key={pattern} className="result-group">
               <h3 className="pattern-header">
                 {matchType === 'exact' 
                   ? (translations.exactMatches || 'Exact matches')
-                  : (translations.extendedMatches || 'Extended matches')}
+                  : matchType === 'extended'
+                    ? (translations.extendedMatches || 'Extended matches')
+                    : (translations.partialMatches || 'Partial matches')}
                 <span className="pattern-label">
-                  {matchType === 'extended' && '* + '}
+                  {(matchType === 'extended' || matchType === 'partial') && '* + '}
                   {pattern.replace('*-', '')}
                 </span>
                 <span className="word-count">
@@ -307,7 +451,13 @@ const RhymeSearchMode = ({
               </h3>
               <div className="word-list">
                 {sortedWords.slice(0, 50).map((word, index) => (
-                  <span key={`${word}-${index}`} className="word">{word}</span>
+                  <span 
+                    key={`${word}-${index}`} 
+                    className={`word ${collectedGroups[searchWord]?.includes(word) ? 'collected' : ''}`}
+                    onClick={() => handleWordClick(word)}
+                  >
+                    {word}
+                  </span>
                 ))}
                 {sortedWords.length > 50 && (
                   <span className="more-words">
@@ -332,6 +482,7 @@ const RhymeSearchMode = ({
       isLoading={isLoading}
     >
       <div className="rhyme-search">
+        {renderCollectedWords()}
         <div className="search-container">
           <input
             type="text"
