@@ -105,7 +105,7 @@ const vocabularyConfigs = {
       data: FI_numerotVocab
     },
     {
-      id: 'fi_vaatteet',
+      id: 'fi_vaatteet_ja_asusteet',
       name: 'Vaatteet',
       description: 'Vaatteisiin ja asusteisiin liittyvä sanasto',
       icon: '👕',
