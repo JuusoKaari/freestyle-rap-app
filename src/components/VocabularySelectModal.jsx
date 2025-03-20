@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from '../services/TranslationContext';
 import CustomVocabularyEditor from './CustomVocabularyEditor';
-import { getVocabularies } from '../data/vocabulary/vocabularyConfig';
+import { getVocabularies, getVocabularyData } from '../data/vocabulary/vocabularyConfig';
 import '../styles/VocabularySelectModal.css';
 
 const VocabularySelectModal = ({ 
@@ -10,47 +10,89 @@ const VocabularySelectModal = ({
   onSelect, 
   currentVocabularyId,
   vocabularies: initialVocabularies,
-  language
+  language,
+  syllableRange: initialSyllableRange,
+  onSyllableRangeChange
 }) => {
   const { translate } = useTranslation();
   const [isEditorOpen, setIsEditorOpen] = useState(false);
   const [editingVocabulary, setEditingVocabulary] = useState(null);
   const [vocabularies, setVocabularies] = useState(initialVocabularies);
+  const [syllableRange, setSyllableRange] = useState(initialSyllableRange || { min: 2, max: 3 });
+  const [filteredStats, setFilteredStats] = useState(null);
+
+  // Update syllable range in parent when it changes
+  useEffect(() => {
+    onSyllableRangeChange?.(syllableRange);
+  }, [syllableRange, onSyllableRangeChange]);
 
   // Update vocabularies when language changes or modal is opened
   useEffect(() => {
     setVocabularies(getVocabularies(language));
   }, [language, isOpen]);
 
+  // Calculate filtered word stats when syllable range or vocabulary changes
+  useEffect(() => {
+    if (currentVocabularyId) {
+      const vocabData = getVocabularyData(currentVocabularyId);
+      if (vocabData) {
+        let totalWords = 0;
+        let filteredWords = 0;
+
+        // Handle both old (object) and new (array) formats
+        if (Array.isArray(vocabData)) {
+          // New format (custom vocabularies)
+          vocabData.forEach(({ pattern, words }) => {
+            const syllableCount = pattern.length;
+            const wordCount = words.length;
+            totalWords += wordCount;
+            
+            if (syllableCount >= syllableRange.min && syllableCount <= syllableRange.max) {
+              filteredWords += wordCount;
+            }
+          });
+        } else {
+          // Old format (built-in vocabularies)
+          Object.entries(vocabData).forEach(([pattern, words]) => {
+            const syllableCount = pattern.split('-').length;
+            const wordCount = words.length;
+            totalWords += wordCount;
+            
+            if (syllableCount >= syllableRange.min && syllableCount <= syllableRange.max) {
+              filteredWords += wordCount;
+            }
+          });
+        }
+
+        setFilteredStats({ filtered: filteredWords, total: totalWords });
+      }
+    }
+  }, [currentVocabularyId, syllableRange]);
+
   if (!isOpen) return null;
 
   const handleCustomVocabularySave = (vocabulary) => {
-    // Close the editor and select the new vocabulary
     setIsEditorOpen(false);
     setEditingVocabulary(null);
-    // Update vocabularies list
     setVocabularies(getVocabularies(language));
     onSelect(vocabulary.id);
   };
 
   const handleEdit = (vocab, e) => {
-    e.stopPropagation(); // Prevent selection of vocabulary
+    e.stopPropagation();
     setEditingVocabulary(vocab);
     setIsEditorOpen(true);
   };
 
   const handleDelete = (vocab, e) => {
-    e.stopPropagation(); // Prevent selection of vocabulary
+    e.stopPropagation();
     if (window.confirm(translate('vocabulary.modal.confirm_delete'))) {
       try {
         const savedVocabularies = JSON.parse(localStorage.getItem('customVocabularies') || '[]');
         const updatedVocabularies = savedVocabularies.filter(v => v.id !== vocab.id);
         localStorage.setItem('customVocabularies', JSON.stringify(updatedVocabularies));
-        
-        // Update the vocabularies state to trigger re-render
         setVocabularies(getVocabularies(language));
         
-        // If the deleted vocabulary was selected, select the first available one
         if (currentVocabularyId === vocab.id && vocabularies.length > 1) {
           const firstVocab = vocabularies.find(v => v.id !== vocab.id);
           if (firstVocab) {
@@ -66,6 +108,11 @@ const VocabularySelectModal = ({
 
   const isCustomVocabulary = (vocab) => vocab.id.startsWith('custom-vocabulary-');
 
+  const handleVocabularySelect = (vocabId) => {
+    onSelect(vocabId);
+    // Do not close the modal
+  };
+
   return (
     <div className="vocabulary-modal-overlay" onClick={onClose}>
       <div className="vocabulary-modal-content" onClick={e => e.stopPropagation()}>
@@ -74,26 +121,53 @@ const VocabularySelectModal = ({
           <button className="close-button" onClick={onClose} aria-label={translate('common.close')}>×</button>
         </div>
 
-        {language === 'fi' && (
-          <div className="vocabulary-modal-actions">
-            <button 
-              className="create-vocabulary-button"
-              onClick={() => {
-                setEditingVocabulary(null);
-                setIsEditorOpen(true);
-              }}
-            >
-              {translate('vocabulary.modal.create_custom')}
-            </button>
+        {/* Syllable filter controls */}
+        <div className="vocabulary-filter-section">
+          <div className="filter-header">
+            <span className="filter-title">{translate('vocabulary.filter.syllable_count')}</span>
+            {filteredStats && (
+              <span className="filter-stats">
+                {translate('vocabulary.filter.words_selected').replace('{0}', filteredStats.filtered).replace('{1}', filteredStats.total)}
+              </span>
+            )}
           </div>
-        )}
+          <div className="syllable-range-controls">
+            <input
+              type="range"
+              min="1"
+              max="6"
+              value={syllableRange.min}
+              className={syllableRange.min === syllableRange.max ? 'equal-values min' : ''}
+              onChange={(e) => setSyllableRange(prev => ({
+                ...prev,
+                min: Math.min(parseInt(e.target.value), prev.max)
+              }))}
+            />
+            <div className="range-values">
+              <span>{syllableRange.min}</span>
+              <span>{translate('vocabulary.filter.to')}</span>
+              <span>{syllableRange.max}</span>
+            </div>
+            <input
+              type="range"
+              min="1"
+              max="6"
+              value={syllableRange.max}
+              className={syllableRange.min === syllableRange.max ? 'equal-values max' : ''}
+              onChange={(e) => setSyllableRange(prev => ({
+                ...prev,
+                max: Math.max(parseInt(e.target.value), prev.min)
+              }))}
+            />
+          </div>
+        </div>
 
         <div className="vocabulary-list">
           {vocabularies.map((vocab) => (
             <div
               key={vocab.id}
               className={`vocabulary-item ${vocab.id === currentVocabularyId ? 'selected' : ''}`}
-              onClick={() => onSelect(vocab.id)}
+              onClick={() => handleVocabularySelect(vocab.id)}
             >
               <div className="vocabulary-icon-container">
                 <span className="vocabulary-icon">{vocab.icon}</span>
@@ -123,6 +197,21 @@ const VocabularySelectModal = ({
             </div>
           ))}
         </div>
+
+        {/* Moved create button to bottom */}
+        {language === 'fi' && (
+          <div className="vocabulary-modal-footer">
+            <button 
+              className="create-vocabulary-button"
+              onClick={() => {
+                setEditingVocabulary(null);
+                setIsEditorOpen(true);
+              }}
+            >
+              {translate('vocabulary.modal.create_custom')}
+            </button>
+          </div>
+        )}
 
         <CustomVocabularyEditor
           isOpen={isEditorOpen}

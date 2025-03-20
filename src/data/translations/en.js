@@ -47,6 +47,11 @@ export const en = {
       medium: "Medium",
       hard: "Hard"
     },
+    filter: {
+      syllable_count: "Syllable Count",
+      words_selected: "{0}/{1} words selected",
+      to: "to"
+    },
     modal: {
       title: "Select Vocabulary",
       word_count: "{{count}} words",

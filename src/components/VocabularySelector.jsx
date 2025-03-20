@@ -6,10 +6,11 @@ import { FaDice } from 'react-icons/fa';
 import { trackVocabularySelection } from '../services/AnalyticsService';
 import '../styles/VocabularySelector.css';
 
-const VocabularySelector = ({ selectedVocabulary, onVocabularySelect }) => {
+const VocabularySelector = ({ selectedVocabulary, onVocabularySelect, syllableRange, onSyllableRangeChange }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { translate, language } = useTranslation();
   const vocabularies = getVocabularies(language);
+  const currentVocabulary = vocabularies.find(v => v.id === selectedVocabulary);
 
   // Find the currently selected vocabulary info
   const selectedVocabInfo = vocabularies.find(vocab => vocab.id === selectedVocabulary);
@@ -24,12 +25,7 @@ const VocabularySelector = ({ selectedVocabulary, onVocabularySelect }) => {
   }, [language, selectedVocabInfo, vocabularies]);
 
   const handleVocabularySelect = (vocabId) => {
-    const selectedVocab = vocabularies.find(vocab => vocab.id === vocabId);
-    if (selectedVocab) {
-      trackVocabularySelection(selectedVocab.name);
-    }
     onVocabularySelect(vocabId);
-    setIsModalOpen(false);
   };
 
   const handleRandomize = () => {
@@ -97,6 +93,8 @@ const VocabularySelector = ({ selectedVocabulary, onVocabularySelect }) => {
         currentVocabularyId={selectedVocabulary}
         vocabularies={vocabularies}
         language={language}
+        syllableRange={syllableRange}
+        onSyllableRangeChange={onSyllableRangeChange}
       />
     </div>
   );

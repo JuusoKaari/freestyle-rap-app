@@ -47,6 +47,11 @@ export const fi = {
       medium: "Keskitaso",
       hard: "Vaikea"
     },
+    filter: {
+      syllable_count: "Tavumäärä",
+      words_selected: "{0}/{1} sanaa valittu",
+      to: "-"
+    },
     modal: {
       title: "Valitse sanasto",
       word_count: "{{count}} sanaa",

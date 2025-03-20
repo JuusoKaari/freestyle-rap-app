@@ -74,6 +74,7 @@ function AppContent() {
   const [isWordChanging, setIsWordChanging] = useState(false);
   const [barsPerRound, setBarsPerRound] = useState(2);
   const lastProcessedBarRef = useRef(-1);
+  const [syllableRange, setSyllableRange] = useState({ min: 2, max: 3 });
 
   // Update document title
   useEffect(() => {
@@ -88,9 +89,8 @@ function AppContent() {
         setSelectedMode(currentModeId);
         setIsTraining(true);
         
-        // Initialize audio without starting playback
         try {
-          await handleBeatSelect(selectedBeatId); // This will initialize audio and load the beat
+          await handleBeatSelect(selectedBeatId);
         } catch (error) {
           console.error('Failed to initialize audio:', error);
         }
@@ -99,7 +99,8 @@ function AppContent() {
           const words = await generateWordList({ 
             minWordsInGroup: 1,
             vocabulary: selectedVocabulary,
-            includeRhymes: true
+            includeRhymes: true,
+            syllableRange
           });
           if (words.length > 0) {
             setShuffledWords(words);
@@ -110,19 +111,20 @@ function AppContent() {
     };
 
     initializeMode();
-  }, [currentModeId, selectedVocabulary, isTraining]);
+  }, [currentModeId, selectedVocabulary, syllableRange, isTraining]);
 
   // Load initial words when vocabulary changes
   useEffect(() => {
     generateWordList({ 
       minWordsInGroup: 3,
-      vocabulary: selectedVocabulary 
+      vocabulary: selectedVocabulary,
+      syllableRange
     }).then(words => {
       if (words.length > 0) {
         setShuffledWords(words);
       }
     });
-  }, [selectedVocabulary]);
+  }, [selectedVocabulary, syllableRange]);
 
   // Handle mode selection
   const handleModeSelect = async (modeId) => {
@@ -139,7 +141,8 @@ function AppContent() {
     const words = await generateWordList({ 
       minWordsInGroup: 1,
       vocabulary: selectedVocabulary,
-      includeRhymes: true
+      includeRhymes: true,
+      syllableRange
     });
     if (words.length > 0) {
       setShuffledWords(words);
@@ -314,6 +317,8 @@ function AppContent() {
                 <VocabularySelector
                   selectedVocabulary={selectedVocabulary}
                   onVocabularySelect={setSelectedVocabulary}
+                  syllableRange={syllableRange}
+                  onSyllableRangeChange={setSyllableRange}
                 />
               </div>
               <ModeSelector onSelectMode={handleModeSelect} />

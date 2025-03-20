@@ -61,19 +61,167 @@
   padding: 16px 20px;
 }
 
+.vocabulary-filter-section {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.filter-title {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.filter-stats {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.syllable-range-controls {
+  position: relative;
+  height: 40px;
+  margin: 20px 0;
+  padding: 0 8px;
+}
+
+.syllable-range-controls::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  top: 18px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+
+.syllable-range-controls input[type="range"] {
+  position: absolute;
+  width: calc(100% - 16px);
+  left: 8px;
+  pointer-events: none;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  background: transparent;
+}
+
+/* Min range on top */
+.syllable-range-controls input[type="range"]:nth-child(1) {
+  top: 18px;
+}
+
+/* Max range below with offset */
+.syllable-range-controls input[type="range"]:nth-child(3) {
+  top: 18px;
+}
+
+.syllable-range-controls input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  pointer-events: auto;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #1a1a1a;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: -6px;
+}
+
+.syllable-range-controls input[type="range"]::-moz-range-thumb {
+  pointer-events: auto;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #1a1a1a;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Offset thumbs when values are equal */
+.syllable-range-controls input[type="range"].equal-values.min::-webkit-slider-thumb {
+  transform: translateX(-8px);
+}
+
+.syllable-range-controls input[type="range"].equal-values.max::-webkit-slider-thumb {
+  transform: translateX(8px);
+}
+
+.syllable-range-controls input[type="range"].equal-values.min::-moz-range-thumb {
+  transform: translateX(-8px);
+}
+
+.syllable-range-controls input[type="range"].equal-values.max::-moz-range-thumb {
+  transform: translateX(8px);
+}
+
+.syllable-range-controls input[type="range"]:hover::-webkit-slider-thumb {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.syllable-range-controls input[type="range"]:hover::-moz-range-thumb {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.syllable-range-controls input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  background: transparent;
+  border-radius: 2px;
+}
+
+.syllable-range-controls input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 4px;
+  background: transparent;
+  border-radius: 2px;
+}
+
+.range-values {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  top: -25px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+}
+
+.vocabulary-modal-footer {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+}
+
 .create-vocabulary-button {
-  padding: 8px 16px;
-  background-color: var(--primary-color);
-  color: white;
-  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 0.5rem 1rem;
   border-radius: 4px;
   cursor: pointer;
-  font-weight: 500;
-  transition: background-color 0.2s;
+  font-size: 0.9rem;
+  transition: all 0.2s;
 }
 
 .create-vocabulary-button:hover {
-  background-color: var(--primary-color-dark);
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
 }
 
 .vocabulary-list {

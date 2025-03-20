@@ -8,7 +8,7 @@
  * Features:
  * - Language-specific vocabulary sets (FI/EN)
  * - Themed collections (rap, science, shopping, etc.)
- * - Vocabulary metadata (name, description, difficulty)
+ * - Vocabulary metadata (name, description)
  * - Word count tracking
  * - File path resolution
  * - Custom vocabulary support
@@ -53,7 +53,6 @@ const vocabularyConfigs = {
       id: 'fi_generic_rap',
       name: 'RAP',
       description: 'Yleissanasto räppäämiseen',
-      difficulty: 'medium',
       icon: '🎤',
       file: 'FI_generic_rap.js',
       wordCount: countWords(FI_genericVocab),
@@ -63,7 +62,6 @@ const vocabularyConfigs = {
       id: 'fi_elaimet',
       name: 'Eläimet',
       description: 'Eläinaiheinen sanasto',
-      difficulty: 'medium',
       icon: '🦁',
       file: 'FI_elaimet.js',
       wordCount: countWords(FI_animalVocab),
@@ -73,7 +71,6 @@ const vocabularyConfigs = {
       id: 'fi_tiede',
       name: 'Tiede',
       description: 'Tieteeseen liittyvä sanasto',
-      difficulty: 'hard',
       icon: '🔬',
       file: 'FI_tiede.js',
       wordCount: countWords(FI_tiedeVocab),
@@ -83,7 +80,6 @@ const vocabularyConfigs = {
       id: 'fi_ostoslista',
       name: 'Kauppalista',
       description: 'Ruokakauppaan liittyvä sanasto',
-      difficulty: 'easy',
       icon: '🛒',
       file: 'FI_ostoslista.js',
       wordCount: countWords(FI_ostoslistaVocab),
@@ -93,7 +89,6 @@ const vocabularyConfigs = {
       id: 'fi_autot',
       name: 'Autot',
       description: 'Autoihin liittyvä sanasto',
-      difficulty: 'medium',
       icon: '🚗',
       file: 'FI_autot.js',
       wordCount: countWords(FI_autotVocab),
@@ -103,7 +98,6 @@ const vocabularyConfigs = {
       id: 'fi_numerot',
       name: 'Numerot',
       description: 'Numerosanat ja lukusanat',
-      difficulty: 'medium',
       icon: '🔢',
       file: 'FI_numerot.js',
       wordCount: countWords(FI_numerotVocab),
@@ -115,7 +109,6 @@ const vocabularyConfigs = {
       id: 'en_generic_rap',
       name: 'Generic Rap',
       description: 'General vocabulary for rapping',
-      difficulty: 'medium',
       icon: '🎤',
       file: 'EN_generic_rap.js',
       wordCount: countWords(EN_genericVocab),
@@ -125,7 +118,6 @@ const vocabularyConfigs = {
       id: 'en_animals',
       name: 'Animals',
       description: 'Animal-themed vocabulary',
-      difficulty: 'medium',
       icon: '🦁',
       file: 'EN_animals.js',
       wordCount: countWords(EN_animalVocab),

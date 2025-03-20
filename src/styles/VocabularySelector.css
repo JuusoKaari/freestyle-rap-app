@@ -70,31 +70,6 @@
   font-style: italic;
 }
 
-.vocabulary-difficulty {
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  background: rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.vocabulary-difficulty.easy {
-  background: rgba(72, 199, 142, 0.2);
-  color: rgb(72, 199, 142);
-}
-
-.vocabulary-difficulty.medium {
-  background: rgba(255, 159, 67, 0.2);
-  color: rgb(255, 159, 67);
-}
-
-.vocabulary-difficulty.hard {
-  background: rgba(255, 71, 87, 0.2);
-  color: rgb(255, 71, 87);
-}
-
 .vocabulary-controls {
   display: flex;
   gap: 0.5rem;
