@@ -22,6 +22,7 @@ import FI_tiedeVocab from './FI_tiede.js';
 import FI_ostoslistaVocab from './FI_ostoslista.js';
 import FI_autotVocab from './FI_autot.js';
 import FI_numerotVocab from './FI_numerot.js';
+import FI_vaatteetVocab from './FI_vaatteet_ja_asusteet.js';
 import EN_fullDict from './EN__full_dict.js';
 import FI_fullDict from './FI__full_dict.js';
 
@@ -102,6 +103,15 @@ const vocabularyConfigs = {
       file: 'FI_numerot.js',
       wordCount: countWords(FI_numerotVocab),
       data: FI_numerotVocab
+    },
+    {
+      id: 'fi_vaatteet',
+      name: 'Vaatteet',
+      description: 'Vaatteisiin ja asusteisiin liittyvä sanasto',
+      icon: '👕',
+      file: 'FI_vaatteet_ja_asusteet.js',
+      wordCount: countWords(FI_vaatteetVocab),
+      data: FI_vaatteetVocab
     }
   ],
   en: [
