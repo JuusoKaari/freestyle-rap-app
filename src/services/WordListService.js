@@ -173,22 +173,39 @@ export const generateWordList = async ({
     // Find exact rhymes from the same group in filtered vocabulary (themed)
     const exactThemedRhymes = rhymeHandler.findExactRhymes(word, group, filteredVocab, false);
     
-    // Find slant rhymes in filtered vocabulary if we don't have enough exact rhymes
-    let slantThemedRhymes = [];
-    if (exactThemedRhymes.length < minWordsInGroup - 1) {
-      slantThemedRhymes = rhymeHandler.findSlantRhymes(word, group, filteredVocab, false);
-    }
-
     // Find exact rhymes from full dictionary
     const exactFullRhymes = rhymeHandler.findExactRhymes(word, group, fullDict, true);
     
-    // Find slant rhymes from full dictionary
-    const slantFullRhymes = rhymeHandler.findSlantRhymes(word, group, fullDict, true);
+    // Combine exact rhymes, prioritizing themed ones
+    const allExactRhymes = [
+      ...exactThemedRhymes.map(rhyme => ({ ...rhyme, isSlant: false, isThemed: true })),
+      ...exactFullRhymes
+        .filter(rhyme => !exactThemedRhymes.some(tr => tr.word === rhyme.word))
+        .map(rhyme => ({ ...rhyme, isSlant: false, isThemed: false }))
+    ];
+
+    // Only look for slant rhymes if we don't have enough exact rhymes
+    let slantRhymes = [];
+    if (allExactRhymes.length < minWordsInGroup) {
+      // First try slant rhymes from filtered vocabulary
+      const slantThemedRhymes = rhymeHandler.findSlantRhymes(word, group, filteredVocab, false);
+      
+      // Then try slant rhymes from full dictionary
+      const slantFullRhymes = rhymeHandler.findSlantRhymes(word, group, fullDict, true);
+      
+      // Combine slant rhymes, prioritizing themed ones
+      slantRhymes = [
+        ...slantThemedRhymes.map(rhyme => ({ ...rhyme, isSlant: true, isThemed: true })),
+        ...slantFullRhymes
+          .filter(rhyme => !slantThemedRhymes.some(tr => tr.word === rhyme.word))
+          .map(rhyme => ({ ...rhyme, isSlant: true, isThemed: false }))
+      ];
+    }
 
     // Combine and filter themed rhymes
     const allThemedRhymes = [
-      ...exactThemedRhymes.map(rhyme => ({ ...rhyme, isSlant: false })),
-      ...slantThemedRhymes.map(rhyme => ({ ...rhyme, isSlant: true }))
+      ...allExactRhymes.filter(rhyme => rhyme.isThemed),
+      ...slantRhymes.filter(rhyme => rhyme.isThemed)
     ].filter(rhyme => {
       const rhymePattern = rhyme.group;
       if (!rhymePattern) return false;
@@ -198,8 +215,8 @@ export const generateWordList = async ({
 
     // Combine and filter full dictionary rhymes
     const allFullRhymes = [
-      ...exactFullRhymes.map(rhyme => ({ ...rhyme, isSlant: false })),
-      ...slantFullRhymes.map(rhyme => ({ ...rhyme, isSlant: true }))
+      ...allExactRhymes.filter(rhyme => !rhyme.isThemed),
+      ...slantRhymes.filter(rhyme => !rhyme.isThemed)
     ].filter(rhyme => {
       const rhymePattern = rhyme.group;
       if (!rhymePattern) return false;
@@ -217,11 +234,8 @@ export const generateWordList = async ({
     return {
       word,
       group,
-      themed_rhymes: selectedThemedRhymes,
-      rhymes: selectedFullRhymes.filter(rhyme => 
-        // Remove rhymes that are already in themed_rhymes
-        !selectedThemedRhymes.some(themed => themed.word === rhyme.word)
-      )
+      rhymes: selectedFullRhymes,
+      themed_rhymes: selectedThemedRhymes
     };
   });
 
