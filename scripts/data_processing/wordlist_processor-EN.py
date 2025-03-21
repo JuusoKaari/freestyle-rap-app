@@ -222,7 +222,7 @@ def process_file(input_file, output_dir):
     
     # Print skipped heteronyms
     if heteronyms:
-        print("SKIPPED HETERONYM WORDS:", " ".join(sorted(heteronyms)))
+        print(f"SKIPPED {len(heteronyms)} HETERONYM WORDS")
 
     input_basename = os.path.splitext(os.path.basename(input_file))[0]
     output_file = os.path.join(output_dir, f"{input_basename}.js")
