@@ -21,7 +21,7 @@ echo Preprocessing: Combining full dictionary files...
 
 rem Create combined Finnish full dictionary from parts
 echo. > "%WORDLISTS_DIR%\FI__full_dict.txt"
-for %%F in ("%WORDLISTS_DIR%\FI__full_dict_parts\*.txt") do (
+for /s %%F in ("%WORDLISTS_DIR%\FI__full_dict_parts\*.txt") do (
     echo Adding %%~nxF to Finnish dictionary...
     type "%%F" >> "%WORDLISTS_DIR%\FI__full_dict.txt"
     echo. >> "%WORDLISTS_DIR%\FI__full_dict.txt"
@@ -29,7 +29,7 @@ for %%F in ("%WORDLISTS_DIR%\FI__full_dict_parts\*.txt") do (
 
 rem Create combined English full dictionary from parts
 echo. > "%WORDLISTS_DIR%\EN__full_dict.txt"
-for %%F in ("%WORDLISTS_DIR%\EN__full_dict_parts\*.txt") do (
+for /s %%F in ("%WORDLISTS_DIR%\EN__full_dict_parts\*.txt") do (
     echo Adding %%~nxF to English dictionary...
     type "%%F" >> "%WORDLISTS_DIR%\EN__full_dict.txt"
     echo. >> "%WORDLISTS_DIR%\EN__full_dict.txt"
