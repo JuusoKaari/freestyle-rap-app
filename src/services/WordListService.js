@@ -22,7 +22,7 @@
 import { getVocabularyData } from '../data/vocabulary/vocabularyConfig';
 import { FinnishRhymeHandler } from './rhyming/FinnishRhymeHandler';
 import { EnglishRhymeHandler } from './rhyming/EnglishRhymeHandler';
-import { getDisplayWord } from './utils/wordUtils';
+import { getDisplayWord, splitWord } from './utils/wordUtils';
 
 // Helper function to count total words in a vowel group
 const getGroupWordCount = (group, words) => {
@@ -139,8 +139,10 @@ export const generateWordList = async ({
   const allWords = [];
   Object.entries(filteredVocab).forEach(([pattern, words]) => {
     words.forEach(word => {
+      const { display, phonetic } = splitWord(word);
       allWords.push({
-        word: getDisplayWord(word),
+        word: display.replace(/-/g, '').replace(/_/g, ' '),
+        phonetic: phonetic.replace(/_/g, ''),
         group: pattern
       });
     });
@@ -150,8 +152,9 @@ export const generateWordList = async ({
 
   // If rhymes are not needed, just return shuffled words
   if (!includeRhymes) {
-    const wordObjects = allWords.map(({ word, group }) => ({
+    const wordObjects = allWords.map(({ word, phonetic, group }) => ({
       word: word,
+      phonetic: phonetic,
       group: group,
       rhymes: [],
       themed_rhymes: []
@@ -167,8 +170,8 @@ export const generateWordList = async ({
   const fullDict = getFullDictionary(vocabulary);
 
   // Process each word to find its rhyming pairs
-  const processedWords = allWords.map(({ word, group }) => {
-    if (!group) return { word, group, rhymes: [], themed_rhymes: [] };
+  const processedWords = allWords.map(({ word, phonetic, group }) => {
+    if (!group) return { word, phonetic, group, rhymes: [], themed_rhymes: [] };
 
     // Find exact rhymes from the same group in filtered vocabulary (themed)
     const exactThemedRhymes = rhymeHandler.findExactRhymes(word, group, filteredVocab, false);
@@ -233,6 +236,7 @@ export const generateWordList = async ({
 
     return {
       word,
+      phonetic,
       group,
       rhymes: selectedFullRhymes,
       themed_rhymes: selectedThemedRhymes
