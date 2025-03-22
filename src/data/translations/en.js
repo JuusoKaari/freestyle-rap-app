@@ -20,7 +20,8 @@ export const en = {
     play: "Play",
     processing: "Processing...",
     edit: "Edit",
-    delete: "Delete"
+    delete: "Delete",
+    done: "Done"
   },
   recording: {
     start: "Start Recording",
@@ -36,7 +37,7 @@ export const en = {
   },
   vocabulary: {
     selector: {
-      title: "Select Vocabulary",
+      title: "Selected Vocabulary",
       description: "Choose the vocabulary set you want to practice with",
       change: "Change Vocabulary",
       no_vocabularies: "No vocabularies available for the selected language",
@@ -50,12 +51,15 @@ export const en = {
     filter: {
       syllable_count: "Syllable Count",
       words_selected: "{0}/{1} words selected",
-      to: "to"
+      to: "to",
+      additional_settings: "Additional Settings"
     },
     modal: {
       title: "Select Vocabulary",
       word_count: "{{count}} words",
       create_custom: "Create Custom Vocabulary",
+      create_custom_desc: "Create your own custom vocabulary",
+      selected: "Selected",
       confirm_delete: "Are you sure you want to delete this vocabulary?",
       delete_error: "Error deleting vocabulary. Please try again."
     },

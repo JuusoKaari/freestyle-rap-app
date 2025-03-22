@@ -20,7 +20,8 @@ export const fi = {
     play: "Toista",
     processing: "Käsitellään...",
     edit: "Muokkaa",
-    delete: "Poista"
+    delete: "Poista",
+    done: "Valmis"
   },
   recording: {
     start: "Aloita nauhoitus",
@@ -36,7 +37,7 @@ export const fi = {
   },
   vocabulary: {
     selector: {
-      title: "Valitse sanasto",
+      title: "Valittu sanasto",
       description: "Valitse sanasto jolla haluat harjoitella",
       change: "Vaihda sanasto",
       no_vocabularies: "Ei sanastoja valitulle kielelle",
@@ -50,14 +51,17 @@ export const fi = {
     filter: {
       syllable_count: "Tavumäärä",
       words_selected: "{0}/{1} sanaa valittu",
-      to: "-"
+      to: "-",
+      additional_settings: "Lisäasetukset"
     },
     modal: {
       title: "Valitse sanasto",
       word_count: "{{count}} sanaa",
-      create_custom: "Luo oma sanasto",
+      create_custom: "Luo mukautettu sanasto",
+      create_custom_desc: "Luo oma mukautettu sanasto",
+      selected: "Valittu",
       confirm_delete: "Haluatko varmasti poistaa tämän sanaston?",
-      delete_error: "Virhe sanaston poistamisessa. Yritä uudelleen."
+      delete_error: "Virhe sanaston poistossa"
     },
     editor: {
       title_create: "Luo oma sanasto",
