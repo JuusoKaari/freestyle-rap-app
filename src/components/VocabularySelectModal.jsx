@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from '../services/TranslationContext';
 import CustomVocabularyEditor from './CustomVocabularyEditor';
 import { getVocabularies, getVocabularyData } from '../data/vocabulary/vocabularyConfig';
+import { useDebug } from '../services/DebugContext';
 import '../styles/VocabularySelectModal.css';
 
 const VocabularySelectModal = ({ 
@@ -15,6 +16,7 @@ const VocabularySelectModal = ({
   onSyllableRangeChange
 }) => {
   const { translate } = useTranslation();
+  const { isDebugMode } = useDebug();
   const [isEditorOpen, setIsEditorOpen] = useState(false);
   const [editingVocabulary, setEditingVocabulary] = useState(null);
   const [vocabularies, setVocabularies] = useState(initialVocabularies);
@@ -30,8 +32,13 @@ const VocabularySelectModal = ({
 
   // Update vocabularies when language changes or modal is opened
   useEffect(() => {
-    setVocabularies(getVocabularies(language));
-  }, [language, isOpen]);
+    const allVocabularies = getVocabularies(language);
+    // Filter out debug vocabularies if not in debug mode
+    const filteredVocabularies = isDebugMode 
+      ? allVocabularies 
+      : allVocabularies.filter(vocab => !vocab.debug);
+    setVocabularies(filteredVocabularies);
+  }, [language, isOpen, isDebugMode]);
 
   // Calculate filtered word stats when syllable range or vocabulary changes
   useEffect(() => {

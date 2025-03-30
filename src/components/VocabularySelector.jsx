@@ -4,11 +4,13 @@ import { useTranslation } from '../services/TranslationContext';
 import VocabularySelectModal from './VocabularySelectModal';
 import { FaDice } from 'react-icons/fa';
 import { trackVocabularySelection } from '../services/AnalyticsService';
+import { useDebug } from '../services/DebugContext';
 import '../styles/VocabularySelector.css';
 
 const VocabularySelector = ({ selectedVocabulary, onVocabularySelect, syllableRange, onSyllableRangeChange }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { translate, language } = useTranslation();
+  const { isDebugMode } = useDebug();
   const vocabularies = getVocabularies(language);
   const currentVocabulary = vocabularies.find(v => v.id === selectedVocabulary);
 
@@ -29,7 +31,10 @@ const VocabularySelector = ({ selectedVocabulary, onVocabularySelect, syllableRa
   };
 
   const handleRandomize = () => {
-    const availableVocabs = vocabularies.filter(vocab => vocab.id !== selectedVocabulary);
+    // Filter out debug vocabularies if not in debug mode
+    const availableVocabs = vocabularies.filter(vocab => 
+      vocab.id !== selectedVocabulary && (isDebugMode || !vocab.debug)
+    );
     if (availableVocabs.length > 0) {
       const randomIndex = Math.floor(Math.random() * availableVocabs.length);
       const randomVocab = availableVocabs[randomIndex];
