@@ -23,8 +23,8 @@ import { beats } from '../data/beat_metadata';
 
 // Default beat configuration
 const DEFAULT_BEAT = {
-  id: 'long_road',
-  bpm: 90
+  id: 'dreamy_trap',
+  bpm: 75
 };
 
 export const useAudioController = () => {

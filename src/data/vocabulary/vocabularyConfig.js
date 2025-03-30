@@ -23,6 +23,7 @@ import FI_ostoslistaVocab from './FI_ostoslista.js';
 import FI_autotVocab from './FI_autot.js';
 import FI_numerotVocab from './FI_numerot.js';
 import FI_vaatteetVocab from './FI_vaatteet_ja_asusteet.js';
+import FI_lovebattleVocab from './FI_lovebattle_2025.js';
 import EN_fullDict from './EN__full_dict.js';
 import FI_fullDict from './FI__full_dict.js';
 
@@ -58,6 +59,17 @@ const vocabularyConfigs = {
       file: 'FI_generic_rap.js',
       wordCount: countWords(FI_genericVocab),
       data: FI_genericVocab
+    },
+    {
+      id: 'fi_lovebattle_2025',
+      name: 'LoveBattle 2025',
+      description: 'LoveBattle -sanasto',
+      icon: '❤️',
+      file: 'FI_lovebattle_2025.js',
+      wordCount: countWords(FI_lovebattleVocab),
+      data: FI_lovebattleVocab,
+      link: 'https://www.instagram.com/lovebattlehelsinki/',
+      linkText: 'Instagram Linkki'
     },
     {
       id: 'fi_elaimet',
@@ -107,7 +119,7 @@ const vocabularyConfigs = {
     {
       id: 'fi_vaatteet_ja_asusteet',
       name: 'Vaatteet',
-      description: 'Vaatteisiin ja asusteisiin liittyvä sanasto',
+      description: 'Vaatteisiin liittyvä sanasto',
       icon: '👕',
       file: 'FI_vaatteet_ja_asusteet.js',
       wordCount: countWords(FI_vaatteetVocab),
