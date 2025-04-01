@@ -152,11 +152,17 @@ export default {
     "AA1-AH0-IY0": [
         "prodigy"
     ],
+    "AH0-AA1-AH0-IY0": [
+        "velocity"
+    ],
     "OY1-AH0-IY0": [
         "royalty"
     ],
     "EH1-IY0": [
         "frenzy"
+    ],
+    "EH1-AH0-EH2-IY0": [
+        "legendary"
     ],
     "IH1-ER0-IY0": [
         "victory"

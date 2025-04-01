@@ -119,6 +119,13 @@ export default {
     "antelope": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1739121127/freestyle_words/en/antelope.mp3",
     "snake": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1739121128/freestyle_words/en/snake.mp3",
     "geese": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1740243768/freestyle_words/en/geese.mp3",
-    "cheese": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1740243769/freestyle_words/en/cheese.mp3"
+    "cheese": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1740243769/freestyle_words/en/cheese.mp3",
+    "reproduction": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743361895/freestyle_words/en/reproduction.mp3",
+    "rhinoceros": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743361895/freestyle_words/en/rhinoceros.mp3",
+    "alligator": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743361896/freestyle_words/en/alligator.mp3",
+    "agility": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743361897/freestyle_words/en/agility.mp3",
+    "territory": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743361897/freestyle_words/en/territory.mp3",
+    "aquarium": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743361898/freestyle_words/en/aquarium.mp3",
+    "amphibian": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743361899/freestyle_words/en/amphibian.mp3"
   }
 };

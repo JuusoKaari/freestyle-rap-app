@@ -9,7 +9,7 @@ import pronouncing
 
 # Configuration constants
 MIN_SYLLABLES = 1
-MAX_SYLLABLES = 3
+MAX_SYLLABLES = 4
 
 class RhymeGeneratorGUI:
     def __init__(self, root):

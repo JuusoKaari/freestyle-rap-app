@@ -15,6 +15,9 @@ export default {
         "maraca",
         "maracas"
     ],
+    "AY2-AH0-AA1-AA0": [
+        "ayatollahs"
+    ],
     "AE1-AA0": [
         "ashram",
         "grandma",
@@ -40,6 +43,9 @@ export default {
     "IH1-AH0-AA0": [
         "insofar"
     ],
+    "EH1-IY0-AH0-AA0": [
+        "espionage"
+    ],
     "AH1-AA0": [
         "kumquat",
         "subplot",
@@ -51,6 +57,12 @@ export default {
     ],
     "AA0-AO1-AA0": [
         "carnauba"
+    ],
+    "IH2-AH0-AO1-AA0": [
+        "pythagoras"
+    ],
+    "AA2-IY1-AO1-AA0": [
+        "oxymoron"
     ],
     "AY1-AA0": [
         "dicots",
@@ -117,6 +129,9 @@ export default {
     "EY1-IY0-AA0": [
         "stadia"
     ],
+    "IH0-IH1-IY0-AA0": [
+        "diphtheria"
+    ],
     "UW1-IY0-AA0": [
         "juilliard"
     ],
@@ -147,6 +162,13 @@ export default {
         "aloha",
         "tacoma"
     ],
+    "AE2-AH0-OW1-AA0": [
+        "casanova"
+    ],
+    "EH2-AH0-OW1-AA0": [
+        "czechoslovak",
+        "czechoslovaks"
+    ],
     "IH0-OW1-AA0": [
         "diploma"
     ],
@@ -162,6 +184,9 @@ export default {
         "gewgaw",
         "nuance",
         "nuanced"
+    ],
+    "AE2-EH0-UW1-AA0": [
+        "alleluia"
     ],
     "AA1": [
         "angst",
@@ -821,6 +846,9 @@ export default {
     "IH0-EH0-AA1": [
         "disembark"
     ],
+    "UW2-EH2-EH2-AA1": [
+        "ussr"
+    ],
     "IY0-EH2-AA1": [
         "vietnam"
     ],
@@ -1075,6 +1103,12 @@ export default {
         "positron",
         "positrons"
     ],
+    "AH0-AA1-AH0-AA2": [
+        "phenomenon"
+    ],
+    "AO0-AA1-AH0-AA2": [
+        "automaton"
+    ],
     "AE1-AH0-AA2": [
         "albatross",
         "alcohol",
@@ -1104,6 +1138,9 @@ export default {
     "AO1-AH0-AA2": [
         "orthodox"
     ],
+    "AH0-AO1-AH0-AA2": [
+        "unorthodox"
+    ],
     "AW1-AH0-AA2": [
         "mountaintop",
         "mountaintops"
@@ -1132,6 +1169,9 @@ export default {
         "seminar",
         "seminars"
     ],
+    "EH1-ER0-AH0-AA2": [
+        "heterodox"
+    ],
     "EY1-AH0-AA2": [
         "apricot",
         "tabletop"
@@ -1142,6 +1182,9 @@ export default {
         "kilowatt",
         "kilowatts",
         "millibar"
+    ],
+    "ER0-IH1-AH0-AA2": [
+        "curricula"
     ],
     "IY1-AH0-AA2": [
         "equinox",
@@ -1449,6 +1492,9 @@ export default {
         "turboprop",
         "turboprops"
     ],
+    "AO1-IY0-OW0-AA2": [
+        "audiovox"
+    ],
     "UW1-OW0-AA2": [
         "yugoslav"
     ],
@@ -1474,6 +1520,9 @@ export default {
         "rolltop",
         "soapbox",
         "socalled"
+    ],
+    "IH2-EH1-OW2-AA2": [
+        "electroshock"
     ],
     "OW1-OW2-AA2": [
         "photoshop"
@@ -1528,6 +1577,9 @@ export default {
         "sampans",
         "xanax"
     ],
+    "OW0-AE1-AH0-AE0": [
+        "chromatogram"
+    ],
     "AY1-AH0-AE0": [
         "biomass"
     ],
@@ -1570,6 +1622,9 @@ export default {
         "zigzag",
         "zigzagged",
         "zigzags"
+    ],
+    "EH2-AH0-IH1-AE0": [
+        "pedophiliac"
     ],
     "OW1-IY0-AE0": [
         "goliaths"
@@ -2355,6 +2410,9 @@ export default {
         "unabashed",
         "unattached"
     ],
+    "AW2-ER0-AH0-AE1": [
+        "counterattacked"
+    ],
     "IY1-AH0-AE1": [
         "reattach",
         "reattached"
@@ -2402,6 +2460,13 @@ export default {
     ],
     "AE2-ER0-AE1": [
         "chaparral"
+    ],
+    "AE2-AH0-ER0-AE1": [
+        "catamaran"
+    ],
+    "IH2-AH0-ER0-AE1": [
+        "misunderstand",
+        "misunderstands"
     ],
     "AH2-ER0-AE1": [
         "understand",
@@ -2461,6 +2526,10 @@ export default {
         "withstand",
         "withstands"
     ],
+    "AH2-ER0-IH0-AE1": [
+        "underfinance",
+        "underfinanced"
+    ],
     "IH2-IH0-AE1": [
         "inexact"
     ],
@@ -2502,6 +2571,10 @@ export default {
     "AE2-IY0-AE1": [
         "antitank",
         "balyeat"
+    ],
+    "OW1-ER0-IY0-AE1": [
+        "overreact",
+        "overreacts"
     ],
     "IH1-IY0-AE1": [
         "minivan"
@@ -2648,6 +2721,9 @@ export default {
         "monograph",
         "monographs"
     ],
+    "AY2-AA1-AH0-AE2": [
+        "iconoclast"
+    ],
     "AE1-AH0-AE2": [
         "acrobat",
         "acrobats",
@@ -2662,6 +2738,9 @@ export default {
         "saddlebag",
         "saddlebags",
         "sassafras"
+    ],
+    "AE0-AE1-AH0-AE2": [
+        "afghanistan"
     ],
     "AO1-AH0-AE2": [
         "autocrat",
@@ -2701,6 +2780,10 @@ export default {
         "telegraph",
         "telegraphed"
     ],
+    "AW1-ER0-AH0-AE2": [
+        "counterattack",
+        "counterattacks"
+    ],
     "ER1-AH0-AE2": [
         "circumstance",
         "serviceman",
@@ -2727,8 +2810,19 @@ export default {
         "minuteman",
         "similac"
     ],
+    "ER0-IH1-AH0-AE2": [
+        "aristocrat",
+        "aristocrats"
+    ],
     "IH2-AH0-AE2": [
         "instagram"
+    ],
+    "AO1-IY0-AH0-AE2": [
+        "choreograph",
+        "choreographed"
+    ],
+    "IH1-IY0-AH0-AE2": [
+        "mimeograph"
     ],
     "OW1-AH0-AE2": [
         "phonograph",
@@ -2924,6 +3018,9 @@ export default {
         "paperbacks",
         "razorback"
     ],
+    "UW1-EY2-ER0-AE2": [
+        "newspaperman"
+    ],
     "IH1-ER0-AE2": [
         "hinterland",
         "hinterlands",
@@ -2979,6 +3076,9 @@ export default {
         "pakistan",
         "stalingrad"
     ],
+    "AE0-AE1-IH0-AE2": [
+        "analysand"
+    ],
     "AO1-IH0-AE2": [
         "nordictrack"
     ],
@@ -3025,6 +3125,9 @@ export default {
         "copycat",
         "copycats"
     ],
+    "IH2-AA1-IY0-AE2": [
+        "insomniac"
+    ],
     "AE1-IY0-AE2": [
         "handicap",
         "handicapped",
@@ -3042,6 +3145,9 @@ export default {
     "EH1-IY0-AE2": [
         "fairyland"
     ],
+    "ER1-ER0-IY0-AE2": [
+        "nurseryman"
+    ],
     "ER1-IY0-AE2": [
         "journeyman"
     ],
@@ -3056,6 +3162,13 @@ export default {
         "dixieland",
         "piggyback"
     ],
+    "OW0-IH1-IY0-AE2": [
+        "olympiad",
+        "olympiads"
+    ],
+    "AE0-IY1-IY0-AE2": [
+        "amnesiac"
+    ],
     "OW1-IY0-AE2": [
         "kodiak",
         "zodiac"
@@ -3063,6 +3176,10 @@ export default {
     "UH1-IY0-AE2": [
         "pussycat",
         "pussycats"
+    ],
+    "EH0-UW1-IY0-AE2": [
+        "enthusiast",
+        "enthusiasts"
     ],
     "IY1-AE2": [
         "decals",
@@ -3079,6 +3196,9 @@ export default {
         "kneecaps",
         "leaseback",
         "recaps"
+    ],
+    "AY0-OW0-IY1-AE2": [
+        "biofeedback"
     ],
     "AA1-IY2-AE2": [
         "polygram",
@@ -3099,6 +3219,16 @@ export default {
     ],
     "ER1-OW0-AE2": [
         "turbofan"
+    ],
+    "EY1-IY0-OW0-AE2": [
+        "radioman"
+    ],
+    "OW1-IY0-OW0-AE2": [
+        "sociopath",
+        "sociopaths"
+    ],
+    "AE1-IY2-OW0-AE2": [
+        "angiogram"
     ],
     "UW1-OW0-AE2": [
         "yugoslavs"
@@ -3138,6 +3268,9 @@ export default {
     ],
     "OY1-AE2": [
         "oilman"
+    ],
+    "EH2-AH0-OY1-AE2": [
+        "paranoiac"
     ],
     "UH1-AE2": [
         "bushwhack",
@@ -3714,6 +3847,40 @@ export default {
         "toboggans",
         "uncommon"
     ],
+    "AA2-AH0-AA1-AH0": [
+        "gonococcal",
+        "guatemala",
+        "guatemalan",
+        "guatemalans"
+    ],
+    "AE2-AH0-AA1-AH0": [
+        "anaconda",
+        "candelabra"
+    ],
+    "AO2-AH0-AA1-AH0": [
+        "corespondent",
+        "correspondence",
+        "correspondent",
+        "correspondents",
+        "horizontal",
+        "orthodontist",
+        "orthodontists"
+    ],
+    "EH0-AH0-AA1-AH0": [
+        "genitalia"
+    ],
+    "EH2-AH0-AA1-AH0": [
+        "marijuana",
+        "metacarpal",
+        "metacarpals"
+    ],
+    "IH2-AH0-AA1-AH0": [
+        "irregardless",
+        "misbegotten"
+    ],
+    "OW2-AH0-AA1-AH0": [
+        "yokohama"
+    ],
     "AH1-AA1-AH0": [
         "guncotton"
     ],
@@ -3744,6 +3911,18 @@ export default {
         "moroccan",
         "moroccans"
     ],
+    "AA0-ER0-AA1-AH0": [
+        "maharajahs"
+    ],
+    "AA2-ER0-AA1-AH0": [
+        "coloradan",
+        "coloradans"
+    ],
+    "IH2-ER0-AA1-AH0": [
+        "nicaragua",
+        "nicaraguan",
+        "nicaraguans"
+    ],
     "EY0-AA1-AH0": [
         "debacles"
     ],
@@ -3764,6 +3943,9 @@ export default {
         "respondents",
         "stigmata",
         "wisconsin"
+    ],
+    "EH0-IH0-AA1-AH0": [
+        "enchilada"
     ],
     "IH2-AA1-AH0": [
         "disbarment",
@@ -3787,6 +3969,14 @@ export default {
         "tiara",
         "tiaras"
     ],
+    "AE2-IY0-AA1-AH0": [
+        "antitoxin",
+        "antitoxins"
+    ],
+    "EY2-IY0-AA1-AH0": [
+        "matriarchal",
+        "patriarchal"
+    ],
     "IY2-AA1-AH0": [
         "rihanna"
     ],
@@ -3800,6 +3990,13 @@ export default {
         "proboscis",
         "proconsul",
         "rhodopsin"
+    ],
+    "AY2-OW0-AA1-AH0": [
+        "hydrocarbon",
+        "hydrocarbons"
+    ],
+    "EH2-OW0-AA1-AH0": [
+        "aeronautic"
     ],
     "OW2-AA1-AH0": [
         "obama"
@@ -3819,9 +4016,25 @@ export default {
     "AA2-AH0": [
         "tonsil"
     ],
+    "AY1-AH0-AA2-AH0": [
+        "microcosm"
+    ],
+    "EH1-AH0-AA2-AH0": [
+        "aristotle",
+        "melodrama",
+        "melodramas"
+    ],
     "AY1-AA2-AH0": [
         "skyrocket",
         "skyrockets"
+    ],
+    "AH1-ER0-AA2-AH0": [
+        "undergarment",
+        "undergarments"
+    ],
+    "IH1-ER0-AA2-AH0": [
+        "kindergarten",
+        "kindergartens"
     ],
     "EY1-AA2-AH0": [
         "brainwashes"
@@ -3829,6 +4042,12 @@ export default {
     "IH1-AA2-AH0": [
         "pickpocket",
         "pickpockets"
+    ],
+    "AA1-IY0-AA2-AH0": [
+        "mollycoddle"
+    ],
+    "EY1-IY0-AA2-AH0": [
+        "patriarchate"
     ],
     "UW1-AA2-AH0": [
         "bluebonnet",
@@ -4632,6 +4851,38 @@ export default {
         "untangle",
         "untrammeled"
     ],
+    "AA2-AH0-AE1-AH0": [
+        "noncombatant",
+        "noncombatants",
+        "pomegranate",
+        "propaganda",
+        "propagandist",
+        "propagandists"
+    ],
+    "AE2-AH0-AE1-AH0": [
+        "alabama",
+        "casablanca",
+        "satisfaction",
+        "satisfactions"
+    ],
+    "EH2-AH0-AE1-AH0": [
+        "telepathic"
+    ],
+    "ER2-AH0-AE1-AH0": [
+        "circumstantial"
+    ],
+    "IH2-AH0-AE1-AH0": [
+        "digitalis",
+        "disentangle",
+        "insubstantial",
+        "liquefaction"
+    ],
+    "IY2-AH0-AE1-AH0": [
+        "cleopatra"
+    ],
+    "OW2-AH0-AE1-AH0": [
+        "docudrama"
+    ],
     "AH2-AE1-AH0": [
         "undamaged"
     ],
@@ -4657,6 +4908,9 @@ export default {
         "extractions",
         "pentathlon"
     ],
+    "IY0-EH0-AE1-AH0": [
+        "reexamine"
+    ],
     "ER0-AE1-AH0": [
         "arachnids",
         "harassment",
@@ -4664,6 +4918,18 @@ export default {
         "urbana",
         "veranda",
         "verandas"
+    ],
+    "AE2-ER0-AE1-AH0": [
+        "apparatus",
+        "panorama"
+    ],
+    "AW2-ER0-AE1-AH0": [
+        "counterbalanced"
+    ],
+    "EH2-ER0-AE1-AH0": [
+        "memoranda",
+        "memorandum",
+        "memorandums"
     ],
     "IH0-AE1-AH0": [
         "bedraggle",
@@ -4697,6 +4963,17 @@ export default {
         "piranha",
         "schemata"
     ],
+    "AE2-IH0-AE1-AH0": [
+        "pachysandra"
+    ],
+    "IH0-IH0-AE1-AH0": [
+        "disenchantment"
+    ],
+    "IY0-IH0-AE1-AH0": [
+        "reenactment",
+        "reenactments",
+        "reexamined"
+    ],
     "IH2-AE1-AH0": [
         "imagine",
         "imagined",
@@ -4726,8 +5003,20 @@ export default {
         "seattle",
         "viagra"
     ],
+    "AO2-IY0-AE1-AH0": [
+        "borealis"
+    ],
+    "IH2-IY0-AE1-AH0": [
+        "indiana"
+    ],
+    "AA2-IY2-AE1-AH0": [
+        "polyandrous"
+    ],
     "OW0-AE1-AH0": [
         "johannes"
+    ],
+    "IH2-OW0-AE1-AH0": [
+        "hippocampus"
     ],
     "UW0-AE1-AH0": [
         "buchanan"
@@ -4751,6 +5040,15 @@ export default {
         "snapdragon",
         "snapdragons"
     ],
+    "AY1-AH0-AE2-AH0": [
+        "cytoplasm"
+    ],
+    "ER1-AH0-AE2-AH0": [
+        "circumstances"
+    ],
+    "IY1-AH0-AE2-AH0": [
+        "neoplasm"
+    ],
     "AY1-AE2-AH0": [
         "eyeglasses",
         "pineapple",
@@ -4762,6 +5060,12 @@ export default {
         "breadbasket",
         "rectangles",
         "steadfastness"
+    ],
+    "AE1-ER0-AE2-AH0": [
+        "tabernacle"
+    ],
+    "AW1-ER0-AE2-AH0": [
+        "counterbalance"
     ],
     "EY1-AE2-AH0": [
         "straitjacket",
@@ -4906,6 +5210,99 @@ export default {
         "voluble",
         "washable"
     ],
+    "AA0-AA1-AH0-AH0": [
+        "homologous",
+        "nonpartisan",
+        "nonvolatile",
+        "sarcophagus"
+    ],
+    "AE0-AA1-AH0-AH0": [
+        "andromeda"
+    ],
+    "AH0-AA1-AH0-AH0": [
+        "accomplices",
+        "acropolis",
+        "adoptable",
+        "anomalous",
+        "anonymous",
+        "apocryphal",
+        "apologist",
+        "apologists",
+        "canonical",
+        "japonica",
+        "methodical",
+        "metropolis",
+        "monogamous",
+        "monopolist",
+        "monotonous",
+        "necropolis",
+        "pathologist",
+        "pathologists",
+        "phenomena",
+        "phenomenal",
+        "synonymous",
+        "unsolvable",
+        "unstoppable"
+    ],
+    "AO0-AA1-AH0-AH0": [
+        "automata",
+        "autonomous"
+    ],
+    "AY0-AA1-AH0-AH0": [
+        "bicarbonate",
+        "diocesan",
+        "hydrolysis",
+        "hypothesis",
+        "idolatrous",
+        "nitrogenous",
+        "psychologist",
+        "psychologists"
+    ],
+    "AY2-AA1-AH0-AH0": [
+        "hierarchical",
+        "seismologist",
+        "seismologists"
+    ],
+    "ER0-AA1-AH0-AH0": [
+        "urologist",
+        "urologists"
+    ],
+    "IH0-AA1-AH0-AH0": [
+        "disarmament",
+        "esophagus",
+        "predominance",
+        "predominant",
+        "recognizance"
+    ],
+    "IH2-AA1-AH0-AH0": [
+        "impossible",
+        "improbable",
+        "incompetence",
+        "incompetent",
+        "incompetents",
+        "incontinence",
+        "incontinent",
+        "innominate",
+        "insoluble"
+    ],
+    "IY0-AA1-AH0-AH0": [
+        "geologist",
+        "rearmament",
+        "rechargeable",
+        "reconnaissance",
+        "responsible"
+    ],
+    "OW0-AA1-AH0-AH0": [
+        "zoologist",
+        "zoologists"
+    ],
+    "UH0-AA1-AH0-AH0": [
+        "neurologist",
+        "neurologists"
+    ],
+    "UW0-AA1-AH0-AH0": [
+        "duodenum"
+    ],
     "AE1-AH0-AH0": [
         "abacus",
         "abstinence",
@@ -5026,6 +5423,149 @@ export default {
         "thalamus",
         "tractable"
     ],
+    "AA0-AE1-AH0-AH0": [
+        "nontaxable",
+        "octagonal"
+    ],
+    "AE0-AE1-AH0-AH0": [
+        "ambassadress",
+        "antagonist",
+        "antagonists",
+        "magnanimous",
+        "transnational"
+    ],
+    "AH0-AE1-AH0-AH0": [
+        "abandonment",
+        "abandonments",
+        "adaptable",
+        "analogous",
+        "analysis",
+        "anathema",
+        "anatomist",
+        "calamitous",
+        "capacitance",
+        "collapsible",
+        "compassionate",
+        "compatible",
+        "contaminant",
+        "contaminants",
+        "gelatinous",
+        "grammatical",
+        "philanthropist",
+        "unflappable"
+    ],
+    "AY0-AE1-AH0-AH0": [
+        "diagonal",
+        "diagonals",
+        "dialysis"
+    ],
+    "EH0-AE1-AH0-AH0": [
+        "extravagance",
+        "extravagant",
+        "hexagonal"
+    ],
+    "ER0-AE1-AH0-AH0": [
+        "miraculous",
+        "parabola",
+        "paralysis",
+        "pyramidal"
+    ],
+    "IH0-AE1-AH0-AH0": [
+        "chrysanthemum",
+        "chrysanthemums",
+        "dismantlement",
+        "dispassionate",
+        "expandable",
+        "inflammable",
+        "inhabitant",
+        "inhabitants",
+        "recalcitrance"
+    ],
+    "IH2-AE1-AH0-AH0": [
+        "impassable",
+        "implacable",
+        "impractical",
+        "inanimate",
+        "infallible",
+        "inhabited",
+        "intangible",
+        "intangibles",
+        "intractable",
+        "intransigence",
+        "invaluable",
+        "irrational"
+    ],
+    "IY0-AE1-AH0-AH0": [
+        "retractable"
+    ],
+    "OW0-AE1-AH0-AH0": [
+        "protagonist",
+        "protagonists"
+    ],
+    "UW0-AE1-AH0-AH0": [
+        "unanimous"
+    ],
+    "OW1-AE2-AH0-AH0": [
+        "programmable"
+    ],
+    "AA1-AH0-AH0-AH0": [
+        "harvestable",
+        "knowledgeable",
+        "marketable",
+        "omnibuses",
+        "profitable",
+        "prominences"
+    ],
+    "AE1-AH0-AH0-AH0": [
+        "actionable",
+        "ambulances",
+        "applicable",
+        "fathomable",
+        "habitable",
+        "navigable",
+        "palatable",
+        "patentable",
+        "practicable",
+        "sacramental"
+    ],
+    "AO1-AH0-AH0-AH0": [
+        "corrigible",
+        "forfeitable",
+        "formidable",
+        "orifices"
+    ],
+    "AY1-AH0-AH0-AH0": [
+        "violable"
+    ],
+    "EH1-AH0-AH0-AH0": [
+        "creditable",
+        "demonstrable",
+        "eligible",
+        "equitable",
+        "estimable",
+        "evidences",
+        "heritable",
+        "negligible",
+        "questionable",
+        "reputable",
+        "revocable"
+    ],
+    "ER1-AH0-AH0-AH0": [
+        "personable",
+        "serviceable",
+        "terminable"
+    ],
+    "IH1-AH0-AH0-AH0": [
+        "fissionable",
+        "imitable",
+        "irritable"
+    ],
+    "IY1-AH0-AH0-AH0": [
+        "seasonable"
+    ],
+    "OW1-AH0-AH0-AH0": [
+        "noticeable"
+    ],
     "AH1-AH0-AH0": [
         "buttresses",
         "covenant",
@@ -5053,6 +5593,29 @@ export default {
         "troublesome",
         "truculent",
         "ultimate"
+    ],
+    "AH0-AH1-AH0-AH0": [
+        "accompanist",
+        "adjustable",
+        "obstructionist",
+        "obstructionists",
+        "untouchable",
+        "voluptuous"
+    ],
+    "EH0-AH1-AH0-AH0": [
+        "encompasses",
+        "penultimate"
+    ],
+    "IH0-AH1-AH0-AH0": [
+        "deductible",
+        "deductibles",
+        "dysfunctional",
+        "indulgences",
+        "presumptuous",
+        "refundable"
+    ],
+    "IH2-AH1-AH0-AH0": [
+        "instructional"
     ],
     "AO1-AH0-AH0": [
         "awfulness",
@@ -5109,12 +5672,54 @@ export default {
         "tortuous",
         "warrantless"
     ],
+    "AE0-AO1-AH0-AH0": [
+        "androgynous",
+        "transportable"
+    ],
+    "AH0-AO1-AH0-AH0": [
+        "adorable",
+        "affordable",
+        "apportionment",
+        "contortionist",
+        "majolica",
+        "proportional",
+        "proportionate",
+        "supportable"
+    ],
+    "EH0-AO1-AH0-AH0": [
+        "enforceable",
+        "exportable"
+    ],
+    "ER0-AO1-AH0-AH0": [
+        "performances"
+    ],
+    "IH0-AO1-AH0-AH0": [
+        "deplorable",
+        "recordable",
+        "reportable"
+    ],
+    "IH2-AO1-AH0-AH0": [
+        "implausible",
+        "inaudible"
+    ],
+    "IY0-AO1-AH0-AH0": [
+        "resourcefulness"
+    ],
     "AW1-AH0-AH0": [
         "councilman",
         "countable",
         "countenance",
         "countenanced",
         "mountainous"
+    ],
+    "AH0-AW1-AH0-AH0": [
+        "allowable"
+    ],
+    "IY0-AW1-AH0-AH0": [
+        "redoubtable"
+    ],
+    "IH1-AW2-AH0-AH0": [
+        "discountable"
     ],
     "AY1-AH0-AH0": [
         "biotin",
@@ -5153,6 +5758,42 @@ export default {
         "viruses",
         "vitamin",
         "vitamins"
+    ],
+    "AA0-AY1-AH0-AH0": [
+        "nonviolence",
+        "nonviolent"
+    ],
+    "AH0-AY1-AH0-AH0": [
+        "advisable",
+        "alliances",
+        "appliances",
+        "leviathan",
+        "maniacal",
+        "psychiatrist",
+        "psychiatrists"
+    ],
+    "EH0-AY1-AH0-AH0": [
+        "entitlement"
+    ],
+    "EH2-AY1-AH0-AH0": [
+        "enlightenment"
+    ],
+    "ER0-AY1-AH0-AH0": [
+        "parietal",
+        "psoriasis",
+        "survivable",
+        "varietals"
+    ],
+    "IH0-AY1-AH0-AH0": [
+        "definable",
+        "describable",
+        "desirable",
+        "environment",
+        "environments",
+        "excitable"
+    ],
+    "IY0-AY1-AH0-AH0": [
+        "recyclable"
     ],
     "EH1-AH0-AH0": [
         "arrogance",
@@ -5338,6 +5979,171 @@ export default {
         "venomous",
         "wearable"
     ],
+    "AA0-EH1-AH0-AH0": [
+        "nonresident",
+        "nonresidents",
+        "ostensible"
+    ],
+    "AE0-EH1-AH0-AH0": [
+        "accessible"
+    ],
+    "AH0-EH1-AH0-AH0": [
+        "addressable",
+        "adrenaline",
+        "affectionate",
+        "ageratum",
+        "ageratums",
+        "amendable",
+        "america",
+        "american",
+        "americans",
+        "americas",
+        "anesthetist",
+        "asparagus",
+        "beneficence",
+        "benevolence",
+        "benevolent",
+        "calendula",
+        "collectible",
+        "collectibles",
+        "commendable",
+        "comparison",
+        "comparisons",
+        "compensable",
+        "confessional",
+        "confessionals",
+        "congenital",
+        "congressional",
+        "connecticut",
+        "contemptible",
+        "contentiousness",
+        "contestable",
+        "conventional",
+        "geneticist",
+        "lamentable",
+        "malevolent",
+        "obsessional",
+        "polemical",
+        "polemicist",
+        "presentable",
+        "professional",
+        "professionals",
+        "receptacle",
+        "suggestible",
+        "susceptible",
+        "unbearable",
+        "unpleasantness",
+        "untenable"
+    ],
+    "AY0-EH1-AH0-AH0": [
+        "digestible"
+    ],
+    "EH0-EH1-AH0-AH0": [
+        "embezzlement"
+    ],
+    "EH2-EH1-AH0-AH0": [
+        "execrable",
+        "extendable"
+    ],
+    "ER0-EH1-AH0-AH0": [
+        "correctional",
+        "perceptible",
+        "perceptual",
+        "perfectionist",
+        "perfectionists"
+    ],
+    "IH0-EH1-AH0-AH0": [
+        "bespectacled",
+        "chimerical",
+        "defensible",
+        "delectable",
+        "dependable",
+        "detectable",
+        "development",
+        "developments",
+        "dimensional",
+        "dispensable",
+        "embarrassment",
+        "embarrassments",
+        "emeritus",
+        "exceptional",
+        "expendable",
+        "experiment",
+        "experiments",
+        "expressionist",
+        "intestinal",
+        "regrettable",
+        "repairable"
+    ],
+    "IH2-EH1-AH0-AH0": [
+        "illegible",
+        "impeccable",
+        "impediment",
+        "impediments",
+        "impregnable",
+        "impressionist",
+        "incredible",
+        "incredulous",
+        "indefinite",
+        "inedible",
+        "ineffable",
+        "inflexible",
+        "inheritance",
+        "insensible",
+        "integument",
+        "intelligence",
+        "intelligent",
+        "intentional",
+        "investable",
+        "irrelevance",
+        "irrelevant"
+    ],
+    "IY0-EH1-AH0-AH0": [
+        "preeminence",
+        "preeminent",
+        "premarital",
+        "preparedness",
+        "prerequisite",
+        "prerequisites",
+        "resemblances",
+        "resettlement"
+    ],
+    "UW0-EH1-AH0-AH0": [
+        "numerical"
+    ],
+    "AA1-ER0-AH0-AH0": [
+        "conferences",
+        "honorable",
+        "honourable",
+        "operable",
+        "tolerable"
+    ],
+    "AE1-ER0-AH0-AH0": [
+        "admirable",
+        "answerable",
+        "cameraman",
+        "naturalist"
+    ],
+    "AH1-ER0-AH0-AH0": [
+        "comfortable",
+        "vulnerable",
+        "wonderfulness"
+    ],
+    "EH1-ER0-AH0-AH0": [
+        "measurable",
+        "memorable",
+        "pleasurable",
+        "preferable",
+        "separateness",
+        "venerable"
+    ],
+    "EY1-ER0-AH0-AH0": [
+        "dangerousness",
+        "favorable"
+    ],
+    "IH1-ER0-AH0-AH0": [
+        "miserable"
+    ],
     "ER1-AH0-AH0": [
         "burdensome",
         "burnable",
@@ -5369,6 +6175,42 @@ export default {
         "workable",
         "worshipful"
     ],
+    "AE0-ER1-AH0-AH0": [
+        "transferable"
+    ],
+    "AE2-ER1-AH0-AH0": [
+        "transferrable"
+    ],
+    "AH0-ER1-AH0-AH0": [
+        "confirmable",
+        "convertible",
+        "convertibles",
+        "copernican",
+        "copernicus",
+        "observable",
+        "unworkable"
+    ],
+    "AY0-ER1-AH0-AH0": [
+        "hyperbola"
+    ],
+    "EH0-ER1-AH0-AH0": [
+        "encirclement"
+    ],
+    "IH0-ER1-AH0-AH0": [
+        "determinant",
+        "determinants",
+        "determinist",
+        "discernible",
+        "disturbances"
+    ],
+    "IH2-ER1-AH0-AH0": [
+        "impersonal",
+        "impertinent",
+        "interpreted"
+    ],
+    "IY0-ER1-AH0-AH0": [
+        "returnable"
+    ],
     "EY1-AH0-AH0": [
         "brazenness",
         "breakable",
@@ -5388,6 +6230,67 @@ export default {
         "trainable",
         "wastefulness",
         "weightlessness"
+    ],
+    "AH0-EY1-AH0-AH0": [
+        "attainable",
+        "available",
+        "contagiousness",
+        "debatable",
+        "obtainable",
+        "occasional",
+        "sustainable",
+        "unbreakable",
+        "unsalable",
+        "unshakable",
+        "untraceable"
+    ],
+    "AW0-EY1-AH0-AH0": [
+        "foundational",
+        "outrageousness"
+    ],
+    "AY0-EY1-AH0-AH0": [
+        "vibrational"
+    ],
+    "EH0-EY1-AH0-AH0": [
+        "sensational"
+    ],
+    "ER0-EY1-AH0-AH0": [
+        "persuadable"
+    ],
+    "IH0-EY1-AH0-AH0": [
+        "degradable",
+        "embraceable",
+        "exchangeable",
+        "explainable",
+        "inflatable"
+    ],
+    "IH2-EY1-AH0-AH0": [
+        "incapable",
+        "insatiable"
+    ],
+    "IY0-EY1-AH0-AH0": [
+        "relational",
+        "repayable"
+    ],
+    "IY2-EY1-AH0-AH0": [
+        "replaceable"
+    ],
+    "OW0-EY1-AH0-AH0": [
+        "rotational",
+        "vocational"
+    ],
+    "AE1-IH0-AH0-AH0": [
+        "amicable",
+        "manageable",
+        "salvageable"
+    ],
+    "AH1-IH0-AH0-AH0": [
+        "punishable"
+    ],
+    "EH1-IH0-AH0-AH0": [
+        "perishable",
+        "perishables",
+        "veritable"
     ],
     "IH1-AH0-AH0": [
         "biblical",
@@ -5518,6 +6421,123 @@ export default {
         "wistfulness",
         "witnesses"
     ],
+    "AA0-IH1-AH0-AH0": [
+        "articulates",
+        "carcinogen",
+        "carcinogens",
+        "occipital",
+        "omnipotence",
+        "omnipotent",
+        "participant",
+        "participants",
+        "pontifical"
+    ],
+    "AA1-IH1-AH0-AH0": [
+        "hospitable"
+    ],
+    "AE0-IH1-AH0-AH0": [
+        "ambivalence",
+        "ambivalent",
+        "antipodal",
+        "antithesis",
+        "grandiloquent",
+        "magnificent",
+        "transmittable"
+    ],
+    "AH0-IH1-AH0-AH0": [
+        "admissible",
+        "appearances",
+        "conditional",
+        "dominican",
+        "legitimate",
+        "leviticus",
+        "medicinal",
+        "meticulous",
+        "officialdom",
+        "peninsula",
+        "political",
+        "polygamous",
+        "polygonal",
+        "provisional",
+        "satirical",
+        "solicitous",
+        "subprincipal",
+        "subprincipals",
+        "traditional",
+        "traditionalists",
+        "unlivable",
+        "unprincipled",
+        "unprintable",
+        "unsinkable",
+        "unthinkable"
+    ],
+    "EH0-IH1-AH0-AH0": [
+        "explicable",
+        "extricable"
+    ],
+    "ER0-IH1-AH0-AH0": [
+        "curriculum",
+        "curriculums",
+        "original",
+        "originals",
+        "particulate",
+        "permissible"
+    ],
+    "EY1-IH1-AH0-AH0": [
+        "asynchronous"
+    ],
+    "IH0-IH1-AH0-AH0": [
+        "depreciable",
+        "despicable",
+        "distributed",
+        "divisible",
+        "divisional",
+        "elizabeth",
+        "empiricist",
+        "episcopal",
+        "equivalence",
+        "equivalent",
+        "equivalents",
+        "equivocal",
+        "exhibited",
+        "felicitous",
+        "predicaments",
+        "reciprocal",
+        "ridiculous"
+    ],
+    "IH2-IH1-AH0-AH0": [
+        "immiscible",
+        "imprisonment",
+        "indigenous",
+        "invincible",
+        "invisible"
+    ],
+    "OW0-IH1-AH0-AH0": [
+        "coincident",
+        "prohibited"
+    ],
+    "UW0-IH1-AH0-AH0": [
+        "municipal",
+        "nutritional"
+    ],
+    "EH1-IH2-AH0-AH0": [
+        "headmistresses"
+    ],
+    "AE1-IY0-AH0-AH0": [
+        "malleable"
+    ],
+    "EH1-IY0-AH0-AH0": [
+        "enviable",
+        "variable",
+        "variables"
+    ],
+    "EY1-IY0-AH0-AH0": [
+        "amiable"
+    ],
+    "IH1-IY0-AH0-AH0": [
+        "pitiable",
+        "seriousness"
+    ],
     "IY1-AH0-AH0": [
         "deaconess",
         "eatable",
@@ -5539,6 +6559,40 @@ export default {
         "treatises",
         "weaknesses"
     ],
+    "AH0-IY1-AH0-AH0": [
+        "achievable",
+        "agreeable",
+        "appealable",
+        "appreciable",
+        "believable",
+        "conceivable",
+        "unfeasible",
+        "unreadable",
+        "unreasonable",
+        "unspeakable"
+    ],
+    "AH2-IY1-AH0-AH0": [
+        "unbeatable"
+    ],
+    "AO0-IY1-AH0-AH0": [
+        "foreseeable"
+    ],
+    "IH0-IY1-AH0-AH0": [
+        "receivable",
+        "receivables",
+        "redeemable",
+        "repeatable"
+    ],
+    "IH2-IY1-AH0-AH0": [
+        "impeachable",
+        "infeasible"
+    ],
+    "IY0-IY1-AH0-AH0": [
+        "resealable"
+    ],
+    "ER1-IY2-AH0-AH0": [
+        "permeable"
+    ],
     "OW1-AH0-AH0": [
         "chauvinist",
         "chauvinists",
@@ -5559,9 +6613,40 @@ export default {
         "voltages",
         "wholesomeness"
     ],
+    "AH0-OW1-AH0-AH0": [
+        "approachable",
+        "condolences",
+        "controllable",
+        "negotiable",
+        "unknowable"
+    ],
+    "AW0-OW1-AH0-AH0": [
+        "outspokenness"
+    ],
+    "EH2-OW1-AH0-AH0": [
+        "exogenous"
+    ],
+    "IH0-OW1-AH0-AH0": [
+        "devotional",
+        "disposable",
+        "erodible",
+        "erosional"
+    ],
     "OY1-AH0-AH0": [
         "poisonous",
         "voyages"
+    ],
+    "AA0-OY1-AH0-AH0": [
+        "nonpoisonous"
+    ],
+    "AH0-OY1-AH0-AH0": [
+        "avoidable"
+    ],
+    "EH0-OY1-AH0-AH0": [
+        "employable"
+    ],
+    "EH2-OY1-AH0-AH0": [
+        "enjoyable"
     ],
     "UH1-AH0-AH0": [
         "bulletins",
@@ -5572,6 +6657,15 @@ export default {
         "puritan",
         "puritans",
         "tournament"
+    ],
+    "IH2-UH1-AH0-AH0": [
+        "incurable"
+    ],
+    "AA1-UW0-AH0-AH0": [
+        "arguable"
+    ],
+    "IH1-UW0-AH0-AH0": [
+        "issuable"
     ],
     "UW1-AH0-AH0": [
         "beautiful",
@@ -5607,6 +6701,41 @@ export default {
         "usable",
         "usages",
         "usefulness"
+    ],
+    "AA0-UW1-AH0-AH0": [
+        "concubinage"
+    ],
+    "AH0-UW1-AH0-AH0": [
+        "alumina",
+        "aluminum",
+        "consumable",
+        "gratuitous",
+        "reducible",
+        "unscrupulous",
+        "unsuitable",
+        "unusable",
+        "voluminous"
+    ],
+    "ER0-UW1-AH0-AH0": [
+        "jerusalem"
+    ],
+    "IH0-UW1-AH0-AH0": [
+        "bituminous",
+        "delusional",
+        "disputable",
+        "excusable",
+        "removable"
+    ],
+    "IH2-UW1-AH0-AH0": [
+        "illusionist",
+        "illusionists",
+        "immovable",
+        "immutable",
+        "inscrutable"
+    ],
+    "IY0-UW1-AH0-AH0": [
+        "renewable",
+        "reusable"
     ],
     "AH1-AH0": [
         "bloodless",
@@ -6005,6 +7134,20 @@ export default {
         "unsubtle",
         "untroubled"
     ],
+    "AH2-AH0-AH1-AH0": [
+        "unaccustomed"
+    ],
+    "IY0-AH0-AH1-AH0": [
+        "deconstruction",
+        "readjustment",
+        "readjustments"
+    ],
+    "IY2-AH0-AH1-AH0": [
+        "reconstruction",
+        "reconstructions",
+        "reproduction",
+        "reproductions"
+    ],
     "AH2-AH1-AH0": [
         "comeuppance"
     ],
@@ -6027,6 +7170,13 @@ export default {
         "corruptions",
         "corundum",
         "percussion"
+    ],
+    "AA2-ER0-AH1-AH0": [
+        "carborundum"
+    ],
+    "IH2-ER0-AH1-AH0": [
+        "interruption",
+        "interruptions"
     ],
     "ER2-AH1-AH0": [
         "circumference"
@@ -6094,6 +7244,13 @@ export default {
     "OW0-AH1-AH0": [
         "robustness",
         "rotunda"
+    ],
+    "AH1-IY0-AH2-AH0": [
+        "honeysuckle",
+        "honeysuckles"
+    ],
+    "AY1-OW0-AH2-AH0": [
+        "gyrocompass"
     ],
     "AO1-AH0": [
         "auctioned",
@@ -6385,6 +7542,23 @@ export default {
         "thesaurus",
         "unlawful"
     ],
+    "AA2-AH0-AO1-AH0": [
+        "nonconformists",
+        "onondaga"
+    ],
+    "AE0-AH0-AO1-AH0": [
+        "antemortem"
+    ],
+    "AE2-AH0-AO1-AH0": [
+        "california"
+    ],
+    "EH0-AH0-AO1-AH0": [
+        "paranormal"
+    ],
+    "EH2-AH0-AO1-AH0": [
+        "pentecostal",
+        "streptococcus"
+    ],
     "EH0-AO1-AH0": [
         "endorsement",
         "endorsements",
@@ -6395,6 +7569,9 @@ export default {
         "aurora",
         "auroral",
         "performance"
+    ],
+    "IH2-ER0-AO1-AH0": [
+        "interoffice"
     ],
     "EY0-AO1-AH0": [
         "amoral",
@@ -6415,6 +7592,17 @@ export default {
         "misfortunes",
         "remorseful",
         "remorseless"
+    ],
+    "AE2-IH0-AO1-AH0": [
+        "californian",
+        "californians"
+    ],
+    "AH0-IH0-AO1-AH0": [
+        "unimportant"
+    ],
+    "IY2-IH0-AO1-AH0": [
+        "reinforcement",
+        "reinforcements"
     ],
     "IH2-AO1-AH0": [
         "immoral",
@@ -6510,6 +7698,12 @@ export default {
         "compounded",
         "pronouncement",
         "pronouncements"
+    ],
+    "EH2-AH0-AW1-AH0": [
+        "menopausal"
+    ],
+    "IH2-AH0-AW1-AH0": [
+        "disallowance"
     ],
     "EH0-AW1-AH0": [
         "endowment",
@@ -6859,6 +8053,38 @@ export default {
         "vagina",
         "vaginal"
     ],
+    "AA2-AH0-AY1-AH0": [
+        "conjunctiva",
+        "homicidal",
+        "noncompliance"
+    ],
+    "AY2-AH0-AY1-AH0": [
+        "psilocybin"
+    ],
+    "EH2-AH0-AY1-AH0": [
+        "carolina",
+        "carolinas",
+        "hepatitis",
+        "jeremiad",
+        "jeremiah",
+        "meningitis",
+        "paraguayan"
+    ],
+    "IY0-AH0-AY1-AH0": [
+        "realignment",
+        "realignments",
+        "reassignment"
+    ],
+    "IY2-AH0-AY1-AH0": [
+        "nehemiah",
+        "reassignments"
+    ],
+    "OW2-AH0-AY1-AH0": [
+        "coincided"
+    ],
+    "UW2-AH0-AY1-AH0": [
+        "suicidal"
+    ],
     "AH2-AY1-AH0": [
         "unbiased"
     ],
@@ -6871,6 +8097,9 @@ export default {
         "enlivens",
         "entitled",
         "entitles"
+    ],
+    "AH2-EH0-AY1-AH0": [
+        "unenlightened"
     ],
     "EH2-AY1-AH0": [
         "enlighten",
@@ -6886,6 +8115,13 @@ export default {
         "pariah",
         "pariahs",
         "survival"
+    ],
+    "AE2-ER0-AY1-AH0": [
+        "zachariah"
+    ],
+    "IH2-ER0-AY1-AH0": [
+        "intertidal",
+        "intertribal"
     ],
     "IH0-AY1-AH0": [
         "defiance",
@@ -6911,6 +8147,9 @@ export default {
         "requirement",
         "requirements"
     ],
+    "AA2-IH0-AY1-AH0": [
+        "laryngitis"
+    ],
     "IH2-AY1-AH0": [
         "impious",
         "incitement",
@@ -6928,8 +8167,20 @@ export default {
         "retrial",
         "revivals"
     ],
+    "AA2-IY0-AY1-AH0": [
+        "polyvinyl"
+    ],
     "OW0-AY1-AH0": [
         "oneida"
+    ],
+    "AY2-OW0-AY1-AH0": [
+        "bioscience"
+    ],
+    "IH2-OW0-AY1-AH0": [
+        "indochina"
+    ],
+    "AE2-OY0-AY1-AH0": [
+        "mastoiditis"
     ],
     "UW0-AY1-AH0": [
         "rupiah"
@@ -6937,13 +8188,57 @@ export default {
     "AE1-AY2-AH0": [
         "cation"
     ],
+    "AE1-AH0-AY2-AH0": [
+        "dandelion",
+        "dandelions",
+        "galvanizes"
+    ],
+    "EH1-AH0-AY2-AH0": [
+        "emphasizes",
+        "genocidal",
+        "recognizes",
+        "specializes"
+    ],
+    "EY1-AH0-AY2-AH0": [
+        "patronizes",
+        "stabilizes"
+    ],
+    "IH1-AH0-AY2-AH0": [
+        "hypnotizes",
+        "improvises",
+        "minimizes"
+    ],
+    "UW1-AH0-AY2-AH0": [
+        "unicycle",
+        "unicycles"
+    ],
     "AH1-AY2-AH0": [
         "subtitle",
         "subtitled",
         "subtitles"
     ],
+    "AE1-ER0-AY2-AH0": [
+        "advertisements"
+    ],
+    "EH1-ER0-AY2-AH0": [
+        "exercises"
+    ],
+    "OW1-ER0-AY2-AH0": [
+        "motorcycle",
+        "motorcycles"
+    ],
     "IH1-AY2-AH0": [
         "insightful"
+    ],
+    "AO1-OW0-AY2-AH0": [
+        "autopilot"
+    ],
+    "AY1-OW0-AY2-AH0": [
+        "microclimate",
+        "microclimates"
+    ],
+    "UH1-OW0-AY2-AH0": [
+        "neuroscience"
     ],
     "AA1-EH0-AH0": [
         "commented",
@@ -6952,6 +8247,9 @@ export default {
     ],
     "AH1-EH0-AH0": [
         "subsection"
+    ],
+    "EH2-AO1-EH0-AH0": [
+        "endogenous"
     ],
     "EY1-EH0-AH0": [
         "latexes"
@@ -7442,6 +8740,12 @@ export default {
         "cappella",
         "nonferrous"
     ],
+    "IH2-AA0-EH1-AH0": [
+        "citronella"
+    ],
+    "AH0-AA2-EH1-AH0": [
+        "compartmental"
+    ],
     "AE0-EH1-AH0": [
         "aberrant",
         "absentia",
@@ -7597,6 +8901,82 @@ export default {
         "unsettled",
         "unwelcome"
     ],
+    "AA2-AH0-EH1-AH0": [
+        "armageddon",
+        "condescension",
+        "confidential",
+        "consequential",
+        "contraception",
+        "contravention",
+        "convalescence",
+        "convalescent",
+        "mozzarella",
+        "nonaggression",
+        "obsolescence",
+        "obsolescent",
+        "omnipresence",
+        "providential"
+    ],
+    "AE2-AH0-EH1-AH0": [
+        "ambidextrous",
+        "salmonella"
+    ],
+    "AH2-AH0-EH1-AH0": [
+        "unsuccessful"
+    ],
+    "AO2-AH0-EH1-AH0": [
+        "ornamental"
+    ],
+    "EH2-AH0-EH1-AH0": [
+        "evanescence",
+        "evanescent",
+        "predilection",
+        "predilections",
+        "presidential",
+        "recollection",
+        "recollections",
+        "regimental"
+    ],
+    "ER2-AH0-EH1-AH0": [
+        "circumspection",
+        "circumvention"
+    ],
+    "IH0-AH0-EH1-AH0": [
+        "misconception",
+        "misconceptions",
+        "philatelic"
+    ],
+    "IH2-AH0-EH1-AH0": [
+        "disaffection",
+        "disassemble",
+        "disassembled",
+        "disconnection",
+        "inattention",
+        "incandescent",
+        "incremental",
+        "iridescent",
+        "philodendron"
+    ],
+    "IY0-AH0-EH1-AH0": [
+        "preconception",
+        "preconceptions"
+    ],
+    "IY2-AH0-EH1-AH0": [
+        "decompression",
+        "reassemble",
+        "reassembled",
+        "reassessment",
+        "repossession",
+        "repossessions"
+    ],
+    "OW2-AH0-EH1-AH0": [
+        "coalescence",
+        "rhododendron"
+    ],
+    "UW2-AH0-EH1-AH0": [
+        "luminescence",
+        "luminescent"
+    ],
     "AO0-EH1-AH0": [
         "coretta",
         "forbearance",
@@ -7617,6 +8997,9 @@ export default {
         "licentious",
         "quiescent",
         "trifecta"
+    ],
+    "IH2-AY0-EH1-AH0": [
+        "indigestion"
     ],
     "AY2-EH1-AH0": [
         "lightheaded"
@@ -7643,6 +9026,45 @@ export default {
         "perception",
         "perceptions",
         "perfection"
+    ],
+    "AA2-ER0-EH1-AH0": [
+        "operetta",
+        "operettas",
+        "phosphorescence"
+    ],
+    "AY2-ER0-EH1-AH0": [
+        "hypertension"
+    ],
+    "EH2-ER0-EH1-AH0": [
+        "effervescent",
+        "preferential",
+        "referenda",
+        "referendum",
+        "referendums",
+        "resurrection",
+        "reverential"
+    ],
+    "IH2-ER0-EH1-AH0": [
+        "cinderella",
+        "differential",
+        "differentials",
+        "imperfection",
+        "imperfections",
+        "inferential",
+        "insurrection",
+        "interjection",
+        "interjections",
+        "interregnum",
+        "intersection",
+        "intersections",
+        "intervention",
+        "interventions"
+    ],
+    "IY2-ER0-EH1-AH0": [
+        "redirection"
+    ],
+    "OW2-ER0-EH1-AH0": [
+        "overzealous"
     ],
     "IH0-EH1-AH0": [
         "bedevil",
@@ -7741,6 +9163,48 @@ export default {
         "tibetan",
         "tribeca"
     ],
+    "AA2-IH0-EH1-AH0": [
+        "nonessential",
+        "omnipresent"
+    ],
+    "AE2-IH0-EH1-AH0": [
+        "antebellum",
+        "apprehension",
+        "apprehensions"
+    ],
+    "AH2-IH0-EH1-AH0": [
+        "undeveloped"
+    ],
+    "EH0-IH0-EH1-AH0": [
+        "epithelial"
+    ],
+    "EH2-IH0-EH1-AH0": [
+        "residential"
+    ],
+    "IH0-IH0-EH1-AH0": [
+        "disinfectant",
+        "disinfectants",
+        "disinfection"
+    ],
+    "IH2-IH0-EH1-AH0": [
+        "disrespectful",
+        "incidental",
+        "incidentals",
+        "independence",
+        "independent",
+        "independents",
+        "indiscretion",
+        "indiscretions",
+        "quintessential"
+    ],
+    "IY0-IH0-EH1-AH0": [
+        "preelection",
+        "redevelop",
+        "reelection"
+    ],
+    "IY2-IH0-EH1-AH0": [
+        "reinspection"
+    ],
     "IH2-EH1-AH0": [
         "impairment",
         "impairments",
@@ -7780,6 +9244,9 @@ export default {
         "inventions",
         "invested"
     ],
+    "EH2-IH2-EH1-AH0": [
+        "existential"
+    ],
     "IY0-EH1-AH0": [
         "demerit",
         "demerits",
@@ -7804,6 +9271,28 @@ export default {
         "siesta",
         "vienna"
     ],
+    "AA0-IY0-EH1-AH0": [
+        "aguilera"
+    ],
+    "AA2-IY0-EH1-AH0": [
+        "comprehension",
+        "conscientious"
+    ],
+    "AE2-IY0-EH1-AH0": [
+        "acquiescence",
+        "acquiescent",
+        "hacienda"
+    ],
+    "AH2-IY0-EH1-AH0": [
+        "uneventful",
+        "unpretentious"
+    ],
+    "EH2-IY0-EH1-AH0": [
+        "henrietta"
+    ],
+    "IH2-IY0-EH1-AH0": [
+        "riviera"
+    ],
     "IY2-EH1-AH0": [
         "predestine",
         "predestined",
@@ -7819,6 +9308,13 @@ export default {
         "processions",
         "propellants"
     ],
+    "AY2-OW0-EH1-AH0": [
+        "biochemist",
+        "hypotension"
+    ],
+    "EH2-OW0-EH1-AH0": [
+        "exponential"
+    ],
     "UH2-EH1-AH0": [
         "fluorescence"
     ],
@@ -7831,6 +9327,10 @@ export default {
         "utensil",
         "utensils"
     ],
+    "IH2-UW0-EH1-AH0": [
+        "influential",
+        "influenza"
+    ],
     "AE1-EH2-AH0": [
         "grandparent",
         "grandparents"
@@ -7838,19 +9338,46 @@ export default {
     "AH0-EH2-AH0": [
         "accredit"
     ],
+    "AA1-AH0-EH2-AH0": [
+        "consequences"
+    ],
+    "AE1-AH0-EH2-AH0": [
+        "manifested"
+    ],
+    "AH1-AH0-EH2-AH0": [
+        "muddleheaded"
+    ],
     "AH1-EH2-AH0": [
         "muskmelon"
     ],
     "AO1-EH2-AH0": [
         "aureus"
     ],
+    "AH0-AO1-EH2-AH0": [
+        "aforementioned"
+    ],
     "EH1-EH2-AH0": [
         "daredevil",
         "daredevils",
         "headdresses"
     ],
+    "AO1-ER0-EH2-AH0": [
+        "watermelon",
+        "watermelons"
+    ],
+    "IH1-IH0-EH2-AH0": [
+        "millisecond",
+        "milliseconds"
+    ],
     "IH1-EH2-AH0": [
         "midsection"
+    ],
+    "AO1-IY0-EH2-AH0": [
+        "oriented"
+    ],
+    "AE1-OW0-EH2-AH0": [
+        "nanosecond",
+        "nanoseconds"
     ],
     "OW1-EH2-AH0": [
         "cochairman"
@@ -7882,6 +9409,20 @@ export default {
         "sonorous",
         "tolerance",
         "tolerant"
+    ],
+    "AH0-AA1-ER0-AH0": [
+        "conglomerate",
+        "conglomerates"
+    ],
+    "AY0-AA1-ER0-AH0": [
+        "rhinoceros"
+    ],
+    "IH0-AA1-ER0-AH0": [
+        "preposterous"
+    ],
+    "IH2-AA1-ER0-AH0": [
+        "intolerance",
+        "intolerant"
     ],
     "AE1-ER0-AH0": [
         "accurate",
@@ -7925,6 +9466,27 @@ export default {
         "slanderous",
         "tattersall"
     ],
+    "AE0-AE1-ER0-AH0": [
+        "cantankerous"
+    ],
+    "AH0-AE1-ER0-AH0": [
+        "collateral",
+        "unnatural"
+    ],
+    "AY0-AE1-ER0-AH0": [
+        "bilateral",
+        "diaspora",
+        "trilateral"
+    ],
+    "IH2-AE1-ER0-AH0": [
+        "inaccurate"
+    ],
+    "IY0-AE1-ER0-AH0": [
+        "precancerous"
+    ],
+    "UW1-AE2-ER0-AH0": [
+        "newspapermen"
+    ],
     "AH1-ER0-AH0": [
         "colorful",
         "colorless",
@@ -7943,6 +9505,15 @@ export default {
         "wonderful",
         "wonderment"
     ],
+    "AH0-AH1-ER0-AH0": [
+        "adulterous"
+    ],
+    "AY0-AH1-ER0-AH0": [
+        "triumvirate"
+    ],
+    "IH0-AH1-ER0-AH0": [
+        "misgovernment"
+    ],
     "AO1-ER0-AH0": [
         "awkwardness",
         "cormorant",
@@ -7957,6 +9528,9 @@ export default {
         "cowardice",
         "powerful",
         "powerless"
+    ],
+    "IH0-AW1-ER0-AH0": [
+        "empowerment"
     ],
     "AY1-ER0-AH0": [
         "ireland",
@@ -8006,6 +9580,36 @@ export default {
         "veteran",
         "veterans"
     ],
+    "AE0-EH1-ER0-AH0": [
+        "accelerant",
+        "adventuresome"
+    ],
+    "AH0-EH1-ER0-AH0": [
+        "commensurate",
+        "confederates",
+        "obstreperous",
+        "protectorate",
+        "togetherness"
+    ],
+    "EH1-EH1-ER0-AH0": [
+        "etcetera"
+    ],
+    "IH0-EH1-ER0-AH0": [
+        "degenerates",
+        "dismemberment",
+        "electoral",
+        "electorate",
+        "electorates",
+        "ephemeral",
+        "expectorant"
+    ],
+    "IH2-EH1-ER0-AH0": [
+        "inspectorate",
+        "intemperate",
+        "inveterate",
+        "irreverence",
+        "irreverent"
+    ],
     "ER1-ER0-AH0": [
         "furtherance",
         "murderous"
@@ -8016,6 +9620,9 @@ export default {
         "flavorful",
         "mayoral",
         "traitorous"
+    ],
+    "EH0-EY1-ER0-AH0": [
+        "endangerment"
     ],
     "IH1-ER0-AH0": [
         "bitterest",
@@ -8043,10 +9650,50 @@ export default {
         "visceral",
         "wilderness"
     ],
+    "AA0-IH1-ER0-AH0": [
+        "barbiturate",
+        "barbiturates",
+        "carnivorous",
+        "omnivorous"
+    ],
+    "AH0-IH1-ER0-AH0": [
+        "belligerence",
+        "belligerent",
+        "belligerents",
+        "coniferous",
+        "considerate"
+    ],
+    "AY0-IH1-ER0-AH0": [
+        "itinerant",
+        "viviparous"
+    ],
+    "ER0-IH1-ER0-AH0": [
+        "peripheral",
+        "peripherals"
+    ],
+    "IH0-IH1-ER0-AH0": [
+        "bewilderment",
+        "deliverance",
+        "disinterest",
+        "refrigerant",
+        "refrigerants"
+    ],
+    "IH2-IH1-ER0-AH0": [
+        "illiterate",
+        "illiterates",
+        "indifference"
+    ],
+    "OW0-IH1-ER0-AH0": [
+        "oviparous",
+        "vociferous"
+    ],
     "IY1-ER0-AH0": [
         "eagerness",
         "featureless",
         "leaderless"
+    ],
+    "AH0-IY1-ER0-AH0": [
+        "procedural"
     ],
     "OW1-ER0-AH0": [
         "doberman",
@@ -8057,6 +9704,10 @@ export default {
         "odorous",
         "onerous",
         "overman"
+    ],
+    "IY0-OW1-ER0-AH0": [
+        "deodorant",
+        "deodorants"
     ],
     "OY1-ER0-AH0": [
         "boisterous"
@@ -8079,6 +9730,15 @@ export default {
         "stewardess",
         "uterine",
         "uterus"
+    ],
+    "AH0-UW1-ER0-AH0": [
+        "accouterment",
+        "accouterments",
+        "accoutrement"
+    ],
+    "IH0-UW1-ER0-AH0": [
+        "exuberance",
+        "exuberant"
     ],
     "ER1-AH0": [
         "bergman",
@@ -8282,6 +9942,26 @@ export default {
         "unburdened",
         "uncertain"
     ],
+    "AA1-AH0-ER1-AH0": [
+        "noncommercial"
+    ],
+    "AA2-AH0-ER1-AH0": [
+        "controversial"
+    ],
+    "AY2-AH0-ER1-AH0": [
+        "isothermal"
+    ],
+    "EH2-AH0-ER1-AH0": [
+        "epidermal",
+        "epidermis",
+        "epidural"
+    ],
+    "IY2-AH0-ER1-AH0": [
+        "reassertion"
+    ],
+    "UW2-AH0-ER1-AH0": [
+        "universal"
+    ],
     "AY0-ER1-AH0": [
         "diurnal"
     ],
@@ -8290,6 +9970,14 @@ export default {
     ],
     "ER0-ER1-AH0": [
         "perversion"
+    ],
+    "IH2-ER0-ER1-AH0": [
+        "intersperses",
+        "interurban"
+    ],
+    "OW1-ER0-ER1-AH0": [
+        "overburden",
+        "overburdened"
     ],
     "IH0-ER1-AH0": [
         "deferment",
@@ -8324,6 +10012,21 @@ export default {
         "rehearsals",
         "reversion"
     ],
+    "IH0-IH0-ER1-AH0": [
+        "misinterpret",
+        "misinterprets"
+    ],
+    "IY0-IH0-ER1-AH0": [
+        "reemergence"
+    ],
+    "IY2-IH0-ER1-AH0": [
+        "reimbursement",
+        "reimbursements",
+        "reinterpret"
+    ],
+    "OW2-IH0-ER1-AH0": [
+        "coinsurance"
+    ],
     "IH2-ER1-AH0": [
         "immersion",
         "incursion",
@@ -8350,8 +10053,26 @@ export default {
         "resurfaced",
         "resurgence"
     ],
+    "AH2-IY0-ER1-AH0": [
+        "multipurpose"
+    ],
     "OW0-ER1-AH0": [
         "coercion"
+    ],
+    "AY2-OW0-ER1-AH0": [
+        "hydrothermal"
+    ],
+    "IY2-OW0-ER1-AH0": [
+        "geothermal"
+    ],
+    "OW2-AA1-ER2-AH0": [
+        "postdoctoral"
+    ],
+    "AH0-AE1-ER2-AH0": [
+        "catamarans"
+    ],
+    "AE1-AH0-ER2-AH0": [
+        "taxidermist"
     ],
     "AH1-ER2-AH0": [
         "subsurface"
@@ -8365,12 +10086,33 @@ export default {
         "femoral",
         "severance"
     ],
+    "AH1-ER0-ER2-AH0": [
+        "undercurrent",
+        "undercurrents"
+    ],
     "EY1-ER2-AH0": [
         "salesperson"
     ],
     "IH1-ER2-AH0": [
         "liberal",
         "liberals"
+    ],
+    "UH1-OW0-ER2-AH0": [
+        "neurosurgeon"
+    ],
+    "EH1-AH0-EY0-AH0": [
+        "dedicated",
+        "desiccated"
+    ],
+    "UW1-AH0-EY0-AH0": [
+        "rutabaga",
+        "rutabagas"
+    ],
+    "IH0-AO1-EY0-AH0": [
+        "elongated"
+    ],
+    "IH0-AY1-EY0-AH0": [
+        "dehydrated"
     ],
     "OW1-EY0-AH0": [
         "pokemon"
@@ -8653,8 +10395,24 @@ export default {
         "prostration",
         "starvation"
     ],
+    "EH2-AA0-EY1-AH0": [
+        "embarkation"
+    ],
+    "IH2-AA0-EY1-AH0": [
+        "incarnations"
+    ],
+    "IY0-AA0-EY1-AH0": [
+        "retardation"
+    ],
+    "IY2-AA0-EY1-AH0": [
+        "demarcation",
+        "demarcations"
+    ],
     "AA1-EY1-AH0": [
         "nonfatal"
+    ],
+    "IH2-AA1-EY1-AH0": [
+        "incarnation"
     ],
     "AA2-EY1-AH0": [
         "archangel",
@@ -8671,6 +10429,18 @@ export default {
         "stagflation",
         "stagnation",
         "taxation"
+    ],
+    "AE2-AE0-EY1-AH0": [
+        "transplantation"
+    ],
+    "IH2-AE0-EY1-AH0": [
+        "implantation"
+    ],
+    "IY2-AE0-EY1-AH0": [
+        "relaxation"
+    ],
+    "IH2-AE1-EY1-AH0": [
+        "incantation"
     ],
     "AE2-EY1-AH0": [
         "castration",
@@ -8745,6 +10515,306 @@ export default {
         "unstable",
         "vivacious"
     ],
+    "AA0-AH0-EY1-AH0": [
+        "collocation"
+    ],
+    "AA2-AH0-EY1-AH0": [
+        "combination",
+        "combinations",
+        "commendation",
+        "commutation",
+        "compensation",
+        "compensations",
+        "compilation",
+        "compilations",
+        "complication",
+        "complications",
+        "computation",
+        "concentration",
+        "concentrations",
+        "condemnation",
+        "condemnations",
+        "condensation",
+        "confiscation",
+        "conflagration",
+        "confrontation",
+        "confrontations",
+        "congregation",
+        "congregations",
+        "conjugation",
+        "conjugations",
+        "connotation",
+        "connotations",
+        "consecration",
+        "consecrations",
+        "consolation",
+        "consolations",
+        "constellation",
+        "constellations",
+        "constipation",
+        "consultation",
+        "consultations",
+        "consummation",
+        "contemplation",
+        "convocation",
+        "domination",
+        "modulation",
+        "nomination",
+        "nominations",
+        "obfuscation",
+        "obligation",
+        "obligations",
+        "occupation",
+        "occupations",
+        "oscillation",
+        "oscillations",
+        "ostentatious",
+        "oxidation",
+        "pollination",
+        "population",
+        "populations",
+        "proclamation",
+        "proclamations",
+        "propagation",
+        "provocation",
+        "provocations"
+    ],
+    "AE0-AH0-EY1-AH0": [
+        "vaccination"
+    ],
+    "AE1-AH0-EY1-AH0": [
+        "navigation"
+    ],
+    "AE2-AH0-EY1-AH0": [
+        "abrogation",
+        "acclamation",
+        "acclimation",
+        "activation",
+        "adaptation",
+        "adulation",
+        "advantageous",
+        "affidavit",
+        "aggravation",
+        "aggregation",
+        "agitation",
+        "allegation",
+        "allegations",
+        "allocation",
+        "allocations",
+        "amputation",
+        "animation",
+        "animations",
+        "annotation",
+        "annotations",
+        "appellation",
+        "appellations",
+        "application",
+        "applications",
+        "approbation",
+        "avocation",
+        "bacchanalia",
+        "calculation",
+        "calculations",
+        "calibration",
+        "cancellation",
+        "cancellations",
+        "fascination",
+        "fragmentation",
+        "granulation",
+        "habitation",
+        "pagination",
+        "palpitation",
+        "sanitation",
+        "strangulation",
+        "strangulations",
+        "tabulation",
+        "tabulations",
+        "vaccinations",
+        "vacillation",
+        "validation"
+    ],
+    "AH0-AH0-EY1-AH0": [
+        "subluxation"
+    ],
+    "AH2-AH0-EY1-AH0": [
+        "culmination",
+        "suffocation",
+        "ultimatum",
+        "ultimatums"
+    ],
+    "AO0-AH0-EY1-AH0": [
+        "automation"
+    ],
+    "AO2-AH0-EY1-AH0": [
+        "coronation",
+        "correlation",
+        "correlations",
+        "orchestration",
+        "orchestrations",
+        "ordination",
+        "profanation"
+    ],
+    "AY0-AH0-EY1-AH0": [
+        "violation",
+        "violations"
+    ],
+    "AY2-AH0-EY1-AH0": [
+        "hyphenation",
+        "isolation"
+    ],
+    "EH2-AH0-EY1-AH0": [
+        "celebration",
+        "celebrations",
+        "dedication",
+        "defamation",
+        "degradation",
+        "degradations",
+        "delegation",
+        "delegations",
+        "demonstration",
+        "demonstrations",
+        "depredation",
+        "depredations",
+        "deprivation",
+        "deprivations",
+        "derivation",
+        "desiccation",
+        "designation",
+        "designations",
+        "desolation",
+        "destination",
+        "destinations",
+        "detonation",
+        "detonations",
+        "devastation",
+        "efficacious",
+        "elevation",
+        "elevations",
+        "emanation",
+        "emanations",
+        "emigration",
+        "emigrations",
+        "emulation",
+        "equitation",
+        "escalation",
+        "estimation",
+        "estimations",
+        "excavation",
+        "excavations",
+        "exclamation",
+        "exclamations",
+        "exhalation",
+        "explanation",
+        "explanations",
+        "explication",
+        "extrication",
+        "hesitation",
+        "hesitations",
+        "legislation",
+        "medication",
+        "medications",
+        "meditation",
+        "penetration",
+        "pennsylvania",
+        "presentation",
+        "presentations",
+        "recitation",
+        "reclamation",
+        "regulation",
+        "regulations",
+        "renovation",
+        "replication",
+        "reputation",
+        "reputations",
+        "resignation",
+        "revelation",
+        "revelations",
+        "revocation",
+        "revocations",
+        "segmentation",
+        "segregation",
+        "sequestration",
+        "speculation",
+        "speculations",
+        "tetravalent",
+        "vegetation"
+    ],
+    "ER0-AH0-EY1-AH0": [
+        "perspicacious",
+        "termination"
+    ],
+    "ER2-AH0-EY1-AH0": [
+        "circulations",
+        "fermentation",
+        "germination",
+        "terminations"
+    ],
+    "IH0-AH0-EY1-AH0": [
+        "vindication"
+    ],
+    "IH2-AH0-EY1-AH0": [
+        "dilatation",
+        "dispensation",
+        "distillation",
+        "divination",
+        "illustration",
+        "illustrations",
+        "imitation",
+        "immigration",
+        "implication",
+        "implications",
+        "imputation",
+        "inclination",
+        "inclinations",
+        "incrustation",
+        "indication",
+        "indications",
+        "inflammation",
+        "installation",
+        "installations",
+        "insulation",
+        "intimation",
+        "intimations",
+        "intonation",
+        "intonations",
+        "inundation",
+        "inundations",
+        "invocation",
+        "irrigation",
+        "iterations",
+        "litigation",
+        "litigations",
+        "ministration",
+        "ministrations",
+        "pigmentation",
+        "simulation",
+        "stimulation",
+        "stipulation",
+        "stipulations",
+        "tribulation",
+        "tribulations"
+    ],
+    "IY1-AH0-EY1-AH0": [
+        "realization",
+        "realizations"
+    ],
+    "IY2-AH0-EY1-AH0": [
+        "reappraisal",
+        "reawaken",
+        "reawakened"
+    ],
+    "OW2-AH0-EY1-AH0": [
+        "motivation",
+        "motivations",
+        "ovulation",
+        "ovulations"
+    ],
+    "UW2-AH0-EY1-AH0": [
+        "duplication",
+        "jubilation",
+        "mutilation",
+        "mutilations"
+    ],
     "AH2-EY1-AH0": [
         "ablation"
     ],
@@ -8763,8 +10833,25 @@ export default {
         "portrayals",
         "voracious"
     ],
+    "AE2-AO0-EY1-AH0": [
+        "malformation",
+        "malformations"
+    ],
+    "IH2-AO0-EY1-AH0": [
+        "importation"
+    ],
+    "IY2-AO0-EY1-AH0": [
+        "deformation",
+        "deportation",
+        "deportations",
+        "elongation"
+    ],
     "AO2-EY1-AH0": [
         "causation"
+    ],
+    "EH2-AO2-EY1-AH0": [
+        "exhortation",
+        "exhortations"
     ],
     "AW0-EY1-AH0": [
         "foundation",
@@ -8792,9 +10879,19 @@ export default {
         "vibration",
         "vibrations"
     ],
+    "EH2-AY0-EY1-AH0": [
+        "excitation"
+    ],
+    "IY2-AY0-EY1-AH0": [
+        "dehydration",
+        "rehydration"
+    ],
     "AY2-EY1-AH0": [
         "dilation",
         "isaiah"
+    ],
+    "AH2-AY2-EY1-AH0": [
+        "multiracial"
     ],
     "EH0-EY1-AH0": [
         "emblazon",
@@ -8813,8 +10910,41 @@ export default {
         "temptations",
         "vexatious"
     ],
+    "AA2-EH0-EY1-AH0": [
+        "augmentation"
+    ],
+    "AE2-EH0-EY1-AH0": [
+        "abnegation",
+        "affectation",
+        "annexation"
+    ],
+    "AO2-EH0-EY1-AH0": [
+        "ostentation"
+    ],
+    "EH2-EH0-EY1-AH0": [
+        "expectation",
+        "expectations"
+    ],
+    "OW2-EH0-EY1-AH0": [
+        "molestation"
+    ],
+    "IH2-EH1-EY1-AH0": [
+        "impregnation",
+        "infestation"
+    ],
     "EH2-EY1-AH0": [
         "cessation"
+    ],
+    "IH1-EH2-EY1-AH0": [
+        "indexation"
+    ],
+    "IH2-EH2-EY1-AH0": [
+        "indentation",
+        "infestations"
+    ],
+    "OW2-EH2-EY1-AH0": [
+        "protestation",
+        "protestations"
     ],
     "ER0-EY1-AH0": [
         "arraignment",
@@ -8833,6 +10963,109 @@ export default {
         "persuasions",
         "surveillance",
         "verbatim"
+    ],
+    "AA2-ER0-EY1-AH0": [
+        "altercation",
+        "altercations",
+        "confirmation",
+        "confirmations",
+        "conservation",
+        "consternation",
+        "conversation",
+        "conversations",
+        "moderation",
+        "observation",
+        "observations",
+        "operation",
+        "operations",
+        "toleration"
+    ],
+    "AE2-ER0-EY1-AH0": [
+        "aberration",
+        "aberrations",
+        "admiration",
+        "admirations",
+        "adoration",
+        "affirmation",
+        "affirmations",
+        "aspiration",
+        "aspirations",
+        "laceration",
+        "lacerations",
+        "masturbation",
+        "saturation",
+        "transformation",
+        "transformations",
+        "transportation"
+    ],
+    "AH2-ER0-EY1-AH0": [
+        "coloration",
+        "ulceration",
+        "ulcerations"
+    ],
+    "AO2-ER0-EY1-AH0": [
+        "alteration",
+        "alterations",
+        "corporation",
+        "corporations"
+    ],
+    "AY2-ER0-EY1-AH0": [
+        "hibernation"
+    ],
+    "EH2-ER0-EY1-AH0": [
+        "declaration",
+        "declarations",
+        "decoration",
+        "decorations",
+        "desperation",
+        "expiration",
+        "expirations",
+        "federation",
+        "federations",
+        "generation",
+        "generations",
+        "preparation",
+        "preparations",
+        "preservation",
+        "reformation",
+        "reparation",
+        "reparations",
+        "reservation",
+        "reservations",
+        "respiration",
+        "restoration",
+        "restorations",
+        "separation",
+        "separations",
+        "veneration"
+    ],
+    "ER2-ER0-EY1-AH0": [
+        "perforation",
+        "perforations",
+        "perspiration",
+        "perturbation",
+        "perturbations"
+    ],
+    "IH2-ER0-EY1-AH0": [
+        "dissertation",
+        "figuration",
+        "ignoramus",
+        "inspiration",
+        "inspirations",
+        "interracial",
+        "iteration"
+    ],
+    "IY0-ER0-EY1-AH0": [
+        "rearrangement"
+    ],
+    "IY2-ER0-EY1-AH0": [
+        "prearranges"
+    ],
+    "UW2-ER0-EY1-AH0": [
+        "usurpation"
+    ],
+    "IH2-ER2-EY1-AH0": [
+        "liberation"
     ],
     "EY0-EY1-AH0": [
         "gradation",
@@ -8877,6 +11110,73 @@ export default {
         "regalia",
         "replacement"
     ],
+    "AA2-IH0-EY1-AH0": [
+        "arbitration",
+        "arbitrations",
+        "cogitation"
+    ],
+    "AE2-IH0-EY1-AH0": [
+        "abdication",
+        "fabrication",
+        "fabrications",
+        "gravitation",
+        "palpitations"
+    ],
+    "AH2-IH0-EY1-AH0": [
+        "cultivation",
+        "publication",
+        "publications"
+    ],
+    "EH2-IH0-EY1-AH0": [
+        "levitation",
+        "meditations",
+        "recitations",
+        "registration",
+        "registrations",
+        "resignations",
+        "trepidation",
+        "venezuela",
+        "venezuelan",
+        "venezuelans"
+    ],
+    "IH0-IH0-EY1-AH0": [
+        "disengagement"
+    ],
+    "IH2-IH0-EY1-AH0": [
+        "dissipation",
+        "fibrillation",
+        "imitations",
+        "indignation",
+        "infiltration",
+        "instigation",
+        "invitation",
+        "invitations",
+        "irritation",
+        "irritations",
+        "limitation",
+        "limitations",
+        "liquidation",
+        "liquidations",
+        "mitigation",
+        "syndication",
+        "syndications",
+        "titillation",
+        "visitation",
+        "visitations"
+    ],
+    "IY2-IH0-EY1-AH0": [
+        "reinstatement"
+    ],
+    "OW2-IH0-EY1-AH0": [
+        "proteinaceous"
+    ],
+    "UW2-IH0-EY1-AH0": [
+        "duplications",
+        "fumigation",
+        "lubrication",
+        "rumination",
+        "ruminations"
+    ],
     "IH2-EY1-AH0": [
         "impatience",
         "impatiens",
@@ -8906,6 +11206,34 @@ export default {
         "restatements",
         "retaken"
     ],
+    "AY2-IY0-EY1-AH0": [
+        "ideation"
+    ],
+    "EH2-IY0-EY1-AH0": [
+        "recreation",
+        "variation",
+        "variations"
+    ],
+    "EY2-IY0-EY1-AH0": [
+        "aviation",
+        "radiation"
+    ],
+    "IY0-IY0-EY1-AH0": [
+        "deviations"
+    ],
+    "IY2-IY0-EY1-AH0": [
+        "deviation",
+        "mediation"
+    ],
+    "OW1-IY0-EY1-AH0": [
+        "procreation"
+    ],
+    "OW2-IY0-EY1-AH0": [
+        "foliation"
+    ],
+    "UW2-IY0-EY1-AH0": [
+        "nucleation"
+    ],
     "IY1-EY1-AH0": [
         "freemason"
     ],
@@ -8932,9 +11260,24 @@ export default {
         "vocation",
         "vocations"
     ],
+    "IY2-OW0-EY1-AH0": [
+        "evocation",
+        "neonatal"
+    ],
+    "IH0-OW1-EY1-AH0": [
+        "dislocation",
+        "dislocations"
+    ],
+    "IY2-OW1-EY1-AH0": [
+        "relocation",
+        "relocations"
+    ],
     "OW2-EY1-AH0": [
         "postnatal",
         "proration"
+    ],
+    "EH2-OY2-EY1-AH0": [
+        "exploitation"
     ],
     "UH0-EY1-AH0": [
         "eurasia"
@@ -8947,8 +11290,103 @@ export default {
         "mutation",
         "mutations"
     ],
+    "AA2-UW0-EY1-AH0": [
+        "computations"
+    ],
+    "AE0-UW0-EY1-AH0": [
+        "valuation",
+        "valuations"
+    ],
+    "AE2-UW0-EY1-AH0": [
+        "amputations"
+    ],
+    "AH2-UW0-EY1-AH0": [
+        "fluctuation",
+        "fluctuations",
+        "punctuation"
+    ],
+    "AO2-UW0-EY1-AH0": [
+        "formulations"
+    ],
+    "EH2-UW0-EY1-AH0": [
+        "menstruation",
+        "refutation"
+    ],
+    "ER2-UW0-EY1-AH0": [
+        "permutation",
+        "permutations"
+    ],
+    "IH2-UW0-EY1-AH0": [
+        "incubation",
+        "situation",
+        "situations"
+    ],
+    "IH0-UW1-EY1-AH0": [
+        "disputation"
+    ],
+    "EH0-UW2-EY1-AH0": [
+        "exhumation"
+    ],
     "AA1-EY2-AH0": [
         "washbasin"
+    ],
+    "AA1-AH0-EY2-AH0": [
+        "compensated",
+        "complicated",
+        "confiscated",
+        "constipated",
+        "consummated",
+        "dominated",
+        "nominated",
+        "oscillated"
+    ],
+    "AE1-AH0-EY2-AH0": [
+        "calibrated",
+        "fascinated",
+        "flagellated",
+        "laminated"
+    ],
+    "AH1-AH0-EY2-AH0": [
+        "undulated"
+    ],
+    "AO1-AH0-EY2-AH0": [
+        "chlorinated",
+        "correlated",
+        "formulated",
+        "mortification"
+    ],
+    "AY1-AH0-EY2-AH0": [
+        "isolated"
+    ],
+    "EH1-AH0-EY2-AH0": [
+        "crenelated",
+        "decimation",
+        "delegated",
+        "deprecated",
+        "detonated",
+        "estimated",
+        "legislated",
+        "renovations",
+        "telecable"
+    ],
+    "ER1-AH0-EY2-AH0": [
+        "circulation"
+    ],
+    "IH1-AH0-EY2-AH0": [
+        "illustrated",
+        "immolated",
+        "immolation",
+        "inculcated",
+        "indicated",
+        "insulated",
+        "irritated",
+        "syncopation"
+    ],
+    "OW1-AH0-EY2-AH0": [
+        "motivated"
+    ],
+    "UW1-AH0-EY2-AH0": [
+        "mutilated"
     ],
     "AH1-EY2-AH0": [
         "frustrated",
@@ -8966,15 +11404,55 @@ export default {
         "timetables",
         "typefaces"
     ],
+    "IH2-EH1-EY2-AH0": [
+        "impregnated"
+    ],
+    "AA1-ER0-EY2-AH0": [
+        "operated"
+    ],
+    "AH1-ER0-EY2-AH0": [
+        "underpayment",
+        "understatement",
+        "undertaken"
+    ],
+    "AO1-ER0-EY2-AH0": [
+        "alternation"
+    ],
+    "AY1-ER0-EY2-AH0": [
+        "fireplaces"
+    ],
+    "EH1-ER0-EY2-AH0": [
+        "extirpated",
+        "generated"
+    ],
+    "OW1-ER0-EY2-AH0": [
+        "overpayment",
+        "overstatement",
+        "overstatements",
+        "overtaken"
+    ],
     "ER1-EY2-AH0": [
         "turntable",
         "turntables",
         "workstation",
         "workstations"
     ],
+    "IH1-ER2-EY2-AH0": [
+        "liberator",
+        "liberators"
+    ],
+    "AE1-IH0-EY2-AH0": [
+        "fabricated"
+    ],
     "IH1-EY2-AH0": [
         "inpatient",
         "inpatients"
+    ],
+    "AA1-IY0-EY2-AH0": [
+        "obviated"
+    ],
+    "AO1-IY0-EY2-AH0": [
+        "nauseated"
     ],
     "UW1-EY2-AH0": [
         "shoelaces"
@@ -9009,6 +11487,43 @@ export default {
         "tropical",
         "varnishes"
     ],
+    "AA0-AA1-IH0-AH0": [
+        "harmonica"
+    ],
+    "AE0-AA1-IH0-AH0": [
+        "acknowledgement",
+        "acknowledgment",
+        "acknowledgments",
+        "anarchical"
+    ],
+    "AH0-AA1-IH0-AH0": [
+        "accomplishment",
+        "accomplishments",
+        "astonishment",
+        "subcontinent",
+        "subcontinents"
+    ],
+    "AY0-AA1-IH0-AH0": [
+        "ironical"
+    ],
+    "ER0-AA1-IH0-AH0": [
+        "veronica"
+    ],
+    "IH0-AA1-IH0-AH0": [
+        "demolishes",
+        "erotica",
+        "recombinant",
+        "responsiveness"
+    ],
+    "IH2-AA1-IH0-AH0": [
+        "illogical",
+        "impoverishes",
+        "impoverishment",
+        "inconspicuous"
+    ],
+    "UW2-AA1-IH0-AH0": [
+        "zoological"
+    ],
     "AE1-IH0-AH0": [
         "anglicans",
         "animus",
@@ -9037,6 +11552,61 @@ export default {
         "talisman",
         "vatican"
     ],
+    "AH0-AE1-IH0-AH0": [
+        "attractiveness",
+        "botanical",
+        "combativeness",
+        "compatibles",
+        "fanatical",
+        "mechanical",
+        "sabbatical",
+        "sabbaticals",
+        "shenanigan",
+        "shenanigans"
+    ],
+    "EH0-AE1-IH0-AH0": [
+        "establishments"
+    ],
+    "ER0-AE1-IH0-AH0": [
+        "tyrannical"
+    ],
+    "IH0-AE1-IH0-AH0": [
+        "britannica",
+        "establishment",
+        "mismanagement",
+        "mismanages",
+        "recalcitrant"
+    ],
+    "IH2-AE1-IH0-AH0": [
+        "irascible"
+    ],
+    "IY0-AE1-IH0-AH0": [
+        "theatrical"
+    ],
+    "AA1-AH0-IH0-AH0": [
+        "parsonages"
+    ],
+    "AE1-AH0-IH0-AH0": [
+        "atavism",
+        "masochism",
+        "vandalism"
+    ],
+    "AO1-AH0-IH0-AH0": [
+        "mormonism"
+    ],
+    "EH1-AH0-IH0-AH0": [
+        "sensitiveness"
+    ],
+    "ER1-AH0-IH0-AH0": [
+        "urbanism"
+    ],
+    "IY1-AH0-IH0-AH0": [
+        "realism",
+        "secretiveness"
+    ],
+    "UW1-AH0-IH0-AH0": [
+        "pugilism"
+    ],
     "AH1-IH0-AH0": [
         "budgeted",
         "mulligan",
@@ -9050,8 +11620,22 @@ export default {
         "sluggishness",
         "ultima"
     ],
+    "ER0-AH1-IH0-AH0": [
+        "corruptible"
+    ],
+    "IH0-AH1-IH0-AH0": [
+        "republica"
+    ],
     "AO1-IH0-AH0": [
         "dwarfism"
+    ],
+    "AY0-AO1-IH0-AH0": [
+        "dimorphism"
+    ],
+    "IH0-AO1-IH0-AH0": [
+        "exorbitant",
+        "historical",
+        "rhetorical"
     ],
     "AW1-IH0-AH0": [
         "taoism"
@@ -9065,6 +11649,19 @@ export default {
         "irishman",
         "mindedness",
         "psychical"
+    ],
+    "AA2-AY1-IH0-AH0": [
+        "farsightedness"
+    ],
+    "AH0-AY1-IH0-AH0": [
+        "societal"
+    ],
+    "IH0-AY1-IH0-AH0": [
+        "decisiveness",
+        "divisiveness"
+    ],
+    "IY1-AY2-IH0-AH0": [
+        "nearsightedness"
     ],
     "EH1-IH0-AH0": [
         "celibate",
@@ -9107,6 +11704,56 @@ export default {
         "vesicles",
         "wellington"
     ],
+    "AA0-EH1-IH0-AH0": [
+        "nonsensical",
+        "nontechnical"
+    ],
+    "AE0-EH1-IH0-AH0": [
+        "angelicas"
+    ],
+    "AH0-EH1-IH0-AH0": [
+        "aggressiveness",
+        "amerika",
+        "attentiveness",
+        "obstetrical",
+        "possessiveness",
+        "samaritan",
+        "samaritans",
+        "suggestiveness",
+        "symmetrical",
+        "unethical"
+    ],
+    "AY0-EH1-IH0-AH0": [
+        "identical"
+    ],
+    "EH0-EH1-IH0-AH0": [
+        "embellishes",
+        "embellishment"
+    ],
+    "EH2-EH1-IH0-AH0": [
+        "extendible"
+    ],
+    "ER0-EH1-IH0-AH0": [
+        "heretical"
+    ],
+    "IH0-EH1-IH0-AH0": [
+        "defensiveness",
+        "electrical",
+        "hysterical",
+        "receptacles",
+        "replenishment"
+    ],
+    "IH2-EH1-IH0-AH0": [
+        "indelible",
+        "indelicate",
+        "inventiveness"
+    ],
+    "IY0-EH1-IH0-AH0": [
+        "effeminate"
+    ],
+    "OW0-EH1-IH0-AH0": [
+        "poetical"
+    ],
     "ER1-IH0-AH0": [
         "flourishes",
         "furbishes",
@@ -9118,8 +11765,38 @@ export default {
         "terminus",
         "vertical"
     ],
+    "AA0-ER1-IH0-AH0": [
+        "nonsurgical"
+    ],
+    "AH0-ER1-IH0-AH0": [
+        "assertiveness",
+        "liturgical",
+        "submersible",
+        "unmerciful"
+    ],
+    "EH0-ER1-IH0-AH0": [
+        "encouragement"
+    ],
+    "IH0-ER1-IH0-AH0": [
+        "discouragement"
+    ],
+    "IY0-ER1-IH0-AH0": [
+        "refurbishment"
+    ],
     "EY1-IH0-AH0": [
         "sadism"
+    ],
+    "ER0-EY1-IH0-AH0": [
+        "persuasiveness"
+    ],
+    "IY0-EY1-IH0-AH0": [
+        "creativeness"
+    ],
+    "EH1-IH0-IH0-AH0": [
+        "heritages"
+    ],
+    "IH1-IH0-IH0-AH0": [
+        "spiritedness"
     ],
     "IH1-IH0-AH0": [
         "critical",
@@ -9142,6 +11819,60 @@ export default {
         "willingness",
         "winnipeg"
     ],
+    "AA0-IH1-IH0-AH0": [
+        "noncriminal"
+    ],
+    "AH0-IH1-IH0-AH0": [
+        "cylindrical",
+        "dominica",
+        "logistical",
+        "molybdenum",
+        "pacifica",
+        "rabbinical",
+        "restrictiveness",
+        "significance",
+        "significant",
+        "statistical",
+        "subliminal",
+        "umbilical",
+        "uncritical",
+        "untypical"
+    ],
+    "EH0-IH1-IH0-AH0": [
+        "encyclical",
+        "encyclicals"
+    ],
+    "EH2-IH1-IH0-AH0": [
+        "empirical"
+    ],
+    "ER0-IH1-IH0-AH0": [
+        "certificate",
+        "certificates",
+        "permissiveness"
+    ],
+    "EY2-IH1-IH0-AH0": [
+        "atypical"
+    ],
+    "IH0-IH1-IH0-AH0": [
+        "diminishment",
+        "distinctiveness",
+        "elliptical",
+        "extinguishment",
+        "precipitous",
+        "vindictiveness"
+    ],
+    "IH2-IH1-IH0-AH0": [
+        "infinitum",
+        "inimical"
+    ],
+    "OW0-IH1-IH0-AH0": [
+        "coincidence",
+        "dominicans"
+    ],
+    "UW0-IH1-IH0-AH0": [
+        "duplicitous",
+        "ubiquitous"
+    ],
     "IY1-IH0-AH0": [
         "deism",
         "meaningful",
@@ -9150,6 +11881,18 @@ export default {
         "sikhism",
         "squeamishness",
         "theism"
+    ],
+    "AY0-IY1-IH0-AH0": [
+        "idealism"
+    ],
+    "IH0-IY1-IH0-AH0": [
+        "defeatism"
+    ],
+    "OW0-IY1-IH0-AH0": [
+        "cohesiveness"
+    ],
+    "IH1-OW2-IH0-AH0": [
+        "jingoism"
     ],
     "UH1-IH0-AH0": [
         "boorishness",
@@ -9173,6 +11916,21 @@ export default {
         "rudiments",
         "stupidest",
         "truism"
+    ],
+    "AH0-UW1-IH0-AH0": [
+        "acoustical"
+    ],
+    "AO0-UW1-IH0-AH0": [
+        "fortuitous"
+    ],
+    "ER0-UW1-IH0-AH0": [
+        "circuitous"
+    ],
+    "IH0-UW1-IH0-AH0": [
+        "elusiveness"
+    ],
+    "OY2-UW1-IH0-AH0": [
+        "voyeurism"
     ],
     "IH1-AH0": [
         "bearded",
@@ -9786,6 +12544,9 @@ export default {
         "transmissions",
         "transmittal"
     ],
+    "IY2-AE0-IH1-AH0": [
+        "readmission"
+    ],
     "AE2-IH1-AH0": [
         "transcription",
         "transcriptions"
@@ -9904,6 +12665,134 @@ export default {
         "unwritten",
         "vanilla"
     ],
+    "AA1-AH0-IH1-AH0": [
+        "noncommittal"
+    ],
+    "AA2-AH0-IH1-AH0": [
+        "artificial",
+        "competition",
+        "competitions",
+        "composition",
+        "compositions",
+        "contradicted",
+        "contradiction",
+        "contradictions",
+        "monolingual",
+        "nonexistent",
+        "obstetrician",
+        "obstetricians",
+        "opposition",
+        "politician",
+        "politicians",
+        "proposition",
+        "propositions"
+    ],
+    "AE2-AH0-IH1-AH0": [
+        "abolition",
+        "acquisition",
+        "acquisitions",
+        "admonition",
+        "admonitions",
+        "ammunition",
+        "sacrificial",
+        "statistician"
+    ],
+    "AH2-AH0-IH1-AH0": [
+        "cunnilingus",
+        "supposition",
+        "suppositions",
+        "unofficial"
+    ],
+    "AY0-AH0-IH1-AH0": [
+        "violinist",
+        "violinists"
+    ],
+    "AY2-AH0-IH1-AH0": [
+        "diacritic",
+        "diacritics",
+        "dietician",
+        "dietitian",
+        "dietitians"
+    ],
+    "EH0-AH0-IH1-AH0": [
+        "premonition",
+        "premonitions"
+    ],
+    "EH2-AH0-IH1-AH0": [
+        "benediction",
+        "beneficent",
+        "beneficial",
+        "definition",
+        "definitions",
+        "demolition",
+        "deposition",
+        "depositions",
+        "dereliction",
+        "erudition",
+        "exhibition",
+        "exhibitions",
+        "expedition",
+        "expeditions",
+        "expeditious",
+        "exposition",
+        "expositions",
+        "extradition",
+        "pedophilia",
+        "penicillin",
+        "prejudicial",
+        "recognition",
+        "reminiscence",
+        "reminiscent",
+        "repetition",
+        "repetitions",
+        "repetitious",
+        "requisition",
+        "requisitioned"
+    ],
+    "ER2-AH0-IH1-AH0": [
+        "circumcision",
+        "perseverance",
+        "surreptitious"
+    ],
+    "IH2-AH0-IH1-AH0": [
+        "disposition",
+        "dispositions",
+        "imposition",
+        "inconsistent",
+        "inquisition",
+        "insufficient"
+    ],
+    "IY0-AH0-IH1-AH0": [
+        "decommission",
+        "decommissioned"
+    ],
+    "IY2-AH0-IH1-AH0": [
+        "precondition",
+        "preconditions",
+        "reappearance",
+        "recondition",
+        "reconditioned",
+        "reposition",
+        "repositioned"
+    ],
+    "OW2-AH0-IH1-AH0": [
+        "coalition",
+        "coalitions",
+        "coefficient",
+        "coefficients",
+        "coexisted",
+        "prohibition",
+        "prohibitions"
+    ],
+    "UH2-AH0-IH1-AH0": [
+        "jurisdiction"
+    ],
+    "UW2-AH0-IH1-AH0": [
+        "eucalyptus"
+    ],
+    "IH2-AH2-IH1-AH0": [
+        "injudicious"
+    ],
     "AO0-IH1-AH0": [
         "mortician"
     ],
@@ -9921,6 +12810,9 @@ export default {
     "AY1-IH1-AH0": [
         "eyewitness"
     ],
+    "AE2-AY2-IH1-AH0": [
+        "antimissile"
+    ],
     "EH0-IH1-AH0": [
         "dentition",
         "encryption",
@@ -9935,6 +12827,10 @@ export default {
         "reptilians",
         "technician",
         "technicians"
+    ],
+    "IH0-EH0-IH1-AH0": [
+        "electrician",
+        "electricians"
     ],
     "EH1-IH1-AH0": [
         "stepchildren"
@@ -9964,6 +12860,40 @@ export default {
         "virginia",
         "virginian",
         "virginians"
+    ],
+    "AE2-ER0-IH1-AH0": [
+        "amaryllis",
+        "apparition",
+        "apparitions"
+    ],
+    "AH1-ER0-IH1-AH0": [
+        "underprivileged"
+    ],
+    "EH2-ER0-IH1-AH0": [
+        "rhetorician",
+        "rhetoricians"
+    ],
+    "IH2-ER0-IH1-AH0": [
+        "interdiction",
+        "intermingle",
+        "intermingled",
+        "intermission",
+        "intermissions",
+        "intermittent",
+        "interstitial"
+    ],
+    "OW1-ER0-IH1-AH0": [
+        "overridden"
+    ],
+    "OW2-ER0-IH1-AH0": [
+        "overwritten"
+    ],
+    "UW2-ER0-IH1-AH0": [
+        "superficial",
+        "superstition",
+        "superstitions",
+        "superstitious",
+        "supervision"
     ],
     "IH0-IH1-AH0": [
         "belittle",
@@ -10018,6 +12948,25 @@ export default {
         "scintilla",
         "sedition",
         "seditious"
+    ],
+    "AA2-IH0-IH1-AH0": [
+        "nonreligious"
+    ],
+    "AE2-IH0-IH1-AH0": [
+        "statisticians"
+    ],
+    "IH2-IH0-IH1-AH0": [
+        "indecision",
+        "inefficient"
+    ],
+    "OW2-IH0-IH1-AH0": [
+        "coexistence"
+    ],
+    "UH2-IH0-IH1-AH0": [
+        "jurisdictions"
+    ],
+    "UW2-IH0-IH1-AH0": [
+        "crucifixion"
     ],
     "IH1-IH1-AH0": [
         "midshipman",
@@ -10085,6 +13034,16 @@ export default {
         "proscription",
         "volition"
     ],
+    "IH2-OW0-IH1-AH0": [
+        "incoherence",
+        "incoherent"
+    ],
+    "IY2-OW0-IH1-AH0": [
+        "eohippus"
+    ],
+    "AY1-OW2-IH1-AH0": [
+        "microsystems"
+    ],
     "UH0-IH1-AH0": [
         "fulfillment"
     ],
@@ -10101,6 +13060,15 @@ export default {
         "tuition",
         "tuitions"
     ],
+    "AA2-UW0-IH1-AH0": [
+        "manumission"
+    ],
+    "AE2-UW0-IH1-AH0": [
+        "malnutrition"
+    ],
+    "IH2-UW0-IH1-AH0": [
+        "intuition"
+    ],
     "UW2-IH1-AH0": [
         "bouillon"
     ],
@@ -10114,6 +13082,87 @@ export default {
         "fascism",
         "handwritten"
     ],
+    "AA1-AH0-IH2-AH0": [
+        "communism",
+        "dogmatism",
+        "optimism",
+        "populism"
+    ],
+    "AE1-AH0-IH2-AH0": [
+        "agribusiness",
+        "animism",
+        "cataclysm",
+        "catechism",
+        "magnetism",
+        "pragmatism"
+    ],
+    "AO1-AH0-IH2-AH0": [
+        "formalism",
+        "moralism",
+        "organism",
+        "organisms",
+        "ostracism"
+    ],
+    "AW1-AH0-IH2-AH0": [
+        "councilwomen"
+    ],
+    "AY1-AH0-IH2-AH0": [
+        "dynamism",
+        "nihilism",
+        "zionism"
+    ],
+    "EH1-AH0-IH2-AH0": [
+        "centralism",
+        "despotism",
+        "hellenism",
+        "mechanism",
+        "mechanisms",
+        "methodism",
+        "nepotism",
+        "pessimism",
+        "television",
+        "televisions"
+    ],
+    "ER1-AH0-IH2-AH0": [
+        "journalism"
+    ],
+    "EY1-AH0-IH2-AH0": [
+        "fatalism",
+        "paganism",
+        "racialism",
+        "satanism"
+    ],
+    "IH1-AH0-IH2-AH0": [
+        "hypnotism",
+        "symbolism"
+    ],
+    "IY1-AH0-IH2-AH0": [
+        "egotism",
+        "hedonism",
+        "legalism"
+    ],
+    "OW1-AH0-IH2-AH0": [
+        "bolshevism",
+        "chauvinism",
+        "socialism",
+        "stoicism",
+        "tokenism"
+    ],
+    "UH1-AH0-IH2-AH0": [
+        "pluralism"
+    ],
+    "UW1-AH0-IH2-AH0": [
+        "druidism",
+        "dualism",
+        "dualisms",
+        "euphemism",
+        "euphemisms",
+        "feudalism",
+        "humanism",
+        "neutralism",
+        "rheumatism",
+        "unionism"
+    ],
     "AH1-IH2-AH0": [
         "subsystem",
         "subsystems"
@@ -10121,6 +13170,10 @@ export default {
     "AO1-IH2-AH0": [
         "autism",
         "frostbitten"
+    ],
+    "EH0-AO1-IH2-AH0": [
+        "encomium",
+        "encomiums"
     ],
     "AY1-IH2-AH0": [
         "typewritten"
@@ -10134,17 +13187,116 @@ export default {
         "ventricle",
         "ventricles"
     ],
+    "AA1-ER0-IH2-AH0": [
+        "barbarism",
+        "logarithm",
+        "logarithms",
+        "modernism"
+    ],
+    "AE1-ER0-IH2-AH0": [
+        "algorithm",
+        "algorithms",
+        "aphorism",
+        "aphorisms",
+        "mannerism",
+        "mannerisms"
+    ],
+    "AH1-ER0-IH2-AH0": [
+        "pumpernickel",
+        "underwritten"
+    ],
+    "EH1-ER0-IH2-AH0": [
+        "exorcism",
+        "exorcisms",
+        "mesmerism",
+        "terrorism"
+    ],
+    "EY1-ER0-IH2-AH0": [
+        "plagiarism"
+    ],
+    "IH1-ER0-IH2-AH0": [
+        "synergism"
+    ],
+    "UW1-ER0-IH2-AH0": [
+        "futurism"
+    ],
     "EY1-IH2-AH0": [
         "racism",
         "saleswomen",
         "statism"
     ],
+    "IH0-EY1-IH2-AH0": [
+        "escapism"
+    ],
+    "AA1-IH0-IH2-AH0": [
+        "darwinism",
+        "narcissism",
+        "participle",
+        "participles"
+    ],
+    "AE1-IH0-IH2-AH0": [
+        "activision",
+        "activism",
+        "classicism",
+        "pacifism",
+        "stalinism"
+    ],
+    "AH1-IH0-IH2-AH0": [
+        "subdivision",
+        "subdivisions"
+    ],
+    "EH1-IH0-IH2-AH0": [
+        "feminism",
+        "fetishism",
+        "leninism",
+        "semitism",
+        "skepticism"
+    ],
+    "EY1-IH0-IH2-AH0": [
+        "nativism"
+    ],
+    "IH1-IH0-IH2-AH0": [
+        "criticism",
+        "criticisms",
+        "cynicism",
+        "lyricism",
+        "mysticism"
+    ],
+    "AE1-IY0-IH2-AH0": [
+        "dandyism"
+    ],
+    "OW1-IY0-IH2-AH0": [
+        "cronyism"
+    ],
+    "EH1-OW0-IH2-AH0": [
+        "embolism",
+        "embolisms",
+        "heroism"
+    ],
+    "IY1-OW0-IH2-AH0": [
+        "ecosystem",
+        "ecosystems",
+        "egoism"
+    ],
     "OW1-IH2-AH0": [
         "homesickness",
         "spokeswomen"
     ],
+    "AE1-UH0-IH2-AH0": [
+        "aneurism",
+        "aneurysm"
+    ],
     "UH1-IH2-AH0": [
         "tourism"
+    ],
+    "AA1-UW0-IH2-AH0": [
+        "botulism"
+    ],
+    "AE1-UW0-IH2-AH0": [
+        "altruism"
+    ],
+    "IH1-UW0-IH2-AH0": [
+        "hinduism"
     ],
     "UW1-IH2-AH0": [
         "beautician",
@@ -10178,6 +13330,22 @@ export default {
         "strontium",
         "tardiness",
         "thorium"
+    ],
+    "AE0-AA1-IY0-AH0": [
+        "algonquian"
+    ],
+    "AY0-AA1-IY0-AH0": [
+        "hypoxia"
+    ],
+    "EH0-AA1-IY0-AH0": [
+        "embodiment"
+    ],
+    "IH2-AA1-IY0-AH0": [
+        "insomnia"
+    ],
+    "IH1-AE0-IY0-AH0": [
+        "infantryman",
+        "infantrymen"
     ],
     "AE1-IY0-AH0": [
         "affiant",
@@ -10231,6 +13399,29 @@ export default {
         "zambia",
         "zambian"
     ],
+    "AH0-AE1-IY0-AH0": [
+        "byzantium",
+        "potassium"
+    ],
+    "AY0-AE1-IY0-AH0": [
+        "biaxial"
+    ],
+    "EY1-AE1-IY0-AH0": [
+        "ataxia"
+    ],
+    "IH0-AE1-IY0-AH0": [
+        "britannia",
+        "denarius"
+    ],
+    "IY0-AE1-IY0-AH0": [
+        "precambrian"
+    ],
+    "OW1-AE1-IY0-AH0": [
+        "coaxial"
+    ],
+    "AH1-AH0-IY0-AH0": [
+        "slovenliness"
+    ],
     "AH1-IY0-AH0": [
         "bloodiest",
         "clumsiness",
@@ -10243,6 +13434,25 @@ export default {
         "rustiest",
         "ugliest",
         "ugliness"
+    ],
+    "AH0-AH1-IY0-AH0": [
+        "colombia",
+        "colombian",
+        "colombians",
+        "columbia"
+    ],
+    "EH2-AH1-IY0-AH0": [
+        "kentuckian",
+        "kentuckians"
+    ],
+    "IH2-AH1-IY0-AH0": [
+        "illustrious",
+        "industrial",
+        "industrials",
+        "industrious"
+    ],
+    "OW2-AH1-IY0-AH0": [
+        "columbian"
     ],
     "AO1-IY0-AH0": [
         "austria",
@@ -10261,6 +13471,53 @@ export default {
         "scorpions",
         "thorniest"
     ],
+    "AA0-AO1-IY0-AH0": [
+        "arboreal",
+        "sartorial"
+    ],
+    "AE2-AO1-IY0-AH0": [
+        "raptorial"
+    ],
+    "AH0-AO1-IY0-AH0": [
+        "accordion",
+        "accordions",
+        "delorean",
+        "gregorian",
+        "laborious",
+        "memorial",
+        "memorials"
+    ],
+    "EH0-AO1-IY0-AH0": [
+        "emporia"
+    ],
+    "EH2-AO1-IY0-AH0": [
+        "emporium"
+    ],
+    "IH0-AO1-IY0-AH0": [
+        "historian",
+        "historians",
+        "pictorial",
+        "victoria",
+        "victorian",
+        "victorians",
+        "victorias",
+        "victorious"
+    ],
+    "IH2-AO1-IY0-AH0": [
+        "inglorious"
+    ],
+    "IY0-AO1-IY0-AH0": [
+        "praetorian",
+        "pretoria"
+    ],
+    "OW0-AO1-IY0-AH0": [
+        "notorious"
+    ],
+    "UW0-AO1-IY0-AH0": [
+        "euphoria",
+        "tutorial",
+        "tutorials"
+    ],
     "AW1-IY0-AH0": [
         "drowsiness",
         "lousiness",
@@ -10273,6 +13530,9 @@ export default {
         "mightiest",
         "timeliness",
         "tiniest"
+    ],
+    "AA1-EH0-IY0-AH0": [
+        "contrariness"
     ],
     "EH1-IY0-AH0": [
         "aerial",
@@ -10326,6 +13586,85 @@ export default {
         "various",
         "wealthiest"
     ],
+    "AA0-EH1-IY0-AH0": [
+        "barbarian",
+        "barbarians",
+        "quadrennial"
+    ],
+    "AH0-EH1-IY0-AH0": [
+        "agrarian",
+        "alexia",
+        "aquarium",
+        "aquariums",
+        "aquarius",
+        "bavarian",
+        "bulgaria",
+        "bulgarian",
+        "bulgarians",
+        "compendium",
+        "decennial",
+        "gregarious",
+        "hungarian",
+        "hungarians",
+        "malaria",
+        "malarial",
+        "millennia",
+        "millennium",
+        "millenniums",
+        "nefarious",
+        "pedestrian",
+        "pedestrians",
+        "planarian",
+        "valencia"
+    ],
+    "AO0-EH1-IY0-AH0": [
+        "lawrencium"
+    ],
+    "AO2-EH1-IY0-AH0": [
+        "orwellian"
+    ],
+    "AY0-EH1-IY0-AH0": [
+        "biennial",
+        "triennial",
+        "vicarious"
+    ],
+    "EH0-EH1-IY0-AH0": [
+        "centennial",
+        "sectarian"
+    ],
+    "ER0-EH1-IY0-AH0": [
+        "perennial",
+        "perennials",
+        "terrestrial"
+    ],
+    "IH0-EH1-IY0-AH0": [
+        "dementia",
+        "dickensian",
+        "dyslexia",
+        "equestrian",
+        "hilarious",
+        "hysteria",
+        "millennial"
+    ],
+    "IH2-EH1-IY0-AH0": [
+        "invariant",
+        "iscariot"
+    ],
+    "IY0-EH1-IY0-AH0": [
+        "precarious"
+    ],
+    "OW0-EH1-IY0-AH0": [
+        "nobelium"
+    ],
+    "AO1-ER0-IY0-AH0": [
+        "orderliness"
+    ],
+    "ER1-ER0-IY0-AH0": [
+        "nurserymen"
+    ],
+    "IH1-ER0-IY0-AH0": [
+        "niggardliness"
+    ],
     "ER1-IY0-AH0": [
         "courteous",
         "dirtiest",
@@ -10340,6 +13679,26 @@ export default {
         "worldliness",
         "worrisome",
         "worthiest"
+    ],
+    "AE0-ER1-IY0-AH0": [
+        "adverbial"
+    ],
+    "AH0-ER1-IY0-AH0": [
+        "luxuriant",
+        "luxurious",
+        "proverbial",
+        "subservience",
+        "subservient",
+        "suburbia"
+    ],
+    "IH2-ER1-IY0-AH0": [
+        "impervious"
+    ],
+    "AH1-ER2-IY0-AH0": [
+        "trustworthiness"
+    ],
+    "EH1-ER2-IY0-AH0": [
+        "airworthiness"
     ],
     "EY1-IY0-AH0": [
         "alias",
@@ -10383,6 +13742,65 @@ export default {
         "tracheal",
         "valium",
         "zaniest"
+    ],
+    "AA0-EY1-IY0-AH0": [
+        "arcadia",
+        "spontaneous"
+    ],
+    "AA2-EY1-IY0-AH0": [
+        "arcadian",
+        "arcadians"
+    ],
+    "AE0-EY1-IY0-AH0": [
+        "albania",
+        "albanian",
+        "albanians"
+    ],
+    "AH0-EY1-IY0-AH0": [
+        "acadia",
+        "arabia",
+        "arabian",
+        "arabians",
+        "bahamian",
+        "caladiums",
+        "canadian",
+        "canadians",
+        "compatriot",
+        "compatriots",
+        "palladium",
+        "vanadium"
+    ],
+    "AO0-EY1-IY0-AH0": [
+        "jordanians"
+    ],
+    "AO2-EY1-IY0-AH0": [
+        "jordanian"
+    ],
+    "AY0-EY1-IY0-AH0": [
+        "titanium"
+    ],
+    "EH0-EY1-IY0-AH0": [
+        "extraneous"
+    ],
+    "ER0-EY1-IY0-AH0": [
+        "circadian",
+        "geranium",
+        "geraniums",
+        "uranium"
+    ],
+    "IH0-EY1-IY0-AH0": [
+        "gymnasia",
+        "gymnasium",
+        "gymnasiums"
+    ],
+    "OW0-EY1-IY0-AH0": [
+        "romanian"
+    ],
+    "UW0-EY1-IY0-AH0": [
+        "eustachian",
+        "rumania",
+        "ukrainian",
+        "ukrainians"
     ],
     "IH1-IY0-AH0": [
         "bilious",
@@ -10448,6 +13866,102 @@ export default {
         "zinnia",
         "zinnias"
     ],
+    "AA0-IH1-IY0-AH0": [
+        "arterial"
+    ],
+    "AA2-IH1-IY0-AH0": [
+        "darwinian"
+    ],
+    "AE0-IH1-IY0-AH0": [
+        "algeria",
+        "algerian",
+        "amphibian",
+        "amphibians",
+        "amphibious",
+        "bacteria",
+        "bacterial",
+        "bacterium",
+        "fastidious"
+    ],
+    "AH0-IH1-IY0-AH0": [
+        "assyria",
+        "assyrian",
+        "assyrians",
+        "committeeman",
+        "convivial",
+        "lascivious",
+        "material",
+        "materials",
+        "namibian",
+        "oblivion",
+        "oblivious",
+        "obsidian",
+        "punctilious",
+        "recipient",
+        "valerian",
+        "venereal",
+        "vestigial"
+    ],
+    "AO0-IH1-IY0-AH0": [
+        "floridian",
+        "floridians"
+    ],
+    "AY0-IH1-IY0-AH0": [
+        "criteria",
+        "criterion",
+        "hyperion",
+        "iberia",
+        "iberian",
+        "nigeria",
+        "nigerian",
+        "nigerians",
+        "siberia",
+        "siberian",
+        "zairian",
+        "zairians"
+    ],
+    "ER0-IH1-IY0-AH0": [
+        "arrhythmia",
+        "arrhythmias",
+        "beryllium",
+        "corinthian",
+        "corinthians",
+        "meridian",
+        "parisians"
+    ],
+    "EY2-IH1-IY0-AH0": [
+        "shakespearean"
+    ],
+    "IH0-IH1-IY0-AH0": [
+        "delirious",
+        "delirium",
+        "elysium",
+        "ethereal",
+        "experience",
+        "experienced",
+        "mysterious",
+        "presidium",
+        "recipients",
+        "sicilian"
+    ],
+    "IH2-IH1-IY0-AH0": [
+        "imperial",
+        "imperious",
+        "incipient",
+        "initiates",
+        "invidious",
+        "iridium"
+    ],
+    "OW0-IH1-IY0-AH0": [
+        "odysseus",
+        "olivia",
+        "olympia",
+        "olympian",
+        "olympians"
+    ],
+    "UW0-IH1-IY0-AH0": [
+        "bulimia"
+    ],
     "IY1-IY0-AH0": [
         "cesium",
         "deviance",
@@ -10474,6 +13988,60 @@ export default {
         "tedium",
         "xenia"
     ],
+    "AA0-IY1-IY0-AH0": [
+        "armenia",
+        "armenian",
+        "armenians",
+        "sardinia"
+    ],
+    "AE0-IY1-IY0-AH0": [
+        "algerians",
+        "magnesium"
+    ],
+    "AH0-IY1-IY0-AH0": [
+        "anemia",
+        "anemias",
+        "athenian",
+        "athenians",
+        "chameleon",
+        "collegial",
+        "comedian",
+        "comedians",
+        "obsequious",
+        "selenium",
+        "unwieldiness",
+        "vaccinia"
+    ],
+    "AH2-IY1-IY0-AH0": [
+        "uneasiness"
+    ],
+    "ER0-IY1-IY0-AH0": [
+        "uremia"
+    ],
+    "IH0-IY1-IY0-AH0": [
+        "expedience",
+        "expedient",
+        "remedial"
+    ],
+    "IH2-IY1-IY0-AH0": [
+        "imperia",
+        "ingredient",
+        "ingredients"
+    ],
+    "OW0-IY1-IY0-AH0": [
+        "bohemia",
+        "bohemian",
+        "mobilia",
+        "obedience",
+        "obedient"
+    ],
+    "UW0-IY1-IY0-AH0": [
+        "deuterium",
+        "leukemia"
+    ],
+    "AA1-OW0-IY0-AH0": [
+        "bostonians"
+    ],
     "OW1-IY0-AH0": [
         "blowiest",
         "chromium",
@@ -10497,6 +14065,77 @@ export default {
         "showiest",
         "sodium"
     ],
+    "AA0-OW1-IY0-AH0": [
+        "harmonious",
+        "harmonium"
+    ],
+    "AE0-OW1-IY0-AH0": [
+        "jacksonian"
+    ],
+    "AE2-OW1-IY0-AH0": [
+        "cambodia",
+        "cambodian",
+        "cambodians",
+        "pavlovian"
+    ],
+    "AH0-OW1-IY0-AH0": [
+        "ammonium",
+        "collodion",
+        "colloquial",
+        "colloquium",
+        "colonial",
+        "colonials",
+        "commodious",
+        "custodial",
+        "custodian",
+        "custodians",
+        "fallopian",
+        "linoleum",
+        "melodious",
+        "opprobrium",
+        "petroleum",
+        "polonium"
+    ],
+    "AO2-OW1-IY0-AH0": [
+        "bostonian"
+    ],
+    "AY0-OW1-IY0-AH0": [
+        "binomial",
+        "microbial",
+        "myopia"
+    ],
+    "AY2-OW1-IY0-AH0": [
+        "niobium"
+    ],
+    "EH0-OW1-IY0-AH0": [
+        "estonia",
+        "estonian",
+        "estonians",
+        "felonious"
+    ],
+    "ER0-OW1-IY0-AH0": [
+        "parochial",
+        "zirconium"
+    ],
+    "IH0-OW1-IY0-AH0": [
+        "defoliant",
+        "defoliants",
+        "devonian",
+        "sinfonia",
+        "symposium",
+        "symposiums"
+    ],
+    "UH0-OW1-IY0-AH0": [
+        "europium"
+    ],
+    "UW0-OW1-IY0-AH0": [
+        "newtonian",
+        "plutonium",
+        "utopia",
+        "utopian",
+        "utopians",
+        "utopias"
+    ],
     "OY1-IY0-AH0": [
         "noisiest"
     ],
@@ -10504,6 +14143,26 @@ export default {
         "curious",
         "furious",
         "prurient"
+    ],
+    "AA0-UH1-IY0-AH0": [
+        "arthurian"
+    ],
+    "AE0-UH1-IY0-AH0": [
+        "manchuria"
+    ],
+    "AH0-UH1-IY0-AH0": [
+        "missourian",
+        "missourians"
+    ],
+    "EH0-UH1-IY0-AH0": [
+        "centurion",
+        "tellurium"
+    ],
+    "ER0-UH1-IY0-AH0": [
+        "mercurial"
+    ],
+    "IH2-UH1-IY0-AH0": [
+        "injurious"
     ],
     "UW1-IY0-AH0": [
         "dubious",
@@ -10520,6 +14179,35 @@ export default {
         "pluvial",
         "roominess",
         "studious"
+    ],
+    "AA0-UW1-IY0-AH0": [
+        "marsupial",
+        "marsupials"
+    ],
+    "AE2-UW1-IY0-AH0": [
+        "alluvial",
+        "alluvium"
+    ],
+    "AH0-UW1-IY0-AH0": [
+        "vesuvius"
+    ],
+    "EH0-UW1-IY0-AH0": [
+        "neptunium"
+    ],
+    "EH2-UW1-IY0-AH0": [
+        "penurious"
+    ],
+    "ER0-UW1-IY0-AH0": [
+        "herculean",
+        "peruvian",
+        "peruvians"
+    ],
+    "IH0-UW1-IY0-AH0": [
+        "minutia",
+        "minutiae"
+    ],
+    "UW0-UW1-IY0-AH0": [
+        "lugubrious"
     ],
     "IY1-AH0": [
         "aegis",
@@ -10859,6 +14547,50 @@ export default {
         "upheavals",
         "venetian"
     ],
+    "AA2-AH0-IY1-AH0": [
+        "argentina",
+        "coliseum",
+        "colosseum"
+    ],
+    "AE2-AH0-IY1-AH0": [
+        "alameda",
+        "anaesthesia",
+        "athenaeum",
+        "galatea",
+        "galilean",
+        "jacobean",
+        "panacea"
+    ],
+    "AO2-AH0-IY1-AH0": [
+        "mausoleum",
+        "orthopedist",
+        "orthopedists"
+    ],
+    "EH2-AH0-IY1-AH0": [
+        "emphysema",
+        "extralegal",
+        "melanesian",
+        "melanesians",
+        "paralegal",
+        "semolina",
+        "tetrahedral",
+        "tetrahedron"
+    ],
+    "IH0-AH0-IY1-AH0": [
+        "disagreement"
+    ],
+    "IH2-AH0-IY1-AH0": [
+        "disagreements",
+        "hymeneal",
+        "inconvenience",
+        "inconvenienced",
+        "inconvenient",
+        "intravenous"
+    ],
+    "UH2-AH0-IY1-AH0": [
+        "european",
+        "europeans"
+    ],
     "AO0-IY1-AH0": [
         "cornelius",
         "norwegians",
@@ -10887,6 +14619,10 @@ export default {
         "extremists",
         "jemima"
     ],
+    "AA0-EH0-IY1-AH0": [
+        "amelita",
+        "amezquita"
+    ],
     "ER0-IY1-AH0": [
         "arena",
         "arenas",
@@ -10899,6 +14635,27 @@ export default {
         "urea",
         "varietal",
         "verbena"
+    ],
+    "AA0-ER0-IY1-AH0": [
+        "concertina"
+    ],
+    "AA2-ER0-IY1-AH0": [
+        "arboretum",
+        "gonorrhea",
+        "margarita"
+    ],
+    "AE2-ER0-IY1-AH0": [
+        "ballerina",
+        "ballerinas",
+        "galleria"
+    ],
+    "AY2-ER0-IY1-AH0": [
+        "diarrhea",
+        "diarrheas"
+    ],
+    "IY2-ER0-IY1-AH0": [
+        "pizzeria",
+        "pizzerias"
     ],
     "ER2-IY1-AH0": [
         "urethra"
@@ -10922,6 +14679,14 @@ export default {
         "silesia",
         "yeshiva"
     ],
+    "AE2-IH0-IY1-AH0": [
+        "anesthesia"
+    ],
+    "EH2-IH0-IY1-AH0": [
+        "epithelium",
+        "tennessean",
+        "tennesseans"
+    ],
     "IH2-IY1-AH0": [
         "bedizen",
         "illegal",
@@ -10933,12 +14698,20 @@ export default {
         "infrequent",
         "ingenious"
     ],
+    "AA2-IH2-IY1-AH0": [
+        "polynesia",
+        "polynesian"
+    ],
     "IY0-IY1-AH0": [
         "retreated"
     ],
     "IY2-IY1-AH0": [
         "ibiza",
         "preseason"
+    ],
+    "AA2-IY2-IY1-AH0": [
+        "polyhedron",
+        "polyhedrons"
     ],
     "OW0-IY1-AH0": [
         "bonita",
@@ -10949,6 +14722,13 @@ export default {
         "rhodesia",
         "rhodesian",
         "sofia"
+    ],
+    "AY2-OW0-IY1-AH0": [
+        "micronesia"
+    ],
+    "IH2-OW0-IY1-AH0": [
+        "indonesia",
+        "indonesian"
     ],
     "UH0-IY1-AH0": [
         "eureka"
@@ -10963,6 +14743,9 @@ export default {
         "tunisia",
         "tunisian"
     ],
+    "AO1-AH0-IY2-AH0": [
+        "cotyledon"
+    ],
     "AH1-IY2-AH0": [
         "fustian"
     ],
@@ -10975,9 +14758,26 @@ export default {
     "AY1-IY2-AH0": [
         "liveliest"
     ],
+    "AY0-EH1-IY2-AH0": [
+        "librarian",
+        "librarians"
+    ],
+    "OW0-EH1-IY2-AH0": [
+        "ovarian"
+    ],
+    "OY2-EH1-IY2-AH0": [
+        "poinsettia",
+        "poinsettias"
+    ],
+    "AE1-ER0-IY2-AH0": [
+        "masterpieces"
+    ],
     "EY1-IY2-AH0": [
         "cranium",
         "salespeople"
+    ],
+    "UW2-EY1-IY2-AH0": [
+        "cutaneous"
     ],
     "IH1-IY2-AH0": [
         "idiot",
@@ -10985,6 +14785,32 @@ export default {
         "libya",
         "libyans",
         "serial"
+    ],
+    "AA2-IH1-IY2-AH0": [
+        "laryngeal"
+    ],
+    "AE0-IH1-IY2-AH0": [
+        "abyssinia",
+        "abyssinian"
+    ],
+    "AY2-IH1-IY2-AH0": [
+        "liberia",
+        "liberian",
+        "liberians"
+    ],
+    "IH2-IH1-IY2-AH0": [
+        "insidious",
+        "insignia"
+    ],
+    "AE2-IY1-IY2-AH0": [
+        "valkyrie"
+    ],
+    "AH0-IY1-IY2-AH0": [
+        "prometheus",
+        "promethium"
+    ],
+    "IH2-IY1-IY2-AH0": [
+        "immediate"
     ],
     "OW1-IY2-AH0": [
         "opiate",
@@ -11017,6 +14843,10 @@ export default {
     ],
     "IH1-OW0-AH0": [
         "windowless"
+    ],
+    "ER0-IH1-OW0-AH0": [
+        "arizonan",
+        "arizonans"
     ],
     "OW1-OW0-AH0": [
         "oboist"
@@ -11249,6 +15079,9 @@ export default {
         "prognosis",
         "thrombosis"
     ],
+    "IH0-AA2-OW1-AH0": [
+        "hispaniola"
+    ],
     "AE0-OW1-AH0": [
         "ambrosia",
         "ambrosial",
@@ -11292,6 +15125,45 @@ export default {
         "unopened",
         "unspoken"
     ],
+    "AA2-AH0-OW1-AH0": [
+        "carcinoma",
+        "conestoga"
+    ],
+    "AE2-AH0-OW1-AH0": [
+        "acidosis",
+        "anecdotal"
+    ],
+    "AO2-AH0-OW1-AH0": [
+        "gorgonzola"
+    ],
+    "AY2-AH0-OW1-AH0": [
+        "ayatollah",
+        "diagnosis"
+    ],
+    "EH2-AH0-OW1-AH0": [
+        "jeroboam",
+        "melanoma"
+    ],
+    "IH1-AH0-OW1-AH0": [
+        "businesswomen"
+    ],
+    "IH2-AH0-OW1-AH0": [
+        "minnesotan",
+        "minnesotans"
+    ],
+    "IY2-AH0-OW1-AH0": [
+        "hemoglobin",
+        "theologians"
+    ],
+    "OW2-AH0-OW1-AH0": [
+        "locomotion",
+        "oklahoma",
+        "oklahoman",
+        "oklahomans",
+        "protozoa",
+        "protozoan",
+        "protozoans"
+    ],
     "AO0-OW1-AH0": [
         "glaucoma"
     ],
@@ -11307,6 +15179,9 @@ export default {
         "meiosis",
         "psychosis"
     ],
+    "IH2-AY0-OW1-AH0": [
+        "symbiosis"
+    ],
     "AY2-OW1-AH0": [
         "bimodal",
         "iota"
@@ -11317,6 +15192,12 @@ export default {
         "encroachment",
         "enrollment",
         "enrollments"
+    ],
+    "IY0-EH0-OW1-AH0": [
+        "figueroa"
+    ],
+    "AE2-EH2-OW1-AH0": [
+        "asbestosis"
     ],
     "ER0-OW1-AH0": [
         "aroma",
@@ -11331,6 +15212,18 @@ export default {
         "persona",
         "sclerosis",
         "verboten"
+    ],
+    "AA2-ER0-OW1-AH0": [
+        "ponderosa"
+    ],
+    "EH2-ER0-OW1-AH0": [
+        "heterosis"
+    ],
+    "IH2-ER0-OW1-AH0": [
+        "interwoven"
+    ],
+    "UW2-ER0-OW1-AH0": [
+        "supernova"
     ],
     "ER2-OW1-AH0": [
         "pergolas"
@@ -11371,6 +15264,19 @@ export default {
         "mimosa",
         "remotest"
     ],
+    "AA2-IH0-OW1-AH0": [
+        "barcelona"
+    ],
+    "AE2-IH0-OW1-AH0": [
+        "manitoba",
+        "mariposa"
+    ],
+    "EH2-IH0-OW1-AH0": [
+        "arizona"
+    ],
+    "IH2-IH0-OW1-AH0": [
+        "minnesota"
+    ],
     "IH2-OW1-AH0": [
         "ignoble",
         "immotile",
@@ -11385,6 +15291,12 @@ export default {
         "reopened",
         "reopens",
         "violas"
+    ],
+    "AE2-IY0-OW1-AH0": [
+        "gladiolus"
+    ],
+    "EH2-IY0-OW1-AH0": [
+        "carioca"
     ],
     "IY2-OW1-AH0": [
         "violist"
@@ -11402,11 +15314,24 @@ export default {
     "AA1-OW2-AH0": [
         "heartbroken"
     ],
+    "AH0-AA1-OW2-AH0": [
+        "chicagoans"
+    ],
+    "AE1-AH0-OW2-AH0": [
+        "hamiltonian"
+    ],
+    "OW1-AH0-OW2-AH0": [
+        "chromosomal"
+    ],
     "AO1-OW2-AH0": [
         "hormonal"
     ],
     "AW1-OW2-AH0": [
         "housebroken"
+    ],
+    "OW2-AY1-OW2-AH0": [
+        "ohioan",
+        "ohioans"
     ],
     "EH1-OW2-AH0": [
         "exponent",
@@ -11414,6 +15339,9 @@ export default {
     ],
     "IH1-OW2-AH0": [
         "primroses"
+    ],
+    "AY1-OW0-OW2-AH0": [
+        "psychosocial"
     ],
     "OW1-OW2-AH0": [
         "soloist",
@@ -11464,6 +15392,18 @@ export default {
         "avoidance",
         "colloidal"
     ],
+    "EH2-AH0-OY1-AH0": [
+        "paranoia"
+    ],
+    "IH0-AH0-OY1-AH0": [
+        "disappointments"
+    ],
+    "IH2-AH0-OY1-AH0": [
+        "disappointment"
+    ],
+    "IY2-AH0-OY1-AH0": [
+        "reappointment"
+    ],
     "EH0-OY1-AH0": [
         "clairvoyance",
         "clairvoyant",
@@ -11475,6 +15415,12 @@ export default {
         "disloyal",
         "sequoia",
         "sequoias"
+    ],
+    "AH2-IH0-OY1-AH0": [
+        "unemployment"
+    ],
+    "IY0-IH0-OY1-AH0": [
+        "reemployment"
     ],
     "IH2-OY1-AH0": [
         "sigmoidal"
@@ -11567,6 +15513,12 @@ export default {
         "datura",
         "mezuzah"
     ],
+    "IH2-AH0-UH1-AH0": [
+        "intramural"
+    ],
+    "IY2-AH0-UH1-AH0": [
+        "reassurance"
+    ],
     "IH2-UH1-AH0": [
         "ebullience",
         "insurance"
@@ -11578,11 +15530,27 @@ export default {
         "spatula",
         "spatulas"
     ],
+    "AA1-AH0-UH2-AH0": [
+        "congresswoman"
+    ],
+    "AW1-AH0-UH2-AH0": [
+        "councilwoman"
+    ],
+    "OW1-AH0-UH2-AH0": [
+        "noblewoman"
+    ],
     "EH1-UH2-AH0": [
         "chairwoman"
     ],
     "EY1-UH2-AH0": [
         "saleswoman"
+    ],
+    "IH1-IH0-UH2-AH0": [
+        "businesswoman",
+        "englishwoman"
+    ],
+    "AH0-IY1-UH2-AH0": [
+        "policewoman"
     ],
     "OW1-UH2-AH0": [
         "spokeswoman"
@@ -11591,6 +15559,9 @@ export default {
         "arduous",
         "confluence",
         "mongooses"
+    ],
+    "IH2-AA1-UW0-AH0": [
+        "innocuous"
     ],
     "AE1-UW0-AH0": [
         "affluence",
@@ -11607,6 +15578,15 @@ export default {
         "vacuous",
         "valueless"
     ],
+    "AA0-AE1-UW0-AH0": [
+        "gargantuan"
+    ],
+    "AH0-AE1-UW0-AH0": [
+        "contractual"
+    ],
+    "AY0-AE1-UW0-AH0": [
+        "biannual"
+    ],
     "AH1-UW0-AH0": [
         "punctual"
     ],
@@ -11614,11 +15594,38 @@ export default {
         "congruence",
         "forewoman"
     ],
+    "IH2-AO1-UW0-AH0": [
+        "incongruous"
+    ],
     "EH1-UW0-AH0": [
         "effluence",
         "effluent",
         "sexual",
         "strenuous"
+    ],
+    "AE0-EH1-UW0-AH0": [
+        "transsexual",
+        "transsexuals"
+    ],
+    "AH0-EH1-UW0-AH0": [
+        "conceptual",
+        "contemptuous"
+    ],
+    "AY2-EH1-UW0-AH0": [
+        "bisexual",
+        "bisexuals"
+    ],
+    "EH2-EH1-UW0-AH0": [
+        "tempestuous"
+    ],
+    "ER0-EH1-UW0-AH0": [
+        "perpetual"
+    ],
+    "EY0-EH1-UW0-AH0": [
+        "asexual"
+    ],
+    "IH2-EH1-UW0-AH0": [
+        "ingenuous"
     ],
     "ER1-UW0-AH0": [
         "virtual",
@@ -11631,6 +15638,27 @@ export default {
         "issueless",
         "ritual",
         "rituals"
+    ],
+    "AE0-IH1-UW0-AH0": [
+        "ambiguous"
+    ],
+    "AH0-IH1-UW0-AH0": [
+        "conspicuous",
+        "constituent",
+        "constituents",
+        "contiguous",
+        "continual",
+        "continuance",
+        "continuous",
+        "continuum",
+        "habitual"
+    ],
+    "IH0-IH1-UW0-AH0": [
+        "residual",
+        "residuals"
+    ],
+    "IH2-IH1-UW0-AH0": [
+        "deciduous"
     ],
     "UH1-UW0-AH0": [
         "purulent"
@@ -11875,6 +15903,49 @@ export default {
         "unproven",
         "untruthful"
     ],
+    "AA2-AH0-UW1-AH0": [
+        "constitution",
+        "contribution",
+        "contributions",
+        "prosecution",
+        "prosecutions",
+        "prostitution"
+    ],
+    "AE2-AH0-UW1-AH0": [
+        "absolution",
+        "chattanooga",
+        "hallelujah",
+        "massachusetts"
+    ],
+    "EH2-AH0-UW1-AH0": [
+        "barracuda",
+        "devolution",
+        "elocution",
+        "execution",
+        "executions",
+        "resolution",
+        "resolutions",
+        "retribution",
+        "revolution",
+        "revolutions"
+    ],
+    "ER2-AH0-UW1-AH0": [
+        "persecution",
+        "persecutions"
+    ],
+    "IH0-AH0-UW1-AH0": [
+        "disapproval"
+    ],
+    "IH2-AH0-UW1-AH0": [
+        "diminution",
+        "dissolution",
+        "distribution",
+        "distributions",
+        "lilliputian"
+    ],
+    "UH2-AH0-UW1-AH0": [
+        "jurisprudence"
+    ],
     "AH2-UW1-AH0": [
         "subhuman"
     ],
@@ -11892,6 +15963,9 @@ export default {
         "perfusion",
         "perusal",
         "pursuant"
+    ],
+    "UW2-ER0-UW1-AH0": [
+        "superhuman"
     ],
     "IH0-UW1-AH0": [
         "beluga",
@@ -11914,6 +15988,26 @@ export default {
         "renewals",
         "seclusion",
         "vicuna"
+    ],
+    "AA2-IH0-UW1-AH0": [
+        "constitutions",
+        "montezuma"
+    ],
+    "AE2-IH0-UW1-AH0": [
+        "attribution"
+    ],
+    "AH2-IH0-UW1-AH0": [
+        "substitution",
+        "substitutions"
+    ],
+    "EH2-IH0-UW1-AH0": [
+        "restitution"
+    ],
+    "IH2-IH0-UW1-AH0": [
+        "disillusion",
+        "disillusioned",
+        "institution",
+        "institutions"
     ],
     "IH2-UW1-AH0": [
         "illumined",
@@ -11947,6 +16041,20 @@ export default {
         "chasuble",
         "joshua"
     ],
+    "AA1-AH0-UW2-AH0": [
+        "constituted",
+        "convoluted",
+        "convolution"
+    ],
+    "AE1-AH0-UW2-AH0": [
+        "absoluteness"
+    ],
+    "EH1-AH0-UW2-AH0": [
+        "destitution"
+    ],
+    "UW2-AH1-UW2-AH0": [
+        "tumultuous"
+    ],
     "AO1-UW2-AH0": [
         "torturous"
     ],
@@ -11955,6 +16063,16 @@ export default {
     ],
     "EH1-UW2-AH0": [
         "textual"
+    ],
+    "AA2-EH1-UW2-AH0": [
+        "contextual"
+    ],
+    "EH1-IH0-UW2-AH0": [
+        "centrifugal"
+    ],
+    "IH1-IH0-UW2-AH0": [
+        "spiritual",
+        "spirituals"
     ],
     "IY1-UW2-AH0": [
         "teaspoonful"
@@ -12682,6 +16800,9 @@ export default {
         "shotguns",
         "stardust",
         "washtub"
+    ],
+    "AA2-ER0-AA1-AH2": [
+        "maharaja"
     ],
     "AE1-AH2": [
         "adjunct",
@@ -13902,6 +18023,9 @@ export default {
         "salvador",
         "travelogue"
     ],
+    "AE0-AE1-AH0-AO2": [
+        "saskatchewan"
+    ],
     "AO1-AH0-AO2": [
         "baltimore",
         "chloroform",
@@ -13923,6 +18047,9 @@ export default {
         "ethanol",
         "pentecost"
     ],
+    "AY2-EH1-AH0-AO2": [
+        "triceratops"
+    ],
     "EY1-AH0-AO2": [
         "tablecloth",
         "tablecloths"
@@ -13935,6 +18062,9 @@ export default {
         "synagogue",
         "synagogues",
         "wichita"
+    ],
+    "UW1-IY0-AH0-AO2": [
+        "cuneiform"
     ],
     "IY1-AH0-AO2": [
         "stevedore",
@@ -14048,6 +18178,10 @@ export default {
     ],
     "AE1-ER0-AO2": [
         "plasterboard"
+    ],
+    "IY0-AE1-ER0-AO2": [
+        "neanderthal",
+        "neanderthals"
     ],
     "AH1-ER0-AO2": [
         "coverall",
@@ -14904,6 +19038,15 @@ export default {
     "AH1-AH0-AY0": [
         "russified"
     ],
+    "IH0-AH1-AH0-AY0": [
+        "emulsified",
+        "emulsifies",
+        "emulsify"
+    ],
+    "IH2-AO1-AH0-AY0": [
+        "immortalize",
+        "immortalized"
+    ],
     "EH1-AH0-AY0": [
         "rarefied",
         "rarefy"
@@ -14913,12 +19056,19 @@ export default {
         "victimized",
         "vilified"
     ],
+    "AH0-IH1-AH0-AY0": [
+        "uncivilized"
+    ],
     "IY2-AH0-AY0": [
         "reapply"
     ],
     "UH1-AH0-AY0": [
         "pluralize",
         "pluralized"
+    ],
+    "IH0-UW1-AH0-AY0": [
+        "dehumanize",
+        "dehumanized"
     ],
     "AH1-AY0": [
         "fungi",
@@ -14956,6 +19106,9 @@ export default {
     "AE1-ER0-AY0": [
         "glamorized"
     ],
+    "EH1-AH0-ER0-AY0": [
+        "secularized"
+    ],
     "AO1-ER0-AY0": [
         "cauterize",
         "cauterized"
@@ -14969,6 +19122,12 @@ export default {
     ],
     "EY1-AY0": [
         "magi"
+    ],
+    "OW0-EH1-IH0-AY0": [
+        "rodenticide"
+    ],
+    "IY2-OW0-IH1-AY0": [
+        "geosyncline"
     ],
     "IY1-AY0": [
         "levi",
@@ -14985,6 +19144,9 @@ export default {
     ],
     "AH0-UH1-AY0": [
         "gesundheit"
+    ],
+    "IY0-AO1-UW2-AY0": [
+        "reoccupy"
     ],
     "AY1": [
         "ayes",
@@ -15412,6 +19574,10 @@ export default {
         "bonsai",
         "marseille"
     ],
+    "IH0-EH2-AA0-AY1": [
+        "electrolyte",
+        "electrolytes"
+    ],
     "AE0-AY1": [
         "admire",
         "admires",
@@ -15527,6 +19693,12 @@ export default {
         "subdivide",
         "unconfined"
     ],
+    "OW2-ER0-AH0-AY1": [
+        "oversubscribe",
+        "oversubscribed",
+        "oversupplied",
+        "oversupply"
+    ],
     "ER2-AH0-AY1": [
         "circumscribe",
         "circumscribed"
@@ -15578,6 +19750,10 @@ export default {
         "enshrined",
         "entwine",
         "entwined"
+    ],
+    "OW2-ER0-EH0-AY1": [
+        "overexcite",
+        "overexcites"
     ],
     "EH1-AY1": [
         "thereby",
@@ -15870,11 +20046,18 @@ export default {
     "AH0-AE1-AY2": [
         "aggrandize"
     ],
+    "AA2-AH0-AE1-AY2": [
+        "propagandize"
+    ],
     "EH0-AE1-AY2": [
         "enfranchised"
     ],
     "IH0-AE1-AY2": [
         "enfranchise"
+    ],
+    "IH0-IH0-AE1-AY2": [
+        "disenfranchise",
+        "disenfranchised"
     ],
     "ER1-AE2-AY2": [
         "workmanlike"
@@ -15918,6 +20101,39 @@ export default {
         "qualified",
         "qualifies",
         "qualify"
+    ],
+    "AH0-AA1-AH0-AY2": [
+        "apologize",
+        "apologized",
+        "monopolize",
+        "monopolized",
+        "unoccupied"
+    ],
+    "AY0-AA1-AH0-AY2": [
+        "hypothesize",
+        "hypothesized"
+    ],
+    "ER0-AA1-AH0-AY2": [
+        "personified",
+        "personifies",
+        "personify"
+    ],
+    "IH0-AA1-AH0-AY2": [
+        "democratize",
+        "democratized",
+        "detoxify",
+        "disqualified",
+        "disqualifies",
+        "disqualify"
+    ],
+    "IY0-AA1-AH0-AY2": [
+        "preoccupied",
+        "preoccupies",
+        "preoccupy"
+    ],
+    "OW0-AA1-AH0-AY2": [
+        "homogenize",
+        "homogenized"
     ],
     "AE1-AH0-AY2": [
         "acolyte",
@@ -16002,8 +20218,67 @@ export default {
         "vandalize",
         "vandalized"
     ],
+    "AE0-AE1-AH0-AY2": [
+        "antagonize",
+        "antagonized"
+    ],
+    "AH0-AE1-AH0-AY2": [
+        "metabolite",
+        "metabolites",
+        "metabolize",
+        "metastasize",
+        "metastasized"
+    ],
+    "ER0-AE1-AH0-AY2": [
+        "hermaphrodite"
+    ],
+    "IH0-AE1-AH0-AY2": [
+        "declassified",
+        "declassify",
+        "dissatisfied",
+        "dissatisfy"
+    ],
+    "IH2-AE1-AH0-AY2": [
+        "infanticide",
+        "infanticides"
+    ],
+    "IY0-AE1-AH0-AY2": [
+        "beatified",
+        "beatify",
+        "reanalyze",
+        "reanalyzed",
+        "reclassified"
+    ],
+    "OW0-AE1-AH0-AY2": [
+        "romanticize",
+        "romanticized"
+    ],
     "AE2-AH0-AY2": [
         "gasify"
+    ],
+    "AA1-AH0-AH0-AY2": [
+        "proselytize",
+        "proselytized"
+    ],
+    "AE1-AH0-AH0-AY2": [
+        "alphabetize",
+        "alphabetized",
+        "cannibalize",
+        "capitalize",
+        "rationalize",
+        "rationalized"
+    ],
+    "EH1-AH0-AH0-AY2": [
+        "caramelize",
+        "caramelized"
+    ],
+    "ER1-AH0-AH0-AY2": [
+        "personalize",
+        "personalized"
+    ],
+    "IH1-AH0-AH0-AY2": [
+        "fictionalize",
+        "fictionalized"
     ],
     "AH1-AH0-AY2": [
         "customize",
@@ -16025,6 +20300,9 @@ export default {
         "nullifies",
         "nullify",
         "stultify"
+    ],
+    "AH0-AH1-AH0-AY2": [
+        "unjustified"
     ],
     "AO1-AH0-AY2": [
         "falsified",
@@ -16049,6 +20327,20 @@ export default {
         "porcupines",
         "traumatize",
         "traumatized"
+    ],
+    "AH0-AO1-AH0-AY2": [
+        "unorganized",
+        "unsportsmanlike"
+    ],
+    "IH0-AO1-AH0-AY2": [
+        "demoralize",
+        "demoralized",
+        "disorganize",
+        "disorganized"
+    ],
+    "IY0-AO1-AH0-AY2": [
+        "reorganize",
+        "reorganized"
     ],
     "AW1-AH0-AY2": [
         "mountainside",
@@ -16077,6 +20369,10 @@ export default {
         "lionize",
         "lionized",
         "privatized"
+    ],
+    "IY0-AY1-AH0-AY2": [
+        "revitalize",
+        "revitalized"
     ],
     "EH1-AH0-AY2": [
         "aerodyne",
@@ -16156,6 +20452,56 @@ export default {
         "verifies",
         "verify"
     ],
+    "AH0-EH1-AH0-AY2": [
+        "conceptualize",
+        "statesmanlike",
+        "unrecognized",
+        "unreconciled",
+        "unspecified"
+    ],
+    "AY0-EH1-AH0-AY2": [
+        "identified",
+        "identifies",
+        "identify"
+    ],
+    "IH0-EH1-AH0-AY2": [
+        "decentralize",
+        "decentralized",
+        "desensitize",
+        "desensitized",
+        "electrified",
+        "electrifies",
+        "electrify",
+        "exemplified",
+        "exemplifies",
+        "exemplify",
+        "intensified",
+        "intensifies",
+        "intensify"
+    ],
+    "IH2-EH1-AH0-AY2": [
+        "indemnified",
+        "indemnify",
+        "insecticide",
+        "insecticides"
+    ],
+    "IY0-EH1-AH0-AY2": [
+        "deemphasize",
+        "reemphasize"
+    ],
+    "AE1-ER0-AH0-AY2": [
+        "naturalize",
+        "naturalized"
+    ],
+    "EH1-ER0-AH0-AY2": [
+        "federalize",
+        "federalized",
+        "generalize",
+        "generalized"
+    ],
+    "IH1-ER0-AH0-AY2": [
+        "mineralize"
+    ],
     "ER1-AH0-AY2": [
         "certified",
         "certifies",
@@ -16175,11 +20521,36 @@ export default {
         "urbanized",
         "verbalize"
     ],
+    "AH0-ER1-AH0-AY2": [
+        "commercialize",
+        "commercialized",
+        "suburbanite",
+        "suburbanites"
+    ],
+    "IH2-ER1-AH0-AY2": [
+        "internalize",
+        "internalized"
+    ],
+    "IY0-ER1-AH0-AY2": [
+        "decertified"
+    ],
+    "IH1-ER2-AH0-AY2": [
+        "liberalize",
+        "liberalized"
+    ],
     "EY1-AH0-AY2": [
         "canaanite",
         "edelweiss",
         "stabilize",
         "stabilized"
+    ],
+    "AA1-IH0-AH0-AY2": [
+        "hospitalized"
+    ],
+    "AE1-IH0-AH0-AY2": [
+        "capitalized",
+        "radicalize",
+        "radicalized"
     ],
     "IH1-AH0-AY2": [
         "christianize",
@@ -16238,6 +20609,29 @@ export default {
         "visualize",
         "visualized"
     ],
+    "AH0-IH1-AH0-AY2": [
+        "acidified",
+        "acidifies",
+        "acidify",
+        "legitimize",
+        "solidified",
+        "solidifies",
+        "solidify",
+        "soliloquize",
+        "thalidomide"
+    ],
+    "IH0-IH1-AH0-AY2": [
+        "epitomize",
+        "epitomized",
+        "legitimized"
+    ],
+    "IH2-IH1-AH0-AY2": [
+        "initialize",
+        "initialized"
+    ],
+    "AO1-IH2-AH0-AY2": [
+        "hospitalize"
+    ],
     "IY1-AH0-AY2": [
         "deified",
         "deify",
@@ -16256,6 +20650,19 @@ export default {
         "realise",
         "realize",
         "realized"
+    ],
+    "AE0-IY1-AH0-AY2": [
+        "alveoli"
+    ],
+    "AH0-IY1-AH0-AY2": [
+        "unrealized"
+    ],
+    "AY0-IY1-AH0-AY2": [
+        "idealized"
+    ],
+    "IH1-IY2-AH0-AY2": [
+        "serialize",
+        "serialized"
     ],
     "OW1-AH0-AY2": [
         "codifies",
@@ -16280,10 +20687,21 @@ export default {
         "socialized",
         "vocalize"
     ],
+    "IH0-OW1-AH0-AY2": [
+        "demobilize",
+        "demobilized"
+    ],
+    "IH2-OW1-AH0-AY2": [
+        "immobilize",
+        "immobilized"
+    ],
     "UH1-AH0-AY2": [
         "purified",
         "purify",
         "womanize"
+    ],
+    "AE1-UW0-AH0-AY2": [
+        "annualized"
     ],
     "UW1-AH0-AY2": [
         "brutalize",
@@ -16308,6 +20726,17 @@ export default {
         "unionized",
         "utilize",
         "utilized"
+    ],
+    "AH0-UW1-AH0-AY2": [
+        "aluminize",
+        "aluminized"
+    ],
+    "IY0-UW1-AH0-AY2": [
+        "reunified",
+        "reunify"
+    ],
+    "AE1-UW2-AH0-AY2": [
+        "actualize"
     ],
     "AH1-AY2": [
         "bloodline",
@@ -16336,6 +20765,9 @@ export default {
     ],
     "AH0-AH1-AY2": [
         "alumni"
+    ],
+    "IY1-IY0-AO0-AY2": [
+        "meteorite"
     ],
     "AO1-AY2": [
         "allspice",
@@ -16478,6 +20910,28 @@ export default {
         "standardize",
         "standardized"
     ],
+    "AH0-AE1-ER0-AY2": [
+        "unamortized"
+    ],
+    "AA1-AH0-ER0-AY2": [
+        "popularize",
+        "popularized"
+    ],
+    "AE1-AH0-ER0-AY2": [
+        "categorize",
+        "categorized"
+    ],
+    "EH1-AH0-ER0-AY2": [
+        "characterize",
+        "characterized"
+    ],
+    "ER1-AH0-ER0-AY2": [
+        "circularize"
+    ],
+    "IH1-AH0-ER0-AY2": [
+        "militarize",
+        "militarized"
+    ],
     "AH1-ER0-AY2": [
         "butterflies",
         "butterfly",
@@ -16507,6 +20961,9 @@ export default {
         "borderline",
         "watertight"
     ],
+    "AH0-AO1-ER0-AY2": [
+        "unauthorized"
+    ],
     "AY1-ER0-AY2": [
         "fireflies",
         "firefly",
@@ -16533,6 +20990,9 @@ export default {
         "westernize",
         "westernized"
     ],
+    "AH0-EH1-ER0-AY2": [
+        "unexercised"
+    ],
     "ER1-ER0-AY2": [
         "burglarize",
         "burglarized"
@@ -16543,6 +21003,18 @@ export default {
         "vaporize",
         "vaporized"
     ],
+    "AH0-EY1-ER0-AY2": [
+        "containerize",
+        "containerized"
+    ],
+    "AA1-IH0-ER0-AY2": [
+        "polymerize",
+        "polymerized"
+    ],
+    "IH1-IH0-ER0-AY2": [
+        "miniaturize",
+        "miniaturized"
+    ],
     "IH1-ER0-AY2": [
         "dinnertime",
         "riverside",
@@ -16550,6 +21022,14 @@ export default {
         "winterize",
         "winterized",
         "wintertime"
+    ],
+    "AH0-IH1-ER0-AY2": [
+        "familiarize",
+        "familiarized"
+    ],
+    "AY0-IH1-ER0-AY2": [
+        "triglyceride",
+        "triglycerides"
     ],
     "IY1-ER0-AY2": [
         "theorize",
@@ -16578,6 +21058,11 @@ export default {
     "UW1-ER0-AY2": [
         "supervise",
         "supervised"
+    ],
+    "AH0-UW1-ER0-AY2": [
+        "computerize",
+        "computerized",
+        "unsupervised"
     ],
     "ER1-AY2": [
         "birthright",
@@ -16630,6 +21115,9 @@ export default {
         "quantified",
         "quantify"
     ],
+    "AH0-AA1-IH0-AY2": [
+        "unqualified"
+    ],
     "AE1-IH0-AY2": [
         "actinide",
         "andesite",
@@ -16640,6 +21128,13 @@ export default {
         "sanitize",
         "sanitized",
         "satisfies"
+    ],
+    "AH0-AE1-IH0-AY2": [
+        "unclassified",
+        "unsatisfied"
+    ],
+    "IY0-AE1-IH0-AY2": [
+        "reclassify"
     ],
     "AH1-IH0-AY2": [
         "mummified",
@@ -16656,6 +21151,11 @@ export default {
         "expedite",
         "selenite"
     ],
+    "AH0-EH1-IH0-AY2": [
+        "collectivize",
+        "collectivized",
+        "unverified"
+    ],
     "ER1-IH0-AY2": [
         "termini"
     ],
@@ -16664,6 +21164,11 @@ export default {
         "criticize",
         "synthesized",
         "vilify"
+    ],
+    "AH0-IH1-IH0-AY2": [
+        "politicize",
+        "politicized",
+        "undignified"
     ],
     "UW1-IH0-AY2": [
         "beautify"
@@ -16828,6 +21333,9 @@ export default {
         "abject",
         "accents"
     ],
+    "AH2-ER0-AE1-EH0": [
+        "underclassmen"
+    ],
     "AA1-AH0-EH0": [
         "compliment",
         "compliments"
@@ -16835,6 +21343,9 @@ export default {
     "AE1-AH0-EH0": [
         "camembert",
         "thankfulness"
+    ],
+    "AE1-ER0-AH0-EH0": [
+        "cameramen"
     ],
     "ER1-AH0-EH0": [
         "servicemen"
@@ -16880,6 +21391,9 @@ export default {
         "vestment",
         "vestments"
     ],
+    "IH0-IH1-ER0-EH0": [
+        "disfigurement"
+    ],
     "ER1-EH0": [
         "percept"
     ],
@@ -16898,11 +21412,17 @@ export default {
     "AA1-IH0-EH0": [
         "hominem"
     ],
+    "AE0-AA1-IH0-EH0": [
+        "admonishment"
+    ],
     "AO1-IH0-EH0": [
         "forewomen"
     ],
     "IH1-IH0-EH0": [
         "infidels"
+    ],
+    "IH2-UW1-IH0-EH0": [
+        "intrusiveness"
     ],
     "IH1-EH0": [
         "index",
@@ -16918,6 +21438,12 @@ export default {
     ],
     "EH1-IH2-EH0": [
         "chairwomen"
+    ],
+    "AH0-IY1-IH2-EH0": [
+        "policewomen"
+    ],
+    "IY0-AO1-IY0-EH0": [
+        "reorient"
     ],
     "IY1-EH0": [
         "freemen",
@@ -17669,6 +22195,9 @@ export default {
         "malcontent",
         "malcontents"
     ],
+    "AE2-AH0-AH0-EH1": [
+        "mademoiselle"
+    ],
     "AH2-AH0-EH1": [
         "nonetheless",
         "suffragette",
@@ -17697,6 +22226,21 @@ export default {
         "questionnaires",
         "recommend",
         "recommends"
+    ],
+    "AH0-EH2-AH0-EH1": [
+        "concessionaire"
+    ],
+    "IH0-EH2-AH0-EH1": [
+        "misrepresent"
+    ],
+    "EH2-ER0-AH0-EH1": [
+        "nevertheless"
+    ],
+    "IH2-ER0-AH0-EH1": [
+        "interconnect"
+    ],
+    "OW2-ER0-AH0-EH1": [
+        "overprotect"
     ],
     "ER2-AH0-EH1": [
         "circumvent",
@@ -17989,6 +22533,10 @@ export default {
         "represent",
         "represents"
     ],
+    "OW2-ER0-IH0-EH1": [
+        "overextend",
+        "overextends"
+    ],
     "IH0-IH0-EH1": [
         "disinfect",
         "misdirect"
@@ -18086,6 +22634,13 @@ export default {
     ],
     "AH2-IY0-EH1": [
         "unprepared"
+    ],
+    "AH0-IH2-IY0-EH1": [
+        "materiel",
+        "materiels"
+    ],
+    "AH0-IY2-IY0-EH1": [
+        "comedienne"
     ],
     "IY1-EH1": [
         "recheck",
@@ -18235,6 +22790,10 @@ export default {
         "manifest",
         "manifests"
     ],
+    "AH0-AE1-AH0-EH2": [
+        "adaptaplex",
+        "amagansett"
+    ],
     "AO1-AH0-EH2": [
         "awesomeness"
     ],
@@ -18261,6 +22820,13 @@ export default {
         "parapet",
         "recompense",
         "retrospect"
+    ],
+    "AH0-EH1-AH0-EH2": [
+        "unparalleled"
+    ],
+    "AE1-ER0-AH0-EH2": [
+        "aftereffect",
+        "aftereffects"
     ],
     "ER1-AH0-EH2": [
         "circumspect",
@@ -18360,6 +22926,9 @@ export default {
         "sidesteps",
         "triceps",
         "typeset"
+    ],
+    "EH2-IY1-EH0-EH2": [
+        "melchizedek"
     ],
     "EH1-EH2": [
         "airfare",
@@ -18510,6 +23079,9 @@ export default {
     "AO1-IY0-EH2": [
         "orient"
     ],
+    "IH0-AO1-IY0-EH2": [
+        "disorient"
+    ],
     "EH1-IY0-EH2": [
         "heavyset"
     ],
@@ -18546,6 +23118,9 @@ export default {
     "IH1-OW0-EH2": [
         "discotheque",
         "discotheques"
+    ],
+    "IH1-IY0-OW0-EH2": [
+        "videotext"
     ],
     "OW1-EH2": [
         "coeds",
@@ -18885,6 +23460,9 @@ export default {
         "massager",
         "massagers"
     ],
+    "AH2-AH0-AA1-ER0": [
+        "ultramodern"
+    ],
     "AO2-AA1-ER0": [
         "saltwater"
     ],
@@ -18903,6 +23481,9 @@ export default {
         "revolver",
         "revolvers"
     ],
+    "IH2-IH0-AA1-ER0": [
+        "imprimatur"
+    ],
     "IH2-AA1-ER0": [
         "improper"
     ],
@@ -18918,6 +23499,9 @@ export default {
         "grasshopper",
         "grasshoppers"
     ],
+    "EH1-AH0-AA2-ER0": [
+        "teleprompter"
+    ],
     "AO1-AA2-ER0": [
         "forefather",
         "forefathers",
@@ -18931,6 +23515,19 @@ export default {
         "sharecroppers",
         "stepfather"
     ],
+    "IH1-ER0-AA2-ER0": [
+        "kindergartner",
+        "kindergartners",
+        "knickerbockers"
+    ],
+    "AA1-IH0-AA2-ER0": [
+        "arbitrager",
+        "arbitragers"
+    ],
+    "EH1-IH0-AA2-ER0": [
+        "helicopter",
+        "helicopters"
+    ],
     "IH1-AA2-ER0": [
         "dishwasher",
         "dishwashers"
@@ -18939,6 +23536,9 @@ export default {
         "leafhopper",
         "leafhoppers"
     ],
+    "UW1-OW0-AA2-ER0": [
+        "eurodollars"
+    ],
     "OW1-AA2-ER0": [
         "copartner",
         "copartners"
@@ -18946,6 +23546,9 @@ export default {
     "UH1-AA2-ER0": [
         "woodcarver",
         "woodcarvers"
+    ],
+    "AH0-AA1-AE0-ER0": [
+        "subcontractors"
     ],
     "AY1-AE0-ER0": [
         "kayaker",
@@ -19366,11 +23969,23 @@ export default {
         "substandard",
         "unhampered"
     ],
+    "AE2-AH0-AE1-ER0": [
+        "alexander",
+        "madagascar",
+        "manufacture",
+        "manufactured",
+        "manufactures",
+        "salamander",
+        "salamanders"
+    ],
     "AH1-AE1-ER0": [
         "subchapter"
     ],
     "AH2-AE1-ER0": [
         "unanswered"
+    ],
+    "AE0-AY0-AE1-ER0": [
+        "antimatter"
     ],
     "EH0-AE1-ER0": [
         "enamor",
@@ -19408,9 +24023,21 @@ export default {
         "recapture",
         "recaptured"
     ],
+    "AO2-IY0-AE1-ER0": [
+        "coriander"
+    ],
+    "EH2-IY0-AE1-ER0": [
+        "gerrymandered"
+    ],
+    "AY2-OW0-AE1-ER0": [
+        "biohazard"
+    ],
     "AA1-AE2-ER0": [
         "contractor",
         "contractors"
+    ],
+    "AH0-AA1-AE2-ER0": [
+        "subcontractor"
     ],
     "AE1-AE2-ER0": [
         "backpacker",
@@ -19421,6 +24048,30 @@ export default {
         "sandbagger",
         "sandbaggers",
         "taskmaster"
+    ],
+    "AA1-AH0-AE2-ER0": [
+        "carpetbagger",
+        "carpetbaggers"
+    ],
+    "AE1-AH0-AE2-ER0": [
+        "alabaster"
+    ],
+    "AH1-AH0-AE2-ER0": [
+        "subcommander",
+        "subcommanders"
+    ],
+    "AY1-AH0-AE2-ER0": [
+        "chiropractor",
+        "chiropractors"
+    ],
+    "EH1-AH0-AE2-ER0": [
+        "benefactor",
+        "benefactors",
+        "necromancer"
+    ],
+    "ER1-AH0-AE2-ER0": [
+        "burgomaster",
+        "burgomasters"
     ],
     "AH1-AE2-ER0": [
         "nutcracker",
@@ -19455,6 +24106,19 @@ export default {
         "stepladder",
         "stepladders"
     ],
+    "AA1-ER0-AE2-ER0": [
+        "concertmaster"
+    ],
+    "AO1-ER0-AE2-ER0": [
+        "quartermaster"
+    ],
+    "AY1-ER0-AE2-ER0": [
+        "firecracker",
+        "firecrackers"
+    ],
+    "UW1-ER0-AE2-ER0": [
+        "supertanker"
+    ],
     "EY1-AE2-ER0": [
         "mainlander",
         "mainlanders"
@@ -19465,6 +24129,17 @@ export default {
         "kidnapper",
         "kidnappers",
         "ringmaster"
+    ],
+    "AE1-IY0-AE2-ER0": [
+        "handicapper",
+        "handicappers"
+    ],
+    "EH1-IY0-AE2-ER0": [
+        "gerrymander",
+        "gerrymanders"
+    ],
+    "OW1-IY0-AE2-ER0": [
+        "oleander"
     ],
     "OW1-AE2-ER0": [
         "programmer",
@@ -19516,6 +24191,51 @@ export default {
         "polymer",
         "popular"
     ],
+    "AH0-AA1-AH0-ER0": [
+        "astrologer",
+        "astrologers",
+        "astronomer",
+        "astronomers",
+        "binocular",
+        "binoculars",
+        "philosopher",
+        "philosophers",
+        "photographer",
+        "photographers"
+    ],
+    "AH2-AA1-AH0-ER0": [
+        "unpopular"
+    ],
+    "AO2-AA1-AH0-ER0": [
+        "pornographer"
+    ],
+    "AY0-AA1-AH0-ER0": [
+        "biographer",
+        "biographers",
+        "hydrometer",
+        "hygrometer",
+        "micrometer",
+        "micrometers"
+    ],
+    "EH0-AA1-AH0-ER0": [
+        "spectrometer"
+    ],
+    "ER0-AA1-AH0-ER0": [
+        "thermometer",
+        "thermometers"
+    ],
+    "IH0-AA1-AH0-ER0": [
+        "demographer",
+        "demographers"
+    ],
+    "IY0-AA1-AH0-ER0": [
+        "geographer",
+        "speedometer"
+    ],
+    "OW2-AA1-AH0-ER0": [
+        "odometer",
+        "odometers"
+    ],
     "AA2-AH0-ER0": [
         "marketers"
     ],
@@ -19561,6 +24281,41 @@ export default {
         "waggoner",
         "wagoner"
     ],
+    "AE0-AE1-AH0-ER0": [
+        "ambassador",
+        "ambassadors"
+    ],
+    "AH0-AE1-AH0-ER0": [
+        "capacitor",
+        "capacitors"
+    ],
+    "AY0-AE1-AH0-ER0": [
+        "diameter",
+        "triangular"
+    ],
+    "EH0-AE1-AH0-ER0": [
+        "rectangular",
+        "spectacular"
+    ],
+    "EH2-AE1-AH0-ER0": [
+        "excalibur"
+    ],
+    "ER0-AE1-AH0-ER0": [
+        "parameter",
+        "parameters",
+        "vernacular"
+    ],
+    "IH0-AE1-AH0-ER0": [
+        "elastomer",
+        "elastomers",
+        "examiner"
+    ],
+    "AH1-AH0-AH0-ER0": [
+        "musculature"
+    ],
+    "EH1-AH0-AH0-ER0": [
+        "caricature"
+    ],
     "AH1-AH0-ER0": [
         "customer",
         "customers",
@@ -19568,6 +24323,15 @@ export default {
         "londoners",
         "muscular",
         "trumpeter"
+    ],
+    "AH0-AH1-AH0-ER0": [
+        "avuncular"
+    ],
+    "EH0-AH1-AH0-ER0": [
+        "stenographer"
+    ],
+    "IH0-AH1-AH0-ER0": [
+        "discoverers"
     ],
     "AO1-AH0-ER0": [
         "coroner",
@@ -19605,6 +24369,10 @@ export default {
         "rioter",
         "rioters"
     ],
+    "AH0-AY1-AH0-ER0": [
+        "proprietor",
+        "proprietors"
+    ],
     "EH1-AH0-ER0": [
         "bessemer",
         "cellular",
@@ -19637,6 +24405,30 @@ export default {
         "temperature",
         "temperatures"
     ],
+    "AH0-EH1-AH0-ER0": [
+        "competitor",
+        "competitors",
+        "confectioner",
+        "confectioners",
+        "molecular"
+    ],
+    "IH0-EH1-AH0-ER0": [
+        "developer",
+        "developers",
+        "executor",
+        "executors",
+        "expenditure",
+        "expenditures"
+    ],
+    "IH2-EH1-AH0-ER0": [
+        "inheritor",
+        "investiture",
+        "irregular",
+        "irregulars"
+    ],
+    "IH1-ER0-AH0-ER0": [
+        "literature"
+    ],
     "ER1-AH0-ER0": [
         "circular",
         "circulars",
@@ -19645,12 +24437,28 @@ export default {
         "purchasers",
         "worshiper"
     ],
+    "AH0-ER1-AH0-ER0": [
+        "conservator",
+        "conservators"
+    ],
+    "IH2-ER1-AH0-ER0": [
+        "interpreter",
+        "interpreters"
+    ],
     "EY1-AH0-ER0": [
         "baedeker",
         "latecomer",
         "latecomers",
         "stationer",
         "stationers"
+    ],
+    "EY0-EY1-AH0-ER0": [
+        "vacationer",
+        "vacationers"
+    ],
+    "OW0-EY1-AH0-ER0": [
+        "probationer",
+        "probationers"
     ],
     "IH1-AH0-ER0": [
         "christopher",
@@ -19675,6 +24483,62 @@ export default {
         "titular",
         "vinegar"
     ],
+    "AE0-IH1-AH0-ER0": [
+        "altimeter",
+        "altimeters"
+    ],
+    "AH0-IH1-AH0-ER0": [
+        "administer",
+        "administered",
+        "calligrapher",
+        "commissioner",
+        "commissioners",
+        "conditioner",
+        "conditioners",
+        "conspirator",
+        "conspirators",
+        "contributor",
+        "contributors",
+        "peninsular",
+        "petitioner",
+        "petitioners",
+        "solicitor",
+        "solicitors"
+    ],
+    "EH2-IH1-AH0-ER0": [
+        "testicular"
+    ],
+    "ER0-IH1-AH0-ER0": [
+        "caricatured",
+        "caricatures",
+        "parishioner",
+        "parishioners",
+        "particulars",
+        "perimeter",
+        "perimeters"
+    ],
+    "IH0-IH1-AH0-ER0": [
+        "dissimilar",
+        "distributor",
+        "distributors",
+        "exhibitor",
+        "exhibitors"
+    ],
+    "IH2-IH1-AH0-ER0": [
+        "inhibitor",
+        "inhibitors",
+        "inquisitor",
+        "inquisitors"
+    ],
+    "IY0-IH1-AH0-ER0": [
+        "vehicular"
+    ],
+    "OW0-IH1-AH0-ER0": [
+        "dosimeters"
+    ],
+    "UH1-IY0-AH0-ER0": [
+        "curiouser"
+    ],
     "IY1-AH0-ER0": [
         "reasoner",
         "theater",
@@ -19683,6 +24547,9 @@ export default {
         "theatres",
         "zealander",
         "zealanders"
+    ],
+    "AE0-IY1-AH0-ER0": [
+        "alveolar"
     ],
     "OW1-AH0-ER0": [
         "opener",
@@ -20014,6 +24881,10 @@ export default {
         "uncovered",
         "unstructured"
     ],
+    "IH2-AH0-AH1-ER0": [
+        "infrastructure",
+        "infrastructures"
+    ],
     "AH2-AH1-ER0": [
         "uncovers"
     ],
@@ -20028,6 +24899,12 @@ export default {
         "encumber",
         "encumbered"
     ],
+    "AH2-EH0-AH1-ER0": [
+        "unencumbered"
+    ],
+    "AH2-ER0-AH1-ER0": [
+        "undercover"
+    ],
     "IH0-AH1-ER0": [
         "discolor",
         "discolored",
@@ -20039,6 +24916,13 @@ export default {
         "recover",
         "recovers",
         "refunders"
+    ],
+    "AH2-IH0-AH1-ER0": [
+        "undiscovered"
+    ],
+    "IY0-IH0-AH1-ER0": [
+        "rediscover",
+        "rediscovered"
     ],
     "IH1-AH1-ER0": [
         "midsummer"
@@ -20053,6 +24937,9 @@ export default {
         "restructured",
         "restructures"
     ],
+    "AH2-IY0-AH1-ER0": [
+        "multicolored"
+    ],
     "AA1-AH2-ER0": [
         "blockbuster",
         "blockbusters",
@@ -20066,6 +24953,14 @@ export default {
         "grandmother",
         "grandmothers",
         "lackluster"
+    ],
+    "AE1-AH0-AH2-ER0": [
+        "aquaculture"
+    ],
+    "IH1-AH0-AH2-ER0": [
+        "filibuster",
+        "filibustered",
+        "filibusters"
     ],
     "AH1-AH2-ER0": [
         "bloodsucker",
@@ -20083,9 +24978,33 @@ export default {
         "headhunters",
         "stepmother"
     ],
+    "AH1-ER0-AH2-ER0": [
+        "motherfucker",
+        "motherfuckers"
+    ],
+    "AO1-ER0-AH2-ER0": [
+        "watercolor",
+        "watercolors"
+    ],
+    "UW1-ER0-AH2-ER0": [
+        "superstructure",
+        "superstructures"
+    ],
+    "AE1-IH0-AH2-ER0": [
+        "agriculture"
+    ],
+    "AO1-IH0-AH2-ER0": [
+        "horticulture"
+    ],
+    "EH1-IH0-AH2-ER0": [
+        "technicolor"
+    ],
     "OW1-AH2-ER0": [
         "roadrunner",
         "stonecutter"
+    ],
+    "AE1-UW0-AH2-ER0": [
+        "acupuncture"
     ],
     "UW1-AH2-ER0": [
         "newcomer",
@@ -20322,6 +25241,10 @@ export default {
         "granddaughters",
         "manslaughter"
     ],
+    "AE1-AH0-AO2-ER0": [
+        "cataloger",
+        "catalogers"
+    ],
     "AH1-AO2-ER0": [
         "floodwater"
     ],
@@ -20334,6 +25257,12 @@ export default {
         "headwaters",
         "stepdaughter",
         "stepdaughters"
+    ],
+    "AH1-ER0-AO2-ER0": [
+        "underwater"
+    ],
+    "AW1-ER0-AO2-ER0": [
+        "counteroffer"
     ],
     "EY1-AO2-ER0": [
         "breakwater",
@@ -20440,6 +25369,18 @@ export default {
         "announcer",
         "announcers"
     ],
+    "AH2-ER0-AW1-ER0": [
+        "underpowered"
+    ],
+    "OW2-ER0-AW1-ER0": [
+        "overpower",
+        "overpowered",
+        "overpowers"
+    ],
+    "UW2-ER0-AW1-ER0": [
+        "superpower",
+        "superpowers"
+    ],
     "IH0-AW1-ER0": [
         "devour",
         "devoured",
@@ -20451,6 +25392,12 @@ export default {
     "AE1-AW2-ER0": [
         "manpower",
         "safflower"
+    ],
+    "AA1-AH0-AW2-ER0": [
+        "cauliflower"
+    ],
+    "AY1-AH0-AW2-ER0": [
+        "eisenhower"
     ],
     "AH1-AW2-ER0": [
         "gunpowder",
@@ -20465,6 +25412,10 @@ export default {
     ],
     "AY1-AW2-ER0": [
         "firepower"
+    ],
+    "AH1-ER0-AW2-ER0": [
+        "thundershower",
+        "thundershowers"
     ],
     "EY1-AW2-ER0": [
         "brainpower",
@@ -20726,6 +25677,12 @@ export default {
         "survivor",
         "survivors"
     ],
+    "OW2-ER0-AY1-ER0": [
+        "overnighters"
+    ],
+    "UW2-ER0-AY1-ER0": [
+        "supervisors"
+    ],
     "IH0-AY1-ER0": [
         "decipher",
         "deciphered",
@@ -20746,6 +25703,10 @@ export default {
         "recliner",
         "refiner",
         "refiners"
+    ],
+    "AH2-IH0-AY1-ER0": [
+        "unexpired",
+        "uninspired"
     ],
     "IH2-AY1-ER0": [
         "decider",
@@ -20788,6 +25749,83 @@ export default {
         "satire",
         "satires"
     ],
+    "AA1-AH0-AY2-ER0": [
+        "colonizer",
+        "colonizers",
+        "compromiser",
+        "modifier",
+        "modifiers",
+        "occupier",
+        "occupiers",
+        "qualifier",
+        "qualifiers"
+    ],
+    "AE1-AH0-AY2-ER0": [
+        "amplifier",
+        "amplifiers",
+        "analyzer",
+        "analyzers",
+        "appetizer",
+        "appetizers",
+        "atomizer",
+        "magnifier",
+        "magnifiers",
+        "pacifier",
+        "pacifiers",
+        "plasticizer",
+        "tranquilizer",
+        "tranquilizers"
+    ],
+    "AH1-AH0-AY2-ER0": [
+        "multiplier"
+    ],
+    "AO1-AH0-AY2-ER0": [
+        "fortifier",
+        "fortifiers",
+        "organizer",
+        "organizers"
+    ],
+    "AY1-AH0-AY2-ER0": [
+        "ionizer",
+        "ionizers",
+        "itemizer",
+        "itemizers"
+    ],
+    "EH1-AH0-AY2-ER0": [
+        "nebulizer",
+        "rectifier",
+        "rectifiers",
+        "sterilizer",
+        "sterilizers"
+    ],
+    "ER1-AH0-AY2-ER0": [
+        "fertilizer",
+        "fertilizers",
+        "merchandiser",
+        "merchandisers"
+    ],
+    "EY1-AH0-AY2-ER0": [
+        "stabilizer",
+        "stabilizers"
+    ],
+    "IH1-AH0-AY2-ER0": [
+        "sympathizer",
+        "sympathizers",
+        "synthesizer",
+        "synthesizers"
+    ],
+    "IY1-AH0-AY2-ER0": [
+        "equalizer"
+    ],
+    "OW1-AH0-AY2-ER0": [
+        "mobilizer",
+        "mobilizers"
+    ],
+    "UH1-AH0-AY2-ER0": [
+        "purifier",
+        "purifiers",
+        "womanizer"
+    ],
     "AH1-AY2-ER0": [
         "gunfighter",
         "gunfighters",
@@ -20822,11 +25860,40 @@ export default {
         "jetliner",
         "jetliners"
     ],
+    "AE1-ER0-AY2-ER0": [
+        "advertiser",
+        "advertisers"
+    ],
+    "AH1-ER0-AY2-ER0": [
+        "underwriter",
+        "underwriters"
+    ],
+    "EH1-ER0-AY2-ER0": [
+        "energizer",
+        "exerciser",
+        "exercisers"
+    ],
+    "OW1-ER0-AY2-ER0": [
+        "polarizer"
+    ],
+    "OY1-ER0-AY2-ER0": [
+        "moisturizer"
+    ],
+    "UW1-ER0-AY2-ER0": [
+        "supervisor"
+    ],
+    "AA1-IH0-AY2-ER0": [
+        "oxidizer"
+    ],
     "IH1-AY2-ER0": [
         "gridiron",
         "hitchhiker",
         "hitchhikers",
         "scriptwriter"
+    ],
+    "AA1-IY0-AY2-ER0": [
+        "copywriter",
+        "copywriters"
     ],
     "IY1-AY2-ER0": [
         "screenwriter"
@@ -20840,6 +25907,10 @@ export default {
         "screwdriver",
         "screwdrivers",
         "viewfinder"
+    ],
+    "OW1-AA1-EH0-ER0": [
+        "coprocessor",
+        "coprocessors"
     ],
     "OW1-EH0-ER0": [
         "homesteader",
@@ -21234,6 +26305,13 @@ export default {
         "uncensored",
         "unfettered"
     ],
+    "AO2-AH0-EH1-ER0": [
+        "altogether"
+    ],
+    "IH0-AH0-EH1-ER0": [
+        "misadventure",
+        "misadventures"
+    ],
     "AO2-EH1-ER0": [
         "northwestern"
     ],
@@ -21253,6 +26331,9 @@ export default {
         "surrender",
         "surrendered",
         "surrenders"
+    ],
+    "IH2-ER0-EH1-ER0": [
+        "interstellar"
     ],
     "ER1-EH1-ER0": [
         "birdfeathers"
@@ -21315,10 +26396,20 @@ export default {
         "reseller",
         "resellers"
     ],
+    "AA2-IY2-EH1-ER0": [
+        "polyester"
+    ],
     "OW0-EH1-ER0": [
         "hotelier",
         "hoteliers",
         "november"
+    ],
+    "AY2-OW0-EH1-ER0": [
+        "biosensor"
+    ],
+    "UW2-OW0-EH1-ER0": [
+        "whomsoever",
+        "whosoever"
     ],
     "UW0-EH1-ER0": [
         "whoever",
@@ -21336,6 +26427,20 @@ export default {
         "ancestors",
         "manchester",
         "rathskeller"
+    ],
+    "AH0-AE1-EH2-ER0": [
+        "philanderer",
+        "philanderers"
+    ],
+    "AA1-AH0-EH2-ER0": [
+        "architecture",
+        "architectures",
+        "rockefeller"
+    ],
+    "EH1-AH0-EH2-ER0": [
+        "epicenter",
+        "predecessor",
+        "predecessors"
     ],
     "AO1-EH2-ER0": [
         "prospector",
@@ -21356,6 +26461,11 @@ export default {
         "hairdressers",
         "trendsetter"
     ],
+    "AW1-ER0-EH2-ER0": [
+        "countermeasure",
+        "countermeasures",
+        "countertenor"
+    ],
     "EY1-EH2-ER0": [
         "pacesetter"
     ],
@@ -21363,11 +26473,21 @@ export default {
         "indexer",
         "indexers"
     ],
+    "AH1-IY0-EH2-ER0": [
+        "multiplexer"
+    ],
+    "AO1-IY0-EH2-ER0": [
+        "storyteller",
+        "storytellers"
+    ],
     "IY1-EH2-ER0": [
         "prefecture",
         "seafarer",
         "seafarers",
         "weekender"
+    ],
+    "AA1-IY2-EH2-ER0": [
+        "polyesters"
     ],
     "OW1-EH2-ER0": [
         "protester",
@@ -21418,6 +26538,13 @@ export default {
         "sufferer",
         "sufferers"
     ],
+    "AH0-AH1-ER0-ER0": [
+        "adulterer",
+        "adulterers"
+    ],
+    "IH0-AH1-ER0-ER0": [
+        "discoverer"
+    ],
     "AO1-ER0-ER0": [
         "forwarder",
         "forwarders",
@@ -21433,6 +26560,10 @@ export default {
         "torturers",
         "waterer"
     ],
+    "AH0-AY1-ER0-ER0": [
+        "acquirer",
+        "acquirers"
+    ],
     "EH1-ER0-ER0": [
         "deserter",
         "deserters",
@@ -21444,6 +26575,12 @@ export default {
         "treasurers",
         "westerner",
         "westerners"
+    ],
+    "IH0-EH1-ER0-ER0": [
+        "midwesterners"
+    ],
+    "IH2-EH1-ER0-ER0": [
+        "midwesterner"
     ],
     "ER1-ER0-ER0": [
         "murderer",
@@ -21465,6 +26602,10 @@ export default {
         "tinkerer",
         "tinkerers"
     ],
+    "IH0-IH1-ER0-ER0": [
+        "deliverer",
+        "deliverers"
+    ],
     "IY1-ER0-ER0": [
         "cheeseburger",
         "cheeseburgers",
@@ -21474,10 +26615,17 @@ export default {
         "researcher",
         "researchers"
     ],
+    "AO0-IY1-ER0-ER0": [
+        "northeasterner"
+    ],
     "OW1-ER0-ER0": [
         "overture",
         "sojourner",
         "sojourners"
+    ],
+    "EH0-OY1-ER0-ER0": [
+        "embroiderer",
+        "embroiderers"
     ],
     "ER1-ER0": [
         "berber",
@@ -21561,6 +26709,14 @@ export default {
         "coworker",
         "coworkers"
     ],
+    "EH1-AH0-ER2-ER0": [
+        "metalworker",
+        "metalworkers"
+    ],
+    "AE1-ER0-ER2-ER0": [
+        "afterburner",
+        "afterburners"
+    ],
     "EY1-ER2-ER0": [
         "caseworker",
         "caseworkers"
@@ -21571,6 +26727,9 @@ export default {
     "UH1-ER2-ER0": [
         "woodworker"
     ],
+    "AY1-AH0-EY0-ER0": [
+        "violators"
+    ],
     "AY1-EY0-ER0": [
         "vibrator",
         "vibrators"
@@ -21579,6 +26738,9 @@ export default {
         "narrator",
         "spectator",
         "spectators"
+    ],
+    "EY1-IY0-EY0-ER0": [
+        "aviators"
     ],
     "IY1-EY0-ER0": [
         "detailer"
@@ -21879,6 +27041,13 @@ export default {
         "debaters",
         "finagler"
     ],
+    "AE2-AH0-EY1-ER0": [
+        "annotator",
+        "annotators"
+    ],
+    "IH0-AH0-EY1-ER0": [
+        "vindicator"
+    ],
     "AO0-EY1-ER0": [
         "ballplayers"
     ],
@@ -21928,6 +27097,13 @@ export default {
         "creator",
         "creators"
     ],
+    "AH2-IY0-EY1-ER0": [
+        "multilayer",
+        "multilayered"
+    ],
+    "IY2-OW2-EY1-ER0": [
+        "teetotaler"
+    ],
     "UW0-EY1-ER0": [
         "crusader",
         "crusaders"
@@ -21954,6 +27130,96 @@ export default {
         "taxpayer",
         "taxpayers"
     ],
+    "AA1-AH0-EY2-ER0": [
+        "commentator",
+        "commentators",
+        "modulator",
+        "oscillator",
+        "oscillators"
+    ],
+    "AE1-AH0-EY2-ER0": [
+        "activator",
+        "agitator",
+        "alligator",
+        "alligators",
+        "allocator",
+        "allocators",
+        "ambulator",
+        "animator",
+        "animators",
+        "applicator",
+        "applicators",
+        "calculator",
+        "calculators",
+        "navigator",
+        "navigators"
+    ],
+    "AH1-AH0-EY2-ER0": [
+        "troublemaker",
+        "troublemakers"
+    ],
+    "AY1-AH0-EY2-ER0": [
+        "violator"
+    ],
+    "EH1-AH0-EY2-ER0": [
+        "demonstrator",
+        "demonstrators",
+        "detonator",
+        "detonators",
+        "elevator",
+        "elevators",
+        "emulator",
+        "escalator",
+        "escalators",
+        "excavator",
+        "excavators",
+        "legislator",
+        "legislators",
+        "legislature",
+        "penetrator",
+        "penetrators",
+        "regulator",
+        "regulators",
+        "renovator",
+        "renovators",
+        "separator",
+        "separators",
+        "speculator",
+        "speculators"
+    ],
+    "ER1-AH0-EY2-ER0": [
+        "percolator",
+        "percolators",
+        "perpetrator",
+        "perpetrators",
+        "terminator"
+    ],
+    "IH1-AH0-EY2-ER0": [
+        "illustrator",
+        "illustrators",
+        "imitator",
+        "incubator",
+        "indicator",
+        "indicators",
+        "instigator",
+        "instigators",
+        "insulator",
+        "insulators",
+        "irrigator",
+        "irrigators",
+        "litigator",
+        "litigators",
+        "simulator",
+        "simulators",
+        "stimulator"
+    ],
+    "OW1-AH0-EY2-ER0": [
+        "nomenclature"
+    ],
+    "UW1-AH0-EY2-ER0": [
+        "numerator",
+        "numerators"
+    ],
     "AH1-EY2-ER0": [
         "drugmaker",
         "muckraker"
@@ -21979,12 +27245,39 @@ export default {
         "strikebreaker",
         "strikebreakers"
     ],
+    "AE1-EH0-EY2-ER0": [
+        "antechamber"
+    ],
     "EH1-EY2-ER0": [
         "caretaker",
         "caretakers",
         "dressmaker",
         "dressmakers",
         "narrators"
+    ],
+    "AA1-ER0-EY2-ER0": [
+        "carburetor",
+        "carburetors",
+        "moderator",
+        "moderators",
+        "operator"
+    ],
+    "AH1-ER0-EY2-ER0": [
+        "undertaker"
+    ],
+    "AO1-ER0-EY2-ER0": [
+        "alternator"
+    ],
+    "EH1-ER0-EY2-ER0": [
+        "decorator",
+        "decorators",
+        "generator",
+        "generators",
+        "respirator",
+        "respirators"
+    ],
+    "OY1-ER0-EY2-ER0": [
+        "boilermaker"
     ],
     "EY1-EY2-ER0": [
         "haymaker",
@@ -21997,9 +27290,46 @@ export default {
         "trailblazers",
         "wastepaper"
     ],
+    "AA1-IH0-EY2-ER0": [
+        "arbitrator",
+        "arbitrators"
+    ],
+    "AE1-IH0-EY2-ER0": [
+        "agitators",
+        "fabricator",
+        "fabricators"
+    ],
+    "EH1-IH0-EY2-ER0": [
+        "legislatures"
+    ],
+    "IH1-IH0-EY2-ER0": [
+        "imitators",
+        "infiltrator",
+        "infiltrators",
+        "liquidator",
+        "liquidators",
+        "syndicator"
+    ],
     "IH1-EY2-ER0": [
         "bricklayer",
         "bricklayers"
+    ],
+    "AE1-IY0-EY2-ER0": [
+        "gladiator",
+        "gladiators"
+    ],
+    "AH1-IY0-EY2-ER0": [
+        "moneymaker",
+        "moneymakers"
+    ],
+    "EY1-IY0-EY2-ER0": [
+        "aviator",
+        "radiator",
+        "radiators"
+    ],
+    "IY1-IY0-EY2-ER0": [
+        "mediator",
+        "mediators"
     ],
     "IY1-EY2-ER0": [
         "peacemaker",
@@ -22016,6 +27346,9 @@ export default {
         "locators",
         "wholesaler",
         "wholesalers"
+    ],
+    "IH1-UW0-EY2-ER0": [
+        "incubators"
     ],
     "UW1-EY2-ER0": [
         "newspaper",
@@ -22039,6 +27372,15 @@ export default {
         "monikers",
         "polymers"
     ],
+    "AH0-AA1-IH0-ER0": [
+        "depositor",
+        "depositors",
+        "photometer"
+    ],
+    "ER0-AA1-IH0-ER0": [
+        "barometer",
+        "barometers"
+    ],
     "AE1-IH0-ER0": [
         "banister",
         "laminar",
@@ -22051,6 +27393,12 @@ export default {
         "salvagers",
         "trafficker",
         "traffickers"
+    ],
+    "IH0-AE1-IH0-ER0": [
+        "examiners"
+    ],
+    "OW2-AE1-IH0-ER0": [
+        "johannesburg"
     ],
     "AH1-IH0-ER0": [
         "dulcimer",
@@ -22076,6 +27424,12 @@ export default {
         "sequitur",
         "sequiturs"
     ],
+    "AH0-EH1-IH0-ER0": [
+        "unregistered"
+    ],
+    "OW0-EH1-IH0-ER0": [
+        "progenitor"
+    ],
     "ER1-IH0-ER0": [
         "furniture",
         "servicer",
@@ -22098,6 +27452,13 @@ export default {
         "visitor",
         "visitors",
         "willinger"
+    ],
+    "AE0-IH1-IH0-ER0": [
+        "administers"
+    ],
+    "IH0-IH1-IH0-ER0": [
+        "extinguisher",
+        "extinguishers"
     ],
     "IY1-IH0-ER0": [
         "keister"
@@ -22529,6 +27890,14 @@ export default {
         "unhindered",
         "uninjured"
     ],
+    "AH2-AH0-IH1-ER0": [
+        "unfamiliar"
+    ],
+    "IY2-AH0-IH1-ER0": [
+        "reconfigure",
+        "reconsider",
+        "reconsidered"
+    ],
     "AH2-IH1-ER0": [
         "upriver"
     ],
@@ -22562,6 +27931,9 @@ export default {
         "resistor",
         "resistors"
     ],
+    "AH2-IH0-IH1-ER0": [
+        "undelivered"
+    ],
     "IH1-IH1-ER0": [
         "midwinter",
         "quicksilver"
@@ -22580,6 +27952,9 @@ export default {
     "AA1-IH2-ER0": [
         "shoplifter",
         "shoplifters"
+    ],
+    "AE1-AH0-IH2-ER0": [
+        "caterpillars"
     ],
     "AH1-IH2-ER0": [
         "gunslinger",
@@ -22602,6 +27977,10 @@ export default {
         "severer",
         "stepsister",
         "stepsisters"
+    ],
+    "AW1-ER0-IH2-ER0": [
+        "counterfeiter",
+        "counterfeiters"
     ],
     "EY1-IH2-ER0": [
         "painkiller",
@@ -22695,6 +28074,9 @@ export default {
         "terriers",
         "wealthier"
     ],
+    "IH0-EH1-IY0-ER0": [
+        "excelsior"
+    ],
     "ER1-IY0-ER0": [
         "burrier",
         "courier",
@@ -22745,6 +28127,27 @@ export default {
         "trickier",
         "widener"
     ],
+    "AE0-IH1-IY0-ER0": [
+        "anterior"
+    ],
+    "AH0-IH1-IY0-ER0": [
+        "ulterior"
+    ],
+    "EH0-IH1-IY0-ER0": [
+        "exteriors"
+    ],
+    "IH0-IH1-IY0-ER0": [
+        "exterior"
+    ],
+    "IH2-IH1-IY0-ER0": [
+        "inferior",
+        "interior",
+        "interiors"
+    ],
+    "UW0-IH1-IY0-ER0": [
+        "superior",
+        "superiors"
+    ],
     "IY1-IY0-ER0": [
         "cheesier",
         "creamier",
@@ -22756,6 +28159,9 @@ export default {
         "renier",
         "speedier",
         "steamier"
+    ],
+    "AA0-IY1-IY0-ER0": [
+        "montpelier"
     ],
     "IY2-IY0-ER0": [
         "greedier"
@@ -22769,6 +28175,9 @@ export default {
     ],
     "OY1-IY0-ER0": [
         "noisier"
+    ],
+    "UW0-UH1-IY0-ER0": [
+        "couturier"
     ],
     "UW1-IY0-ER0": [
         "boozier",
@@ -22970,6 +28379,17 @@ export default {
         "believer",
         "believers"
     ],
+    "AA2-AH0-IY1-ER0": [
+        "nonbeliever",
+        "nonbelievers"
+    ],
+    "AE2-AH0-IY1-ER0": [
+        "pasadena"
+    ],
+    "IH2-AH0-IY1-ER0": [
+        "misdemeanor",
+        "misdemeanors"
+    ],
     "AO2-IY1-ER0": [
         "northeastern",
         "northeastward"
@@ -22981,6 +28401,12 @@ export default {
         "sightseer",
         "sightseers"
     ],
+    "OW1-ER0-IY1-ER0": [
+        "overseer"
+    ],
+    "OW2-ER0-IY1-ER0": [
+        "overseers"
+    ],
     "IH0-IY1-ER0": [
         "beleaguer",
         "beleaguered",
@@ -22989,6 +28415,9 @@ export default {
         "demeter",
         "repeater",
         "repeaters"
+    ],
+    "EH2-IH0-IY1-ER0": [
+        "ebenezer"
     ],
     "IY0-IY1-ER0": [
         "reliever",
@@ -23005,6 +28434,20 @@ export default {
         "ammeters",
         "anteater",
         "anteaters"
+    ],
+    "AE1-AH0-IY2-ER0": [
+        "gravimeter"
+    ],
+    "EH1-AH0-IY2-ER0": [
+        "centimeter",
+        "centimeters",
+        "deciliter"
+    ],
+    "IH1-AH0-IY2-ER0": [
+        "milliliter",
+        "milliliters",
+        "millimeter",
+        "millimeters"
     ],
     "AO1-IY2-ER0": [
         "doorkeeper",
@@ -23024,6 +28467,9 @@ export default {
         "minesweeper",
         "minesweepers"
     ],
+    "OW1-ER0-IY2-ER0": [
+        "overeager"
+    ],
     "EY1-IY2-ER0": [
         "gamekeeper",
         "gamekeepers",
@@ -23039,6 +28485,13 @@ export default {
         "innkeepers",
         "ringleader",
         "ringleaders"
+    ],
+    "AA0-IH1-IY2-ER0": [
+        "nonlinear"
+    ],
+    "AA1-IY0-IY2-ER0": [
+        "copyreader",
+        "copyreaders"
     ],
     "IY1-IY2-ER0": [
         "beefeater",
@@ -23260,6 +28713,9 @@ export default {
         "upholster",
         "upholstered"
     ],
+    "OW2-AH0-OW1-ER0": [
+        "locomotor"
+    ],
     "AO0-OW1-ER0": [
         "foreclosure",
         "foreclosures",
@@ -23285,6 +28741,9 @@ export default {
     "IY0-OW1-ER0": [
         "beholder"
     ],
+    "IY2-IY0-OW1-ER0": [
+        "mediocre"
+    ],
     "AA1-OW2-ER0": [
         "bondholder",
         "bondholders",
@@ -23308,6 +28767,13 @@ export default {
         "landowners",
         "passover"
     ],
+    "AO1-AH0-OW2-ER0": [
+        "officeholder",
+        "officeholders"
+    ],
+    "AY1-AH0-OW2-ER0": [
+        "titleholder"
+    ],
     "AO1-OW2-ER0": [
         "crossover"
     ],
@@ -23322,6 +28788,10 @@ export default {
         "shareholder",
         "shareholders",
         "shareowner"
+    ],
+    "IH1-ER0-OW2-ER0": [
+        "interloper",
+        "interlopers"
     ],
     "ER1-OW2-ER0": [
         "churchgoer",
@@ -23399,6 +28869,9 @@ export default {
         "potboiler",
         "potboilers"
     ],
+    "IY2-AH0-OY1-ER0": [
+        "reconnoiter"
+    ],
     "EH0-OY1-ER0": [
         "embroidered"
     ],
@@ -23468,6 +28941,15 @@ export default {
     "IH1-UW0-ER0": [
         "issuer",
         "issuers"
+    ],
+    "AE2-IH1-UW0-ER0": [
+        "mandibular"
+    ],
+    "EH0-IH1-UW0-ER0": [
+        "ventricular"
+    ],
+    "EH2-IH1-UW0-ER0": [
+        "vestibular"
     ],
     "UW1-ER0": [
         "bloomer",
@@ -23626,6 +29108,11 @@ export default {
         "producer",
         "producers"
     ],
+    "AW0-AH0-UW1-ER0": [
+        "outmaneuver",
+        "outmaneuvered",
+        "outmaneuvers"
+    ],
     "AO1-UW1-ER0": [
         "wrongdoer",
         "wrongdoers"
@@ -23648,9 +29135,36 @@ export default {
         "reviewer",
         "reviewers"
     ],
+    "AH1-AH0-UW2-ER0": [
+        "troubleshooter"
+    ],
+    "EH1-AH0-UW2-ER0": [
+        "paratrooper",
+        "paratroopers"
+    ],
+    "ER1-AH0-UW2-ER0": [
+        "persecutor",
+        "persecutors"
+    ],
+    "IY1-AH0-UW2-ER0": [
+        "evildoer",
+        "evildoers"
+    ],
     "EH1-UW2-ER0": [
         "rescuer",
         "rescuers"
+    ],
+    "IH1-ER0-UW2-ER0": [
+        "interviewer",
+        "interviewers"
+    ],
+    "AA1-IH0-UW2-ER0": [
+        "prosecutor",
+        "prosecutors"
+    ],
+    "AH1-IY0-UW2-ER0": [
+        "honeymooner",
+        "honeymooners"
     ],
     "IY1-UW2-ER0": [
         "preschooler",
@@ -24004,10 +29518,17 @@ export default {
     "AE2-AH0-ER1": [
         "saboteur"
     ],
+    "AA2-AH0-AH0-ER1": [
+        "entrepreneurs"
+    ],
     "AH2-AH0-ER1": [
         "unconcern",
         "unconcerned",
         "unconfirmed"
+    ],
+    "EH2-ER0-AH0-ER1": [
+        "restaurateur",
+        "restaurateurs"
     ],
     "IH2-AH0-ER1": [
         "disconcert"
@@ -24185,6 +29706,12 @@ export default {
         "cleverer",
         "extrovert",
         "metalwork"
+    ],
+    "AA0-IH1-AH0-ER2": [
+        "articular"
+    ],
+    "ER0-IH1-AH0-ER2": [
+        "curricular"
     ],
     "IY1-AH0-ER2": [
         "needlework"
@@ -24377,6 +29904,9 @@ export default {
         "vaccinate",
         "validate"
     ],
+    "IY0-AE1-AH0-EY0": [
+        "reallocate"
+    ],
     "AH1-AH0-EY0": [
         "cutaway"
     ],
@@ -24389,8 +29919,23 @@ export default {
         "desiccates",
         "emanates"
     ],
+    "AH0-EH1-AH0-EY0": [
+        "prevaricate",
+        "prevaricates"
+    ],
+    "IY0-EH1-AH0-EY0": [
+        "deregulate"
+    ],
     "IH1-AH0-EY0": [
         "vindicate"
+    ],
+    "AH0-IH1-AH0-EY0": [
+        "matriculate",
+        "matriculates"
+    ],
+    "AH0-UW1-AH0-EY0": [
+        "hallucinate",
+        "hallucinates"
     ],
     "AH1-EY0": [
         "sundae"
@@ -24430,10 +29975,17 @@ export default {
     "IY0-AY1-EY0": [
         "rehydrate"
     ],
+    "AA2-OW0-AY1-EY0": [
+        "carbohydrates"
+    ],
     "EH1-EY0": [
         "airplanes",
         "daresay",
         "hexane"
+    ],
+    "AH0-IH1-ER0-EY0": [
+        "vociferate",
+        "vociferates"
     ],
     "ER1-EY0": [
         "birdcage"
@@ -24457,6 +30009,15 @@ export default {
     "EH1-IY0-EY0": [
         "entryway"
     ],
+    "AH0-IY1-IY0-EY0": [
+        "alleviates"
+    ],
+    "EH0-OW1-IY0-EY0": [
+        "exfoliate"
+    ],
+    "IH0-OW1-IY0-EY0": [
+        "dissociate"
+    ],
     "IY1-EY0": [
         "cremate"
     ],
@@ -24474,6 +30035,13 @@ export default {
     ],
     "IY2-OW1-EY0": [
         "relocate"
+    ],
+    "AE0-EH1-UW0-EY0": [
+        "accentuate"
+    ],
+    "IH2-IH1-UW0-EY0": [
+        "insinuate",
+        "insinuates"
     ],
     "EY1": [
         "aced",
@@ -25268,6 +30836,10 @@ export default {
         "promenade",
         "promenades"
     ],
+    "IY2-AA2-AH0-EY1": [
+        "demodulate",
+        "demodulates"
+    ],
     "AE2-AH0-EY1": [
         "annotates",
         "attache"
@@ -25286,6 +30858,9 @@ export default {
     "EH2-AH0-EY1": [
         "serenade"
     ],
+    "EH2-ER0-AH0-EY1": [
+        "legerdemain"
+    ],
     "IH2-AH0-EY1": [
         "disobey",
         "intrastate"
@@ -25295,6 +30870,9 @@ export default {
     ],
     "IY2-AH0-EY1": [
         "reappraise"
+    ],
+    "AA0-IY2-AH0-EY1": [
+        "naivete"
     ],
     "AH1-EY1": [
         "upstaged",
@@ -25461,6 +31039,9 @@ export default {
         "overstayed",
         "overweight"
     ],
+    "IH0-UW2-ER0-EY1": [
+        "remunerate"
+    ],
     "EY0-EY1": [
         "maintain",
         "maintained",
@@ -25576,12 +31157,21 @@ export default {
     "AH2-IH0-EY1": [
         "unexplained"
     ],
+    "IH2-ER0-IH0-EY1": [
+        "interrelate"
+    ],
     "IH0-IH0-EY1": [
         "disengage",
         "disengaged"
     ],
+    "IH0-IH2-IH0-EY1": [
+        "recriminate"
+    ],
     "IY2-IH0-EY1": [
         "reinstate"
+    ],
+    "AH0-UW2-IH0-EY1": [
+        "communiques"
     ],
     "IH2-EY1": [
         "impale",
@@ -25687,6 +31277,11 @@ export default {
     "IH2-OW0-EY1": [
         "disobeyed"
     ],
+    "IH1-IY0-OW0-EY1": [
+        "videotape",
+        "videotaped",
+        "videotapes"
+    ],
     "OW1-EY1": [
         "prorate"
     ],
@@ -25749,6 +31344,9 @@ export default {
         "shockwave",
         "stockade",
         "stockades"
+    ],
+    "IY2-IH0-AA1-EY2": [
+        "reincarnate"
     ],
     "IY0-AA1-EY2": [
         "fiance"
@@ -25839,6 +31437,28 @@ export default {
         "populate",
         "propagate"
     ],
+    "AA2-AA1-AH0-EY2": [
+        "prognosticate",
+        "prognosticates"
+    ],
+    "AH0-AA1-AH0-EY2": [
+        "accommodate",
+        "accommodates"
+    ],
+    "IH0-AA1-AH0-EY2": [
+        "denominate",
+        "indoctrinate",
+        "predominates"
+    ],
+    "IH2-AA1-AH0-EY2": [
+        "inoculate",
+        "inoculates",
+        "intoxicate",
+        "intoxicates"
+    ],
+    "IY0-AA1-AH0-EY2": [
+        "depopulate"
+    ],
     "AE1-AH0-EY2": [
         "abdicate",
         "abdicates",
@@ -25887,6 +31507,50 @@ export default {
         "vacillates",
         "validates"
     ],
+    "AH0-AE1-AH0-EY2": [
+        "amalgamate",
+        "amalgamates",
+        "assassinate",
+        "companionway",
+        "concatenate",
+        "concatenates",
+        "congratulate",
+        "contaminate",
+        "contaminates",
+        "dilapidate",
+        "procrastinate",
+        "procrastinates"
+    ],
+    "EH0-AE1-AH0-EY2": [
+        "encapsulate",
+        "extrapolate",
+        "extrapolates"
+    ],
+    "IH0-AE1-AH0-EY2": [
+        "emancipate",
+        "emancipates",
+        "eradicate",
+        "miscalculate",
+        "miscalculates"
+    ],
+    "IY0-AE1-AH0-EY2": [
+        "decaffeinate",
+        "decapitate",
+        "recalculate"
+    ],
+    "IY1-AE1-AH0-EY2": [
+        "reactivate"
+    ],
+    "OW0-AE1-AH0-EY2": [
+        "coagulate"
+    ],
+    "AA1-AH0-AH0-EY2": [
+        "oxygenate"
+    ],
+    "AY1-AH0-AH0-EY2": [
+        "hydrogenate",
+        "hydrogenates"
+    ],
     "AH1-AH0-EY2": [
         "cultivate",
         "fluctuate",
@@ -25908,6 +31572,9 @@ export default {
         "formulates",
         "orchestrates"
     ],
+    "IY0-AO1-AH0-EY2": [
+        "reformulate"
+    ],
     "AW1-AH0-EY2": [
         "nowadays"
     ],
@@ -25918,6 +31585,9 @@ export default {
         "isolate",
         "isolates",
         "microwave"
+    ],
+    "AH0-AY1-AH0-EY2": [
+        "annihilate"
     ],
     "EH1-AH0-EY2": [
         "celebrate",
@@ -25979,6 +31649,41 @@ export default {
         "speculates",
         "vegetate"
     ],
+    "AH0-EH1-AH0-EY2": [
+        "domesticate",
+        "domesticates",
+        "necessitate",
+        "necessitates"
+    ],
+    "AO0-EH1-AH0-EY2": [
+        "authenticate",
+        "authenticates"
+    ],
+    "ER0-EH1-AH0-EY2": [
+        "perpetuate",
+        "perpetuates"
+    ],
+    "IH0-EH1-AH0-EY2": [
+        "desegregate",
+        "disseminate",
+        "disseminates"
+    ],
+    "IH2-EH1-AH0-EY2": [
+        "electroplate",
+        "inseminate",
+        "interrogate",
+        "investigate",
+        "investigates"
+    ],
+    "IY0-EH1-AH0-EY2": [
+        "premeditate"
+    ],
+    "IY2-EH1-AH0-EY2": [
+        "rededicate"
+    ],
+    "IY1-EH2-AH0-EY2": [
+        "reeducate"
+    ],
     "ER1-AH0-EY2": [
         "circulate",
         "circulates",
@@ -25993,6 +31698,17 @@ export default {
         "vertebrate",
         "vertebrates",
         "workaday"
+    ],
+    "IH0-ER1-AH0-EY2": [
+        "determinate",
+        "exterminate",
+        "exterminates"
+    ],
+    "IH2-ER1-AH0-EY2": [
+        "impersonate",
+        "impersonates",
+        "interpolate",
+        "regurgitate"
     ],
     "EY1-AH0-EY2": [
         "alienate",
@@ -26037,6 +31753,48 @@ export default {
         "syncopate",
         "titillate"
     ],
+    "AA0-IH1-AH0-EY2": [
+        "participate",
+        "participates",
+        "pontificate",
+        "pontificates"
+    ],
+    "AE0-IH1-AH0-EY2": [
+        "anticipate",
+        "anticipates"
+    ],
+    "AH0-IH1-AH0-EY2": [
+        "assimilate",
+        "debilitate",
+        "facilitate",
+        "facilitates",
+        "manipulate",
+        "manipulates"
+    ],
+    "ER0-IH1-AH0-EY2": [
+        "originate",
+        "originates"
+    ],
+    "IH0-IH1-AH0-EY2": [
+        "discriminate",
+        "discriminates",
+        "disintegrate",
+        "disintegrates",
+        "eliminate",
+        "eliminates",
+        "equivocate",
+        "reciprocate",
+        "reciprocates"
+    ],
+    "IH2-IH1-AH0-EY2": [
+        "incriminate"
+    ],
+    "IY0-IH1-AH0-EY2": [
+        "reintegrate"
+    ],
+    "EY1-IY0-AH0-EY2": [
+        "alienates"
+    ],
     "IY1-AH0-EY2": [
         "steeplechase"
     ],
@@ -26058,6 +31816,19 @@ export default {
         "fumigate",
         "glutamate",
         "mutilate"
+    ],
+    "AH0-UW1-AH0-EY2": [
+        "accumulate",
+        "accumulates",
+        "communicate",
+        "communique"
+    ],
+    "IH0-UW1-AH0-EY2": [
+        "elucidate",
+        "rejuvenate"
+    ],
+    "IH2-UW1-AH0-EY2": [
+        "illuminates"
     ],
     "AH1-EY2": [
         "bloodstain",
@@ -26177,6 +31948,10 @@ export default {
         "tristate",
         "typeface"
     ],
+    "UW2-ER0-AY1-EY2": [
+        "superhighway",
+        "superhighways"
+    ],
     "EH1-EY2": [
         "airedale",
         "airedales",
@@ -26235,6 +32010,23 @@ export default {
         "operates",
         "tolerate"
     ],
+    "AH0-AA1-ER0-EY2": [
+        "agglomerate"
+    ],
+    "ER0-AA1-ER0-EY2": [
+        "corroborate"
+    ],
+    "IH0-AA1-ER0-EY2": [
+        "exonerate",
+        "exonerates"
+    ],
+    "IH2-AA1-ER0-EY2": [
+        "incarcerate",
+        "incarcerates"
+    ],
+    "OW0-AA1-ER0-EY2": [
+        "cooperates"
+    ],
     "AE1-ER0-EY2": [
         "aftertaste",
         "aftertastes",
@@ -26247,6 +32039,18 @@ export default {
         "saturate",
         "tanqueray"
     ],
+    "AH0-AE1-ER0-EY2": [
+        "collaborate"
+    ],
+    "IH0-AE1-ER0-EY2": [
+        "elaborates",
+        "evaporate",
+        "exacerbate",
+        "exacerbates",
+        "exaggerate",
+        "exaggerates",
+        "exasperate"
+    ],
     "AH1-ER0-EY2": [
         "understate",
         "understates",
@@ -26254,12 +32058,23 @@ export default {
         "undertakes",
         "underweight"
     ],
+    "AH0-AH1-ER0-EY2": [
+        "adulterate",
+        "adulterates"
+    ],
     "AO1-ER0-EY2": [
         "alternates",
         "lauderdale",
         "tolerates",
         "waterway",
         "waterways"
+    ],
+    "ER0-AO1-ER0-EY2": [
+        "corroborates"
+    ],
+    "IH2-AO1-ER0-EY2": [
+        "incorporate",
+        "incorporates"
     ],
     "AW1-ER0-EY2": [
         "counterclaim",
@@ -26285,9 +32100,27 @@ export default {
         "venerates",
         "welterweight"
     ],
+    "AE0-EH1-ER0-EY2": [
+        "accelerate",
+        "accelerates"
+    ],
+    "AH0-EH1-ER0-EY2": [
+        "commemorate",
+        "commemorates"
+    ],
+    "IH0-EH1-ER0-EY2": [
+        "decelerate"
+    ],
+    "IY0-EH1-ER0-EY2": [
+        "redecorate",
+        "regenerate"
+    ],
     "ER1-ER0-EY2": [
         "perforate",
         "perforates"
+    ],
+    "IH0-ER1-ER0-EY2": [
+        "reverberates"
     ],
     "EY1-ER0-EY2": [
         "paperweight"
@@ -26298,6 +32131,32 @@ export default {
         "interplay",
         "interstates",
         "timberlake"
+    ],
+    "AH0-IH1-ER0-EY2": [
+        "commiserate",
+        "commiserates",
+        "eviscerate",
+        "obliterate",
+        "obliterates"
+    ],
+    "IH0-IH1-ER0-EY2": [
+        "deliberates",
+        "exhilarate",
+        "refrigerate"
+    ],
+    "IH2-IH1-ER0-EY2": [
+        "incinerate"
+    ],
+    "IY0-IH1-ER0-EY2": [
+        "reiterate",
+        "reiterates"
+    ],
+    "OW0-IH1-ER0-EY2": [
+        "proliferate",
+        "proliferates"
+    ],
+    "AH0-IY1-ER0-EY2": [
+        "ameliorate"
     ],
     "OW1-ER0-EY2": [
         "motorcade",
@@ -26314,6 +32173,12 @@ export default {
     ],
     "UH1-ER0-EY2": [
         "sugarcane"
+    ],
+    "IH0-UW1-ER0-EY2": [
+        "enumerate",
+        "enumerates",
+        "recuperate",
+        "recuperates"
     ],
     "ER1-EY2": [
         "birdbrain",
@@ -26372,6 +32237,10 @@ export default {
         "marinades",
         "martingale"
     ],
+    "AH0-AA1-IH0-EY2": [
+        "consolidate",
+        "consolidates"
+    ],
     "AE1-IH0-EY2": [
         "captivate",
         "captivates",
@@ -26381,6 +32250,17 @@ export default {
         "magistrates",
         "matinee"
     ],
+    "IH2-AE1-IH0-EY2": [
+        "inactivate",
+        "inactivates",
+        "invalidate"
+    ],
+    "IY0-AE1-IH0-EY2": [
+        "prefabricate"
+    ],
+    "IY2-AE1-IH0-EY2": [
+        "deactivate"
+    ],
     "AH1-IH0-EY2": [
         "culminate",
         "culminates",
@@ -26389,6 +32269,9 @@ export default {
     "AO1-IH0-EY2": [
         "orchestrate",
         "profligate"
+    ],
+    "IY0-AO1-IH0-EY2": [
+        "renominate"
     ],
     "EH1-IH0-EY2": [
         "dedicates",
@@ -26418,6 +32301,19 @@ export default {
         "militate",
         "vindicates"
     ],
+    "AE0-IH1-IH0-EY2": [
+        "administrate"
+    ],
+    "AH0-IH1-IH0-EY2": [
+        "felicitate"
+    ],
+    "IH0-IH1-IH0-EY2": [
+        "precipitate"
+    ],
+    "IH2-IH1-IH0-EY2": [
+        "intimidate",
+        "intimidates"
+    ],
     "IY1-IH0-EY2": [
         "vitiate"
     ],
@@ -26428,6 +32324,14 @@ export default {
         "fusillade",
         "lubricate",
         "ruminate"
+    ],
+    "AH0-UW1-IH0-EY2": [
+        "adjudicate",
+        "agglutinate",
+        "communicates"
+    ],
+    "IH0-UW1-IH0-EY2": [
+        "rejuvenates"
     ],
     "IH1-EY2": [
         "brisbane",
@@ -26466,6 +32370,9 @@ export default {
     "AO1-IY0-EY2": [
         "nauseate"
     ],
+    "EH0-AO1-IY0-EY2": [
+        "excoriate"
+    ],
     "EH1-IY0-EY2": [
         "anyplace",
         "anyway",
@@ -26477,6 +32384,10 @@ export default {
         "heavyweight",
         "heavyweights"
     ],
+    "IH2-EH1-IY0-EY2": [
+        "inebriate",
+        "inebriates"
+    ],
     "ER1-IY0-EY2": [
         "herniate",
         "herniates",
@@ -26486,14 +32397,73 @@ export default {
     "EY1-IY0-EY2": [
         "radiates"
     ],
+    "IH0-EY1-IY0-EY2": [
+        "emaciate",
+        "emaciates"
+    ],
+    "IH2-EY1-IY0-EY2": [
+        "ingratiate",
+        "irradiate"
+    ],
+    "IY0-EY1-IY0-EY2": [
+        "repatriate"
+    ],
+    "AE0-IH1-IY0-EY2": [
+        "asphyxiate",
+        "asphyxiates"
+    ],
+    "AH0-IH1-IY0-EY2": [
+        "officiate",
+        "officiates"
+    ],
+    "IH0-IH1-IY0-EY2": [
+        "delineate",
+        "delineates"
+    ],
+    "IH2-IH1-IY0-EY2": [
+        "initiate"
+    ],
+    "UW0-IH1-IY0-EY2": [
+        "humiliate",
+        "humiliates"
+    ],
     "IY1-IY0-EY2": [
         "deviate",
         "deviates",
         "mediate"
     ],
+    "AH0-IY1-IY0-EY2": [
+        "abbreviate",
+        "abbreviates",
+        "alleviate",
+        "appreciate",
+        "appreciates"
+    ],
+    "IH0-IY1-IY0-EY2": [
+        "depreciate",
+        "depreciates"
+    ],
     "OW1-IY0-EY2": [
         "foliate",
         "ponytail"
+    ],
+    "AH0-OW1-IY0-EY2": [
+        "appropriates",
+        "negotiate"
+    ],
+    "EH0-OW1-IY0-EY2": [
+        "expropriate"
+    ],
+    "IH0-OW1-IY0-EY2": [
+        "negotiates"
+    ],
+    "IH2-UH1-IY0-EY2": [
+        "infuriate",
+        "infuriates"
+    ],
+    "IY0-UW1-IY0-EY2": [
+        "repudiate",
+        "repudiates"
     ],
     "IY1-EY2": [
         "beefsteak",
@@ -26550,6 +32520,10 @@ export default {
         "windowpane",
         "windowpanes"
     ],
+    "AO1-IY0-OW0-EY2": [
+        "audiotape",
+        "audiotapes"
+    ],
     "OW1-OW0-EY2": [
         "beaujolais"
     ],
@@ -26589,12 +32563,31 @@ export default {
         "gourmet",
         "gourmets"
     ],
+    "IH0-AE1-UW0-EY2": [
+        "devaluate",
+        "ejaculate"
+    ],
+    "IH2-AE1-UW0-EY2": [
+        "infatuate",
+        "infatuates"
+    ],
     "AH1-UW0-EY2": [
         "fluctuates",
         "punctuate"
     ],
     "EH1-UW0-EY2": [
         "menstruate"
+    ],
+    "AE0-EH1-UW0-EY2": [
+        "accentuates"
+    ],
+    "AH0-EH1-UW0-EY2": [
+        "attenuate",
+        "attenuates"
+    ],
+    "IH0-EH1-UW0-EY2": [
+        "effectuate",
+        "extenuate"
     ],
     "IH1-UW0-EY2": [
         "situate"
@@ -26620,6 +32613,9 @@ export default {
     "AA1-AA0-IH0": [
         "monarchist",
         "monarchists"
+    ],
+    "AE1-AH0-AA0-IH0": [
+        "cataloging"
     ],
     "IH1-AA0-IH0": [
         "gearboxes",
@@ -26912,6 +32908,12 @@ export default {
     "AA2-AA1-IH0": [
         "balsamic"
     ],
+    "AH0-AA2-AA1-IH0": [
+        "gastronomic"
+    ],
+    "IH2-AA2-AA1-IH0": [
+        "philharmonic"
+    ],
     "AE0-AA1-IH0": [
         "absconded",
         "absconding",
@@ -26963,6 +32965,77 @@ export default {
         "unlocking",
         "unvarnished"
     ],
+    "AA2-AH0-AA1-IH0": [
+        "monatomic",
+        "monophonic"
+    ],
+    "AE2-AH0-AA1-IH0": [
+        "aflatoxin",
+        "alcoholic",
+        "alcoholics",
+        "anabolic",
+        "analogic",
+        "anatomic",
+        "astronautic",
+        "astronautics",
+        "catastrophic",
+        "catatonic",
+        "pathologic"
+    ],
+    "AH2-AH0-AA1-IH0": [
+        "subatomic",
+        "ultrasonic"
+    ],
+    "AO2-AH0-AA1-IH0": [
+        "autonomic",
+        "corresponded",
+        "corresponding",
+        "orthodontic",
+        "orthodontics"
+    ],
+    "AY0-AH0-AA1-IH0": [
+        "biologics"
+    ],
+    "AY2-AH0-AA1-IH0": [
+        "biologic",
+        "diagnostic",
+        "diagnostics",
+        "diastolic",
+        "diatomic",
+        "diatonic",
+        "gyroscopic",
+        "hydroponic",
+        "isotonic",
+        "isotopic",
+        "microscopic"
+    ],
+    "EH2-AH0-AA1-IH0": [
+        "demagogic",
+        "episodic",
+        "hegemonic",
+        "melancholic",
+        "metabolic",
+        "parabolic",
+        "telephonic",
+        "xenophobic"
+    ],
+    "ER2-AH0-AA1-IH0": [
+        "ergonomic",
+        "ergonomics",
+        "workaholic",
+        "workaholics"
+    ],
+    "EY2-AH0-AA1-IH0": [
+        "reaganomics"
+    ],
+    "IH2-AH0-AA1-IH0": [
+        "philanthropic",
+        "philosophic"
+    ],
+    "IY2-AH0-AA1-IH0": [
+        "geologic",
+        "geotropic"
+    ],
     "AO2-AA1-IH0": [
         "forestalling"
     ],
@@ -26989,11 +33062,26 @@ export default {
         "tectonic",
         "tectonics"
     ],
+    "IH2-EH2-AA1-IH0": [
+        "electronic",
+        "electronics"
+    ],
     "ER0-AA1-IH0": [
         "barrages",
         "carotid",
         "ferraris",
         "garages"
+    ],
+    "AY2-ER0-AA1-IH0": [
+        "hyperbolic",
+        "hypersonic"
+    ],
+    "OW2-ER0-AA1-IH0": [
+        "overcharging"
+    ],
+    "UW2-ER0-AA1-IH0": [
+        "supersonic",
+        "supersonics"
     ],
     "EY0-AA1-IH0": [
         "chaotic"
@@ -27032,6 +33120,13 @@ export default {
         "synopsis",
         "synoptic"
     ],
+    "AE2-IH0-AA1-IH0": [
+        "tragicomic"
+    ],
+    "IH2-IH0-AA1-IH0": [
+        "disregarded",
+        "disregarding"
+    ],
     "IH2-AA1-IH0": [
         "bighearted",
         "guitarist",
@@ -27044,6 +33139,9 @@ export default {
         "involving",
         "islamic"
     ],
+    "AA2-IH2-AA1-IH0": [
+        "polyphonic"
+    ],
     "IY0-AA1-IH0": [
         "recharging",
         "resolving",
@@ -27052,11 +33150,45 @@ export default {
         "restocking",
         "revolving"
     ],
+    "AE2-IY0-AA1-IH0": [
+        "ganglionic"
+    ],
+    "AH2-IY0-AA1-IH0": [
+        "unresponsive"
+    ],
+    "EH2-IY0-AA1-IH0": [
+        "embryonic",
+        "semiotic",
+        "semiotics"
+    ],
+    "EY2-IY0-AA1-IH0": [
+        "avionic",
+        "avionics",
+        "patriotic"
+    ],
+    "IH2-IY0-AA1-IH0": [
+        "histrionic",
+        "histrionics",
+        "idiotic",
+        "periodic",
+        "symbiotic",
+        "vitriolic"
+    ],
+    "UW2-IY0-AA1-IH0": [
+        "nucleonic",
+        "nucleonics"
+    ],
     "IY1-AA1-IH0": [
         "rearming"
     ],
     "OW0-AA1-IH0": [
         "gnomonic"
+    ],
+    "AA2-OW0-AA1-IH0": [
+        "sophomoric"
+    ],
+    "EH2-OW0-AA1-IH0": [
+        "endoscopic"
     ],
     "OW2-AA1-IH0": [
         "robotics",
@@ -27079,6 +33211,14 @@ export default {
         "halfhearted",
         "matchboxes"
     ],
+    "AE1-AH0-AA2-IH0": [
+        "albatrosses",
+        "camouflaging",
+        "sabotaging"
+    ],
+    "EH1-AH0-AA2-IH0": [
+        "paradoxes"
+    ],
     "AW1-AA2-IH0": [
         "housewarming",
         "outsmarted",
@@ -27086,6 +33226,22 @@ export default {
     ],
     "AY1-AA2-IH0": [
         "lighthearted"
+    ],
+    "AE1-ER0-AA2-IH0": [
+        "aftermarket"
+    ],
+    "AY1-ER0-AA2-IH0": [
+        "firebombing"
+    ],
+    "IH1-ER0-AA2-IH0": [
+        "interlocking"
+    ],
+    "OW1-ER0-AA2-IH0": [
+        "overcharges"
+    ],
+    "UW1-ER0-AA2-IH0": [
+        "supermarket",
+        "supermarkets"
     ],
     "ER1-AA2-IH0": [
         "surcharges"
@@ -27116,12 +33272,18 @@ export default {
     "AA1-AE0-IH0": [
         "contracting"
     ],
+    "AH0-AA1-AE0-IH0": [
+        "subcontracted"
+    ],
     "IH1-AE0-IH0": [
         "synapses",
         "zigzagging"
     ],
     "IY1-AE0-IH0": [
         "repackaged"
+    ],
+    "IY0-OW1-AE0-IH0": [
+        "deprogramming"
     ],
     "AE1-IH0": [
         "absinthe",
@@ -27526,6 +33688,9 @@ export default {
         "transplanted",
         "transplanting"
     ],
+    "OW0-AE0-AE1-IH0": [
+        "prostaglandin"
+    ],
     "AH0-AE1-IH0": [
         "adapted",
         "adapting",
@@ -27579,12 +33744,84 @@ export default {
         "untangling",
         "unwrapping"
     ],
+    "AA2-AH0-AE1-IH0": [
+        "holographic",
+        "problematic",
+        "programmatic",
+        "topographic"
+    ],
+    "AE2-AH0-AE1-IH0": [
+        "acrobatic",
+        "acrobatics",
+        "calligraphic",
+        "mathematic",
+        "mathematics",
+        "stratigraphic"
+    ],
+    "AH2-AH0-AE1-IH0": [
+        "subcontracting",
+        "unattractive"
+    ],
+    "AO2-AH0-AE1-IH0": [
+        "autocratic",
+        "automatics",
+        "pornographic"
+    ],
+    "AY2-AH0-AE1-IH0": [
+        "cytoplasmic",
+        "hydrographic",
+        "psychopathic"
+    ],
+    "EH2-AH0-AE1-IH0": [
+        "aerobatics",
+        "aromatic",
+        "democratic",
+        "demographic",
+        "demographics",
+        "emblematic",
+        "epigraphic",
+        "metastatic",
+        "stenographic",
+        "technocratic"
+    ],
+    "ER2-AH0-AE1-IH0": [
+        "thermoplastic",
+        "thermoplastics"
+    ],
+    "IH0-AH0-AE1-IH0": [
+        "hippocratic"
+    ],
+    "IH2-AH0-AE1-IH0": [
+        "cinematic",
+        "diplomatic",
+        "inelastic",
+        "lithographic",
+        "sycophantic",
+        "symptomatic",
+        "systematic"
+    ],
+    "IY1-AH0-AE1-IH0": [
+        "evenhanded"
+    ],
+    "IY2-AH0-AE1-IH0": [
+        "geographic",
+        "theocratic"
+    ],
+    "OW2-AH0-AE1-IH0": [
+        "photographic"
+    ],
+    "UH2-AH0-AE1-IH0": [
+        "bureaucratic"
+    ],
     "AO0-AE1-IH0": [
         "nostalgic",
         "organic",
         "organics",
         "thoracic",
         "traumatic"
+    ],
+    "IH2-AO0-AE1-IH0": [
+        "inorganic"
     ],
     "AW0-AE1-IH0": [
         "outlandish"
@@ -27603,6 +33840,9 @@ export default {
         "italic",
         "italics",
         "titanic"
+    ],
+    "EH2-AY0-AE1-IH0": [
+        "enzymatic"
     ],
     "EH0-AE1-IH0": [
         "ecstatic",
@@ -27629,6 +33869,32 @@ export default {
         "sporadic",
         "surpasses",
         "surpassing"
+    ],
+    "AA2-ER0-AE1-IH0": [
+        "operatic"
+    ],
+    "AE2-ER0-AE1-IH0": [
+        "panoramic"
+    ],
+    "AH1-ER0-AE1-IH0": [
+        "underhanded"
+    ],
+    "AH2-ER0-AE1-IH0": [
+        "understanding",
+        "understandings"
+    ],
+    "AW2-ER0-AE1-IH0": [
+        "counteracting"
+    ],
+    "AY2-ER0-AE1-IH0": [
+        "hyperactive"
+    ],
+    "EH2-ER0-AE1-IH0": [
+        "everlasting",
+        "hemorrhagic"
+    ],
+    "OW1-ER0-AE1-IH0": [
+        "overactive"
     ],
     "IH0-AE1-IH0": [
         "demanding",
@@ -27672,6 +33938,26 @@ export default {
         "tympanic",
         "withstanding"
     ],
+    "AA2-IH0-AE1-IH0": [
+        "notwithstanding"
+    ],
+    "EH0-IH0-AE1-IH0": [
+        "charismatic"
+    ],
+    "EH2-IH0-AE1-IH0": [
+        "enigmatic"
+    ],
+    "IY0-IH0-AE1-IH0": [
+        "reenacted",
+        "reestablish"
+    ],
+    "IY2-IH0-AE1-IH0": [
+        "reestablished"
+    ],
+    "UW2-IH0-AE1-IH0": [
+        "numismatic",
+        "numismatics"
+    ],
     "IH2-AE1-IH0": [
         "impacting",
         "impassive",
@@ -27697,6 +33983,28 @@ export default {
         "revamping",
         "thematic"
     ],
+    "AE2-IY0-AE1-IH0": [
+        "pancreatic"
+    ],
+    "AY2-IY0-AE1-IH0": [
+        "psychiatric"
+    ],
+    "EH2-IY0-AE1-IH0": [
+        "geriatric",
+        "geriatrics",
+        "messianic"
+    ],
+    "EY2-IY0-AE1-IH0": [
+        "adriatic",
+        "asiatic"
+    ],
+    "IY2-IY0-AE1-IH0": [
+        "pediatric",
+        "pediatrics"
+    ],
+    "OW2-IY0-AE1-IH0": [
+        "oceanic"
+    ],
     "IY2-AE1-IH0": [
         "repackage"
     ],
@@ -27710,6 +34018,18 @@ export default {
         "romancing",
         "romantic",
         "romantics"
+    ],
+    "AY2-OW0-AE1-IH0": [
+        "chiropractic"
+    ],
+    "EH2-OW0-AE1-IH0": [
+        "retroactive"
+    ],
+    "IY2-OW0-AE1-IH0": [
+        "neoclassic"
+    ],
+    "OW0-OW0-AE1-IH0": [
+        "tomographic"
     ],
     "UH0-AE1-IH0": [
         "jurassic"
@@ -27735,6 +34055,18 @@ export default {
         "ransacking",
         "sandbagging",
         "sandblasted"
+    ],
+    "AE1-AH0-AE2-IH0": [
+        "avalanches"
+    ],
+    "AY1-AH0-AE2-IH0": [
+        "diagraming"
+    ],
+    "EH1-AH0-AE2-IH0": [
+        "reprimanded"
+    ],
+    "OW1-AH0-AE2-IH0": [
+        "photographing"
     ],
     "AH1-AE2-IH0": [
         "mustaches",
@@ -27765,6 +34097,25 @@ export default {
         "wildcatting",
         "wisecracking"
     ],
+    "AE1-ER0-AE2-IH0": [
+        "flabbergasted"
+    ],
+    "AH1-ER0-AE2-IH0": [
+        "undercarriage"
+    ],
+    "AW1-ER0-AE2-IH0": [
+        "counteracted",
+        "hourglasses"
+    ],
+    "AY1-ER0-AE2-IH0": [
+        "wiretapping"
+    ],
+    "OW1-ER0-AE2-IH0": [
+        "overacted",
+        "overhanging",
+        "overlapping",
+        "overpasses"
+    ],
     "ER1-AE2-IH0": [
         "surtaxes"
     ],
@@ -27773,6 +34124,12 @@ export default {
         "kidnaping",
         "kidnapping"
     ],
+    "AE1-IY0-AE2-IH0": [
+        "handicapping"
+    ],
+    "AH1-IY0-AE2-IH0": [
+        "multitasking"
+    ],
     "IY1-AE2-IH0": [
         "freelancing",
         "freestanding"
@@ -27780,6 +34137,9 @@ export default {
     "OW1-AE2-IH0": [
         "programing",
         "programming"
+    ],
+    "IY0-OW1-AE2-IH0": [
+        "reprogramming"
     ],
     "UH1-AE2-IH0": [
         "bushwhacking"
@@ -27849,6 +34209,45 @@ export default {
         "vomiting",
         "walruses"
     ],
+    "AA0-AA1-AH0-IH0": [
+        "optometrist",
+        "optometrists"
+    ],
+    "AH0-AA1-AH0-IH0": [
+        "agronomist",
+        "agronomists"
+    ],
+    "AH2-AA1-AH0-IH0": [
+        "unconsciousness"
+    ],
+    "AY0-AA1-AH0-IH0": [
+        "biologist",
+        "biologists"
+    ],
+    "EH2-AA1-AH0-IH0": [
+        "technologist",
+        "technologists"
+    ],
+    "IH0-AA1-AH0-IH0": [
+        "demonstrative",
+        "evocative",
+        "virologist",
+        "virologists"
+    ],
+    "IH2-AA1-AH0-IH0": [
+        "dispositive"
+    ],
+    "IY0-AA1-AH0-IH0": [
+        "geologists"
+    ],
+    "OW0-AA1-AH0-IH0": [
+        "cooperatives",
+        "provocative"
+    ],
+    "AY1-AA2-AH0-IH0": [
+        "skyrocketed",
+        "skyrocketing"
+    ],
     "AE1-AH0-IH0": [
         "absences",
         "acronym",
@@ -27906,6 +34305,53 @@ export default {
         "slackening",
         "talented"
     ],
+    "AH0-AE1-AH0-IH0": [
+        "abandoning",
+        "annapolis",
+        "metastasis"
+    ],
+    "AY0-AE1-AH0-IH0": [
+        "diaphanous"
+    ],
+    "EH0-AE1-AH0-IH0": [
+        "empaneling"
+    ],
+    "IH0-AE1-AH0-IH0": [
+        "embarrasses",
+        "imbalances",
+        "inhabiting",
+        "philanthropists",
+        "philatelist"
+    ],
+    "IH2-AE1-AH0-IH0": [
+        "imagining"
+    ],
+    "AA1-AH0-AH0-IH0": [
+        "confidences"
+    ],
+    "AE1-AH0-AH0-IH0": [
+        "capitalist",
+        "capitalists"
+    ],
+    "AO1-AH0-AH0-IH0": [
+        "ordinances"
+    ],
+    "AW1-AH0-AH0-IH0": [
+        "countenances"
+    ],
+    "EH1-AH0-AH0-IH0": [
+        "eminences",
+        "genuineness",
+        "jettisoning",
+        "speculative"
+    ],
+    "IH1-AH0-AH0-IH0": [
+        "disciplining",
+        "minimalist"
+    ],
+    "UW1-AH0-AH0-IH0": [
+        "cumulative"
+    ],
     "AH1-AH0-IH0": [
         "bludgeoning",
         "buttressing",
@@ -27925,6 +34371,23 @@ export default {
         "trumpeted",
         "trumpeting",
         "tunneling"
+    ],
+    "AE0-AH1-AH0-IH0": [
+        "malfunctioning"
+    ],
+    "AH0-AH1-AH0-IH0": [
+        "constructionist",
+        "consultative"
+    ],
+    "EH0-AH1-AH0-IH0": [
+        "encompassing"
+    ],
+    "ER0-AH1-AH0-IH0": [
+        "percussionist"
+    ],
+    "IH2-AH1-AH0-IH0": [
+        "illustrative",
+        "injustices"
     ],
     "AO1-AH0-IH0": [
         "auctioning",
@@ -27948,8 +34411,27 @@ export default {
         "walloping",
         "warranted"
     ],
+    "AH0-AO1-AH0-IH0": [
+        "abortionist",
+        "abortionists",
+        "apportioning",
+        "pejorative",
+        "restorative",
+        "unwarranted"
+    ],
+    "EH0-AO1-AH0-IH0": [
+        "extortionist",
+        "extortionists"
+    ],
+    "IH2-AO1-AH0-IH0": [
+        "informative",
+        "inordinate"
+    ],
     "AW1-AH0-IH0": [
         "countesses"
+    ],
+    "AH0-AW1-AH0-IH0": [
+        "allowances"
     ],
     "AY1-AH0-IH0": [
         "biases",
@@ -27982,6 +34464,21 @@ export default {
         "widening",
         "zionist",
         "zionists"
+    ],
+    "AH0-AY1-AH0-IH0": [
+        "contrivances"
+    ],
+    "EH0-AY1-AH0-IH0": [
+        "enlivening"
+    ],
+    "IH0-AY1-AH0-IH0": [
+        "disquieting"
+    ],
+    "IH2-AY1-AH0-IH0": [
+        "inviolate"
+    ],
+    "IY0-AY1-AH0-IH0": [
+        "revivalist"
     ],
     "EH1-AH0-IH0": [
         "baroness",
@@ -28043,6 +34540,90 @@ export default {
         "therapists",
         "welcoming"
     ],
+    "AE0-EH1-AH0-IH0": [
+        "acceptances"
+    ],
+    "AH0-EH1-AH0-IH0": [
+        "accrediting",
+        "adrenalin",
+        "apprentices",
+        "comparative",
+        "competitive",
+        "consecutive",
+        "contemplative",
+        "geneticists",
+        "prospectuses",
+        "protectionist",
+        "protectionists",
+        "unedited",
+        "unheralded",
+        "unquestioning"
+    ],
+    "ER0-EH1-AH0-IH0": [
+        "parenthesis"
+    ],
+    "IH0-EH1-AH0-IH0": [
+        "declarative",
+        "developing",
+        "discrediting",
+        "embarrassing",
+        "enveloping",
+        "executive",
+        "executives",
+        "remembrances",
+        "secessionist",
+        "secessionists"
+    ],
+    "IH2-EH1-AH0-IH0": [
+        "imperative",
+        "imperatives",
+        "imperiling",
+        "impressionists",
+        "inherited",
+        "inheriting",
+        "insensitive"
+    ],
+    "IY0-EH1-AH0-IH0": [
+        "preventative",
+        "preventatives"
+    ],
+    "UW0-EH1-AH0-IH0": [
+        "supremacist",
+        "supremacists"
+    ],
+    "IH0-EH2-AH0-IH0": [
+        "expressionless"
+    ],
+    "AA1-ER0-AH0-IH0": [
+        "operative",
+        "operatives",
+        "tolerances"
+    ],
+    "AE1-ER0-AH0-IH0": [
+        "allergenic"
+    ],
+    "AH1-ER0-AH0-IH0": [
+        "coverages",
+        "utterances"
+    ],
+    "EH1-ER0-AH0-IH0": [
+        "federalist",
+        "federative",
+        "generalists",
+        "generative",
+        "preferences",
+        "references",
+        "referencing",
+        "separatist",
+        "separatists"
+    ],
+    "IH1-ER0-AH0-IH0": [
+        "differences",
+        "figurative"
+    ],
+    "UW1-ER0-AH0-IH0": [
+        "stewardesses"
+    ],
     "ER1-AH0-IH0": [
         "burdening",
         "burgeoning",
@@ -28055,6 +34636,38 @@ export default {
         "surpluses",
         "worshipping"
     ],
+    "AH0-ER1-AH0-IH0": [
+        "affirmative",
+        "conservative",
+        "conservatives",
+        "observances",
+        "occurrences",
+        "preservatives"
+    ],
+    "AO0-ER1-AH0-IH0": [
+        "alternative",
+        "alternatives"
+    ],
+    "AY0-ER1-AH0-IH0": [
+        "divergences"
+    ],
+    "IH0-ER1-AH0-IH0": [
+        "determining",
+        "discouraging"
+    ],
+    "IH2-ER1-AH0-IH0": [
+        "interpretive"
+    ],
+    "IY0-ER1-AH0-IH0": [
+        "preservative",
+        "repurchases",
+        "repurchasing",
+        "resurfacing"
+    ],
+    "UH0-ER1-AH0-IH0": [
+        "superlative",
+        "superlatives"
+    ],
     "EY1-AH0-IH0": [
         "cadences",
         "fatalist",
@@ -28062,6 +34675,13 @@ export default {
         "satanist",
         "stationing",
         "waitresses"
+    ],
+    "AH0-EY1-AH0-IH0": [
+        "acquaintances",
+        "awakening"
+    ],
+    "EH1-IH0-AH0-IH0": [
+        "residences"
     ],
     "IH1-AH0-IH0": [
         "bigoted",
@@ -28107,6 +34727,79 @@ export default {
         "viciousness",
         "witnessing"
     ],
+    "AA0-IH1-AH0-IH0": [
+        "auditioning",
+        "partitioning"
+    ],
+    "AH0-IH1-AH0-IH0": [
+        "acquisitive",
+        "attributed",
+        "attributing",
+        "commissioning",
+        "conditioning",
+        "militiamen",
+        "petitioning",
+        "positioning",
+        "soliciting",
+        "uninterested",
+        "uninteresting",
+        "unlimited"
+    ],
+    "AW1-IH1-AH0-IH0": [
+        "outdistances",
+        "outdistancing"
+    ],
+    "EH0-IH1-AH0-IH0": [
+        "envisioning"
+    ],
+    "ER0-IH1-AH0-IH0": [
+        "derivative",
+        "derivatives"
+    ],
+    "IH0-IH1-AH0-IH0": [
+        "diminutive",
+        "dispirited",
+        "eliciting"
+    ],
+    "IH2-IH1-AH0-IH0": [
+        "imprisoning",
+        "indicative",
+        "inhibited",
+        "inhibiting",
+        "initialing",
+        "initialling"
+    ],
+    "IY0-IH1-AH0-IH0": [
+        "religionist",
+        "revisionist",
+        "revisionists",
+        "revisited"
+    ],
+    "OW0-IH1-AH0-IH0": [
+        "prohibiting",
+        "prohibitive"
+    ],
+    "UW0-IH1-AH0-IH0": [
+        "musicianship",
+        "nutritionist",
+        "nutritionists"
+    ],
+    "AY1-IH2-AH0-IH0": [
+        "eyewitnesses"
+    ],
+    "AA1-IY0-AH0-IH0": [
+        "guardianship"
+    ],
+    "AE1-IY0-AH0-IH0": [
+        "championing",
+        "palliative"
+    ],
+    "EH1-IY0-AH0-IH0": [
+        "variances"
+    ],
+    "EY1-IY0-AH0-IH0": [
+        "aliases"
+    ],
     "IY1-AH0-IH0": [
         "cheapening",
         "egotist",
@@ -28123,6 +34816,10 @@ export default {
         "sequencing",
         "weakening"
     ],
+    "AH0-IY1-AH0-IH0": [
+        "conveniences",
+        "subpoenaing"
+    ],
     "OW1-AH0-IH0": [
         "bonuses",
         "focuses",
@@ -28137,6 +34834,11 @@ export default {
         "vocalist",
         "vocalists"
     ],
+    "IY0-OW1-AH0-IH0": [
+        "refocuses",
+        "refocusing",
+        "reopening"
+    ],
     "OY1-AH0-IH0": [
         "loyalist",
         "loyalists",
@@ -28144,8 +34846,17 @@ export default {
         "poisonings",
         "royalist"
     ],
+    "AH0-OY1-AH0-IH0": [
+        "annoyances"
+    ],
+    "EH2-OY1-AH0-IH0": [
+        "exploitative"
+    ],
     "UH1-AH0-IH0": [
         "curative"
+    ],
+    "IH1-UW0-AH0-IH0": [
+        "issuances"
     ],
     "UW1-AH0-IH0": [
         "dualist",
@@ -28161,6 +34872,16 @@ export default {
         "punitive",
         "putative",
         "unionists"
+    ],
+    "AH0-UW1-AH0-IH0": [
+        "accusative"
+    ],
+    "IH2-UW1-AH0-IH0": [
+        "intuitive"
+    ],
+    "IH1-UW2-AH0-IH0": [
+        "influences",
+        "influencing"
     ],
     "AH1-IH0": [
         "blooded",
@@ -28430,6 +35151,25 @@ export default {
         "unpublished",
         "unpunished"
     ],
+    "AA2-AH0-AH1-IH0": [
+        "nonproductive"
+    ],
+    "AE2-AH0-AH1-IH0": [
+        "maladjusted"
+    ],
+    "AH2-AH0-AH1-IH0": [
+        "unadjusted",
+        "unobstructed",
+        "unproductive"
+    ],
+    "IY2-AH0-AH1-IH0": [
+        "readjusted",
+        "readjusting",
+        "reconstructed",
+        "reconstructing",
+        "reconstructive",
+        "reproductive"
+    ],
     "AO1-AH1-IH0": [
         "forthcoming"
     ],
@@ -28449,6 +35189,10 @@ export default {
         "curmudgeon",
         "curmudgeons",
         "pertussis"
+    ],
+    "IH2-ER0-AH1-IH0": [
+        "interrupted",
+        "interrupting"
     ],
     "IH0-AH1-IH0": [
         "becoming",
@@ -28511,6 +35255,10 @@ export default {
         "bankrupting",
         "handcuffing"
     ],
+    "AE1-AH0-AH2-IH0": [
+        "catapulted",
+        "catapulting"
+    ],
     "AH1-AH2-IH0": [
         "bloodsucking",
         "upcoming"
@@ -28523,6 +35271,17 @@ export default {
     "AW1-AH2-IH0": [
         "outgunning"
     ],
+    "AH1-ER0-AH2-IH0": [
+        "motherfucking",
+        "undercutting"
+    ],
+    "IH1-ER0-AH2-IH0": [
+        "jitterbugging"
+    ],
+    "OW1-ER0-AH2-IH0": [
+        "overcoming",
+        "overrunning"
+    ],
     "ER1-AH2-IH0": [
         "furnaces"
     ],
@@ -28531,6 +35290,9 @@ export default {
     ],
     "IH1-AH2-IH0": [
         "incoming"
+    ],
+    "IH1-IY0-AH2-IH0": [
+        "minibuses"
     ],
     "OW1-AH2-IH0": [
         "homecoming"
@@ -28543,6 +35305,9 @@ export default {
     ],
     "EY1-AO0-IH0": [
         "wainscotting"
+    ],
+    "AE1-IY0-AO0-IH0": [
+        "amniotic"
     ],
     "IY1-AO0-IH0": [
         "resources"
@@ -28784,6 +35549,20 @@ export default {
         "undaunted",
         "unwanted"
     ],
+    "AA2-AH0-AO1-IH0": [
+        "nonconformist"
+    ],
+    "AE2-AH0-AO1-IH0": [
+        "apostolic"
+    ],
+    "AH0-AH0-AO1-IH0": [
+        "unsupported"
+    ],
+    "EH2-AH0-AO1-IH0": [
+        "aeronautics",
+        "metamorphic",
+        "telescopic"
+    ],
     "AO0-AO1-IH0": [
         "forewarning"
     ],
@@ -28822,6 +35601,9 @@ export default {
         "purported",
         "purporting"
     ],
+    "AH2-ER0-AO1-IH0": [
+        "underscoring"
+    ],
     "EY0-AO1-IH0": [
         "aortic"
     ],
@@ -28858,6 +35640,18 @@ export default {
         "restoring",
         "systolic"
     ],
+    "AH2-IH0-AO1-IH0": [
+        "unrecorded"
+    ],
+    "IH0-IH0-AO1-IH0": [
+        "misinforming",
+        "misreported"
+    ],
+    "IY2-IH0-AO1-IH0": [
+        "prehistoric",
+        "reinforces",
+        "reinforcing"
+    ],
     "IH2-AO1-IH0": [
         "ignoring",
         "imploring",
@@ -28871,6 +35665,16 @@ export default {
         "ebonics",
         "redrawing",
         "retorted"
+    ],
+    "AH2-IY0-AO1-IH0": [
+        "unreported"
+    ],
+    "IY2-IY0-AO1-IH0": [
+        "meteoric",
+        "prerecorded"
+    ],
+    "AA2-IY2-AO1-IH0": [
+        "polymorphic"
     ],
     "OW0-AO1-IH0": [
         "prolonging"
@@ -28887,8 +35691,24 @@ export default {
     "AE1-AO2-IH0": [
         "racehorses"
     ],
+    "AE1-AH0-AO2-IH0": [
+        "cataloguing",
+        "macintoshes"
+    ],
+    "IY1-AH0-AO2-IH0": [
+        "stevedoring"
+    ],
     "AW1-AO2-IH0": [
         "outlawing"
+    ],
+    "AH1-ER0-AO2-IH0": [
+        "somersaulting"
+    ],
+    "AW1-ER0-AO2-IH0": [
+        "outperforming"
+    ],
+    "OW1-ER0-AO2-IH0": [
+        "overhauling"
     ],
     "ER1-AO2-IH0": [
         "workhorses"
@@ -28897,6 +35717,9 @@ export default {
         "brainstorming",
         "jaywalking",
         "skateboarding"
+    ],
+    "AE1-IH0-AO2-IH0": [
+        "asymptotic"
     ],
     "IH1-AO2-IH0": [
         "crisscrossing",
@@ -29034,6 +35857,15 @@ export default {
         "undoubted",
         "unfounded"
     ],
+    "AH2-AH0-AW1-IH0": [
+        "unaccounted"
+    ],
+    "IH0-AH0-AW1-IH0": [
+        "disallowing",
+        "disavowing",
+        "mispronounces",
+        "mispronouncing"
+    ],
     "AH2-AW1-IH0": [
         "uncounted"
     ],
@@ -29049,6 +35881,9 @@ export default {
         "surrounded",
         "surrounding",
         "surroundings"
+    ],
+    "OW1-ER0-AW1-IH0": [
+        "overpowering"
     ],
     "IH0-AW1-IH0": [
         "denounces",
@@ -29084,15 +35919,54 @@ export default {
         "penthouses",
         "warehousing"
     ],
+    "AO1-ER0-AW2-IH0": [
+        "slaughterhouses"
+    ],
+    "AW1-ER0-AW2-IH0": [
+        "powerhouses"
+    ],
+    "AY1-ER0-AW2-IH0": [
+        "firehouses"
+    ],
+    "OW1-ER0-AW2-IH0": [
+        "overcrowded",
+        "overcrowding"
+    ],
     "EY1-AW2-IH0": [
         "playhouses",
         "statehouses"
     ],
+    "AO1-IH0-AW2-IH0": [
+        "boardinghouses"
+    ],
+    "IY1-IH0-AW2-IH0": [
+        "clearinghouses"
+    ],
+    "AO1-IY0-AW2-IH0": [
+        "coffeehouses"
+    ],
     "AE1-AY0-IH0": [
         "franchising"
     ],
+    "AE1-AH0-AY0-IH0": [
+        "agonizing"
+    ],
+    "IH1-AH0-AY0-IH0": [
+        "victimizing"
+    ],
+    "UH1-AH0-AY0-IH0": [
+        "pluralizes",
+        "pluralizing"
+    ],
     "AY1-AY0-IH0": [
         "skydiving"
+    ],
+    "AE1-ER0-AY0-IH0": [
+        "glamorizing"
+    ],
+    "AO1-ER0-AY0-IH0": [
+        "cauterizes",
+        "cauterizing"
     ],
     "AY1-IH0": [
         "biding",
@@ -29300,6 +36174,27 @@ export default {
         "unwinding",
         "uprising"
     ],
+    "AA2-AH0-AY1-IH0": [
+        "oxidative"
+    ],
+    "AH2-AH0-AY1-IH0": [
+        "undivided"
+    ],
+    "ER2-AH0-AY1-IH0": [
+        "dermatitis"
+    ],
+    "IH0-AH0-AY1-IH0": [
+        "misapplying"
+    ],
+    "IY0-AH0-AY1-IH0": [
+        "realigning"
+    ],
+    "IY2-AH0-AY1-IH0": [
+        "reassigning"
+    ],
+    "OW2-AH0-AY1-IH0": [
+        "coinciding"
+    ],
     "AO1-AY1-IH0": [
         "shortsighted"
     ],
@@ -29313,6 +36208,20 @@ export default {
         "perspiring",
         "surmises",
         "surviving"
+    ],
+    "AH1-ER0-AY1-IH0": [
+        "underwriting"
+    ],
+    "AH2-ER0-AY1-IH0": [
+        "underlying"
+    ],
+    "OW2-ER0-AY1-IH0": [
+        "overflying",
+        "overlying",
+        "overprices",
+        "overpricing",
+        "oversizes",
+        "overwriting"
     ],
     "IH0-AY1-IH0": [
         "beguiling",
@@ -29345,6 +36254,28 @@ export default {
         "misguided",
         "resided"
     ],
+    "AH0-IH0-AY1-IH0": [
+        "unexciting",
+        "uninspiring"
+    ],
+    "AH2-IH0-AY1-IH0": [
+        "subdivided",
+        "undecided",
+        "uninvited",
+        "uninviting"
+    ],
+    "IH2-IH0-AY1-IH0": [
+        "indecisive"
+    ],
+    "IY0-IH0-AY1-IH0": [
+        "redefining"
+    ],
+    "IY2-IH0-AY1-IH0": [
+        "redesigning",
+        "reignited",
+        "reigniting",
+        "reinvited"
+    ],
     "IH2-AY1-IH0": [
         "decided",
         "deciding",
@@ -29372,6 +36303,9 @@ export default {
         "retrying",
         "rewriting"
     ],
+    "AH2-IY0-AY1-IH0": [
+        "unrequited"
+    ],
     "OW0-AY1-IH0": [
         "obrien",
         "opining"
@@ -29379,6 +36313,10 @@ export default {
     "UW0-AY1-IH0": [
         "united",
         "uniting"
+    ],
+    "IY2-UW0-AY1-IH0": [
+        "reunited",
+        "reuniting"
     ],
     "AA1-AY2-IH0": [
         "stockpiling"
@@ -29388,6 +36326,162 @@ export default {
         "backsliding",
         "franchises",
         "handwriting"
+    ],
+    "EH0-AE1-AY2-IH0": [
+        "enfranchises"
+    ],
+    "AA1-AH0-AY2-IH0": [
+        "compromises",
+        "compromising",
+        "harmonizes",
+        "harmonizing",
+        "modifying",
+        "monetizing",
+        "occupying",
+        "optimizing",
+        "oxidizing",
+        "qualifying"
+    ],
+    "AE1-AH0-AY2-IH0": [
+        "agonizes",
+        "amplifying",
+        "analyzes",
+        "analyzing",
+        "classifying",
+        "dramatizes",
+        "dramatizing",
+        "galvanizing",
+        "gratifying",
+        "magnifying",
+        "maximizes",
+        "maximizing",
+        "ratifying",
+        "rhapsodizes",
+        "sacrifices",
+        "sacrificing",
+        "sanitizing",
+        "tranquilizing",
+        "vandalizing"
+    ],
+    "AH1-AH0-AY2-IH0": [
+        "customizes",
+        "customizing",
+        "justifying",
+        "multiplying",
+        "mummifying",
+        "nullifying",
+        "publicizing",
+        "stultifying"
+    ],
+    "AO1-AH0-AY2-IH0": [
+        "falsifying",
+        "formalizes",
+        "formalizing",
+        "glorifying",
+        "horrifying",
+        "moralizing",
+        "normalizes",
+        "normalizing",
+        "organizes",
+        "organizing"
+    ],
+    "AY1-AH0-AY2-IH0": [
+        "finalizes",
+        "finalizing",
+        "idolizes",
+        "idolizing",
+        "ionizing",
+        "itemizes",
+        "itemizing",
+        "privatizing"
+    ],
+    "EH1-AH0-AY2-IH0": [
+        "centralizing",
+        "clarifying",
+        "edifying",
+        "emphasizing",
+        "expediting",
+        "extradited",
+        "extraditing",
+        "paralyzes",
+        "paralyzing",
+        "recognizing",
+        "reconciling",
+        "rectifying",
+        "specializing",
+        "specifying",
+        "sterilizes",
+        "sterilizing",
+        "televising",
+        "terrifying",
+        "testifying",
+        "verifying"
+    ],
+    "ER1-AH0-AY2-IH0": [
+        "certifying",
+        "fertilizes",
+        "fertilizing",
+        "merchandising",
+        "verbalizing"
+    ],
+    "EY1-AH0-AY2-IH0": [
+        "patronizing",
+        "stabilizing"
+    ],
+    "IH1-AH0-AY2-IH0": [
+        "crystallizes",
+        "crystallizing",
+        "digitizing",
+        "immunizes",
+        "immunizing",
+        "improvising",
+        "minimizing",
+        "mystifying",
+        "signifying",
+        "simplifying",
+        "stigmatizing",
+        "symbolizes",
+        "symbolizing",
+        "sympathizes",
+        "sympathizing",
+        "synchronizes",
+        "synchronizing",
+        "synthesizing",
+        "visualizing"
+    ],
+    "IY1-AH0-AY2-IH0": [
+        "demonizing",
+        "equalizes",
+        "equalizing",
+        "legalizing",
+        "penalizing",
+        "realizes",
+        "realizing"
+    ],
+    "OW1-AH0-AY2-IH0": [
+        "codifying",
+        "mobilizing",
+        "notifying",
+        "socializing",
+        "vocalizes"
+    ],
+    "UH1-AH0-AY2-IH0": [
+        "purifying",
+        "womanizing"
+    ],
+    "UW1-AH0-AY2-IH0": [
+        "brutalizes",
+        "brutalizing",
+        "humanizes",
+        "humanizing",
+        "neutralizes",
+        "neutralizing",
+        "scrutinizes",
+        "scrutinizing",
+        "unifying",
+        "unionizing",
+        "utilizes",
+        "utilizing"
     ],
     "AH1-AY2-IH0": [
         "uprisings"
@@ -29411,13 +36505,100 @@ export default {
         "redlining",
         "spellbinding"
     ],
+    "AA1-ER0-AY2-IH0": [
+        "modernizes",
+        "modernizing"
+    ],
+    "AE1-ER0-AY2-IH0": [
+        "advertises",
+        "advertising",
+        "amortizing",
+        "fraternizing",
+        "masterminded",
+        "masterminding",
+        "pasteurizes",
+        "pasteurizing",
+        "satirizes",
+        "satirizing",
+        "standardizing"
+    ],
+    "AH1-ER0-AY2-IH0": [
+        "summarizes",
+        "summarizing",
+        "underlining",
+        "undermining",
+        "underpricing"
+    ],
+    "AO1-ER0-AY2-IH0": [
+        "authorizes",
+        "authorizing"
+    ],
+    "EH1-ER0-AY2-IH0": [
+        "energizes",
+        "energizing",
+        "exercising",
+        "jeopardizes",
+        "jeopardizing",
+        "memorizes",
+        "memorizing",
+        "mesmerizing",
+        "pressurizes",
+        "pressurizing",
+        "temporizing",
+        "terrorizes",
+        "terrorizing"
+    ],
+    "IH1-ER0-AY2-IH0": [
+        "intertwining"
+    ],
+    "IY1-ER0-AY2-IH0": [
+        "theorizes",
+        "theorizing"
+    ],
+    "OW1-ER0-AY2-IH0": [
+        "overriding",
+        "polarizes",
+        "polarizing"
+    ],
+    "UW1-ER0-AY2-IH0": [
+        "supervises",
+        "supervising"
+    ],
+    "AA1-IH0-AY2-IH0": [
+        "quantifying"
+    ],
+    "AE1-IH0-AY2-IH0": [
+        "appetizing",
+        "satisfying"
+    ],
+    "AH1-IH0-AY2-IH0": [
+        "subsidizes",
+        "subsidizing"
+    ],
+    "AO1-IH0-AY2-IH0": [
+        "fortifying"
+    ],
+    "EH1-IH0-AY2-IH0": [
+        "expedited"
+    ],
+    "IH1-IH0-AY2-IH0": [
+        "criticizes",
+        "criticizing"
+    ],
     "IH1-AY2-IH0": [
         "hitchhiking",
         "infighting"
     ],
+    "AA1-IY0-AY2-IH0": [
+        "copyrighted"
+    ],
     "IY1-AY2-IH0": [
         "nearsighted",
         "streamlining"
+    ],
+    "AY0-IY1-AY2-IH0": [
+        "idealizes",
+        "idealizing"
     ],
     "OW1-AY2-IH0": [
         "profiling"
@@ -29438,6 +36619,12 @@ export default {
     "AE1-EH0-IH0": [
         "accented",
         "accenting"
+    ],
+    "IY0-AO1-EH0-IH0": [
+        "reprocessing"
+    ],
+    "AH0-EH1-EH0-IH0": [
+        "anaesthetist"
     ],
     "IH1-EH0-IH0": [
         "indexes",
@@ -29793,6 +36980,9 @@ export default {
         "prosthetic",
         "prosthetics"
     ],
+    "AA2-AA0-EH1-IH0": [
+        "aramaic"
+    ],
     "AE0-EH1-IH0": [
         "athletic",
         "athletics",
@@ -29943,6 +37133,105 @@ export default {
         "untested",
         "upsetting"
     ],
+    "AA2-AH0-EH1-IH0": [
+        "contraceptive",
+        "contraceptives",
+        "homiletic"
+    ],
+    "AE2-AH0-EH1-IH0": [
+        "academic",
+        "academics",
+        "alphabetic",
+        "anaesthetic",
+        "anesthetic",
+        "anesthetics",
+        "antiseptic",
+        "apathetic",
+        "apoplectic",
+        "atmospheric",
+        "atmospherics",
+        "barometric",
+        "calisthenic",
+        "calisthenics",
+        "gravimetric",
+        "pathogenic",
+        "sacrilegious"
+    ],
+    "AH0-AH0-EH1-IH0": [
+        "unattended",
+        "uncollected"
+    ],
+    "AH2-AH0-EH1-IH0": [
+        "unaffected",
+        "unconnected",
+        "uncontested",
+        "unmolested",
+        "unprotected",
+        "unsuspected",
+        "unsuspecting"
+    ],
+    "AO2-AH0-EH1-IH0": [
+        "orogenic"
+    ],
+    "AY2-AH0-EH1-IH0": [
+        "diabetic",
+        "diabetics",
+        "dialectic",
+        "dielectric",
+        "dietetic",
+        "psychedelic"
+    ],
+    "EH2-AH0-EH1-IH0": [
+        "clarinetist",
+        "clarinetists",
+        "empathetic",
+        "epidemic",
+        "epidemics",
+        "epileptic",
+        "epileptics",
+        "paramedic",
+        "paramedics",
+        "parametric",
+        "recommended",
+        "recommending",
+        "retrospective",
+        "telegenic"
+    ],
+    "ER2-AH0-EH1-IH0": [
+        "circumvented",
+        "circumventing"
+    ],
+    "EY2-AH0-EH1-IH0": [
+        "asymmetric"
+    ],
+    "IH2-AH0-EH1-IH0": [
+        "disaffected",
+        "disconnected",
+        "disconnecting",
+        "discontented",
+        "inattentive",
+        "inoffensive",
+        "irrespective",
+        "kinesthetic",
+        "schizophrenic",
+        "silhouetted",
+        "sympathetic"
+    ],
+    "IY0-AH0-EH1-IH0": [
+        "reassessing",
+        "reconnected",
+        "reconnecting"
+    ],
+    "IY2-AH0-EH1-IH0": [
+        "geodesic",
+        "geodetic",
+        "geometric"
+    ],
+    "OW2-AH0-EH1-IH0": [
+        "coalesces",
+        "coalescing",
+        "photogenic"
+    ],
     "AH2-EH1-IH0": [
         "unbending"
     ],
@@ -29950,6 +37239,9 @@ export default {
         "foretelling",
         "offsetting",
         "portending"
+    ],
+    "AH2-AO0-EH1-IH0": [
+        "unauthentic"
     ],
     "AO2-EH1-IH0": [
         "prospecting"
@@ -30001,6 +37293,36 @@ export default {
         "perplexing",
         "perspective",
         "perspectives"
+    ],
+    "AH2-ER0-EH1-IH0": [
+        "uncorrected"
+    ],
+    "AY2-ER0-EH1-IH0": [
+        "hypertensive"
+    ],
+    "EH2-ER0-EH1-IH0": [
+        "energetic",
+        "resurrected",
+        "resurrecting"
+    ],
+    "IH0-ER0-EH1-IH0": [
+        "synergetic"
+    ],
+    "IH2-ER0-EH1-IH0": [
+        "interjected",
+        "intermarriage",
+        "intersected",
+        "intersecting"
+    ],
+    "IY0-ER0-EH1-IH0": [
+        "rearrested"
+    ],
+    "IY2-ER0-EH1-IH0": [
+        "redirected",
+        "redirecting"
+    ],
+    "OW1-ER0-EH1-IH0": [
+        "overbearing"
     ],
     "IH0-EH1-IH0": [
         "befriended",
@@ -30082,6 +37404,49 @@ export default {
         "synthetics",
         "systemic"
     ],
+    "AA2-IH0-EH1-IH0": [
+        "comprehended",
+        "comprehending",
+        "condescended",
+        "condescending"
+    ],
+    "AE2-IH0-EH1-IH0": [
+        "apprehended",
+        "apprehending"
+    ],
+    "AH0-IH0-EH1-IH0": [
+        "unreceptive"
+    ],
+    "AH2-IH0-EH1-IH0": [
+        "undetected",
+        "unexpected",
+        "unimpressive",
+        "uninfected",
+        "unintended"
+    ],
+    "EH2-IH0-EH1-IH0": [
+        "epinephrine",
+        "represented",
+        "representing"
+    ],
+    "IH0-IH0-EH1-IH0": [
+        "misdirected"
+    ],
+    "IH2-IH0-EH1-IH0": [
+        "disrespected",
+        "ineffective",
+        "inexpensive"
+    ],
+    "IY0-IH0-EH1-IH0": [
+        "reelected",
+        "reelecting"
+    ],
+    "IY2-IH0-EH1-IH0": [
+        "reinvented",
+        "reinventing",
+        "reinvested",
+        "reinvesting"
+    ],
     "IH2-EH1-IH0": [
         "dyspeptic",
         "hysteric",
@@ -30132,6 +37497,16 @@ export default {
         "retreading",
         "retrenching"
     ],
+    "AA2-IY0-EH1-IH0": [
+        "comprehensive"
+    ],
+    "AE2-IY0-EH1-IH0": [
+        "acquiescing"
+    ],
+    "AH2-IY0-EH1-IH0": [
+        "multiethnic",
+        "unrelenting"
+    ],
     "IY2-EH1-IH0": [
         "recessing"
     ],
@@ -30141,12 +37516,28 @@ export default {
         "poetics",
         "polemics"
     ],
+    "AA2-OW0-EH1-IH0": [
+        "optometric"
+    ],
+    "AY2-OW0-EH1-IH0": [
+        "psychogenic",
+        "pyrotechnic",
+        "pyrotechnics"
+    ],
+    "IY2-OW0-EH1-IH0": [
+        "egocentric",
+        "geocentric"
+    ],
     "UW0-EH1-IH0": [
         "eugenic",
         "eugenics",
         "numeric",
         "tumeric",
         "tumescent"
+    ],
+    "AY2-UW0-EH1-IH0": [
+        "diuretic",
+        "diuretics"
     ],
     "AA1-EH2-IH0": [
         "hardheaded"
@@ -30155,6 +37546,32 @@ export default {
         "accessing",
         "annexes",
         "transected"
+    ],
+    "AA1-AH0-EH2-IH0": [
+        "complemented",
+        "complementing",
+        "complimented",
+        "complimenting"
+    ],
+    "AE1-AH0-EH2-IH0": [
+        "manifesting"
+    ],
+    "AH2-AH0-EH2-IH0": [
+        "supplemented"
+    ],
+    "AO1-AH0-EH2-IH0": [
+        "ornamented"
+    ],
+    "AY1-AH0-EH2-IH0": [
+        "cryogenic",
+        "cryogenics"
+    ],
+    "EH1-AH0-EH2-IH0": [
+        "paralleling",
+        "regimented"
+    ],
+    "IH1-AH0-EH2-IH0": [
+        "incremented"
     ],
     "AH1-EH2-IH0": [
         "bloodletting"
@@ -30181,9 +37598,30 @@ export default {
         "redheaded",
         "telexes"
     ],
+    "AH1-ER0-EH2-IH0": [
+        "underselling"
+    ],
+    "EH1-ER0-EH2-IH0": [
+        "featherbedding"
+    ],
+    "IH1-ER0-EH2-IH0": [
+        "inferences",
+        "interpreting"
+    ],
+    "OW1-ER0-EH2-IH0": [
+        "overselling",
+        "overspending",
+        "overstepping"
+    ],
     "IH1-EH2-IH0": [
         "spearheaded",
         "spearheading"
+    ],
+    "AO1-IY0-EH2-IH0": [
+        "storytelling"
+    ],
+    "ER1-OW0-EH2-IH0": [
+        "thermosetting"
     ],
     "UW1-EH2-IH0": [
         "bootlegging"
@@ -30220,6 +37658,9 @@ export default {
         "tottering",
         "wandering",
         "wanderings"
+    ],
+    "AO1-AA2-ER0-IH0": [
+        "warmongering"
     ],
     "AE1-ER0-IH0": [
         "ambergris",
@@ -30262,6 +37703,30 @@ export default {
         "tamarisk",
         "tamarisks",
         "tampering"
+    ],
+    "AH0-AE1-ER0-IH0": [
+        "unflattering"
+    ],
+    "EH0-AE1-ER0-IH0": [
+        "enamoring"
+    ],
+    "IY0-AE1-ER0-IH0": [
+        "meandering",
+        "recapturing"
+    ],
+    "AA1-AH0-ER0-IH0": [
+        "monetarist",
+        "monitoring"
+    ],
+    "AE1-AH0-ER0-IH0": [
+        "massacring"
+    ],
+    "EH1-AH0-ER0-IH0": [
+        "secularist",
+        "secularists"
+    ],
+    "IH1-AH0-ER0-IH0": [
+        "militarists"
     ],
     "AH1-ER0-IH0": [
         "blundering",
@@ -30310,6 +37775,19 @@ export default {
         "uttering",
         "wondering"
     ],
+    "AH0-AH1-ER0-IH0": [
+        "recovering",
+        "uncovering"
+    ],
+    "IH0-AH1-ER0-IH0": [
+        "discovering"
+    ],
+    "IY0-AH1-ER0-IH0": [
+        "restructuring"
+    ],
+    "AW1-AH2-ER0-IH0": [
+        "outnumbering"
+    ],
     "AO1-ER0-IH0": [
         "aldermen",
         "altering",
@@ -30330,6 +37808,12 @@ export default {
         "torturing",
         "watering"
     ],
+    "IH0-AO1-ER0-IH0": [
+        "inaugurates"
+    ],
+    "IY0-AO1-ER0-IH0": [
+        "reordering"
+    ],
     "AW1-ER0-IH0": [
         "countering",
         "cowering",
@@ -30344,6 +37828,10 @@ export default {
         "souring",
         "towering"
     ],
+    "IH0-AW1-ER0-IH0": [
+        "devouring",
+        "empowering"
+    ],
     "AY1-ER0-IH0": [
         "diapering",
         "driverless",
@@ -30351,6 +37839,25 @@ export default {
         "minoring",
         "mitering",
         "tiredness"
+    ],
+    "AE0-AY1-ER0-IH0": [
+        "transpiring"
+    ],
+    "AH0-AY1-ER0-IH0": [
+        "deciphering"
+    ],
+    "IH0-AY1-ER0-IH0": [
+        "desiring"
+    ],
+    "IH2-AY1-ER0-IH0": [
+        "inquiring"
+    ],
+    "IY0-AY1-ER0-IH0": [
+        "requiring",
+        "rewiring"
+    ],
+    "AE1-AY2-ER0-IH0": [
+        "backfiring"
     ],
     "EH1-ER0-IH0": [
         "bettering",
@@ -30387,6 +37894,14 @@ export default {
         "venturing",
         "weathering"
     ],
+    "ER0-EH1-ER0-IH0": [
+        "surrendering"
+    ],
+    "IH0-EH1-ER0-IH0": [
+        "dismembering",
+        "endeavoring",
+        "sequestering"
+    ],
     "ER1-ER0-IH0": [
         "furthering",
         "murdering",
@@ -30413,6 +37928,23 @@ export default {
         "tapering",
         "wagering",
         "wavering"
+    ],
+    "AH0-EY1-ER0-IH0": [
+        "unwavering"
+    ],
+    "EH0-EY1-ER0-IH0": [
+        "endangering"
+    ],
+    "IH0-EY1-ER0-IH0": [
+        "behaviorist",
+        "behaviorists",
+        "belaboring"
+    ],
+    "AO1-EY2-ER0-IH0": [
+        "wallpapering"
+    ],
+    "EH1-IH0-ER0-IH0": [
+        "registering"
     ],
     "IH1-ER0-IH0": [
         "bickering",
@@ -30453,6 +37985,21 @@ export default {
         "withering",
         "zippering"
     ],
+    "AH0-IH1-ER0-IH0": [
+        "configuring",
+        "considering"
+    ],
+    "IH0-IH1-ER0-IH0": [
+        "bewildering",
+        "delivering",
+        "disfiguring"
+    ],
+    "IH2-IH1-ER0-IH0": [
+        "invigorate"
+    ],
+    "IY0-IH1-ER0-IH0": [
+        "reentering"
+    ],
     "IY1-ER0-IH0": [
         "featuring",
         "feverish",
@@ -30461,6 +38008,12 @@ export default {
         "teetering",
         "theorist",
         "theorists"
+    ],
+    "IH0-IY1-ER0-IH0": [
+        "beleaguering"
+    ],
+    "IY2-IY1-ER0-IH0": [
+        "seigniorage"
     ],
     "OW1-ER0-IH0": [
         "bolstering",
@@ -30475,8 +38028,14 @@ export default {
         "sojourning",
         "soldiering"
     ],
+    "AA1-OW2-ER0-IH0": [
+        "stockbrokerage"
+    ],
     "OY1-ER0-IH0": [
         "loitering"
+    ],
+    "EH0-OY1-ER0-IH0": [
+        "embroidering"
     ],
     "UH1-ER0-IH0": [
         "butchering"
@@ -30489,6 +38048,9 @@ export default {
         "sewerage",
         "suturing",
         "tutoring"
+    ],
+    "AH0-UW1-ER0-IH0": [
+        "maneuvering"
     ],
     "ER1-IH0": [
         "birthing",
@@ -30655,6 +38217,20 @@ export default {
         "unnerving",
         "unswerving"
     ],
+    "AH2-AH0-ER1-IH0": [
+        "unconverted"
+    ],
+    "AY2-AH0-ER1-IH0": [
+        "hypodermic"
+    ],
+    "IH2-AH0-ER1-IH0": [
+        "disconcerting"
+    ],
+    "IY2-AH0-ER1-IH0": [
+        "reaffirming",
+        "reasserted",
+        "reasserting"
+    ],
     "AY0-ER1-IH0": [
         "diverges",
         "diverging"
@@ -30666,6 +38242,12 @@ export default {
         "perturbing",
         "perverted",
         "perverting"
+    ],
+    "AH2-ER0-ER1-IH0": [
+        "undernourished"
+    ],
+    "OW2-ER0-ER1-IH0": [
+        "overworking"
     ],
     "IH0-ER1-IH0": [
         "deferring",
@@ -30688,6 +38270,16 @@ export default {
         "reservists",
         "reverting"
     ],
+    "AA0-IH0-ER1-IH0": [
+        "nonrecurring"
+    ],
+    "AH2-IH0-ER1-IH0": [
+        "undeserving"
+    ],
+    "IY2-IH0-ER1-IH0": [
+        "reimburses",
+        "reimbursing"
+    ],
     "IH2-ER1-IH0": [
         "imperfect",
         "incurring",
@@ -30706,9 +38298,16 @@ export default {
         "resurging",
         "reworking"
     ],
+    "IY2-IY0-ER1-IH0": [
+        "predetermined"
+    ],
     "OW0-ER1-IH0": [
         "coercing",
         "coercive"
+    ],
+    "EH2-OW0-ER1-IH0": [
+        "endothermic",
+        "exothermic"
     ],
     "UW2-ER1-IH0": [
         "usurping"
@@ -30719,8 +38318,27 @@ export default {
     "AE1-ER2-IH0": [
         "amperage"
     ],
+    "AE1-AH0-ER2-IH0": [
+        "amateurish"
+    ],
+    "EH1-AH0-ER2-IH0": [
+        "extroverted",
+        "metalworking"
+    ],
+    "UW1-AH0-ER2-IH0": [
+        "universes"
+    ],
     "EH1-ER2-IH0": [
         "networking"
+    ],
+    "OW1-ER0-ER2-IH0": [
+        "overturning"
+    ],
+    "AE1-IH0-ER2-IH0": [
+        "manicurist"
+    ],
+    "IH1-OW0-ER2-IH0": [
+        "introverted"
     ],
     "UH1-ER2-IH0": [
         "woodworking"
@@ -30730,6 +38348,23 @@ export default {
     ],
     "AE1-EY0-IH0": [
         "lactating"
+    ],
+    "AE1-AH0-EY0-IH0": [
+        "palpitated",
+        "palpitating",
+        "vaccinated",
+        "vacillated",
+        "validated"
+    ],
+    "AO1-AH0-EY0-IH0": [
+        "correlating"
+    ],
+    "AY1-AH0-EY0-IH0": [
+        "violated",
+        "violating"
+    ],
+    "IH1-AH0-EY0-IH0": [
+        "vindicated"
     ],
     "AH1-EY0-IH0": [
         "lovemaking"
@@ -30743,11 +38378,21 @@ export default {
     "EY1-EY0-IH0": [
         "vacating"
     ],
+    "EH1-IH0-EY0-IH0": [
+        "variegated"
+    ],
     "IY1-EY0-IH0": [
         "cremated"
     ],
+    "IH1-OW0-EY0-IH0": [
+        "dislocated"
+    ],
     "OW1-EY0-IH0": [
         "showcasing"
+    ],
+    "IY2-OW1-EY0-IH0": [
+        "relocated",
+        "relocating"
     ],
     "UW1-EY0-IH0": [
         "mutating"
@@ -31063,6 +38708,25 @@ export default {
         "upgraded",
         "upgrading"
     ],
+    "AA2-AH0-EY1-IH0": [
+        "conjugated",
+        "ptolemaic"
+    ],
+    "AE2-AH0-EY1-IH0": [
+        "algebraic",
+        "animating",
+        "annotated",
+        "annotating"
+    ],
+    "AH2-AH0-EY1-IH0": [
+        "unabated",
+        "unavailing"
+    ],
+    "EH2-AH0-EY1-IH0": [
+        "serenaded",
+        "serenading",
+        "vegetative"
+    ],
     "AH2-EY1-IH0": [
         "undated"
     ],
@@ -31105,6 +38769,27 @@ export default {
         "pervasive",
         "purveying",
         "surveying"
+    ],
+    "AE2-ER0-EY1-IH0": [
+        "ascertaining",
+        "masquerading"
+    ],
+    "AH2-ER0-EY1-IH0": [
+        "underrated"
+    ],
+    "IY2-ER0-EY1-IH0": [
+        "prearranging",
+        "rearranging"
+    ],
+    "OW0-ER0-EY1-IH0": [
+        "overtraining"
+    ],
+    "OW1-ER0-EY1-IH0": [
+        "overplaying"
+    ],
+    "OW2-ER0-EY1-IH0": [
+        "overrated",
+        "overrating"
     ],
     "EY0-EY1-IH0": [
         "maintaining",
@@ -31158,6 +38843,19 @@ export default {
         "replacing",
         "sedated"
     ],
+    "AE2-IH0-EY1-IH0": [
+        "affidavits"
+    ],
+    "EH2-IH0-EY1-IH0": [
+        "educative"
+    ],
+    "IH0-IH0-EY1-IH0": [
+        "disengaging"
+    ],
+    "IY2-IH0-EY1-IH0": [
+        "reinstated",
+        "reinstating"
+    ],
     "IH2-EY1-IH0": [
         "impaling",
         "inflated",
@@ -31185,6 +38883,10 @@ export default {
         "retracing",
         "retraining"
     ],
+    "OW1-IY0-EY1-IH0": [
+        "procreated",
+        "procreating"
+    ],
     "IY1-EY1-IH0": [
         "remaking"
     ],
@@ -31197,6 +38899,9 @@ export default {
         "probative",
         "proclaiming",
         "prosaic"
+    ],
+    "IH2-OW0-EY1-IH0": [
+        "disobeying"
     ],
     "OW2-EY1-IH0": [
         "postdated",
@@ -31227,6 +38932,196 @@ export default {
         "stagnated",
         "stagnating",
         "taxpaying"
+    ],
+    "AA1-AH0-EY2-IH0": [
+        "arbitrated",
+        "arbitrating",
+        "carbonated",
+        "compensating",
+        "complicating",
+        "concentrated",
+        "concentrating",
+        "confiscating",
+        "consecrated",
+        "consummating",
+        "contemplated",
+        "contemplating",
+        "dominating",
+        "marketplaces",
+        "nominating",
+        "obligated",
+        "obligating",
+        "oscillating",
+        "populated",
+        "populating",
+        "postulated",
+        "promulgated",
+        "promulgating",
+        "propagated",
+        "propagating",
+        "qualitative"
+    ],
+    "AE1-AH0-EY2-IH0": [
+        "abdicated",
+        "abrogated",
+        "abrogating",
+        "acclimated",
+        "activated",
+        "activating",
+        "advocated",
+        "advocating",
+        "aggravated",
+        "aggravating",
+        "aggregated",
+        "agitated",
+        "agitating",
+        "allocated",
+        "allocating",
+        "amputated",
+        "animated",
+        "antiquated",
+        "calculated",
+        "calculating",
+        "castigated",
+        "castigating",
+        "fascinating",
+        "gravitated",
+        "laminating",
+        "navigated",
+        "navigating",
+        "salivated",
+        "salivating",
+        "tabulated",
+        "tabulating",
+        "vacillating",
+        "validating"
+    ],
+    "AH1-AH0-EY2-IH0": [
+        "culminated",
+        "culminating",
+        "cultivated",
+        "fluctuated",
+        "fluctuating",
+        "subjugated",
+        "suffocated",
+        "suffocating",
+        "undulating"
+    ],
+    "AO1-AH0-EY2-IH0": [
+        "automated",
+        "automating",
+        "chlorinating",
+        "corrugated",
+        "formulating"
+    ],
+    "AY1-AH0-EY2-IH0": [
+        "hyphenated",
+        "hyphenating",
+        "isolating"
+    ],
+    "EH1-AH0-EY2-IH0": [
+        "celebrated",
+        "celebrating",
+        "decimated",
+        "decimating",
+        "delegating",
+        "demonstrated",
+        "demonstrating",
+        "deprecating",
+        "detonating",
+        "devastated",
+        "devastating",
+        "elevated",
+        "elevating",
+        "emanated",
+        "emanating",
+        "emigrated",
+        "emigrating",
+        "emulated",
+        "emulating",
+        "escalated",
+        "escalating",
+        "estimating",
+        "excavated",
+        "excavating",
+        "extricated",
+        "extricating",
+        "hesitating",
+        "legislative",
+        "levitating",
+        "marinated",
+        "marinating",
+        "meditating",
+        "meditative",
+        "paraphrasing",
+        "penetrated",
+        "penetrating",
+        "predicated",
+        "regulated",
+        "regulating",
+        "regulative",
+        "relegated",
+        "relegating",
+        "renovated",
+        "renovating",
+        "resonated",
+        "resonating",
+        "segregated",
+        "speculated",
+        "speculating"
+    ],
+    "ER1-AH0-EY2-IH0": [
+        "circulated",
+        "circulating",
+        "germinated",
+        "percolated",
+        "percolating",
+        "perpetrated",
+        "perpetrating",
+        "terminated",
+        "terminating",
+        "urinating"
+    ],
+    "IH1-AH0-EY2-IH0": [
+        "dissipated",
+        "dissipating",
+        "illustrating",
+        "imitated",
+        "imitating",
+        "imitative",
+        "immigrated",
+        "immolating",
+        "incubating",
+        "indicating",
+        "instigated",
+        "instigating",
+        "insulating",
+        "intimated",
+        "inundated",
+        "inundating",
+        "irrigated",
+        "irritating",
+        "mitigated",
+        "mitigating",
+        "ricocheting",
+        "simulated",
+        "simulating",
+        "stimulated",
+        "stimulating",
+        "stimulative",
+        "stipulated",
+        "stipulating",
+        "syncopated",
+        "titillated",
+        "titillating"
+    ],
+    "OW1-AH0-EY2-IH0": [
+        "motivating"
+    ],
+    "UW1-AH0-EY2-IH0": [
+        "lubricated",
+        "lubricating",
+        "mutilating"
     ],
     "AH1-EY2-IH0": [
         "frustrating",
@@ -31265,18 +39160,155 @@ export default {
         "serrated",
         "staircases"
     ],
+    "IH2-EH1-EY2-IH0": [
+        "impregnating"
+    ],
+    "AA1-ER0-EY2-IH0": [
+        "moderated",
+        "moderating",
+        "tolerated",
+        "tolerating"
+    ],
+    "AE1-ER0-EY2-IH0": [
+        "aspirated",
+        "masturbated",
+        "masturbating",
+        "saturated",
+        "saturating"
+    ],
+    "AH1-ER0-EY2-IH0": [
+        "underpaying",
+        "understated",
+        "understating",
+        "undertaking",
+        "undertakings"
+    ],
+    "AO1-ER0-EY2-IH0": [
+        "alternated",
+        "alternating"
+    ],
+    "AW1-ER0-EY2-IH0": [
+        "countervailing"
+    ],
+    "EH1-ER0-EY2-IH0": [
+        "decorated",
+        "decorating",
+        "extirpating",
+        "federated",
+        "generating",
+        "separated",
+        "separating",
+        "venerated",
+        "venerating"
+    ],
+    "ER1-ER0-EY2-IH0": [
+        "perforated",
+        "perforating"
+    ],
+    "IH1-ER0-EY2-IH0": [
+        "iterative"
+    ],
+    "OW1-ER0-EY2-IH0": [
+        "overgrazing",
+        "overpaying",
+        "overstated",
+        "overstating",
+        "overtaking"
+    ],
     "ER1-EY2-IH0": [
         "birthplaces",
         "earthshaking"
+    ],
+    "IH1-ER2-EY2-IH0": [
+        "liberated",
+        "liberating"
     ],
     "EY1-EY2-IH0": [
         "painstaking",
         "placating",
         "stalemated"
     ],
+    "AA1-IH0-EY2-IH0": [
+        "congregated",
+        "pollinated",
+        "quantitative"
+    ],
+    "AE1-IH0-EY2-IH0": [
+        "abdicating",
+        "captivated",
+        "captivating",
+        "fabricating",
+        "gravitating"
+    ],
+    "AH1-IH0-EY2-IH0": [
+        "cultivating"
+    ],
+    "AO1-IH0-EY2-IH0": [
+        "orchestrated",
+        "orchestrating"
+    ],
+    "EH1-IH0-EY2-IH0": [
+        "dedicating",
+        "denigrated",
+        "denigrating",
+        "designated",
+        "designating",
+        "hesitated",
+        "legislating",
+        "levitated",
+        "medicated",
+        "medicating",
+        "replicated",
+        "replicating",
+        "segregating"
+    ],
+    "IH1-IH0-EY2-IH0": [
+        "implicated",
+        "implicating",
+        "infiltrated",
+        "liquidated",
+        "liquidating",
+        "litigated",
+        "litigating",
+        "syndicated",
+        "syndicating"
+    ],
+    "UW1-IH0-EY2-IH0": [
+        "duplicating",
+        "ruminated"
+    ],
     "IH1-EY2-IH0": [
         "dictating",
         "fixated"
+    ],
+    "IH2-IH1-EY2-IH0": [
+        "infiltrating"
+    ],
+    "UW1-IH2-EY2-IH0": [
+        "fumigating"
+    ],
+    "AA1-IY0-EY2-IH0": [
+        "obviating"
+    ],
+    "AH1-IY0-EY2-IH0": [
+        "moneymaking"
+    ],
+    "AO1-IY0-EY2-IH0": [
+        "nauseating"
+    ],
+    "ER1-IY0-EY2-IH0": [
+        "permeated",
+        "permeating"
+    ],
+    "EY1-IY0-EY2-IH0": [
+        "radiated",
+        "radiating"
+    ],
+    "IY1-IY0-EY2-IH0": [
+        "deviated",
+        "deviating",
+        "mediated",
+        "mediating"
     ],
     "IY1-EY2-IH0": [
         "briefcases",
@@ -31284,6 +39316,9 @@ export default {
         "rebated",
         "relaying",
         "retailing"
+    ],
+    "EY1-IY2-EY2-IH0": [
+        "satiated"
     ],
     "OW1-EY2-IH0": [
         "donated",
@@ -31300,6 +39335,13 @@ export default {
     "UH1-EY2-IH0": [
         "bookcases",
         "bookmaking"
+    ],
+    "AH1-UW0-EY2-IH0": [
+        "punctuated",
+        "punctuating"
+    ],
+    "IH1-UW0-EY2-IH0": [
+        "situated"
     ],
     "UW1-EY2-IH0": [
         "mutated",
@@ -31323,6 +39365,30 @@ export default {
         "stalinist",
         "stoppages",
         "tarnishing"
+    ],
+    "AE0-AA1-IH0-IH0": [
+        "acknowledges",
+        "acknowledging",
+        "admonishes",
+        "admonishing"
+    ],
+    "AH0-AA1-IH0-IH0": [
+        "abolishes",
+        "abolishing",
+        "accomplishes",
+        "accomplishing",
+        "astonishing",
+        "deposited",
+        "depositing"
+    ],
+    "IH0-AA1-IH0-IH0": [
+        "demolishing"
+    ],
+    "IH2-AA1-IH0-IH0": [
+        "impoverishing"
+    ],
+    "IY1-AE0-IH0-IH0": [
+        "repackaging"
     ],
     "AE1-IH0-IH0": [
         "adjective",
@@ -31359,6 +39425,39 @@ export default {
         "vanishes",
         "vanishing"
     ],
+    "AE0-AE1-IH0-IH0": [
+        "advantages"
+    ],
+    "IH0-AE1-IH0-IH0": [
+        "establishes",
+        "establishing",
+        "examining",
+        "mismanaging"
+    ],
+    "IY2-AE1-IH0-IH0": [
+        "repackages"
+    ],
+    "OW0-AE1-IH0-IH0": [
+        "cohabiting"
+    ],
+    "AE1-AH0-IH0-IH0": [
+        "atavistic",
+        "masochistic"
+    ],
+    "AO1-AH0-IH0-IH0": [
+        "orphanages"
+    ],
+    "EH1-AH0-IH0-IH0": [
+        "benefiting",
+        "benefitted",
+        "benefitting",
+        "prejudices",
+        "prejudicing"
+    ],
+    "IH1-AH0-IH0-IH0": [
+        "misogynist",
+        "pilgrimages"
+    ],
     "AH1-IH0-IH0": [
         "budgeting",
         "publicist",
@@ -31367,6 +39466,9 @@ export default {
         "punishing",
         "rummaging",
         "uplifted"
+    ],
+    "IH0-AH1-IH0-IH0": [
+        "destructiveness"
     ],
     "AO1-IH0-IH0": [
         "audited",
@@ -31377,6 +39479,9 @@ export default {
         "mortgaging",
         "sausages",
         "solstices"
+    ],
+    "AH0-AO1-IH0-IH0": [
+        "unpromising"
     ],
     "AW1-IH0-IH0": [
         "outages"
@@ -31403,6 +39508,34 @@ export default {
         "vestiges",
         "zeppelin"
     ],
+    "AH0-EH1-IH0-IH0": [
+        "accredited",
+        "appendages",
+        "appendixes",
+        "collectivist"
+    ],
+    "EH0-EH1-IH0-IH0": [
+        "embellishing"
+    ],
+    "IH0-EH1-IH0-IH0": [
+        "discredited",
+        "disparages",
+        "disparaging",
+        "miscarriages",
+        "repetitive"
+    ],
+    "IH2-EH1-IH0-IH0": [
+        "indebtedness"
+    ],
+    "IY0-EH1-IH0-IH0": [
+        "replenishing"
+    ],
+    "EH1-ER0-IH0-IH0": [
+        "hemorrhaging"
+    ],
+    "OW1-ER0-IH0-IH0": [
+        "brokerages"
+    ],
     "ER1-IH0-IH0": [
         "flourishing",
         "furbishing",
@@ -31418,10 +39551,19 @@ export default {
         "skirmishes",
         "skirmishing"
     ],
+    "IH0-ER1-IH0-IH0": [
+        "discourages"
+    ],
+    "IY0-ER1-IH0-IH0": [
+        "refurbishing"
+    ],
     "EY1-IH0-IH0": [
         "matrices",
         "matrixes",
         "sacredness"
+    ],
+    "ER0-EY1-IH0-IH0": [
+        "pervasiveness"
     ],
     "IH1-IH0-IH0": [
         "finishes",
@@ -31441,6 +39583,39 @@ export default {
         "visited",
         "visiting"
     ],
+    "AH0-IH1-IH0-IH0": [
+        "solicited",
+        "undisciplined",
+        "unwillingness"
+    ],
+    "EH0-IH1-IH0-IH0": [
+        "envisages"
+    ],
+    "IH0-IH1-IH0-IH0": [
+        "definitive",
+        "diminishes",
+        "diminishing",
+        "dispiriting",
+        "distinguishes",
+        "distinguishing",
+        "elicited",
+        "exhibiting",
+        "extinguishing",
+        "relinquishes"
+    ],
+    "IH2-IH1-IH0-IH0": [
+        "infinitive",
+        "inquisitive"
+    ],
+    "IY0-IH1-IH0-IH0": [
+        "redistricting",
+        "refinishing",
+        "relinquishing",
+        "revisiting"
+    ],
+    "IH1-IY0-IH0-IH0": [
+        "lineages"
+    ],
     "IY1-IH0-IH0": [
         "penises"
     ],
@@ -31452,6 +39627,9 @@ export default {
         "fugitives",
         "ruining",
         "tutelage"
+    ],
+    "IH2-UW1-IH0-IH0": [
+        "illuminate"
     ],
     "IH1-IH0": [
         "bidden",
@@ -31893,6 +40071,85 @@ export default {
         "unwitting",
         "vanillin"
     ],
+    "AA2-AH0-IH1-IH0": [
+        "contradicting",
+        "domineering",
+        "monolithic",
+        "nonspecific",
+        "novelistic",
+        "optimistic",
+        "profiteering"
+    ],
+    "AE2-AH0-IH1-IH0": [
+        "analytic",
+        "cataclysmic",
+        "catalytic",
+        "patronymic",
+        "stratospheric",
+        "transpacific"
+    ],
+    "AH2-AH0-IH1-IH0": [
+        "unassisted",
+        "uncommitted",
+        "unconvincing",
+        "undiminished"
+    ],
+    "AO2-AH0-IH1-IH0": [
+        "moralistic",
+        "organismic",
+        "volunteering"
+    ],
+    "AY2-AH0-IH1-IH0": [
+        "pioneering",
+        "scientific"
+    ],
+    "EH1-AH0-IH1-IH0": [
+        "engineering"
+    ],
+    "EH2-AH0-IH1-IH0": [
+        "hellenistic",
+        "hemispheric",
+        "legalistic",
+        "mechanistic",
+        "metaphysics",
+        "paralytic",
+        "parasitic",
+        "pessimistic",
+        "reminisces",
+        "reminiscing"
+    ],
+    "ER0-AH0-IH1-IH0": [
+        "persevering"
+    ],
+    "ER2-AH0-IH1-IH0": [
+        "journalistic"
+    ],
+    "EY0-AH0-IH1-IH0": [
+        "fatalistic"
+    ],
+    "IY2-AH0-IH1-IH0": [
+        "hedonistic",
+        "phenotypic",
+        "readmitted",
+        "realistic",
+        "recommitted",
+        "resubmitted",
+        "resubmitting"
+    ],
+    "OW2-AH0-IH1-IH0": [
+        "chauvinistic",
+        "socialistic"
+    ],
+    "OY2-AH0-IH1-IH0": [
+        "voyeuristic"
+    ],
+    "UW2-AH0-IH1-IH0": [
+        "dualistic",
+        "euphemistic",
+        "feudalistic",
+        "humanistic",
+        "pugilistic"
+    ],
     "AO0-IH1-IH0": [
         "autistic",
         "horrific"
@@ -31902,6 +40159,9 @@ export default {
     ],
     "AW2-IH1-IH0": [
         "outliving"
+    ],
+    "IH2-AW2-IH1-IH0": [
+        "inauspicious"
     ],
     "AY0-IH1-IH0": [
         "idyllic",
@@ -31926,6 +40186,26 @@ export default {
         "persisted",
         "persisting",
         "terrific"
+    ],
+    "AA2-ER0-IH1-IH0": [
+        "honorific",
+        "logarithmic"
+    ],
+    "AH0-ER0-IH1-IH0": [
+        "unforgiving"
+    ],
+    "AO2-ER0-IH1-IH0": [
+        "porphyritic"
+    ],
+    "IH1-ER0-IH1-IH0": [
+        "intermixing"
+    ],
+    "IH2-ER0-IH1-IH0": [
+        "interdicting",
+        "synergistic"
+    ],
+    "UW2-ER0-IH1-IH0": [
+        "futuristic"
     ],
     "EY2-IH1-IH0": [
         "atypic"
@@ -31966,6 +40246,25 @@ export default {
         "specifics",
         "vindictive"
     ],
+    "AA2-IH0-IH1-IH0": [
+        "narcissistic"
+    ],
+    "AE2-IH0-IH1-IH0": [
+        "racketeering"
+    ],
+    "AH0-IH0-IH1-IH0": [
+        "unremitted"
+    ],
+    "AH2-IH0-IH1-IH0": [
+        "undistinguished"
+    ],
+    "IY1-IH0-IH1-IH0": [
+        "preexisted",
+        "preexisting"
+    ],
+    "OW2-IH0-IH1-IH0": [
+        "coexisting"
+    ],
     "IH2-IH1-IH0": [
         "impinges",
         "impinging",
@@ -31995,6 +40294,18 @@ export default {
         "revisit",
         "revisits"
     ],
+    "AE2-IY0-IH1-IH0": [
+        "pantheistic"
+    ],
+    "AH2-IY0-IH1-IH0": [
+        "unrestricted"
+    ],
+    "EY2-IY0-IH1-IH0": [
+        "atheistic"
+    ],
+    "AH0-IY2-IH1-IH0": [
+        "unrealistic"
+    ],
     "OW0-IH1-IH0": [
         "holistic",
         "olympic",
@@ -32002,11 +40313,28 @@ export default {
         "omitting",
         "prolific"
     ],
+    "AE2-OW0-IH1-IH0": [
+        "astrophysics"
+    ],
+    "AY2-OW0-IH1-IH0": [
+        "biophysics",
+        "hieroglyphic",
+        "hieroglyphics"
+    ],
+    "EH0-OW0-IH1-IH0": [
+        "pedophilic"
+    ],
+    "IH0-OW0-IH1-IH0": [
+        "jingoistic"
+    ],
     "UH0-IH1-IH0": [
         "fulfilling",
         "heuristic",
         "heuristics",
         "puristic"
+    ],
+    "AO2-UW0-IH1-IH0": [
+        "altruistic"
     ],
     "AA1-IH2-IH0": [
         "shoplifting"
@@ -32015,6 +40343,16 @@ export default {
         "blacklisted",
         "blacklisting",
         "flatfishes"
+    ],
+    "AA1-AH0-IH2-IH0": [
+        "congresswomen",
+        "politicking"
+    ],
+    "EH1-AH0-IH2-IH0": [
+        "benefited"
+    ],
+    "UW1-AH0-IH2-IH0": [
+        "crucifixes"
     ],
     "AH1-IH2-IH0": [
         "mudslinging",
@@ -32035,12 +40373,34 @@ export default {
         "airlifted",
         "airlifting"
     ],
+    "AE1-ER0-IH2-IH0": [
+        "afterimage"
+    ],
+    "AH1-ER0-IH2-IH0": [
+        "underpinning",
+        "underpinnings"
+    ],
+    "AW1-ER0-IH2-IH0": [
+        "counterfeited",
+        "counterfeiting"
+    ],
+    "IH1-ER0-IH2-IH0": [
+        "fingerprinted",
+        "fingerprinting",
+        "interdicted"
+    ],
     "ER1-IH2-IH0": [
         "tourniquet"
+    ],
+    "AW1-IH0-IH2-IH0": [
+        "mountaineering"
     ],
     "IH1-IH2-IH0": [
         "nitpicking",
         "shipbuilding"
+    ],
+    "EY1-IY0-IH2-IH0": [
+        "babysitting"
     ],
     "OW1-IH2-IH0": [
         "goldfinches",
@@ -32059,11 +40419,20 @@ export default {
         "lobbyists",
         "partying"
     ],
+    "IH0-AA1-IY0-IH0": [
+        "embodying"
+    ],
     "AE1-IY0-IH0": [
         "caddying",
         "rallying",
         "tallying",
         "taxiing"
+    ],
+    "AH0-AE1-IY0-IH0": [
+        "unhappiness"
+    ],
+    "EH1-AH0-IY0-IH0": [
+        "remedying"
     ],
     "AH1-IY0-IH0": [
         "countrymen",
@@ -32100,6 +40469,12 @@ export default {
         "steadiness",
         "varying",
         "wariness"
+    ],
+    "AH0-EH1-IY0-IH0": [
+        "assemblymen"
+    ],
+    "IY0-EH1-IY0-IH0": [
+        "remarrying"
     ],
     "ER1-IY0-IH0": [
         "currying",
@@ -32417,6 +40792,32 @@ export default {
         "untreated",
         "unyielding"
     ],
+    "AA0-AH0-IY1-IH0": [
+        "nonstrategic"
+    ],
+    "AA2-AH0-IY1-IH0": [
+        "quadriplegic"
+    ],
+    "AE2-AH0-IY1-IH0": [
+        "analgesic",
+        "analgesics"
+    ],
+    "AH2-AH0-IY1-IH0": [
+        "unappealing",
+        "unbelieving",
+        "uncompleted"
+    ],
+    "AO2-AH0-IY1-IH0": [
+        "orthopedic"
+    ],
+    "EH2-AH0-IY1-IH0": [
+        "guaranteeing"
+    ],
+    "IH0-AH0-IY1-IH0": [
+        "disagreeing",
+        "disbelieving",
+        "misconceiving"
+    ],
     "AO0-IY1-IH0": [
         "albeit",
         "foreseeing"
@@ -32439,6 +40840,23 @@ export default {
     "ER0-IY1-IH0": [
         "careening",
         "perceiving"
+    ],
+    "IH2-ER0-IY1-IH0": [
+        "interceded",
+        "interceding",
+        "interleaving",
+        "intervening",
+        "interweaving"
+    ],
+    "OW1-ER0-IY1-IH0": [
+        "overeating"
+    ],
+    "OW2-ER0-IY1-IH0": [
+        "overhearing"
+    ],
+    "UW2-ER0-IY1-IH0": [
+        "superseded",
+        "superseding"
     ],
     "EY1-IY1-IH0": [
         "safekeeping"
@@ -32466,6 +40884,10 @@ export default {
         "releases",
         "seceded",
         "seceding"
+    ],
+    "AH2-IH0-IY1-IH0": [
+        "undefeated",
+        "unimpeded"
     ],
     "IH2-IY1-IH0": [
         "impeaching",
@@ -32500,6 +40922,16 @@ export default {
         "housekeeping",
         "mouthpieces"
     ],
+    "OW1-ER0-IY2-IH0": [
+        "overheated",
+        "overheating",
+        "overreaches",
+        "overreaching",
+        "overseeing"
+    ],
+    "UW1-ER0-IY2-IH0": [
+        "supersecret"
+    ],
     "EY1-IY2-IH0": [
         "daydreaming"
     ],
@@ -32523,6 +40955,9 @@ export default {
     ],
     "AE1-OW0-IH0": [
         "shadowing"
+    ],
+    "AO0-AE1-OW0-IH0": [
+        "foreshadowing"
     ],
     "EH1-OW0-IH0": [
         "bellowing",
@@ -32759,6 +41194,33 @@ export default {
         "unnoticed",
         "upholding"
     ],
+    "AH2-AH0-OW1-IH0": [
+        "juxtaposes",
+        "juxtaposing"
+    ],
+    "AO2-AH0-OW1-IH0": [
+        "automotive",
+        "claustrophobic"
+    ],
+    "AY2-AH0-OW1-IH0": [
+        "diagnosing"
+    ],
+    "EH2-AH0-OW1-IH0": [
+        "mesozoic"
+    ],
+    "ER0-AH0-OW1-IH0": [
+        "serotonin"
+    ],
+    "IY2-AH0-OW1-IH0": [
+        "cenozoic",
+        "decomposes",
+        "decomposing",
+        "presupposes"
+    ],
+    "OW2-AH0-OW1-IH0": [
+        "locomotive",
+        "locomotives"
+    ],
     "AH2-OW1-IH0": [
         "unrolling"
     ],
@@ -32795,6 +41257,18 @@ export default {
         "corrosive",
         "paroling"
     ],
+    "AE2-ER0-OW1-IH0": [
+        "anaerobic"
+    ],
+    "AH2-ER0-OW1-IH0": [
+        "undergoing"
+    ],
+    "AY2-ER0-OW1-IH0": [
+        "hypertrophic"
+    ],
+    "OW2-ER0-OW1-IH0": [
+        "overgrowing"
+    ],
     "IH0-OW1-IH0": [
         "beholding",
         "bemoaning",
@@ -32825,6 +41299,13 @@ export default {
         "misquoting",
         "withholding"
     ],
+    "AH2-IH0-OW1-IH0": [
+        "unexploded"
+    ],
+    "IY2-IH0-OW1-IH0": [
+        "predisposing",
+        "reimposing"
+    ],
     "IH2-OW1-IH0": [
         "imploded",
         "imploding",
@@ -32836,6 +41317,9 @@ export default {
         "remolded",
         "revolting",
         "rezoning"
+    ],
+    "IY1-IY0-OW1-IH0": [
+        "easygoing"
     ],
     "IY2-OW1-IH0": [
         "reloaded"
@@ -32851,6 +41335,15 @@ export default {
         "farrowing",
         "glassblowing",
         "landholding"
+    ],
+    "AE1-AH0-OW2-IH0": [
+        "saxophonist"
+    ],
+    "EH1-AH0-OW2-IH0": [
+        "telephoning"
+    ],
+    "OW1-AH0-OW2-IH0": [
+        "oceangoing"
     ],
     "AH1-OW2-IH0": [
         "unbolted",
@@ -32872,6 +41365,17 @@ export default {
     "EH1-OW2-IH0": [
         "elbowing"
     ],
+    "AE1-ER0-OW2-IH0": [
+        "chaperoning"
+    ],
+    "OW1-ER0-OW2-IH0": [
+        "overdoses",
+        "overdosing",
+        "overflowing",
+        "overloaded",
+        "overloading",
+        "overthrowing"
+    ],
     "ER1-OW2-IH0": [
         "churchgoing"
     ],
@@ -32886,6 +41390,9 @@ export default {
     "IY1-OW2-IH0": [
         "seagoing",
         "vetoing"
+    ],
+    "AO0-IY1-OW2-IH0": [
+        "torpedoing"
     ],
     "UH1-OW2-IH0": [
         "bulldozes",
@@ -32939,6 +41446,12 @@ export default {
         "destroying",
         "disjointed",
         "rejoicing"
+    ],
+    "AH0-IH0-OY1-IH0": [
+        "unexploited"
+    ],
+    "IY2-IH0-OY1-IH0": [
+        "redeploying"
     ],
     "IY0-OY1-IH0": [
         "rejoining"
@@ -33003,14 +41516,24 @@ export default {
         "obscuring",
         "sulfuric"
     ],
+    "IY2-AH0-UH1-IH0": [
+        "reassuring"
+    ],
     "ER0-UH1-IH0": [
         "mercuric"
+    ],
+    "OW2-ER0-UH1-IH0": [
+        "overcooking"
     ],
     "IH0-UH1-IH0": [
         "securing"
     ],
     "IH2-UH1-IH0": [
         "insuring"
+    ],
+    "UH1-IY0-UH1-IH0": [
+        "pussyfooted",
+        "pussyfooting"
     ],
     "OW0-UH1-IH0": [
         "procuring"
@@ -33021,12 +41544,28 @@ export default {
     "AH1-UH2-IH0": [
         "mushrooming"
     ],
+    "OW1-ER0-UH2-IH0": [
+        "overlooking"
+    ],
     "AA1-UW0-IH0": [
         "arguing"
+    ],
+    "AA1-AA1-UW0-IH0": [
+        "noncommunist",
+        "noncommunists"
     ],
     "AE1-UW0-IH0": [
         "vacuuming",
         "valuing"
+    ],
+    "IH0-AE1-UW0-IH0": [
+        "devaluing"
+    ],
+    "IH2-AE1-UW0-IH0": [
+        "immaculate"
+    ],
+    "IY0-AE1-UW0-IH0": [
+        "revaluing"
     ],
     "AO1-UW0-IH0": [
         "wrongdoing"
@@ -33038,8 +41577,23 @@ export default {
         "jesuits",
         "rescuing"
     ],
+    "IY0-EH1-UW0-IH0": [
+        "rescheduling"
+    ],
     "IH1-UW0-IH0": [
         "issuing"
+    ],
+    "AH0-IH1-UW0-IH0": [
+        "continuing",
+        "contributed",
+        "contributing"
+    ],
+    "IH0-IH1-UW0-IH0": [
+        "distributing",
+        "distributive"
+    ],
+    "IY0-IH1-UW0-IH0": [
+        "reissuing"
     ],
     "OW1-UW0-IH0": [
         "crocuses"
@@ -33255,6 +41809,33 @@ export default {
         "uprooted",
         "uprooting"
     ],
+    "AE0-AH0-UW1-IH0": [
+        "absolutist"
+    ],
+    "AH2-AH0-UW1-IH0": [
+        "unassuming",
+        "undiluted",
+        "unobtrusive"
+    ],
+    "AY2-AH0-UW1-IH0": [
+        "highfalutin"
+    ],
+    "EH2-AH0-UW1-IH0": [
+        "therapeutic",
+        "therapeutics"
+    ],
+    "IH0-AH0-UW1-IH0": [
+        "disabuses",
+        "disapproving",
+        "misconstruing"
+    ],
+    "IH2-AH0-UW1-IH0": [
+        "inconclusive"
+    ],
+    "IY2-AH0-UW1-IH0": [
+        "reproduces",
+        "reproducing"
+    ],
     "AH2-UW1-IH0": [
         "subunit",
         "subunits"
@@ -33271,6 +41852,17 @@ export default {
         "peruses",
         "perusing",
         "pursuing"
+    ],
+    "AA2-ER0-UW1-IH0": [
+        "opportunist",
+        "opportunists"
+    ],
+    "OW1-ER0-UW1-IH0": [
+        "overdoing"
+    ],
+    "OW2-ER0-UW1-IH0": [
+        "overuses",
+        "overusing"
     ],
     "EY0-UW1-IH0": [
         "debuting"
@@ -33302,6 +41894,12 @@ export default {
         "secluded",
         "seducing"
     ],
+    "AA2-IH0-UW1-IH0": [
+        "nonexclusive"
+    ],
+    "AH2-IH0-UW1-IH0": [
+        "undisputed"
+    ],
     "IH2-UW1-IH0": [
         "illusive",
         "improving",
@@ -33329,8 +41927,53 @@ export default {
     "OW0-UW1-IH0": [
         "protruding"
     ],
+    "AA1-AH0-UW2-IH0": [
+        "constituting"
+    ],
+    "AH1-AH0-UW2-IH0": [
+        "substituted",
+        "troubleshooting"
+    ],
+    "EH1-AH0-UW2-IH0": [
+        "centrifuges",
+        "executed",
+        "executing",
+        "parachuted",
+        "parachuting"
+    ],
+    "ER1-AH0-UW2-IH0": [
+        "persecuted"
+    ],
+    "IH1-AH0-UW2-IH0": [
+        "instituted",
+        "ridiculing"
+    ],
+    "AO1-ER0-UW2-IH0": [
+        "waterproofing"
+    ],
+    "IH1-ER0-UW2-IH0": [
+        "interviewing"
+    ],
+    "OW1-ER0-UW2-IH0": [
+        "overruling",
+        "overshooting"
+    ],
     "ER1-UW2-IH0": [
         "earthmoving"
+    ],
+    "AA1-IH0-UW2-IH0": [
+        "barbecuing",
+        "prosecuted",
+        "prosecuting"
+    ],
+    "AH1-IH0-UW2-IH0": [
+        "substituting"
+    ],
+    "ER1-IH0-UW2-IH0": [
+        "persecuting"
+    ],
+    "IH1-IH0-UW2-IH0": [
+        "instituting"
     ],
     "IY1-UW2-IH0": [
         "previewing"
@@ -34236,6 +42879,14 @@ export default {
         "reminisce",
         "reminisced"
     ],
+    "AH0-EH2-AH0-IH1": [
+        "conventioneer",
+        "conventioneers"
+    ],
+    "IH0-EH2-AH0-IH1": [
+        "electioneer",
+        "electioneers"
+    ],
     "ER0-AH0-IH1": [
         "persevere",
         "perseveres"
@@ -34366,6 +43017,9 @@ export default {
     ],
     "AE2-IH0-IH1": [
         "racketeer"
+    ],
+    "IY2-AO2-IH0-IH1": [
+        "realpolitik"
     ],
     "IH2-IH0-IH1": [
         "indistinct",
@@ -34502,6 +43156,13 @@ export default {
         "politic",
         "politics"
     ],
+    "AH0-AA1-AH0-IH2": [
+        "agronomy",
+        "apocalypse"
+    ],
+    "AO2-AA1-AH0-IH2": [
+        "proctologist"
+    ],
     "AE1-AH0-IH2": [
         "atmosphere",
         "battleship",
@@ -34518,6 +43179,12 @@ export default {
         "splattering",
         "stratosphere"
     ],
+    "AH0-AE1-AH0-IH2": [
+        "companionship"
+    ],
+    "AA1-AH0-AH0-IH2": [
+        "partisanship"
+    ],
     "AH1-AH0-IH2": [
         "cuttlefish",
         "doublethink",
@@ -34528,9 +43195,16 @@ export default {
         "snorkeling",
         "sportsmanship"
     ],
+    "AE0-AO1-AH0-IH2": [
+        "anthologist",
+        "anthologists"
+    ],
     "AY1-AH0-IH2": [
         "hyacinth",
         "microfilm"
+    ],
+    "AH0-AY1-AH0-IH2": [
+        "podiatrist"
     ],
     "EH1-AH0-IH2": [
         "benazir",
@@ -34538,6 +43212,13 @@ export default {
         "chairmanship",
         "chairmanships",
         "derelict"
+    ],
+    "AH0-EH1-AH0-IH2": [
+        "apprenticeship",
+        "apprenticeships"
+    ],
+    "EH1-ER0-AH0-IH2": [
+        "generalship"
     ],
     "ER1-AH0-IH2": [
         "turmeric",
@@ -34550,6 +43231,13 @@ export default {
         "salesmanship",
         "statesmanship"
     ],
+    "IY0-EY1-AH0-IH2": [
+        "relationship",
+        "relationships"
+    ],
+    "IH1-IH0-AH0-IH2": [
+        "citizenship"
+    ],
     "IH1-AH0-IH2": [
         "brinkmanship",
         "hypocrite",
@@ -34557,10 +43245,27 @@ export default {
         "synonym",
         "synonyms"
     ],
+    "AH0-IH1-AH0-IH2": [
+        "sophisticates"
+    ],
+    "UW0-IH1-AH0-IH2": [
+        "numismatist",
+        "numismatists"
+    ],
+    "AE1-IY0-AH0-IH2": [
+        "championship",
+        "championships"
+    ],
     "OW1-AH0-IH2": [
         "bolshevik",
         "bolsheviks",
         "showmanship"
+    ],
+    "AH0-OW1-AH0-IH2": [
+        "associative"
+    ],
+    "AY2-OW1-AH0-IH2": [
+        "typology"
     ],
     "UW1-AH0-IH2": [
         "crucifix",
@@ -34668,6 +43373,12 @@ export default {
         "labyrinth",
         "staggering"
     ],
+    "AA1-AH0-ER0-IH2": [
+        "monetarists"
+    ],
+    "EH1-AH0-ER0-IH2": [
+        "editorship"
+    ],
     "AH1-ER0-IH2": [
         "buttermilk",
         "colouring",
@@ -34693,6 +43404,18 @@ export default {
         "peppermint",
         "yesteryear"
     ],
+    "AH0-EH1-ER0-IH2": [
+        "professorship",
+        "professorships"
+    ],
+    "AH1-ER0-ER0-IH2": [
+        "governorship",
+        "governorships"
+    ],
+    "IH0-EY1-ER0-IH2": [
+        "dictatorship",
+        "dictatorships"
+    ],
     "IH1-ER0-IH2": [
         "fingerprint",
         "fingerprints",
@@ -34707,6 +43430,9 @@ export default {
         "dealerships",
         "leadership",
         "readership"
+    ],
+    "IH0-IY1-ER0-IH2": [
+        "receiverships"
     ],
     "OW1-ER0-IH2": [
         "overdid",
@@ -34731,6 +43457,9 @@ export default {
         "spaceships",
         "tailspin"
     ],
+    "EH1-IY2-EY1-IH2": [
+        "bellyaching"
+    ],
     "AW1-IH0-IH2": [
         "mountaineer",
         "mountaineers"
@@ -34743,6 +43472,10 @@ export default {
     "EY1-IH0-IH2": [
         "bailiwick",
         "nativist"
+    ],
+    "AH0-IH1-IH0-IH2": [
+        "recidivist",
+        "recidivists"
     ],
     "OW1-IH0-IH2": [
         "bolshevist"
@@ -34771,6 +43504,9 @@ export default {
         "windchill",
         "windmill",
         "windmills"
+    ],
+    "IH2-AO0-IH1-IH2": [
+        "impolitic"
     ],
     "EH0-IH1-IH2": [
         "premiership"
@@ -34806,6 +43542,9 @@ export default {
         "retrofit",
         "retrofits"
     ],
+    "AH0-IH1-OW0-IH2": [
+        "acyclovir"
+    ],
     "IY1-OW0-IH2": [
         "neolith"
     ],
@@ -34838,6 +43577,9 @@ export default {
     "AO1-UW0-IH2": [
         "oculist"
     ],
+    "AA2-IH1-UW0-IH2": [
+        "constitutive"
+    ],
     "UW1-IH2": [
         "blueprint",
         "blueprints",
@@ -34859,6 +43601,9 @@ export default {
     ],
     "AE1-AA0-IY0": [
         "panoply"
+    ],
+    "EH2-AO1-AA0-IY0": [
+        "endoscopy"
     ],
     "AY1-AA0-IY0": [
         "biopsies",
@@ -35043,6 +43788,9 @@ export default {
         "karachi",
         "palazzi"
     ],
+    "AA2-AA0-AA1-IY0": [
+        "nagasaki"
+    ],
     "AE0-AA1-IY0": [
         "afghani"
     ],
@@ -35059,26 +43807,67 @@ export default {
         "salamis",
         "tamales"
     ],
+    "AA1-AH0-AA1-IY0": [
+        "nonchalantly"
+    ],
+    "AA2-AH0-AA1-IY0": [
+        "kamikaze"
+    ],
+    "EH2-AH0-AA1-IY0": [
+        "belafonte"
+    ],
     "AO0-AA1-IY0": [
         "kohlrabi"
     ],
     "EH0-AA1-IY0": [
         "embodies"
     ],
+    "AE2-EH0-AA1-IY0": [
+        "maserati"
+    ],
     "ER0-AA1-IY0": [
         "ferrari",
         "karate"
+    ],
+    "IH2-ER0-AA1-IY0": [
+        "literati"
     ],
     "IH0-AA1-IY0": [
         "embodied",
         "embody",
         "epoxy"
     ],
+    "EH2-IH0-AA1-IY0": [
+        "teriyaki"
+    ],
+    "IH0-IH0-AA1-IY0": [
+        "disembodied",
+        "disembody"
+    ],
     "IY0-AA1-IY0": [
         "bialy"
     ],
+    "AA2-IY0-AA1-IY0": [
+        "mariachi"
+    ],
+    "UW0-IY0-AA1-IY0": [
+        "sukiyaki"
+    ],
+    "UW2-IY0-AA1-IY0": [
+        "giuliani"
+    ],
     "AA1-AA2-IY0": [
         "loblolly"
+    ],
+    "AA1-AH0-AA2-IY0": [
+        "oligarchy"
+    ],
+    "AO1-AH0-AA2-IY0": [
+        "orthodoxy"
+    ],
+    "EH1-AH0-AA2-IY0": [
+        "demagogy",
+        "melancholy"
     ],
     "AO1-AA2-IY0": [
         "autopsied",
@@ -35087,6 +43876,24 @@ export default {
     ],
     "AY1-AA2-IY0": [
         "hierarchies"
+    ],
+    "AY1-ER0-AA2-IY0": [
+        "hierarchy"
+    ],
+    "AH1-IY0-AA2-IY0": [
+        "multiparty"
+    ],
+    "EH1-IY0-AA2-IY0": [
+        "everybody"
+    ],
+    "EY1-IY0-AA2-IY0": [
+        "matriarchy",
+        "patriarchy"
+    ],
+    "OW1-OW0-AA2-IY0": [
+        "photocopied",
+        "photocopies",
+        "photocopy"
     ],
     "UW1-AA2-IY0": [
         "foolhardy"
@@ -35305,11 +44112,27 @@ export default {
         "uncanny",
         "unhappy"
     ],
+    "AE2-AH0-AE1-IY0": [
+        "alexandrine",
+        "alexandrines",
+        "malagasy",
+        "satisfactory",
+        "tallahassee"
+    ],
+    "IH2-AH0-AE1-IY0": [
+        "cincinnati",
+        "vigilante",
+        "vigilantes"
+    ],
     "AY0-AE1-IY0": [
         "miami"
     ],
     "ER0-AE1-IY0": [
         "verbally"
+    ],
+    "IH2-ER0-AE1-IY0": [
+        "intermarried",
+        "intermarry"
     ],
     "IH0-AE1-IY0": [
         "chimpanzee",
@@ -35317,16 +44140,35 @@ export default {
         "denarii",
         "exactly"
     ],
+    "AE2-IH0-AE1-IY0": [
+        "pakistani",
+        "pakistanis"
+    ],
     "IY0-AE1-IY0": [
         "chianti",
         "fiancee"
+    ],
+    "IH1-IY0-AE1-IY0": [
+        "dillydally"
+    ],
+    "AA2-IY2-AE1-IY0": [
+        "polyandry"
     ],
     "AE1-AE2-IY0": [
         "granddaddy",
         "slaphappy"
     ],
+    "EH1-AH0-AE2-IY0": [
+        "necromancy"
+    ],
     "EH1-AE2-IY0": [
         "steadfastly"
+    ],
+    "AO1-IH0-AE2-IY0": [
+        "profligacy"
+    ],
+    "EH1-IH0-AE2-IY0": [
+        "efficacy"
     ],
     "AA1-AH0-IY0": [
         "ardently",
@@ -35387,6 +44229,135 @@ export default {
         "sophocles",
         "sovereignty",
         "wobbly"
+    ],
+    "AA0-AA1-AH0-IY0": [
+        "doxologies",
+        "doxology",
+        "monstrosity",
+        "oncology",
+        "ontogeny",
+        "ontology",
+        "optometry"
+    ],
+    "AE0-AA1-AH0-IY0": [
+        "anthologies",
+        "anthology",
+        "cacophony",
+        "gastronomy"
+    ],
+    "AH0-AA1-AH0-IY0": [
+        "anomalies",
+        "anomaly",
+        "astrology",
+        "astronomy",
+        "atrocities",
+        "atrocity",
+        "chronologies",
+        "chronology",
+        "commodities",
+        "commodity",
+        "frivolity",
+        "graphology",
+        "lithography",
+        "mahogany",
+        "mammography",
+        "monogamy",
+        "monopolies",
+        "monopoly",
+        "monotony",
+        "pathologies",
+        "pathology",
+        "petrology",
+        "philosophies",
+        "philosophy",
+        "photography",
+        "subconsciously",
+        "topography",
+        "typography",
+        "velocities",
+        "velocity"
+    ],
+    "AH2-AA1-AH0-IY0": [
+        "uncommonly",
+        "unconsciously"
+    ],
+    "AO0-AA1-AH0-IY0": [
+        "autocracy",
+        "morphology",
+        "orthography",
+        "pornography"
+    ],
+    "AY0-AA1-AH0-IY0": [
+        "biographies",
+        "biography",
+        "biology",
+        "cytology",
+        "dichotomy",
+        "idolatry",
+        "mycology",
+        "phylogeny",
+        "psychology",
+        "psychopathy"
+    ],
+    "AY2-AA1-AH0-IY0": [
+        "seismology"
+    ],
+    "EH0-AA1-AH0-IY0": [
+        "ethnology",
+        "serology",
+        "spectrometry",
+        "spectroscopy",
+        "technologies",
+        "technology"
+    ],
+    "ER0-AA1-AH0-IY0": [
+        "ferocity",
+        "urology"
+    ],
+    "IH0-AA1-AH0-IY0": [
+        "democracies",
+        "democracy",
+        "demography",
+        "demonstrably",
+        "despondency",
+        "disharmony",
+        "dishonesty",
+        "equality",
+        "ethology",
+        "histology",
+        "hypocrisy",
+        "responsibly",
+        "virology",
+        "viscosity"
+    ],
+    "IH2-AA1-AH0-IY0": [
+        "impartially",
+        "impossibly",
+        "improbably",
+        "inconstancy",
+        "insolvencies",
+        "insolvency"
+    ],
+    "IY0-AA1-AH0-IY0": [
+        "geodesy",
+        "geography",
+        "geology",
+        "geometries",
+        "geometry",
+        "neoteny",
+        "penology",
+        "theocracy",
+        "theology"
+    ],
+    "OW0-AA1-AH0-IY0": [
+        "otologies",
+        "otology",
+        "zoology"
+    ],
+    "UH0-AA1-AH0-IY0": [
+        "bureaucracies",
+        "bureaucracy",
+        "neurology"
     ],
     "AE1-AH0-IY0": [
         "acidly",
@@ -35467,6 +44438,161 @@ export default {
         "vanities",
         "vanity"
     ],
+    "AA0-AE1-AH0-IY0": [
+        "audacity"
+    ],
+    "AH0-AE1-AH0-IY0": [
+        "academies",
+        "academy",
+        "alacrity",
+        "analogies",
+        "analogy",
+        "anatomy",
+        "calamities",
+        "calamity",
+        "capacities",
+        "capacity",
+        "catastrophe",
+        "catastrophes",
+        "modalities",
+        "modality",
+        "philanthropies",
+        "substantially",
+        "uncannily",
+        "unhappily"
+    ],
+    "AO0-AE1-AH0-IY0": [
+        "formalities",
+        "formality",
+        "mortality"
+    ],
+    "AO2-AE1-AH0-IY0": [
+        "normality"
+    ],
+    "AY0-AE1-AH0-IY0": [
+        "finality",
+        "vitality"
+    ],
+    "EH0-AE1-AH0-IY0": [
+        "mentality"
+    ],
+    "ER0-AE1-AH0-IY0": [
+        "morality"
+    ],
+    "IH0-AE1-AH0-IY0": [
+        "depravity",
+        "disastrously",
+        "elaborately",
+        "philanthropy",
+        "philately"
+    ],
+    "IH2-AE1-AH0-IY0": [
+        "insanity",
+        "intangibly"
+    ],
+    "IY0-AE1-AH0-IY0": [
+        "legality",
+        "lethality"
+    ],
+    "OW0-AE1-AH0-IY0": [
+        "locality",
+        "opacity",
+        "profanity",
+        "tonalities",
+        "tonality",
+        "totality"
+    ],
+    "UW0-AE1-AH0-IY0": [
+        "brutalities",
+        "brutality",
+        "duality",
+        "frugality",
+        "neutrality"
+    ],
+    "AH1-AE2-AH0-IY0": [
+        "subfamilies",
+        "subfamily"
+    ],
+    "AA1-AH0-AH0-IY0": [
+        "confidently",
+        "marginally",
+        "marvelously",
+        "nominally",
+        "obstinacy",
+        "occupancy",
+        "ominously",
+        "profitably",
+        "prominently"
+    ],
+    "AE1-AH0-AH0-IY0": [
+        "adamantly",
+        "adequacy",
+        "adequately",
+        "advocacy",
+        "candidacies",
+        "fashionably",
+        "passionately"
+    ],
+    "AH1-AH0-AH0-IY0": [
+        "subsequently",
+        "ultimately"
+    ],
+    "AO1-AH0-AH0-IY0": [
+        "formidably"
+    ],
+    "EH1-AH0-AH0-IY0": [
+        "arrogantly",
+        "celibacy",
+        "creditably",
+        "definitely",
+        "delicacy",
+        "delicately",
+        "eloquently",
+        "eminently",
+        "evidently",
+        "excellently",
+        "perilously",
+        "presidencies",
+        "presidency",
+        "relevancy",
+        "tremulously"
+    ],
+    "ER1-AH0-AH0-IY0": [
+        "mercilessly",
+        "permanently",
+        "personably",
+        "purposefully",
+        "surrogacy",
+        "terminally"
+    ],
+    "IH1-AH0-AH0-IY0": [
+        "criminally",
+        "difficulties",
+        "difficultly",
+        "difficulty",
+        "digitally",
+        "diligently",
+        "frivolously",
+        "imminently",
+        "infinitely",
+        "innocently",
+        "intimacy",
+        "intimately",
+        "intricacies",
+        "intricacy",
+        "intricately",
+        "militancy",
+        "minimally",
+        "virulently"
+    ],
+    "IY1-AH0-AH0-IY0": [
+        "reasonably",
+        "regionally"
+    ],
+    "UW1-AH0-AH0-IY0": [
+        "ludicrously",
+        "scrupulously"
+    ],
     "AH1-AH0-IY0": [
         "clumsily",
         "custody",
@@ -35485,6 +44611,26 @@ export default {
         "subtly",
         "suddenly",
         "uppity"
+    ],
+    "AH0-AH1-AH0-IY0": [
+        "abundantly",
+        "accompanied",
+        "accompanies",
+        "accompany"
+    ],
+    "AY0-AH1-AH0-IY0": [
+        "microscopy",
+        "triumphantly"
+    ],
+    "IH0-AH1-AH0-IY0": [
+        "deductively",
+        "exultantly",
+        "redundancies",
+        "redundancy",
+        "reluctantly"
+    ],
+    "IH2-AH1-AH0-IY0": [
+        "incumbency"
     ],
     "AO1-AH0-IY0": [
         "albany",
@@ -35517,6 +44663,51 @@ export default {
         "warranty",
         "wrongfully"
     ],
+    "AE0-AO1-AH0-IY0": [
+        "abnormally",
+        "androgyny",
+        "scatology"
+    ],
+    "AH0-AO1-AH0-IY0": [
+        "absorbency",
+        "authorities",
+        "authority",
+        "conformity",
+        "majority",
+        "necrology",
+        "topology",
+        "unlawfully"
+    ],
+    "AO0-AO1-AH0-IY0": [
+        "cosmology"
+    ],
+    "AY0-AO1-AH0-IY0": [
+        "priorities",
+        "priority"
+    ],
+    "ER0-AO1-AH0-IY0": [
+        "sororities",
+        "sorority"
+    ],
+    "IH0-AO1-AH0-IY0": [
+        "deformities",
+        "deformity",
+        "discography",
+        "dishonestly"
+    ],
+    "IH2-AO1-AH0-IY0": [
+        "implausibly",
+        "importantly",
+        "inaudibly",
+        "informally"
+    ],
+    "IY0-AO1-AH0-IY0": [
+        "rheology"
+    ],
+    "AH0-AW1-AH0-IY0": [
+        "accountancy",
+        "avowedly"
+    ],
     "AY1-AH0-IY0": [
         "dynasties",
         "dynasty",
@@ -35548,6 +44739,28 @@ export default {
         "tirelessly",
         "vibrancy",
         "vitally"
+    ],
+    "AE0-AY1-AH0-IY0": [
+        "anxieties",
+        "anxiety"
+    ],
+    "AH0-AY1-AH0-IY0": [
+        "propriety",
+        "sobriety",
+        "societies",
+        "society"
+    ],
+    "ER0-AY1-AH0-IY0": [
+        "varieties",
+        "variety"
+    ],
+    "IH0-AY1-AH0-IY0": [
+        "defiantly",
+        "delightfully",
+        "excitedly"
+    ],
+    "IH2-AY1-AH0-IY0": [
+        "decidedly"
     ],
     "EH1-AH0-IY0": [
         "bearably",
@@ -35654,6 +44867,156 @@ export default {
         "wearily",
         "zealotry"
     ],
+    "AA0-EH1-AH0-IY0": [
+        "nonentity",
+        "ostensibly",
+        "posterity",
+        "prosperity"
+    ],
+    "AA1-EH1-AH0-IY0": [
+        "archenemy"
+    ],
+    "AE0-EH1-AH0-IY0": [
+        "clandestinely",
+        "mastectomies",
+        "mastectomy",
+        "tangentially",
+        "transparencies",
+        "transparency",
+        "transparently"
+    ],
+    "AH0-EH1-AH0-IY0": [
+        "allegedly",
+        "amenities",
+        "amenity",
+        "apparently",
+        "ascendancy",
+        "celerity",
+        "complexity",
+        "contemptuously",
+        "contentedly",
+        "fidelities",
+        "necessity",
+        "potentially",
+        "propensities",
+        "sequentially",
+        "solemnity",
+        "successfully",
+        "supremacy",
+        "telemetry",
+        "telepathy",
+        "temerity",
+        "tremendously",
+        "unbearably",
+        "unpleasantly"
+    ],
+    "AO0-EH1-AH0-IY0": [
+        "longevity",
+        "orchestrally"
+    ],
+    "AO2-EH1-AH0-IY0": [
+        "horrendously"
+    ],
+    "AY0-EH1-AH0-IY0": [
+        "primarily"
+    ],
+    "EH0-EH1-AH0-IY0": [
+        "dexterity",
+        "extremities",
+        "extremity"
+    ],
+    "ER0-EH1-AH0-IY0": [
+        "heredity",
+        "perplexity",
+        "serenity"
+    ],
+    "IH0-EH1-AH0-IY0": [
+        "dependencies",
+        "dependency",
+        "discrepancies",
+        "discrepancy",
+        "disparities",
+        "disparity",
+        "expectancies",
+        "expectancy",
+        "hilarity",
+        "intensities",
+        "intensity",
+        "intrepidly",
+        "regretfully",
+        "regrettably",
+        "relentlessly",
+        "respectfully",
+        "sincerity"
+    ],
+    "IH2-EH1-AH0-IY0": [
+        "impeccably",
+        "incessantly",
+        "incredibly",
+        "indelibly",
+        "indemnity",
+        "inequities",
+        "inequity",
+        "inflexibly",
+        "integrity"
+    ],
+    "IY0-EH1-AH0-IY0": [
+        "hegemony",
+        "respectably"
+    ],
+    "OW0-EH1-AH0-IY0": [
+        "polarity"
+    ],
+    "AA1-ER0-AH0-IY0": [
+        "comparably",
+        "honorably",
+        "moderately"
+    ],
+    "AE1-ER0-AH0-IY0": [
+        "accuracies",
+        "accuracy",
+        "accurately",
+        "admirably",
+        "admiralty",
+        "masterfully",
+        "naturally"
+    ],
+    "AH1-ER0-AH0-IY0": [
+        "comfortably",
+        "structurally"
+    ],
+    "AO1-ER0-AH0-IY0": [
+        "alternately"
+    ],
+    "EH1-ER0-AH0-IY0": [
+        "desperately",
+        "effortlessly",
+        "federally",
+        "generally",
+        "generously",
+        "measurably",
+        "memorably",
+        "preferably",
+        "reverently",
+        "separately",
+        "temporally"
+    ],
+    "EY1-ER0-AH0-IY0": [
+        "dangerously",
+        "favorably",
+        "mayoralty"
+    ],
+    "IH1-ER0-AH0-IY0": [
+        "literacy",
+        "literally",
+        "miserably",
+        "rigorously",
+        "vigorously",
+        "viscerally"
+    ],
+    "UW1-ER0-AH0-IY0": [
+        "humorously"
+    ],
     "ER1-AH0-IY0": [
         "burgundies",
         "burgundy",
@@ -35673,6 +45036,36 @@ export default {
         "purposely",
         "urgency",
         "urgently"
+    ],
+    "AA0-ER1-AH0-IY0": [
+        "modernity"
+    ],
+    "AH0-ER1-AH0-IY0": [
+        "absurdities",
+        "absurdity",
+        "commercially",
+        "concurrently",
+        "conservancy",
+        "fraternities",
+        "fraternity",
+        "uncertainly",
+        "uncertainties",
+        "uncertainty"
+    ],
+    "AY0-ER1-AH0-IY0": [
+        "diurnally"
+    ],
+    "ER0-ER1-AH0-IY0": [
+        "perversity"
+    ],
+    "IH0-ER1-AH0-IY0": [
+        "deservedly",
+        "externally"
+    ],
+    "IH2-ER1-AH0-IY0": [
+        "insurgencies",
+        "insurgency",
+        "internally"
     ],
     "EY1-AH0-IY0": [
         "agencies",
@@ -35706,6 +45099,58 @@ export default {
         "vacancies",
         "vacancy",
         "vagrancy"
+    ],
+    "AH0-EY1-AH0-IY0": [
+        "complacency",
+        "complacently",
+        "fallaciously",
+        "tenaciously"
+    ],
+    "AW2-EY1-AH0-IY0": [
+        "outrageously"
+    ],
+    "ER0-EY1-AH0-IY0": [
+        "courageously"
+    ],
+    "IH0-EY1-AH0-IY0": [
+        "belatedly",
+        "mistakenly"
+    ],
+    "IH2-EY1-AH0-IY0": [
+        "impatiently"
+    ],
+    "IY1-EY1-AH0-IY0": [
+        "freemasonry"
+    ],
+    "AA1-IH0-AH0-IY0": [
+        "knowledgeably"
+    ],
+    "AE1-IH0-AH0-IY0": [
+        "amicably",
+        "candidacy",
+        "tactically"
+    ],
+    "EH1-IH0-AH0-IY0": [
+        "charitably",
+        "delicacies",
+        "equitably",
+        "ethically",
+        "hesitancy",
+        "hesitantly",
+        "metrically",
+        "negligently",
+        "residency",
+        "veritably"
+    ],
+    "IH1-IH0-AH0-IY0": [
+        "citizenry",
+        "militantly"
+    ],
+    "IY1-IH0-AH0-IY0": [
+        "meaningfully"
+    ],
+    "OW1-IH0-AH0-IY0": [
+        "noticeably"
     ],
     "IH1-AH0-IY0": [
         "bigotry",
@@ -35769,6 +45214,162 @@ export default {
         "wistfully",
         "wittily"
     ],
+    "AA0-IH1-AH0-IY0": [
+        "docility",
+        "hostilities",
+        "hostility",
+        "proximity",
+        "toxicity"
+    ],
+    "AE0-IH1-AH0-IY0": [
+        "activities",
+        "activity",
+        "ambitiously",
+        "antipathies",
+        "antipathy",
+        "antiquities",
+        "antiquity",
+        "captivity",
+        "facsimile",
+        "facsimiles"
+    ],
+    "AH0-IH1-AH0-IY0": [
+        "abysmally",
+        "acidity",
+        "affinities",
+        "affinity",
+        "agility",
+        "assiduously",
+        "calligraphy",
+        "civility",
+        "complicity",
+        "consistency",
+        "consistently",
+        "conspiracies",
+        "conspiracy",
+        "contingencies",
+        "contingency",
+        "debility",
+        "ductility",
+        "facilities",
+        "fragility",
+        "malignancies",
+        "malignancy",
+        "nativity",
+        "officially",
+        "polyphony",
+        "proficiency",
+        "provincially",
+        "publicity",
+        "rapidity",
+        "senility",
+        "solidity",
+        "soliloquy",
+        "sufficiency",
+        "sufficiently",
+        "suspiciously",
+        "timidity",
+        "validity",
+        "vicinity"
+    ],
+    "AO0-IH1-AH0-IY0": [
+        "morbidity"
+    ],
+    "EH0-IH1-AH0-IY0": [
+        "festivities",
+        "festivity"
+    ],
+    "EH2-IH1-AH0-IY0": [
+        "exigencies",
+        "exigency"
+    ],
+    "ER0-IH1-AH0-IY0": [
+        "fertility",
+        "persistently",
+        "turbidity",
+        "virility"
+    ],
+    "EY2-IH1-AH0-IY0": [
+        "asymmetries",
+        "asymmetry"
+    ],
+    "IH0-IH1-AH0-IY0": [
+        "deficiencies",
+        "deficiency",
+        "deliciously",
+        "delinquencies",
+        "delinquency",
+        "divinities",
+        "divinity",
+        "efficiencies",
+        "efficiency",
+        "efficiently",
+        "epiphany",
+        "epitome",
+        "explicitly",
+        "felicity",
+        "liquidities",
+        "liquidity",
+        "predictably",
+        "religiously",
+        "resiliency",
+        "rigidity",
+        "simplicity"
+    ],
+    "IH2-IH1-AH0-IY0": [
+        "implicitly",
+        "indifferently",
+        "indignities",
+        "initially",
+        "insistently"
+    ],
+    "OW0-IH1-AH0-IY0": [
+        "mobility",
+        "nobility",
+        "proclivities",
+        "proclivity"
+    ],
+    "UW0-IH1-AH0-IY0": [
+        "fluidity",
+        "futility",
+        "humidity",
+        "judicially",
+        "utilities",
+        "utility"
+    ],
+    "AA1-IY0-AH0-IY0": [
+        "obviously"
+    ],
+    "AO1-IY0-AH0-IY0": [
+        "gloriously"
+    ],
+    "EH1-IY0-AH0-IY0": [
+        "anybody",
+        "enviously",
+        "variably",
+        "variously"
+    ],
+    "EY1-IY0-AH0-IY0": [
+        "amiably",
+        "radially"
+    ],
+    "IH1-IY0-AH0-IY0": [
+        "hideously",
+        "idiocy",
+        "seriously"
+    ],
+    "IY1-IY0-AH0-IY0": [
+        "previously",
+        "tediously"
+    ],
+    "UH1-IY0-AH0-IY0": [
+        "curiously",
+        "furiously"
+    ],
+    "UW1-IY0-AH0-IY0": [
+        "dutifully",
+        "studiously"
+    ],
     "IY1-AH0-IY0": [
         "ceaselessly",
         "decency",
@@ -35800,6 +45401,33 @@ export default {
         "speedily",
         "steamily"
     ],
+    "AH0-IY1-AH0-IY0": [
+        "appreciably",
+        "conceivably",
+        "conveniently",
+        "facetiously",
+        "uneasily",
+        "unevenly"
+    ],
+    "ER0-IY1-AH0-IY0": [
+        "cerebrally"
+    ],
+    "IH0-IY1-AH0-IY0": [
+        "egregiously"
+    ],
+    "IH2-IY1-AH0-IY0": [
+        "illegally",
+        "indecency",
+        "infrequency",
+        "infrequently",
+        "ingeniously"
+    ],
+    "OW0-IY1-AH0-IY0": [
+        "coherently"
+    ],
+    "UW0-IY1-AH0-IY0": [
+        "supremely"
+    ],
     "OW1-AH0-IY0": [
         "cogency",
         "copiously",
@@ -35820,6 +45448,12 @@ export default {
         "vocally",
         "woefully"
     ],
+    "AH0-OW1-AH0-IY0": [
+        "supposedly"
+    ],
+    "IH0-OW1-AH0-IY0": [
+        "diplomacy"
+    ],
     "OY1-AH0-IY0": [
         "buoyancy",
         "joyfully",
@@ -35835,10 +45469,53 @@ export default {
         "toiletries",
         "toiletry"
     ],
+    "AE0-OY1-AH0-IY0": [
+        "flamboyantly"
+    ],
+    "EH2-OY1-AH0-IY0": [
+        "enjoyably"
+    ],
+    "IH0-OY1-AH0-IY0": [
+        "disloyalty"
+    ],
+    "AA1-UH0-AH0-IY0": [
+        "posthumously"
+    ],
     "UH1-AH0-IY0": [
         "pleurisy",
         "purity",
         "surety"
+    ],
+    "AH0-UH1-AH0-IY0": [
+        "assuredly",
+        "obscurity"
+    ],
+    "IH0-UH1-AH0-IY0": [
+        "securities",
+        "security"
+    ],
+    "IH2-UH1-AH0-IY0": [
+        "impurities",
+        "impurity"
+    ],
+    "AA1-UW0-AH0-IY0": [
+        "arguably"
+    ],
+    "AE1-UW0-AH0-IY0": [
+        "annually",
+        "fabulously",
+        "factually",
+        "manually"
+    ],
+    "AO1-UW0-AH0-IY0": [
+        "fraudulently"
+    ],
+    "EH1-UW0-AH0-IY0": [
+        "sexually",
+        "strenuously"
+    ],
+    "UW1-UW0-AH0-IY0": [
+        "mutually"
     ],
     "UW1-AH0-IY0": [
         "beautifully",
@@ -35868,6 +45545,20 @@ export default {
         "truthfully",
         "unity",
         "usefully"
+    ],
+    "AH0-UW1-AH0-IY0": [
+        "acuity",
+        "communities",
+        "community",
+        "congruity"
+    ],
+    "IH0-UW1-AH0-IY0": [
+        "credulity",
+        "disunity"
+    ],
+    "IH2-UW1-AH0-IY0": [
+        "immunity",
+        "imprudently"
     ],
     "AH1-IY0": [
         "bloodied",
@@ -36051,8 +45742,14 @@ export default {
     "IH0-AH1-IY0": [
         "recovery"
     ],
+    "IY0-IH0-AH1-IY0": [
+        "rediscovery"
+    ],
     "OW2-AH1-IY0": [
         "robustly"
+    ],
+    "AH1-ER0-AH2-IY0": [
+        "understudy"
     ],
     "AO1-IY0": [
         "aubrey",
@@ -36156,6 +45853,19 @@ export default {
     "AH0-AO1-IY0": [
         "ungodly"
     ],
+    "AA0-AH0-AO1-IY0": [
+        "cacciatore"
+    ],
+    "AA2-AH0-AO1-IY0": [
+        "montessori"
+    ],
+    "AE2-AH0-AO1-IY0": [
+        "garibaldi"
+    ],
+    "IH2-AH0-AO1-IY0": [
+        "inventories",
+        "inventory"
+    ],
     "AY2-AO1-IY0": [
         "hydroxy",
         "pylori"
@@ -36163,8 +45873,66 @@ export default {
     "IH0-AO1-IY0": [
         "milwaukee"
     ],
+    "UW1-AA0-AO2-IY0": [
+        "nugatory"
+    ],
+    "AA1-AH0-AO2-IY0": [
+        "promissory"
+    ],
+    "AE1-AH0-AO2-IY0": [
+        "allegories",
+        "allegory",
+        "categories",
+        "category",
+        "laboratories",
+        "laboratory",
+        "lavatories",
+        "lavatory",
+        "mandatory",
+        "statutory",
+        "transitory"
+    ],
+    "AO1-AH0-AO2-IY0": [
+        "dormitories",
+        "dormitory",
+        "laudatory",
+        "oratory"
+    ],
+    "AY1-AH0-AO2-IY0": [
+        "migratory"
+    ],
+    "EH1-AH0-AO2-IY0": [
+        "desultory",
+        "excretory",
+        "predatory",
+        "territories"
+    ],
+    "ER1-AH0-AO2-IY0": [
+        "purgatory"
+    ],
+    "IH1-AH0-AO2-IY0": [
+        "dilatory",
+        "inventoried",
+        "signatories",
+        "signatory"
+    ],
+    "UW1-AH0-AO2-IY0": [
+        "uniformly"
+    ],
     "AW1-AO2-IY0": [
         "outlawry"
+    ],
+    "EH1-ER0-AO2-IY0": [
+        "repertory"
+    ],
+    "AO1-IH0-AO2-IY0": [
+        "auditory"
+    ],
+    "EH1-IH0-AO2-IY0": [
+        "territory"
+    ],
+    "AH1-IY0-AO2-IY0": [
+        "multistory"
     ],
     "IY1-AO2-IY0": [
         "seaworthy"
@@ -36281,6 +46049,9 @@ export default {
         "untimely",
         "unwisely"
     ],
+    "AE2-AH0-AY1-IY0": [
+        "aphrodite"
+    ],
     "AO0-AY1-IY0": [
         "almighty"
     ],
@@ -36298,6 +46069,15 @@ export default {
     ],
     "AE1-EH0-IY0": [
         "ancestry"
+    ],
+    "AA1-AH0-EH0-IY0": [
+        "voluntary"
+    ],
+    "AE1-AH0-EH0-IY0": [
+        "manifestly"
+    ],
+    "IH1-AH0-EH0-IY0": [
+        "visionaries"
     ],
     "EH1-IY0": [
         "aerie",
@@ -36503,6 +46283,16 @@ export default {
         "unsteady",
         "unwary"
     ],
+    "AH2-AH0-EH1-IY0": [
+        "subassemblies",
+        "subassembly"
+    ],
+    "EH2-AH0-EH1-IY0": [
+        "serengeti"
+    ],
+    "IY2-AH0-EH1-IY0": [
+        "reassembly"
+    ],
     "EH0-EH1-IY0": [
         "crescenzi",
         "expressly"
@@ -36517,6 +46307,9 @@ export default {
     ],
     "ER0-EH1-IY0": [
         "correctly"
+    ],
+    "IH2-ER0-EH1-IY0": [
+        "incorrectly"
     ],
     "IH0-EH1-IY0": [
         "giuseppe",
@@ -36534,9 +46327,16 @@ export default {
         "remarried",
         "remarry"
     ],
+    "IH0-IY0-EH1-IY0": [
+        "devincenzi"
+    ],
     "OW0-EH1-IY0": [
         "bovenzi",
         "grotesquely"
+    ],
+    "AA0-OW0-EH1-IY0": [
+        "altobelli",
+        "antonelli"
     ],
     "AE1-EH2-IY0": [
         "blackberries",
@@ -36546,6 +46346,105 @@ export default {
         "hackberry",
         "raspberries",
         "raspberry"
+    ],
+    "AA1-AH0-EH2-IY0": [
+        "arbitrary",
+        "cometary",
+        "commentaries",
+        "commentary",
+        "commissaries",
+        "commissary",
+        "dromedary",
+        "monasteries",
+        "monastery",
+        "monetary",
+        "narcolepsy",
+        "solitary"
+    ],
+    "AE1-AH0-EH2-IY0": [
+        "ancillary",
+        "apoplexy",
+        "appleberry",
+        "capillaries",
+        "capillary",
+        "cassowary",
+        "fragmentary",
+        "lapidary",
+        "planetary",
+        "salutary"
+    ],
+    "AH1-AH0-EH2-IY0": [
+        "customary",
+        "functionaries",
+        "functionary",
+        "huckleberry"
+    ],
+    "AO1-AH0-EH2-IY0": [
+        "cautionary",
+        "corollaries",
+        "corollary",
+        "coronary",
+        "formulary",
+        "ordinaries",
+        "ordinary"
+    ],
+    "AY1-AH0-EH2-IY0": [
+        "dietary"
+    ],
+    "EH1-AH0-EH2-IY0": [
+        "cemeteries",
+        "cemetery",
+        "centenary",
+        "emissaries",
+        "emissary",
+        "epilepsies",
+        "epilepsy",
+        "legendary",
+        "necessary",
+        "secondaries",
+        "secondary",
+        "secretaries",
+        "secretary",
+        "sedentary",
+        "seminaries",
+        "seminary",
+        "veterinary"
+    ],
+    "ER1-AH0-EH2-IY0": [
+        "mercenaries",
+        "mercenary",
+        "urinary"
+    ],
+    "EY1-AH0-EH2-IY0": [
+        "stationary",
+        "stationery"
+    ],
+    "IH1-AH0-EH2-IY0": [
+        "dictionaries",
+        "dictionary",
+        "dignitaries",
+        "dignitary",
+        "dysentery",
+        "militaries",
+        "military",
+        "missionaries",
+        "missionary",
+        "tributaries",
+        "tributary",
+        "visionary"
+    ],
+    "IY1-AH0-EH2-IY0": [
+        "legionaries"
+    ],
+    "OW1-AH0-EH2-IY0": [
+        "momentary"
+    ],
+    "UH1-AH0-EH2-IY0": [
+        "pulmonary"
+    ],
+    "UW1-AH0-EH2-IY0": [
+        "luminaries",
+        "luminary"
     ],
     "AH1-EH2-IY0": [
         "mulberry"
@@ -36561,8 +46460,67 @@ export default {
     "EH1-EH2-IY0": [
         "tenpenny"
     ],
+    "AA1-ER0-EH2-IY0": [
+        "honorary",
+        "quaternary"
+    ],
+    "AE1-ER0-EH2-IY0": [
+        "adversaries",
+        "adversary",
+        "canterbury"
+    ],
+    "AH1-ER0-EH2-IY0": [
+        "underbelly"
+    ],
+    "AO1-ER0-EH2-IY0": [
+        "waterbury"
+    ],
+    "EH1-ER0-EH2-IY0": [
+        "temporaries",
+        "temporary"
+    ],
+    "IH1-ER0-EH2-IY0": [
+        "literary"
+    ],
+    "UW1-ER0-EH2-IY0": [
+        "funerary"
+    ],
+    "AE1-IH0-EH2-IY0": [
+        "sanitary",
+        "savagery"
+    ],
+    "AH1-IH0-EH2-IY0": [
+        "budgetary"
+    ],
+    "EH1-IH0-EH2-IY0": [
+        "residencies"
+    ],
+    "UW1-IH0-EH2-IY0": [
+        "culinary",
+        "unitary"
+    ],
+    "EY1-IY0-EH2-IY0": [
+        "aviaries",
+        "aviary"
+    ],
+    "OW1-IY0-EH2-IY0": [
+        "topiary"
+    ],
     "OW1-EH2-IY0": [
         "rosemary"
+    ],
+    "AE1-UW0-EH2-IY0": [
+        "january",
+        "sanctuaries",
+        "sanctuary",
+        "statuary"
+    ],
+    "AO1-UW0-EH2-IY0": [
+        "mortuary"
+    ],
+    "EH1-UW0-EH2-IY0": [
+        "estuaries",
+        "estuary"
     ],
     "UW1-EH2-IY0": [
         "blueberries",
@@ -36598,6 +46556,9 @@ export default {
         "snobbery",
         "somberly"
     ],
+    "IH2-AA1-ER0-IY0": [
+        "improperly"
+    ],
     "AE1-ER0-IY0": [
         "allergies",
         "allergy",
@@ -36632,6 +46593,30 @@ export default {
         "salary",
         "salisbury"
     ],
+    "AH0-AE1-ER0-IY0": [
+        "menagerie",
+        "refractory"
+    ],
+    "OW0-AE1-ER0-IY0": [
+        "olfactory"
+    ],
+    "AA1-AH0-ER0-IY0": [
+        "popularly"
+    ],
+    "AE1-AH0-ER0-IY0": [
+        "albuquerque"
+    ],
+    "EH1-AH0-ER0-IY0": [
+        "metallurgy",
+        "regularly"
+    ],
+    "ER1-AH0-ER0-IY0": [
+        "circularly"
+    ],
+    "IH1-AH0-ER0-IY0": [
+        "similarly",
+        "singularly"
+    ],
     "AH1-ER0-IY0": [
         "blustery",
         "brotherly",
@@ -36656,6 +46641,19 @@ export default {
         "upwardly",
         "utterly"
     ],
+    "AH0-AH1-ER0-IY0": [
+        "adultery",
+        "compulsory"
+    ],
+    "ER0-AH1-ER0-IY0": [
+        "perfunctory"
+    ],
+    "IH0-AH1-ER0-IY0": [
+        "discoveries",
+        "discovery",
+        "effrontery",
+        "recoveries"
+    ],
     "AO1-ER0-IY0": [
         "awkwardly",
         "forgeries",
@@ -36672,6 +46670,12 @@ export default {
         "quarterly",
         "sorcery",
         "watery"
+    ],
+    "AH0-AO1-ER0-IY0": [
+        "debauchery"
+    ],
+    "IH0-AO1-ER0-IY0": [
+        "disorderly"
     ],
     "AW1-ER0-IY0": [
         "boundaries",
@@ -36697,6 +46701,21 @@ export default {
         "priory",
         "wineries",
         "winery"
+    ],
+    "AE0-AY1-ER0-IY0": [
+        "advisory"
+    ],
+    "AH0-AY1-ER0-IY0": [
+        "advisories"
+    ],
+    "IH0-AY1-ER0-IY0": [
+        "entirely",
+        "entirety",
+        "refineries",
+        "refinery"
+    ],
+    "IH1-AY2-ER0-IY0": [
+        "midwifery"
     ],
     "EH1-ER0-IY0": [
         "beverly",
@@ -36729,6 +46748,22 @@ export default {
         "westerlies",
         "westerly"
     ],
+    "AE0-EH1-ER0-IY0": [
+        "accessories",
+        "accessory"
+    ],
+    "AH0-EH1-ER0-IY0": [
+        "trajectory"
+    ],
+    "AO2-EH1-ER0-IY0": [
+        "northwesterly"
+    ],
+    "ER0-EH1-ER0-IY0": [
+        "peremptory"
+    ],
+    "IH0-EH1-ER0-IY0": [
+        "exemplary"
+    ],
     "ER1-ER0-IY0": [
         "burglaries",
         "burglary",
@@ -36740,6 +46775,9 @@ export default {
         "perjury",
         "surgeries",
         "surgery"
+    ],
+    "IH0-ER1-ER0-IY0": [
+        "infirmary"
     ],
     "EY1-ER0-IY0": [
         "avery",
@@ -36755,6 +46793,12 @@ export default {
         "slavery",
         "vagaries",
         "vagary"
+    ],
+    "AH0-EY1-ER0-IY0": [
+        "unsavory"
+    ],
+    "IH0-EY1-ER0-IY0": [
+        "chicanery"
     ],
     "IH1-ER0-IY0": [
         "bitterly",
@@ -36790,6 +46834,24 @@ export default {
         "victory",
         "wizardry"
     ],
+    "AA0-IH1-ER0-IY0": [
+        "artillery"
+    ],
+    "ER0-IH1-ER0-IY0": [
+        "periphery"
+    ],
+    "IH0-IH1-ER0-IY0": [
+        "deliveries",
+        "delivery",
+        "distilleries",
+        "distillery"
+    ],
+    "OW2-IH1-ER0-IY0": [
+        "rotisserie"
+    ],
+    "IH1-IY0-ER0-IY0": [
+        "linearly"
+    ],
     "IY1-ER0-IY0": [
         "creamery",
         "eagerly",
@@ -36801,6 +46863,13 @@ export default {
         "sceneries",
         "scenery",
         "thievery"
+    ],
+    "AH0-IY1-ER0-IY0": [
+        "machineries",
+        "machinery"
+    ],
+    "AO2-IY1-ER0-IY0": [
+        "northeasterly"
     ],
     "OW1-ER0-IY0": [
         "coterie",
@@ -36814,8 +46883,17 @@ export default {
         "rotary",
         "soberly"
     ],
+    "AH0-OW1-ER0-IY0": [
+        "upholstery"
+    ],
     "OY1-ER0-IY0": [
         "joinery"
+    ],
+    "EH0-OY1-ER0-IY0": [
+        "embroidery"
+    ],
+    "IH0-OY1-ER0-IY0": [
+        "embroideries"
     ],
     "UH1-ER0-IY0": [
         "butchery",
@@ -36828,6 +46906,12 @@ export default {
         "prudery",
         "puberty",
         "superbly"
+    ],
+    "IH0-UW1-ER0-IY0": [
+        "peculiarly"
+    ],
+    "IH2-UW1-ER0-IY0": [
+        "illusory"
     ],
     "ER1-IY0": [
         "berkeley",
@@ -36928,6 +47012,9 @@ export default {
     "ER0-ER1-IY0": [
         "perversely"
     ],
+    "AH1-ER0-ER1-IY0": [
+        "otherworldly"
+    ],
     "IH2-ER1-IY0": [
         "inversely"
     ],
@@ -36936,9 +47023,22 @@ export default {
         "overtly",
         "towery"
     ],
+    "AA1-AH0-ER2-IY0": [
+        "controversies",
+        "controversy"
+    ],
+    "AE1-AH0-ER2-IY0": [
+        "taxidermy"
+    ],
+    "AY1-AH0-ER2-IY0": [
+        "diathermy"
+    ],
     "AH1-ER2-IY0": [
         "bloodthirsty",
         "trustworthy"
+    ],
+    "AH0-AH1-ER2-IY0": [
+        "untrustworthy"
     ],
     "EH1-ER2-IY0": [
         "airworthy"
@@ -37048,6 +47148,12 @@ export default {
     "AH0-EY1-IY0": [
         "ungainly"
     ],
+    "AO2-AH0-EY1-IY0": [
+        "cockamamie"
+    ],
+    "UW2-AH0-EY1-IY0": [
+        "ukulele"
+    ],
     "AO0-EY1-IY0": [
         "ornately"
     ],
@@ -37076,6 +47182,15 @@ export default {
     "AE1-EY2-IY0": [
         "landlady"
     ],
+    "AH0-AE1-EY2-IY0": [
+        "metastases"
+    ],
+    "IH1-AH0-EY2-IY0": [
+        "miscellany"
+    ],
+    "OW1-AA0-IH0-IY0": [
+        "wholeheartedly"
+    ],
     "AA1-IH0-IY0": [
         "artistry",
         "charmingly",
@@ -37089,6 +47204,21 @@ export default {
         "shockingly",
         "sobbingly",
         "varsity"
+    ],
+    "AA2-AA1-IH0-IY0": [
+        "pomposity"
+    ],
+    "AH0-AA1-IH0-IY0": [
+        "alarmingly"
+    ],
+    "AO2-AA1-IH0-IY0": [
+        "causality"
+    ],
+    "AY0-AA1-IH0-IY0": [
+        "ironically"
+    ],
+    "IH0-AA1-IH0-IY0": [
+        "disarmingly"
     ],
     "AE1-IH0-IY0": [
         "actively",
@@ -37115,6 +47245,75 @@ export default {
         "tragically",
         "validly"
     ],
+    "AA0-AE1-IH0-IY0": [
+        "dogmatically",
+        "sarcastically",
+        "volcanically"
+    ],
+    "AE0-AE1-IH0-IY0": [
+        "fantastically"
+    ],
+    "AH0-AE1-IH0-IY0": [
+        "attractively",
+        "banalities",
+        "banality",
+        "fatalities",
+        "fatality",
+        "mechanically",
+        "tenacity",
+        "thematically"
+    ],
+    "AO0-AE1-IH0-IY0": [
+        "organically"
+    ],
+    "AO2-AE1-IH0-IY0": [
+        "causalities"
+    ],
+    "AW2-AE1-IH0-IY0": [
+        "outstandingly"
+    ],
+    "EH0-AE1-IH0-IY0": [
+        "bestiality",
+        "centrality",
+        "ecstatically",
+        "erratically",
+        "mendacity"
+    ],
+    "ER0-AE1-IH0-IY0": [
+        "plurality",
+        "sporadically",
+        "veracity"
+    ],
+    "IH0-AE1-IH0-IY0": [
+        "demandingly",
+        "venality"
+    ],
+    "IH2-AE1-IH0-IY0": [
+        "impassively"
+    ],
+    "OW0-AE1-IH0-IY0": [
+        "localities"
+    ],
+    "AA1-AH0-IH0-IY0": [
+        "competencies",
+        "competency",
+        "competently",
+        "positively"
+    ],
+    "AH1-AH0-IH0-IY0": [
+        "substantively"
+    ],
+    "AY1-AH0-IH0-IY0": [
+        "frighteningly"
+    ],
+    "EH1-AH0-IH0-IY0": [
+        "menacingly",
+        "negatively",
+        "relatively"
+    ],
+    "IH1-AH0-IH0-IY0": [
+        "misogyny"
+    ],
     "AH1-IH0-IY0": [
         "lovingly",
         "numbingly",
@@ -37122,6 +47321,15 @@ export default {
         "sluggishly",
         "subsidy",
         "summitry"
+    ],
+    "AH0-AH1-IH0-IY0": [
+        "compulsively",
+        "constructively",
+        "fecundity",
+        "seductively"
+    ],
+    "IH2-AH1-IH0-IY0": [
+        "impulsively"
     ],
     "AO1-IH0-IY0": [
         "haltingly",
@@ -37131,8 +47339,27 @@ export default {
         "morrissey",
         "warningly"
     ],
+    "AE0-AO1-IH0-IY0": [
+        "spasmodically"
+    ],
+    "AH0-AO1-IH0-IY0": [
+        "accordingly",
+        "appallingly",
+        "majorities",
+        "rhetorically"
+    ],
+    "IY0-AO1-IH0-IY0": [
+        "seniority"
+    ],
     "AW1-IH0-IY0": [
         "frowningly"
+    ],
+    "AH0-AW1-IH0-IY0": [
+        "astoundingly",
+        "undoubtedly"
+    ],
+    "IH0-AW1-IH0-IY0": [
+        "resoundingly"
     ],
     "AY1-IH0-IY0": [
         "icily",
@@ -37142,6 +47369,15 @@ export default {
         "smilingly",
         "strikingly",
         "stylishly"
+    ],
+    "AE0-AY1-IH0-IY0": [
+        "admiringly"
+    ],
+    "AH0-AY1-IH0-IY0": [
+        "obligingly"
+    ],
+    "IH0-AY1-IH0-IY0": [
+        "decisively"
     ],
     "EH1-IH0-IY0": [
         "charity",
@@ -37159,15 +47395,134 @@ export default {
         "tellingly",
         "wretchedly"
     ],
+    "AA0-EH1-IH0-IY0": [
+        "objectively",
+        "obscenities",
+        "obsessively",
+        "progressively"
+    ],
+    "AE0-EH1-IH0-IY0": [
+        "angelically",
+        "athletically"
+    ],
+    "AH0-EH1-IH0-IY0": [
+        "affectively",
+        "aggressively",
+        "asperity",
+        "attentively",
+        "celebrities",
+        "celebrity",
+        "collectively",
+        "compellingly",
+        "complexities",
+        "decrepitly",
+        "domestically",
+        "generically",
+        "genetically",
+        "necessities",
+        "obscenity",
+        "offensively",
+        "phonetically",
+        "propensity",
+        "prospectively",
+        "protectively",
+        "selectively",
+        "successively",
+        "summarily",
+        "symmetrically",
+        "systemically",
+        "unethically",
+        "vulgarity"
+    ],
+    "AO2-EH1-IH0-IY0": [
+        "austerity",
+        "cosmetically"
+    ],
+    "EH0-EH1-IH0-IY0": [
+        "aesthetically"
+    ],
+    "EH2-EH1-IH0-IY0": [
+        "expensively"
+    ],
+    "IH0-EH1-IH0-IY0": [
+        "deceptively",
+        "defensively",
+        "depressingly",
+        "distressingly",
+        "excessively",
+        "extensively",
+        "respectively",
+        "severity",
+        "synthetically"
+    ],
+    "IH2-EH1-IH0-IY0": [
+        "hysterically",
+        "impressively",
+        "indemnities",
+        "intensively"
+    ],
+    "IY0-EH1-IH0-IY0": [
+        "preemptively",
+        "reflexively",
+        "refreshingly"
+    ],
+    "OW0-EH1-IH0-IY0": [
+        "poetically",
+        "yosemite"
+    ],
+    "UW0-EH1-IH0-IY0": [
+        "numerically"
+    ],
     "ER1-IH0-IY0": [
         "furtively",
         "perfidy",
         "vertically"
     ],
+    "AH0-ER1-IH0-IY0": [
+        "assertively",
+        "maternity",
+        "paternity"
+    ],
+    "IH0-ER1-IH0-IY0": [
+        "disturbingly",
+        "infirmities",
+        "infirmity"
+    ],
+    "IH2-ER1-IH0-IY0": [
+        "imperfectly"
+    ],
     "EY1-IH0-IY0": [
         "achingly",
         "basically",
         "natively"
+    ],
+    "AH0-EY1-IH0-IY0": [
+        "amazingly",
+        "unfailingly"
+    ],
+    "ER0-EY1-IH0-IY0": [
+        "persuasively"
+    ],
+    "IY0-EY1-IH0-IY0": [
+        "creatively"
+    ],
+    "AH1-EY2-IH0-IY0": [
+        "frustratingly"
+    ],
+    "EH1-EY2-IH0-IY0": [
+        "breathtakingly"
+    ],
+    "EY1-EY2-IH0-IY0": [
+        "painstakingly"
+    ],
+    "EH1-IH0-IH0-IY0": [
+        "sensitively"
+    ],
+    "ER1-IH0-IH0-IY0": [
+        "pertinently"
+    ],
+    "IH1-IH0-IH0-IY0": [
+        "illicitly"
     ],
     "IH1-IH0-IY0": [
         "chillingly",
@@ -37187,6 +47542,66 @@ export default {
         "willingly",
         "wittingly"
     ],
+    "AA0-IH1-IH0-IY0": [
+        "artistically"
+    ],
+    "AE0-IH1-IH0-IY0": [
+        "admittedly",
+        "rancidity",
+        "tranquility",
+        "tranquillity"
+    ],
+    "AH0-IH1-IH0-IY0": [
+        "capriciously",
+        "complicities",
+        "convincingly",
+        "facility",
+        "logistically",
+        "maliciously",
+        "passivity",
+        "specifically",
+        "stability",
+        "unwillingly",
+        "unwittingly"
+    ],
+    "AY0-IH1-IH0-IY0": [
+        "stylistically"
+    ],
+    "EH0-IH1-IH0-IY0": [
+        "ethnicity",
+        "gentility"
+    ],
+    "EH2-IH1-IH0-IY0": [
+        "exquisitely"
+    ],
+    "ER0-IH1-IH0-IY0": [
+        "sterility",
+        "terrifically",
+        "virginity"
+    ],
+    "IH0-IH1-IH0-IY0": [
+        "distinctively",
+        "linguistically",
+        "lividity",
+        "rigidities"
+    ],
+    "IH2-IH1-IH0-IY0": [
+        "infinity",
+        "iniquity"
+    ],
+    "OW0-IH1-IH0-IY0": [
+        "motility",
+        "prodigiously",
+        "prolifically"
+    ],
+    "UW0-IH1-IH0-IY0": [
+        "cupidity",
+        "duplicity",
+        "humility",
+        "judiciously",
+        "lucidity",
+        "ubiquity"
+    ],
     "IY1-IH0-IY0": [
         "fleetingly",
         "heatedly",
@@ -37196,11 +47611,44 @@ export default {
         "seemingly",
         "sheepishly"
     ],
+    "AH0-IY1-IH0-IY0": [
+        "appealingly",
+        "strategically"
+    ],
+    "IH0-IY1-IH0-IY0": [
+        "exceedingly",
+        "misleadingly",
+        "repeatedly"
+    ],
+    "IH2-IY1-IH0-IY0": [
+        "intriguingly"
+    ],
+    "OW0-IY1-IH0-IY0": [
+        "cohesively"
+    ],
     "OW1-IH0-IY0": [
         "comity",
         "jokingly",
         "knowingly",
         "stoically"
+    ],
+    "AH0-OW1-IH0-IY0": [
+        "unknowingly"
+    ],
+    "EH0-OW1-IH0-IY0": [
+        "aerobically"
+    ],
+    "EH2-OW1-IH0-IY0": [
+        "explosively"
+    ],
+    "ER0-OW1-IH0-IY0": [
+        "ferociously"
+    ],
+    "IH2-OW1-IH0-IY0": [
+        "heroically"
+    ],
+    "AH0-UH1-IH0-IY0": [
+        "maturities"
     ],
     "UW1-IH0-IY0": [
         "foolishly",
@@ -37209,6 +47657,26 @@ export default {
         "musically",
         "nudity",
         "soothingly"
+    ],
+    "AH0-UW1-IH0-IY0": [
+        "accusingly",
+        "acoustically",
+        "amusingly",
+        "annuities",
+        "approvingly",
+        "conclusively",
+        "confusingly",
+        "gratuities",
+        "gratuity"
+    ],
+    "IH0-UW1-IH0-IY0": [
+        "effusively",
+        "exclusively",
+        "reputedly"
+    ],
+    "IH2-UW1-IH0-IY0": [
+        "immunities",
+        "impunity"
     ],
     "IH1-IY0": [
         "beery",
@@ -37458,6 +47926,13 @@ export default {
         "succinctly",
         "vanilli"
     ],
+    "AE2-AH0-IH1-IY0": [
+        "cavalierly"
+    ],
+    "AH1-AH0-IH1-IY0": [
+        "subcommittee",
+        "subcommittees"
+    ],
     "AO2-IH1-IY0": [
         "austerely"
     ],
@@ -37466,14 +47941,23 @@ export default {
         "gimmicky",
         "sincerely"
     ],
+    "IH2-IH0-IH1-IY0": [
+        "mississippi"
+    ],
     "IY0-IH1-IY0": [
         "reentry"
     ],
     "UW0-IH1-IY0": [
         "ulysses"
     ],
+    "EH1-ER0-IH2-IY0": [
+        "feverishly"
+    ],
     "IH1-IH2-IY0": [
         "hillbillies"
+    ],
+    "IH1-OW0-IH2-IY0": [
+        "ignominy"
     ],
     "ER1-IY0-IY0": [
         "hurriedly"
@@ -37596,6 +48080,12 @@ export default {
         "wahines",
         "wapiti"
     ],
+    "AA2-AH0-IY1-IY0": [
+        "archimedes"
+    ],
+    "AY2-AH0-IY1-IY0": [
+        "diabetes"
+    ],
     "AY0-IY1-IY0": [
         "biweekly",
         "ideally"
@@ -37605,10 +48095,19 @@ export default {
         "entreaty",
         "extremely"
     ],
+    "AE2-ER0-IY1-IY0": [
+        "lamborghini"
+    ],
     "IH0-IY1-IY0": [
         "bikini",
         "discreetly",
         "linguine"
+    ],
+    "AA0-IY0-IY1-IY0": [
+        "caminiti"
+    ],
+    "UW2-OW0-IY1-IY0": [
+        "mussolini"
     ],
     "UW0-IY1-IY0": [
         "houdini",
@@ -37728,12 +48227,37 @@ export default {
         "bologna",
         "unholy"
     ],
+    "AA2-AH0-OW1-IY0": [
+        "guacamole"
+    ],
+    "AE2-AH0-OW1-IY0": [
+        "abalone",
+        "abalones"
+    ],
+    "AY2-AH0-OW1-IY0": [
+        "diagnoses"
+    ],
+    "IH0-AH0-OW1-IY0": [
+        "rigatoni"
+    ],
+    "IH2-AH0-OW1-IY0": [
+        "lipoprotein"
+    ],
     "AY2-OW1-IY0": [
         "nairobi"
+    ],
+    "AE2-ER0-OW1-IY0": [
+        "macaroni"
+    ],
+    "EH2-ER0-OW1-IY0": [
+        "pepperoni"
     ],
     "IY0-OW1-IY0": [
         "quixote",
         "remotely"
+    ],
+    "AE2-IY0-OW1-IY0": [
+        "ravioli"
     ],
     "OW0-OW1-IY0": [
         "shoshone"
@@ -37743,6 +48267,39 @@ export default {
     ],
     "UW0-OW1-IY0": [
         "spumoni"
+    ],
+    "AA1-AH0-OW2-IY0": [
+        "parsimony"
+    ],
+    "AE1-AH0-OW2-IY0": [
+        "alimony",
+        "chalcedony",
+        "matrimony",
+        "patrimony"
+    ],
+    "EH1-AH0-OW2-IY0": [
+        "ceremonies",
+        "ceremony",
+        "pedagogy",
+        "telephony",
+        "testimonies",
+        "testimony"
+    ],
+    "AY1-ER0-OW2-IY0": [
+        "hypertrophy"
+    ],
+    "AE1-IH0-OW2-IY0": [
+        "acrimony",
+        "sanctimony"
+    ],
+    "AE2-IH0-OW2-IY0": [
+        "antipodes"
+    ],
+    "UW1-IY0-OW2-IY0": [
+        "nucleoli"
+    ],
+    "OW1-OW2-OW2-IY0": [
+        "lobotomy"
     ],
     "OY1-IY0": [
         "coyly",
@@ -37793,6 +48350,9 @@ export default {
         "woody",
         "woolly",
         "wooly"
+    ],
+    "IY2-AH0-UH1-IY0": [
+        "prematurely"
     ],
     "EH0-UH1-IY0": [
         "venturi"
@@ -37903,6 +48463,9 @@ export default {
         "suzuki",
         "unduly",
         "unruly"
+    ],
+    "AE2-AH0-UW1-IY0": [
+        "absolutely"
     ],
     "EH0-UW1-IY0": [
         "ennui"
@@ -38469,6 +49032,9 @@ export default {
     "AY1-AA0-IY1": [
         "taiwanese"
     ],
+    "IY0-EH2-AA0-IY1": [
+        "vietnamese"
+    ],
     "ER2-AA0-IY1": [
         "seraphim"
     ],
@@ -38628,6 +49194,10 @@ export default {
         "puppeteer",
         "puppeteers"
     ],
+    "EH2-AH0-AH0-IY1": [
+        "recitatives",
+        "senegalese"
+    ],
     "AH2-AH0-IY1": [
         "buccaneer",
         "buccaneers",
@@ -38658,6 +49228,9 @@ export default {
         "nepalese",
         "tennessee"
     ],
+    "AH0-EH2-AH0-IY1": [
+        "aperitif"
+    ],
     "ER2-AH0-IY1": [
         "journalese"
     ],
@@ -38675,6 +49248,9 @@ export default {
         "incomplete",
         "sinhalese"
     ],
+    "AY2-IH2-AH0-IY1": [
+        "ieee"
+    ],
     "IY0-AH0-IY1": [
         "reconvene",
         "reconvened",
@@ -38689,6 +49265,9 @@ export default {
     ],
     "UW2-AH0-IY1": [
         "sudanese"
+    ],
+    "AE0-UW2-AH0-IY1": [
+        "abdulaziz"
     ],
     "AH1-IY1": [
         "gutsy",
@@ -38776,6 +49355,9 @@ export default {
     "IY2-AY2-IY1": [
         "vips"
     ],
+    "IH2-OW0-AY2-IY1": [
+        "indochinese"
+    ],
     "EH0-IY1": [
         "belize",
         "benzene",
@@ -38844,6 +49426,9 @@ export default {
     "AE2-ER0-IY1": [
         "tambourine",
         "tangerine"
+    ],
+    "AA2-AH0-ER0-IY1": [
+        "aquamarine"
     ],
     "AH2-ER0-IY1": [
         "underneath",
@@ -38927,6 +49512,9 @@ export default {
         "detainees",
         "escapee",
         "escapees"
+    ],
+    "EY2-IY2-EY2-IY1": [
+        "adhd"
     ],
     "IH0-IY1": [
         "belief",
@@ -39108,6 +49696,10 @@ export default {
         "rupees",
         "unique"
     ],
+    "IH2-ER0-UW0-IY1": [
+        "interviewee",
+        "interviewees"
+    ],
     "AA1-IY2": [
         "cartwheel",
         "cartwheels",
@@ -39118,6 +49710,12 @@ export default {
         "osteen",
         "starry",
         "wadi"
+    ],
+    "IH2-ER2-AA1-IY2": [
+        "liberace"
+    ],
+    "AO2-IY0-AA1-IY2": [
+        "origami"
     ],
     "AE1-IY2": [
         "athlete",
@@ -39135,6 +49733,9 @@ export default {
         "ragweed",
         "tatty"
     ],
+    "EH2-AH0-AE1-IY2": [
+        "elephantine"
+    ],
     "AA1-AH0-IY2": [
         "argentine",
         "argentines",
@@ -39146,6 +49747,21 @@ export default {
         "socrates",
         "wallabies",
         "wallaby"
+    ],
+    "AA0-AA1-AH0-IY2": [
+        "concavity"
+    ],
+    "AH0-AA1-AH0-IY2": [
+        "apologies",
+        "apology",
+        "apostrophe",
+        "apostrophes",
+        "colossally",
+        "mythology",
+        "phonology"
+    ],
+    "AY0-AA1-AH0-IY2": [
+        "hypotheses"
     ],
     "AE1-AH0-IY2": [
         "academe",
@@ -39169,6 +49785,16 @@ export default {
         "naphthalene",
         "vaseline"
     ],
+    "AH0-AE1-AH0-IY2": [
+        "analyses"
+    ],
+    "AY0-AE1-AH0-IY2": [
+        "diastole"
+    ],
+    "IY2-AE1-AH0-IY2": [
+        "realities",
+        "reality"
+    ],
     "AH1-AH0-IY2": [
         "bumblebee",
         "bumblebees",
@@ -39183,12 +49809,29 @@ export default {
         "portuguese",
         "quarantine"
     ],
+    "AE2-AO1-AH0-IY2": [
+        "taxonomies",
+        "taxonomy"
+    ],
+    "AY0-AO1-AH0-IY2": [
+        "isosceles"
+    ],
+    "IH1-AO1-AH0-IY2": [
+        "mixology"
+    ],
     "AY1-AH0-IY2": [
         "binaries",
         "briony",
         "miocene",
         "pleistocene",
         "pliocene"
+    ],
+    "AA0-AY1-AH0-IY2": [
+        "satiety"
+    ],
+    "AH0-AY1-AH0-IY2": [
+        "calliope",
+        "calliopes"
     ],
     "EH1-AH0-IY2": [
         "carotene",
@@ -39212,11 +49855,43 @@ export default {
         "seventeens",
         "velveteen"
     ],
+    "AE0-EH1-AH0-IY2": [
+        "amphetamine",
+        "amphetamines"
+    ],
+    "AH0-EH1-AH0-IY2": [
+        "acetylene",
+        "adenosine"
+    ],
+    "ER0-EH1-AH0-IY2": [
+        "parentheses"
+    ],
+    "AE1-ER0-AH0-IY2": [
+        "laterally"
+    ],
+    "AH1-ER0-AH0-IY2": [
+        "culturally"
+    ],
     "ER1-AH0-IY2": [
         "hercules"
     ],
+    "AY0-ER1-AH0-IY2": [
+        "hyperbole"
+    ],
+    "IH2-ER1-AH0-IY2": [
+        "internecine"
+    ],
+    "IH1-ER2-AH0-IY2": [
+        "liberally"
+    ],
     "EY1-AH0-IY2": [
         "daintily"
+    ],
+    "EH1-IH0-AH0-IY2": [
+        "elegantly"
+    ],
+    "ER1-IH0-AH0-IY2": [
+        "servility"
     ],
     "IH1-AH0-IY2": [
         "filigree",
@@ -39233,6 +49908,25 @@ export default {
         "syntheses",
         "timpani",
         "twinkly"
+    ],
+    "AE0-IH1-AH0-IY2": [
+        "maxillary"
+    ],
+    "AH0-IH1-AH0-IY2": [
+        "abilities",
+        "ability",
+        "polygamy",
+        "salinity"
+    ],
+    "IH2-IH1-AH0-IY2": [
+        "indignantly",
+        "indignity"
+    ],
+    "EY1-IY0-AH0-IY2": [
+        "paleocene"
+    ],
+    "UW1-IY0-AH0-IY2": [
+        "dubiously"
     ],
     "IY1-AH0-IY2": [
         "eocene",
@@ -39267,6 +49961,9 @@ export default {
         "upbeat",
         "upkeep"
     ],
+    "AY2-AA1-AO0-IY2": [
+        "ionosphere"
+    ],
     "AO1-IY2": [
         "cornfield",
         "cornmeal",
@@ -39275,6 +49972,10 @@ export default {
         "lordly",
         "snotty",
         "tories"
+    ],
+    "AA2-AA0-AO1-IY2": [
+        "paparazzi",
+        "paparazzis"
     ],
     "AH0-AO1-IY2": [
         "thesauri"
@@ -39308,6 +50009,9 @@ export default {
     "IH0-AY1-IY2": [
         "enquiry"
     ],
+    "AA2-IY2-AY1-IY2": [
+        "polystyrene"
+    ],
     "AY1-EH0-IY2": [
         "libraries",
         "library"
@@ -39327,8 +50031,20 @@ export default {
         "spreadsheet",
         "spreadsheets"
     ],
+    "AA2-AO0-EH1-IY2": [
+        "cognoscenti"
+    ],
+    "IH2-ER0-EH1-IY2": [
+        "indirectly"
+    ],
     "IY0-EH1-IY2": [
         "viennese"
+    ],
+    "AE1-UW0-EH1-IY2": [
+        "actuary"
+    ],
+    "AE1-UW2-EH1-IY2": [
+        "actuaries"
     ],
     "AE1-ER0-IY2": [
         "aberdeen",
@@ -39342,6 +50058,9 @@ export default {
     "AH1-ER0-IY2": [
         "submarine",
         "submarines"
+    ],
+    "AH0-AH1-ER0-IY2": [
+        "skulduggery"
     ],
     "AO1-ER0-IY2": [
         "altarpiece"
@@ -39409,16 +50128,42 @@ export default {
     "AE1-IH0-IY2": [
         "abilene"
     ],
+    "AY0-AE1-IH0-IY2": [
+        "dynamically"
+    ],
     "AO1-IH0-IY2": [
         "sophistry"
+    ],
+    "AA0-AO1-IH0-IY2": [
+        "anopheles"
+    ],
+    "EH0-AO1-IH0-IY2": [
+        "eponymy"
+    ],
+    "ER0-AO1-IH0-IY2": [
+        "purportedly"
     ],
     "EH1-IH0-IY2": [
         "centipede",
         "ezekiel",
         "methylene"
     ],
+    "AH0-EH1-IH0-IY2": [
+        "appendices"
+    ],
+    "AY0-EH1-IH0-IY2": [
+        "identities",
+        "identity"
+    ],
     "ER1-IH0-IY2": [
         "vertices"
+    ],
+    "IH2-IH1-IH0-IY2": [
+        "instinctively"
+    ],
+    "UW0-IH1-IH0-IY2": [
+        "lubricity",
+        "stupidity"
     ],
     "IH1-IY2": [
         "blitzkrieg",
@@ -39441,6 +50186,12 @@ export default {
         "windshield",
         "windshields"
     ],
+    "AE2-ER0-IH1-IY2": [
+        "labyrinthine"
+    ],
+    "AE1-ER0-IH2-IY2": [
+        "staggeringly"
+    ],
     "AE1-IY0-IY2": [
         "antifreeze"
     ],
@@ -39462,9 +50213,26 @@ export default {
         "seaweeds",
         "speedy"
     ],
+    "AO2-AA1-OW0-IY2": [
+        "proctoscopy"
+    ],
+    "AA1-AH0-OW0-IY2": [
+        "oligocene"
+    ],
+    "AO1-AH0-OW0-IY2": [
+        "automobile",
+        "automobiles"
+    ],
     "AY1-OW0-IY2": [
         "leitmotif",
         "microfiche"
+    ],
+    "AE0-IH1-OW0-IY2": [
+        "antinomy"
+    ],
+    "AO2-IY1-OW0-IY2": [
+        "audiophile",
+        "audiophiles"
     ],
     "OW1-OW0-IY2": [
         "oldsmobile",
@@ -39492,6 +50260,9 @@ export default {
         "stogie",
         "stogies",
         "towhee"
+    ],
+    "IH2-AH0-OW1-IY2": [
+        "minestrone"
     ],
     "OY1-IY2": [
         "oilseed",
@@ -39588,6 +50359,9 @@ export default {
         "aguado",
         "carballo"
     ],
+    "AA0-AA0-AA1-OW0": [
+        "albarado"
+    ],
     "AH0-AA1-OW0": [
         "abbado",
         "apollo",
@@ -39599,6 +50373,13 @@ export default {
         "mulatto",
         "palazzo"
     ],
+    "AE2-AH0-AA1-OW0": [
+        "avocado",
+        "avocados"
+    ],
+    "IY2-AH0-AA1-OW0": [
+        "leonardo"
+    ],
     "AO0-AA1-OW0": [
         "dorado"
     ],
@@ -39606,11 +50387,24 @@ export default {
         "embargo",
         "embargoes"
     ],
+    "AA0-EH0-AA1-OW0": [
+        "arebalo"
+    ],
     "EH2-AA1-OW0": [
         "escargot"
     ],
     "ER0-AA1-OW0": [
         "morocco"
+    ],
+    "AE2-ER0-AA1-OW0": [
+        "alvarado"
+    ],
+    "EH2-ER0-AA1-OW0": [
+        "desperado",
+        "desperadoes"
+    ],
+    "AA0-EY0-AA1-OW0": [
+        "arevalo"
     ],
     "IH0-AA1-OW0": [
         "chicano",
@@ -39625,8 +50419,18 @@ export default {
         "milano",
         "vibrato"
     ],
+    "AA0-IY0-AA1-OW0": [
+        "marciano"
+    ],
+    "AE2-IY0-AA1-OW0": [
+        "antipasto",
+        "santiago"
+    ],
     "UW2-AA1-OW0": [
         "cruzados"
+    ],
+    "AH0-AY1-AE0-OW0": [
+        "undiagnosed"
     ],
     "AE1-OW0": [
         "afro",
@@ -39685,6 +50489,16 @@ export default {
         "foreshadowed",
         "foreshadows"
     ],
+    "EH2-ER0-AE1-OW0": [
+        "esperanto"
+    ],
+    "OW1-ER0-AE1-OW0": [
+        "overshadow",
+        "overshadows"
+    ],
+    "OW2-ER0-AE1-OW0": [
+        "overshadowed"
+    ],
     "IY0-AE1-OW0": [
         "fiasco",
         "fiascos"
@@ -39699,6 +50513,9 @@ export default {
     ],
     "IH1-AH0-OW0": [
         "gigolo"
+    ],
+    "AY1-IY0-AH0-OW0": [
+        "ideologue"
     ],
     "OW1-AH0-OW0": [
         "provolone"
@@ -39731,6 +50548,9 @@ export default {
     ],
     "AH0-AO1-OW0": [
         "saguaro"
+    ],
+    "EH2-AH0-AO1-OW0": [
+        "metamorphose"
     ],
     "AW1-OW0": [
         "gaucho",
@@ -39828,6 +50648,10 @@ export default {
         "stiletto",
         "stilettos"
     ],
+    "AE2-AH0-EH1-OW0": [
+        "caballero",
+        "sacramento"
+    ],
     "IH0-EH1-OW0": [
         "crescendo",
         "electro",
@@ -39842,6 +50666,11 @@ export default {
     "OW0-EH1-OW0": [
         "bolero"
     ],
+    "IH2-UW0-EH1-OW0": [
+        "innuendo",
+        "innuendoes",
+        "innuendos"
+    ],
     "AA1-EH2-OW0": [
         "marshmallow",
         "marshmallows"
@@ -39855,6 +50684,9 @@ export default {
     ],
     "AA1-ER0-OW0": [
         "marlboro"
+    ],
+    "EH1-AH0-ER0-OW0": [
+        "edinburgh"
     ],
     "OW1-ER0-OW0": [
         "overgrowth"
@@ -39924,6 +50756,9 @@ export default {
     "AE1-IH0-OW0": [
         "camisole"
     ],
+    "IY0-IH1-IH0-OW0": [
+        "vitiligo"
+    ],
     "IH1-OW0": [
         "billow",
         "billowed",
@@ -39976,8 +50811,15 @@ export default {
         "flamingo",
         "flamingos"
     ],
+    "AA2-AH0-IH1-OW0": [
+        "armadillo",
+        "armadillos"
+    ],
     "AO2-IH1-OW0": [
         "caudillo"
+    ],
+    "AE2-ER0-IH1-OW0": [
+        "amarillo"
     ],
     "IH0-IH1-OW0": [
         "deniro"
@@ -39996,12 +50838,34 @@ export default {
     "EH1-IY0-OW0": [
         "terrio"
     ],
+    "AA0-EH1-IY0-OW0": [
+        "ontario"
+    ],
+    "IH0-EH1-IY0-OW0": [
+        "scenario",
+        "scenarios"
+    ],
+    "AH0-EY1-IY0-OW0": [
+        "fellatio"
+    ],
     "IH1-IY0-OW0": [
         "cheerio",
         "cheerios",
         "mineo",
         "video",
         "videos"
+    ],
+    "AH0-IH1-IY0-OW0": [
+        "officio"
+    ],
+    "AA2-IY1-IY0-OW0": [
+        "arsenio"
+    ],
+    "AH0-IY1-IY0-OW0": [
+        "emilio"
+    ],
+    "IH0-OW1-IY0-OW0": [
+        "pinocchio"
     ],
     "UH1-IY0-OW0": [
         "curio",
@@ -40040,6 +50904,9 @@ export default {
         "latinos",
         "oswego"
     ],
+    "AA2-AA2-IY1-OW0": [
+        "andantino"
+    ],
     "AE0-IY1-OW0": [
         "gambino"
     ],
@@ -40063,11 +50930,23 @@ export default {
         "placebos",
         "toledo"
     ],
+    "AE2-AH0-IY1-OW0": [
+        "maraschino",
+        "palomino",
+        "valentino"
+    ],
+    "IH2-AH0-IY1-OW0": [
+        "filipino",
+        "filipinos"
+    ],
     "AH2-IY1-OW0": [
         "tuxedo"
     ],
     "AO0-IY1-OW0": [
         "torpedoes"
+    ],
+    "IH2-AO0-IY1-OW0": [
+        "incognito"
     ],
     "EH0-IY1-OW0": [
         "mestizo"
@@ -40075,12 +50954,21 @@ export default {
     "ER0-IY1-OW0": [
         "merino"
     ],
+    "EH0-ER0-IY1-OW0": [
+        "federico"
+    ],
+    "UW2-ER0-IY1-OW0": [
+        "superhero"
+    ],
     "UW0-IY1-OW0": [
         "neutrino",
         "neutrinos"
     ],
     "OW1-IY2-OW0": [
         "folio"
+    ],
+    "AE0-OW1-IY2-OW0": [
+        "antonio"
     ],
     "OW1-OW0": [
         "bono",
@@ -40113,12 +51001,27 @@ export default {
         "togo",
         "toto"
     ],
+    "AA0-AO0-OW1-OW0": [
+        "amoroso"
+    ],
+    "ER0-UW0-OW1-OW0": [
+        "virtuoso"
+    ],
+    "EH1-AH0-OW2-OW0": [
+        "telephoto"
+    ],
     "ER0-OY1-OW0": [
         "arroyo"
     ],
     "UH1-OW0": [
         "bureau",
         "bureaus"
+    ],
+    "AE2-AH0-UH1-OW0": [
+        "acapulco"
+    ],
+    "AA1-AH0-UH2-OW0": [
+        "politburo"
     ],
     "UW1-OW0": [
         "bhutto",
@@ -40699,6 +51602,10 @@ export default {
         "diagnose",
         "diagnosed"
     ],
+    "UW2-ER0-AH0-OW1": [
+        "superimpose",
+        "superimposed"
+    ],
     "IY2-AH0-OW1": [
         "decompose",
         "decomposed",
@@ -40841,6 +51748,14 @@ export default {
     "AH2-IH0-OW1": [
         "undisclosed"
     ],
+    "IH0-AY2-IH0-OW1": [
+        "misdiagnose",
+        "misdiagnosed"
+    ],
+    "OW2-ER0-IH0-OW1": [
+        "overexpose",
+        "overexposed"
+    ],
     "IY2-IH0-OW1": [
         "predispose",
         "predisposed",
@@ -40949,6 +51864,9 @@ export default {
         "guanaco",
         "legato",
         "staccato"
+    ],
+    "AA2-AH0-AA1-OW2": [
+        "ostinato"
     ],
     "EH0-AA1-OW2": [
         "centavos"
@@ -41059,6 +51977,12 @@ export default {
         "saxophone",
         "saxophones"
     ],
+    "AA0-AE1-AH0-OW2": [
+        "ophthalmoscope"
+    ],
+    "ER0-AE1-AH0-OW2": [
+        "arapaho"
+    ],
     "AH1-AH0-OW2": [
         "buffalo",
         "buffalos",
@@ -41086,6 +52010,9 @@ export default {
         "microscopes",
         "styrofoam",
         "xylophone"
+    ],
+    "AH0-AY1-AH0-OW2": [
+        "kaleidoscope"
     ],
     "EH1-AH0-OW2": [
         "aerodrome",
@@ -41120,6 +52047,9 @@ export default {
         "telescope",
         "telescopes"
     ],
+    "OW0-EH1-AH0-OW2": [
+        "polariscope"
+    ],
     "IH1-AH0-OW2": [
         "chicagoan",
         "dictaphone",
@@ -41132,6 +52062,13 @@ export default {
         "pigeonholed",
         "silicone",
         "silicones"
+    ],
+    "AO2-IH1-AH0-OW2": [
+        "oscilloscope",
+        "oscilloscopes"
+    ],
+    "IY1-IY0-AH0-OW2": [
+        "heliotrope"
     ],
     "IY1-AH0-OW2": [
         "creosote"
@@ -41240,6 +52177,10 @@ export default {
     "AE0-AY1-OW2": [
         "albino"
     ],
+    "AE2-IY0-AY1-OW2": [
+        "anticyclone",
+        "anticyclones"
+    ],
     "EH1-OW2": [
         "airfone",
         "airglow",
@@ -41273,6 +52214,9 @@ export default {
         "allegro",
         "flamenco"
     ],
+    "AE2-AH0-EH1-OW2": [
+        "manifesto"
+    ],
     "AO0-EH1-OW2": [
         "bordello",
         "falsetto",
@@ -41283,6 +52227,9 @@ export default {
     ],
     "AA1-ER0-OW2": [
         "collarbone"
+    ],
+    "EH2-AA1-ER0-OW2": [
+        "testosterone"
     ],
     "AE1-ER0-OW2": [
         "afterglow",
@@ -41405,6 +52352,10 @@ export default {
     "ER1-IH0-OW2": [
         "vertigo"
     ],
+    "AH0-IH1-IH0-OW2": [
+        "politico",
+        "politicos"
+    ],
     "IH1-OW2": [
         "bilbo",
         "billfold",
@@ -41450,6 +52401,9 @@ export default {
     "AA1-IY0-OW2": [
         "audio"
     ],
+    "AH0-AA1-IY0-OW2": [
+        "adagio"
+    ],
     "AE1-IY0-OW2": [
         "cameo",
         "cameos",
@@ -41457,6 +52411,12 @@ export default {
         "pantyhose",
         "patio",
         "patios"
+    ],
+    "AH0-AE1-IY0-OW2": [
+        "mustachio",
+        "mustachioed",
+        "pistachio",
+        "pistachios"
     ],
     "AH1-IY0-OW2": [
         "cubbyhole",
@@ -41487,6 +52447,9 @@ export default {
         "ratio",
         "ratios"
     ],
+    "IH0-IH1-IY0-OW2": [
+        "presidio"
+    ],
     "OW1-IY0-OW2": [
         "oleo",
         "otiose",
@@ -41495,6 +52458,10 @@ export default {
         "rodeos",
         "romeo",
         "tokyo"
+    ],
+    "AO0-OW1-IY0-OW2": [
+        "portfolio",
+        "portfolios"
     ],
     "UW1-IY0-OW2": [
         "studio",
@@ -41795,6 +52762,9 @@ export default {
         "rejoice",
         "rejoiced"
     ],
+    "AH1-ER0-IH0-OY1": [
+        "underemployed"
+    ],
     "IY2-IH0-OY1": [
         "redeploy",
         "redeployed"
@@ -42068,6 +53038,9 @@ export default {
         "undercook",
         "undercooked"
     ],
+    "IH2-AH0-ER0-UH1": [
+        "misunderstood"
+    ],
     "AH2-ER0-UH1": [
         "underfoot",
         "understood",
@@ -42107,6 +53080,9 @@ export default {
     "IY0-UH1": [
         "precooked",
         "retook"
+    ],
+    "AA2-AH0-IY0-UH1": [
+        "gobbledygook"
     ],
     "UH1-IY0-UH1": [
         "pussyfoot",
@@ -42356,6 +53332,15 @@ export default {
     "IY0-AE1-UW0": [
         "revalued"
     ],
+    "AH1-ER0-AE2-UW0": [
+        "undervalue",
+        "undervalued",
+        "undervalues"
+    ],
+    "OW1-ER0-AE2-UW0": [
+        "overvalue",
+        "overvalued"
+    ],
     "AE1-AH0-UW0": [
         "atheneum",
         "malibu"
@@ -42416,6 +53401,12 @@ export default {
     "IH1-IH0-UW0": [
         "miniscule"
     ],
+    "IH0-IH1-IH0-UW0": [
+        "vicissitudes"
+    ],
+    "IH2-IH1-IH0-UW0": [
+        "vicissitude"
+    ],
     "IH1-UW0": [
         "igloo",
         "issue",
@@ -42433,9 +53424,16 @@ export default {
         "contribute",
         "contributes"
     ],
+    "IH0-AH0-IH1-UW0": [
+        "discontinue",
+        "discontinued"
+    ],
     "IH0-IH1-UW0": [
         "distribute",
         "distributes"
+    ],
+    "IY2-IH0-IH1-UW0": [
+        "redistribute"
     ],
     "IY0-IH1-UW0": [
         "reissue",
@@ -42458,6 +53456,9 @@ export default {
         "juju",
         "tubule",
         "zulus"
+    ],
+    "AA2-AH0-UW1-UW0": [
+        "honolulu"
     ],
     "UW1": [
         "blew",
@@ -43042,17 +54043,28 @@ export default {
         "unused",
         "uproot"
     ],
+    "AH2-AH0-AH0-UW1": [
+        "hullabaloo"
+    ],
     "AH1-AH0-UW1": [
         "subacute"
     ],
     "AH2-AH0-UW1": [
         "unapproved"
     ],
+    "OW1-ER0-AH0-UW1": [
+        "overproduce",
+        "overproduced"
+    ],
     "IH0-AH0-UW1": [
         "disabused",
         "disapproves",
         "misconstrue",
         "misconstrues"
+    ],
+    "IY2-IH0-AH0-UW1": [
+        "reintroduce",
+        "reintroduced"
     ],
     "IH2-AH0-UW1": [
         "disapprove",
@@ -43125,6 +54137,9 @@ export default {
     ],
     "AA2-ER0-UW1": [
         "opportune"
+    ],
+    "IH2-AA2-ER0-UW1": [
+        "inopportune"
     ],
     "AE2-ER0-UW1": [
         "afternoon",
@@ -43252,6 +54267,9 @@ export default {
         "ballyhoo",
         "ballyhooed"
     ],
+    "EH2-AH0-IY0-UW1": [
+        "bellefeuille"
+    ],
     "IH2-IY0-UW1": [
         "picayune"
     ],
@@ -43310,6 +54328,9 @@ export default {
         "solitude",
         "xanadu"
     ],
+    "IY0-AA1-AH0-UW2": [
+        "reconstitute"
+    ],
     "AE1-AH0-UW2": [
         "absolute",
         "absolutes",
@@ -43328,6 +54349,9 @@ export default {
         "magnitudes",
         "malamute",
         "pantaloons"
+    ],
+    "IH0-AE1-AH0-UW2": [
+        "exactitude"
     ],
     "AH1-AH0-UW2": [
         "bugaboo",
@@ -43351,6 +54375,9 @@ export default {
         "residues",
         "resolute",
         "retinue"
+    ],
+    "IH2-EH1-AH0-UW2": [
+        "electrocute"
     ],
     "ER1-AH0-UW2": [
         "certitude",
@@ -43505,8 +54532,14 @@ export default {
         "vestibule",
         "vestibules"
     ],
+    "IH2-EH1-IH0-UW2": [
+        "ineptitude"
+    ],
     "ER1-IH0-UW2": [
         "turpitude"
+    ],
+    "AH0-IH1-IH0-UW2": [
+        "solicitude"
     ],
     "IH1-UW2": [
         "hindu",

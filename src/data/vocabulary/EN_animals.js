@@ -28,6 +28,9 @@ export default {
     "EH1-AH0-AH0": [
         "elephant"
     ],
+    "IY2-AH0-AH1-AH0": [
+        "reproduction"
+    ],
     "AO1-AH0": [
         "coral"
     ],
@@ -38,6 +41,9 @@ export default {
         "parrot",
         "penguin"
     ],
+    "AY0-AA1-ER0-AH0": [
+        "rhinoceros"
+    ],
     "ER1-AH0": [
         "squirrel",
         "turtle"
@@ -47,6 +53,12 @@ export default {
     ],
     "IH1-AH0": [
         "chicken"
+    ],
+    "AH0-EH1-IY0-AH0": [
+        "aquarium"
+    ],
+    "AE0-IH1-IY0-AH0": [
+        "amphibian"
     ],
     "IY1-AH0": [
         "beetle",
@@ -113,6 +125,9 @@ export default {
     "EH1-ER0": [
         "feathers",
         "leopard"
+    ],
+    "AE1-AH0-EY2-ER0": [
+        "alligator"
     ],
     "IH1-ER0": [
         "clippers",
@@ -190,6 +205,12 @@ export default {
     ],
     "EH1-IY0-IH2": [
         "jellyfish"
+    ],
+    "AH0-IH1-AH0-IY0": [
+        "agility"
+    ],
+    "EH1-IH0-AO2-IY0": [
+        "territory"
     ],
     "EH1-IY0": [
         "belly"

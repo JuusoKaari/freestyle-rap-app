@@ -26,6 +26,11 @@ import FI_vaatteetVocab from './FI_vaatteet_ja_asusteet.js';
 import FI_lovebattleVocab from './FI_lovebattle_2025.js';
 import EN_fullDict from './EN__full_dict.js';
 import FI_fullDict from './FI__full_dict.js';
+import EN_scienceVocab from './EN_science.js';
+import EN_shoppingVocab from './EN_shopping_list.js';
+import EN_carsVocab from './EN_cars.js';
+import EN_numbersVocab from './EN_numbers.js';
+import EN_clothesVocab from './EN_clothes_and_accessories.js';
 
 // Helper function to count total words in a vocabulary
 const countWords = (vocab) => {
@@ -144,6 +149,51 @@ const vocabularyConfigs = {
       file: 'EN_animals.js',
       wordCount: countWords(EN_animalVocab),
       data: EN_animalVocab
+    },
+    {
+      id: 'en_science',
+      name: 'Science',
+      description: 'Science-related vocabulary',
+      icon: '🔬',
+      file: 'EN_science.js',
+      wordCount: countWords(EN_scienceVocab),
+      data: EN_scienceVocab
+    },
+    {
+      id: 'en_shopping_list',
+      name: 'Shopping List',
+      description: 'Grocery and shopping related vocabulary',
+      icon: '🛒',
+      file: 'EN_shopping_list.js',
+      wordCount: countWords(EN_shoppingVocab),
+      data: EN_shoppingVocab
+    },
+    {
+      id: 'en_cars',
+      name: 'Cars',
+      description: 'Car-related vocabulary',
+      icon: '🚗',
+      file: 'EN_cars.js',
+      wordCount: countWords(EN_carsVocab),
+      data: EN_carsVocab
+    },
+    {
+      id: 'en_numbers',
+      name: 'Numbers',
+      description: 'Number words and numerals',
+      icon: '🔢',
+      file: 'EN_numbers.js',
+      wordCount: countWords(EN_numbersVocab),
+      data: EN_numbersVocab
+    },
+    {
+      id: 'en_clothes_and_accessories',
+      name: 'Clothes',
+      description: 'Clothing and accessories vocabulary',
+      icon: '👕',
+      file: 'EN_clothes_and_accessories.js',
+      wordCount: countWords(EN_clothesVocab),
+      data: EN_clothesVocab
     }
   ]
 };

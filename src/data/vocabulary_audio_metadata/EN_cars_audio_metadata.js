@@ -1,0 +1,37 @@
+// This file is auto-generated. Do not edit manually.
+export default {
+  "en": {
+    "seats": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743360152/freestyle_words/en/seats.mp3",
+    "parking": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743360153/freestyle_words/en/parking.mp3",
+    "fiat": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743360154/freestyle_words/en/fiat.mp3",
+    "ferrari": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743360155/freestyle_words/en/ferrari.mp3",
+    "toyota": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743360155/freestyle_words/en/toyota.mp3",
+    "gear": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743360156/freestyle_words/en/gear.mp3",
+    "nissan": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743360157/freestyle_words/en/nissan.mp3",
+    "highway": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743360158/freestyle_words/en/highway.mp3",
+    "jeep": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743360159/freestyle_words/en/jeep.mp3",
+    "road": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743360160/freestyle_words/en/road.mp3",
+    "windshield": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743360160/freestyle_words/en/windshield.mp3",
+    "repair": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743360161/freestyle_words/en/repair.mp3",
+    "tire": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1739121180/freestyle_words/en/tire.mp3",
+    "battery": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743360163/freestyle_words/en/battery.mp3",
+    "mercedes": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743360164/freestyle_words/en/mercedes.mp3",
+    "skoda": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743360165/freestyle_words/en/skoda.mp3",
+    "volkswagen": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743360166/freestyle_words/en/volkswagen.mp3",
+    "honda": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743360167/freestyle_words/en/honda.mp3",
+    "saab": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743360168/freestyle_words/en/saab.mp3",
+    "gasoline": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743360168/freestyle_words/en/gasoline.mp3",
+    "hood": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1740243784/freestyle_words/en/hood.mp3",
+    "trunk": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743360170/freestyle_words/en/trunk.mp3",
+    "bumper": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743360170/freestyle_words/en/bumper.mp3",
+    "speed": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743360171/freestyle_words/en/speed.mp3",
+    "clutch": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743360172/freestyle_words/en/clutch.mp3",
+    "volvo": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743360174/freestyle_words/en/volvo.mp3",
+    "opel": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743360175/freestyle_words/en/opel.mp3",
+    "lada": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743360176/freestyle_words/en/lada.mp3",
+    "brake": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743360177/freestyle_words/en/brake.mp3",
+    "inspection": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743360177/freestyle_words/en/inspection.mp3",
+    "intersection": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743361899/freestyle_words/en/intersection.mp3",
+    "speedometer": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743361900/freestyle_words/en/speedometer.mp3"
+  }
+};

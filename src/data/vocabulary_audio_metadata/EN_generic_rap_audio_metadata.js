@@ -169,6 +169,8 @@ export default {
     "great": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1740243796/freestyle_words/en/great.mp3",
     "victory": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1740243797/freestyle_words/en/victory.mp3",
     "clique": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1740243797/freestyle_words/en/clique.mp3",
-    "hype": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1740243798/freestyle_words/en/hype.mp3"
+    "hype": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1740243798/freestyle_words/en/hype.mp3",
+    "velocity": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743361901/freestyle_words/en/velocity.mp3",
+    "legendary": "https://res.cloudinary.com/dmrwckpgj/video/upload/v1743361901/freestyle_words/en/legendary.mp3"
   }
 };
