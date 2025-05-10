@@ -32,18 +32,35 @@ const VocabularySelectModal = ({
 
   // Update vocabularies when language changes or modal is opened
   useEffect(() => {
+    console.log('[Debug] Vocabulary update effect triggered:', { 
+      currentVocabularyId, 
+      language, 
+      isOpen, 
+      isDebugMode 
+    });
+    
+    // Don't update vocabularies if we're selecting 'all'
+    if (currentVocabularyId === 'all') {
+      console.log('[Debug] Skipping vocabulary update for "all" selection');
+      return;
+    }
+
     const allVocabularies = getVocabularies(language);
     // Filter out debug vocabularies if not in debug mode
     const filteredVocabularies = isDebugMode 
       ? allVocabularies 
       : allVocabularies.filter(vocab => !vocab.debug);
+    console.log('[Debug] Setting vocabularies:', { 
+      count: filteredVocabularies.length,
+      firstVocab: filteredVocabularies[0]?.id 
+    });
     setVocabularies(filteredVocabularies);
-  }, [language, isOpen, isDebugMode]);
+  }, [language, isOpen, isDebugMode, currentVocabularyId]);
 
   // Calculate filtered word stats when syllable range or vocabulary changes
   useEffect(() => {
     if (currentVocabularyId) {
-      const vocabData = getVocabularyData(currentVocabularyId);
+      const vocabData = getVocabularyData(currentVocabularyId, language);
       if (vocabData) {
         let totalWords = 0;
         let filteredWords = 0;
@@ -73,10 +90,19 @@ const VocabularySelectModal = ({
           });
         }
 
-        setFilteredStats({ filtered: filteredWords, total: totalWords });
+        // For 'all' vocabularies, show a special message
+        if (currentVocabularyId === 'all') {
+          setFilteredStats({
+            filtered: filteredWords,
+            total: totalWords,
+            isAll: true
+          });
+        } else {
+          setFilteredStats({ filtered: filteredWords, total: totalWords });
+        }
       }
     }
-  }, [currentVocabularyId, syllableRange]);
+  }, [currentVocabularyId, syllableRange, language]);
 
   if (!isOpen) return null;
 
@@ -118,14 +144,22 @@ const VocabularySelectModal = ({
   const isCustomVocabulary = (vocab) => vocab.id.startsWith('custom-vocabulary-');
 
   const handleVocabularySelect = (vocabId) => {
+    console.log('[Debug] Vocabulary selection:', { 
+      vocabId, 
+      currentTime: new Date().getTime(),
+      lastTapTime 
+    });
+    
     const currentTime = new Date().getTime();
     const tapLength = currentTime - lastTapTime;
     
     if (tapLength < 300 && tapLength > 0) {
       // Double tap detected
+      console.log('[Debug] Double tap detected, closing modal');
       onClose();
     } else {
       // Single tap - select vocabulary
+      console.log('[Debug] Single tap, selecting vocabulary:', vocabId);
       onSelect(vocabId);
     }
     setLastTapTime(currentTime);
@@ -152,7 +186,10 @@ const VocabularySelectModal = ({
             <div className="filter-content-inner">
               {filteredStats && (
                 <div className="filter-stats">
-                  {translate('vocabulary.filter.words_selected').replace('{0}', filteredStats.filtered).replace('{1}', filteredStats.total)}
+                  {filteredStats.isAll 
+                    ? translate('vocabulary.filter.words_selected_all').replace('{0}', filteredStats.filtered).replace('{1}', filteredStats.total)
+                    : translate('vocabulary.filter.words_selected').replace('{0}', filteredStats.filtered).replace('{1}', filteredStats.total)
+                  }
                 </div>
               )}
               {/* Syllable count filter */}
@@ -196,6 +233,21 @@ const VocabularySelectModal = ({
         </div>
 
         <div className="vocabulary-list">
+          {/* All vocabularies option */}
+          <div
+            key="all-vocabularies"
+            className={`vocabulary-item ${currentVocabularyId === 'all' ? 'selected' : ''}`}
+            onClick={() => handleVocabularySelect('all')}
+          >
+            <div className="vocabulary-icon-container">
+              <span className="vocabulary-icon">🌍</span>
+            </div>
+            <div className="vocabulary-info">
+              <span className="vocabulary-modal-name">{translate('vocabulary.modal.all_vocabularies')}</span>
+              <span className="vocabulary-description">{translate('vocabulary.modal.all_vocabularies_desc')}</span>
+            </div>
+          </div>
+
           {vocabularies.map((vocab) => (
             <div
               key={vocab.id}

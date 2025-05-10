@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
+import { useTranslation } from '../services/TranslationContext';
 
 /**
  * Hook for handling word audio playback in training modes
@@ -6,6 +7,7 @@ import { useState, useEffect, useCallback } from 'react';
  * @returns {Object} Audio control methods and state
  */
 export const useWordAudio = (vocabularyId) => {
+  const { language } = useTranslation();
   const [isAudioEnabled, setIsAudioEnabled] = useState(false);
   const [isAudioAvailable, setIsAudioAvailable] = useState(false);
   const [audioMetadata, setAudioMetadata] = useState(null);
@@ -21,26 +23,73 @@ export const useWordAudio = (vocabularyId) => {
     const checkAudioAvailability = async () => {
       if (!vocabularyId) return;
 
-      // Convert vocabulary ID to match the metadata file naming convention
-      // e.g., "fi_elaimet" -> "FI_elaimet"
-      const normalizedVocabId = vocabularyId.split('_').map((part, index) => 
-        index === 0 ? part.toUpperCase() : part.toLowerCase()
-      ).join('_');
-
       try {
-        // Try to import the audio metadata for this vocabulary
-        const metadataModule = await import(`../data/vocabulary_audio_metadata/${normalizedVocabId}_audio_metadata.js`);
-        setAudioMetadata(metadataModule.default);
-        setIsAudioAvailable(true);
+        let metadata = null;
+
+        if (vocabularyId === 'all') {
+          // For 'all' vocabulary, we need to combine metadata from all official vocabularies
+          const { getVocabularies } = await import('../data/vocabulary/vocabularyConfig');
+          const officialVocabs = getVocabularies(language);
+          
+          if (!officialVocabs || officialVocabs.length === 0) {
+            console.log(`No official vocabularies found for language: ${language}`);
+            setIsAudioAvailable(false);
+            setIsAudioEnabled(false);
+            return;
+          }
+
+          // Combine metadata from all official vocabularies
+          const combinedMetadata = {};
+          for (const vocab of officialVocabs) {
+            try {
+              const normalizedVocabId = vocab.id.split('_').map((part, index) => 
+                index === 0 ? part.toUpperCase() : part.toLowerCase()
+              ).join('_');
+              
+              const vocabMetadata = await import(`../data/vocabulary_audio_metadata/${normalizedVocabId}_audio_metadata.js`);
+              // Merge the metadata, keeping the first occurrence of each word
+              Object.entries(vocabMetadata.default).forEach(([lang, words]) => {
+                if (!combinedMetadata[lang]) {
+                  combinedMetadata[lang] = {};
+                }
+                Object.entries(words).forEach(([word, url]) => {
+                  if (!combinedMetadata[lang][word]) {
+                    combinedMetadata[lang][word] = url;
+                  }
+                });
+              });
+            } catch (error) {
+              console.log(`No audio available for vocabulary: ${vocab.id}`);
+            }
+          }
+          metadata = combinedMetadata;
+        } else {
+          // For individual vocabularies, use the existing logic
+          const normalizedVocabId = vocabularyId.split('_').map((part, index) => 
+            index === 0 ? part.toUpperCase() : part.toLowerCase()
+          ).join('_');
+          
+          const metadataModule = await import(`../data/vocabulary_audio_metadata/${normalizedVocabId}_audio_metadata.js`);
+          metadata = metadataModule.default;
+        }
+
+        if (metadata && Object.keys(metadata).length > 0) {
+          setAudioMetadata(metadata);
+          setIsAudioAvailable(true);
+        } else {
+          console.log(`No audio available for vocabulary: ${vocabularyId}`);
+          setIsAudioAvailable(false);
+          setIsAudioEnabled(false);
+        }
       } catch (error) {
-        console.log(`No audio available for vocabulary: ${normalizedVocabId}`);
+        console.log(`Error loading audio metadata for vocabulary: ${vocabularyId}`, error);
         setIsAudioAvailable(false);
         setIsAudioEnabled(false);
       }
     };
 
     checkAudioAvailability();
-  }, [vocabularyId]);
+  }, [vocabularyId, language]);
 
   // Get the phonetic version of a word if available
   const getPhoneticVersion = useCallback((word) => {

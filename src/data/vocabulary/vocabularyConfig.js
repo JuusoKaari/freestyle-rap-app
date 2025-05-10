@@ -199,15 +199,48 @@ const vocabularyConfigs = {
 };
 
 // Helper function to get vocabulary data
-export const getVocabularyData = (vocabId) => {
+export const getVocabularyData = (vocabId, language = 'fi') => {
+  // Handle "all" vocabularies case
+  if (vocabId === 'all') {
+    // Only get built-in vocabularies for 'all' option
+    const allVocabs = vocabularyConfigs[language];
+    
+    // Combine all vocabulary data
+    const combinedData = {};
+    allVocabs.forEach(vocab => {
+      const vocabData = vocab.data;
+      if (vocabData) {
+        if (Array.isArray(vocabData)) {
+          // Handle new format (custom vocabularies)
+          vocabData.forEach(({ pattern, words }) => {
+            const patternKey = pattern.join('-');
+            if (!combinedData[patternKey]) {
+              combinedData[patternKey] = [];
+            }
+            combinedData[patternKey].push(...words.map(w => w.word));
+          });
+        } else {
+          // Handle old format (built-in vocabularies)
+          Object.entries(vocabData).forEach(([pattern, words]) => {
+            if (!combinedData[pattern]) {
+              combinedData[pattern] = [];
+            }
+            combinedData[pattern].push(...words);
+          });
+        }
+      }
+    });
+    return combinedData;
+  }
+
   // First check hidden vocabularies (full dictionaries)
   if (hiddenVocabularies[vocabId]) {
     return hiddenVocabularies[vocabId].data;
   }
 
   // Then check built-in vocabularies
-  const language = vocabId.startsWith('fi_') ? 'fi' : 'en';
-  const builtInVocab = vocabularyConfigs[language].find(v => v.id === vocabId);
+  const vocabLanguage = vocabId.startsWith('fi_') ? 'fi' : 'en';
+  const builtInVocab = vocabularyConfigs[vocabLanguage].find(v => v.id === vocabId);
   if (builtInVocab) {
     return builtInVocab.data;
   }

@@ -68,7 +68,7 @@ function AppContent() {
   } = useRecordingController();
 
   const [selectedMode, setSelectedMode] = useState(null);
-  const [selectedVocabulary, setSelectedVocabulary] = useState('all');
+  const [selectedVocabulary, setSelectedVocabulary] = useState(language === 'en' ? 'en_generic_rap' : 'fi_generic_rap');
   const [isTraining, setIsTraining] = useState(false);
   const [shuffledWords, setShuffledWords] = useState([]);
   const [wordCounter, setWordCounter] = useState(0);
@@ -81,6 +81,11 @@ function AppContent() {
   useEffect(() => {
     document.title = translate('app.title');
   }, [translate]);
+
+  // Update vocabulary when language changes
+  useEffect(() => {
+    setSelectedVocabulary(language === 'en' ? 'en_generic_rap' : 'fi_generic_rap');
+  }, [language]);
 
   // Handle direct URL access to modes
   useEffect(() => {
@@ -101,7 +106,8 @@ function AppContent() {
             minWordsInGroup: 1,
             vocabulary: selectedVocabulary,
             includeRhymes: true,
-            syllableRange
+            syllableRange,
+            language
           });
           if (words.length > 0) {
             setShuffledWords(words);
@@ -112,20 +118,21 @@ function AppContent() {
     };
 
     initializeMode();
-  }, [currentModeId, selectedVocabulary, syllableRange, isTraining]);
+  }, [currentModeId, selectedVocabulary, syllableRange, isTraining, language]);
 
   // Load initial words when vocabulary changes
   useEffect(() => {
     generateWordList({ 
       minWordsInGroup: 3,
       vocabulary: selectedVocabulary,
-      syllableRange
+      syllableRange,
+      language
     }).then(words => {
       if (words.length > 0) {
         setShuffledWords(words);
       }
     });
-  }, [selectedVocabulary, syllableRange]);
+  }, [selectedVocabulary, syllableRange, language]);
 
   // Handle mode selection
   const handleModeSelect = async (modeId) => {
@@ -143,7 +150,8 @@ function AppContent() {
       minWordsInGroup: 1,
       vocabulary: selectedVocabulary,
       includeRhymes: true,
-      syllableRange
+      syllableRange,
+      language
     });
     if (words.length > 0) {
       setShuffledWords(words);

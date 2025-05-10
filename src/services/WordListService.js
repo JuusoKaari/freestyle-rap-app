@@ -30,11 +30,24 @@ const getGroupWordCount = (group, words) => {
 };
 
 // Function to get vocabulary based on selection
-const getVocabulary = (vocabulary) => {
-  const vocabData = getVocabularyData(vocabulary);
+const getVocabulary = (vocabulary, language) => {
+  // For 'all' case, we need to determine language from the current context
+  if (vocabulary === 'all') {
+    // Default to 'fi' if we can't determine the language
+    const vocabData = getVocabularyData(vocabulary, language);
+    if (!vocabData) {
+      console.warn('Unknown vocabulary:', vocabulary);
+      return getVocabularyData('fi_generic_rap', 'fi');
+    }
+    return vocabData;
+  }
+
+  // For regular vocabularies, determine language from the ID
+  const isEnglish = vocabulary.startsWith('en_');
+  const vocabData = getVocabularyData(vocabulary, isEnglish ? 'en' : 'fi');
   if (!vocabData) {
     console.warn('Unknown vocabulary:', vocabulary);
-    return getVocabularyData('fi_generic_rap');
+    return getVocabularyData('fi_generic_rap', 'fi');
   }
   
   // Convert the new vocabulary format to the old format
@@ -55,7 +68,7 @@ const getVocabulary = (vocabulary) => {
 // Function to get the full dictionary based on language
 const getFullDictionary = (vocabulary) => {
   const isEnglish = vocabulary.startsWith('en_');
-  return getVocabularyData(isEnglish ? 'en_full_dict' : 'fi_full_dict');
+  return getVocabularyData(isEnglish ? 'en_full_dict' : 'fi_full_dict', isEnglish ? 'en' : 'fi');
 };
 
 // Helper function to randomly select N items from an array
@@ -121,9 +134,10 @@ export const generateWordList = async ({
   minWordsInGroup = 1,
   vocabulary,
   includeRhymes = false,
-  syllableRange = { min: 1, max: 10 }
+  syllableRange = { min: 1, max: 10 },
+  language = 'fi'  // Add language parameter with default value
 }) => {
-  const vocabData = getVocabulary(vocabulary);
+  const vocabData = getVocabulary(vocabulary, language);
   if (!vocabData) return [];
 
   // Filter patterns based on syllable count

@@ -51,6 +51,7 @@ export const en = {
     filter: {
       syllable_count: "Syllable Count",
       words_selected: "{0}/{1} words selected",
+      words_selected_all: "{0}/{1} words selected from all vocabularies",
       to: "to",
       additional_settings: "Additional Settings"
     },
@@ -61,7 +62,9 @@ export const en = {
       create_custom_desc: "Create your own custom vocabulary",
       selected: "Selected",
       confirm_delete: "Are you sure you want to delete this vocabulary?",
-      delete_error: "Error deleting vocabulary. Please try again."
+      delete_error: "Error deleting vocabulary. Please try again.",
+      all_vocabularies: "All Vocabularies",
+      all_vocabularies_desc: "Combine all available vocabularies"
     },
     editor: {
       title_create: "Create Custom Vocabulary",

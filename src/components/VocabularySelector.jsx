@@ -20,13 +20,21 @@ const VocabularySelector = ({ selectedVocabulary, onVocabularySelect, syllableRa
   // When language changes or if selected vocabulary is not available in current language,
   // select the first vocabulary of the current language
   useEffect(() => {
+    // Don't override 'all' selection
+    if (selectedVocabulary === 'all') return;
+
     if (!selectedVocabInfo && vocabularies.length > 0) {
       const defaultVocab = vocabularies[0];
       handleVocabularySelect(defaultVocab.id);
     }
-  }, [language, selectedVocabInfo, vocabularies]);
+  }, [language, selectedVocabInfo, vocabularies, selectedVocabulary]);
 
   const handleVocabularySelect = (vocabId) => {
+    console.log('[Debug] VocabularySelector - Selecting vocabulary:', { 
+      vocabId,
+      currentSelection: selectedVocabulary,
+      hasVocabInfo: !!selectedVocabInfo
+    });
     onVocabularySelect(vocabId);
   };
 
@@ -58,7 +66,9 @@ const VocabularySelector = ({ selectedVocabulary, onVocabularySelect, syllableRa
     <div className="vocabulary-selector-container">
       <div className="vocabulary-player">
         <div className="vocabulary-icon-container">
-          {selectedVocabInfo && (
+          {selectedVocabulary === 'all' ? (
+            <span className="vocabulary-icon">🌍</span>
+          ) : selectedVocabInfo && (
             <span className="vocabulary-icon">{selectedVocabInfo.icon}</span>
           )}
         </div>
@@ -66,10 +76,18 @@ const VocabularySelector = ({ selectedVocabulary, onVocabularySelect, syllableRa
         <div className="vocabulary-info">
           <div className="vocabulary-main-info">
             <span className="vocabulary-label">{translate('vocabulary.selector.title')}:</span>
-            <span className="vocabulary-name">{selectedVocabInfo?.name}</span>
+            <span className="vocabulary-name">
+              {selectedVocabulary === 'all' 
+                ? translate('vocabulary.modal.all_vocabularies')
+                : selectedVocabInfo?.name}
+            </span>
           </div>
           <div className="vocabulary-details">
-            <span className="vocabulary-description">{selectedVocabInfo?.description}</span>
+            <span className="vocabulary-description">
+              {selectedVocabulary === 'all'
+                ? translate('vocabulary.modal.all_vocabularies_desc')
+                : selectedVocabInfo?.description}
+            </span>
           </div>
         </div>
 

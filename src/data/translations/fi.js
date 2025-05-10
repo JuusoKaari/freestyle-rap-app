@@ -51,6 +51,7 @@ export const fi = {
     filter: {
       syllable_count: "Tavumäärä",
       words_selected: "{0}/{1} sanaa valittu",
+      words_selected_all: "{0}/{1} sanaa valittu kaikista sanastoista",
       to: "-",
       additional_settings: "Lisäasetukset"
     },
@@ -61,7 +62,9 @@ export const fi = {
       create_custom_desc: "Luo oma mukautettu sanasto",
       selected: "Valittu",
       confirm_delete: "Haluatko varmasti poistaa tämän sanaston?",
-      delete_error: "Virhe sanaston poistossa"
+      delete_error: "Virhe sanaston poistossa",
+      all_vocabularies: "Kaikki sanastot",
+      all_vocabularies_desc: "Yhdistä kaikki saatavilla olevat sanastot"
     },
     editor: {
       title_create: "Luo oma sanasto",
