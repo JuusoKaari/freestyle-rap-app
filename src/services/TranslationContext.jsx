@@ -10,6 +10,7 @@
  * - Translation key resolution
  * - Dynamic language switching
  * - Fallback handling for missing translations
+ * - Browser language detection
  * 
  * Usage:
  * - Wrap application with TranslationProvider
@@ -33,8 +34,20 @@ const TranslationContext = createContext();
 
 export const TranslationProvider = ({ children }) => {
   const [language, setLanguageState] = useState(() => {
+    // First check localStorage
     const savedLanguage = localStorage.getItem('language');
-    return savedLanguage || 'fi';
+    if (savedLanguage && translations[savedLanguage]) {
+      return savedLanguage;
+    }
+
+    // Then check browser language
+    const browserLang = navigator.language.split('-')[0];
+    if (translations[browserLang]) {
+      return browserLang;
+    }
+
+    // Default to Finnish if no valid language is found
+    return 'fi';
   });
 
   const setLanguage = (newLang) => {
