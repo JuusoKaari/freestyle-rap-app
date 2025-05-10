@@ -27,6 +27,7 @@ import BeatSelector from './components/BeatSelector'
 import CompactBeatSelector from './components/CompactBeatSelector'
 import VocabularySelector from './components/VocabularySelector'
 import LanguageToggle from './components/LanguageToggle'
+import InstagramLink from './components/InstagramLink'
 import { trainingModes } from './data/trainingModes'
 import { useTranslation } from './services/TranslationContext'
 import { DebugProvider, useDebug } from './services/DebugContext'
@@ -303,6 +304,7 @@ function AppContent() {
         <Route path="/" element={
           <>
             {!isTraining && <LanguageToggle />}
+            {!isTraining && <InstagramLink />}
             <div className="setup-container">
               <div className="controls">
                 <BeatSelector
