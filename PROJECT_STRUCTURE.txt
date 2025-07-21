@@ -37,6 +37,7 @@ Root Files:
   - App.css                  : Global application styles
   - App.jsx                  : Main application component and routing with React Router
   - main.jsx                 : Application entry point with context providers
+                               Now wrapped with ErrorBoundary for app-wide error handling
   - styles.css               : Additional global styles
   - index.css                : Root styles and CSS variables
   
@@ -54,6 +55,12 @@ Root Files:
     - InstagramLink.jsx       : Social media link component
     - InstagramLink.css       : Styles for Instagram link component
     - CustomVocabularyEditor.jsx : Editor for creating and modifying custom vocabularies
+                                  Now uses toast notifications instead of alert() calls
+    - ErrorBoundary.jsx       : React Error Boundary component for graceful error handling
+                                Catches JavaScript errors in component tree
+                                Displays fallback UI with retry options
+                                Integrates with ErrorService for logging
+                                Shows detailed error info in development mode
     
     /modes
       - BaseTrainingMode.jsx   : Base component for all training modes
@@ -79,6 +86,7 @@ Root Files:
     - BpmSelector.jsx          : Component for BPM selection
     - VocabularySelector.jsx   : Component for choosing word sets
     - VocabularySelectModal.jsx: Modal for selecting vocabulary sets with filtering
+                                  Now uses toast notifications instead of alert() calls
     - LanguageToggle.jsx       : Language switching between FI/EN
 
   /styles
@@ -99,16 +107,26 @@ Root Files:
     - AudioService.js         : Core Web Audio API service for audio playback and routing
                                Handles audio context, gain nodes, and beat buffer management
                                Uses singleton pattern for consistent audio context
+                               Now uses standardized error logging with ErrorService
 
     - RecordingService.js     : Handles microphone recording functionality
                                Manages MediaRecorder API and recording streams
                                Integrates with AudioService for context sharing
                                Processes recordings into playable format
+                               Now uses standardized error logging with ErrorService
 
     - StorageService.js       : Centralized localStorage management service
                                Provides consistent API for storing and retrieving data
                                Includes comprehensive error handling and JSON serialization
                                Handles language preferences, debug mode, recordings, and custom vocabularies
+                               Now uses standardized error logging with ErrorService
+
+    - ErrorService.js         : Centralized error handling service for the entire application
+                               Provides toast notification system to replace alert() calls
+                               Standardizes error logging with timestamps and context
+                               Tracks errors to localStorage for debugging
+                               Offers user-friendly error messages and analytics hooks
+                               Supports error categorization (error, warning, success, info)
 
     - AnalyticsService.js     : Analytics and user interaction tracking service
                                Handles event logging and user behavior analytics
@@ -351,10 +369,20 @@ Key Features:
     - Text file to JavaScript conversion pipeline
     - Cross-platform batch processing scripts
 
-11. Technical Architecture:
+11. Error Handling & Reliability:
+    - Centralized ErrorService for consistent error management
+    - Toast notification system replacing intrusive alert() dialogs
+    - React Error Boundary preventing application crashes
+    - Standardized error logging with timestamps and context
+    - Error tracking and analytics for debugging
+    - Graceful error recovery with user-friendly fallback UI
+    - Development mode error details for debugging
+
+12. Technical Architecture:
     - Singleton pattern for audio context management
     - Context-based state management for translations and debug
     - Custom hooks for audio and recording control
     - Service-oriented architecture for core functionality
     - Modular component design with reusable patterns
-    - Centralized styling with CSS custom properties 
+    - Centralized styling with CSS custom properties
+    - Professional error handling and logging throughout 
