@@ -43,7 +43,7 @@ export const isEnglishVocabulary = (vocabularyId) => {
 
 ## 🟡 **MEDIUM PRIORITY** (Next Sprint)
 
-### 3. Consolidate Audio Service Initialization
+~~### 3. Consolidate Audio Service Initialization (DONE!)~~
 
 - **Issue**: `audioService.initialize()` called from 4+ locations
 - **Impact**: Potential initialization conflicts, unclear ownership
@@ -51,15 +51,15 @@ export const isEnglishVocabulary = (vocabularyId) => {
 
 **Tasks:**
 
-- [ ] Make `AudioService.initialize()` idempotent (safe to call multiple times)
-- [ ] Add initialization status tracking to AudioService
-- [ ] Review all initialization calls in:
-  - [ ] `useAudioController.js` (lines 58, 134)
-  - [ ] `useRecordingController.js` (line 43)
-  - [ ] `BeatSelector.jsx` (line 17)
-  - [ ] `CompactBeatSelector.jsx` (line 16)
-- [ ] Consolidate to single initialization point or ensure thread safety
-- [ ] Test audio functionality across all components
+- [x] Make `AudioService.initialize()` idempotent (safe to call multiple times)
+- [x] Add initialization status tracking to AudioService
+- [x] Review all initialization calls in:
+  - [x] `useAudioController.js` (lines 58, 134)
+  - [x] `useRecordingController.js` (line 43)
+  - [x] `BeatSelector.jsx` (line 17)
+  - [x] `CompactBeatSelector.jsx` (line 16)
+- [x] Consolidate to single initialization point or ensure thread safety
+- [x] Test audio functionality across all components
 
 ### 4. Create Centralized Storage Service
 

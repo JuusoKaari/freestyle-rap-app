@@ -14,25 +14,33 @@ const BeatSelector = ({ selectedBeatId, onBeatSelect, isPlaying, onPlayPause, is
   const { translate } = useTranslation();
 
   useEffect(() => {
-    // Initialize audio service on mount
-    audioService.initialize();
-
-    // Cleanup on unmount
+    // Only cleanup on unmount - no auto-initialization
+    // AudioService will be initialized on user gesture (preview/play button click)
+    // Note: Don't dispose AudioService here since it's a singleton used across components
     return () => {
-      audioService.dispose();
+      // Just stop any preview audio when component unmounts
+      if (previewingBeatId) {
+        audioService.stopBeat();
+      }
     };
-  }, []);
+  }, [previewingBeatId]);
 
   useEffect(() => {
+    // Only load beat if AudioService is already initialized
+    // Beat will be loaded on user interaction (play/preview button clicks)
     const loadBeat = async () => {
-      if (selectedBeat) {
+      if (selectedBeat && audioService.initialized) {
+        console.log('🎵 Auto-loading beat because AudioService is initialized');
         setIsLoadingBeat(true);
         // Use the URL for the current BPM from the files object
         const beatUrl = selectedBeat.files[currentBpm.toString()];
         if (beatUrl) {
-          await audioService.loadBeat(beatUrl);
+          const loadResult = await audioService.loadBeat(beatUrl);
+          console.log('🎵 Auto-load result:', loadResult);
         }
         setIsLoadingBeat(false);
+      } else if (selectedBeat && !audioService.initialized) {
+        console.log('🎵 Skipping auto-load because AudioService not initialized yet');
       }
     };
 
@@ -52,17 +60,37 @@ const BeatSelector = ({ selectedBeatId, onBeatSelect, isPlaying, onPlayPause, is
       setPreviewingBeatId(null);
       audioService.stopBeat();
     } else {
-      setPreviewingBeatId(beatId);
-      const beat = beats.find(b => b.id === beatId);
-      if (beat) {
-        setIsLoadingBeat(true);
-        // Use the URL for the beat's default BPM
-        const beatUrl = beat.files[beat.bpm.toString()];
-        if (beatUrl) {
-          await audioService.loadBeat(beatUrl);
+      try {
+        // Initialize audio service in response to user gesture
+        await audioService.initialize();
+        
+        setPreviewingBeatId(beatId);
+        const beat = beats.find(b => b.id === beatId);
+        
+        if (beat) {
+          setIsLoadingBeat(true);
+          
+          // Use the URL for the beat's default BPM
+          const beatUrl = beat.files[beat.bpm.toString()];
+          
+          if (beatUrl) {
+            const loadResult = await audioService.loadBeat(beatUrl);
+            setIsLoadingBeat(false);
+            
+            if (loadResult) {
+              audioService.playBeat();
+            }
+          } else {
+            console.error('🎵 No beat URL found for BPM:', beat.bpm);
+            setIsLoadingBeat(false);
+          }
+        } else {
+          console.error('🎵 Beat not found for ID:', beatId);
           setIsLoadingBeat(false);
-          audioService.playBeat();
         }
+      } catch (error) {
+        console.error('🎵 Error in handlePreviewPlay:', error);
+        setIsLoadingBeat(false);
       }
     }
   };

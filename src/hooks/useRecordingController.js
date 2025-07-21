@@ -40,8 +40,13 @@ export const useRecordingController = () => {
     const newState = !isRecordingEnabled;
     
     if (newState) {
-      // Initialize audio context if needed
-      await audioService.initialize();
+      try {
+        // Initialize audio context if needed
+        await audioService.initialize();
+      } catch (error) {
+        console.error('Failed to initialize audio service for recording:', error);
+        return;
+      }
       
       // Request microphone permission
       const hasPermission = await recordingService.requestMicrophonePermission();

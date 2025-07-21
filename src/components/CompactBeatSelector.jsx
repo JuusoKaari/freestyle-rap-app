@@ -13,10 +13,8 @@ const CompactBeatSelector = ({ selectedBeatId, onBeatSelect, isPlaying, isLoadin
   const selectedBeat = beats.find(beat => beat.id === selectedBeatId);
 
   useEffect(() => {
-    // Initialize audio service on mount
-    audioService.initialize();
-
-    // Cleanup on unmount
+    // Only cleanup on unmount - no auto-initialization  
+    // AudioService will be initialized on user gesture (button clicks)
     return () => {
       if (previewingBeatId) {
         audioService.stopBeat();

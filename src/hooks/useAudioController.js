@@ -53,25 +53,13 @@ export const useAudioController = () => {
     }
   }, []);
 
-  // Initialize audio service and load default beat
+  // Only cleanup on unmount - no auto-initialization
+  // AudioService will be initialized on user gesture (play/preview button clicks)
+  // Note: Don't dispose AudioService here since it's a singleton used across components
   useEffect(() => {
-    const initAudio = async () => {
-      await audioService.initialize();
-
-      // Load default beat
-      const defaultBeat = beats.find(beat => beat.id === DEFAULT_BEAT.id);
-      if (defaultBeat) {
-        const beatUrl = defaultBeat.files[DEFAULT_BEAT.bpm.toString()];
-        if (beatUrl) {
-          await audioService.loadBeat(beatUrl);
-        }
-      }
-    };
-
-    initAudio().catch(console.error);
-
     return () => {
-      audioService.dispose();
+      // Just stop any playing audio when component unmounts
+      audioService.stopBeat();
     };
   }, []);
 
@@ -97,11 +85,20 @@ export const useAudioController = () => {
     
     if (selectedBeat) {
       setBpm(selectedBeat.bpm);
-      const beatUrl = selectedBeat.files[selectedBeat.bpm.toString()];
-      if (beatUrl) {
-        setIsLoading(true);
-        await audioService.loadBeat(beatUrl);
-        setIsLoading(false);
+      
+      // Only load beat if AudioService is initialized
+      // Beat will be loaded when user interacts with play/preview buttons
+      if (audioService.initialized) {
+        const beatUrl = selectedBeat.files[selectedBeat.bpm.toString()];
+        if (beatUrl) {
+          console.log('🎵 Auto-loading beat in handleBeatSelect because AudioService is initialized');
+          setIsLoading(true);
+          const loadResult = await audioService.loadBeat(beatUrl);
+          console.log('🎵 handleBeatSelect load result:', loadResult);
+          setIsLoading(false);
+        }
+      } else {
+        console.log('🎵 Skipping beat load in handleBeatSelect because AudioService not initialized');
       }
     }
   };
@@ -114,11 +111,20 @@ export const useAudioController = () => {
     const selectedBeat = beats.find(beat => beat.id === selectedBeatId);
     if (selectedBeat) {
       setBpm(newBpm);
-      const beatUrl = selectedBeat.files[newBpm.toString()];
-      if (beatUrl) {
-        setIsLoading(true);
-        await audioService.loadBeat(beatUrl);
-        setIsLoading(false);
+      
+      // Only load beat if AudioService is initialized
+      // Beat will be loaded when user interacts with play/preview buttons
+      if (audioService.initialized) {
+        const beatUrl = selectedBeat.files[newBpm.toString()];
+        if (beatUrl) {
+          console.log('🎵 Auto-loading beat in handleBpmChange because AudioService is initialized');
+          setIsLoading(true);
+          const loadResult = await audioService.loadBeat(beatUrl);
+          console.log('🎵 handleBpmChange load result:', loadResult);
+          setIsLoading(false);
+        }
+      } else {
+        console.log('🎵 Skipping beat load in handleBpmChange because AudioService not initialized');
       }
     }
   };
@@ -131,12 +137,36 @@ export const useAudioController = () => {
 
     setIsLoading(true);
 
-    // Initialize audio context if needed
-    await audioService.initialize();
+    try {
+      // Initialize audio context if needed
+      await audioService.initialize();
+    } catch (error) {
+      console.error('Failed to initialize audio service in handlePlayPause:', error);
+      setIsLoading(false);
+      return;
+    }
 
     // Start everything from the beginning
     const selectedBeat = beats.find(beat => beat.id === selectedBeatId);
     if (!selectedBeat) {
+      setIsLoading(false);
+      return;
+    }
+
+    // Load the beat for the current BPM
+    const beatUrl = selectedBeat.files[bpm.toString()];
+    if (beatUrl) {
+      console.log('🎵 Loading beat for main playback:', beatUrl);
+      const loadResult = await audioService.loadBeat(beatUrl);
+      console.log('🎵 Main playback load result:', loadResult);
+      
+      if (!loadResult) {
+        console.error('🎵 Failed to load beat for main playback');
+        setIsLoading(false);
+        return;
+      }
+    } else {
+      console.error('🎵 No beat URL found for BPM:', bpm);
       setIsLoading(false);
       return;
     }

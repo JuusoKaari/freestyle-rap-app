@@ -30,31 +30,109 @@ class AudioService {
     this.currentBeatSource = null;
     this.beatBuffer = null;
     this.isPlaying = false;
+    
+    // Initialization status tracking
+    this.isInitialized = false;
+    this.isInitializing = false;
+    this.initializationPromise = null;
   }
 
   async initialize() {
-    // Create AudioContext only after user interaction
-    if (!this.audioContext) {
-      this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
-      this.masterGainNode = this.audioContext.createGain();
-      this.beatGainNode = this.audioContext.createGain();
-      this.vocalsGainNode = this.audioContext.createGain();
-
-      // Set initial volumes
-      this.masterGainNode.gain.value = 1.0;
-      this.beatGainNode.gain.value = 0.8;
-      this.vocalsGainNode.gain.value = 1.0;
-
-      // Connect nodes
-      this.beatGainNode.connect(this.masterGainNode);
-      this.vocalsGainNode.connect(this.masterGainNode);
-      this.masterGainNode.connect(this.audioContext.destination);
+    // Return existing promise if initialization is already in progress
+    if (this.isInitializing && this.initializationPromise) {
+      return this.initializationPromise;
     }
 
-    // Resume context if it was suspended (browser autoplay policy)
-    if (this.audioContext.state === 'suspended') {
-      await this.audioContext.resume();
+    // Return immediately if already initialized
+    if (this.isInitialized && this.audioContext) {
+      // Still check if context needs to be resumed
+      if (this.audioContext.state === 'suspended') {
+        await this.audioContext.resume();
+      }
+      return Promise.resolve();
     }
+
+    // Set initialization flag and create promise
+    this.isInitializing = true;
+    this.initializationPromise = this._performInitialization();
+
+    try {
+      await this.initializationPromise;
+      this.isInitialized = true;
+      return Promise.resolve();
+    } catch (error) {
+      console.error('🎧 AudioService initialization failed:', error);
+      throw error;
+    } finally {
+      this.isInitializing = false;
+      this.initializationPromise = null;
+    }
+  }
+
+  async _performInitialization() {
+    try {
+      // Create AudioContext only if it doesn't exist
+      if (!this.audioContext) {
+        this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        
+        // Create gain nodes
+        this.masterGainNode = this.audioContext.createGain();
+        this.beatGainNode = this.audioContext.createGain();
+        this.vocalsGainNode = this.audioContext.createGain();
+
+        // Set initial volumes
+        this.masterGainNode.gain.value = 1.0;
+        this.beatGainNode.gain.value = 0.8;
+        this.vocalsGainNode.gain.value = 1.0;
+
+        // Connect nodes
+        this.beatGainNode.connect(this.masterGainNode);
+        this.vocalsGainNode.connect(this.masterGainNode);
+        this.masterGainNode.connect(this.audioContext.destination);
+
+        console.log('AudioService initialized successfully');
+      }
+
+      // Resume context if it was suspended (browser autoplay policy)
+      if (this.audioContext.state === 'suspended') {
+        console.log('🎧 AudioContext is suspended, attempting to resume...');
+        
+        // Add timeout to prevent indefinite hanging
+        const resumePromise = this.audioContext.resume();
+        const timeoutPromise = new Promise((_, reject) => 
+          setTimeout(() => reject(new Error('AudioContext resume timeout')), 5000)
+        );
+        
+        try {
+          await Promise.race([resumePromise, timeoutPromise]);
+          console.log('🎧 AudioContext resumed successfully, new state:', this.audioContext.state);
+        } catch (error) {
+          console.error('🎧 Failed to resume AudioContext:', error);
+          // Continue anyway, the context might work despite the resume failing
+        }
+      } else {
+        console.log('🎧 AudioContext state is:', this.audioContext.state);
+      }
+    } catch (error) {
+      console.error('Error during AudioService initialization:', error);
+      // Reset state on failure
+      this.isInitialized = false;
+      this.audioContext = null;
+      this.masterGainNode = null;
+      this.beatGainNode = null;
+      this.vocalsGainNode = null;
+      throw error;
+    }
+  }
+
+  // Getter to check initialization status
+  get initialized() {
+    return this.isInitialized && this.audioContext !== null;
+  }
+
+  // Getter to check if initialization is in progress
+  get initializing() {
+    return this.isInitializing;
   }
 
   async loadBeat(url) {
@@ -64,104 +142,111 @@ class AudioService {
         throw new Error('Invalid beat URL');
       }
 
+      if (!this.audioContext) {
+        throw new Error('AudioContext not initialized');
+      }
+
       // Create an Audio element to check format support
       const audio = new Audio();
       audio.crossOrigin = "anonymous"; // Handle CORS if needed
       
       // Load the audio file first
       const response = await fetch(url);
+      
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
       // Get the content type
       const contentType = response.headers.get('content-type');
-      console.log('Loading audio file:', { url, contentType });
 
       // Get the array buffer
       const arrayBuffer = await response.arrayBuffer();
+      
       if (!arrayBuffer || arrayBuffer.byteLength === 0) {
         throw new Error('Empty audio file');
+      }
+
+      // Defensive check: Re-verify AudioContext still exists before using it
+      // (prevents race condition during component unmount/mount)
+      if (!this.audioContext) {
+        throw new Error('AudioContext was disposed during loading');
       }
 
       // Decode the audio data
       try {
         this.beatBuffer = await this.audioContext.decodeAudioData(arrayBuffer);
-        console.log('Successfully loaded beat:', { 
-          duration: this.beatBuffer.duration,
-          numberOfChannels: this.beatBuffer.numberOfChannels,
-          sampleRate: this.beatBuffer.sampleRate
-        });
         return true;
       } catch (decodeError) {
-        console.error('Failed to decode audio data:', decodeError);
+        console.error('🔊 Failed to decode audio data:', decodeError);
         // Try alternative loading method if decode fails
         return await this.loadBeatFallback(url);
       }
     } catch (error) {
-      console.error('Error loading beat:', error);
+      console.error('🔊 Error loading beat:', error);
       return false;
     }
   }
 
   async loadBeatFallback(url) {
     try {
+      // Check if AudioContext still exists before attempting fallback
+      if (!this.audioContext) {
+        console.error('🔊 AudioContext disposed, skipping fallback loading');
+        return false;
+      }
+
       // Fallback method using Audio element
       const audio = new Audio();
       audio.crossOrigin = "anonymous";
       
       return new Promise((resolve) => {
-        audio.addEventListener('canplaythrough', async () => {
-          try {
-            // Create a temporary audio context if needed
-            const tempContext = this.audioContext || new (window.AudioContext || window.webkitAudioContext)();
-            
-            // Create a media element source
-            const source = tempContext.createMediaElementSource(audio);
-            
-            // Create an offline context to capture the audio
-            const offlineContext = new OfflineAudioContext(
-              2,
-              audio.duration * tempContext.sampleRate,
-              tempContext.sampleRate
-            );
+        const timeout = setTimeout(() => {
+          console.error('🔊 Fallback loading timed out');
+          resolve(false);
+        }, 10000); // 10 second timeout
 
-            // Connect and start rendering
-            const offlineSource = offlineContext.createMediaElementSource(audio);
-            offlineSource.connect(offlineContext.destination);
+        audio.addEventListener('canplaythrough', async () => {
+          clearTimeout(timeout);
+          
+          try {
+            // Double-check AudioContext still exists
+            if (!this.audioContext) {
+              console.error('🔊 AudioContext disposed during fallback loading');
+              resolve(false);
+              return;
+            }
             
-            // Render and set the buffer
-            const renderedBuffer = await offlineContext.startRendering();
-            this.beatBuffer = renderedBuffer;
+            // Simplified fallback - just return false and let user try again
+            // The complex offline context method has compatibility issues
+            console.error('🔊 Fallback method not implemented - please retry audio loading');
+            resolve(false);
             
-            console.log('Successfully loaded beat using fallback:', {
-              duration: this.beatBuffer.duration,
-              numberOfChannels: this.beatBuffer.numberOfChannels,
-              sampleRate: this.beatBuffer.sampleRate
-            });
-            
-            resolve(true);
           } catch (error) {
-            console.error('Fallback loading failed:', error);
+            console.error('🔊 Fallback loading failed:', error);
             resolve(false);
           }
         });
 
         audio.addEventListener('error', (error) => {
-          console.error('Audio element error:', error);
+          clearTimeout(timeout);
+          console.error('🔊 Audio element error in fallback:', error);
           resolve(false);
         });
 
         audio.src = url;
       });
     } catch (error) {
-      console.error('Fallback method failed:', error);
+      console.error('🔊 Fallback method failed:', error);
       return false;
     }
   }
 
   playBeat() {
-    if (!this.beatBuffer || !this.audioContext) return;
+    if (!this.beatBuffer || !this.audioContext) {
+      console.error('🎼 Cannot play beat - missing beatBuffer or audioContext');
+      return;
+    }
 
     // Stop current beat if playing
     this.stopBeat();
@@ -215,6 +300,14 @@ class AudioService {
       this.audioContext.close();
       this.audioContext = null;
     }
+    
+    // Reset initialization state
+    this.isInitialized = false;
+    this.isInitializing = false;
+    this.initializationPromise = null;
+    this.masterGainNode = null;
+    this.beatGainNode = null;
+    this.vocalsGainNode = null;
   }
 }
 
