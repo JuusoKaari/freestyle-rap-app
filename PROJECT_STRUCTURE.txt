@@ -8,28 +8,68 @@ A React-based application for practicing freestyle rap in Finnish and English. T
 Directory Structure:
 ------------------
 
+Root Files:
+----------
+  - index.html                : Main HTML entry point
+  - package.json              : Node.js dependencies and project configuration
+  - package-lock.json         : Locked dependency versions
+  - vite.config.js            : Vite build configuration
+  - LICENSE                   : MIT license file
+  - README.md                 : Project documentation and setup instructions
+  - PROJECT_STRUCTURE.txt     : This file - comprehensive project documentation
+
+/public
+  - android-chrome-192x192.png : Android icon (192x192)
+  - android-chrome-512x512.png : Android icon (512x512)
+  - apple-touch-icon.png      : iOS app icon
+  - click.wav                 : Click sound effect
+  - favicon-16x16.png         : Browser favicon (16x16)
+  - favicon-32x32.png         : Browser favicon (32x32)
+  - favicon.ico               : Browser favicon
+  - rheemy_logo_01_470px_ALPHA.png : App logo with transparency
+  - rheemy_somelogo_01_1200px_square.jpg : Square logo for social media
+  - rheemy_somelogo_01_1200px.jpg : Rectangular logo
+  - robots.txt                : Search engine crawler instructions
+  - site.webmanifest          : Web app manifest for PWA features
+  - sitemap.xml               : Site structure for search engines
+
 /src
   - App.css                  : Global application styles
-  - App.jsx                  : Main application component and routing
-  - main.jsx                 : Application entry point
+  - App.jsx                  : Main application component and routing with React Router
+  - main.jsx                 : Application entry point with context providers
   - styles.css               : Additional global styles
-  - index.css                : Root styles
+  - index.css                : Root styles and CSS variables
+  
   /components
     - TrainingModeRenderer.jsx : Component for rendering different training modes
-    - RecordButton.jsx        : Recording button component
+    - RecordButton.jsx        : Recording button component with microphone integration
     - RecordButton.css        : Styles for recording button
-    - BeatSelectModal.jsx     : Modal for beat selection
+    - RecordToggle.jsx        : Toggle for enabling/disabling recording functionality
+    - RecordToggle.css        : Styles for recording toggle button
+    - RecordingsModal.jsx     : Modal for managing and playing back recordings
+    - RecordingsModal.css     : Styles for recordings modal
+    - BeatSelectModal.jsx     : Modal for beat selection with preview
+    - AudioToggle.jsx         : Audio control toggle component for muting/unmuting
+    - AudioToggle.css         : Styles for audio toggle component
+    - InstagramLink.jsx       : Social media link component
+    - InstagramLink.css       : Styles for Instagram link component
+    - CustomVocabularyEditor.jsx : Editor for creating and modifying custom vocabularies
+    
     /modes
       - BaseTrainingMode.jsx   : Base component for all training modes
       - BaseTrainingMode.css   : Common styles for all training modes, including shared styles for bars and rhyme patterns
       - SetupPunchlineMode.jsx : Setup & Punchline training mode component
       - SetupPunchlineMode.css : Styles for Setup & Punchline mode
-      - RhymeMapMode.jsx       : Rhyme map training mode component
-      - RhymeMapMode.css       : Styles for rhyme map mode
+      - RhymeMapMode.jsx       : Router component for language-specific rhyme map modes
+      - RhymeMapMode_EN.jsx    : English-specific rhyme map training mode
+      - RhymeMapMode_FI.jsx    : Finnish-specific rhyme map training mode
+      - RhymeMapMode.css       : Styles for rhyme map modes
       - RhymeExplorerMode.jsx  : Rhyme explorer mode component
       - RhymeExplorerMode.css  : Styles for rhyme explorer mode
       - FindRhymesMode.jsx     : Find rhymes mode component
       - FindRhymesMode.css     : Styles for find rhymes mode
+      - RhymeSearchMode_FI.jsx : Finnish-specific rhyme search mode
+      - RhymeSearchMode.css    : Styles for rhyme search mode
       - SlotMachineMode.jsx    : Slot machine mode component
       - SlotMachineMode.css    : Styles for slot machine mode
     
@@ -38,22 +78,20 @@ Directory Structure:
     - CompactBeatSelector.jsx  : Minimalistic version of beat controls with mute option
     - BpmSelector.jsx          : Component for BPM selection
     - VocabularySelector.jsx   : Component for choosing word sets
-    - VocabularySelectModal.jsx: Modal for selecting vocabulary sets
+    - VocabularySelectModal.jsx: Modal for selecting vocabulary sets with filtering
     - LanguageToggle.jsx       : Language switching between FI/EN
-    - RecordToggle.jsx         : Toggle for enabling/disabling recording
-    - RecordingsModal.jsx      : Modal for managing and playing recordings
 
   /styles
     - VocabularySelector.css  : Styles for vocabulary selection
     - VocabularySelectModal.css: Styles for vocabulary selection modal
+    - VocabularySelectModal copy.css : Backup/alternate styles for vocab modal
     - BeatSelector.css        : Styles for beat selection
     - BeatSelectModal.css     : Styles for beat selection modal
     - BpmSelector.css         : Styles for BPM selector
     - ModeSelector.css        : Styles for mode selection
     - CompactBeatSelector.css : Styles for compact beat selector with mute
-    - RecordToggle.css        : Styles for recording toggle button
-    - RecordingsModal.css     : Styles for recordings modal
     - LanguageToggle.css      : Styles for language toggle
+    - CustomVocabularyEditor.css : Styles for custom vocabulary editor
 
   /services
     - WordListService.js      : Service for word list generation and rhyme management
@@ -67,8 +105,19 @@ Directory Structure:
                                Integrates with AudioService for context sharing
                                Processes recordings into playable format
 
-    - TranslationContext.jsx  : Handles multilingual support
-    - DebugContext.jsx        : Debugging utilities and feature flags
+    - AnalyticsService.js     : Analytics and user interaction tracking service
+                               Handles event logging and user behavior analytics
+
+    - TranslationContext.jsx  : Handles multilingual support and language switching
+    - DebugContext.jsx        : Debugging utilities and feature flags with secret activation
+
+    /rhyming/
+      - RhymeHandlerBase.js   : Base class for language-specific rhyme handling
+      - EnglishRhymeHandler.js : English-specific rhyme generation and pattern matching
+      - FinnishRhymeHandler.js : Finnish-specific rhyme generation with vowel harmony
+
+    /utils/
+      - wordUtils.js          : Utility functions for word processing and display
 
   /hooks
     - useAudioController.js   : Hook for high-level audio control and musical timing
@@ -76,121 +125,221 @@ Directory Structure:
                                Handles BPM changes and beat selection
                                Provides precise timing using setTimeout
     - useRecordingController.js : Hook for managing recording state and controls
+    - useWordAudio.js         : Hook for managing word audio playback and TTS integration
+
+  /utils
+    - wordProcessor.js        : Advanced word processing utilities and algorithms
 
   /data
     /vocabulary/
       - vocabularyConfig.js    : Configuration for different vocabulary sets
       - FI_generic_rap.js      : Finnish rap-oriented vocabulary
-      - EN_generic_rap.js      : English rap-oriented vocabulary
       - FI_elaimet.js          : Finnish animal-themed vocabulary
       - FI_tiede.js            : Finnish science-themed vocabulary
       - FI_ostoslista.js       : Finnish shopping list vocabulary
       - FI_autot.js            : Finnish car-themed vocabulary
       - FI_numerot.js          : Finnish numbers vocabulary
+      - FI_vaatteet_ja_asusteet.js : Finnish clothes and accessories vocabulary
+      - FI_lovebattle_2025.js  : Finnish love battle themed vocabulary
       - FI__full_dict.js       : Complete Finnish dictionary
+      
+      - EN_generic_rap.js      : English rap-oriented vocabulary
+      - EN_animals.js          : English animal-themed vocabulary
+      - EN_science.js          : English science-themed vocabulary
+      - EN_shopping_list.js    : English shopping list vocabulary
+      - EN_cars.js             : English car-themed vocabulary
+      - EN_numbers.js          : English numbers vocabulary
+      - EN_clothes_and_accessories.js : English clothes and accessories vocabulary
       - EN__full_dict.js       : Complete English dictionary
+      
+      /raw_wordlists/          : Raw text files for vocabulary processing
     
     /vocabulary_audio_metadata/  : Generated metadata for word audio files
       - FI_generic_rap_audio_metadata.js  : Audio URLs for Finnish rap vocabulary
-      - EN_generic_rap_audio_metadata.js  : Audio URLs for English rap vocabulary
       - FI_elaimet_audio_metadata.js      : Audio URLs for Finnish animal vocabulary
-      // ... other vocabulary audio metadata files
+      - FI_tiede_audio_metadata.js        : Audio URLs for Finnish science vocabulary
+      - FI_ostoslista_audio_metadata.js   : Audio URLs for Finnish shopping vocabulary
+      - FI_autot_audio_metadata.js        : Audio URLs for Finnish car vocabulary
+      - FI_numerot_audio_metadata.js      : Audio URLs for Finnish numbers vocabulary
+      - FI_vaatteet_ja_asusteet_audio_metadata.js : Audio URLs for Finnish clothes vocabulary
+      - FI_lovebattle_2025_audio_metadata.js : Audio URLs for Finnish love battle vocabulary
+      
+      - EN_generic_rap_audio_metadata.js  : Audio URLs for English rap vocabulary
+      - EN_animals_audio_metadata.js      : Audio URLs for English animal vocabulary
+      - EN_science_audio_metadata.js      : Audio URLs for English science vocabulary
+      - EN_shopping_list_audio_metadata.js : Audio URLs for English shopping vocabulary
+      - EN_cars_audio_metadata.js         : Audio URLs for English car vocabulary
+      - EN_numbers_audio_metadata.js      : Audio URLs for English numbers vocabulary
+      - EN_clothes_and_accessories_audio_metadata.js : Audio URLs for English clothes vocabulary
     
     /beat_metadata/
       - index.js              : Beat metadata exports and configuration
       - going_strong.js       : Going Strong beat metadata and variations
       - night_ride.js         : Night Ride beat metadata and variations
+      - long_road.js          : Long Road beat metadata and variations
+      - dreamy_trap.js        : Dreamy Trap beat metadata and variations
+      - gotta_go_now.js       : Gotta Go Now beat metadata and variations
+      - sensational_concept.js : Sensational Concept beat metadata and variations
+      - soul_flame.js         : Soul Flame beat metadata and variations
+      - speak_easy.js         : Speak Easy beat metadata and variations
     
-    - trainingModes.js        : Training mode configurations
-    - wordList.js             : Word list generation and processing
+    - trainingModes.js        : Training mode configurations and metadata
+    
+    /translations/
+      - en.js                 : English translations for UI elements
+      - fi.js                 : Finnish translations for UI elements
 
 /scripts
   /audio_processing/
     /beats/
       /__raw_beat_files/     : Original unprocessed beat files
       /__processed_beats/    : Processed beat files with BPM variations
-    - process_beats.py       : Script for generating BPM variations
+      /__uploaded_beats/     : Status tracking for uploaded beats
+    - process_beats.py       : Script for generating BPM variations of beats
     - upload_beats.py        : Script for uploading beats to Cloudinary
     - requirements.txt       : Python dependencies for audio processing
+    - beat_manager.py        : Beat file management utilities
+    - tempo_modifier.py      : Tempo modification algorithms
+
+    /words_tts/             : Word audio generation and management
+      /__generated_audio/   : Generated MP3 files for words organized by vocabulary
+        /FI_elaimet/       : Audio files for Finnish animal vocabulary
+        /FI_generic_rap/   : Audio files for Finnish rap vocabulary
+        /FI_tiede/         : Audio files for Finnish science vocabulary
+        /FI_ostoslista/    : Audio files for Finnish shopping vocabulary
+        /FI_autot/         : Audio files for Finnish car vocabulary
+        /FI_numerot/       : Audio files for Finnish numbers vocabulary
+        /FI_vaatteet_ja_asusteet/ : Audio files for Finnish clothes vocabulary
+        /FI_lovebattle_2025/ : Audio files for Finnish love battle vocabulary
+        /EN_animals/       : Audio files for English animal vocabulary
+        /EN_generic_rap/   : Audio files for English rap vocabulary
+        /EN_science/       : Audio files for English science vocabulary
+        /EN_shopping_list/ : Audio files for English shopping vocabulary
+        /EN_cars/          : Audio files for English car vocabulary
+        /EN_numbers/       : Audio files for English numbers vocabulary
+        /EN_clothes_and_accessories/ : Audio files for English clothes vocabulary
+      
+      /__audio_status/     : Status tracking for audio generation and uploads
+        - FI_elaimet.json  : Status for Finnish animal vocabulary
+        - FI_generic_rap.json : Status for Finnish rap vocabulary
+        - FI_tiede.json    : Status for Finnish science vocabulary
+        - FI_ostoslista.json : Status for Finnish shopping vocabulary
+        - FI_autot.json    : Status for Finnish car vocabulary
+        - FI_numerot.json  : Status for Finnish numbers vocabulary
+        - FI_vaatteet_ja_asusteet.json : Status for Finnish clothes vocabulary
+        - FI_lovebattle_2025.json : Status for Finnish love battle vocabulary
+        - EN_animals.json  : Status for English animal vocabulary
+        - EN_generic_rap.json : Status for English rap vocabulary
+        - EN_science.json  : Status for English science vocabulary
+        - EN_shopping_list.json : Status for English shopping vocabulary
+        - EN_cars.json     : Status for English car vocabulary
+        - EN_numbers.json  : Status for English numbers vocabulary
+        - EN_clothes_and_accessories.json : Status for English clothes vocabulary
+      
+      - generate_word_audio_speechgen.py  : Script for generating word audio using SpeechGen API
+      - upload_word_audio.py              : Script for uploading word audio to Cloudinary
+      - generate_metadata.py              : Script for generating app metadata from status files
 
   /data_processing/
-    - rhyme_generator-FI.py   : Finnish rhyme generation script
-    - combine_vocabulary.py   : Script for combining vocabulary sets
-    - process_rhymes-FI.bat   : Batch processing for Finnish rhymes
-
-  /words_tts/             : Word audio generation and management
-    /__generated_audio/   : Generated MP3 files for words
-      /FI_elaimet/       : Audio files for Finnish animal vocabulary
-      /EN_animals/       : Audio files for English animal vocabulary
-      // ... other vocabulary-specific folders
+    - wordlist_processor-FI.py : Finnish word list processing with vowel pattern analysis
+    - wordlist_processor-EN.py : English word list processing with phonetic analysis
+    - generate_EN_rhyming_words_for_full_dict.py : English rhyme generation for dictionary
+    - combine_vocabulary.py   : Script for combining multiple vocabulary sets
+    - combine_txt_to_wordlist.py : Convert text files to vocabulary format
+    - README.md              : Documentation for data processing workflow
     
-    /__audio_status/     : Status tracking for audio generation and uploads
-      - FI_elaimet.json  : Status for Finnish animal vocabulary
-      - EN_animals.json  : Status for English animal vocabulary
-      // ... other vocabulary status files
-    
-    - generate_word_audio_speechgen.py  : Script for generating word audio using SpeechGen API
-    - upload_word_audio.py              : Script for uploading word audio to Cloudinary
-    - generate_metadata.py              : Script for generating app metadata from status files
+    # Batch processing files
+    - process_all_wordlists.bat : Processes all .txt files in raw_wordlists folder
+    - process_wordlist-FI.bat   : Process single Finnish word list (drag & drop)
+    - process_wordlist-EN.bat   : Process single English word list (drag & drop)
+    - generate_EN_rhyming_words_for_full_dict.bat : Generate English rhyme groups
+    - combine_vocabulary.bat    : Combine multiple vocabulary files
+    - combine_txt_to_wordlist.bat : Convert text files to vocabulary format
 
 Key Features:
 ------------
 1. Multiple Training Modes:
-   - Setup & Punchline practice with
-   - Rhyme Explorer for vocabulary building
-   - Interactive Find Rhymes game
-   - Visual Rhyme Map for pattern exploration
+   - Setup & Punchline practice with 2-bar and 4-bar variations
+   - Rhyme Explorer for vocabulary building and pattern discovery
+   - Interactive Find Rhymes game with timer challenges
+   - Visual Rhyme Map for pattern exploration (language-specific versions)
+   - Rhyme Search mode for Finnish with advanced filtering
    - Slot Machine mode with adjustable bar length and continuous word flow
 
 2. Vocabulary Management:
-   - Multiple predefined word sets
-   - Support for both Finnish and English
-   - Themed collections (animals, science, cars, etc.)
-   - Full dictionary support
-   - Improved rhyme group organization
+   - Multiple predefined word sets per language
+   - Support for both Finnish and English with native speakers
+   - Themed collections (animals, science, cars, clothes, love battle, etc.)
+   - Full dictionary support with extensive word databases
+   - Custom vocabulary editor for user-defined word sets
+   - Syllable filtering and advanced vocabulary statistics
+   - Raw wordlist processing pipeline
 
 3. Beat System:
-   - Web Audio API based playback
-   - Customizable BPM with multiple variations
-   - Multiple beat patterns
-   - Synchronized word changes
-   - Beat preview and selection
+   - Web Audio API based playback with professional quality
+   - Customizable BPM with multiple variations per beat
+   - Multiple beat patterns and genres
+   - Synchronized word changes with musical timing
+   - Beat preview and selection with modal interface
    - Volume control with mute option
-   - Cloudinary-hosted beat files
+   - Cloudinary-hosted beat files for global CDN delivery
+   - Compact and full-featured beat selector components
 
 4. Recording System:
-   - Microphone input recording
+   - Microphone input recording with permission management
    - Beat and vocals synchronization
-   - Recording playback with original beat
-   - Recording management and storage
+   - Recording playback with original beat overlay
+   - Recording management and localStorage persistence
    - Debug mode access control
+   - Recording modal for playback management
 
-5. Bilingual Support:
-   - Full Finnish and English translations
-   - Language-specific rhyme generation
-   - Separate vocabulary sets for each language
+5. Audio System:
+   - Text-to-speech integration for vocabulary words
+   - Word audio playback with Cloudinary hosting
+   - Audio toggle controls for selective muting
+   - Professional voice selection (Harri for Finnish, Hunter for English)
+   - SSML support for enhanced pronunciation
 
-6. Audio Processing:
-   - Automated BPM variation generation
-   - Two-step process: process then upload
-   - FFmpeg-based audio processing
-   - Cloudinary integration for hosting 
+6. Bilingual Support:
+   - Full Finnish and English translations with context awareness
+   - Language-specific rhyme generation algorithms
+   - Separate vocabulary sets optimized for each language
+   - Language-specific training mode variations
+   - Cultural and linguistic adaptation
 
-7. Word Audio System:
-   - Text-to-speech generation for vocabulary words
-   - Language-specific voice selection (Harri for Finnish, Hunter for English)
-   - Three-step process:
-     1. Generate audio files using SpeechGen API
-     2. Upload files to Cloudinary
-     3. Generate app metadata
-   - Status tracking for generation and uploads
-   - Vocabulary-specific organization
-   - Command-line and interactive interfaces
-   - SSML support for better audio quality
-   - Automatic phonetic version handling
+7. User Interface:
+   - React Router based navigation with URL routing
+   - Responsive design for mobile and desktop
+   - Material design inspired components
+   - Dark/light theme considerations
+   - Instagram social media integration
+   - SEO optimization with Helmet integration
 
-8. Development Features:
-   - Debug mode for testing and development
-   - Centralized rhythm management through RhythmService
-   - Shared styling through BaseTrainingMode.css
-   - Improved code organization and reusability 
+8. Development & Analytics:
+   - Debug mode with secret activation (Ctrl+Shift+D or tap sequence)
+   - Analytics service for user behavior tracking
+   - Comprehensive error handling and logging
+   - Development tools and testing utilities
+   - Performance monitoring and optimization
+
+9. Audio Processing Pipeline:
+   - Automated BPM variation generation using Python/FFmpeg
+   - Three-step TTS process: generate → upload → create metadata
+   - Status tracking for all audio assets
+   - Batch processing capabilities
+   - Quality control and validation
+
+10. Data Processing:
+    - Advanced word list processing with phonetic analysis
+    - Rhyme group generation and optimization
+    - Vocabulary combination and merging tools
+    - Text file to JavaScript conversion pipeline
+    - Cross-platform batch processing scripts
+
+11. Technical Architecture:
+    - Singleton pattern for audio context management
+    - Context-based state management for translations and debug
+    - Custom hooks for audio and recording control
+    - Service-oriented architecture for core functionality
+    - Modular component design with reusable patterns
+    - Centralized styling with CSS custom properties 
