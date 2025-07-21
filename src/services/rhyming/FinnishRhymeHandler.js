@@ -1,5 +1,5 @@
 import { RhymeHandlerBase } from './RhymeHandlerBase';
-import { splitWord, getDisplayWord } from '../utils/wordUtils';
+import { splitWord, getDisplayWord } from '../../utils/wordUtils';
 
 /**
  * Finnish-specific rhyme handler

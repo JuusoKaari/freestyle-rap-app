@@ -116,9 +116,6 @@ Root Files:
       - EnglishRhymeHandler.js : English-specific rhyme generation and pattern matching
       - FinnishRhymeHandler.js : Finnish-specific rhyme generation with vowel harmony
 
-    /utils/
-      - wordUtils.js          : Utility functions for word processing and display
-
   /hooks
     - useAudioController.js   : Hook for high-level audio control and musical timing
                                Manages sixteenth notes and quarter notes progression
@@ -128,6 +125,11 @@ Root Files:
     - useWordAudio.js         : Hook for managing word audio playback and TTS integration
 
   /utils
+    - languageUtils.js        : Language detection and vocabulary utilities
+                               Centralizes language detection logic to eliminate code duplication
+                               Provides functions for determining language from vocabulary IDs
+    - wordUtils.js           : Utility functions for word processing and display
+                               Handles word splitting, phonetic conversion, and formatting
     - wordProcessor.js        : Advanced word processing utilities and algorithms
 
   /data

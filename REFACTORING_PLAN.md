@@ -1,34 +1,29 @@
 # Freestyle Rap App - Refactoring Plan 🔧
 
 ## Overview
+
 This document outlines systematic improvements to reduce code duplication, improve maintainability, and enhance the overall architecture of the Freestyle Rap Training application.
 
-**Analysis Date**: January 2025  
-**Total Issues Identified**: 8  
-**Estimated Time**: 2-3 days of focused work  
+**Analysis Date**: January 2025
+**Total Issues Identified**: 8
+**Estimated Time**: 2-3 days of focused work
 
 ---
 
 ## 🚨 **HIGH PRIORITY** (Fix First)
 
-### 1. Remove Duplicate CSS File
-- **Issue**: `VocabularySelectModal copy.css` appears to be duplicate/backup code
-- **Impact**: Code bloat, potential confusion
-- **Effort**: 5 minutes
+~~### 1. Remove Duplicate CSS File (DONE!)~~
 
-**Tasks:**
-- [ ] Compare `VocabularySelectModal.css` and `VocabularySelectModal copy.css`
-- [ ] Verify the copy file isn't referenced anywhere
-- [ ] Delete the duplicate file
-- [ ] Test vocabulary modal functionality
+~~### 2. Centralize Language Detection Logic (DONE!)~~
 
-### 2. Centralize Language Detection Logic
 - **Issue**: `vocabulary.startsWith('en_')` duplicated 3+ times in `WordListService.js`
 - **Impact**: DRY violation, maintenance overhead
 - **Effort**: 30 minutes
 
 **Tasks:**
-- [ ] Create `src/utils/languageUtils.js`:
+
+- [x] Create `src/utils/languageUtils.js`:
+
 ```javascript
 export const getLanguageFromVocabularyId = (vocabularyId) => {
   if (vocabularyId === 'all') return 'mixed';
@@ -40,20 +35,22 @@ export const isEnglishVocabulary = (vocabularyId) => {
 };
 ```
 
-- [ ] Update `WordListService.js` lines 45, 69, 179 to use the utility
-- [ ] Search for other instances of `startsWith('en_')` and refactor
-- [ ] Test all vocabulary-related functionality
+- [x] Update `WordListService.js` lines 45, 69, 179 to use the utility
+- [x] Search for other instances of `startsWith('en_')` and refactor
+- [x] Test all vocabulary-related functionality
 
 ---
 
 ## 🟡 **MEDIUM PRIORITY** (Next Sprint)
 
 ### 3. Consolidate Audio Service Initialization
+
 - **Issue**: `audioService.initialize()` called from 4+ locations
 - **Impact**: Potential initialization conflicts, unclear ownership
 - **Effort**: 1 hour
 
 **Tasks:**
+
 - [ ] Make `AudioService.initialize()` idempotent (safe to call multiple times)
 - [ ] Add initialization status tracking to AudioService
 - [ ] Review all initialization calls in:
@@ -65,12 +62,15 @@ export const isEnglishVocabulary = (vocabularyId) => {
 - [ ] Test audio functionality across all components
 
 ### 4. Create Centralized Storage Service
+
 - **Issue**: localStorage management scattered across components
 - **Impact**: Inconsistent error handling, code duplication
 - **Effort**: 1.5 hours
 
 **Tasks:**
+
 - [ ] Create `src/services/StorageService.js`:
+
 ```javascript
 class StorageService {
   static get(key, defaultValue = null) {
@@ -115,11 +115,13 @@ class StorageService {
 - [ ] Test all localStorage-dependent features
 
 ### 5. Improve Language-Specific Component Pattern
+
 - **Issue**: `RhymeMapMode.jsx` is just a simple router wrapper
 - **Impact**: Unnecessary abstraction layer
 - **Effort**: 45 minutes
 
 **Tasks:**
+
 - [ ] Analyze if the wrapper pattern is needed for other modes
 - [ ] Consider alternatives:
   - [ ] Higher-order component approach
@@ -133,11 +135,13 @@ class StorageService {
 ## 🟢 **LOW PRIORITY** (Future Improvements)
 
 ### 6. Standardize Error Handling
+
 - **Issue**: Inconsistent error handling patterns throughout the app
 - **Impact**: Poor user experience, debugging difficulties
 - **Effort**: 2 hours
 
 **Tasks:**
+
 - [ ] Create `src/services/ErrorService.js` for centralized error handling
 - [ ] Replace `alert()` calls with toast notifications:
   - [ ] `CustomVocabularyEditor.jsx`
@@ -150,11 +154,13 @@ class StorageService {
 - [ ] Test error scenarios
 
 ### 7. Consolidate CSS Organization
+
 - **Issue**: Mixed CSS organization (component-specific vs centralized)
 - **Impact**: Potential style conflicts, maintenance overhead
 - **Effort**: 1 hour
 
 **Tasks:**
+
 - [ ] Audit all CSS files and their usage
 - [ ] Identify duplicate styles across files
 - [ ] Choose consistent pattern:
@@ -165,12 +171,15 @@ class StorageService {
 - [ ] Test all component styling
 
 ### 8. Create Vocabulary Management Service
+
 - **Issue**: Vocabulary logic scattered across multiple components
 - **Impact**: Code duplication, maintenance complexity
 - **Effort**: 2.5 hours
 
 **Tasks:**
+
 - [ ] Create `src/services/VocabularyService.js`:
+
 ```javascript
 class VocabularyService {
   static getCustomVocabularies()
@@ -193,16 +202,19 @@ class VocabularyService {
 ## 🎯 **Implementation Strategy**
 
 ### Phase 1: Quick Wins (Day 1)
+
 - Complete HIGH PRIORITY items (1-2)
 - Total time: ~35 minutes
 - High impact, minimal risk
 
 ### Phase 2: Core Improvements (Day 2)
+
 - Complete MEDIUM PRIORITY items (3-5)
 - Total time: ~3.25 hours
 - Moderate impact, some testing required
 
 ### Phase 3: Polish & Future-Proofing (Day 3)
+
 - Complete LOW PRIORITY items (6-8)
 - Total time: ~5.5 hours
 - Long-term benefits, extensive testing
@@ -212,6 +224,7 @@ class VocabularyService {
 ## 🧪 **Testing Checklist**
 
 After each major change, verify:
+
 - [ ] All training modes work correctly
 - [ ] Beat playback and recording function
 - [ ] Language switching works
@@ -226,16 +239,19 @@ After each major change, verify:
 ## 🏆 **Expected Benefits**
 
 ### After High Priority Fixes:
+
 - Reduced code bloat
 - Eliminated duplicate logic
 - Easier maintenance
 
 ### After Medium Priority Fixes:
+
 - More robust audio handling
 - Consistent data persistence
 - Better error handling
 
 ### After Low Priority Fixes:
+
 - Professional error handling
 - Consistent styling approach
 - Centralized vocabulary management
@@ -251,6 +267,6 @@ After each major change, verify:
 - Update documentation as needed
 - Run the app after each change to ensure nothing breaks
 
-**Started**: ___________  
-**Completed**: ___________  
-**Total Time Spent**: ___________ 
+**Started**: ___________
+**Completed**: ___________
+**Total Time Spent**: ___________

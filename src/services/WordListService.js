@@ -22,7 +22,8 @@
 import { getVocabularyData } from '../data/vocabulary/vocabularyConfig';
 import { FinnishRhymeHandler } from './rhyming/FinnishRhymeHandler';
 import { EnglishRhymeHandler } from './rhyming/EnglishRhymeHandler';
-import { getDisplayWord, splitWord } from './utils/wordUtils';
+import { getDisplayWord, splitWord } from '../utils/wordUtils';
+import { isEnglishVocabulary } from '../utils/languageUtils';
 
 // Helper function to count total words in a vowel group
 const getGroupWordCount = (group, words) => {
@@ -43,7 +44,7 @@ const getVocabulary = (vocabulary, language) => {
   }
 
   // For regular vocabularies, determine language from the ID
-  const isEnglish = vocabulary.startsWith('en_');
+  const isEnglish = isEnglishVocabulary(vocabulary);
   const vocabData = getVocabularyData(vocabulary, isEnglish ? 'en' : 'fi');
   if (!vocabData) {
     console.warn('Unknown vocabulary:', vocabulary);
@@ -67,7 +68,7 @@ const getVocabulary = (vocabulary, language) => {
 
 // Function to get the full dictionary based on language
 const getFullDictionary = (vocabulary) => {
-  const isEnglish = vocabulary.startsWith('en_');
+  const isEnglish = isEnglishVocabulary(vocabulary);
   return getVocabularyData(isEnglish ? 'en_full_dict' : 'fi_full_dict', isEnglish ? 'en' : 'fi');
 };
 
@@ -177,7 +178,7 @@ export const generateWordList = async ({
   }
 
   // Get rhyming handler based on language
-  const isEnglish = vocabulary.startsWith('en_');
+  const isEnglish = isEnglishVocabulary(vocabulary);
   const rhymeHandler = isEnglish ? new EnglishRhymeHandler() : new FinnishRhymeHandler();
 
   // Get full dictionary for rhyme hints
