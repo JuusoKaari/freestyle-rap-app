@@ -256,6 +256,14 @@ Root Files:
     - combine_vocabulary.bat    : Combine multiple vocabulary files
     - combine_txt_to_wordlist.bat : Convert text files to vocabulary format
 
+  /code_analysis_tools/
+    - analyze_code_files.py     : Python script for analyzing code file line counts
+                                 Analyzes all code files in src folder (excluding data folder)
+                                 Reports line counts with emphasis on top 10 longest files
+                                 Provides statistics by file type and identifies files over 300 lines
+    - analyze_code_files.bat    : Batch file for running the code analysis script
+                                 Windows batch script that executes the Python analyzer
+
 Key Features:
 ------------
 1. Multiple Training Modes:
