@@ -15,6 +15,7 @@
 import { useState, useEffect } from 'react';
 import recordingService from '../services/RecordingService';
 import audioService from '../services/AudioService';
+import StorageService from '../services/StorageService.js';
 
 export const useRecordingController = () => {
   const [isRecordingEnabled, setIsRecordingEnabled] = useState(false);
@@ -23,17 +24,17 @@ export const useRecordingController = () => {
 
   // Load saved recordings from localStorage on mount
   useEffect(() => {
-    const savedRecordings = localStorage.getItem('recordings');
-    if (savedRecordings) {
+    const savedRecordings = StorageService.get('recordings', []);
+    if (savedRecordings.length > 0) {
       console.log('Loading saved recordings from localStorage');
-      setRecordings(JSON.parse(savedRecordings));
+      setRecordings(savedRecordings);
     }
   }, []);
 
   // Save recordings to localStorage when updated
   useEffect(() => {
     console.log('Saving recordings to localStorage:', recordings);
-    localStorage.setItem('recordings', JSON.stringify(recordings));
+    StorageService.set('recordings', recordings);
   }, [recordings]);
 
   const handleRecordingToggle = async () => {

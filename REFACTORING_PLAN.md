@@ -61,7 +61,7 @@ export const isEnglishVocabulary = (vocabularyId) => {
 - [x] Consolidate to single initialization point or ensure thread safety
 - [x] Test audio functionality across all components
 
-### 4. Create Centralized Storage Service
+~~### 4. Create Centralized Storage Service (DONE!)~~
 
 - **Issue**: localStorage management scattered across components
 - **Impact**: Inconsistent error handling, code duplication
@@ -69,7 +69,7 @@ export const isEnglishVocabulary = (vocabularyId) => {
 
 **Tasks:**
 
-- [ ] Create `src/services/StorageService.js`:
+- [x] Create `src/services/StorageService.js`:
 
 ```javascript
 class StorageService {
@@ -105,14 +105,15 @@ class StorageService {
 }
 ```
 
-- [ ] Refactor localStorage usage in:
-  - [ ] `TranslationContext.jsx` (language preferences)
-  - [ ] `DebugContext.jsx` (debug mode)
-  - [ ] `useRecordingController.js` (recordings)
-  - [ ] `CustomVocabularyEditor.jsx` (custom vocabularies)
-  - [ ] `VocabularySelectModal.jsx` (custom vocabularies)
-  - [ ] `SetupPunchlineMode.jsx` (rhyme hints setting)
-- [ ] Test all localStorage-dependent features
+- [x] Refactor localStorage usage in:
+  - [x] `TranslationContext.jsx` (language preferences)
+  - [x] `DebugContext.jsx` (debug mode)
+  - [x] `useRecordingController.js` (recordings)
+  - [x] `CustomVocabularyEditor.jsx` (custom vocabularies)
+  - [x] `VocabularySelectModal.jsx` (custom vocabularies)
+  - [x] `SetupPunchlineMode.jsx` (rhyme hints setting)
+  - [x] `vocabularyConfig.js` (custom vocabularies)
+- [x] Test all localStorage-dependent features
 
 ### 5. Improve Language-Specific Component Pattern
 

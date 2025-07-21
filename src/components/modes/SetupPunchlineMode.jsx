@@ -31,6 +31,7 @@ import React, { useState, useEffect } from 'react';
 import BaseTrainingMode from './BaseTrainingMode';
 import { useTranslation } from '../../services/TranslationContext';
 import { trainingModes } from '../../data/trainingModes';
+import StorageService from '../../services/StorageService.js';
 import './SetupPunchlineMode.css';
 
 const SetupPunchlineMode = ({ 
@@ -55,15 +56,14 @@ const SetupPunchlineMode = ({
   const BLOCKS_PER_BAR = 4;
   const [selectedRhymes, setSelectedRhymes] = useState([]);
   const [showHints, setShowHints] = useState(() => {
-    const saved = localStorage.getItem('showRhymeHints');
-    return saved !== null ? JSON.parse(saved) : false;
+    return StorageService.get('showRhymeHints', false);
   });
   const [barsPerRound, setBarsPerRound] = useState(2);
   const [isNextWordChanging, setIsNextWordChanging] = useState(false);
 
   // Save hint preference to localStorage
   useEffect(() => {
-    localStorage.setItem('showRhymeHints', JSON.stringify(showHints));
+    StorageService.set('showRhymeHints', showHints);
   }, [showHints]);
 
   // Handle bar length changes

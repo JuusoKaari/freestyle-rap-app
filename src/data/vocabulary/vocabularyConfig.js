@@ -31,6 +31,7 @@ import EN_shoppingVocab from './EN_shopping_list.js';
 import EN_carsVocab from './EN_cars.js';
 import EN_numbersVocab from './EN_numbers.js';
 import EN_clothesVocab from './EN_clothes_and_accessories.js';
+import StorageService from '../../services/StorageService.js';
 
 // Helper function to count total words in a vocabulary
 const countWords = (vocab) => {
@@ -248,7 +249,7 @@ export const getVocabularyData = (vocabId, language = 'fi') => {
   // Finally check custom vocabularies
   if (vocabId.startsWith('custom-vocabulary-')) {
     try {
-      const customVocabs = JSON.parse(localStorage.getItem('customVocabularies') || '[]');
+      const customVocabs = StorageService.get('customVocabularies', []);
       const customVocab = customVocabs.find(v => v.id === vocabId);
       if (customVocab) {
         return customVocab.data;
@@ -270,12 +271,7 @@ export const getVocabularyPath = (vocabId) => {
 
 // Get custom vocabularies from local storage
 export const getCustomVocabularies = () => {
-  try {
-    return JSON.parse(localStorage.getItem('customVocabularies') || '[]');
-  } catch (error) {
-    console.error('Error loading custom vocabularies:', error);
-    return [];
-  }
+  return StorageService.get('customVocabularies', []);
 };
 
 // Export vocabularies based on language

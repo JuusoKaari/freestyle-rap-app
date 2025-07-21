@@ -105,6 +105,11 @@ Root Files:
                                Integrates with AudioService for context sharing
                                Processes recordings into playable format
 
+    - StorageService.js       : Centralized localStorage management service
+                               Provides consistent API for storing and retrieving data
+                               Includes comprehensive error handling and JSON serialization
+                               Handles language preferences, debug mode, recordings, and custom vocabularies
+
     - AnalyticsService.js     : Analytics and user interaction tracking service
                                Handles event logging and user behavior analytics
 

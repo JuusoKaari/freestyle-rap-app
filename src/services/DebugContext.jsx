@@ -23,6 +23,7 @@
  */
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
+import StorageService from './StorageService.js';
 
 const DebugContext = createContext({
   isDebugMode: false,
@@ -54,12 +55,12 @@ export const DebugProvider = ({ children }) => {
 
   // Store debug mode in localStorage
   useEffect(() => {
-    const storedDebugMode = localStorage.getItem('debugMode') === 'true';
+    const storedDebugMode = StorageService.get('debugMode', false);
     setIsDebugMode(storedDebugMode);
   }, []);
 
   useEffect(() => {
-    localStorage.setItem('debugMode', isDebugMode);
+    StorageService.set('debugMode', isDebugMode);
   }, [isDebugMode]);
 
   const toggleDebugMode = () => setIsDebugMode(prev => !prev);

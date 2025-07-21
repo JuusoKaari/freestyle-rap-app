@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from '../services/TranslationContext';
 import { createCustomVocabulary } from '../utils/wordProcessor';
+import StorageService from '../services/StorageService.js';
 import '../styles/CustomVocabularyEditor.css';
 
 const CustomVocabularyEditor = ({ isOpen, onClose, onSave, vocabulary }) => {
@@ -42,7 +43,7 @@ const CustomVocabularyEditor = ({ isOpen, onClose, onSave, vocabulary }) => {
       }
 
       // Get existing vocabularies
-      const savedVocabularies = JSON.parse(localStorage.getItem('customVocabularies') || '[]');
+      const savedVocabularies = StorageService.get('customVocabularies', []);
       
       // Create new vocabulary object
       const newVocabulary = createCustomVocabulary(words, name || undefined);
@@ -54,11 +55,11 @@ const CustomVocabularyEditor = ({ isOpen, onClose, onSave, vocabulary }) => {
         const updatedVocabularies = savedVocabularies.map(v => 
           v.id === vocabulary.id ? newVocabulary : v
         );
-        localStorage.setItem('customVocabularies', JSON.stringify(updatedVocabularies));
+        StorageService.set('customVocabularies', updatedVocabularies);
       } else {
         // Add new vocabulary
         savedVocabularies.push(newVocabulary);
-        localStorage.setItem('customVocabularies', JSON.stringify(savedVocabularies));
+        StorageService.set('customVocabularies', savedVocabularies);
       }
 
       // Call the onSave callback with the new/updated vocabulary

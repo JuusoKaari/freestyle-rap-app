@@ -24,6 +24,7 @@
 import React, { createContext, useContext, useState, useCallback, useEffect } from 'react';
 import { en } from '../data/translations/en';
 import { fi } from '../data/translations/fi';
+import StorageService from './StorageService.js';
 
 const translations = {
   en,
@@ -35,7 +36,7 @@ const TranslationContext = createContext();
 export const TranslationProvider = ({ children }) => {
   const [language, setLanguageState] = useState(() => {
     // First check localStorage
-    const savedLanguage = localStorage.getItem('language');
+    const savedLanguage = StorageService.get('language');
     if (savedLanguage && translations[savedLanguage]) {
       return savedLanguage;
     }
@@ -53,7 +54,7 @@ export const TranslationProvider = ({ children }) => {
   const setLanguage = (newLang) => {
     if (translations[newLang]) {
       setLanguageState(newLang);
-      localStorage.setItem('language', newLang);
+      StorageService.set('language', newLang);
     }
   };
 

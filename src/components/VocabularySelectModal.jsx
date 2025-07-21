@@ -3,6 +3,7 @@ import { useTranslation } from '../services/TranslationContext';
 import CustomVocabularyEditor from './CustomVocabularyEditor';
 import { getVocabularies, getVocabularyData } from '../data/vocabulary/vocabularyConfig';
 import { useDebug } from '../services/DebugContext';
+import StorageService from '../services/StorageService.js';
 import '../styles/VocabularySelectModal.css';
 
 const VocabularySelectModal = ({ 
@@ -123,9 +124,9 @@ const VocabularySelectModal = ({
     e.stopPropagation();
     if (window.confirm(translate('vocabulary.modal.confirm_delete'))) {
       try {
-        const savedVocabularies = JSON.parse(localStorage.getItem('customVocabularies') || '[]');
+        const savedVocabularies = StorageService.get('customVocabularies', []);
         const updatedVocabularies = savedVocabularies.filter(v => v.id !== vocab.id);
-        localStorage.setItem('customVocabularies', JSON.stringify(updatedVocabularies));
+        StorageService.set('customVocabularies', updatedVocabularies);
         setVocabularies(getVocabularies(language));
         
         if (currentVocabularyId === vocab.id && vocabularies.length > 1) {
