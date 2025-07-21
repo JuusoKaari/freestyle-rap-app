@@ -8,6 +8,9 @@
  * - Legacy data migration (handles old plain-string values)
  * - Storage availability checking
  */
+
+import { logError } from './ErrorService.js';
+
 class StorageService {
   /**
    * Retrieve an item from localStorage with error handling
@@ -41,7 +44,7 @@ class StorageService {
         return item;
       }
     } catch (error) {
-      console.error(`StorageService: Error reading from localStorage: ${key}`, error);
+      logError('StorageService', `Error reading from localStorage: ${key}`, error);
       return defaultValue;
     }
   }
@@ -57,7 +60,7 @@ class StorageService {
       localStorage.setItem(key, JSON.stringify(value));
       return true;
     } catch (error) {
-      console.error(`StorageService: Error writing to localStorage: ${key}`, error);
+      logError('StorageService', `Error writing to localStorage: ${key}`, error);
       return false;
     }
   }
@@ -72,7 +75,7 @@ class StorageService {
       localStorage.removeItem(key);
       return true;
     } catch (error) {
-      console.error(`StorageService: Error removing from localStorage: ${key}`, error);
+      logError('StorageService', `Error removing from localStorage: ${key}`, error);
       return false;
     }
   }

@@ -4,6 +4,7 @@ import CustomVocabularyEditor from './CustomVocabularyEditor';
 import { getVocabularies, getVocabularyData } from '../data/vocabulary/vocabularyConfig';
 import { useDebug } from '../services/DebugContext';
 import StorageService from '../services/StorageService.js';
+import { showUserError } from '../services/ErrorService.js';
 import '../styles/VocabularySelectModal.css';
 
 const VocabularySelectModal = ({ 
@@ -137,7 +138,7 @@ const VocabularySelectModal = ({
         }
       } catch (error) {
         console.error('Error deleting vocabulary:', error);
-        alert(translate('vocabulary.modal.delete_error'));
+        showUserError(translate('vocabulary.modal.delete_error'), error);
       }
     }
   };

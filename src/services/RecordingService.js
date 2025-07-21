@@ -24,6 +24,7 @@
  */
 
 import audioService from './AudioService';
+import { logError, logWarning, handleCriticalError } from './ErrorService.js';
 
 class RecordingService {
   constructor() {
@@ -43,7 +44,7 @@ class RecordingService {
       // Create microphone input node
       const audioContext = audioService.audioContext;
       if (!audioContext) {
-        console.error('Audio context not initialized');
+        logError('RecordingService', 'Audio context not initialized');
         return false;
       }
       
@@ -58,7 +59,7 @@ class RecordingService {
       console.log('Microphone permission granted');
       return true;
     } catch (error) {
-      console.error('Error accessing microphone:', error);
+      logError('RecordingService', 'Error accessing microphone', error);
       return false;
     }
   }

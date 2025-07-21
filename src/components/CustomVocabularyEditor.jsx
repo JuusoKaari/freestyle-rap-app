@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from '../services/TranslationContext';
 import { createCustomVocabulary } from '../utils/wordProcessor';
 import StorageService from '../services/StorageService.js';
+import { showUserError } from '../services/ErrorService.js';
 import '../styles/CustomVocabularyEditor.css';
 
 const CustomVocabularyEditor = ({ isOpen, onClose, onSave, vocabulary }) => {
@@ -37,7 +38,7 @@ const CustomVocabularyEditor = ({ isOpen, onClose, onSave, vocabulary }) => {
         .filter(word => word.length > 0);
 
       if (words.length === 0) {
-        alert(translate('vocabulary.editor.no_words'));
+        showUserError(translate('vocabulary.editor.no_words'));
         setIsProcessing(false);
         return;
       }
@@ -67,7 +68,7 @@ const CustomVocabularyEditor = ({ isOpen, onClose, onSave, vocabulary }) => {
       onClose();
     } catch (error) {
       console.error('Error processing word list:', error);
-      alert(translate('vocabulary.editor.error'));
+      showUserError(translate('vocabulary.editor.error'), error);
     } finally {
       setIsProcessing(false);
     }

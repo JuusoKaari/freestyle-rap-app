@@ -21,6 +21,8 @@
  * Vocals Source → Vocals Gain → Master Gain → Destination
  */
 
+import { logError, logWarning, handleCriticalError } from './ErrorService.js';
+
 class AudioService {
   constructor() {
     this.audioContext = null;
@@ -61,7 +63,7 @@ class AudioService {
       this.isInitialized = true;
       return Promise.resolve();
     } catch (error) {
-      console.error('🎧 AudioService initialization failed:', error);
+      logError('AudioService', 'Initialization failed', error);
       throw error;
     } finally {
       this.isInitializing = false;
@@ -107,7 +109,7 @@ class AudioService {
           await Promise.race([resumePromise, timeoutPromise]);
           console.log('🎧 AudioContext resumed successfully, new state:', this.audioContext.state);
         } catch (error) {
-          console.error('🎧 Failed to resume AudioContext:', error);
+          logError('AudioService', 'Failed to resume AudioContext', error);
           // Continue anyway, the context might work despite the resume failing
         }
       } else {
@@ -178,7 +180,7 @@ class AudioService {
         this.beatBuffer = await this.audioContext.decodeAudioData(arrayBuffer);
         return true;
       } catch (decodeError) {
-        console.error('🔊 Failed to decode audio data:', decodeError);
+        logError('AudioService', 'Failed to decode audio data', decodeError);
         // Try alternative loading method if decode fails
         return await this.loadBeatFallback(url);
       }
