@@ -12,12 +12,12 @@
  */
 
 import React, { useEffect } from 'react';
-import RhymeExplorerMode from './modes/RhymeExplorerMode';
-import FindRhymesMode from './modes/FindRhymesMode';
-import RhymeMapMode from './modes/RhymeMapMode';
-import RhymeSearchMode from './modes/RhymeSearchMode_FI';
-import SlotMachineMode from './modes/SlotMachineMode';
-import SetupPunchlineMode from './modes/SetupPunchlineMode';
+import RhymeExplorerMode from './trainingModes/RhymeExplorerMode';
+import FindRhymesMode from './trainingModes/FindRhymesMode';
+import RhymeMapMode from './trainingModes/RhymeMapMode';
+import RhymeSearchMode from './trainingModes/RhymeSearchMode_FI';
+import SlotMachineMode from './trainingModes/SlotMachineMode';
+import SetupPunchlineMode from './trainingModes/SetupPunchlineMode';
 import { trainingModes } from '../data/trainingModes';
 import { useTranslation } from '../services/TranslationContext';
 import { trackTrainingStart } from '../services/AnalyticsService';
