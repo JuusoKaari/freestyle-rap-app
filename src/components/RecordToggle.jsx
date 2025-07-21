@@ -1,5 +1,5 @@
 import React from 'react';
-import './RecordToggle.css';
+import '../styles/RecordToggle.css';
 import { useTranslation } from '../services/TranslationContext';
 
 const RecordToggle = ({ isRecordingEnabled, onToggle }) => {

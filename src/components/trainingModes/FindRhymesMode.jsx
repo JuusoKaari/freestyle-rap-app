@@ -31,7 +31,7 @@
 
 import React, { useState, useEffect } from 'react';
 import BaseTrainingMode from './BaseTrainingMode';
-import './FindRhymesMode.css';
+import '../../styles/trainingModeStyles/FindRhymesMode.css';
 import { useTranslation } from '../../services/TranslationContext';
 import { trainingModes } from '../../data/trainingModes';
 

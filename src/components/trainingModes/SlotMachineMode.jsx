@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import BaseTrainingMode from './BaseTrainingMode';
 import { trainingModes } from '../../data/trainingModes';
 import { useTranslation } from '../../services/TranslationContext';
-import './SlotMachineMode.css';
+import '../../styles/trainingModeStyles/SlotMachineMode.css';
 
 // Number of words in each slot's list (total height of scrolling content)
 const SLOT_SIZE = 30;

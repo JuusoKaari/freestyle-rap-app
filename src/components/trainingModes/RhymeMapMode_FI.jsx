@@ -23,7 +23,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import BaseTrainingMode from './BaseTrainingMode';
-import './RhymeMapMode.css';
+import '../../styles/trainingModeStyles/RhymeMapMode.css';
 import { useTranslation } from '../../services/TranslationContext';
 import { trainingModes } from '../../data/trainingModes';
 import FI__full_dict from '../../data/vocabulary/FI__full_dict';

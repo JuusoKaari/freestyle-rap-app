@@ -25,7 +25,7 @@
  */
 
 import React from 'react';
-import './BaseTrainingMode.css';
+import '../../styles/trainingModeStyles/BaseTrainingMode.css';
 
 const BaseTrainingMode = ({ 
   modeName,

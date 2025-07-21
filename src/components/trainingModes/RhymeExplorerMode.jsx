@@ -32,7 +32,7 @@
 
 import React, { useState, useEffect } from 'react';
 import BaseTrainingMode from './BaseTrainingMode';
-import './RhymeExplorerMode.css';
+import '../../styles/trainingModeStyles/RhymeExplorerMode.css';
 import { useTranslation } from '../../services/TranslationContext';
 import { useDebug } from '../../services/DebugContext';
 import { trainingModes } from '../../data/trainingModes';

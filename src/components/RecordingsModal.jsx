@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './RecordingsModal.css';
+import '../styles/RecordingsModal.css';
 import { useTranslation } from '../services/TranslationContext';
 import { trainingModes } from '../data/trainingModes';
 import { beats } from '../data/beat_metadata/index';

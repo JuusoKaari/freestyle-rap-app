@@ -8,7 +8,7 @@
 
 import React from 'react';
 import { FaInstagram } from 'react-icons/fa';
-import './InstagramLink.css';
+import '../styles/InstagramLink.css';
 
 const InstagramLink = () => {
   return (

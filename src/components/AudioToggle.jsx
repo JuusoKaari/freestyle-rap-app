@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from '../services/TranslationContext';
-import './AudioToggle.css';
+import '../styles/AudioToggle.css';
 
 /**
  * A toggle switch component for enabling/disabling word audio playback

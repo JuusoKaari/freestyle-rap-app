@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import recordingService from '../services/RecordingService';
 import { useTranslation } from '../services/TranslationContext';
-import './RecordButton.css';
+import '../styles/RecordButton.css';
 
 const RecordButton = ({ onRecordingComplete }) => {
   const [isRecording, setIsRecording] = useState(false);

@@ -44,16 +44,11 @@ Root Files:
   /components
     - TrainingModeRenderer.jsx : Component for rendering different training modes
     - RecordButton.jsx        : Recording button component with microphone integration
-    - RecordButton.css        : Styles for recording button
     - RecordToggle.jsx        : Toggle for enabling/disabling recording functionality
-    - RecordToggle.css        : Styles for recording toggle button
     - RecordingsModal.jsx     : Modal for managing and playing back recordings
-    - RecordingsModal.css     : Styles for recordings modal
     - BeatSelectModal.jsx     : Modal for beat selection with preview
     - AudioToggle.jsx         : Audio control toggle component for muting/unmuting
-    - AudioToggle.css         : Styles for audio toggle component
     - InstagramLink.jsx       : Social media link component
-    - InstagramLink.css       : Styles for Instagram link component
     - CustomVocabularyEditor.jsx : Editor for creating and modifying custom vocabularies
                                   Now uses toast notifications instead of alert() calls
     - ErrorBoundary.jsx       : React Error Boundary component for graceful error handling
@@ -62,23 +57,16 @@ Root Files:
                                 Integrates with ErrorService for logging
                                 Shows detailed error info in development mode
     
-    /modes
+    /trainingModes
       - BaseTrainingMode.jsx   : Base component for all training modes
-      - BaseTrainingMode.css   : Common styles for all training modes, including shared styles for bars and rhyme patterns
       - SetupPunchlineMode.jsx : Setup & Punchline training mode component
-      - SetupPunchlineMode.css : Styles for Setup & Punchline mode
       - RhymeMapMode.jsx       : Router component for language-specific rhyme map modes
       - RhymeMapMode_EN.jsx    : English-specific rhyme map training mode
       - RhymeMapMode_FI.jsx    : Finnish-specific rhyme map training mode
-      - RhymeMapMode.css       : Styles for rhyme map modes
       - RhymeExplorerMode.jsx  : Rhyme explorer mode component
-      - RhymeExplorerMode.css  : Styles for rhyme explorer mode
       - FindRhymesMode.jsx     : Find rhymes mode component
-      - FindRhymesMode.css     : Styles for find rhymes mode
       - RhymeSearchMode_FI.jsx : Finnish-specific rhyme search mode
-      - RhymeSearchMode.css    : Styles for rhyme search mode
       - SlotMachineMode.jsx    : Slot machine mode component
-      - SlotMachineMode.css    : Styles for slot machine mode
     
     - ModeSelector.jsx         : Component for selecting different training modes
     - BeatSelector.jsx         : Full-featured beat selection and control
@@ -92,7 +80,6 @@ Root Files:
   /styles
     - VocabularySelector.css  : Styles for vocabulary selection
     - VocabularySelectModal.css: Styles for vocabulary selection modal
-    - VocabularySelectModal copy.css : Backup/alternate styles for vocab modal
     - BeatSelector.css        : Styles for beat selection
     - BeatSelectModal.css     : Styles for beat selection modal
     - BpmSelector.css         : Styles for BPM selector
@@ -100,6 +87,20 @@ Root Files:
     - CompactBeatSelector.css : Styles for compact beat selector with mute
     - LanguageToggle.css      : Styles for language toggle
     - CustomVocabularyEditor.css : Styles for custom vocabulary editor
+    - AudioToggle.css         : Styles for audio toggle component
+    - InstagramLink.css       : Styles for Instagram link component
+    - RecordButton.css        : Styles for recording button
+    - RecordToggle.css        : Styles for recording toggle button
+    - RecordingsModal.css     : Styles for recordings modal
+    
+    /trainingModeStyles/
+      - BaseTrainingMode.css   : Common styles for all training modes, including shared styles for bars and rhyme patterns
+      - SetupPunchlineMode.css : Styles for Setup & Punchline mode
+      - RhymeMapMode.css       : Styles for rhyme map modes
+      - RhymeExplorerMode.css  : Styles for rhyme explorer mode
+      - FindRhymesMode.css     : Styles for find rhymes mode
+      - RhymeSearchMode.css    : Styles for rhyme search mode
+      - SlotMachineMode.css    : Styles for slot machine mode
 
   /services
     - WordListService.js      : Service for word list generation and rhyme management

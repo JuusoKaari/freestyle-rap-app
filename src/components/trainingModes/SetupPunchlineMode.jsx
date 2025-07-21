@@ -32,7 +32,7 @@ import BaseTrainingMode from './BaseTrainingMode';
 import { useTranslation } from '../../services/TranslationContext';
 import { trainingModes } from '../../data/trainingModes';
 import StorageService from '../../services/StorageService.js';
-import './SetupPunchlineMode.css';
+import '../../styles/trainingModeStyles/SetupPunchlineMode.css';
 
 const SetupPunchlineMode = ({ 
   currentBar,
