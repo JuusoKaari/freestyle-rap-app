@@ -1,4 +1,5 @@
 // Import individual beat metadata files
+import acapella from './acapella.js';
 import dreamy_trap from './dreamy_trap.js';
 import going_strong from './going_strong.js';
 import gotta_go_now from './gotta_go_now.js';
@@ -10,6 +11,7 @@ import speak_easy from './speak_easy.js';
 
 // Export the beats array built from the JS files
 export const beats = [
+  acapella,
   dreamy_trap,
   going_strong,
   gotta_go_now,

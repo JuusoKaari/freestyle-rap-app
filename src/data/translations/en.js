@@ -1,7 +1,7 @@
 export const en = {
   app: {
     title: "RHEEMY",
-    tagline: "your freestyle rap coach",
+    tagline: "makes you a better rapper",
     browser_warning: {
       title: "Browser Not Supported",
       message: "Your browser does not support the Web Audio API, which is required for audio playback and recording. Please use a modern browser like Chrome, Firefox, Safari, or Edge."
