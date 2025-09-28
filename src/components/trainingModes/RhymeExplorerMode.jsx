@@ -1,17 +1,22 @@
 /**
  * RhymeExplorerMode Component
  * ==========================
- * 
- * A training mode that allows users to explore words and their rhyming pairs.
- * This mode is designed for vocabulary building and understanding rhyme patterns.
- * 
+ *
+ * Purpose:
+ * Simplified rhyme exploration view with a single large center word and
+ * rhyme suggestions arranged around it. Includes beat-synced auto-advance,
+ * keyboard navigation, bars-per-round selector, audio toggle, and a hint
+ * toggle that switches rhyme bubbles between words and question marks.
+ * Themed rhymes are intentionally not used here; only general rhymes render.
+ *
  * Key features:
- * - Display of target word and its rhyming pairs
- * - Manual navigation through words (Previous/Next)
+ * - Centered main word with progress indicator
+ * - Radial rhyme bubbles around the main word
+ * - Hint toggle: shows actual rhyme words or '?' placeholders
+ * - Manual navigation (Previous/Next buttons and Arrow keys)
  * - Automatic word progression with beat
- * - Categorized display of rhymes (themed vs other)
  * - Bilingual support (FI/EN)
- * 
+ *
  * Props:
  * - shuffledWords: Array of word objects to display
  * - wordCounter: Current word index
@@ -61,12 +66,14 @@ const RhymeExplorerMode = ({
   const { isDebugMode } = useDebug();
   const translations = trainingModes.find(mode => mode.id === 'rhyme-explorer').translations[language];
   const vocabularies = getVocabularies(language);
-  const selectedVocabInfo = vocabularies.find(vocab => vocab.id === selectedVocabulary);
-  const currentWord = shuffledWords[wordCounter];
+  // Themed vocabulary info intentionally unused in simplified explorer
+  // const selectedVocabInfo = vocabularies.find(vocab => vocab.id === selectedVocabulary);
+  // const currentWord = shuffledWords[wordCounter];
   const [targetWordIndex, setTargetWordIndex] = useState(wordCounter);
   const [barsPerRound, setBarsPerRound] = useState(2);
   const [progress, setProgress] = useState(100);
   const { isAudioEnabled, isAudioAvailable, toggleAudio, playWordAudio, preloadWordAudio } = useWordAudio(selectedVocabulary);
+  const [showHints, setShowHints] = useState(true);
 
   // Handle bar length changes
   const handleBarsChange = (value) => {
@@ -150,6 +157,10 @@ const RhymeExplorerMode = ({
   };
 
   const displayWord = shuffledWords[targetWordIndex];
+  const generalRhymes = (displayWord?.rhymes || []);
+  const totalBubbleSlots = 6;
+  const bubbleSlots = Array.from({ length: totalBubbleSlots }, (_, i) => generalRhymes[i] || null);
+  const angleOffset = Math.PI / 6; // 30 degrees
 
   // Preload next word's audio
   useEffect(() => {
@@ -221,103 +232,40 @@ const RhymeExplorerMode = ({
         isLoading={isLoading}
       >
         <div className="rhyme-explorer">
-          <div className="settings-row">
-            <div className="bars-per-round-setting">
-              <label>
-                {translations.barCountLabel}
-                <select 
-                  value={barsPerRound} 
-                  onChange={(e) => handleBarsChange(Number(e.target.value))}
-                  disabled={isBeatPlaying}
-                >
-                  {Object.entries(translations.barLengthOptions).map(([value, label]) => (
-                    <option key={value} value={value}>{label}</option>
-                  ))}
-                </select>
-              </label>
-            </div>
-            <AudioToggle
-              isEnabled={isAudioEnabled}
-              isAvailable={isAudioAvailable}
-              onToggle={toggleAudio}
-            />
-          </div>
+          
           {displayWord && (
-            <div className="word-card">
-              <div className="main-word">
-                <h3 key={`main-${displayWord.word}-${targetWordIndex}`}>{displayWord.word.toUpperCase()}</h3>
-                <span className="group-label" key={`group-${displayWord.group}-${targetWordIndex}`}>
-                  {displayWord.group.replace(/[0-9]/g, '')}
-                </span>
-                <div className="rhyme-explorer-progress-bar" style={{ width: `${progress}%` }} />
-              </div>
-
-              <div className="rhyme-section themed-rhymes">
-                <h4>
-                  {selectedVocabInfo && `${selectedVocabInfo.name} `}{translations.themedRhymes}
-                </h4>
-                <div className="rhyme-list" data-empty-text={translations.noRhymesFound}>
-                  {displayWord.themed_rhymes && displayWord.themed_rhymes.length > 0 && (
-                    <>
-                      {/* Direct rhymes first */}
-                      {displayWord.themed_rhymes
-                        .filter(rhyme => !rhyme.isSlant)
-                        .map((rhyme, index) => (
-                          <span 
-                            key={`themed-direct-${targetWordIndex}-${rhyme.word}-${index}`} 
-                            className="rhyme"
-                          >
-                            {rhyme.word}
-                          </span>
-                      ))}
-                      {/* Then slant rhymes */}
-                      {displayWord.themed_rhymes
-                        .filter(rhyme => rhyme.isSlant)
-                        .map((rhyme, index) => (
-                          <span 
-                            key={`themed-slant-${targetWordIndex}-${rhyme.word}-${index}`} 
-                            className="rhyme slant-rhyme"
-                          >
-                            {rhyme.word}
-                          </span>
-                      ))}
-                    </>
-                  )}
+            <>
+              <div className="rhyme-explorer-stage">
+                <div className="center-word">
+                  <h3 key={`main-${displayWord.word}-${targetWordIndex}`}>{displayWord.word.toUpperCase()}</h3>
+                </div>
+                <div
+                  key={`circle-${targetWordIndex}`}
+                  className="rhyme-progress-circle"
+                  style={{ ['--circle-scale']: progress / 100 }}
+                />
+                <div className={`rhyme-bubbles ${showHints ? 'hints-visible' : ''}`}>
+                  {bubbleSlots.map((rhyme, index) => {
+                      const count = totalBubbleSlots;
+                      const angle = (index / count) * Math.PI * 2 + angleOffset;
+                      const radius = 38; // percent of container size
+                      const x = 50 + radius * Math.cos(angle);
+                      const y = 50 + radius * Math.sin(angle);
+                      const style = { 
+                        '--final-left': `${x}%`, 
+                        '--final-top': `${y}%`,
+                        animationDelay: `${index * 50}ms`
+                      };
+                      const content = showHints && rhyme ? rhyme.word : '?';
+                      const classes = `rhyme-bubble ${rhyme?.isSlant ? 'slant-rhyme' : ''}`.trim();
+                      return (
+                        <div className={classes} style={style} key={`bubble-${targetWordIndex}-${rhyme?.word || 'placeholder'}-${index}`}>
+                          {content}
+                        </div>
+                      );
+                  })}
                 </div>
               </div>
-
-              <div className="rhyme-section other-rhymes">
-                <h4>{translations.otherRhymes}</h4>
-                <div className="rhyme-list" data-empty-text={translations.noRhymesFound}>
-                  {displayWord.rhymes && displayWord.rhymes.length > 0 && (
-                    <>
-                      {/* Direct rhymes first */}
-                      {displayWord.rhymes
-                        .filter(rhyme => !rhyme.isSlant)
-                        .map((rhyme, index) => (
-                          <span 
-                            key={`other-direct-${targetWordIndex}-${rhyme.word}-${index}`} 
-                            className="rhyme"
-                          >
-                            {rhyme.word}
-                          </span>
-                      ))}
-                      {/* Then slant rhymes */}
-                      {displayWord.rhymes
-                        .filter(rhyme => rhyme.isSlant)
-                        .map((rhyme, index) => (
-                          <span 
-                            key={`other-slant-${targetWordIndex}-${rhyme.word}-${index}`} 
-                            className="rhyme slant-rhyme"
-                          >
-                            {rhyme.word}
-                          </span>
-                      ))}
-                    </>
-                  )}
-                </div>
-              </div>
-
               <div className="navigation-buttons">
                 <button className="nav-button prev-button" onClick={handlePreviousWord}>
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -332,7 +280,43 @@ const RhymeExplorerMode = ({
                   </svg>
                 </button>
               </div>
-            </div>
+
+              {/* Settings moved below navigation */}
+              <div className="settings-row">
+                <div className="bars-per-round-setting">
+                  <label>
+                    {translations.barCountLabel}
+                    <select 
+                      value={barsPerRound} 
+                      onChange={(e) => handleBarsChange(Number(e.target.value))}
+                      disabled={isBeatPlaying}
+                    >
+                      {Object.entries(translations.barLengthOptions).map(([value, label]) => (
+                        <option key={value} value={value}>{label}</option>
+                      ))}
+                    </select>
+                  </label>
+                </div>
+                <div className="settings-toggles">
+                  <AudioToggle
+                    isEnabled={isAudioEnabled}
+                    isAvailable={isAudioAvailable}
+                    onToggle={toggleAudio}
+                  />
+                  <div className="hint-toggle">
+                    <span className="toggle-label">{language === 'fi' ? 'Riimivihjeet' : 'Rhyme hints'}</span>
+                    <label className="toggle-switch">
+                      <input
+                        type="checkbox"
+                        checked={showHints}
+                        onChange={() => setShowHints(prev => !prev)}
+                      />
+                      <span className="toggle-slider"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </>
           )}
         </div>
       </BaseTrainingMode>

@@ -239,6 +239,11 @@ const FindRhymesMode = ({
       isLoading={isLoading}
     >
       <div className="find-rhymes-container">
+        {currentWord && (
+          <div className="word-grid">
+            {renderGrid()}
+          </div>
+        )}
         <div className="settings-row">
           <div className="bars-per-round-setting">
             <label>
@@ -255,11 +260,6 @@ const FindRhymesMode = ({
             </label>
           </div>
         </div>
-        {currentWord && (
-          <div className="word-grid">
-            {renderGrid()}
-          </div>
-        )}
       </div>
     </BaseTrainingMode>
   );

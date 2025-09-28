@@ -179,6 +179,24 @@ const SetupPunchlineMode = ({
       onPlayPause={onPlayPause}
       isLoading={isLoading}
     >
+      <div className="rhyme-pattern">
+        {Array.from({ length: barsPerRound }, (_, i) => (
+          <div key={`line-${i + 1}`} className="line">
+            {[0, 1, 2, 3].map((blockIndex) => renderBlock(blockIndex, i + 1))}
+          </div>
+        ))}
+        <div className="line next-word-row">
+          <div className="block"></div>
+          <div className="block"></div>
+          <div className="block"></div>
+          <div className={`next-word-container ${isNextWordChanging ? 'entering' : ''}`}>
+            <span className="next-word-label">NEXT</span>
+            <div className="block next-word">
+              {shuffledWords[(wordCounter + 1) % shuffledWords.length]?.word}
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="settings-row">
         <div className="bars-per-round-setting">
           <label>
@@ -202,24 +220,6 @@ const SetupPunchlineMode = ({
             />
             {translations.showHints}
           </label>
-        </div>
-      </div>
-      <div className="rhyme-pattern">
-        {Array.from({ length: barsPerRound }, (_, i) => (
-          <div key={`line-${i + 1}`} className="line">
-            {[0, 1, 2, 3].map((blockIndex) => renderBlock(blockIndex, i + 1))}
-          </div>
-        ))}
-        <div className="line next-word-row">
-          <div className="block"></div>
-          <div className="block"></div>
-          <div className="block"></div>
-          <div className={`next-word-container ${isNextWordChanging ? 'entering' : ''}`}>
-            <span className="next-word-label">NEXT</span>
-            <div className="block next-word">
-              {shuffledWords[(wordCounter + 1) % shuffledWords.length]?.word}
-            </div>
-          </div>
         </div>
       </div>
     </BaseTrainingMode>

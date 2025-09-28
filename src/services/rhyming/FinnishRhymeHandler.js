@@ -124,7 +124,7 @@ export class FinnishRhymeHandler extends RhymeHandlerBase {
     );
   }
 
-  findRhymingWords(word, group, wordList, maxResults = 5, isFullDict = false) {
+  findRhymingWords(word, group, wordList, maxResults = 6, isFullDict = false) {
     // First get exact rhymes from the same vowel group
     const exactRhymes = this.findExactRhymes(word, group, wordList, isFullDict);
 

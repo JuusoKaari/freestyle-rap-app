@@ -243,11 +243,11 @@ export const generateWordList = async ({
     });
 
     // Get random selection if we have too many rhymes
-    const selectedThemedRhymes = allThemedRhymes.length > 5 ? 
-      getRandomItems(allThemedRhymes, 5) : allThemedRhymes;
+    const selectedThemedRhymes = allThemedRhymes.length > 6 ? 
+      getRandomItems(allThemedRhymes, 6) : allThemedRhymes;
 
-    const selectedFullRhymes = allFullRhymes.length > 5 ? 
-      getRandomItems(allFullRhymes, 5) : allFullRhymes;
+    const selectedFullRhymes = allFullRhymes.length > 6 ? 
+      getRandomItems(allFullRhymes, 6) : allFullRhymes;
 
     return {
       word,

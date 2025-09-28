@@ -144,7 +144,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-top: 1rem; /* moved to bottom */
+  margin-bottom: 0;
   color: var(--text-color, #fff);
   padding: 1rem;
   background: rgba(255, 255, 255, 0.05);

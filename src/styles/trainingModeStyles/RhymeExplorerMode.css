@@ -1,30 +1,137 @@
+.hint-toggle .toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.hint-toggle .toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.hint-toggle .toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2e2e2e;
+  transition: .4s;
+  border-radius: 24px;
+}
+
+.hint-toggle .toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+.hint-toggle input:checked + .toggle-slider {
+  background-color: #2196F3;
+}
+
+.hint-toggle input:checked + .toggle-slider:before {
+  transform: translateX(26px);
+}
+
+.hint-toggle .toggle-label {
+  font-size: 0.9em;
+  color: #666;
+  user-select: none;
+}
 .rhyme-explorer {
   width: 100%;
-  max-width: 600px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 1rem;
 }
 
-.word-card {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  min-height: 500px;
+.word-card { /* legacy: hidden in new design */
+  display: none;
 }
 
-.main-word {
-  text-align: center;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  min-height: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.main-word { display: none; }
+
+.rhyme-explorer-stage {
   position: relative;
+  width: min(100%, 40vh);
+  aspect-ratio: 1 / 1;
+  max-width: 900px;
+  margin: 0 auto 1rem auto;
 }
+
+.rhyme-progress-circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(var(--circle-scale, 1));
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  border: 2px solid rgba(79, 86, 255, 0.35);
+  box-shadow: 0 0 0 1px rgba(124, 130, 255, 0.15) inset;
+  transition: transform 0.05s linear;
+  pointer-events: none;
+  z-index: 1; /* behind center word but above lines */
+}
+
+.rhyme-lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.rhyme-line {
+  stroke: rgba(255,255,255,0.25);
+  stroke-width: 0.6;
+  vector-effect: non-scaling-stroke;
+  opacity: 0;
+  animation: lineFade 0.35s ease-out both;
+}
+
+@keyframes lineFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.center-word {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  padding: 1rem 1rem 1rem 1rem;
+  background: #1f1f1f; /* opaque to hide lines */
+  border-radius: 999px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  z-index: 2;
+}
+
+.center-word h3 {
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  margin: 0 0 0.35rem 0;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+}
+
+.center-word .group-label { display: none; }
 
 .main-word h3 {
   font-size: 2rem;
@@ -53,13 +160,7 @@
   font-family: monospace;
 }
 
-.rhyme-section {
-  padding: 1rem;
-  border-radius: 8px;
-  min-height: 100px;
-  display: flex;
-  flex-direction: column;
-}
+.rhyme-section { display: none; }
 
 .rhyme-section h4 {
   margin: 0 0 1rem 0;
@@ -71,62 +172,75 @@
   hyphens: auto;
 }
 
-.themed-rhymes {
-  background: rgba(76, 175, 80, 0.1);
+.themed-rhymes { display: none; }
+.other-rhymes { display: none; }
+
+.rhyme-bubbles {
+  position: absolute;
+  inset: 0;
+  z-index: 1; /* below center word by default */
 }
 
-.other-rhymes {
-  background: rgba(255, 255, 255, 0.05);
-}
-
-.rhyme-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  justify-content: center;
-  flex: 1;
-  align-content: flex-start;
-  min-height: 50px;
-}
-
-.rhyme-list:empty::after {
-  content: attr(data-empty-text);
-  color: rgba(255, 255, 255, 0.4);
-  font-style: italic;
-  font-size: 0.9rem;
-  display: flex;
+.rhyme-bubble {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  min-width: 96px;
+  max-width: clamp(200px, 34vw, 360px);
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  background: #2a2a2a; /* opaque to hide lines */
+  color: rgba(255,255,255,0.96);
+  font-size: clamp(1.6rem, 4vw, 2rem);
+  text-align: center;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+  line-height: 1.05;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 1px solid rgba(0,0,0,0.25);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+  animation: bubblePop 0.35s ease-out both;
 }
 
-.rhyme {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 0.4rem 0.8rem;
-  border-radius: 4px;
-  border-color: #fff;
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.9);
-  text-align: center;
-  animation: fadeIn 0.3s ease-in backwards;
+/* When showing hints, render bubbles behind the main word and slightly gray them */
+.rhyme-bubbles.hints-visible {
+  z-index: 1;
 }
 
-/* Add staggered delays for each rhyme word */
-.rhyme:nth-child(1) { animation-delay: 0.1s; }
-.rhyme:nth-child(2) { animation-delay: 0.15s; }
-.rhyme:nth-child(3) { animation-delay: 0.2s; }
-.rhyme:nth-child(4) { animation-delay: 0.25s; }
-.rhyme:nth-child(5) { animation-delay: 0.3s; }
-.rhyme:nth-child(6) { animation-delay: 0.35s; }
-.rhyme:nth-child(7) { animation-delay: 0.4s; }
-.rhyme:nth-child(8) { animation-delay: 0.45s; }
-.rhyme:nth-child(9) { animation-delay: 0.5s; }
-.rhyme:nth-child(10) { animation-delay: 0.55s; }
+.rhyme-bubbles.hints-visible .rhyme-bubble {
+  color: rgba(220, 220, 220, 0.9);
+}
+
+.rhyme-bubble:hover {
+  background: rgba(255,255,255,0.18);
+}
+
+@keyframes bubblePop {
+  0% {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.6);
+    opacity: 0;
+  }
+  70% {
+    left: var(--final-left, 50%);
+    top: var(--final-top, 50%);
+    transform: translate(-50%, -50%) scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    left: var(--final-left, 50%);
+    top: var(--final-top, 50%);
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
 
 .slant-rhyme {
-  background: rgba(255, 255, 255, 0.05);
-  color: rgba(180, 180, 180, 0.7);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(200, 200, 200, 0.8);
 }
 
 .navigation-buttons {
@@ -222,28 +336,8 @@
 
 /* Mobile responsiveness */
 @media screen and (max-width: 768px) {
-  .word-card {
-    padding: 1.5rem;
-    min-height: 450px;
-    gap: 1rem;
-  }
-
-  .main-word {
-    min-height: 80px;
-    padding-bottom: 1rem;
-  }
-
-  .main-word h3 {
-    font-size: 1.8rem;
-  }
-
-  .rhyme-section {
-    min-height: 100px;
-  }
-
-  .rhyme-list {
-    min-height: 50px;
-  }
+  .rhyme-explorer-stage { aspect-ratio: 1 / 1; }
+  .center-word { width: auto; min-width: 0; }
 
   .nav-button {
     padding: 0.5rem;
@@ -266,40 +360,8 @@
 }
 
 @media screen and (max-width: 480px) {
-  .word-card {
-    padding: 1rem;
-    min-height: 400px;
-    gap: 0.75rem;
-  }
-
-  .main-word {
-    min-height: 70px;
-    padding-bottom: 0.75rem;
-  }
-
-  .main-word h3 {
-    font-size: 1.6rem;
-  }
-
-  .rhyme-section {
-    min-height: 120px;
-    padding: 0.75rem;
-  }
-
-  .rhyme-list {
-    min-height: 70px;
-    gap: 0.4rem;
-  }
-
-  .rhyme {
-    padding: 0.3rem 0.6rem;
-    font-size: 0.85rem;
-  }
-
-  /* Hide rhymes after the first 3 */
-  .rhyme-list .rhyme:nth-child(n+5) {
-    display: none;
-  }
+  .center-word { width: auto; min-width: 0; padding: 1rem 1rem 1.5rem 1rem; }
+  .center-word h3 { font-size: clamp(1.6rem, 7vw, 2.2rem); }
 
   .settings-row {
     flex-direction: row;
@@ -362,14 +424,46 @@
 
 .settings-row {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
   gap: 1rem;
+  margin-top: 1rem; /* below navigation */
+  margin-bottom: 0;
+  flex-wrap: wrap;
 }
 
 .bars-per-round-setting {
-  flex: 1;
+  flex: 0 1 auto;
+}
+.settings-toggles {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1 1 auto;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+  .settings-row {
+    gap: 0.75rem;
+  }
+  .settings-toggles {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .settings-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .settings-toggles {
+    justify-content: space-between;
+  }
+  .bars-per-round-setting label {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 .bars-per-round-setting label {
@@ -427,7 +521,33 @@
   bottom: 0;
   left: 50% !important;
   transform: translateX(-50%);
-  height: 2px;
+  height: 3px;
   background: linear-gradient(to right, #7c82ff, #4f56ff);
   transition: width 0.05s linear;
+  border-radius: 3px;
+  max-width: calc(100% - 2.5rem);
 } 
+
+/* Hint toggle - mirror AudioToggle exactly */
+.hint-toggle {
+  display: flex;
+  align-items: right;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+/* Prevent cross-mode styles from altering the hint toggle */
+.rhyme-explorer .hint-toggle {
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+/* Reset any generic .hint-toggle label rules from other stylesheets */
+.rhyme-explorer .hint-toggle label.toggle-switch,
+.rhyme-explorer .hint-toggle label.toggle-switch:hover {
+  background: transparent !important;
+  padding: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+}

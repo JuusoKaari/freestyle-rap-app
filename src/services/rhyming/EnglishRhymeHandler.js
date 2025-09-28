@@ -54,7 +54,7 @@ export class EnglishRhymeHandler extends RhymeHandlerBase {
     );
   }
 
-  findRhymingWords(word, group, wordList, maxResults = 5) {
+  findRhymingWords(word, group, wordList, maxResults = 6) {
     // First get exact rhymes from the same vowel group
     const exactRhymes = this.findExactRhymes(word, group, wordList);
 
