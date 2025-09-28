@@ -22,6 +22,9 @@
 import { getVocabularyData } from '../data/vocabulary/vocabularyConfig';
 import { FinnishRhymeHandler } from './rhyming/FinnishRhymeHandler';
 import { EnglishRhymeHandler } from './rhyming/EnglishRhymeHandler';
+import { EnhancedRhymeHandler } from './rhyming/EnhancedRhymeHandler';
+import { getCanonicalVocabulary, getCanonicalFullDictionary, canonicalToGroupMap } from './VocabularyService';
+import { scoreSimilarity, DISTINCTIVE_WEIGHTS_FI, DISTINCTIVE_WEIGHTS_DEFAULT } from './rhyming/EnhancedRhymeHandler';
 import { getDisplayWord, splitWord } from '../utils/wordUtils';
 import { isEnglishVocabulary } from '../utils/languageUtils';
 
@@ -138,7 +141,12 @@ export const generateWordList = async ({
   syllableRange = { min: 1, max: 10 },
   language = 'fi'  // Add language parameter with default value
 }) => {
-  const vocabData = getVocabulary(vocabulary, language);
+  const useUnified = true;
+
+  // When unified flag is on, obtain canonical then adapt to group map
+  const vocabData = useUnified
+    ? canonicalToGroupMap(getCanonicalVocabulary(vocabulary))
+    : getVocabulary(vocabulary, language);
   if (!vocabData) return [];
 
   // Filter patterns based on syllable count
@@ -171,30 +179,57 @@ export const generateWordList = async ({
       word: word,
       phonetic: phonetic,
       group: group,
-      rhymes: [],
-      themed_rhymes: []
+      rhymes: []
     }));
     return spreadOutWords(wordObjects);
   }
 
   // Get rhyming handler based on language
   const isEnglish = isEnglishVocabulary(vocabulary);
-  const rhymeHandler = isEnglish ? new EnglishRhymeHandler() : new FinnishRhymeHandler();
+  const rhymeHandler = useUnified
+    ? new EnhancedRhymeHandler(isEnglish ? 'en' : 'fi')
+    : (isEnglish ? new EnglishRhymeHandler() : new FinnishRhymeHandler());
 
   // Get full dictionary for rhyme hints
-  const fullDict = getFullDictionary(vocabulary);
+  const fullDict = useUnified
+    ? canonicalToGroupMap(getCanonicalFullDictionary(vocabulary))
+    : getFullDictionary(vocabulary);
 
   // Process each word to find its rhyming pairs
   const processedWords = allWords.map(({ word, phonetic, group }) => {
-    if (!group) return { word, phonetic, group, rhymes: [], themed_rhymes: [] };
+    if (!group) return { word, phonetic, group, rhymes: [] };
 
+    if (useUnified && rhymeHandler.findUnifiedRhymes) {
+      const { themed, full } = rhymeHandler.findUnifiedRhymes(
+        word,
+        group,
+        filteredVocab,
+        fullDict,
+        { maxPerBucket: 6, minRequired: minWordsInGroup }
+      );
+
+      const filterBySyllables = (arr) => arr.filter(r => {
+        const rhymePattern = r.group;
+        if (!rhymePattern) return true; // allow partials without groups
+        const syllableCount = rhymePattern.split('-').length;
+        return syllableCount >= syllableRange.min && syllableCount <= syllableRange.max;
+      });
+
+      const filteredThemed = filterBySyllables(themed);
+      const filteredFull = filterBySyllables(full);
+
+      // Default random ordering for other modes
+      const merged = [...filteredThemed, ...filteredFull];
+      const shuffledAll = getRandomItems(merged, merged.length);
+      const selected = shuffledAll.slice(0, 12);
+
+      return { word, phonetic, group, rhymes: selected };
+    }
+
+    // Legacy path (kept for safety; should not be used with unified handler enabled)
     // Find exact rhymes from the same group in filtered vocabulary (themed)
     const exactThemedRhymes = rhymeHandler.findExactRhymes(word, group, filteredVocab, false);
-    
-    // Find exact rhymes from full dictionary
     const exactFullRhymes = rhymeHandler.findExactRhymes(word, group, fullDict, true);
-    
-    // Combine exact rhymes, prioritizing themed ones
     const allExactRhymes = [
       ...exactThemedRhymes.map(rhyme => ({ ...rhyme, isSlant: false, isThemed: true })),
       ...exactFullRhymes
@@ -202,16 +237,10 @@ export const generateWordList = async ({
         .map(rhyme => ({ ...rhyme, isSlant: false, isThemed: false }))
     ];
 
-    // Only look for slant rhymes if we don't have enough exact rhymes
     let slantRhymes = [];
     if (allExactRhymes.length < minWordsInGroup) {
-      // First try slant rhymes from filtered vocabulary
       const slantThemedRhymes = rhymeHandler.findSlantRhymes(word, group, filteredVocab, false);
-      
-      // Then try slant rhymes from full dictionary
       const slantFullRhymes = rhymeHandler.findSlantRhymes(word, group, fullDict, true);
-      
-      // Combine slant rhymes, prioritizing themed ones
       slantRhymes = [
         ...slantThemedRhymes.map(rhyme => ({ ...rhyme, isSlant: true, isThemed: true })),
         ...slantFullRhymes
@@ -220,7 +249,6 @@ export const generateWordList = async ({
       ];
     }
 
-    // Combine and filter themed rhymes
     const allThemedRhymes = [
       ...allExactRhymes.filter(rhyme => rhyme.isThemed),
       ...slantRhymes.filter(rhyme => rhyme.isThemed)
@@ -231,7 +259,6 @@ export const generateWordList = async ({
       return syllableCount >= syllableRange.min && syllableCount <= syllableRange.max;
     });
 
-    // Combine and filter full dictionary rhymes
     const allFullRhymes = [
       ...allExactRhymes.filter(rhyme => !rhyme.isThemed),
       ...slantRhymes.filter(rhyme => !rhyme.isThemed)
@@ -242,25 +269,14 @@ export const generateWordList = async ({
       return syllableCount >= syllableRange.min && syllableCount <= syllableRange.max;
     });
 
-    // Get random selection if we have too many rhymes
-    const selectedThemedRhymes = allThemedRhymes.length > 6 ? 
-      getRandomItems(allThemedRhymes, 6) : allThemedRhymes;
-
-    const selectedFullRhymes = allFullRhymes.length > 6 ? 
-      getRandomItems(allFullRhymes, 6) : allFullRhymes;
-
-    return {
-      word,
-      phonetic,
-      group,
-      rhymes: selectedFullRhymes,
-      themed_rhymes: selectedThemedRhymes
-    };
+    const merged = [...allThemedRhymes, ...allFullRhymes];
+    const selected = merged.length > 12 ? getRandomItems(merged, 12) : merged;
+    return { word, phonetic, group, rhymes: selected };
   });
 
   // Filter words that have enough rhyming pairs (considering both themed and full rhymes)
   const wordsWithRhymes = processedWords.filter(item => 
-    (item.themed_rhymes.length + item.rhymes.length) >= minWordsInGroup - 1
+    (item.rhymes.length) >= minWordsInGroup - 1
   );
 
   if (wordsWithRhymes.length === 0) return [];

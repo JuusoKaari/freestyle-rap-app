@@ -39,6 +39,12 @@ Enhanced RhymeHandler
 - Maintained or improved performance.
 
 ## Status / Dependencies
-- Status: Planning
+- Status: Implemented and enabled (handlers + WordListService + FI Search)
 - Dependency: VocabularyService canonical contract available
+
+## Differences (documented)
+- Handlers vs FI Search:
+  - Handlers: group-based exact/slant logic, consume themed + full dicts.
+  - FI Search: computes patterns from raw input, queries full dict by suffix; includes custom similarity sorting in UI.
+- Unified handler now provides tiers (exact/extended/partial) and similarity scoring; FI Search consumes it when `VITE_RHYME_UNIFIED` is enabled.
 

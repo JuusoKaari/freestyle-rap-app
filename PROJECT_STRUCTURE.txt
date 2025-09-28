@@ -104,6 +104,8 @@ Root Files:
 
   /services
     - WordListService.js      : Service for word list generation and rhyme management
+                               Now uses EnhancedRhymeHandler and canonical VocabularyService
+                               Outputs unified `rhymes` list (themed_rhymes removed)
     - RhythmService.js        : Service for rhythm and timing management
     - AudioService.js         : Core Web Audio API service for audio playback and routing
                                Handles audio context, gain nodes, and beat buffer management
@@ -139,6 +141,41 @@ Root Files:
       - RhymeHandlerBase.js   : Base class for language-specific rhyme handling
       - EnglishRhymeHandler.js : English-specific rhyme generation and pattern matching
       - FinnishRhymeHandler.js : Finnish-specific rhyme generation with vowel harmony
+      - EnhancedRhymeHandler.js : Unified handler providing multi-tier matching and sorting utils
+    - VocabularyService.js    : Canonical vocabulary adapter (returns canonical shape; adapters to group map)
+
+Rhyme System (Current):
+----------------------
+1) Data sources
+   - Vocabulary data: `src/data/vocabulary/vocabularyConfig.js` (built-ins + customs)
+   - Canonical accessors: `src/services/VocabularyService.js`
+     • `getCanonicalVocabulary(vocabId)` and `getCanonicalFullDictionary(vocabId)`
+     • `canonicalToGroupMap(...)` adapter used by rhyme handlers
+
+2) Core logic
+   - Unified handler: `src/services/rhyming/EnhancedRhymeHandler.js`
+     • Tiers: exact (same group), extended (same ending), partial (similarity-based)
+     • Similarity scoring: end-match emphasis + distinctive consonant weights
+     • Shared sorting utilities: `SORT_METHODS`, `sortWordsByMode`, `scoreSimilarity`, seeded shuffle
+     • Language-aware weights: default vs Finnish (`DISTINCTIVE_WEIGHTS_FI`)
+
+3) Word list generation
+   - `src/services/WordListService.js`
+     • Fetches canonical vocab and full dictionary; adapts to group maps
+     • Uses `EnhancedRhymeHandler.findUnifiedRhymes(...)`
+     • Filters by syllable range
+     • Default ordering: random (modes can apply their own sorting)
+     • Output shape per word: `{ word, phonetic, group, rhymes }`
+       (Note: `themed_rhymes` removed)
+
+4) UI consumption
+   - Modes that list/sort words:
+     • RhymeSearchMode_FI: uses unified handler directly and shared sort utilities (with UI controls)
+     • Other modes: consume `rhymes` from `WordListService` (already similarity-sorted)
+
+5) Legacy handlers
+   - `EnglishRhymeHandler` / `FinnishRhymeHandler` remain as underlying primitives
+     but app routes through `EnhancedRhymeHandler` in production.
 
   /hooks
     - useAudioController.js   : Hook for high-level audio control and musical timing

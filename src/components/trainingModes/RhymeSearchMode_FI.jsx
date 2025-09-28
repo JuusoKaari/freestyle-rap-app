@@ -27,13 +27,10 @@ import { useTranslation } from '../../services/TranslationContext';
 import { trainingModes } from '../../data/trainingModes';
 import FI__full_dict from '../../data/vocabulary/FI__full_dict';
 import { splitIntoSyllables, getSyllableVowelPattern } from '../../utils/wordProcessor';
-
-// Sort methods
-const SORT_METHODS = {
-  SIMILARITY: 'similarity',
-  ALPHABETICAL: 'alphabetical',
-  RANDOM: 'random'
-};
+import { EnhancedRhymeHandler } from '../../services/rhyming/EnhancedRhymeHandler';
+import { getCanonicalFullDictionary, canonicalToGroupMap } from '../../services/VocabularyService';
+// Sort methods (shared)
+import { SORT_METHODS, sortWordsByMode, DISTINCTIVE_WEIGHTS_FI } from '../../services/rhyming/EnhancedRhymeHandler';
 
 const RhymeSearchMode = ({ 
   onReturnToMenu,
@@ -53,77 +50,8 @@ const RhymeSearchMode = ({
   const [sortMethod, setSortMethod] = useState(SORT_METHODS.SIMILARITY);
   const [collectedGroups, setCollectedGroups] = useState({});
 
-  // Distinctive consonants that heavily influence the word's sound
-  const DISTINCTIVE_CONSONANTS = {
-    'r': 2.0,  // Rolling R is very distinctive
-    's': 1.5,  // Sibilant S is quite distinctive
-    'h': 1.2,  // Aspirated H is somewhat distinctive
-    'j': 1.2,  // Approximant J is somewhat distinctive
-    'v': 1.1   // Voiced V is slightly distinctive
-  };
-
-  // Calculate similarity score between two words
-  const calculateSimilarity = (word1, word2) => {
-    // If words are of very different lengths, they're not similar
-    if (Math.abs(word1.length - word2.length) > 3) {
-      return 0;
-    }
-
-    let matches = 0;
-    const len = Math.min(word1.length, word2.length);
-    
-    // First, check for distinctive consonant presence
-    Object.entries(DISTINCTIVE_CONSONANTS).forEach(([consonant, weight]) => {
-      const inWord1 = word1.includes(consonant);
-      const inWord2 = word2.includes(consonant);
-      
-      if (inWord1 && inWord2) {
-        // Both words have the distinctive consonant
-        matches += weight;
-      } else if (inWord1 !== inWord2) {
-        // One has it, the other doesn't - penalize
-        matches -= weight * 0.5;
-      }
-    });
-    
-    // Count matching characters from the end (more important for rhyming)
-    let endMatches = 0;
-    for (let i = 1; i <= len; i++) {
-      const char1 = word1[word1.length - i];
-      const char2 = word2[word2.length - i];
-      
-      if (char1 === char2) {
-        endMatches += 1;
-        // Give extra weight if it's a distinctive consonant
-        if (DISTINCTIVE_CONSONANTS[char1]) {
-          endMatches += DISTINCTIVE_CONSONANTS[char1] * 0.5;
-        }
-      } else {
-        break;
-      }
-    }
-    matches += endMatches * 2; // End matches are worth double
-    
-    // Count matching characters from the start
-    let startMatches = 0;
-    for (let i = 0; i < len; i++) {
-      const char1 = word1[i];
-      const char2 = word2[i];
-      
-      if (char1 === char2) {
-        startMatches += 0.5;
-        // Give extra weight if it's a distinctive consonant
-        if (DISTINCTIVE_CONSONANTS[char1]) {
-          startMatches += DISTINCTIVE_CONSONANTS[char1] * 0.25;
-        }
-      } else {
-        break;
-      }
-    }
-    matches += startMatches;
-
-    return matches;
-  };
+  // Use shared Finnish weights profile for similarity sorting
+  const FI_WEIGHTS = DISTINCTIVE_WEIGHTS_FI;
 
   // Process the input word and find rhyming patterns
   const processSearch = (word) => {
@@ -166,88 +94,54 @@ const RhymeSearchMode = ({
     const searchWordNoDashes = cleanWord.replace(/-/g, '');
     const results = [];
 
-    // Find exact matches
-    if (FI__full_dict[exactPattern]) {
-      const exactWords = FI__full_dict[exactPattern]
-        .map(w => w.replace(/-/g, '')) // Remove dashes from all words
-        .filter(w => w !== searchWordNoDashes && w !== cleanWord); // Exclude search word in both forms
+    // Unified rhyme path
+      const fullCanonical = getCanonicalFullDictionary('fi_generic_rap');
+      const fullDict = canonicalToGroupMap(fullCanonical);
+      const themedDict = {}; // This mode has no themed context; keep empty
+
+      const handler = new EnhancedRhymeHandler('fi');
+      const { themed, full } = handler.findUnifiedRhymes(cleanWord, exactPattern, themedDict, fullDict, {
+        maxPerBucket: 200, // Allow larger buckets for search mode UI
+        minRequired: 1
+      });
+
+      // Transform unified results into sections expected by UI
+      const exactWords = full
+        .filter(r => r.group === exactPattern && !r.isSlant)
+        .map(r => r.word.replace(/-/g, ''))
+        .filter(w => w !== searchWordNoDashes && w !== cleanWord);
+
+      const extendedWords = full
+        .filter(r => r.isSlant && r.group)
+        .map(r => r.word.replace(/-/g, ''))
+        .filter(w => w !== searchWordNoDashes && w !== cleanWord);
+
+      const partialWords = full
+        .filter(r => !r.group)
+        .map(r => r.word.replace(/-/g, ''))
+        .filter(w => w !== searchWordNoDashes && w !== cleanWord);
 
       if (exactWords.length > 0) {
-        console.log('Found exact matches:', exactWords.length);
         results.push(['exact', { pattern: exactPattern, words: exactWords }]);
       }
-    }
-
-    // Find extended matches (patterns that end with the same vowels)
-    const extendedWords = new Set();
-    const searchVowels = vowelPattern.join('-');
-    
-    Object.entries(FI__full_dict).forEach(([pattern, words]) => {
-      // Skip the exact pattern we already processed
-      if (pattern === exactPattern) return;
-      
-      // Check if this pattern ends with our search pattern
-      if (pattern.endsWith(searchVowels)) {
-        words.forEach(word => {
-          const cleanWord = word.replace(/-/g, '');
-          extendedWords.add(cleanWord);
-        });
+      if (extendedWords.length > 0) {
+        results.push(['extended', { pattern: `*-${exactPattern}`, words: Array.from(new Set(extendedWords)) }]);
       }
-    });
-
-    // Add extended matches if any were found
-    if (extendedWords.size > 0) {
-      console.log('Found extended matches:', extendedWords.size);
-      results.push(['extended', { 
-        pattern: `*-${exactPattern}`, 
-        words: Array.from(extendedWords)
-      }]);
-    }
-
-    // If no matches found, try partial matches from the end
-    if (results.length === 0) {
-      console.log('No exact or extended matches found, trying partial matches');
-      // Try progressively shorter patterns from the end
-      for (let i = vowelPattern.length - 1; i >= 1; i--) {
-        const partialPattern = vowelPattern.slice(-i).join('-');
-        console.log('Trying partial pattern:', partialPattern);
-        const partialWords = new Set();
-        
-        Object.entries(FI__full_dict).forEach(([pattern, words]) => {
-          // Check if this pattern ends with our partial pattern
-          if (pattern.endsWith(partialPattern)) {
-            console.log('Found matching pattern:', pattern);
-            words.forEach(word => {
-              const cleanWord = word.replace(/-/g, '');
-              if (cleanWord !== searchWordNoDashes) {
-                partialWords.add(cleanWord);
-              }
-            });
-          }
-        });
-
-        if (partialWords.size > 0) {
-          console.log('Found partial matches:', partialWords.size, 'with pattern:', partialPattern);
-          results.push(['partial', {
-            pattern: `*-${partialPattern}`,
-            words: Array.from(partialWords)
-          }]);
-          break; // Stop after finding first set of partial matches
-        } else {
-          console.log('No matches found for pattern:', partialPattern);
-        }
+      if (partialWords.length > 0 && results.length === 0) {
+        // Only add partial if no exact/extended, matches legacy behavior
+        results.push(['partial', { pattern: `*-${vowelPattern.slice(-1).join('-')}`, words: Array.from(new Set(partialWords)) }]);
       }
-    }
 
-    if (results.length > 0) {
-      console.log('Final results:', results.map(([type, data]) => `${type}: ${data.words.length} words`));
-      setError('');
-      setSearchResults(results);
-    } else {
-      console.log('No matches found at all');
-      setError(translations.noMatchesFound || 'No rhyming words found');
-      setSearchResults(null);
-    }
+      if (results.length > 0) {
+        setError('');
+        setSearchResults(results);
+      } else {
+        setError(translations.noMatchesFound || 'No rhyming words found');
+        setSearchResults(null);
+      }
+      return;
+
+    // Legacy search path removed; unified handler covers exact/extended/partial
   };
 
   // Handle input change with debounce
@@ -259,28 +153,7 @@ const RhymeSearchMode = ({
     return () => clearTimeout(timer);
   }, [searchWord]);
 
-  // Shuffle an array using Fisher-Yates algorithm with seed
-  const shuffleArray = (array, seed) => {
-    const shuffled = [...array];
-    let currentIndex = shuffled.length;
-    let temporaryValue, randomIndex;
-
-    // Create a seeded random number generator
-    const random = () => {
-      seed = (seed * 16807) % 2147483647;
-      return (seed - 1) / 2147483646;
-    };
-
-    while (currentIndex !== 0) {
-      randomIndex = Math.floor(random() * currentIndex);
-      currentIndex -= 1;
-      temporaryValue = shuffled[currentIndex];
-      shuffled[currentIndex] = shuffled[randomIndex];
-      shuffled[randomIndex] = temporaryValue;
-    }
-
-    return shuffled;
-  };
+  // Randomization is provided by the shared utilities
 
   const handleRandomize = () => {
     setSortMethod(SORT_METHODS.RANDOM);
@@ -288,20 +161,7 @@ const RhymeSearchMode = ({
   };
 
   const sortWords = (words, method, baseWord) => {
-    switch (method) {
-      case SORT_METHODS.ALPHABETICAL:
-        return [...words].sort();
-      case SORT_METHODS.SIMILARITY:
-        return [...words].sort((a, b) => {
-          const simA = calculateSimilarity(baseWord, a);
-          const simB = calculateSimilarity(baseWord, b);
-          return simB - simA;
-        });
-      case SORT_METHODS.RANDOM:
-        return shuffleArray(words, randomSeed);
-      default:
-        return words;
-    }
+    return sortWordsByMode(words, method, baseWord, { seed: randomSeed, weights: FI_WEIGHTS });
   };
 
   const renderSortControls = () => (
