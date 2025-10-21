@@ -17,6 +17,11 @@ Root Files:
   - LICENSE                   : MIT license file
   - README.md                 : Project documentation and setup instructions
   - PROJECT_STRUCTURE.txt     : This file - comprehensive project documentation
+  - LYRICS_WRITING_MODE_PLAN.md : Planning document for lyrics writing training mode
+  - TRAINING_MODE_LAUNCH_DIALOG_PLAN.md : Planning document for training mode launch dialog
+  - REFACTORING_PLAN.md       : Refactoring and improvement plans
+  - RHYME_SYSTEM_UNIFICATION.md : Documentation of rhyme system architecture
+  - VOCABULARY_SERVICE_REFACTORING.md : Vocabulary service refactoring plans
 
 /public
   - android-chrome-192x192.png : Android icon (192x192)
@@ -67,6 +72,7 @@ Root Files:
       - FindRhymesMode.jsx     : Find rhymes mode component
       - RhymeSearchMode_FI.jsx : Finnish-specific rhyme search mode
       - SlotMachineMode.jsx    : Slot machine mode component
+      - LyricsWritingMode_FI.jsx : Finnish lyrics writing training mode component
     
     - ModeSelector.jsx         : Component for selecting different training modes
     - BeatSelector.jsx         : Full-featured beat selection and control
@@ -101,6 +107,7 @@ Root Files:
       - FindRhymesMode.css     : Styles for find rhymes mode
       - RhymeSearchMode.css    : Styles for rhyme search mode
       - SlotMachineMode.css    : Styles for slot machine mode
+      - LyricsWritingMode.css  : Styles for lyrics writing mode
 
   /services
     - WordListService.js      : Service for word list generation and rhyme management
@@ -216,7 +223,33 @@ Rhyme System (Current):
       - EN__full_dict.js       : Complete English dictionary
       
       /raw_wordlists/          : Raw text files for vocabulary processing
-    
+        /EN__full_dict_parts/  : English full dictionary source files
+          - animals.txt         : Source file for English animals vocabulary
+          - EN_animals_rhymes.txt : Rhyme data for English animals
+          - EN_generic_rap_rhymes.txt : Rhyme data for English generic rap
+          - eng_random_words.txt : Random English words collection
+        /FI__full_dict_parts/  : Finnish full dictionary source files
+          - combined_finnish_lyrics.txt : Combined Finnish lyrics for vocabulary
+          - FI_GENIUS.txt       : Finnish words from Genius lyrics
+          - FI_KOTUS.txt        : Finnish words from KOTUS dictionary
+          - FI_RANDOM_CORPUS.txt : Random Finnish corpus words
+        /EN_animals.txt        : English animals vocabulary source
+        /EN_cars.txt           : English cars vocabulary source
+        /EN_clothes_and_accessories.txt : English clothes vocabulary source
+        /EN_generic_rap.txt    : English generic rap vocabulary source
+        /EN_numbers.txt        : English numbers vocabulary source
+        /EN_science.txt        : English science vocabulary source
+        /EN_shopping_list.txt  : English shopping list vocabulary source
+        /FI_autot.txt          : Finnish cars vocabulary source
+        /FI_elaimet.txt        : Finnish animals vocabulary source
+        /FI_generic_rap.txt    : Finnish generic rap vocabulary source
+        /FI_lovebattle_2025.txt : Finnish love battle vocabulary source
+        /FI_numerot.txt        : Finnish numbers vocabulary source
+        /FI_ostoslista.txt     : Finnish shopping list vocabulary source
+        /FI_tiede.txt          : Finnish science vocabulary source
+        /FI_vaatteet_ja_asusteet.txt : Finnish clothes vocabulary source
+      - vocabularyConfig.js       : Configuration for different vocabulary sets
+
     /vocabulary_audio_metadata/  : Generated metadata for word audio files
       - FI_generic_rap_audio_metadata.js  : Audio URLs for Finnish rap vocabulary
       - FI_elaimet_audio_metadata.js      : Audio URLs for Finnish animal vocabulary
@@ -237,6 +270,7 @@ Rhyme System (Current):
     
     /beat_metadata/
       - index.js              : Beat metadata exports and configuration
+      - acapella.js           : Acapella (no beat) metadata for vocal practice
       - going_strong.js       : Going Strong beat metadata and variations
       - night_ride.js         : Night Ride beat metadata and variations
       - long_road.js          : Long Road beat metadata and variations
@@ -336,6 +370,7 @@ Key Features:
    - Visual Rhyme Map for pattern exploration (language-specific versions)
    - Rhyme Search mode for Finnish with advanced filtering
    - Slot Machine mode with adjustable bar length and continuous word flow
+   - Lyrics Writing mode for structured rap composition practice
 
 2. Vocabulary Management:
    - Multiple predefined word sets per language

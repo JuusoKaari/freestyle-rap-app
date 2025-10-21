@@ -32,11 +32,11 @@ const ModeSelector = ({ onSelectMode }) => {
 
   // Categorize modes
   const tools = trainingModes.filter(mode => 
-    (mode.id === 'rhyme-map' || (mode.id === 'rhyme-search' && language === 'fi'))
+    (mode.id === 'rhyme-map' || (mode.id === 'rhyme-search' && language === 'fi') || (mode.id === 'lyrics-writing' && language === 'fi'))
   ).sort((a, b) => getDifficultyOrder(a.difficulty) - getDifficultyOrder(b.difficulty));
 
   const practiceGames = trainingModes.filter(mode => 
-    mode.id !== 'rhyme-map' && mode.id !== 'rhyme-search'
+    mode.id !== 'rhyme-map' && mode.id !== 'rhyme-search' && mode.id !== 'lyrics-writing'
   ).sort((a, b) => getDifficultyOrder(a.difficulty) - getDifficultyOrder(b.difficulty));
 
   const renderModeCards = (modes, showDifficulty = true) => (

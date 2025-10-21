@@ -16,6 +16,7 @@ import RhymeExplorerMode from './trainingModes/RhymeExplorerMode';
 import FindRhymesMode from './trainingModes/FindRhymesMode';
 import RhymeMapMode from './trainingModes/RhymeMapMode';
 import RhymeSearchMode from './trainingModes/RhymeSearchMode_FI';
+import LyricsWritingModeFI from './trainingModes/LyricsWritingMode_FI';
 import SlotMachineMode from './trainingModes/SlotMachineMode';
 import SetupPunchlineMode from './trainingModes/SetupPunchlineMode';
 import { trainingModes } from '../data/trainingModes';
@@ -86,6 +87,12 @@ const TrainingModeRenderer = ({
     case 'rhyme-search':
       return (
         <RhymeSearchMode
+          {...commonProps}
+        />
+      );
+    case 'lyrics-writing':
+      return (
+        <LyricsWritingModeFI
           {...commonProps}
         />
       );

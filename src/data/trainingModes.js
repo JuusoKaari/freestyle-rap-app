@@ -125,6 +125,47 @@ export const trainingModes = [
     }
   },
   {
+    id: 'lyrics-writing',
+    icon: '📝',
+    difficulty: 'easy',
+    translations: {
+      en: {
+        name: 'Lyrics Notepad (FI)',
+        description: 'Write lyrics while dragging rhymes from suggestions (Finnish).',
+        helperText: 'Write in the notepad. Select a word to see Finnish rhymes. Drag suggestions into your text. ESC clears selection.',
+        suggestionsTitle: 'Rhymes',
+        selected: 'Selected',
+        selectPrompt: 'Select a word in the editor',
+        idleHint: 'Select a word to see rhymes here.',
+        editorPlaceholder: 'Write lyrics... Select a word to see Finnish rhymes.',
+        exactMatches: 'Exact matches',
+        extendedMatches: 'Extended matches',
+        partialMatches: 'Partial matches',
+        invalidWordError: 'Invalid word structure',
+        invalidPatternError: 'Could not determine vowel pattern',
+        noMatchesFound: 'No rhyming words found',
+        dragToInsert: 'Drag into editor to insert'
+      },
+      fi: {
+        name: 'Lyriikkamuistio (FI)',
+        description: 'Kirjoita lyriikoita ja raahaa riimejä ehdotuksista tekstiin.',
+        helperText: 'Kirjoita muistioon. Valitse sana nähdäksesi suomenkieliset riimit. Raahaa riimi tekstiin. ESC poistaa valinnan.',
+        suggestionsTitle: 'Riimit',
+        selected: 'Valittu',
+        selectPrompt: 'Valitse sana editorissa',
+        idleHint: 'Valitse sana nähdäksesi riimit tässä.',
+        editorPlaceholder: 'Kirjoita lyriikoita... Valitse sana nähdäksesi riimit.',
+        exactMatches: 'Tarkat osumat',
+        extendedMatches: 'Laajennetut osumat',
+        partialMatches: 'Lyhennetyt osumat',
+        invalidWordError: 'Virheellinen sanarakenne',
+        invalidPatternError: 'Vokaalikaavaa ei voitu määrittää',
+        noMatchesFound: 'Rimmaavia sanoja ei löytynyt',
+        dragToInsert: 'Raahaa editoriin lisätäksesi'
+      }
+    }
+  },
+  {
     id: 'rhyme-map',
     icon: '🗺️',
     difficulty: 'easy',

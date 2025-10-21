@@ -1,0 +1,157 @@
+/*
+  LyricsWritingMode styles
+  ------------------------
+  Layout with an editor panel and an always-visible suggestions sidebar.
+  Draggable chips for rhyme suggestions.
+*/
+
+.lyrics-writing {
+  display: grid;
+  grid-template-columns: minmax(520px, 1fr) 360px;
+  gap: 16px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .lyrics-writing {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+}
+
+.editor-panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.lyrics-editor {
+  width: 100%;
+  height: 420px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--accent-color, #4a90e2);
+  font-size: 16px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  text-align: left;
+  justify-content: flex-start;
+  align-items: flex-start;
+  outline: none;
+  color: var(--text-color, #f2f2f2);
+  background: var(--background-color, #1e1e1e);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  overflow: auto;
+}
+
+.lyrics-editor .rhyme-hit {
+  background: rgba(74, 144, 226, 0.18);
+  border-bottom: 1px dashed var(--accent-color, #4a90e2);
+  border-radius: 2px;
+}
+
+.lyrics-editor:empty:before {
+  content: attr(data-placeholder);
+  color: #888;
+}
+
+.suggestions-panel {
+  border: 1px solid var(--accent-color, #4a90e2);
+  border-radius: 8px;
+  background: var(--surface-color, #2a2a2a);
+  padding: 8px 10px;
+  height: 420px;
+  overflow: auto;
+  color: var(--text-color, #f2f2f2);
+}
+
+.suggestions-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.panel-title {
+  font-weight: 700;
+  color: var(--text-color, #f2f2f2);
+}
+
+.panel-subtitle {
+  color: var(--text-secondary-color, #b0b0b0);
+  font-size: 13px;
+}
+
+.placeholder {
+  color: #999;
+  font-size: 14px;
+  padding: 8px 4px;
+}
+
+.error-message {
+  color: var(--error-color, #ff6b6b);
+  background: rgba(255, 107, 107, 0.1);
+  border: 1px solid rgba(255, 107, 107, 0.35);
+  padding: 6px 8px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.suggestion-section {
+  margin-bottom: 12px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.section-title {
+  font-weight: 600;
+  color: var(--text-color, #f2f2f2);
+}
+
+.section-pattern {
+  color: var(--text-secondary-color, #b0b0b0);
+  font-size: 12px;
+}
+
+.section-count {
+  color: var(--text-secondary-color, #9aa0a6);
+  font-size: 12px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: var(--background-color, #1e1e1e);
+  border: 1px solid var(--accent-color, #4a90e2);
+  color: var(--text-color, #f2f2f2);
+  cursor: grab;
+  user-select: none;
+  font-size: 14px;
+  transition: transform 0.1s ease, background 0.2s ease;
+}
+
+.chip:active {
+  cursor: grabbing;
+}
+
+.drop-caret {
+  position: absolute;
+  width: 2px;
+  background: var(--accent-color, #4a90e2);
+  pointer-events: none;
+}
+
+
