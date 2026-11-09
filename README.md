@@ -1,13 +1,13 @@
-# Freestyle Rap Training App
+# Rheemy
 
-A React-based application for practicing freestyle rap in Finnish and English. The app helps users improve their rap and rhyming skills through various interactive training modes.
+A React-based app for practicing freestyle rap in Finnish and English. Rheemy helps you improve rhyming and flow through interactive training modes.
 
 🎤 **[Try it out here!](https://rheemy.com)** 🎵
 
 ## Features
 
 ### Training Modes
-- **Rhyme Explorer**: Browse through words and their rhyming pairs to expand vocabulary
+- **Single Rhymes**: Browse through words and their rhyming pairs to expand vocabulary
 - **Find Rhymes**: Interactive game to identify rhyming words against a timer
 - **2-bar Setup & Punchline**: Practice basic setup-punchline patterns
 - **4-bar Setup & Punchline**: Advanced practice with extended rhyme schemes
@@ -19,9 +19,9 @@ A React-based application for practicing freestyle rap in Finnish and English. T
 - Full dictionary support
 - Dynamic word list generation
 
-### Beat System
-- Multiple beat patterns with adjustable BPM
-- Beat-synchronized word changes
+### Instrumentals
+- Multiple instrumentals with adjustable BPM
+- Rhythm-synchronized word changes
 - Visual timing indicators
 - Loading state management
 
@@ -60,15 +60,15 @@ yarn dev
 ## Usage
 
 1. Select your preferred language (FI/EN)
-2. Choose a beat and vocabulary set
+2. Choose an instrumental and vocabulary set
 3. Select a training mode:
-   - Use Rhyme Explorer to learn new rhyming patterns
+   - Use Single Rhymes to learn new rhyming patterns
    - Play Find Rhymes to test your rhyme recognition
    - Practice with 2-bar or 4-bar modes for freestyle training
 
 ### Keyboard Controls
-- Space: Play/Pause beat
-- Left/Right arrows: Navigate words (in Rhyme Explorer)
+- Space: Play/Pause instrumental
+- Left/Right arrows: Navigate words (in Single Rhymes)
 - Ctrl+Shift+D: Toggle debug mode
 
 ## Project Structure

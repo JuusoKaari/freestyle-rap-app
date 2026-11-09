@@ -22,18 +22,18 @@
  * - isPlaying/onPlayPause: Beat control
  * - isLoading: Loading state
  * - bpm: Beats per minute for timing
- * - currentBeat: Current beat position
+ * - beatInBar: Quarter-note position within the current bar (0-3)
  * - currentBar: Current bar position
  * - setWordCounter: Function to update word index
  * - setIsWordChanging: Function to handle word change animation
- * - onBarsPerRoundChange: Function to handle bar length change
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import BaseTrainingMode from './BaseTrainingMode';
 import '../../styles/trainingModeStyles/FindRhymesMode.css';
 import { useTranslation } from '../../services/TranslationContext';
 import { trainingModes } from '../../data/trainingModes';
+import { useBarSyncedWordAdvance } from '../../hooks/useBarSyncedWordAdvance';
 
 const FindRhymesMode = ({
   shuffledWords,
@@ -45,16 +45,15 @@ const FindRhymesMode = ({
   onPlayPause,
   isLoading,
   bpm,
-  currentBeat,
+  beatInBar,
   currentBar,
   setWordCounter,
   setIsWordChanging,
-  onBarsPerRoundChange = () => {}
 }) => {
   const { language } = useTranslation();
   const mode = trainingModes.find(mode => mode.id === 'find-rhymes');
   const translations = mode?.translations?.[language] || {
-    barCountLabel: 'Bars per round:',
+    barCountLabel: 'Bars per word:',
     barLengthOptions: {
       '1': '1 bar',
       '2': '2 bars',
@@ -71,13 +70,25 @@ const FindRhymesMode = ({
   const currentWord = shuffledWords[wordCounter];
   const NUM_SURROUNDING_WORDS = 8; // 3x3 grid = 9 spots, minus 1 for target word
   
-  // Handle bar length changes
   const handleBarsChange = (value) => {
-    console.debug('[FindRhymes] Bars per round changed:', { to: value });
     setBarsPerRound(value);
-    onBarsPerRoundChange(value);
   };
-  
+
+  const handleWordAdvance = useCallback(() => {
+    setWordCounter((prev) => (prev + 1) % shuffledWords.length);
+    setClickedWords([]);
+  }, [setWordCounter, shuffledWords.length]);
+
+  useBarSyncedWordAdvance({
+    isPlaying,
+    beatInBar,
+    currentBar,
+    barsPerRound,
+    shuffledWordsLength: shuffledWords.length,
+    setIsWordChanging,
+    onAdvance: handleWordAdvance,
+  });
+
   // Handle play/pause with reset
   const handlePlayPause = () => {
     if (isPlaying) {
@@ -171,16 +182,6 @@ const FindRhymesMode = ({
   useEffect(() => {
     setProgress(100);
   }, [wordCounter]);
-
-  // Handle word changes based on bar position and barsPerRound setting
-  useEffect(() => {
-    if (isPlaying && currentBar % barsPerRound === 0 && currentBeat === 0) {
-      setIsWordChanging(true);
-      setWordCounter(prev => (prev + 1) % shuffledWords.length);
-      setClickedWords([]); // Reset clicked words for the new round
-      setTimeout(() => setIsWordChanging(false), 450);
-    }
-  }, [currentBar, currentBeat, isPlaying, barsPerRound, setWordCounter, setIsWordChanging, shuffledWords.length]);
 
   const renderGrid = () => {
     const cells = [];

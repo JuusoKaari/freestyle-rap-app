@@ -33,9 +33,9 @@ export const useAudioController = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [selectedBeatId, setSelectedBeatId] = useState(DEFAULT_BEAT.id);
-  const [timing, setTiming] = useState({ 
-    currentBeat: 0,  // Current beat within the bar (0-3)
-    currentBar: 0    // Current bar number
+  const [timing, setTiming] = useState({
+    beatInBar: 0,  // Quarter-note position within the current bar (0-3)
+    currentBar: 0
   });
   
   const timerRef = useRef(null);
@@ -68,7 +68,7 @@ export const useAudioController = () => {
       clearTimeout(timerRef.current);
     }
     audioService.stopBeat();
-    setTiming({ currentBeat: 0, currentBar: 0 });
+    setTiming({ beatInBar: 0, currentBar: 0 });
     setIsPlaying(false);
   };
 
@@ -172,7 +172,7 @@ export const useAudioController = () => {
     }
 
     // Reset states
-    setTiming({ currentBeat: 0, currentBar: 0 });
+    setTiming({ beatInBar: 0, currentBar: 0 });
 
     // Start audio
     audioService.playBeat();
@@ -201,12 +201,11 @@ export const useAudioController = () => {
           // Convert absolute beat number to bar and beat within bar
           const absoluteBeat = newTiming.beat;
           const currentBar = Math.floor(absoluteBeat / RhythmService.BEATS_PER_BAR);
-          const currentBeat = absoluteBeat % RhythmService.BEATS_PER_BAR;
-          
-          setTiming({ currentBeat, currentBar });
-          
-          // Only call onBarChange when we start a new bar (beat 0)
-          if (currentBeat === 0 && absoluteBeat > 0) {
+          const beatInBar = absoluteBeat % RhythmService.BEATS_PER_BAR;
+
+          setTiming({ beatInBar, currentBar });
+
+          if (beatInBar === 0 && absoluteBeat > 0) {
             onBarChange(currentBar);
           }
         },
@@ -223,8 +222,8 @@ export const useAudioController = () => {
     isPlaying,
     isLoading,
     selectedBeatId,
-    currentBeat: timing.currentBeat,  // Beat within the current bar (0-3)
-    currentBar: timing.currentBar,    // Current bar number
+    beatInBar: timing.beatInBar,
+    currentBar: timing.currentBar,
     handleBeatSelect,
     handleBpmChange,
     handlePlayPause,

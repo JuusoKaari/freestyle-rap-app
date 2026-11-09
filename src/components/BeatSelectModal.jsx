@@ -23,7 +23,7 @@ const BeatSelectModal = ({
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={e => e.stopPropagation()}>
         <div className="modal-header">
-          <h2>{translate('training.beats.title')}</h2>
+          <h2>{translate('training.instrumentals.title')}</h2>
           <button className="close-button" onClick={onClose}>{translate('common.close')}</button>
         </div>
         <div className="beats-list">
@@ -35,7 +35,7 @@ const BeatSelectModal = ({
               <div className="beat-item-info">
                 <div className="beat-item-main">
                   <span className="beat-item-name">{beat.name}</span>
-                  <span className="beat-item-bpm">- {beat.bpm} {translate('training.beats.bpmSuffix')}</span>
+                  <span className="beat-item-bpm">- {beat.bpm} {translate('training.instrumentals.bpmSuffix')}</span>
                 </div>
                 <div className="beat-item-description">
                   {beat.description}
@@ -73,9 +73,9 @@ const BeatSelectModal = ({
                   onClick={() => onSelect(beat.id)}
                   disabled={isLoading}
                 >
-                  {currentBeatId === beat.id ? 
-                    translate('training.beats.current') : 
-                    translate('training.beats.select')
+                  {currentBeatId === beat.id ?
+                    translate('training.instrumentals.current') :
+                    translate('training.instrumentals.select')
                   }
                 </button>
               </div>

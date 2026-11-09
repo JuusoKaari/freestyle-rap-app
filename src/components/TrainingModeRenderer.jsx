@@ -1,28 +1,18 @@
 /**
  * Training Mode Renderer Component
  * ==============================
- * 
- * Component responsible for rendering the appropriate training mode based on
- * the selected mode and managing common props distribution.
- * 
- * Key responsibilities:
- * - Selecting the correct training mode component
- * - Managing common props across modes
- * - Handling mode-specific prop requirements
+ *
+ * Renders the active training mode from modeRegistry with shared props,
+ * language gates, and debug-only gates.
  */
 
 import React, { useEffect } from 'react';
-import RhymeExplorerMode from './trainingModes/RhymeExplorerMode';
-import FindRhymesMode from './trainingModes/FindRhymesMode';
-import RhymeMapMode from './trainingModes/RhymeMapMode';
-import RhymeSearchMode from './trainingModes/RhymeSearchMode_FI';
-import LyricsWritingModeFI from './trainingModes/LyricsWritingMode_FI';
-import SlotMachineMode from './trainingModes/SlotMachineMode';
-import SetupPunchlineMode from './trainingModes/SetupPunchlineMode';
 import { trainingModes } from '../data/trainingModes';
+import { getModeEntry, isModeAvailable } from '../data/modeRegistry';
 import { useTranslation } from '../services/TranslationContext';
 import { trackTrainingStart } from '../services/AnalyticsService';
 import { getVocabularies } from '../data/vocabulary/vocabularyConfig';
+import ModeUnavailable from './ModeUnavailable';
 
 const TrainingModeRenderer = ({
   selectedMode,
@@ -32,11 +22,10 @@ const TrainingModeRenderer = ({
   isLoading,
   bpm,
   currentBar,
-  currentBeat,
+  beatInBar,
   isWordChanging,
   shuffledWords,
   wordCounter,
-  onBarsPerRoundChange,
   isRecordingEnabled,
   onRecordingToggle,
   isDebugMode,
@@ -45,29 +34,33 @@ const TrainingModeRenderer = ({
   setIsWordChanging
 }) => {
   const { language } = useTranslation();
-  // console.log('TrainingModeRenderer:', { selectedMode, currentMode: trainingModes.find(mode => mode.id === selectedMode) });
-  const currentMode = trainingModes.find(mode => mode.id === selectedMode);
-  
-  // Track when training mode starts
+  const modeEntry = getModeEntry(selectedMode);
+  const currentMode = trainingModes.find((mode) => mode.id === selectedMode);
+  const modeTranslations = currentMode?.translations?.[language];
+
   useEffect(() => {
     if (isPlaying && selectedMode && selectedVocabulary) {
       const vocabularies = getVocabularies(language);
-      const selectedVocabInfo = vocabularies.find(vocab => vocab.id === selectedVocabulary);
+      const selectedVocabInfo = vocabularies.find((vocab) => vocab.id === selectedVocabulary);
       if (selectedVocabInfo) {
         trackTrainingStart(selectedMode, selectedVocabInfo.name);
       }
     }
   }, [isPlaying, selectedMode, selectedVocabulary, language]);
 
-  if (!currentMode) {
-    console.log('No current mode found for:', selectedMode);
+  if (!modeEntry || !currentMode || !modeTranslations) {
+    console.log('No current mode found for:', selectedMode, language);
     return null;
+  }
+
+  if (!isModeAvailable(selectedMode, language, isDebugMode)) {
+    return <ModeUnavailable onReturnToMenu={onReturnToMenu} />;
   }
 
   const commonProps = {
     onReturnToMenu,
-    modeName: currentMode.translations[language].name,
-    helperText: currentMode.translations[language].helperText,
+    modeName: modeTranslations.name,
+    helperText: modeTranslations.helperText,
     isPlaying,
     onPlayPause,
     isLoading,
@@ -75,35 +68,27 @@ const TrainingModeRenderer = ({
     isDebugMode
   };
 
+  const ModeComponent = modeEntry.component;
+
   switch (selectedMode) {
     case 'rhyme-map':
       return (
-        <RhymeMapMode
+        <ModeComponent
           {...commonProps}
           isRecordingEnabled={isRecordingEnabled}
           onRecordingToggle={onRecordingToggle}
         />
       );
     case 'rhyme-search':
-      return (
-        <RhymeSearchMode
-          {...commonProps}
-        />
-      );
     case 'lyrics-writing':
-      return (
-        <LyricsWritingModeFI
-          {...commonProps}
-        />
-      );
+      return <ModeComponent {...commonProps} />;
     case 'slot-machine':
       return (
-        <SlotMachineMode
+        <ModeComponent
           {...commonProps}
           shuffledWords={shuffledWords}
           wordCounter={wordCounter}
-          onBarsPerRoundChange={onBarsPerRoundChange}
-          currentBeat={currentBeat}
+          beatInBar={beatInBar}
           currentBar={currentBar}
           setWordCounter={setWordCounter}
           setIsWordChanging={setIsWordChanging}
@@ -111,25 +96,24 @@ const TrainingModeRenderer = ({
       );
     case 'rhyme-explorer':
       return (
-        <RhymeExplorerMode
+        <ModeComponent
           {...commonProps}
           shuffledWords={shuffledWords}
           wordCounter={wordCounter}
           selectedVocabulary={selectedVocabulary}
-          currentBeat={currentBeat}
+          beatInBar={beatInBar}
           currentBar={currentBar}
           setWordCounter={setWordCounter}
           setIsWordChanging={setIsWordChanging}
-          onBarsPerRoundChange={onBarsPerRoundChange}
         />
       );
     case 'find-rhymes':
       return (
-        <FindRhymesMode
+        <ModeComponent
           {...commonProps}
           shuffledWords={shuffledWords}
           wordCounter={wordCounter}
-          currentBeat={currentBeat}
+          beatInBar={beatInBar}
           currentBar={currentBar}
           setWordCounter={setWordCounter}
           setIsWordChanging={setIsWordChanging}
@@ -137,16 +121,15 @@ const TrainingModeRenderer = ({
       );
     case 'setup-punchline':
       return (
-        <SetupPunchlineMode
+        <ModeComponent
           {...commonProps}
           currentBar={currentBar}
-          currentBeat={currentBeat}
+          beatInBar={beatInBar}
           isWordChanging={isWordChanging}
           shuffledWords={shuffledWords}
           wordCounter={wordCounter}
           setWordCounter={setWordCounter}
           setIsWordChanging={setIsWordChanging}
-          onBarsPerRoundChange={onBarsPerRoundChange}
         />
       );
     default:
@@ -154,4 +137,4 @@ const TrainingModeRenderer = ({
   }
 };
 
-export default TrainingModeRenderer; 
+export default TrainingModeRenderer;

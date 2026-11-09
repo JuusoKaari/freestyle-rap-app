@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-**MVP Scope**: Finnish-only Rhyme Explorer mode with basic functionality for rapid development and testing.
+**MVP Scope**: Finnish-only Single Rhymes mode with basic functionality for rapid development and testing.
 
 ## Tech Stack
 - **Language**: Kotlin
@@ -15,7 +15,7 @@
 ## Core Features (MVP Only)
 
 ### ✅ Single Training Mode
-- **Rhyme Explorer Mode**: Display words and their rhymes in Finnish
+- **Single Rhymes Mode**: Display words and their rhymes in Finnish
 
 ### ✅ Single Vocabulary
 - **Finnish Generic Rap**: Pre-loaded Finnish vocabulary set

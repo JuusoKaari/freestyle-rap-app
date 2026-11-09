@@ -16,27 +16,27 @@
  * 
  * Props:
  * - currentBar: Currently active bar index
- * - currentBeat: Current beat within the bar
+ * - beatInBar: Quarter-note position within the current bar (0-3)
  * - bpm: Beats per minute for timing
  * - isWordChanging: Word transition animation state
  * - shuffledWords: Array of words to use as targets
  * - wordCounter: Current word index
  * - setWordCounter: Function to set the current word index
  * - setIsWordChanging: Function to set the word transition animation state
- * - onBarsPerRoundChange: Function to handle bar length changes
  * - Standard BaseTrainingMode props
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import BaseTrainingMode from './BaseTrainingMode';
 import { useTranslation } from '../../services/TranslationContext';
 import { trainingModes } from '../../data/trainingModes';
 import StorageService from '../../services/StorageService.js';
+import { useBarSyncedWordAdvance } from '../../hooks/useBarSyncedWordAdvance';
 import '../../styles/trainingModeStyles/SetupPunchlineMode.css';
 
 const SetupPunchlineMode = ({ 
   currentBar,
-  currentBeat,
+  beatInBar,
   bpm,
   isWordChanging,
   shuffledWords,
@@ -49,7 +49,6 @@ const SetupPunchlineMode = ({
   isPlaying,
   onPlayPause,
   isLoading,
-  onBarsPerRoundChange = () => {}
 }) => {
   const { language } = useTranslation();
   const translations = trainingModes.find(mode => mode.id === 'setup-punchline').translations[language];
@@ -66,12 +65,26 @@ const SetupPunchlineMode = ({
     StorageService.set('showRhymeHints', showHints);
   }, [showHints]);
 
-  // Handle bar length changes
   const handleBarsChange = (value) => {
-    console.debug('[SetupPunchline] Bars per round changed:', { to: value });
     setBarsPerRound(value);
-    onBarsPerRoundChange(value);
   };
+
+  const handleWordAdvance = useCallback(() => {
+    setIsNextWordChanging(true);
+    setWordCounter((prev) => (prev + 1) % shuffledWords.length);
+    setTimeout(() => setIsNextWordChanging(false), 2000);
+  }, [setWordCounter, shuffledWords.length]);
+
+  useBarSyncedWordAdvance({
+    isPlaying,
+    beatInBar,
+    currentBar,
+    barsPerRound,
+    shuffledWordsLength: shuffledWords.length,
+    setIsWordChanging,
+    onAdvance: handleWordAdvance,
+    animationDuration: 450,
+  });
 
   // Update selected rhymes when target word changes
   useEffect(() => {
@@ -93,25 +106,8 @@ const SetupPunchlineMode = ({
     }
   }, [wordCounter, shuffledWords, barsPerRound]);
 
-  // Handle word changes based on bar position
-  useEffect(() => {
-    // Change word based on selected bar length
-    if (currentBar % barsPerRound === 0 && currentBeat === 0) {
-      setIsWordChanging(true);
-      setIsNextWordChanging(true);
-      setWordCounter(prev => (prev + 1) % shuffledWords.length);
-      
-      // Target word animation
-      setTimeout(() => setIsWordChanging(false), 450);
-      
-      // Next word animation (matches CSS animation duration)
-      setTimeout(() => setIsNextWordChanging(false), 2000);
-    }
-  }, [currentBar, currentBeat, setIsWordChanging, setWordCounter, shuffledWords.length, barsPerRound]);
-
   const renderBlock = (blockIndex, line) => {
-    // Calculate current position in beats
-    const totalBeats = (currentBar * 4) + currentBeat;
+    const totalBeats = (currentBar * 4) + beatInBar;
     const blockPosition = blockIndex + (line - 1) * BLOCKS_PER_BAR;
     // Wrap around based on total bars
     const isActive = blockPosition === totalBeats % (barsPerRound * 4);

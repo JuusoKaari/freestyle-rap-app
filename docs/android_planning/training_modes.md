@@ -11,7 +11,7 @@ This section covers the implementation of various freestyle training modes in th
 - **Implementation**: Compose UI with text input fields and rhyme suggestions
 - **Data Flow**: Real-time rhyme matching as user types
 
-### 2. Rhyme Explorer Mode
+### 2. Single Rhymes Mode
 - **Purpose**: Explore vocabulary and discover rhyme patterns
 - **Implementation**: Grid/list view of words with interactive rhyme highlighting
 - **Features**: Syllable filtering, audio playback for pronunciation

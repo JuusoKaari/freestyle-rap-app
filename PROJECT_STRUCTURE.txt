@@ -365,7 +365,7 @@ Key Features:
 ------------
 1. Multiple Training Modes:
    - Setup & Punchline practice with 2-bar and 4-bar variations
-   - Rhyme Explorer for vocabulary building and pattern discovery
+   - Single Rhymes for vocabulary building and pattern discovery
    - Interactive Find Rhymes game with timer challenges
    - Visual Rhyme Map for pattern exploration (language-specific versions)
    - Rhyme Search mode for Finnish with advanced filtering

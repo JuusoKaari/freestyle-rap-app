@@ -2,7 +2,7 @@
  * Main Application Component (App.jsx)
  * ===================================
  * 
- * This is the root component of the Freestyle Rap Training application.
+ * Root component of the Rheemy web app.
  * It manages the global state and coordinates between different training modes,
  * beat playback, vocabulary selection, and language settings.
  * 
@@ -28,7 +28,7 @@ import CompactBeatSelector from './components/CompactBeatSelector'
 import VocabularySelector from './components/VocabularySelector'
 import LanguageToggle from './components/LanguageToggle'
 import InstagramLink from './components/InstagramLink'
-import { trainingModes } from './data/trainingModes'
+import { isModeAvailable } from './data/modeRegistry'
 import { useTranslation } from './services/TranslationContext'
 import { DebugProvider, useDebug } from './services/DebugContext'
 import { useAudioController } from './hooks/useAudioController'
@@ -50,7 +50,7 @@ function AppContent() {
     isPlaying,
     isLoading,
     selectedBeatId,
-    currentBeat,
+    beatInBar,
     currentBar,
     handleBeatSelect,
     handleBpmChange,
@@ -73,7 +73,6 @@ function AppContent() {
   const [shuffledWords, setShuffledWords] = useState([]);
   const [wordCounter, setWordCounter] = useState(0);
   const [isWordChanging, setIsWordChanging] = useState(false);
-  const [barsPerRound, setBarsPerRound] = useState(2);
   const lastProcessedBarRef = useRef(-1);
   const [syllableRange, setSyllableRange] = useState({ min: 2, max: 3 });
 
@@ -87,9 +86,24 @@ function AppContent() {
     setSelectedVocabulary(language === 'en' ? 'en_generic_rap' : 'fi_generic_rap');
   }, [language]);
 
+  // Leave a mode when the current language or debug state can no longer open it
+  useEffect(() => {
+    if (currentModeId && !isModeAvailable(currentModeId, language, isDebugMode)) {
+      navigate('/');
+      stopPlayback();
+      setIsTraining(false);
+      setSelectedMode(null);
+    }
+  }, [language, currentModeId, isDebugMode, navigate, stopPlayback]);
+
   // Handle direct URL access to modes
   useEffect(() => {
     const initializeMode = async () => {
+      if (currentModeId && !isModeAvailable(currentModeId, language, isDebugMode)) {
+        navigate('/');
+        return;
+      }
+
       if (currentModeId && !isTraining) {
         console.log('Initializing mode from URL:', currentModeId);
         setSelectedMode(currentModeId);
@@ -118,7 +132,7 @@ function AppContent() {
     };
 
     initializeMode();
-  }, [currentModeId, selectedVocabulary, syllableRange, isTraining, language]);
+  }, [currentModeId, selectedVocabulary, syllableRange, isTraining, language, isDebugMode, navigate]);
 
   // Load initial words when vocabulary changes
   useEffect(() => {
@@ -136,6 +150,8 @@ function AppContent() {
 
   // Handle mode selection
   const handleModeSelect = async (modeId) => {
+    if (!isModeAvailable(modeId, language, isDebugMode)) return;
+
     navigate(`/mode/${modeId}`);
     stopPlayback();
     setSelectedMode(modeId);
@@ -175,7 +191,7 @@ function AppContent() {
       console.debug('[App] Bar changed:', { 
         from: lastProcessedBarRef.current, 
         to: nextBar,
-        currentBeat,
+        beatInBar,
         wordCounter,
         isWordChanging,
         timestamp: new Date().toISOString()
@@ -185,11 +201,6 @@ function AppContent() {
       // Just update the bar reference
       lastProcessedBarRef.current = nextBar;
     }
-  };
-
-  // Handle bars per round change
-  const handleBarsPerRoundChange = (value) => {
-    setBarsPerRound(value);
   };
 
   const wrappedHandlePlayPause = async () => {
@@ -217,13 +228,13 @@ function AppContent() {
   // Track beat changes
   useEffect(() => {
     console.debug('[App] Beat changed:', {
-      beat: currentBeat,
+      beatInBar,
       bar: currentBar,
       wordCounter,
       isWordChanging,
       timestamp: new Date().toISOString()
     });
-  }, [currentBeat]);
+  }, [beatInBar]);
 
   return (
     <div className={`app ${isDebugMode ? 'debug-mode' : ''}`}>
@@ -361,7 +372,7 @@ function AppContent() {
               <TrainingModeRenderer
                 selectedMode={selectedMode || currentModeId}
                 onReturnToMenu={handleReturnToMenu}
-                currentBeat={currentBeat}
+                beatInBar={beatInBar}
                 currentBar={currentBar}
                 isPlaying={isPlaying}
                 onPlayPause={wrappedHandlePlayPause}
@@ -370,8 +381,6 @@ function AppContent() {
                 isWordChanging={isWordChanging}
                 shuffledWords={shuffledWords}
                 wordCounter={wordCounter}
-                barsPerRound={barsPerRound}
-                onBarsPerRoundChange={handleBarsPerRoundChange}
                 isRecordingEnabled={isRecordingEnabled}
                 onRecordingToggle={handleRecordingToggle}
                 isDebugMode={isDebugMode}

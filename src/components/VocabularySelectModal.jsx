@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from '../services/TranslationContext';
 import CustomVocabularyEditor from './CustomVocabularyEditor';
 import { getVocabularies, getVocabularyData } from '../data/vocabulary/vocabularyConfig';
+import { isCustomVocabularyEnabled } from '../data/appConfig';
 import { useDebug } from '../services/DebugContext';
 import StorageService from '../services/StorageService.js';
 import { showUserError } from '../services/ErrorService.js';
@@ -294,7 +295,7 @@ const VocabularySelectModal = ({
               )}
             </div>
           ))}
-          {language === 'fi' && (
+          {isCustomVocabularyEnabled(language) && (
             <div
               className="vocabulary-item create-vocabulary-item"
               onClick={() => {

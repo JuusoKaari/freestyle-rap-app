@@ -2,7 +2,7 @@
 
 ## Overview
 
-**MVP Scope**: Minimal UI with single screen for Rhyme Explorer mode.
+**MVP Scope**: Minimal UI with single screen for Single Rhymes mode.
 
 ## Architecture
 
@@ -49,7 +49,7 @@ fun RhymeExplorerScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Rhyme Explorer") },
+                title = { Text("Single Rhymes") },
                 actions = {
                     // Simple beat control
                     IconButton(onClick = { viewModel.toggleBeat() }) {

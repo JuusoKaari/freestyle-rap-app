@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import BaseTrainingMode from './BaseTrainingMode';
 import { trainingModes } from '../../data/trainingModes';
 import { useTranslation } from '../../services/TranslationContext';
+import { useBarSyncedWordAdvance } from '../../hooks/useBarSyncedWordAdvance';
 import '../../styles/trainingModeStyles/SlotMachineMode.css';
 
 // Number of words in each slot's list (total height of scrolling content)
@@ -40,9 +41,8 @@ const SlotMachine = ({
   isPlaying,
   onPlayPause,
   isLoading,
-  onBarsPerRoundChange = () => {},
   isDebugMode = false,
-  currentBeat,
+  beatInBar,
   currentBar,
   setWordCounter,
   setIsWordChanging,
@@ -56,21 +56,19 @@ const SlotMachine = ({
   const [barsPerRound, setBarsPerRound] = useState(4);
   const [progress, setProgress] = useState(100);
 
-  // Handle bar length changes
   const handleBarsChange = (value) => {
-    console.debug('[SlotMachine] Bars per round changed:', { to: value });
     setBarsPerRound(value);
-    onBarsPerRoundChange(value);
   };
 
-  // Handle word changes based on bar position and barsPerRound setting
-  useEffect(() => {
-    if (isPlaying && currentBar % barsPerRound === 0 && currentBeat === 0) {
-      setIsWordChanging(true);
-      setWordCounter(prev => (prev + 1) % shuffledWords.length);
-      setTimeout(() => setIsWordChanging(false), 450);
-    }
-  }, [currentBar, currentBeat, isPlaying, barsPerRound, setWordCounter, setIsWordChanging, shuffledWords.length]);
+  useBarSyncedWordAdvance({
+    isPlaying,
+    beatInBar,
+    currentBar,
+    barsPerRound,
+    shuffledWordsLength: shuffledWords.length,
+    setWordCounter,
+    setIsWordChanging,
+  });
 
   // Generate a list of words for the slot machine
   const generateSlotList = (currentWord, nextWord, previousList = null, isNextList = false) => {
@@ -307,7 +305,7 @@ const SlotMachine = ({
       )}
       <div className="slot-machine-settings">
         <label>
-          {translations.barLengthLabel}
+          {translations.barCountLabel}
           <select 
             value={barsPerRound} 
             onChange={(e) => handleBarsChange(Number(e.target.value))}

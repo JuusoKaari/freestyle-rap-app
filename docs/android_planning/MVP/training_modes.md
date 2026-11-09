@@ -1,10 +1,10 @@
-# Training Modes - MVP (Rhyme Explorer Only)
+# Training Modes - MVP (Single Rhymes Only)
 
 ## Overview
 
-**MVP Scope**: Single training mode - Rhyme Explorer for Finnish vocabulary.
+**MVP Scope**: Single training mode - Single Rhymes for Finnish vocabulary.
 
-## Rhyme Explorer Mode
+## Single Rhymes Mode
 
 ### Purpose
 - Display random Finnish words in a visually engaging radial layout
@@ -45,7 +45,7 @@ fun RhymeExplorerScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Rhyme Explorer") },
+                title = { Text("Single Rhymes") },
                 actions = {
                     // Beat control
                     IconButton(onClick = { viewModel.toggleBeat() }) {

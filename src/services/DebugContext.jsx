@@ -32,7 +32,7 @@ const DebugContext = createContext({
 });
 
 export const DebugProvider = ({ children }) => {
-  const [isDebugMode, setIsDebugMode] = useState(false);
+  const [isDebugMode, setIsDebugMode] = useState(() => StorageService.get('debugMode', false));
   const [tapCount, setTapCount] = useState(0);
   const tapTimeoutRef = React.useRef(null);
 
@@ -51,12 +51,6 @@ export const DebugProvider = ({ children }) => {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, []);
-
-  // Store debug mode in localStorage
-  useEffect(() => {
-    const storedDebugMode = StorageService.get('debugMode', false);
-    setIsDebugMode(storedDebugMode);
   }, []);
 
   useEffect(() => {

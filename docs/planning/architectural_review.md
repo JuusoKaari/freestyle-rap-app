@@ -1,6 +1,6 @@
 # Architectural Review — Web App
 
-**Date:** June 2025  
+**Date:** June 2026  
 **Scope:** Full codebase review focused on future-proofing, term consistency, and structural friction for adding features (modes, languages, vocabularies).
 
 **Status:** Product terminology decisions locked (see below). Ready to begin implementation refactors.

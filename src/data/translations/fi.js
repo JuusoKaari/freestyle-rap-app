@@ -21,7 +21,8 @@ export const fi = {
     processing: "Käsitellään...",
     edit: "Muokkaa",
     delete: "Poista",
-    done: "Valmis"
+    done: "Valmis",
+    menu: "Valikko"
   },
   recording: {
     start: "Aloita nauhoitus",
@@ -33,7 +34,7 @@ export const fi = {
   recordings: {
     title: "Omat nauhoitukset",
     open: "Avaa nauhoitukset",
-    empty: "Ei nauhoituksia. Aloita freestylen nauhoitus kytkemällä nauhoitus päälle ja soittamalla biitti!"
+    empty: "Ei nauhoituksia. Aloita freestylen nauhoitus kytkemällä nauhoitus päälle ja soittamalla instrumentaali!"
   },
   vocabulary: {
     selector: {
@@ -82,14 +83,18 @@ export const fi = {
       title: "Valitse harjoitus",
       description: "Valitse haluamasi harjoittelutila",
     },
-    beats: {
-      title: "Valitse biitti",
-      description: "Valitse biitti freestyleä varten",
-      changeBeat: "Vaihda biitti",
-      beatLabel: "Biitti",
+    modeUnavailable: {
+      message: "Tämä tila ei ole vielä saatavilla suomeksi.",
+      backToMenu: "Takaisin valikkoon"
+    },
+    instrumentals: {
+      title: "Valitse instrumentaali",
+      description: "Valitse instrumentaali freestyleä varten",
+      changeInstrumental: "Vaihda instrumentaali",
+      instrumentalLabel: "Instrumentaali",
       bpmSuffix: "BPM",
-      currentBeat: "Nykyinen biitti",
-      noBeat: "Ei valittua biittiä",
+      currentInstrumental: "Nykyinen instrumentaali",
+      noInstrumental: "Ei valittua instrumentaalia",
       select: "Valitse",
       current: "Nykyinen"
     }

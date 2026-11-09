@@ -134,9 +134,9 @@ const BeatSelector = ({ selectedBeatId, onBeatSelect, isPlaying, onPlayPause, is
 
           <div className="beat-info">
             <div className="beat-main-info">
-              <span className="beat-label">{translate('training.beats.currentBeat')}:</span>
+              <span className="beat-label">{translate('training.instrumentals.currentInstrumental')}:</span>
               <span className="beat-name">
-                {selectedBeat ? selectedBeat.name : translate('training.beats.noBeat')}
+                {selectedBeat ? selectedBeat.name : translate('training.instrumentals.noInstrumental')}
               </span>
             </div>
             {selectedBeat && (
@@ -154,7 +154,7 @@ const BeatSelector = ({ selectedBeatId, onBeatSelect, isPlaying, onPlayPause, is
               disabled={isLoading || isLoadingBeat || isPlaying}
             />
             <button className="change-beat-button" onClick={() => setIsModalOpen(true)}>
-              {translate('training.beats.changeBeat')}
+              {translate('training.instrumentals.changeInstrumental')}
             </button>
           </div>
         </div>

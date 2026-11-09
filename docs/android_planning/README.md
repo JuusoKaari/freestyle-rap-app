@@ -66,7 +66,7 @@ app/src/main/java/com/freestylerap/
 - [ ] Project setup with Hilt configuration
 - [ ] Basic MVVM architecture implementation
 - [ ] Room database setup for vocabulary storage
-- [ ] Simple training mode (Rhyme Explorer)
+- [ ] Simple training mode (Single Rhymes)
 - [ ] Basic audio playback for beats
 
 ### Phase 2: Core Features

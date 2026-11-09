@@ -32,6 +32,7 @@ import EN_carsVocab from './EN_cars.js';
 import EN_numbersVocab from './EN_numbers.js';
 import EN_clothesVocab from './EN_clothes_and_accessories.js';
 import StorageService from '../../services/StorageService.js';
+import { isCustomVocabularyEnabled } from '../appConfig.js';
 
 // Helper function to count total words in a vocabulary
 const countWords = (vocab) => {
@@ -283,8 +284,7 @@ export const getVocabularies = (language) => {
   // Get built-in vocabularies for the language
   const builtInVocabs = vocabularyConfigs[language];
 
-  // Get custom vocabularies if the language is Finnish
-  const customVocabs = language === 'fi' ? getCustomVocabularies() : [];
+  const customVocabs = isCustomVocabularyEnabled(language) ? getCustomVocabularies() : [];
 
   return [...builtInVocabs, ...customVocabs];
 }; 

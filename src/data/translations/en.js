@@ -21,7 +21,8 @@ export const en = {
     processing: "Processing...",
     edit: "Edit",
     delete: "Delete",
-    done: "Done"
+    done: "Done",
+    menu: "Menu"
   },
   recording: {
     start: "Start Recording",
@@ -33,7 +34,7 @@ export const en = {
   recordings: {
     title: "My Recordings",
     open: "Open Recordings",
-    empty: "No recordings yet. Start recording your freestyle by enabling recording and playing a beat!"
+    empty: "No recordings yet. Start recording your freestyle by enabling recording and playing an instrumental!"
   },
   vocabulary: {
     selector: {
@@ -82,14 +83,18 @@ export const en = {
       title: "Training Modes",
       description: "Select your preferred training mode",
     },
-    beats: {
-      title: "Select Beat",
-      description: "Choose a beat for your freestyle",
-      changeBeat: "Change Beat",
-      beatLabel: "Beat",
+    modeUnavailable: {
+      message: "This mode is not available in English yet.",
+      backToMenu: "Back to menu"
+    },
+    instrumentals: {
+      title: "Select Instrumental",
+      description: "Choose an instrumental for your freestyle",
+      changeInstrumental: "Change Instrumental",
+      instrumentalLabel: "Instrumental",
       bpmSuffix: "BPM",
-      currentBeat: "Current Beat",
-      noBeat: "No beat selected",
+      currentInstrumental: "Current Instrumental",
+      noInstrumental: "No instrumental selected",
       select: "Select",
       current: "Current"
     }

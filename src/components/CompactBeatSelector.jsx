@@ -3,9 +3,11 @@ import { beats } from '../data/beat_metadata/index';
 import BeatSelectModal from './BeatSelectModal';
 import BpmSelector from './BpmSelector';
 import audioService from '../services/AudioService';
+import { useTranslation } from '../services/TranslationContext';
 import '../styles/CompactBeatSelector.css';
 
 const CompactBeatSelector = ({ selectedBeatId, onBeatSelect, isPlaying, isLoading, currentBpm, onBpmChange }) => {
+  const { translate } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
   const [previewingBeatId, setPreviewingBeatId] = useState(null);
@@ -64,7 +66,7 @@ const CompactBeatSelector = ({ selectedBeatId, onBeatSelect, isPlaying, isLoadin
         onClick={() => setIsModalOpen(true)}
         disabled={isLoading}
       >
-        <span>{selectedBeat?.name || 'Select Beat'}</span>
+        <span>{selectedBeat?.name || translate('training.instrumentals.title')}</span>
         <svg viewBox="0 0 24 24" className="dropdown-icon">
           <path
             fill="currentColor"
