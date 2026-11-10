@@ -103,5 +103,46 @@ export const en = {
     language: "Language",
     english: "English",
     finnish: "Finnish",
+  },
+  feedback: {
+    button: "Feedback",
+    close: "Close",
+    manual: {
+      title: "Help make Rheemy better! 🎤",
+      description: "Hey! I'm Juuso, the creator of Rheemy. I'd love to hear what you think!",
+      question: "What would you like to tell me?",
+      placeholder: "A bug, an idea, or just how it feels to use…",
+      submit: "Send feedback",
+      submitting: "Sending…"
+    },
+    survey: {
+      title: "Quick question! 🎤",
+      question: "What do you mainly use Rheemy for?",
+      // Keep these in sync with USAGE_CATEGORIES in appConfig.js.
+      options: {
+        freestyle: "Practicing freestyle rap",
+        rhyming: "Improving my rhyming skills",
+        lyrics: "Writing lyrics",
+        fun: "Just having fun",
+        other: "Something else"
+      },
+      improveQuestion: "Anything you'd like us to improve?",
+      improvePlaceholder: "Optional — a sentence is plenty",
+      submit: "Send",
+      submitting: "Sending…"
+    },
+    thanks: {
+      title: "Thank you! 🎤",
+      message: "Got it. This really helps me make Rheemy better."
+    },
+    video: {
+      action: "🎥 Tell me more in a short video interview",
+      explanation: "It takes a few minutes and helps us understand how people use Rheemy."
+    },
+    errors: {
+      empty: "Write a few words first — even a short note helps.",
+      category: "Pick the option that fits you best.",
+      generic: "That didn't send. Your text is still here, so you can try again in a moment."
+    }
   }
 }; 

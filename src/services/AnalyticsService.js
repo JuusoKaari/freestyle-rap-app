@@ -31,6 +31,29 @@ export const trackVocabularySelection = (vocabularyName) => {
   trackEvent('Vocabulary Selected', { vocabulary: vocabularyName });
 };
 
+/** Feedback button opened the form. Never includes the written feedback. */
+export const trackFeedbackModalOpened = () => {
+  trackEvent('Feedback modal opened');
+};
+
+export const trackProactiveSurveyDisplayed = () => {
+  trackEvent('Proactive survey displayed');
+};
+
+export const trackProactiveSurveyDismissed = () => {
+  trackEvent('Proactive survey dismissed');
+};
+
+export const trackFeedbackSubmitted = (feedbackType) => {
+  trackEvent('Feedback submitted successfully', {
+    feedback_type: feedbackType,
+  });
+};
+
+export const trackVideoInterviewClicked = () => {
+  trackEvent('Video interview link clicked');
+};
+
 // Initialize session tracking
 let sessionStartTime = Date.now();
 let lastActiveTime = Date.now();

@@ -103,5 +103,45 @@ export const fi = {
     language: "Kieli",
     english: "Englanti",
     finnish: "Suomi",
+  },
+  feedback: {
+    button: "Palaute",
+    close: "Sulje",
+    manual: {
+      title: "Auta tekemään Rheemystä parempi! 🎤",
+      description: "Moi! Mä oon Juuso, Rheemyn tekijä. Kuulisin mielelläni, mitä mieltä sä olet!",
+      question: "Mitä haluaisit kertoa mulle?",
+      placeholder: "Bugi, idea, tai ihan vaan miltä tää tuntuu…",
+      submit: "Lähetä palaute",
+      submitting: "Lähetetään…"
+    },
+    survey: {
+      title: "Nopea kysymys! 🎤",
+      question: "Mihin sä käytät Rheemyä eniten?",
+      options: {
+        freestyle: "Freestylen treenaamiseen",
+        rhyming: "Riimien parantamiseen",
+        lyrics: "Sanoitusten kirjoittamiseen",
+        fun: "Ihan vaan huvikseni",
+        other: "Johonkin muuhun"
+      },
+      improveQuestion: "Onko jotain, mitä meidän kannattaisi parantaa?",
+      improvePlaceholder: "Vapaaehtoinen — lyhytkin riittää",
+      submit: "Lähetä",
+      submitting: "Lähetetään…"
+    },
+    thanks: {
+      title: "Kiitos! 🎤",
+      message: "Sain sen. Tää auttaa mua tekemään Rheemystä paremman."
+    },
+    video: {
+      action: "🎥 Kerro lisää lyhyessä videohaastattelussa",
+      explanation: "Se kestää muutaman minuutin ja auttaa meitä ymmärtämään, miten Rheemyä käytetään."
+    },
+    errors: {
+      empty: "Kirjoita ensin pari sanaa — lyhytkin viesti auttaa.",
+      category: "Valitse ensin se, mikä sopii parhaiten.",
+      generic: "Lähetys ei onnistunut. Tekstisi on tallessa, kokeile hetken päästä uudestaan."
+    }
   }
 }; 

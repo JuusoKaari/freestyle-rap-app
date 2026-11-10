@@ -12,6 +12,7 @@
  * - Word list generation and management
  * - Global UI layout and component organization
  * - Language switching support
+ * - Feedback button and the occasional proactive survey
  * 
  * The component uses various hooks for state management and refs for
  * audio timing control and beat synchronization.
@@ -36,6 +37,7 @@ import { useRecordingController } from './hooks/useRecordingController'
 import RecordToggle from './components/RecordToggle'
 import RecordingsModal from './components/RecordingsModal'
 import { HashRouter as Router, Routes, Route, useNavigate, useMatch, useLocation } from 'react-router-dom'
+import FeedbackController from './components/feedback/FeedbackController'
 
 function AppContent() {
   const navigate = useNavigate();
@@ -399,6 +401,13 @@ function AppContent() {
           onClose={() => setIsRecordingsModalOpen(false)}
         />
       )}
+
+      <FeedbackController
+        isInTrainingMode={Boolean(currentModeId)}
+        isPlaying={isPlaying}
+        isOnMenu={location.pathname === '/'}
+        trainingMode={currentModeId || selectedMode || null}
+      />
     </div>
   );
 }

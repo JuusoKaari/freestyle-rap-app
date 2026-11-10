@@ -1,0 +1,302 @@
+/**
+ * Feedback button and dialog.
+ * Matches Rheemy's dark, low-contrast chrome and stays out of the training controls.
+ */
+
+.feedback-launcher {
+  position: fixed;
+  left: max(0.75rem, env(safe-area-inset-left));
+  bottom: max(0.75rem, env(safe-area-inset-bottom));
+  z-index: 40;
+  min-height: 44px;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(0, 0, 0, 0.55);
+  color: rgba(255, 255, 255, 0.78);
+  font: inherit;
+  font-size: 0.85rem;
+  line-height: 1;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.feedback-launcher:hover {
+  color: rgba(255, 255, 255, 0.95);
+  border-color: rgba(255, 255, 255, 0.35);
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Debug-only control. Sits above the public Feedback button. */
+.feedback-admin-launcher {
+  position: fixed;
+  left: max(0.75rem, env(safe-area-inset-left));
+  bottom: calc(max(0.75rem, env(safe-area-inset-bottom)) + 3.1rem);
+  z-index: 41;
+  min-height: 44px;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  border: 1px dashed rgba(255, 210, 122, 0.7);
+  background: rgba(40, 28, 0, 0.85);
+  color: rgba(255, 220, 150, 0.95);
+  font: inherit;
+  font-size: 0.85rem;
+  line-height: 1;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.feedback-admin-launcher:hover {
+  color: white;
+  border-color: rgba(255, 220, 150, 0.95);
+}
+
+.feedback-admin-launcher:focus-visible {
+  outline: 2px solid rgba(255, 220, 150, 0.95);
+  outline-offset: 2px;
+}
+
+.feedback-launcher:focus-visible,
+.feedback-close:focus-visible,
+.feedback-submit:focus-visible,
+.feedback-option:focus-within,
+.feedback-text:focus-visible,
+.feedback-video-link:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.85);
+  outline-offset: 2px;
+}
+
+.feedback-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0.75rem;
+  padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+  background: rgba(0, 0, 0, 0.72);
+}
+
+.feedback-dialog {
+  width: min(100%, 440px);
+  max-height: min(92vh, 100dvh - 1.5rem);
+  overflow-y: auto;
+  padding: 1.1rem 1.15rem 1.2rem;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #1a1a1a;
+  color: rgba(255, 255, 255, 0.92);
+  text-align: left;
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.45);
+}
+
+.feedback-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.feedback-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  font-weight: 650;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.feedback-close {
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  margin: -0.4rem -0.35rem 0 0;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.feedback-close:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+}
+
+.feedback-close:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.feedback-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.feedback-description,
+.feedback-thanks,
+.feedback-video p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.feedback-label {
+  display: block;
+  margin: 0 0 0.45rem;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.feedback-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.feedback-options .feedback-label {
+  margin: 0;
+}
+
+.feedback-option {
+  width: 100%;
+  min-height: 44px;
+  padding: 0.55rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.04);
+  color: inherit;
+  font: inherit;
+  font-size: 1rem;
+  line-height: 1.3;
+  text-align: left;
+  cursor: pointer;
+}
+
+.feedback-option:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.feedback-option.is-selected {
+  border-color: rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.feedback-followup {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-text {
+  width: 100%;
+  resize: vertical;
+  min-height: 6.5rem;
+  padding: 0.7rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.04);
+  color: white;
+  font: inherit;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.feedback-text::placeholder {
+  color: rgba(255, 255, 255, 0.38);
+}
+
+.feedback-submit {
+  min-height: 44px;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.92);
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.feedback-submit:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.feedback-submit:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.feedback-error {
+  margin: 0;
+  color: #ffb4b4;
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+.feedback-video {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding-top: 0.15rem;
+}
+
+.feedback-video-link {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.95rem;
+  line-height: 1.4;
+  text-underline-offset: 0.18em;
+}
+
+.feedback-video-link:hover {
+  color: white;
+}
+
+.feedback-gotcha {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+@media (min-width: 720px) {
+  .feedback-overlay {
+    align-items: center;
+  }
+
+  .feedback-dialog {
+    padding: 1.35rem 1.4rem 1.45rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .feedback-launcher,
+  .feedback-admin-launcher {
+    font-size: 0.8rem;
+    left: max(0.5rem, env(safe-area-inset-left));
+  }
+
+  .feedback-launcher {
+    bottom: max(0.5rem, env(safe-area-inset-bottom));
+  }
+
+  .feedback-admin-launcher {
+    bottom: calc(max(0.5rem, env(safe-area-inset-bottom)) + 2.9rem);
+  }
+
+  .feedback-header h2 {
+    font-size: 1.08rem;
+  }
+}
