@@ -108,10 +108,10 @@ export const fi = {
     button: "Palaute",
     close: "Sulje",
     manual: {
-      title: "Auta tekemään Rheemystä parempi! 🎤",
-      description: "Moi! Mä oon Juuso, Rheemyn tekijä. Kuulisin mielelläni, mitä mieltä sä olet!",
-      question: "Mitä haluaisit kertoa mulle?",
-      placeholder: "Bugi, idea, tai ihan vaan miltä tää tuntuu…",
+      title: "Mitä tykkäät Rheemystä? 🎤",
+      description: "Moi! Mä oon Juuso, Rheemyn kehittäjä.",
+      question: "Mikä toimii, mikä ärsyttää tai mitä puuttuu?",
+      placeholder: "Sana on vapaa! Ideat, bugit ja muut fiilikset kiinnostaa.",
       submit: "Lähetä palaute",
       submitting: "Lähetetään…"
     },
@@ -120,19 +120,19 @@ export const fi = {
       question: "Mihin sä käytät Rheemyä eniten?",
       options: {
         freestyle: "Freestylen treenaamiseen",
-        rhyming: "Riimien parantamiseen",
+        rhyming: "Riimittelyn harjoitteluun",
         lyrics: "Sanoitusten kirjoittamiseen",
         fun: "Ihan vaan huvikseni",
         other: "Johonkin muuhun"
       },
-      improveQuestion: "Onko jotain, mitä meidän kannattaisi parantaa?",
-      improvePlaceholder: "Vapaaehtoinen — lyhytkin riittää",
+      improveQuestion: "Mitä sä muuttaisit tai parantaisit Rheemyssä?",
+      improvePlaceholder: "Vapaaehtoinen - lyhytkin riittää",
       submit: "Lähetä",
       submitting: "Lähetetään…"
     },
     thanks: {
-      title: "Kiitos! 🎤",
-      message: "Sain sen. Tää auttaa mua tekemään Rheemystä paremman."
+      title: "Kiitti palautteesta! 🙌",
+      message: "Arvostan sitä oikeesti! ❤️"
     },
     video: {
       action: "🎥 Kerro lisää lyhyessä videohaastattelussa",

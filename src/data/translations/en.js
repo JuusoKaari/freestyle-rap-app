@@ -108,10 +108,10 @@ export const en = {
     button: "Feedback",
     close: "Close",
     manual: {
-      title: "Help make Rheemy better! 🎤",
-      description: "Hey! I'm Juuso, the creator of Rheemy. I'd love to hear what you think!",
-      question: "What would you like to tell me?",
-      placeholder: "A bug, an idea, or just how it feels to use…",
+      title: "What do you think of Rheemy? 🎤",
+      description: "Hey! I'm Juuso, Rheemy's developer.",
+      question: "What's working, what's annoying, or what's missing?",
+      placeholder: "Anything goes! Ideas, bugs, and whatever you're feeling.",
       submit: "Send feedback",
       submitting: "Sending…"
     },
@@ -121,19 +121,19 @@ export const en = {
       // Keep these in sync with USAGE_CATEGORIES in appConfig.js.
       options: {
         freestyle: "Practicing freestyle rap",
-        rhyming: "Improving my rhyming skills",
+        rhyming: "Practicing rhyming",
         lyrics: "Writing lyrics",
         fun: "Just having fun",
         other: "Something else"
       },
-      improveQuestion: "Anything you'd like us to improve?",
-      improvePlaceholder: "Optional — a sentence is plenty",
+      improveQuestion: "What would you change or improve in Rheemy?",
+      improvePlaceholder: "Optional - a sentence is plenty",
       submit: "Send",
       submitting: "Sending…"
     },
     thanks: {
-      title: "Thank you! 🎤",
-      message: "Got it. This really helps me make Rheemy better."
+      title: "Thanks for the feedback! 🙌",
+      message: "I really appreciate it! ❤️"
     },
     video: {
       action: "🎥 Tell me more in a short video interview",

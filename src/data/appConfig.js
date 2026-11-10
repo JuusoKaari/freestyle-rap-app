@@ -45,7 +45,7 @@ export const FEEDBACK_CONFIG = {
 /** Stable usage categories. `value` is what gets submitted (always English). */
 export const USAGE_CATEGORIES = [
   { id: 'freestyle', value: 'Practicing freestyle rap' },
-  { id: 'rhyming', value: 'Improving my rhyming skills' },
+  { id: 'rhyming', value: 'Practicing rhyming' },
   { id: 'lyrics', value: 'Writing lyrics' },
   { id: 'fun', value: 'Just having fun' },
   { id: 'other', value: 'Something else' },
